@@ -1,0 +1,42 @@
+---
+title: 'Showcase: Grey Knight Strike Squad'
+date: '2015-07-17'
+categories: [Grey Knights, Showcase]
+tags: [force weapon, grey knights, lava, painting, space marine]
+featuredImage: ./images/strike-squad/strike-squad-1.jpg
+---
+
+![Strike Squad 1](./images/strike-squad/strike-squad-1.jpg)
+
+This is my first painted Grey Knight squad. I decided to start with a full 10 man Strike Squad! I also decided to go with the classic Grey Knight look of lava bases and the shining blue Nemesis Force Weapons as it's the look that really got my into Grey Knights in the first place.
+
+The squad has two Psycannons that were assembled before 7th edition. Unfortunately since the introduction of 7th they've changed from 'Assault 2 / Heavy 4' to 'Salvo (2/4)' meaning they can no longer shoot and assault after moving. This means that they've had a bit of a nerf, but thankfully despite this they are still extremely formidable weapons and make them great for holding objectives. Maybe not the best against Space Marines at AP4, but great against most other armies.
+
+I've also  equipped them with a range of close combat weapons, including Nemesis Force Swords, Nemesis Force Halberds, Nemesis Falchions and a Nemesis Warding Stave. For the rest of my army I have modelled WYSIWYG, but I didn't want this squad to look dull with all swords so I went with a range to make them more visual interesting. With the new codex these weapons are now a fraction of what they used to cost, so can easily still be run as WYSIWYG when needed.
+
+I'm reasonably happy with how they've come out and I achieved the look I was going for. I need to thin my paints more in the future and I may consider lightening the scheme on future squads as well. I am happy with the force weapon effects, especially only using a regular brush, not an airbrush.
+
+Anyway, here's a few photos of how they're looking, let me know what you think in the comment section below!
+
+```grid|3
+![](./images/strike-squad/strike-squad-1.jpg)
+![](./images/strike-squad/strike-squad-2.jpg)
+![](./images/strike-squad/strike-squad-3.jpg)
+```
+
+```grid|3
+![](./images/strike-squad/strike-squad-4.jpg)
+![](./images/strike-squad/strike-squad-5.jpg)
+![](./images/strike-squad/strike-squad-6.jpg)
+```
+
+```grid|3
+![](./images/strike-squad/strike-squad-7.jpg)
+![](./images/strike-squad/strike-squad-8.jpg)
+![](./images/strike-squad/strike-squad-9.jpg)
+```
+
+```grid|2
+![](./images/strike-squad/strike-squad-10.jpg)
+![](./images/strike-squad/strike-squad-11.jpg)
+```

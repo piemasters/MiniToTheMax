@@ -1,0 +1,18 @@
+---
+title: 'Update: Grey Knight Leviathan Crusader'
+date: '2015-12-01'
+categories: [Update, Grey Knights]
+tags: [grey knights, leviathan crusader, space marine, titan]
+---
+
+Here is the progress I've made so far on this exciting new project, a Leviathan Crusader. I'm not currently sure if I'm going to use it as. It's about the same size as a Warhound Titan, but looks nothing like it. It would fit the role of a Reaver Titan much better, but unfortunately isn't quite tall enough. It would also be possible to use as an Imperial Knight, but it is much much larger and I think would look out of place if paired with others.  Perhaps it would be best to treat it as a Warhound Titan.
+
+The kit itself can be purchased [here from Dreamforge Games](http://dreamforge-games.com/products/leviathan-crusader). I was lucky enough to buy it a couple of years ago when  a special offer was released, getting it for a steal at £40 including shipping. It's an amazing kit to put together and even comes on special sprues that are made to stack on top of each other making it easy to keep everything organised.
+
+Screws are used so that all the joints are posable and remain so for the lifetime of the model, avoiding super glue. This is a great idea and something I really hope Games Workshop consider implementing into some of the larger models in the future. Think how much easier it could make assembling Titans and securing the torso of the Imperial Knight to the legs without needing glue or magnets.
+
+Like the Imperial Knight the arms can also be removed, which is great as DreamForge Games offer a number of different weapon options that I might pick up in the future. The also offer an alternative backpack that honestly would suit my Grey Knight army much better, but I really love the torch like backpack that comes with it and look forward to coming up with a way to make some really cool flames and smoke coming from them.
+
+So far only the legs have been completed. I'm not sure if i'll start on the main body or the arms next. Let me think what you think of the model below and if you think something like screws and stackable sprues should be adopted by Games Workshop.
+
+[gallery size="medium" ids="366,367,368,369,370,371"]
