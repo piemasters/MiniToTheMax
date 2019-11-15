@@ -1,3 +1,7 @@
+const { createFilePath } = require("gatsby-source-filesystem")
+
+
+
 const path = require('path');
 
 module.exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -7,13 +11,12 @@ module.exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === 'MarkdownRemark') {
-    const slug = path.basename(node.fileAbsolutePath, '.md');
-    //const slug = createFilePath({ node, getNode, basePath: `blog` });
-    //const slug = createFilePath({ node, getNode });
+    //const slugOld = path.basename(node.fileAbsolutePath, '.md');
+    const slug = createFilePath({ node, getNode, basePath: `src/posts` });
     createNodeField({
       node,
       name: 'slug',
-      value: slug,
+      value: `/blog${slug}`,
     });
   }
 };
@@ -42,7 +45,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   res.data.allMarkdownRemark.edges.forEach(edge => {
     createPage({
       component: blogTemplate,
-      path: `/blog/${edge.node.fields.slug}`,
+      path: edge.node.fields.slug,
       context: {
         slug: edge.node.fields.slug,
       },

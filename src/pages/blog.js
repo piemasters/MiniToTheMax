@@ -3,6 +3,7 @@ import Layout from '../layouts/layout';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import blogStyles from './blog.module.scss';
 import Head from '../components/head';
+import Img from "gatsby-image"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -13,6 +14,14 @@ const BlogPage = () => {
             frontmatter {
               title
               date
+              featuredImage {
+                  childImageSharp {
+                      fluid(maxWidth: 800) {
+                          ...GatsbyImageSharpFluid
+
+                      }
+                  }
+              }
             }
             fields {
               slug
@@ -30,10 +39,11 @@ const BlogPage = () => {
       <ol className={blogStyles.posts}>
         {data.allMarkdownRemark.edges.map(edge => {
           return (
-            <li className={blogStyles.post} key={edge.node.slug}>
-              <Link to={`/blog/${edge.node.fields.slug}`}>
+            <li className={blogStyles.post} key={edge.node.fields.slug}>
+              <Link to={edge.node.fields.slug}>
                 <h2>{edge.node.frontmatter.title}</h2>
                 <p>{edge.node.frontmatter.date}</p>
+                  <Img fluid={edge.node.frontmatter.featuredImage ? edge.node.frontmatter.featuredImage.childImageSharp.fluid : {width: 0, height: 0, src:"", srcSet:null}} />
               </Link>
             </li>
           );
