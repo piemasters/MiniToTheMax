@@ -1,0 +1,22 @@
+---
+title: 'Showcase: Grey Knight Purgation Squad'
+date: '2013-05-30'
+categories: [Grey Knights, Showcase]
+tags: [armorcast, grey knights, painting, purgation squad, space marine]
+---
+
+The latest completed miniatures this week are my Grey Knight Purgation Squad. Once again the weapon effects are from [ArmorCast](http://www.armorcast.com/). Unfortunately I purchased this squad already assembled and was unable to remove the heads, so several aren't actually facing the way they're shooting.
+
+I always used to say in 6th edition that it was due to Astral Aim that they didn't need line of sight when firing, so why did they really need to bother looking? It always used to be a great tactic to plant them behind a building and pair them with Coteaz. Divination let them reroll failed hits rolls and if you were lucky force your opponents to reroll saves. What really made the pairing great was Coteaz's ability to allow his squad to get a free turn of shooting whenever a squad deep striked close to the unit, making them extremely difficult to take down.
+
+Unfortunately with the lose of astral aim they're a lot more fragile, as their maximum range is 24" and they lose their force weapons to gain their heavy weapons meaning they are easy pickings. It seems now pretty essential to put them in a Razorback and push them up quickly, although the Razorback has lost its fire points. Alternatively take them in a Rhino with two fire points and fire from that until you're sure that when they disembark they will survive.
+
+Taking 4 Psycnnons gives you 16 S7 AP4 rending shots, whereas Psilencers give you 24 S4 AP- force shots. Personally I prefer the Psycannons as if you combine the squad with a librarian to reroll hits you'll likely get around 12 hits, 10 wounds (if on a 2+) and for a lot of armies will ignore armour. That's a squad taken out in one round of shooting. For tougher targets they'll be getting saves, but will likely fail 2-4 and take an extra couple of loses due to rending. That's still 4-6 kills a turn meaning they'll make their points up pretty quickly if you can keep them alive.
+
+The Psilencers give you more shots and give you the chance of instant death kills, but at a lower strength and with no AP, the number of wounds you're likely to get it much lower. In my opinion it's only worth going for if you want to make the most out of activating force.
+
+The incinerators give you S6 AP4 flamer templates that can cause a lot of damage, but put the Purgation squad dangerously close to being charged. I would only consider taking them if I kept them safe in a Rhino and drove them straight into weaker squads.
+
+Anyway, that's my opinion. Let me know yours in the comments below!
+
+[gallery size="medium" ids="88,86,85,84"]

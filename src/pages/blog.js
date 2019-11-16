@@ -16,9 +16,8 @@ const BlogPage = () => {
               date
               featuredImage {
                   childImageSharp {
-                      fluid(maxWidth: 800) {
+                      fluid(maxWidth: 800, maxHeight: 200) {
                           ...GatsbyImageSharpFluid
-
                       }
                   }
               }

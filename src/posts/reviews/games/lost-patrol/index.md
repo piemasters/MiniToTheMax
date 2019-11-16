@@ -1,0 +1,117 @@
+---
+title: 'Review: Lost Patrol'
+date: '2016-07-10'
+categories: [Review, Board Games]
+tags: [blood angels, board game, space marines, tyranids]
+featuredImage: lostpatrol.jpg
+---
+
+## Lost Patrol
+
+> Moraz III – a deadly jungle world filled with danger and fear, populated by ferocious aliens who wait in the undergrowth to pounce on the unwary and mercilessly kill anyone who stumbles across them. Even the plant life itself is malignant here, constantly twisting and growing in unnatural ways to trap its prey.
+>
+> A dropship containing vitally important surveillance files has crash landed on this hostile planet. It’s up to you and your squad of Space Marine Scouts to retrieve these files, activate the dropship, and hopefully escape with your lives!
+>
+> Lost Patrol is a two-player boxed game, set on a hostile jungle world on which nowhere is safe! One player controls a squad of plucky Space Marine Scouts, and the other controls a swarm of horrible Genestealers – it’s a fast-paced game of kill-or-be-killed between two iconic sets of warriors! Inside the box, you’ll find five Space Marine Scout, twelve Genestealers, six Infestations: the markers of imminent Genestealer appearance, and thirty hex tiles.
+
+## Miniatures & Contents
+
+Unlike recent releases such as Warhammer Quest: Silver Tower and Deathwatch Overkill, Lost Patrol has a disappointing collection of miniatures. To be fair this game has a price tag of £35 rather than £100 and I really hope more games come out with this kind of price tag. I'd prefer games have more of a focus on the game itself rather than the miniatures, but as I'll discuss later this unfortunately is not the case with Lost Patrol.
+
+### Scouts (2/10)
+
+You get five scouts in the box with enough parts to make a heavy gunner, a captain and three marines with either shotguns, bolters or bolt pistols and combat swords. I'm personally don't think the scouts themselves look great and they were a bit of a mess putting together. Arm alignment was a bit of a nightmare, as was fitting the torso to the legs with the holstered gun getting in the way. I much prefer the look and build of the Sniper Scouts, but obviously they wouldn't fit with the game. The unit would cost £15.50 if bought individually, these are not new sculpts and are made from red plastic. This is a nice added bonus as was done with Space Hulk, it makes the game nicer to play when unpainted.
+
+### Tyranids (5/10)
+
+You get twelve Genestealers that come in blue plastic. A box of 8 sells for £18, again no new sculpts here. There are also six Infestations that I don't believe you can buy individually, but do come with the Genestealers box-set. The Genestealers were a lot nicer to build compared to the scouts. Sadly they are pretty plain and show their age compared to new sculpts.
+
+### Tiles (9/10)
+
+The tiles really stand out in the box and are of a great quality. The artwork is great with odd bits of humor and interest and the quality is great, as it always is when it comes to boards by GW.
+
+### Conclusion (5/10)
+
+All in all you get enough miniatures to make the game free, but unlike other releases that's not why you're buying the game. It's as if they were trying to get rid of old stock, but they're all cast in the coloured plastic so that's obviously not the case. They used old sculpts most likely just to just keep the price down. I think they could have cut down on the number of Tyranids included in the box and cut the price down further. On the upside the board itself is great and makes the box feel much more like it's worth the price tag.
+
+## Rules
+
+The rules for Lost Patrol are pretty simple. You must use your scouts to  move through the forest to unveil more forest tiles until you unveil the final tile, the dropship. To stop you the Genestealers come on from the board-edges to claw you to death.. with extreme success!
+
+The game turn looks like this:
+
+1.  Scouts action phase (2 AP per scout).
+2.  Genestealer removes unseen tiles.
+3.  Genestealer places new times that can be seen.
+4.  Genestealer takes actions (3 AP total).
+5.  Genestealer launches assault.
+
+### Scouts
+
+In the scouts turn each scout can shoot (roll a 6 to kill) or move a tile per AP. The heavy trooper can shoot twice, if you land on a tangleweed tile you must role a 4+ to move off.
+
+When a scout moves to a tile edge the Genestealer player unveils new tiles from the stack and places them for as far as the scout can see (until a bend is drawn). Any unseen tiles (a tile that can't be seen if any scout moved 2 tiles in any direction) are removed and added to the top of the stack.
+
+### Genestealers
+
+The Genestealer player can place a Genestealer at the end of any path, Infest a tile that a Genestealer is already on, or move 1 Genestealer 3 tiles, 2 Genestealers 2 tiles or 3 Genestealers 1 tile (all most start and end on the same tile) for 1 AP. Infesting a tile means that Genestealers can now be brought on from that tile until a scout lands on the square and removes the infestation.
+
+When a Genestealer is opposite a scout it launches an assault. The scout player must roll the number of Genestealers on the tile \* 2 in order not to die and more than to kill. If the scout is by himself he is at -1\. The captain gains a +1 and if the heavy gunner is in line of sight and not in the same combat he also provides a +1\. For example a two scouts face 2 Genestealers. A 3 or less means death, a 4 is a draw and he retreats a tile and a 5 means he kills one of the two Genestealers.  A single scout would need a 5 to draw, but a captain with another scout in view of the heavy gunner could kill a Genestealer on a 3+.
+
+### Conclusion (7/10)
+
+The rules are very basic and appear interesting. Before playing the game there is an obvious advantage for the Genestealers but they get far fewer APs.
+
+## Game Review
+
+The game is meant to be challenging. Crazy challenging in fact. It is based off the original made years ago which was known for its difficulty, but here they took it to another level. In the White Dwarf issue that announced the game they admitted to not winning in over 100 games. To me that doesn't make it sound challenging, it sounds like it hasn't been play tested. Who is going to sit down and play this game over 100 times and never win?
+
+The problem is the scouts are so bad in combat individually, but are forced to split up in order to cover enough tiles to get the dropship placed. If they group together the forest is lost behind them and they will never get to the bottom of the stack. Once you do split up it is so easy for the Genestealer player to place 3 Genestealers at the end of the path forcing an instant death unless against the sergeant, the scout has heavy support cover, or is in a group of 2.  Even with support a 6 is needed to just survive and if you have a +1 bonus and no modifier you need a 6 to just kill one Genestealer. A Genestealer than can be replaced with 1 AP next turn.
+
+It's not like you can afford to shoot at them either. If you get lucky and roll a 6 with your 2 AP, you have gained now ground and lost the Genestealer player only a single AP. Once you've lost a scout it becomes pretty much impossible to reveal all the tiles because as you reveal new tiles you lose sight of past ones and you need all your scouts to keep a view of everything you've revealed.
+
+### Conclusion (2/10)
+
+Because of this it feels like the only way you can ever win is if the Genestealer player is very easy on you. But what is the point of that? They don't get to roll any dice and only get three actions per turn, so going easy on you makes it feel more like a cooperative game. As the Genestealer player you feel bad as it's so easy to kill off the game.
+
+I do like the idea of the game, but I think there need to be some severe rule changes to allow the Genestealer player to really try his best making the game fun for both players, while giving the scout player some kind of chance. Maybe a win in 5-10 games instead of a win never.
+
+## Alternate Rules
+
+These are my suggested rule changes to make the game more fun for both sides:
+
+- Change shoot to kill to a 4+. Anything above doesn't make shooting viable over moving.
+- Only a single Genestealer can enter a tile per turn. This stops putting 3 Genestealers on a tile and effectively ending the game and forces the Genestealer player to plan different routes and place their Infestations.
+- Once down to 3 scouts tiles are no longer removed when unseen. Otherwise the game because impossible to win.
+- The tiles placed at the start of the game are never removed. This helps stop scouts being forced to hold position rather than progressing, but can make the game too easy so play-test yourself.
+
+Other rules could be introduced, I especially like the idea of replacing the scouts with space marines or terminators with their own unique rules.
+
+## Final Thoughts
+
+I think the game really has potential. It's a game your buying for the board game, not the miniatures so the game has to be fun. As it comes out the box it's simply too hard for the scout player and it doesn't feel like fun for either side.
+
+However, I feel by making the rule changes you make the game achievable for the scouts while more challenging and tactical for the Genestealer player. These changes don't cause the scout player to lose the fear of being outmatched with any turn having the potential to ruin their chances either. It creates a far more rounded and interesting game, instead of one you will just lose over and over with both sides feeling bad. The possibility for more rules for different armies is also extremely intriguing.
+
+### Overall Rating without rule changes: 3/10
+
+### Overall Rating with rule changes: 6.5/10
+
+## Gallery
+
+```grid|3
+![](scouts.jpg)
+![](bugs.jpg)
+![](painted.jpg)
+```
+
+```grid|3
+![](rules.jpg)
+![](sprue.jpg)
+![](sprue-2.jpg)
+```
+
+```grid|2
+![](tiles.jpg)
+![](box.jpg)
+```
