@@ -3,6 +3,7 @@ title: 'Tutorial: Grey Knight Armour'
 date: '2013-06-05'
 categories: [Grey Knights, Tutorial]
 tags: [grey knights, painting, space marine]
+featuredImage: 2013-06-05-14.36.52.jpg
 ---
 
 Now that I've painted a good portion of my Grey Knight army and have found a colour scheme I like, I thought it might be useful to those who enjoy my models to tell you how exactly I paint them.
@@ -30,9 +31,9 @@ With the base coat for the armour sorted, the details now need their own base co
 - White Areas - Pallid Wych Flesh
 - Force Weapons, Gun Flare & Eyes - Regal Blue
 
-[![2013-06-05-14.36.52](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-05-14.36.52-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-05-14.36.52.jpg)
+![2013-06-05-14.36.52](2013-06-05-14.36.52.jpg)
 
-[![2013-06-05-14.41.09](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-05-14.41.09-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-05-14.41.09.jpg)
+![2013-06-05-14.41.09](2013-06-05-14.41.09.jpg)
 
 (In these images I have also applied the blue glaze from the following step).
 
@@ -44,13 +45,17 @@ The armour should be given a thin glaze of **Guilliman Blue** into the recesse
 
 The bronze, red, cloth, parchment and skulls should be washed using **Agrax Earthshade** reasonably heavily. You want the bronze letters to have the recesses completely filled, along with the eyes of any skulls. For all the red, cloth and parchment areas, focus the wash in the recesses. For any larger flat areas such as the shoulder pads and loincloths mix the wash 1:1 with water and coat the whole area.
 
-[![2013-06-05-22.00.57](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-05-22.00.57-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-05-22.00.57.jpg)[![2013-06-05-22.01.41](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-05-22.01.41-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-05-22.01.41.jpg)
+![2013-06-05-22.00.57](2013-06-05-22.00.57.jpg)
+
+![2013-06-05-22.01.41](2013-06-05-22.01.41.jpg)
 
 ## Stage 4 - Layer
 
 **Ironbreaker, Hashut Copper, Mephiston Red, Dark Reaper, Ushabti Bone, Ceramite White**
 
-Once everything has dried you the next step is to paint the main colour of the armour and other details. Think of the original base layer as how the armour should look with no direct sunlight. The shade has picked out the darkest areas, so now you need to pick out everywhere that the light hits. This covers a large proportion of the model, just make sure not to cover the recesses marked out by the wash, paint up to them instead to give the model a feeling of depth. The other areas to avoid covering are the parts of the model that remain in shadow, such as under the legs and arms.
+Once everything has dried you the next step is to paint the main colour of the armour and other details. Think of the original base layer as how the armour should look with no direct sunlight. The shade has picked out the darkest areas, so now you need to pick out everywhere that the light hits. 
+
+This covers a large proportion of the model, just make sure not to cover the recesses marked out by the wash, paint up to them instead to give the model a feeling of depth. The other areas to avoid covering are the parts of the model that remain in shadow, such as under the legs and arms.
 
 - Armour - Ironbreaker
 - Bronze Letters & Armour - Hashut Copper
@@ -59,9 +64,9 @@ Once everything has dried you the next step is to paint the main colour of t
 - Cloth, Parchment & Skulls - Ushabti Bone
 - White Areas - Ceramite White
 
-[![2013-06-05-22.02.14](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-05-22.02.14-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-05-22.02.14.jpg)
+![2013-06-05-22.02.14](2013-06-05-22.02.14.jpg)
 
-[![2013-06-06-17.32.19](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-06-17.32.19-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-06-17.32.19.jpg)
+![2013-06-06-17.32.19](2013-06-06-17.32.19.jpg)
 
 ## Stage 5 - Highlight
 
@@ -81,7 +86,7 @@ The brightest spots of the armour and details can even be given a final Pallid 
 - Black Areas - Dawnstone, Administratum Grey OR Lothern Blue
 - Cloth, Parchment & Skulls - Screaming Skull, Pallid Wych Flesh
 
-[![2013-06-20-17.50.29](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-20-17.50.29-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-20-17.50.29.jpg)
+![2013-06-20-17.50.29](2013-06-20-17.50.29.jpg)
 
 ## Stage 6 - Force Weapons & OSL
 
@@ -91,4 +96,4 @@ As this is a complex step it will be covered in a further tutorial.
 
 So this is the result of the above steps. The Nemesis Force Weapons and eyes still need painting, as well as the gun flares. Once these steps are complete the models can be fully assembled and finally based.
 
-[![2013-06-20-17.48.58](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-20-17.48.58-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2013-06-20-17.48.58.jpg)
+![2013-06-20-17.48.58](2013-06-20-17.48.58.jpg)

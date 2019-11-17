@@ -3,15 +3,18 @@ title: 'Tutorial: Paint Stripping'
 date: '2014-06-01'
 categories: [Tutorial]
 tags: [paint, stripping]
+featuredImage: 2014-06-01-18.23.32.jpg
 ---
 
 Inquisitor Coteaz used to be my favourite character back in 6th edition and always lead my army, although normally from the rear with my purgation squad. With their ability to shoot through walls so no one could return fire and his ability to let them re-roll hits with divination, as well as give them a free shooting phase against anyone who deep striked anywhere near them in an attempt to take them out, the two made a perfect match. All that and I've not even mentioned Dave the eagle! Ahhhh good memories!
+
+![Coteaz](DSC09951.jpg)
 
 Being a favourite character, I really want to repaint him. It’s a shame with the rest of my army being painted recently, while he was sits with a 10 year old paint job from when I was 12\. The main issue with repainting him is how thickly I used to blob on the paint. Being a great model, I didn't want the paint job to fall short, so I decided to look into how to remove the paint.
 
 Being metal I knew I wouldn't need to look into obscure methods that finecast requires to avoid damaging the mini. The method I did find on paint stripping however works on both metal and plastic. The method is simple:
 
-[![liquid](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/liquid.png)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/liquid.png)
+![liquid](liquid.png)
 
 ## Put it in the Dettol!
 
@@ -33,4 +36,5 @@ With all the paint off, make sure to give the model a good wash with warm soapy 
 
 Hopefully I've not missed anything. Here’s the results I had and I think you’ll agree it was pretty successful:
 
-[![2014-06-01-18.23.32](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2014-06-01-18.23.32-758x1024.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2014-06-01-18.23.32.jpg)
+![2014-06-01-18.23.32](2014-06-01-18.23.32.jpg)
+

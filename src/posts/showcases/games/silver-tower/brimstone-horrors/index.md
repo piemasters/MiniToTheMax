@@ -4,6 +4,7 @@ date: '2016-11-06'
 categories:
   [Showcase, Age of Sigmar, Board Games, Warhammer Quest, Silver Tower, Chaos]
 tags: [base, chaos, night goblins, painting, silver tower, warhammer quest]
+featuredImage: DSC02966.jpg
 ---
 
 ## Brimstone Horrors of Tzeentch
@@ -27,13 +28,16 @@ The mouth was then given a Carroburg Crimson wash to really bring out the teeth.
 
 ## Basing
 
-The bases were achieved in the same way as the rest of the boxset. Instructions can be found [here under Basing](http://www.minitothemax.com/showcase-warhammer-quest-kairic-acolytes/).
+The bases were achieved in the same way as the rest of the boxset. Instructions can be found [here under Basing](/blog/posts/showcases/games/silver-tower/kairic-acolytes).
 
 ## Roundup
 
-These guys were really quick to paint and I think the effect worked really well. I was a bit concerned never using a yellow paint to paint the fire (Casandora Yellow actually appears as a reddy orange in the pot) but I’m really happy how they came out. I think it produces a lot of a natural effect than painting on solid yellow. It also saves trying to blend yellow with deeper oranges to.  
+These guys were really quick to paint and I think the effect worked really well. I was a bit concerned never using a yellow paint to paint the fire (Casandora Yellow actually appears as a red-orange in the pot) but I’m really happy how they came out. I think it produces a lot of a natural effect than painting on solid yellow. It also saves trying to blend yellow with deeper oranges to.  
 Next up I’m thinking of switching over to painting a character, but I may keep allow the orange theme…
 
 ## Gallery
 
-[gallery type="slideshow" size="large" ids="739,738"]
+```grid|2
+![](DSC02966.jpg)
+![](DSC02967.jpg)
+```

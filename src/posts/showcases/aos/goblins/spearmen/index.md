@@ -3,6 +3,7 @@ title: 'Showcase: Gloomspite Gitz – Spearmen'
 date: '2014-04-15'
 categories: [Age of Sigmar, Gloomspite Gitz, Showcase]
 tags: [grots, goblins, night goblins, spearmen]
+featuredImage: 15-08-19-DSC01998.jpg
 ---
 
 So I finally got round to finishing off my Night Goblins. This 40 strong unit of Night Goblin Spearmen ended up not requiring that much more work from when I last posted my WIP update.
@@ -17,4 +18,15 @@ With these goblins complete I have 2 more 20 man units to paint, along with a nu
 
 Leave your feedback as always, it's always appreciated!
 
-[gallery size="medium" ids="585,587,590,589,588"]
+## Gallery
+
+```grid|3
+![](15-08-19-DSC01997.jpg)
+![](15-08-19-DSC01998.jpg)
+![](2015-08-19-12.33.43.jpg)
+```
+
+```grid|2
+![](2015-08-19-12.33.52.jpg)
+![](2015-08-19-12.34.02.jpg)
+```

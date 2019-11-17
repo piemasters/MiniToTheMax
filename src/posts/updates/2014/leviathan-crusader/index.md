@@ -3,6 +3,7 @@ title: 'Update: Grey Knight Leviathan Crusader'
 date: '2014-04-15'
 categories: [Update, Grey Knights]
 tags: [grey knights, leviathan crusader, space marine, titan]
+featuredImage: 2014-04-15-15.45.24.jpg
 ---
 
 Here is the progress I've made so far on this exciting new project, a Leviathan Crusader. I'm not currently sure if I'm going to use it as. It's about the same size as a Warhound Titan, but looks nothing like it. It would fit the role of a Reaver Titan much better, but unfortunately isn't quite tall enough. It would also be possible to use as an Imperial Knight, but it is much much larger and I think would look out of place if paired with others.  Perhaps it would be best to treat it as a Warhound Titan.
@@ -15,4 +16,14 @@ Like the Imperial Knight the arms can also be removed, which is great as DreamFo
 
 So far only the legs have been completed. I'm not sure if i'll start on the main body or the arms next. Let me think what you think of the model below and if you think something like screws and stackable sprues should be adopted by Games Workshop.
 
-[gallery size="medium" ids="366,367,368,369,370,371"]
+```grid|3
+![](2014-04-15-15.41.14.jpg)
+![](2014-04-15-15.41.35.jpg)
+![](2014-04-15-15.42.06.jpg)
+```
+
+```grid|3
+![](2014-04-15-15.42.35.jpg)
+![](2014-04-15-15.43.07.jpg)
+![](2014-04-15-15.44.59.jpg)
+```

@@ -11,6 +11,7 @@ categories:
     Gloomspite Gitz,
   ]
 tags: [chaos, goblins, night goblins, painting, silver tower, warhammer quest]
+featuredImage: DSC02963.jpg
 ---
 
 ## Grot Scuttlings
@@ -57,4 +58,8 @@ As always give me your feedback below and let me know if my painting guides have
 
 ## Gallery
 
-[gallery type="slideshow" size="large" link="file" ids="737,736,735"]
+```grid|3
+![](DSC02963.jpg)
+![](DSC02964.jpg)
+![](DSC02965.jpg)
+```

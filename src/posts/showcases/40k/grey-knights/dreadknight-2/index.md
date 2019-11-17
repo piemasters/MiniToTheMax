@@ -3,6 +3,7 @@ title: 'Showcase: Grey Knight Dreadknight II'
 date: '2014-05-24'
 categories: [Grey Knights, Showcase]
 tags: [character, dreadknight, force weapon, grey knights, space marine]
+featuredImage: 14-05-24-DSC02552.jpg
 ---
 
 With my second Dreadknight (see my first here) I wanted to create a new pose, to stop them looking too similar. I largely followed [this](http://www.bolterandchainsword.com/topic/226502-re-posed-dreadknight/) post. It basically involved cutting the left leg in half just below the joint, following the rounded joint and re-positioning it and giving it a bend. I also reshaped the joint at the hip allowing me to twist the entire leg at an angle. The main issue this gives is that the pilots leg no longer fits were it should. I ended up cutting the pilots leg in a couple of places to give it a more realistic position. It was very difficult to get it in the right place without looking silly, but I think it came out looking OK in the end.
@@ -19,6 +20,41 @@ The model is fully magnetised as well. The hammer, sword and basic hand are inte
 
 Well that’s it. Let me know what you think, if anyone needs further help reposing their Dreadknight feel free to drop a comment and I’ll do my best to help!
 
-[![14-05-24-DSC02561](http://192.168.2.30/minitothemax/wp-content/uploads/2015/07/14-05-24-DSC02561-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/14-05-24-DSC02561.jpg)
+![14-05-24-DSC02561](14-05-24-DSC02561.jpg)
 
-[gallery size="medium" ids="269,268,267,262,263,264,265,266,261,260,259,258,257,256,254,270"]
+## Gallery
+
+```grid|3
+![](14-05-24-DSC02543.jpg)
+![](14-05-24-DSC02544.jpg)
+![](14-05-24-DSC02545.jpg)
+```
+
+```grid|3
+![](14-05-24-DSC02546.jpg)
+![](14-05-24-DSC02547.jpg)
+![](14-05-24-DSC02548.jpg)
+```
+
+```grid|3
+![](14-05-24-DSC02549.jpg)
+![](14-05-24-DSC02550.jpg)
+![](14-05-24-DSC02551.jpg)
+```
+
+```grid|3
+![](14-05-24-DSC02552.jpg)
+![](14-05-24-DSC02553.jpg)
+![](14-05-24-DSC02554.jpg)
+```
+
+```grid|3
+![](14-05-24-DSC02555.jpg)
+![](14-05-24-DSC02556.jpg)
+![](14-05-24-DSC02557.jpg)
+```
+
+```grid|2
+![](14-05-24-DSC02558.jpg)
+![](14-05-24-DSC02560.jpg)
+```

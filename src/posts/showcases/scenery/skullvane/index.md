@@ -3,9 +3,10 @@ title: 'Showcase & Tutorial: Skullvane Manse'
 date: '2014-08-31'
 categories: [Tutorial, Scenery, Showcase]
 tags: [battle boards, scenery, skullvane manse, terrain, tutorial]
+featuredImage: 14-08-31-DSC027001.jpg
 ---
 
-So after several months of periodic work my first piece of terrain, Skullvance Manse, is complete and matches perfectly with my Realm of Battle Boards. It’s not designed for 40k, but it looks so awesome I think I’ll still be using it in games. It doesn’t look massively out of place in my opinion, and fits in well with the boards now both have a coat of snow on them. **See the bottom of this post for more photos.**
+So after several months of periodic work my first piece of terrain, Skullvane Manse, is complete and matches perfectly with my Realm of Battle Boards. It’s not designed for 40k, but it looks so awesome I think I’ll still be using it in games. It doesn’t look massively out of place in my opinion, and fits in well with the boards now both have a coat of snow on them. **See the bottom of this post for more photos.**
 
 So here is a brief colour guide tutorial on how I painted the majority of this piece.
 
@@ -116,10 +117,45 @@ Add 1:1 mix of Deathworld Forest and Graveyard Earth and water down until sligh
 
 With all these layers I then applied the snow using the product below.
 
-[![deluxe_materials_scenic_snow](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/deluxe_materials_scenic_snow-247x300.jpg)](http://www.amazon.co.uk/DLXBD029-Deluxe-Materials-Scenic-Snow/dp/B00AMB7398/)
+[![deluxe_materials_scenic_snow](deluxe_materials_scenic_snow.jpg)](http://www.amazon.co.uk/DLXBD029-Deluxe-Materials-Scenic-Snow/dp/B00AMB7398/)
 
 Its really great, as the glue provided is watered down, but has a much stronger bond than PVA. The snow is great and doesn’t fade or yellow, and the addition of the sparkles really makes it look realistic, which you don’t get with other powdered products.
 
 Well that's it, let me know if you've found this useful, or have any other comments below.
 
-[gallery size="medium" ids="306,305,304,303,302,297,298,299,300,301,296,295,294,293,292,291"]
+## Gallery
+
+```grid|3
+![](14-08-31-DSC027001.jpg)
+![](14-08-31-DSC027002.jpg)
+![](14-08-31-DSC027003.jpg)
+```
+
+```grid|3
+![](14-08-31-DSC027004.jpg)
+![](14-08-31-DSC027005.jpg)
+![](14-08-31-DSC027006.jpg)
+```
+
+```grid|3
+![](14-08-31-DSC027007.jpg)
+![](14-08-31-DSC027008.jpg)
+![](14-08-31-DSC027009.jpg)
+```
+
+```grid|3
+![](14-08-31-DSC027010.jpg)
+![](14-08-31-DSC027011.jpg)
+![](14-08-31-DSC027012.jpg)
+```
+
+```grid|3
+![](14-08-31-DSC027013.jpg)
+![](14-08-31-DSC027014.jpg)
+![](14-08-31-DSC027015.jpg)
+```
+
+```grid|2
+![](14-08-31-DSC027016.jpg)
+![](14-08-31-DSC027017.jpg)
+```

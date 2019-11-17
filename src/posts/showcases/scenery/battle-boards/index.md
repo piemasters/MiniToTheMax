@@ -3,6 +3,7 @@ title: 'Showcase: Realm of Battle Boards'
 date: '2015-08-19'
 categories: [Scenery, Showcase]
 tags: [battle boards, boards, realm of battle, scenery, terrain]
+featuredImage: 15-08-19-DSC01984.jpg
 ---
 
 Remember these? Spot any differences? They are my Realm of Battle Boards with a bit more work done as I wasn't happy after completing them around 6 months to a year ago.
@@ -13,4 +14,22 @@ So today I decided to add another layer of snow over what I had done before and 
 
 Well hopefully they look a bit better, the photos weren't in the best light and were a bit rushed, but hopefully you get a good idea of how they look now! Let me know what you think in the comments below!
 
-[gallery size="medium" ids="615,614,613,612,611,610,609,608"]
+## Gallery
+
+```grid|3
+![](15-08-19-DSC01975.jpg)
+![](15-08-19-DSC01976.jpg)
+![](15-08-19-DSC01978.jpg)
+```
+
+```grid|3
+![](15-08-19-DSC01979.jpg)
+![](15-08-19-DSC01980.jpg)
+![](15-08-19-DSC01981.jpg)
+```
+
+```grid|3
+![](15-08-19-DSC01982.jpg)
+![](15-08-19-DSC01984.jpg)
+![](15-08-19-DSC01986.jpg)
+```

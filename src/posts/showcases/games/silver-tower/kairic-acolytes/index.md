@@ -5,13 +5,14 @@ categories:
   [Showcase, Age of Sigmar, Board Games, Warhammer Quest, Silver Tower, Chaos]
 tags:
   [age of sigmar, chaos, fantasy, hobby, painting, tzeentch, warhammer quest]
+featuredImage: DSC02732.jpg
 ---
 
 ## Kairic Acolytes
 
 > Marked by the Changer Of the Ways for their cunning and devotion, these warrior cultists fight With blade, sorcery and terrifying zeal. They are the chosen mortal warriors of Tzeentch, and with the proper chants and rites they are able to combine their gestalt magical might before unleashing it in crackling bolts of unnatural flame.
 
-,So I picked up the new Warhammer Quest: Silver Tower the day it came out. For me it's been one of the most exciting releases of the year as I was a massive fan of the original. It was the only box-set I ever got round to painting up. Inside the box there are lot of great look miniatures you can't get elsewhere, just as I'd expect after the Deathwatch Overkill release.
+So I picked up the new Warhammer Quest: Silver Tower the day it came out. For me it's been one of the most exciting releases of the year as I was a massive fan of the original. It was the only box-set I ever got round to painting up. Inside the box there are lot of great look miniatures you can't get elsewhere, just as I'd expect after the Deathwatch Overkill release.
 
 The game itself looks pretty good too, but a lot less of a hardcore time consuming game compared to the original. However, I don't really have the time for hardcore games now anyway so if anything its a good thing for me. I get a day or two a week to give some board games a go so I'm hoping to pull this out in the next few weeks and see how it really compares. I've heard games can go on from 30 mins to several hours so if you want long games it's certainly still possible.
 
@@ -51,4 +52,31 @@ I was tempted to by [Secret Weapon - Alien Temple](http://www.secretweaponminiat
 
 ## Gallery
 
-[gallery type="slideshow" size="full" ids="730,716,717,718,719,720,721,722,723,724,725,726,727,728,729"]
+```grid|3
+![](2016-07-10-18.50.15.jpg)
+![](2016-07-10-18.50.37.jpg)
+![](2016-07-10-18.51.05.jpg)
+```
+
+```grid|3
+![](2016-07-10-18.51.17.jpg)
+![](2016-07-10-18.51.33.jpg)
+![](2016-07-10-18.52.09.jpg)
+```
+
+```grid|2
+![](2016-07-10-18.52.42.jpg)
+![](2016-07-10-19.04.15.jpg)
+
+```
+
+```grid|3
+![](DSC02727.jpg)
+![](DSC02728.jpg)
+![](DSC02729.jpg)
+```
+
+```grid|2
+![](DSC02732.jpg)
+![](DSC02733.jpg)
+```

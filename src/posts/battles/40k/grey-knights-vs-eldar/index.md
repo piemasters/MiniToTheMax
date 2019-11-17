@@ -195,7 +195,7 @@ The grey hunters then charged the guardians, losing a few due to them being i5, 
 
 ![07-Turn-1-Eldar](07-Turn-1-Eldar.jpg)
 
-My terminators from the land raider overan charging both the wraithblades and the wraithlord. My inquisitor used his grenade, meaning all my units hit automatically and all his models were down to 1 attack each. My justicar was challenged by the wraithlord and accepted. He managed to shrug off the hit on him and with his deamon hammer managed to take it down in return!
+My terminators from the land raider overran charging both the wraithblades and the wraithlord. My inquisitor used his grenade, meaning all my units hit automatically and all his models were down to 1 attack each. My justicar was challenged by the wraithlord and accepted. He managed to shrug off the hit on him and with his daemon hammer managed to take it down in return!
 
 ![06-Turn-1-Eldar](06-Turn-1-Eldar.jpg)
 

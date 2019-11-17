@@ -3,6 +3,7 @@ title: 'Update: Photography'
 date: '2015-12-20'
 categories: [Update, Tools]
 tags: [camera, grey knights, lightbox, photography, purifiers, space marine]
+featuredImage: 09-01-01-DSC01950.jpg
 ---
 
 So I've been having a play with my photography over the last few days. My partner very kindly has given me her old [Sony Alpha A450](http://www.amazon.co.uk/Sony-DSLRA450L-Digital-Camera-18-55mm/dp/B0030GEGVU) and [Sony SAL30M28 Alpha 30mm F2.8 Macro Lens](http://www.amazon.co.uk/Sony-SAL30M28-Alpha-30mm-Macro/dp/B002QRBDYC). The camera and lens are around 5 years old, so not cutting edge tech but it is a massive upgrade to what I've been using so far, my Nexus 5's camera.
@@ -13,8 +14,16 @@ So I don't need quite that image quality, but always best to have more than you 
 
 That is great for a nice simple plain look, but sometimes you want to make your miniatures look that bit more epic. In the photos here you can see I've printed off a free design found online with a basic printer and it look great! I'm looking at getting a high quality version printed out in A3 in the near future and matte laminated so that it doesn't get damaged. I just have to work out how and where I can get that done.
 
-Hopefully soon I will get a proper lightbox and more daylight lamps and with a high quality background I should beable to start getting some great quality pictures. Once I've reached a quality I'm happy with I may look at photographing my whole army in the same way for a uniform way and create a dedicated page containing all the best photos of each unit.
+Hopefully soon I will get a proper lightbox and more daylight lamps and with a high quality background I should be able to start getting some great quality pictures. Once I've reached a quality I'm happy with I may look at photographing my whole army in the same way for a uniform way and create a dedicated page containing all the best photos of each unit.
 
 For now, here's the new standard for future photography!
 
-[gallery size="medium" ids="601,603,602,599"]
+```grid|2
+![](09-01-01-DSC01958.jpg)
+![](09-01-01-DSC01961.jpg)
+```
+
+```grid|2
+![](2015-08-11-23.53.21.jpg)
+![](2015-08-11-23.54.07.jpg)
+```

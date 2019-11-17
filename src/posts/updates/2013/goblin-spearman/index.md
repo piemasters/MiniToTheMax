@@ -3,6 +3,7 @@ title: 'Update: Gloomspite Gitz – Spearmen'
 date: '2013-03-07'
 categories: [Update, Gloomspite Gitz]
 tags: [goblins, movement tray, mushrooms, night goblins]
+featuredImage: 2013-03-07-12.51.50.jpg
 ---
 
 Here's a quick look of the start of my army of Night Goblins. This is a a unit of 40 Spearman, the largest unit of my army. The front row is more or less complete, while the other 3 rows are now just in need of a the final layer and highlight.
@@ -17,4 +18,10 @@ I also made some mushrooms, being Night Goblins, from greenstuff rolled up and a
 
 Let me know what you think below as always!
 
-[![2014-04-15-15.38.55](http://192.168.2.30/minitothemax/wp-content/uploads/2015/07/2014-04-15-15.38.55-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2014-04-15-15.38.55.jpg)[![2014-04-15-15.39.19](http://192.168.2.30/minitothemax/wp-content/uploads/2015/07/2014-04-15-15.39.19-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/07/2014-04-15-15.39.19.jpg)
+## Gallery
+
+```grid|3
+![](2013-03-07-12.51.50.jpg)
+![](2014-04-15-15.38.55.jpg)
+![](2014-04-15-15.39.19.jpg)
+```

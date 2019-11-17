@@ -4,6 +4,7 @@ date: '2016-03-20'
 categories: [Grey Knights, Showcase]
 tags:
   [base, grey knights, grey knights, interceptor, lava, painting, space marine]
+featuredImage: DSC02520.jpg
 ---
 
 Today I completed my Grey Knight Interceptor Squad! As always it's taken longer than expected, but I'm really happy with the final result.
@@ -16,6 +17,21 @@ I also did my final batch of bases for my Grey Knight infantry. The two remainin
 
 As always let me know what you think below. Each post I'm trying to improve my photos and I'm slowly getting towards a style I like. Next up... Castellan Crowe!
 
-## Grey Knight Interceptor Squad
+## Gallery
 
-[gallery size="large" ids="641,640,639,638,637,636"]
+```grid|3
+![](DSC02514.jpg)
+![](DSC02515.jpg)
+![](DSC02516.jpg)
+```
+
+```grid|3
+![](DSC02517.jpg)
+![](DSC02518.jpg)
+![](DSC02519.jpg)
+```
+
+```grid|1
+![](DSC02520.jpg)
+```
+

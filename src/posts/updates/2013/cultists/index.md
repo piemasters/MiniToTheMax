@@ -3,6 +3,7 @@ title: 'Update: Chaos Cultists'
 date: '2013-02-24'
 categories: [Update, Chaos]
 tags: [chaos, cultists, dark vengance]
+featuredImage: Cultists.jpg
 ---
 
 Here's yet another work in progress update. This time it's the progress I've made on my old Dark Vengeance box set, starting with the easiest to paint, the Chaos Cultists. My partner collects a Nurgle army, so I was tempted to paint the boxset to match them by going for a Death Guard army. However, I'm not confident enough that I could paint a dirty white army well enough for them not to just look like a mess. I feel like Crimson Slaughter colour scheme really makes the most of the models, so I might just end up following that.
@@ -13,4 +14,21 @@ I enjoyed painting the skin and the tattoos, as you don't really get much of a c
 
 Give me you're opinions in the comments below, it might help me make my choice for what to go for. As always, here' some photos of how they're looking.
 
-[gallery size="medium" ids="351,352,353,354,355,349,350"]
+
+## Gallery
+
+```grid|2
+![](2013-02-24-17.06.52.jpg)
+![](2013-02-24-17.08.31.jpg)
+```
+
+```grid|3
+![](Cultist.jpg)
+![](Cultist2.jpg)
+![](Cultist3.jpg)
+```
+
+```grid|2
+![](Cultist4.jpg)
+![](Cultists.jpg)
+```

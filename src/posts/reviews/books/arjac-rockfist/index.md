@@ -8,8 +8,6 @@ featuredImage: arjac-le-spread.jpg
 
 ## _“The Man-Mountain, Grimnar’s Champion, Anvil of Fenris”_
 
-![arjac-le-spread](arjac-le-spread.jpg)
-
 With Arjac Rockfist being my favourite character in 40k I had to buy this book, especially with it being a limited edition.
 
 Funnily enough I don’t actually own the model. I remember reading the 5th edition Codex when it first came out, before there was a model, and being really drawn to this picture:
@@ -55,8 +53,8 @@ The story follows the short history text covered on his page in the 5th ed Codex
 
 Overall I found the book really well made and the story as a whole was really good. I just wish it had been longer. At the back are a few close ups of his weapons, which I have included below.
 
-![wargear](wargear.jpg)
-
-![hammer](hammer.jpg)
-
-![anvil](anvil.jpg)
+```grid|3
+![](wargear.jpg)
+![](hammer.jpg)
+![](anvil.jpg)
+```

@@ -12,6 +12,7 @@ tags:
     purifiers,
     space marine,
   ]
+featuredImage: DSC02380.jpg
 ---
 
 Finally! It's been a while since my last post, I've just got so tired of painting silver! However I finally got round to completing this squad of Grey Knight Purifiers and am so glad they're out the way!
@@ -24,4 +25,24 @@ As always I've posted more photos below and for the first time I've uploaded a v
 
 ## Gallery
 
-[gallery size="large" ids="628,629,626,627,625,624,623,622,621"]
+```grid|3
+![](2016-02-04-13.58.52.jpg)
+![](2016-02-04-13.59.13.jpg)
+![](2016-02-04-13.59.56.jpg)
+```
+
+```grid|3
+![](2016-02-04-14.00.12.jpg)
+![](2016-02-04-14.00.45.jpg)
+![](2016-02-04-14.01.26.jpg)
+```
+
+```grid|2
+![](2016-02-04-14.01.49.jpg)
+![](2016-02-04-14.02.11.jpg)
+```
+
+```grid|2
+![](DSC02368.jpg)
+![](DSC02380.jpg)
+```

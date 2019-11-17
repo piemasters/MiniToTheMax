@@ -3,6 +3,7 @@ title: 'Showcase: Castellan Crowe'
 date: '2016-05-27'
 categories: [Grey Knights, Showcase]
 tags: [character, crowe, grey knights, lava, purifiers, space marine]
+featuredImage: 2016-05-15-20.36.15.jpg
 ---
 
 ## Castellan Crowe
@@ -28,7 +29,7 @@ For a metal miniature I think it's great and don't think an upgrade is really ne
 
 The main focus point of Crowe is the sword, the Black Blade of Antwyr. It was important to get it right and I spent hours of research looking to see how others had done it and what the best colour combinations were. In the end I found two I really liked. The first [found here](http://bloodybeast.com/blog/2011/05/10/grey-knight-castellan-crowe/) has the sword being painted completely black, with the runes glowing purple within. I really like this effect and it definitely fits with the sword being known as the ' Black Blade'. The second [found here](https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12627954_169027223466585_565315599_n.jpg) is painted bright orange with yellow runes. This really makes the sword stand out and gives it a chaotic feel.
 
-In the end I decided I liked the bright fiery effect as I wanted it to really stand out and I had already painted [Brother-Captain Stern's](http://www.minitothemax.com/showcase-brother-captain-stern/) sword purple. However, after having it painted yellow and orange I didn't really like it. I also felt it didn't really tie in with the 'Black Blade' so I darkened the base of the blade into black. Once I had done that I got the idea of the blade remaining black when dormant, then blazing into life when combat begins so I highlighted the top of the blade up to pure white. This looked much better, but now the top of the blade faded to white the yellow runes at the top blended in. To fix this I repainted painted the runes in the same colours but in the opposite direction to the sword and much brighter. This created the desired effect.
+In the end I decided I liked the bright fiery effect as I wanted it to really stand out and I had already painted [Brother-Captain Stern's](/blog/posts/showcases/40k/grey-knights/stern) sword purple. However, after having it painted yellow and orange I didn't really like it. I also felt it didn't really tie in with the 'Black Blade' so I darkened the base of the blade into black. Once I had done that I got the idea of the blade remaining black when dormant, then blazing into life when combat begins so I highlighted the top of the blade up to pure white. This looked much better, but now the top of the blade faded to white the yellow runes at the top blended in. To fix this I repainted painted the runes in the same colours but in the opposite direction to the sword and much brighter. This created the desired effect.
 
 I chose red for the cloak to really brighten the miniature, then chose black for the banner as I felt more red would be too much and I didn't really feel like it should be a big focus point. The freehand pattern on the cloak was definitely the most complex freehand I've attempted so far. I feel it came out OK but not perfect, it is one of  the key areas I need to improve on for the future. I just find it difficult to get the right amount of paint on the brush and to get it put down before it drys, often meaning I'm working quicker than I would like and usually with too much paint on the brush.
 
@@ -38,4 +39,13 @@ Crowe was a good miniature to paint and likely the last metal one for a very lon
 
 ## Gallery
 
-[gallery size="large" ids="679,680,681,682,683"]
+```grid|3
+![](2016-05-15-20.36.15.jpg)
+![](2016-05-15-20.36.24.jpg)
+![](2016-05-15-20.45.18.jpg)
+```
+
+```grid|2
+![](DSC02716.jpg)
+![](DSC02724.jpg)
+```

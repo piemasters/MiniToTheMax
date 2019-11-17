@@ -3,6 +3,7 @@ title: 'Update: Skullvane Manse Lair of the Astromancer II'
 date: '2014-06-03'
 categories: [Update, Scenery]
 tags: [skullvane manse, terrain]
+featuredImage: 2014-06-03-18.14.17.jpg
 ---
 
 I thought I’d share the progress I’ve made so far on this massive piece of scenery, Skullvane Manse. The entire side with the tower is now complete and the roof and wood is complete on the other side. There’s just a huge amount of detail on this kit that you only start to see the more you paint it. It’s taking time to complete it to a high quality, but will be fully worth it once it's done.
@@ -13,4 +14,20 @@ The bird mess added to the roof gave it a bit more character and I've spent a lo
 
 Once it’s complete I’ll write up a tutorial listing out exactly how I painted it. I know it’s no longer in production, but if you have the kit lying about or have any similar fantasy terrain I’m sure it might come in useful!
 
-[gallery size="medium" ids="280,287,286,285,284,283,282,281"]
+```grid|3
+![](2014-06-03-18.11.56.jpg)
+![](2014-06-03-18.12.14.jpg)
+![](2014-06-03-18.13.08.jpg)
+```
+
+```grid|3
+![](2014-06-03-18.13.30.jpg)
+![](2014-06-03-18.13.47.jpg)
+![](2014-06-03-18.14.03.jpg)
+```
+
+```grid|3
+![](2014-06-03-18.14.10.jpg)
+![](2014-06-03-18.14.17.jpg)
+![](2014-06-03-18.14.24.jpg)
+```

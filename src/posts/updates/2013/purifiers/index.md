@@ -3,6 +3,7 @@ title: 'Update: Grey Knight Purifiers'
 date: '2013-10-25'
 categories: [Update, Grey Knights]
 tags: [force weapon, grey knights, lava, purifiers, space marine]
+featuredImage: Purifier.jpg
 ---
 
 This is the latest update for my Grey Knight Purifiers. Rather than batch paint the unit I decided to work through a model at a time and try and complete each in a day.
@@ -15,8 +16,12 @@ I painted the eyes in the same way as normal, but only did the glow effect belo
 
 I also went with a new shoulder marking for the squad, I’ll add a close up of it when I get the chance and have the whole unit complete.
 
-Hopefully I’m still improving with each squad. ![:)](http://web.archive.org/web/20131009211215im_/http://www.minitothemax.com/wp-includes/images/smilies/icon_smile.gif) I feel like I've sped the process up slightly, but will definately try and go back to batch painting for the next squad, I just haven't felt like I've had the time to make much progress painting that way recently.
+Hopefully I’m still improving with each squad. I feel like I've sped the process up slightly, but will definitely try and go back to batch painting for the next squad, I just haven't felt like I've had the time to make much progress painting that way recently.
 
 I've been busy recently with other lots of other projects, but I finally got round to basing my purifiers and finished painting the second! Here they are below. I've added a watermark to photos just as a trial for now, let me know what you think below.
 
-[![Purifier](http://192.168.2.30/minitothemax/wp-content/uploads/2015/06/Purifier-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/Purifier.jpg) [![DSC019901](http://192.168.2.30/minitothemax/wp-content/uploads/2015/06/DSC019901-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/DSC019901.jpg) [![DSC019911](http://192.168.2.30/minitothemax/wp-content/uploads/2015/06/DSC019911-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/DSC019911.jpg)
+```grid|3
+![](DSC019891.jpg)
+![](DSC019901.jpg)
+![](DSC019911.jpg)
+```

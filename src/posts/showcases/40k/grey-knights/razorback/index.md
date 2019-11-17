@@ -3,6 +3,7 @@ title: 'Showcase: Grey Knight Razorback'
 date: '2014-04-19'
 categories: [Grey Knights, Showcase]
 tags: [grey knights, razorback, space marine, tank]
+featuredImage: DSC00408.jpg
 ---
 
 This Razorback is my first completed tank for my Grey Knight army and was a completely different project to the Stormraven painted previously.
@@ -17,4 +18,21 @@ I always run my Razorback with twin-linked Lascannons as it's a weapon that Grey
 
 As always I've added some more photos below. I’m currently working on a load of different projects, so expect some more posts very soon!
 
-[gallery size="medium" ids="208,209,210,215,213,212,211" orderby="rand"]
+## Gallery
+
+```grid|3
+![](DSC00407.jpg)
+![](DSC00408.jpg)
+![](DSC00409.jpg)
+```
+
+```grid|3
+![](DSC00410.jpg)
+![](DSC00411.jpg)
+![](DSC00412.jpg)
+```
+
+```grid|2
+![](DSC00413.jpg)
+![](zoom.jpg)
+```

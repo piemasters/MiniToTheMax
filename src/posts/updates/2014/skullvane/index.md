@@ -3,6 +3,7 @@ title: 'Update: Skullvane Manse Lair of the Astromancer'
 date: '2014-04-15'
 categories: [Update, Scenery]
 tags: [skullvane manse, terrain]
+featuredImage: 2014-04-15-15.33.40.jpg
 ---
 
 > Jutting from a cliff carved with skulls and decorated with arcane symbols, Skullvane Manse is a forbidding edifice at the best of times. When the stars are in a certain alignment and the Winds of Magic blow strong, however, the tower attracts eldritch power that discharges around the battlefield.
@@ -13,4 +14,14 @@ It’s easily the most impressive terrain kit I’ve seen Games Workshop produce
 
 With the first base colours down its starting to get there, but there’s still a long way to go! Next up, get the roof finished. I will look at putting together my own tutorial on how I've painted it once it has been completed.
 
-[gallery size="medium" ids="242,241,240,239,238,237"]
+```grid|3
+![](2014-04-15-15.31.57.jpg)
+![](2014-04-15-15.32.24.jpg)
+![](2014-04-15-15.32.40.jpg)
+```
+
+```grid|3
+![](2014-04-15-15.32.53.jpg)
+![](2014-04-15-15.33.06.jpg)
+![](2014-04-15-15.33.24.jpg)
+```

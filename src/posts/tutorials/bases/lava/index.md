@@ -3,6 +3,7 @@ title: 'Tutorial: Lava Bases'
 date: '2015-08-16'
 categories: [Tutorial]
 tags: [bases, grey knights, lava, painting]
+featuredImage: 12-08-03-DSC00765.jpg
 ---
 
 This tutorial concludes the series on how to paint Grey Knights by adding the classic lava bases, although this could be used for any miniatures. For the previous tutorials on painting Grey Knights see Part 1 and Part 2.
@@ -36,33 +37,33 @@ The materials you’ll need are:
 
 First off you want to give your bases a base layer. Add a couple of layers of Khorne Red until you get a solid base colour, then add a thin layer of Evil Sunz Scarlet to give the base a slightly streaky appearance. This starts to give the feel of the lava moving. Then give the bases a heavy wash of Agrax Earthshade to give the appearance of the different temperatures of the lava. Lastly paint round the outside of each base with Abbadon Black to give a nice contrast.
 
-[![01-Base-lava](http://192.168.2.30/minitothemax/wp-content/uploads/2015/06/01-Base-lava-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/01-Base-lava.jpg)
+![01-Base-lava](01-Base-lava.jpg)
 
 With the bases given their base layer, we move onto the rocks.
 
-[![02-Base-Rock-Cork](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/02-Base-Rock-Cork-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/02-Base-Rock-Cork.jpg)
+![02-Base-Rock-Cork](02-Base-Rock-Cork.jpg)
 
 Here you can see the cork I use for making the rocks. I find it's a great material to use as when torn the edges look great and when drybrushed it looks just like stone. It's also light weight compared to using actual stones and its flat on top making gluing on models nice and easy.
 
 First I rip some off cork ensuring that there are no straight edges and try to get some different shapes and sizes to mix things up a bit. Then I give them a black base coat.
 
-[![03-Base-Rock-Black](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/03-Base-Rock-Black-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/03-Base-Rock-Black.jpg)
+![03-Base-Rock-Black](03-Base-Rock-Black.jpg)
 
 Next I add a Rhinox Hide drybrush just so the rocks won’t look plain grey at the end.
 
-[![04-Base-Brown](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/04-Base-Brown-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/04-Base-Brown.jpg)
+![04-Base-Brown](04-Base-Brown.jpg)
 
 Next up is a heavy drybrush of Dawnstone.
 
-[![05-Base-Rock-Grey](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/05-Base-Rock-Grey-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/05-Base-Rock-Grey.jpg)
+![05-Base-Rock-Grey](05-Base-Rock-Grey.jpg)
 
 Now wash heavily with both Nuln Oil and Agrax Earthshade to bring back the texture of the cork and give them more definition.
 
-[![06-Base-Rock-Washes](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/06-Base-Rock-Washes-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/06-Base-Rock-Washes.jpg)
+![06-Base-Rock-Washes](06-Base-Rock-Washes.jpg)
 
-Next <span style="line-height: 1.625;">very lightly drybrush the cork using Rakarth Flesh. This gives the rocks a highlight that ensures detail isn't lost from the washes.</span>
+Next very lightly drybrush the cork using Rakarth Flesh. This gives the rocks a highlight that ensures detail isn't lost from the washes.
 
-[![07-Base-Rock-Highlight](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/07-Base-Rock-Highlight-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/07-Base-Rock-Highlight.jpg)
+![07-Base-Rock-Highlight](07-Base-Rock-Highlight.jpg)
 
 The final stage is to drybrush the edges of the cork with all your lava colours, moving from a red all the way up to yellow. This gives a nice OSL effect showing the heat of the glowing lava.
 
@@ -70,19 +71,19 @@ What you’re aiming for is where the rock meets the base to be dark red and the
 
 With this done glue the rocks onto the bases in a way that the models feet can be glued to the rocks, avoiding the lava.
 
-[![08-Base-Rock-Lava](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/08-Base-Rock-Lava-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/08-Base-Rock-Lava.jpg)
+![08-Base-Rock-Lava](08-Base-Rock-Lava.jpg)
 
 With the rocks attached, I start with Evil Sunz Scarlet, covering all but the lava closet to the rock. You want the lava closet to the rock to look cooler, while the lava further out looks hotter (brighter).
 
-[![09-Base-Lava-Red](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/09-Base-Lava-Red-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/09-Base-Lava-Red.jpg)
+![09-Base-Lava-Red](09-Base-Lava-Red.jpg)
 
 Next add the oranges (Squig Orange and  Troll Slayer Orange) leaving a thin ring of my last layer untouched each time. Then add the Averland Sunset as a final highlight, applying it carefully as you don’t want it to be too bright at this stage.
 
-[![10-Base-Lava-Oranges](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/10-Base-Lava-Oranges-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/10-Base-Lava-Oranges.jpg)
+![10-Base-Lava-Oranges](10-Base-Lava-Oranges.jpg)
 
 Agrax Earthshade is then added to help blend the colours together and to dampen the brightness of the colour, giving a real appearance of lava.
 
-[![12-Base-Lava-Wash](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/12-Base-Lava-Wash-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/12-Base-Lava-Wash.jpg)
+![12-Base-Lava-Wash](12-Base-Lava-Wash.jpg)
 
 All that needs doing now is to smooth out those transitions a bit more using the watered down colours that match the relevant transition. An example being the left most base having an obvious line between the red and the orange. To fix this I watered down the Squig Orange and applied it over the line to blend the colours together.
 
@@ -90,14 +91,17 @@ Once complete a final yellow or even fine white highlight can then be added to b
 
 With the bases complete the models can be attached, along with the grass clumps to add further variety.
 
-[![13-Base-Lava-Complete](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/13-Base-Lava-Complete-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/13-Base-Lava-Complete.jpg)
+![13-Base-Lava-Complete](13-Base-Lava-Complete.jpg)
 
 This  technique can be applied to the rest of your army. For character bases, I add an extra layer of rock and use Greenstuff to create bubbles, with the top of the bubble being brightest and the lower darker, like so..
 
-[![12-08-03-DSC00769](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/12-08-03-DSC00769-768x1024.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/12-08-03-DSC00769.jpg)
+![12-08-03-DSC00769](12-08-03-DSC00769.jpg)
 
 This can even be applied for flying bases. The larger rocks are just lumps of bark found outside and cut into shape and the gravel is Citadel Sand.
 
-[![12-08-03-DSC00762](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/12-08-03-DSC00762-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/12-08-03-DSC00762.jpg)
+## Gallery
 
-[![12-08-03-DSC00765](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/12-08-03-DSC00765-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/12-08-03-DSC00765.jpg)
+```grid|2
+![12-08-03-DSC00762](12-08-03-DSC00762.jpg)
+![12-08-03-DSC00765](12-08-03-DSC00765.jpg)
+```

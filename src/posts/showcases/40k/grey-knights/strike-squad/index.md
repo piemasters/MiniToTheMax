@@ -6,8 +6,6 @@ tags: [force weapon, grey knights, lava, painting, space marine]
 featuredImage: strike-squad-1.jpg
 ---
 
-![Strike Squad 1](./images/strike-squad/strike-squad-1.jpg)
-
 This is my first painted Grey Knight squad. I decided to start with a full 10 man Strike Squad! I also decided to go with the classic Grey Knight look of lava bases and the shining blue Nemesis Force Weapons as it's the look that really got my into Grey Knights in the first place.
 
 The squad has two Psycannons that were assembled before 7th edition. Unfortunately since the introduction of 7th they've changed from 'Assault 2 / Heavy 4' to 'Salvo (2/4)' meaning they can no longer shoot and assault after moving. This means that they've had a bit of a nerf, but thankfully despite this they are still extremely formidable weapons and make them great for holding objectives. Maybe not the best against Space Marines at AP4, but great against most other armies.

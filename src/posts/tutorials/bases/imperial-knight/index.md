@@ -14,6 +14,7 @@ tags:
     tutorial,
     water effects,
   ]
+featuredImage: 2015-08-19-12.42.18.jpg
 ---
 
 Last week I was asked to put together a tutorial on how I created my Imperial Knight's base. Below I list the steps that were required, then go into detail behind each.
@@ -31,17 +32,19 @@ Last week I was asked to put together a tutorial on how I created my Imperial Kn
 
 ### Step 1 - Cork Board
 
-[![02-Base-Rock-Cork](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/02-Base-Rock-Cork-1024x768.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/02-Base-Rock-Cork.jpg)The first thing you want need is a sheet or cork board. Then to get the rough shape of the base you want to place it on the cork and draw round it. Then rather than cut it out you just want to tear it with your hands. This way you get a really natural rocky look. If you cut it the edges look very flat, whereas tearing it gives you a great 3D craggy look.
+![02-Base-Rock-Cork](02-Base-Rock-Cork.jpg)
+
+The first thing you want need is a sheet or cork board. Then to get the rough shape of the base you want to place it on the cork and draw round it. Then rather than cut it out you just want to tear it with your hands. This way you get a really natural rocky look. If you cut it the edges look very flat, whereas tearing it gives you a great 3D craggy look.
 
 The effect looks great with multiple layers. My current rule is to have 1 layer for general infantry and 2 layers for characters to give them that extra bit of height to help them stand out. You can then add additional smaller pieces around the feet to stop the base looking too flat.
 
 For my Imperial Knight base I chose to only add 1 layer as it certainly doesn't require any additional height to make it stand out! I left space around the edge of one half of the base so I could add the ice, with smaller pieces in the gaps as well as around the feet. I drew around the feet of the Imperial Knight only the base layer of cork before gluing it all down to make sure I left plenty of space for it to stand.
 
-For more details you can check out my [Lava Bases](http://www.minitothemax.com/tutorial-lava-bases/) tutorial.
+For more details you can check out my [Lava Bases](/blog/posts/tutorials/bases/lava) tutorial.
 
 ### Step 2 - Apply Magnets
 
-[![Feet](http://www.minitothemax.com/minitothemax/wp-content/uploads/2016/05/Feet.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2016/05/Feet.jpg)
+![Feet](Feet.jpg)
 
 I magnetised my Imperial Knight's torso to the legs (not the easiest task!). This makes it much easier to transport in two pieces. Because of that I didn't really want to keep a really bulky base attached to the feet, as it's much easier to pack flat. So for me it made sense to magnetise the legs to the base, feel free to skip this step if transportation isn't really an issue!
 
@@ -49,21 +52,23 @@ So what you need is to pick up some [2-5mm Neodymium Magnets](https://www.amazo
 
 Under each foot you will notice each toe is hollow. What you need to do is fill each toe green stuff / milliput and push in a magnet into the centre so it sits dead flat in the circled areas. The easiest way is to push them half way in, make sure they are reasonably flat, then push the foot onto a flat surface at a 90° angle. This makes sure they don't go in too far, if that happens they won't make contact with the base giving a weak attraction. Scrape off any excess putty and leave to dry.
 
-Once dry quickly paint on a blob of paint onto each magnet (I used red) and squash the feet down onto the base while the paint is still wet. Once you take the feet off you should have 8 points, one for where each magnet touches the base. At these points you need  to drill using a drill-bit the same width as your magnets and drill in the same depth as your magnets. One at a time squeeze in a blob of superglue into each hole and push in your magnet, **IMPORTANT** making sure it's facing the right way!!!! Once dry scrape off any remaining paint and put a small layer or superglue round the outside of each magnet where it touches the putty/cork just to secure them and stop them breaking out.
+Once dry quickly paint on a blob of paint onto each magnet (I used red) and squash the feet down onto the base while the paint is still wet. Once you take the feet off you should have 8 points, one for where each magnet touches the base. At these points you need  to drill using a drill-bit the same width as your magnets and drill in the same depth as your magnets. 
+
+One at a time squeeze in a blob of superglue into each hole and push in your magnet, **IMPORTANT** making sure it's facing the right way!!!! Once dry scrape off any remaining paint and put a small layer or superglue round the outside of each magnet where it touches the putty/cork just to secure them and stop them breaking out.
 
 ### Step 3 - Cast & Apply Ruins
 
-[![Charlottes_party_and_bases_030](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/Charlottes_party_and_bases_030.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/Charlottes_party_and_bases_030.jpg)
+![Charlottes_party_and_bases_030](Charlottes_party_and_bases_030.jpg)
 
 To add some extra interest to the base I wanted to add some ruins. A while back I purchased [these glacial ruins](http://www.fantascape.co.uk/119-glacial-ruins) from [http://www.fantascape.co.uk](http://www.fantascape.co.uk). They should look great once I finally get round to painting my Space Wolves. However, for this base I only needed the detailed section of the base.
 
-To do this I cast several bases using Instamold and Milliput. I have a great [Instant Mold & Milliput](http://www.minitothemax.com/tutorial-review-casting-using-instant-mold/) tutorial so check it out, I find it comes in handy for almost every project. In this case you only put in enough milliput to get the ruins, not the circular base.
+To do this I cast several bases using Instamold and Milliput. I have a great [Instant Mold & Milliput](/blog/posts/reviews/tools/instant-mold/) tutorial so check it out, I find it comes in handy for almost every project. In this case you only put in enough milliput to get the ruins, not the circular base.
 
 Once cast I just trimmed them down and glued them down to the base in the remaining gaps.
 
 ### Step 4 - Applying Gravel
 
-[![gravel](http://www.minitothemax.com/minitothemax/wp-content/uploads/2016/05/gravel.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2016/05/gravel.jpg)
+![gravel](gravel.jpg)
 
 This is the easiest step. To give the base some extra texture you want to add some extra gravel or sand to the base. I used Games Workshop's old sand tub, which acts nicely as a reasonably fine but variably grained gravel.
 
@@ -73,9 +78,9 @@ Once it's all set you will want to apply another layer of watered down PVA glue
 
 ### Step 5 - Painting the Base
 
-[![2015-08-19 12.40.35](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/08/2015-08-19-12.40.35-1024x858.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/08/2015-08-19-12.40.35.jpg)
+![2015-08-19 12.40.35](2015-08-19-12.40.35.jpg)
 
-At this point you are ready to get the base painted. Once again my [Lava Bases](http://www.minitothemax.com/tutorial-lava-bases/) tutorial goes over the way I paint the cork rocks.
+At this point you are ready to get the base painted. Once again my [Lava Bases](/blog/posts/tutorials/bases/lava) tutorial goes over the way I paint the cork rocks.
 
 For the glacial ruins stone I applied a Karak Stone base, followed by a heavy Agrax Earthshade wash. I then highlighted it back up with Karak Stone, Ushabati Bone. Next I applied patched areas of Seraphim Sepia was, then very light final highlights of Screaming Skull and Pallid Wych Flesh.
 
@@ -85,7 +90,7 @@ The area of the base left flat for the water effects was painted in a similar 
 
 ### Step 6 - Apply Weathering Powders
 
-[![freshud](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/freshud.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/freshud.jpg)
+![fresh mud](freshud.jpg)
 
 At this point it's really worth adding some weathering onto the ruins, patches of gravel and around the feet to show how the ?Imperial Knight is really digging up the ground beneath it with its enormous weight.
 
@@ -97,7 +102,7 @@ For the gravel I mix the powder with PVA glue and blob it on to give it a really
 
 ### Step 7 - Apply Grass, Snow & Icicles
 
-[![deluxe_materials_scenic_snow](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/deluxe_materials_scenic_snow.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/06/deluxe_materials_scenic_snow.jpg)
+![deluxe_materials_scenic_snow](deluxe_materials_scenic_snow.jpg)
 
 The first step is to apply your grass tufts. For this base I used Games Workshops Mordheim Turf. However, there area a lot of great grass tufts out there so take a look!
 
@@ -111,7 +116,7 @@ I also added a few icicles to the overhang of the ruins. I used Dragonforge icic
 
 ### Step 8 - Apply Water Effects
 
-[![waterJPG](http://www.minitothemax.com/minitothemax/wp-content/uploads/2016/05/waterJPG.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2016/05/waterJPG.jpg)
+![waterJPG](waterJPG.jpg)
 
 For the last step I added the water effects to give the appearance of a frozen lake surrounding the rock base.
 
@@ -127,4 +132,9 @@ So at this stage I think I've wrapped everything up. I'm sorry for not including
 
 If you liked the tutorial or have any feedback or questions just let me know. Until next time!
 
-[![imperial knight base](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/08/2015-08-19-12.42.18-1024x758.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/08/2015-08-19-12.42.18.jpg)[![imperial knight base](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/08/2015-08-19-12.42.27-1024x702.jpg)](http://www.minitothemax.com/minitothemax/wp-content/uploads/2015/08/2015-08-19-12.42.27.jpg)
+## Gallery
+
+```grid|2
+![imperial knight base](2015-08-19-12.42.18.jpg)
+![imperial knight base](2015-08-19-12.42.27.jpg)
+```
