@@ -8,7 +8,9 @@ import Img from "gatsby-image"
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+      ) {
         edges {
           node {
             frontmatter {
@@ -16,7 +18,7 @@ const BlogPage = () => {
               date
               featuredImage {
                   childImageSharp {
-                      fluid(maxWidth: 800, maxHeight: 200) {
+                      fluid(maxWidth: 800, maxHeight: 300) {
                           ...GatsbyImageSharpFluid
                       }
                   }
