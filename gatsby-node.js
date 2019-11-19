@@ -1,5 +1,5 @@
-const { createFilePath } = require("gatsby-source-filesystem");
 const path = require('path');
+const { createFilePath } = require("gatsby-source-filesystem");
 
 module.exports.onCreateNode = ({ node, getNode, actions }) => {
   /**
@@ -20,12 +20,13 @@ module.exports.onCreateNode = ({ node, getNode, actions }) => {
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const blogTemplate = path.resolve('./src/templates/blog.js');
+  const postTemplate = path.resolve('./src/templates/blog.js');
+  const blogTemplate = path.resolve('./src/pages/blog.js');
 
   /**
    * Handle local markdown posts
    */
-  const res = await graphql(`
+  const result = await graphql(`
     query {
       allMarkdownRemark {
         edges {
@@ -39,13 +40,44 @@ module.exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  res.data.allMarkdownRemark.edges.forEach(edge => {
+  if (result.errors) {
+    throw result.errors
+  }
+
+  // Create blog posts pages.
+  const posts = result.data.allMarkdownRemark.edges;
+  console.log(posts)
+
+  posts.forEach((edge, index) => {
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
+    const next = index === 0 ? null : posts[index - 1].node;
     createPage({
-      component: blogTemplate,
+      component: postTemplate,
       path: edge.node.fields.slug,
       context: {
         slug: edge.node.fields.slug,
+        previous,
+        next,
       },
     });
   });
+
+  // Create blog post list pages
+  const postsPerPage = 2;
+  const numPages = Math.ceil(posts.length / postsPerPage);
+
+
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/` : `/${i + 1}`,
+      component: blogTemplate,
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
+    })
+  })
+
 };

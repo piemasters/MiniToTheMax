@@ -1,15 +1,17 @@
 import React from 'react';
 import Layout from '../layouts/layout';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import blogStyles from './blog.module.scss';
 import Head from '../components/head';
 import Img from "gatsby-image"
 
-const BlogPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(
+const BlogPage = (props) => {
+  const data = graphql`
+    query blogListQuery($skip: Int!, $limit: Int!) {
+      posts: allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: DESC }
+          limit: $limit
+          skip: $skip
       ) {
         edges {
           node {
@@ -31,14 +33,16 @@ const BlogPage = () => {
         }
       }
     }
-  `);
+  `;
+  console.log(props)
+    console.log(data)
 
   return (
     <Layout>
       <Head title="Blog" />
       <h1>Blog</h1>
       <ol className={blogStyles.posts}>
-        {data.allMarkdownRemark.edges.map(edge => {
+        {data.posts.edges.map(edge => {
           return (
             <li className={blogStyles.post} key={edge.node.fields.slug}>
               <Link to={edge.node.fields.slug}>
