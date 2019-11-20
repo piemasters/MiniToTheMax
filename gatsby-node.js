@@ -8,7 +8,6 @@ module.exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === 'MarkdownRemark') {
-    //const slugOld = path.basename(node.fileAbsolutePath, '.md');
     const slug = createFilePath({ node, getNode, basePath: `` });
     createNodeField({
       node,
@@ -18,7 +17,7 @@ module.exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 };
 
-module.exports.createPages = async ({ graphql, actions }) => {
+module.exports.createPages = async ({ graphql, actions, page }) => {
   const { createPage } = actions;
   const postTemplate = path.resolve('./src/templates/blog.js');
   const blogTemplate = path.resolve('./src/pages/blog.js');
@@ -28,7 +27,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
    */
   const result = await graphql(`
     query {
-      allMarkdownRemark {
+      posts: allMarkdownRemark {
         edges {
           node {
             fields {
@@ -45,8 +44,10 @@ module.exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Create blog posts pages.
-  const posts = result.data.allMarkdownRemark.edges;
-  console.log(posts)
+  const posts = result.data.posts.edges;
+
+  const fs = require('fs');
+  fs.writeFile('test.txt', JSON.stringify(posts), (err) => console.log(err));
 
   posts.forEach((edge, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node;
@@ -66,18 +67,18 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const postsPerPage = 2;
   const numPages = Math.ceil(posts.length / postsPerPage);
 
-
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
       path: i === 0 ? `/` : `/${i + 1}`,
       component: blogTemplate,
       context: {
+        ...page,
         limit: postsPerPage,
         skip: i * postsPerPage,
         numPages,
         currentPage: i + 1,
       },
     })
-  })
+  });
 
 };
