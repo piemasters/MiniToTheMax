@@ -1,51 +1,18 @@
 import React from 'react';
 import Layout from '../layouts/layout';
 import { Link, graphql } from 'gatsby';
-import blogStyles from './blog.module.scss';
+import blogStyles from '../pages/blog.module.scss';
 import Head from '../components/head';
 import Img from "gatsby-image"
 
-const BlogPage = ({data, pageContext}) => {
-    // const postQuery = graphql`
-    //     query blogPageQuery($skip: Int!, $limit: Int!) {
-    //         allMarkdownRemark(
-    //             sort: { fields: [frontmatter___date], order: DESC }
-    //             limit: $limit
-    //             skip: $skip
-    //         ) {
-    //             edges {
-    //                 node {
-    //                     frontmatter {
-    //                         title
-    //                         date
-    //                         featuredImage {
-    //                             childImageSharp {
-    //                                 fluid(maxWidth: 800, maxHeight: 300) {
-    //                                     ...GatsbyImageSharpFluid
-    //                                 }
-    //                             }
-    //                         }
-    //                     }
-    //                     fields {
-    //                         slug
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // `;
-
-    console.log("DATA: ", data);
-    console.log("PROPS: ", pageContext);
+const BlogList = ({data, pageContext}) => {
 
     const posts = data.posts.edges;
-    //const { data } = props;
-    //const posts = data.allMarkdownRemark.edges;
-    // const { currentPage, numPages } = this.props.pageContext;
-    // const isFirst = currentPage === 1;
-    // const isLast = currentPage === numPages;
-    // const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString();
-    // const nextPage = (currentPage + 1).toString();
+    const { currentPage, numPages } = pageContext;
+    const isFirst = currentPage === 1;
+    const isLast = currentPage === numPages;
+    const prevPage = '/blog/' + (currentPage - 1 === 1 ? '' : (currentPage - 1).toString());
+    const nextPage = '/blog/' + ((currentPage + 1).toString());
 
     return (
       <Layout>
@@ -70,6 +37,46 @@ const BlogPage = ({data, pageContext}) => {
             );
           })}
         </ol>
+          <ul
+              style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  listStyle: 'none',
+                  padding: 0,
+              }}
+          >
+              {!isFirst && (
+                  <Link to={prevPage} rel="prev">
+                      ← Previous Page
+                  </Link>
+              )}
+              {Array.from({ length: numPages }, (_, i) => (
+                  <li
+                      key={`pagination-number${i + 1}`}
+                      style={{
+                          margin: 0,
+                      }}
+                  >
+                      <Link
+                          to={`/posts/${i === 0 ? '' : i + 1}`}
+                          style={{
+                              textDecoration: 'none',
+                              color: i + 1 === currentPage ? '#ffffff' : '',
+                              background: i + 1 === currentPage ? '#007acc' : '',
+                          }}
+                      >
+                          {i + 1}
+                      </Link>
+                  </li>
+              ))}
+              {!isLast && (
+                  <Link to={nextPage} rel="next">
+                      Next Page →
+                  </Link>
+              )}
+          </ul>
       </Layout>
     );
 };
@@ -103,4 +110,4 @@ export const postQuery = graphql`
     }
 `;
 
-export default BlogPage;
+export default BlogList;

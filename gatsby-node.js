@@ -20,7 +20,7 @@ module.exports.onCreateNode = ({ node, getNode, actions }) => {
 module.exports.createPages = async ({ graphql, actions, page }) => {
   const { createPage } = actions;
   const postTemplate = path.resolve('./src/templates/blog.js');
-  const blogTemplate = path.resolve('./src/pages/blog.js');
+  const blogTemplate = path.resolve('./src/templates/blog-list.js');
 
   /**
    * Handle local markdown posts
@@ -43,11 +43,8 @@ module.exports.createPages = async ({ graphql, actions, page }) => {
     throw result.errors
   }
 
-  // Create blog posts pages.
+  // Create blog post pages
   const posts = result.data.posts.edges;
-
-  const fs = require('fs');
-  fs.writeFile('test.txt', JSON.stringify(posts), (err) => console.log(err));
 
   posts.forEach((edge, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node;
@@ -64,12 +61,12 @@ module.exports.createPages = async ({ graphql, actions, page }) => {
   });
 
   // Create blog post list pages
-  const postsPerPage = 2;
+  const postsPerPage = 10;
   const numPages = Math.ceil(posts.length / postsPerPage);
 
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
-      path: i === 0 ? `/` : `/${i + 1}`,
+      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
       component: blogTemplate,
       context: {
         ...page,
@@ -78,7 +75,7 @@ module.exports.createPages = async ({ graphql, actions, page }) => {
         numPages,
         currentPage: i + 1,
       },
-    })
+    });
   });
 
 };
