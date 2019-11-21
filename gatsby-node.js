@@ -19,8 +19,8 @@ module.exports.onCreateNode = ({ node, getNode, actions }) => {
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const postTemplate = path.resolve('./src/templates/blog.js');
-  const blogTemplate = path.resolve('./src/templates/blog-list.js');
+  const postTemplate = path.resolve('./src/templates/post.js');
+  const blogTemplate = path.resolve('./src/templates/blog.js');
 
   /**
    * Handle local markdown posts
