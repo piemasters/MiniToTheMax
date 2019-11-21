@@ -3,6 +3,7 @@ import Layout from '../layouts/layout';
 import { Link, graphql } from 'gatsby';
 import Head from '../components/head';
 import Img from "gatsby-image"
+import {kebabCase} from "lodash";
 
 export const query = graphql`
   query($slug: String!) {
@@ -34,6 +35,13 @@ const Post = props => {
             <p>{post.frontmatter.date}</p>
             <Img fluid={post.frontmatter.featuredImage ? post.frontmatter.featuredImage.childImageSharp.fluid : {width: 0, height: 0, src:"", srcSet:null}} />
             <br/>
+
+            {post.frontmatter.tags.map(tag => (
+                <Link to={`/tags/${kebabCase(tag)}/`}>
+                    {tag}
+                </Link>
+            ))}
+
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
             <ul
