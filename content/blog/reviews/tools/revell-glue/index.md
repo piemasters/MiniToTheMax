@@ -13,15 +13,19 @@ Unfortunately I have been disappointed with Games Workshop's Plastic Glue Thin.
 Enter Revell Contacta Professional Plastic Glue.
 
 ## Cost
+
 At [£3.50](http://www.amazon.co.uk/Revell-39604-Contacta-Professional-Glue/dp/B000KJPUL0) a bottle its far cheaper than most plastic glues you’ll find around. You get 25g, compared to the 20g for £4.30 making it slightly cheaper but for how long it should last you the price is negligible.
 
 ## Quality
+
 What can I say? It works! Before learning about magnetizing models I unfortunately glued together my Stormraven's wings, making it very difficult to transport. When trying to take the wings off to magnetise them, the glue was too strong and I unfortunately ended up snapping them. That was one of my biggest hobby mistakes, as the surface area to stick them back on was so small it resulted in several further breakages. However, since using this glue its has fused the wing back on by melting the pieces together, meaning the joint is no longer a weakness and hasn't broken since. Hurrah!
 
 ## Surfaces
+
 As in the name, it will only work with plastic! Not metal, not resin.
 
 ## Availability
+
 Easily available online, given in the link above.
 
 ##Ease of use

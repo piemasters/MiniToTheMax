@@ -53,7 +53,7 @@ The bronze, red, cloth, parchment and skulls should be washed using **Agrax Ear
 
 **Ironbreaker, Hashut Copper, Mephiston Red, Dark Reaper, Ushabti Bone, Ceramite White**
 
-Once everything has dried you the next step is to paint the main colour of the armour and other details. Think of the original base layer as how the armour should look with no direct sunlight. The shade has picked out the darkest areas, so now you need to pick out everywhere that the light hits. 
+Once everything has dried you the next step is to paint the main colour of the armour and other details. Think of the original base layer as how the armour should look with no direct sunlight. The shade has picked out the darkest areas, so now you need to pick out everywhere that the light hits.
 
 This covers a large proportion of the model, just make sure not to cover the recesses marked out by the wash, paint up to them instead to give the model a feeling of depth. The other areas to avoid covering are the parts of the model that remain in shadow, such as under the legs and arms.
 

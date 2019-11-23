@@ -21,15 +21,18 @@ The hand itself could be replaced with a Storm Bolter. However, I felt this took
 For this model I used a few new techniques and colours. I hadn't planned to do so, but as I made progress the new ideas came to me. Most of the techniques I used can be found under the tutorial section of the website, with the following additions:
 
 ### The Pink Cord
+
 There was already a lot of red and cloth on the miniature so both colours were ruled out. The next colour choice I would normally go with is black, but I wanted a bright colour to stand out, but other than blue which I reserve for force energy there wasn't another colour in my usual pallet to use. I decided to stick close to the usual red and went with Pink Horror. I washed the cord with a few layers of Druchii Violet, then re-highlighted it with Pink Horror. I feel it adds a slightly more magical feel to the Librarian and helps to make him stand out more as a character.
 
 ### The Green Books
+
 Again I usually paint books a deep crimson red, but again I felt there was enough red already on the miniature and I wanted them to stand out. I thought back to RGB, I had already used plenty or red and blue but my army lacked any green so I thought it was a perfect opportunity to apply some to once again really help the Librarian stand out. I started with a base coat of Caliban Green, then slowly highlighted them up using several thin layers of Warpstone Glow. This gave a very nice worn effect but looked rather plain, so I added a white border to the right hand book just to add enough detail to break up the large flat area.
 
 ### Cloak Wash
-I base-coated the cloak in the usual way, but after applying the wash it came out very patchy being such a large area. I highlighted it up brighter than I normally would to give it contrast to the parchment, using a heavy highlight of Screaming Scull and Pallid Wych Flesh but didn't feel I had blended the colours quite smoothly enough as I had focused more on covering the previous wash on the raised areas. 
 
-Rather than spend a lot more time blending I thought the quickest way would be to just add another wash. To stop it drying patchy again I did a 2:1 mix of Lahmian Medium with Agrax Earthshade. This meant just enough pigment was applied to the raised areas to blend the colours together and helped add extra shadow where needed to emphasize the recesses. 
+I base-coated the cloak in the usual way, but after applying the wash it came out very patchy being such a large area. I highlighted it up brighter than I normally would to give it contrast to the parchment, using a heavy highlight of Screaming Scull and Pallid Wych Flesh but didn't feel I had blended the colours quite smoothly enough as I had focused more on covering the previous wash on the raised areas.
+
+Rather than spend a lot more time blending I thought the quickest way would be to just add another wash. To stop it drying patchy again I did a 2:1 mix of Lahmian Medium with Agrax Earthshade. This meant just enough pigment was applied to the raised areas to blend the colours together and helped add extra shadow where needed to emphasize the recesses.
 
 The only issue I had was having too much pool in the the lowest recesses and giving a cracked appearance. I was unsure where to use a knife or file to remove the excess pigments I didn't want to ruin the miniature at this stage. In the end I painted it to look like dried dirt so that I wouldn't make a bigger mess. Hopefully it isn't too noticeable!
 

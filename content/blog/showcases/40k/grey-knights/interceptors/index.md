@@ -34,4 +34,3 @@ As always let me know what you think below. Each post I'm trying to improve my p
 ```grid|1
 ![](DSC02520.jpg)
 ```
-

@@ -37,4 +37,3 @@ With all the paint off, make sure to give the model a good wash with warm soapy 
 Hopefully I've not missed anything. Here’s the results I had and I think you’ll agree it was pretty successful:
 
 ![2014-06-01-18.23.32](2014-06-01-18.23.32.jpg)
-

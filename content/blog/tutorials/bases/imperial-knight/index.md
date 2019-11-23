@@ -52,7 +52,7 @@ So what you need is to pick up some [2-5mm Neodymium Magnets](https://www.amazo
 
 Under each foot you will notice each toe is hollow. What you need to do is fill each toe green stuff / milliput and push in a magnet into the centre so it sits dead flat in the circled areas. The easiest way is to push them half way in, make sure they are reasonably flat, then push the foot onto a flat surface at a 90° angle. This makes sure they don't go in too far, if that happens they won't make contact with the base giving a weak attraction. Scrape off any excess putty and leave to dry.
 
-Once dry quickly paint on a blob of paint onto each magnet (I used red) and squash the feet down onto the base while the paint is still wet. Once you take the feet off you should have 8 points, one for where each magnet touches the base. At these points you need  to drill using a drill-bit the same width as your magnets and drill in the same depth as your magnets. 
+Once dry quickly paint on a blob of paint onto each magnet (I used red) and squash the feet down onto the base while the paint is still wet. Once you take the feet off you should have 8 points, one for where each magnet touches the base. At these points you need  to drill using a drill-bit the same width as your magnets and drill in the same depth as your magnets.
 
 One at a time squeeze in a blob of superglue into each hole and push in your magnet, **IMPORTANT** making sure it's facing the right way!!!! Once dry scrape off any remaining paint and put a small layer or superglue round the outside of each magnet where it touches the putty/cork just to secure them and stop them breaking out.
 

@@ -1,7 +1,6 @@
 const path = require('path');
-const { createFilePath } = require("gatsby-source-filesystem");
+const { createFilePath } = require('gatsby-source-filesystem');
 const { kebabCase } = require('lodash');
-
 
 module.exports.onCreateNode = ({ node, getNode, actions }) => {
   /**
@@ -21,10 +20,9 @@ module.exports.onCreateNode = ({ node, getNode, actions }) => {
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const postTemplate = path.resolve('./src/templates/post.js');
-  const blogTemplate = path.resolve('./src/templates/blog.js');
-  const tagTemplate = path.resolve("src/templates/tags.js");
-
+  const postTemplate = path.resolve('./src/templates/post.tsx');
+  const blogTemplate = path.resolve('./src/templates/blog.tsx');
+  const tagTemplate = path.resolve('src/templates/tags.tsx');
 
   /**
    * Handle local markdown posts
@@ -32,18 +30,18 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(`
     query {
       posts: allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
+        sort: { fields: [frontmatter___date], order: DESC }
+        limit: 1000
+      ) {
         edges {
           node {
             fields {
               slug
             }
             frontmatter {
-                title
-                tags
-              }
+              title
+              tags
+            }
           }
         }
       }
@@ -56,7 +54,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   `);
 
   if (result.errors) {
-    throw result.errors
+    throw result.errors;
   }
 
   // Create blog post pages
@@ -105,5 +103,4 @@ module.exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
-
 };

@@ -42,7 +42,7 @@ With this done leave it for 12-24 hours until the Milliput fully sets. Once it h
 
 Ideally you want the least amount of excess as possible, as it can be pretty time consuming to cut it all off. Once you're done you'll be left with something like this:
 
-![DSC09815](DSC09815.jpg) 
+![DSC09815](DSC09815.jpg)
 ![DSC09816](DSC09816.jpg)
 
 As you can see the front of the mold came out pretty well capturing the most most detailed areas. It just needs a small amount of [Liquid Green Stuff](http://www.games-workshop.com/en-GB/Citadel-Technical?s=99189956004) to fill in the air bubbles. As I forgot to add in the plugs for this cast, even with the template I didn't quite line up the two halves of the mold correctly so the front and back didn't quite line up.

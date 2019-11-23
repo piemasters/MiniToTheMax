@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import footerStyles from './footer.module.scss';
+import { css } from '@emotion/core';
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -12,8 +12,13 @@ const Footer = () => {
       }
     }
   `);
+
+  const footerStyle = css`
+    margin-top: 3rem;
+  `;
+
   return (
-    <footer className={footerStyles.footer}>
+    <footer css={footerStyle}>
       <p>Created by {data.site.siteMetadata.author} © 2019</p>
     </footer>
   );

@@ -14,7 +14,6 @@ I enjoyed painting the skin and the tattoos, as you don't really get much of a c
 
 Give me you're opinions in the comments below, it might help me make my choice for what to go for. As always, here' some photos of how they're looking.
 
-
 ## Gallery
 
 ```grid|2

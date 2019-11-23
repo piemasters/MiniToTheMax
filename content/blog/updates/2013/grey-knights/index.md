@@ -84,4 +84,3 @@ I'll have to see if this list changes or expands in the future, but for now it d
 ```
 
 The only model I don’t own that I want is [Kaldor Draigo](http://www.games-workshop.com/gws/catalog/productDetail.jsp?prodId=prod1190020a&_requestid=3489470). Well that’s all for now. Hoping to keep powering on and getting this army complete during my free time. Then I can make a start on my Space Wolf army which I’m getting all kinds of plans on. I’m looking into all kinds of weathering powders and scenic bases!
-

@@ -11,7 +11,9 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-typescript',
     'gatsby-plugin-sass',
+    'gatsby-plugin-emotion',
     'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-source-filesystem',

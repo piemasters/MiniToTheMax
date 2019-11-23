@@ -8,7 +8,8 @@ featuredImage: gale-force-nine-hobby-glue-bottle.jpg
 
 I've tried loads of different branded super glues, ranging from cheap to expensive. However, I've never found a real unbreakable bond or something with a high strength that also sets fast. After pouring through reviews online for multiple brands I discovered Gale Force N Hobby Glue.
 
-## Cost 
+## Cost
+
 At [£4.00](https://www.goblingaming.co.uk/products/plastic-glue-62903171) a bottle its far cheaper than what you’ll find in a standard high street shop for quality glue. You also get over 28g which is far more than you can expect from most other bottles. For comparison Games Workshop charges [£4.30](http://www.games-workshop.com/en-GB/Super-Glue-Thick) for its Thick Super Glue, a similar price but for only 5g, five times less than GF9.
 
 ## Quality
@@ -16,9 +17,11 @@ At [£4.00](https://www.goblingaming.co.uk/products/plastic-glue-62903171) a bot
 This is by far the best glue I've used so far. It bonds so well that when applied correctly I no longer consider the join a weakness. When trying to prise my models from their bases using this glue, the feet were stuck to the plastic so tight that even when using a knife to score along the join the base still ripped apart, parts still attached to the feet rather than the glue giving way. In my books you can’t get much better than that, the bond being stronger than the plastic itself.
 
 ## Surfaces
+
 I've found this works on any surface I've used, from metal, plastic, cork and resin. I even use it now for household repairs!
 
 ## Availability
+
 Many hobby stores sell this online in the UK and the US. It shouldn't be too hard to get a hold of.
 
 ##Ease of use
