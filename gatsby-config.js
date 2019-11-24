@@ -22,37 +22,31 @@ module.exports = {
         name: `blog`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/`,
+      },
+    },
     'gatsby-plugin-sharp',
     `gatsby-transformer-sharp`,
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-images-grid',
-            options: {
-              className: 'gatsbyRemarkImagesGrid',
-              gridGap: '20px',
-              margin: '20px auto',
-            },
-          },
-          'gatsby-remark-relative-images',
+        extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: [
           {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 750,
+              withWebp: true,
               linkImagesToOriginal: false,
             },
           },
-          {
-            resolve: `gatsby-remark-images-medium-zoom`,
-          },
         ],
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          path: `${__dirname}/src/`,
-        },
+        plugins: ['gatsby-remark-images'],
       },
     },
+    `gatsby-remark-images-modal`,
   ],
 };

@@ -5,10 +5,13 @@ import Head from '../components/head';
 import Img from 'gatsby-image';
 import { kebabCase } from 'lodash';
 import SimplePagination from '../components/simple-pagination';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { safe } from '../utils';
+import { MDXSharpImg, MDXSrcImg, safeFluid } from '../components/images';
 
 export const query = graphql`
   query($slug: String!) {
-    post: markdownRemark(fields: { slug: { eq: $slug } }) {
+    post: mdx(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
         date
@@ -20,8 +23,16 @@ export const query = graphql`
             }
           }
         }
+        images {
+          publicURL
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
-      html
+      body
     }
   }
 `;
@@ -29,6 +40,30 @@ export const query = graphql`
 const Post = (props: any) => {
   const post = props.data.post;
   const { previous, next } = props.pageContext;
+
+  const { frontmatter } = safe(post);
+  const { images } = safe(frontmatter);
+
+  console.log(props);
+  console.log(images);
+
+  const imgs: { [k: string]: React.ReactNode } = {};
+  if (images) {
+    images.forEach((image, i) => {
+      const { childImageSharp: c, publicURL } = safe(image);
+      const { fluid: f } = safe(c);
+      imgs[`Img${i + 1}`] = ({ align, width }) =>
+        f ? (
+          <MDXSharpImg align={align} width={width} fluid={safeFluid(f)} />
+        ) : (
+          <MDXSrcImg align={align} width={width} src={publicURL || ''} />
+        );
+    });
+  }
+
+  const test = images[0];
+  console.log(test);
+  console.log(imgs);
 
   return (
     <Layout>
@@ -50,7 +85,11 @@ const Post = (props: any) => {
         </Link>
       ))}
 
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <MDXRenderer imgs={imgs} test={test}>
+        {post.body}
+      </MDXRenderer>
+
+      {/*<div dangerouslySetInnerHTML={{ __html: post.html }} />*/}
 
       <SimplePagination previous={previous} next={next} />
     </Layout>

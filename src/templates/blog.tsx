@@ -90,7 +90,7 @@ const Blog = ({ data, pageContext }: { data: any; pageContext: any }) => {
 
 export const postQuery = graphql`
   query blogPageQuery($skip: Int, $limit: Int) {
-    posts: allMarkdownRemark(
+    posts: allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
