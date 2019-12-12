@@ -8,7 +8,7 @@ module.exports.onCreateNode = ({ node, getNode, actions }) => {
    */
   const { createNodeField } = actions;
 
-  if (node.internal.type === 'MarkdownRemark') {
+  if (node.internal.type === 'Mdx') {
     const slug = createFilePath({ node, getNode, basePath: `` });
     createNodeField({
       node,
@@ -29,7 +29,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
    */
   const result = await graphql(`
     query {
-      posts: allMarkdownRemark(
+      posts: allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
         limit: 1000
       ) {
@@ -45,7 +45,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-      tagsGroup: allMarkdownRemark(limit: 2000) {
+      tagsGroup: allMdx(limit: 2000) {
         group(field: frontmatter___tags) {
           fieldValue
         }

@@ -5,10 +5,14 @@ import Head from '../components/head';
 import Img from 'gatsby-image';
 import { kebabCase } from 'lodash';
 import SimplePagination from '../components/simple-pagination';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { safe } from '../utils';
+import { MDXSharpImg, MDXSrcImg, safeFluid } from '../components/images';
+import Gallery from 'react-grid-gallery';
 
 export const query = graphql`
   query($slug: String!) {
-    post: markdownRemark(fields: { slug: { eq: $slug } }) {
+    post: mdx(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
         date
@@ -20,8 +24,18 @@ export const query = graphql`
             }
           }
         }
+        gallery {
+          publicURL
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+              presentationWidth
+              presentationHeight
+            }
+          }
+        }
       }
-      html
+      body
     }
   }
 `;
@@ -29,6 +43,38 @@ export const query = graphql`
 const Post = (props: any) => {
   const post = props.data.post;
   const { previous, next } = props.pageContext;
+
+  const { frontmatter } = safe(post);
+  const { gallery } = safe(frontmatter);
+
+  console.log(props);
+  console.log(gallery);
+
+  const imgs: { [k: string]: React.ReactNode } = {};
+  if (gallery) {
+    gallery.forEach((image, i) => {
+      const { childImageSharp: c, publicURL } = safe(image);
+      const { fluid: f } = safe(c);
+      imgs[`Img${i + 1}`] = ({ align, width }) =>
+        f ? (
+          <MDXSharpImg align={align} width={width} fluid={safeFluid(f)} />
+        ) : (
+          <MDXSrcImg align={align} width={width} src={publicURL || ''} />
+        );
+    });
+  }
+
+  const IMAGES = gallery
+    ? gallery.map((img: any) => ({
+        src: img.childImageSharp.fluid.src,
+        thumbnail: img.childImageSharp.fluid.src,
+        thumbnailWidth: img.childImageSharp.fluid.presentationWidth,
+        thumbnailHeight: img.childImageSharp.fluid.presentationHeight,
+        nano: img.childImageSharp.fluid.base64,
+        srcSet: img.childImageSharp.fluid.srcSet,
+      }))
+    : [];
+  console.log(IMAGES);
 
   return (
     <Layout>
@@ -43,16 +89,20 @@ const Post = (props: any) => {
         }
       />
       <br />
-
       {post.frontmatter.tags.map((tag: any) => (
         <Link key={tag} to={`/tags/${kebabCase(tag)}/`}>
           {tag}
         </Link>
       ))}
-
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-
+      <MDXRenderer>{post.body}</MDXRenderer>
       <SimplePagination previous={previous} next={next} />
+      <h2>Gallery</h2>
+      <Gallery
+        images={IMAGES}
+        enableImageSelection={false}
+        rowHeight={180}
+        margin={2}
+      />
     </Layout>
   );
 };
