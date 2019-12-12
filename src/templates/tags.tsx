@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 const Tags = ({ pageContext, data }: { pageContext: any; data: any }) => {
   const { tag } = pageContext;
-  const { edges, totalCount } = data.allMarkdownRemark;
+  const { edges, totalCount } = data.tags;
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
   } tagged with "${tag}"`;
@@ -55,7 +55,7 @@ Tags.propTypes = {
 export default Tags;
 export const pageQuery = graphql`
   query($tag: String) {
-    allMdx(
+    tags: allMdx(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { tags: { in: [$tag] } } }
