@@ -8,6 +8,7 @@ import SimplePagination from '../components/simple-pagination';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { safe } from '../utils';
 import { MDXSharpImg, MDXSrcImg, safeFluid } from '../components/images';
+import Gallery from 'react-grid-gallery';
 
 export const query = graphql`
   query($slug: String!) {
@@ -23,11 +24,13 @@ export const query = graphql`
             }
           }
         }
-        images {
+        gallery {
           publicURL
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid
+              presentationWidth
+              presentationHeight
             }
           }
         }
@@ -42,14 +45,14 @@ const Post = (props: any) => {
   const { previous, next } = props.pageContext;
 
   const { frontmatter } = safe(post);
-  const { images } = safe(frontmatter);
+  const { gallery } = safe(frontmatter);
 
   console.log(props);
-  console.log(images);
+  console.log(gallery);
 
   const imgs: { [k: string]: React.ReactNode } = {};
-  if (images) {
-    images.forEach((image, i) => {
+  if (gallery) {
+    gallery.forEach((image, i) => {
       const { childImageSharp: c, publicURL } = safe(image);
       const { fluid: f } = safe(c);
       imgs[`Img${i + 1}`] = ({ align, width }) =>
@@ -61,9 +64,17 @@ const Post = (props: any) => {
     });
   }
 
-  const test = images[0];
-  console.log(test);
-  console.log(imgs);
+  const IMAGES = gallery
+    ? gallery.map((img: any) => ({
+        src: img.childImageSharp.fluid.src,
+        thumbnail: img.childImageSharp.fluid.src,
+        thumbnailWidth: img.childImageSharp.fluid.presentationWidth,
+        thumbnailHeight: img.childImageSharp.fluid.presentationHeight,
+        nano: img.childImageSharp.fluid.base64,
+        srcSet: img.childImageSharp.fluid.srcSet,
+      }))
+    : [];
+  console.log(IMAGES);
 
   return (
     <Layout>
@@ -78,20 +89,20 @@ const Post = (props: any) => {
         }
       />
       <br />
-
       {post.frontmatter.tags.map((tag: any) => (
         <Link key={tag} to={`/tags/${kebabCase(tag)}/`}>
           {tag}
         </Link>
       ))}
-
-      <MDXRenderer imgs={imgs} test={test}>
-        {post.body}
-      </MDXRenderer>
-
-      {/*<div dangerouslySetInnerHTML={{ __html: post.html }} />*/}
-
+      <MDXRenderer>{post.body}</MDXRenderer>
       <SimplePagination previous={previous} next={next} />
+      <h2>Gallery</h2>
+      <Gallery
+        images={IMAGES}
+        enableImageSelection={false}
+        rowHeight={180}
+        margin={2}
+      />
     </Layout>
   );
 };
