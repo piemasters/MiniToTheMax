@@ -6,7 +6,7 @@ import { Link, graphql } from 'gatsby';
 
 const TagsPage = ({
   data: {
-    allMarkdownRemark: { group },
+    allMdx: { group },
     site: {
       siteMetadata: { title },
     },
