@@ -15,6 +15,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-emotion',
     'gatsby-plugin-catch-links',
+    'gatsby-plugin-netlify-cache',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

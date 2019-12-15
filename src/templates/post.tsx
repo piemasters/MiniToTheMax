@@ -47,24 +47,7 @@ const Post = (props: any) => {
   const { frontmatter } = safe(post);
   const { gallery } = safe(frontmatter);
 
-  console.log(props);
-  console.log(gallery);
-
-  const imgs: { [k: string]: React.ReactNode } = {};
-  if (gallery) {
-    gallery.forEach((image, i) => {
-      const { childImageSharp: c, publicURL } = safe(image);
-      const { fluid: f } = safe(c);
-      imgs[`Img${i + 1}`] = ({ align, width }) =>
-        f ? (
-          <MDXSharpImg align={align} width={width} fluid={safeFluid(f)} />
-        ) : (
-          <MDXSrcImg align={align} width={width} src={publicURL || ''} />
-        );
-    });
-  }
-
-  const IMAGES = gallery
+  const galleryImages = gallery
     ? gallery.map((img: any) => ({
         src: img.childImageSharp.fluid.src,
         thumbnail: img.childImageSharp.fluid.src,
@@ -74,7 +57,6 @@ const Post = (props: any) => {
         srcSet: img.childImageSharp.fluid.srcSet,
       }))
     : [];
-  console.log(IMAGES);
 
   return (
     <Layout>
@@ -95,14 +77,16 @@ const Post = (props: any) => {
         </Link>
       ))}
       <MDXRenderer>{post.body}</MDXRenderer>
-      <SimplePagination previous={previous} next={next} />
+
       <h2>Gallery</h2>
       <Gallery
-        images={IMAGES}
+        images={galleryImages}
         enableImageSelection={false}
         rowHeight={180}
         margin={2}
       />
+
+      <SimplePagination previous={previous} next={next} />
     </Layout>
   );
 };

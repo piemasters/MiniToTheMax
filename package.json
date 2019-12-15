@@ -52,6 +52,7 @@
     "@types/react-dom": "^16.9.4",
     "@types/react-helmet": "^5.0.14",
     "env-cmd": "^10.0.1",
+    "gatsby-plugin-netlify-cache": "^1.2.0",
     "node-sass": "^4.13.0",
     "prettier": "^1.18.2",
     "typescript": "^3.7.2"
