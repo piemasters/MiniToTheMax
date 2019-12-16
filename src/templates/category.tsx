@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // Components
 import { Link, graphql } from 'gatsby';
-const Tags = ({ pageContext, data }: { pageContext: any; data: any }) => {
-  const { tag } = pageContext;
-  const { edges, totalCount } = data.tags;
-  const tagHeader = `${totalCount} post${
+const Category = ({ pageContext, data }: { pageContext: any; data: any }) => {
+  const { category } = pageContext;
+  const { edges, totalCount } = data.categories;
+  const categoryHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
-  } tagged with "${tag}"`;
+  } tagged with "${category}"`;
   return (
     <div>
-      <h1>{tagHeader}</h1>
+      <h1>{categoryHeader}</h1>
       <ul>
         {edges.map(({ node }: { node: any }) => {
           const { slug } = node.fields;
@@ -26,13 +26,13 @@ const Tags = ({ pageContext, data }: { pageContext: any; data: any }) => {
               This links to a page that does not yet exist.
               You'll come back to it!
             */}
-      <Link to="/tags">All tags</Link>
+      <Link to="/categories">All categories</Link>
     </div>
   );
 };
-Tags.propTypes = {
+Category.propTypes = {
   pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
   }),
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
@@ -52,13 +52,13 @@ Tags.propTypes = {
     }),
   }),
 };
-export default Tags;
+export default Category;
 export const pageQuery = graphql`
-  query($tag: String) {
-    tags: allMdx(
+  query($category: String) {
+    categories: allMdx(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { categories: { in: [$category] } } }
     ) {
       totalCount
       edges {

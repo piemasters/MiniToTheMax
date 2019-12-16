@@ -17,6 +17,7 @@ export const query = graphql`
         title
         date
         tags
+        categories
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 800, maxHeight: 400) {
@@ -71,13 +72,19 @@ const Post = (props: any) => {
         }
       />
       <br />
+      TAGS:{' '}
       {post.frontmatter.tags.map((tag: any) => (
         <Link key={tag} to={`/tags/${kebabCase(tag)}/`}>
           {tag}
         </Link>
       ))}
+      CATEGORIES:
+      {post.frontmatter.categories.map((category: any) => (
+        <Link key={category} to={`/categories/${kebabCase(category)}/`}>
+          {category}
+        </Link>
+      ))}
       <MDXRenderer>{post.body}</MDXRenderer>
-
       <h2>Gallery</h2>
       <Gallery
         images={galleryImages}
@@ -85,7 +92,6 @@ const Post = (props: any) => {
         rowHeight={180}
         margin={2}
       />
-
       <SimplePagination previous={previous} next={next} />
     </Layout>
   );
