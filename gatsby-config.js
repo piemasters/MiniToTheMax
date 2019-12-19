@@ -15,10 +15,18 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
-        head: true,
+        trackingIds: [process.env.GA_TRACKING_ID],
+        gtagConfig: {
+          optimize_id: process.env.OPT_CONTAINER_ID,
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+        },
       },
     },
     'gatsby-plugin-react-helmet',
