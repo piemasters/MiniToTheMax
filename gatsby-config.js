@@ -29,12 +29,17 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-netlify-cache',
+      options: {
+        cachePublic: true, // TODO remove to avoid netlify breaking
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
     'gatsby-plugin-sass',
     'gatsby-plugin-emotion',
     'gatsby-plugin-catch-links',
-    'gatsby-plugin-netlify-cache',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
