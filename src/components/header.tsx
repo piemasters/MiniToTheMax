@@ -10,6 +10,11 @@ const Header = () => {
           title
         }
       }
+      file(name: { eq: "logo" }) {
+        size
+        relativeDirectory
+        publicURL
+      }
     }
   `);
 
@@ -63,6 +68,7 @@ const Header = () => {
       <nav>
         <h1>
           <Link css={titleStyle} to={'/'}>
+            <img src={data.file.publicURL} alt="Logo" width={60 + 'px'} />
             {data.site.siteMetadata.title}
           </Link>
         </h1>

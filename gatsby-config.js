@@ -12,6 +12,7 @@ module.exports = {
   siteMetadata: {
     title: 'MiniToTheMax',
     author: 'David Norton',
+    url: 'https://minitothemax.app',
   },
   plugins: [
     {
@@ -32,7 +33,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify-cache',
       options: {
-        cachePublic: true, // TODO remove to avoid netlify breaking
+        cachePublic: true, // TODO: remove to avoid netlify breaking
       },
     },
     'gatsby-plugin-react-helmet',
@@ -45,6 +46,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/assets/images`,
+        name: `images`,
       },
     },
     'gatsby-plugin-sharp',
@@ -64,6 +72,21 @@ module.exports = {
           },
         ],
         plugins: ['gatsby-remark-images'],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `MiniToTheMax`,
+        short_name: `MiniToTheMax`,
+        description: `A warhammer blog`,
+        lang: `en`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#eb1c22`,
+        display: `standalone`,
+        icon: `content/assets/images/icon.png`,
+        cache_busting_mode: `query`,
       },
     },
     `gatsby-remark-images-modal`,
