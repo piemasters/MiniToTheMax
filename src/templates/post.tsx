@@ -7,7 +7,7 @@ import SimplePagination from '../components/simple-pagination';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { safe } from '../utils';
 import Gallery from 'react-grid-gallery';
-import Seo from '../components/SEO';
+import Seo from '../components/seo';
 
 export const query = graphql`
   query($slug: String!) {

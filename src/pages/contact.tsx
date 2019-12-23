@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../layouts/layout';
-import Seo from '../components/SEO';
+import Seo from '../components/seo';
 
 const ContactPage = () => {
   return (

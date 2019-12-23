@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
 import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
-import Seo from '../components/SEO';
+import Seo from '../components/seo';
 
 const CategoriesPage = ({
   data: {

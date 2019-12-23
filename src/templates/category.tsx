@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
-import Seo from '../components/SEO';
+import Seo from '../components/seo';
 const Category = ({ pageContext, data }: { pageContext: any; data: any }) => {
   const { category, url } = pageContext;
   const { edges, totalCount } = data.categories;
