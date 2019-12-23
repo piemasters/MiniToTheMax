@@ -1,15 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// Components
 import { Link, graphql } from 'gatsby';
+import Seo from '../components/SEO';
+
 const Tag = ({ pageContext, data }: { pageContext: any; data: any }) => {
-  const { tag } = pageContext;
+  const { tag, url } = pageContext;
   const { edges, totalCount } = data.tags;
   const tagHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
   } tagged with "${tag}"`;
   return (
     <div>
+      <Seo title={tag} pathname={url} description={tagHeader} />
       <h1>{tagHeader}</h1>
       <ul>
         {edges.map(({ node }: { node: any }) => {
@@ -22,10 +24,6 @@ const Tag = ({ pageContext, data }: { pageContext: any; data: any }) => {
           );
         })}
       </ul>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
       <Link to="/tags">All tags</Link>
     </div>
   );

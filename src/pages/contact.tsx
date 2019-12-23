@@ -1,11 +1,15 @@
 import React from 'react';
 import Layout from '../layouts/layout';
-import Head from '../components/head';
+import Seo from '../components/SEO';
 
 const ContactPage = () => {
   return (
     <Layout>
-      <Head title="Contact" />
+      <Seo
+        title={'Contact'}
+        description={'Contact Me!'}
+        pathname={'/contact'}
+      />
       <h1>Contact</h1>
       <p>Content will show up here</p>
     </Layout>

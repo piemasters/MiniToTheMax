@@ -1,7 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import { css } from '@emotion/core';
-import Header from './header';
 
 interface PaginationProps {
   isFirst: boolean;

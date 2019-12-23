@@ -85,10 +85,11 @@ module.exports.createPages = async ({ graphql, actions }) => {
   // Make tag pages
   tags.forEach(tag => {
     createPage({
-      path: `/tags/${kebabCase(tag.fieldValue)}/`,
+      path: `/tags/${kebabCase(tag.fieldValue)}`,
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
+        url: `/tags/${kebabCase(tag.fieldValue)}`,
       },
     });
   });
@@ -98,10 +99,11 @@ module.exports.createPages = async ({ graphql, actions }) => {
   // Make tag pages
   categories.forEach(category => {
     createPage({
-      path: `/categories/${kebabCase(category.fieldValue)}/`,
+      path: `/categories/${kebabCase(category.fieldValue)}`,
       component: categoryTemplate,
       context: {
         category: category.fieldValue,
+        url: `/categories/${kebabCase(category.fieldValue)}`,
       },
     });
   });

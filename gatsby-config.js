@@ -12,7 +12,9 @@ module.exports = {
   siteMetadata: {
     title: 'MiniToTheMax',
     author: 'David Norton',
+    description: `An Aspiring Hobby & Painting Blog`,
     url: 'https://minitothemax.app',
+    image: `content/assets/images/logo.png`,
   },
   plugins: [
     {
@@ -79,7 +81,7 @@ module.exports = {
       options: {
         name: `MiniToTheMax`,
         short_name: `MiniToTheMax`,
-        description: `A warhammer blog`,
+        description: `An Aspiring Hobby & Painting Blog`,
         lang: `en`,
         start_url: `/`,
         background_color: `#ffffff`,
@@ -87,6 +89,12 @@ module.exports = {
         display: `standalone`,
         icon: `content/assets/images/icon.png`,
         cache_busting_mode: `query`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/blog/`],
       },
     },
     `gatsby-remark-images-modal`,

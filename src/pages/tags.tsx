@@ -1,21 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
-import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
+import Seo from '../components/SEO';
 
 const TagsPage = ({
   data: {
     allMdx: { group },
-    site: {
-      siteMetadata: { title },
-    },
   },
 }: {
   data: any;
 }) => (
   <div>
-    <Helmet title={title} />
+    <Seo title={'Tags'} description={'All blog tags'} pathname={'/tags'} />
     <div>
       <h1>Tags</h1>
       <ul>
@@ -40,21 +37,11 @@ TagsPage.propTypes = {
         }).isRequired
       ),
     }),
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-      }),
-    }),
   }),
 };
 export default TagsPage;
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMdx(limit: 2000) {
       group(field: frontmatter___tags) {
         fieldValue

@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// Components
 import { Link, graphql } from 'gatsby';
+import Seo from '../components/SEO';
 const Category = ({ pageContext, data }: { pageContext: any; data: any }) => {
-  const { category } = pageContext;
+  const { category, url } = pageContext;
   const { edges, totalCount } = data.categories;
   const categoryHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
   } tagged with "${category}"`;
   return (
     <div>
+      <Seo title={category} pathname={url} description={categoryHeader} />
       <h1>{categoryHeader}</h1>
       <ul>
         {edges.map(({ node }: { node: any }) => {
@@ -22,10 +23,6 @@ const Category = ({ pageContext, data }: { pageContext: any; data: any }) => {
           );
         })}
       </ul>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
       <Link to="/categories">All categories</Link>
     </div>
   );

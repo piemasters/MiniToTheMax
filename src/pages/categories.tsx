@@ -3,19 +3,21 @@ import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
 import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
+import Seo from '../components/SEO';
 
 const CategoriesPage = ({
   data: {
     allMdx: { group },
-    site: {
-      siteMetadata: { title },
-    },
   },
 }: {
   data: any;
 }) => (
   <div>
-    <Helmet title={title} />
+    <Seo
+      title={'Categories'}
+      description={'All blog categories'}
+      pathname={'/categories'}
+    />
     <div>
       <h1>Categories</h1>
       <ul>
@@ -40,21 +42,11 @@ CategoriesPage.propTypes = {
         }).isRequired
       ),
     }),
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-      }),
-    }),
   }),
 };
 export default CategoriesPage;
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMdx(limit: 2000) {
       group(field: frontmatter___categories) {
         fieldValue

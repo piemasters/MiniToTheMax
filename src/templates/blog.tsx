@@ -1,10 +1,10 @@
 import React from 'react';
 import Layout from '../layouts/layout';
 import { Link, graphql } from 'gatsby';
-import Head from '../components/head';
 import Img from 'gatsby-image';
 import { css } from '@emotion/core';
 import Pagination from '../components/pagination';
+import Seo from '../components/SEO';
 
 const Blog = ({ data, pageContext }: { data: any; pageContext: any }) => {
   const posts = data.posts.edges;
@@ -47,7 +47,11 @@ const Blog = ({ data, pageContext }: { data: any; pageContext: any }) => {
 
   return (
     <Layout>
-      <Head title="Blog" />
+      <Seo
+        title={'Blog'}
+        description={'Blog Posts'}
+        pathname={`/blog/${currentPage}`}
+      />
       <h1>Blog</h1>
       <ol css={postsStyle}>
         {posts.map((edge: any) => {

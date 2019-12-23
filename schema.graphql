@@ -877,6 +877,7 @@ type SitePageContext {
   skip: Int
   slug: String
   tag: String
+  url: String
 }
 
 type SitePageContextNext {
@@ -1009,6 +1010,7 @@ type SitePluginPluginOptions {
   pathCheck: Boolean
   pluginConfig: SitePluginPluginOptionsPluginConfig
   plugins: [SitePluginPluginOptionsPlugins]
+  precachePages: [String]
   short_name: String
   start_url: String
   theme_color: String
@@ -1057,6 +1059,8 @@ type SitePluginPluginOptionsPlugins {
 
 type SiteSiteMetadata {
   author: String
+  description: String
+  image: String
   title: String
   url: String
 }
@@ -3232,6 +3236,8 @@ enum SiteFieldsEnum {
   polyfill
   port
   siteMetadata___author
+  siteMetadata___description
+  siteMetadata___image
   siteMetadata___title
   siteMetadata___url
 }
@@ -3292,6 +3298,7 @@ enum SitePageFieldsEnum {
   context___skip
   context___slug
   context___tag
+  context___url
   id
   internalComponentName
   internal___content
@@ -3425,6 +3432,7 @@ enum SitePageFieldsEnum {
   pluginCreator___pluginOptions___plugins___pluginFilepath
   pluginCreator___pluginOptions___plugins___resolve
   pluginCreator___pluginOptions___plugins___version
+  pluginCreator___pluginOptions___precachePages
   pluginCreator___pluginOptions___short_name
   pluginCreator___pluginOptions___start_url
   pluginCreator___pluginOptions___theme_color
@@ -3577,6 +3585,7 @@ enum SitePluginFieldsEnum {
   pluginOptions___plugins___pluginFilepath
   pluginOptions___plugins___resolve
   pluginOptions___plugins___version
+  pluginOptions___precachePages
   pluginOptions___short_name
   pluginOptions___start_url
   pluginOptions___theme_color
@@ -3941,6 +3950,7 @@ input SitePageContextFilterInput {
   skip: IntQueryOperatorInput
   slug: StringQueryOperatorInput
   tag: StringQueryOperatorInput
+  url: StringQueryOperatorInput
 }
 
 input SitePageContextNextFieldsFilterInput {
@@ -4063,6 +4073,7 @@ input SitePluginPluginOptionsFilterInput {
   pathCheck: BooleanQueryOperatorInput
   pluginConfig: SitePluginPluginOptionsPluginConfigFilterInput
   plugins: SitePluginPluginOptionsPluginsFilterListInput
+  precachePages: StringQueryOperatorInput
   short_name: StringQueryOperatorInput
   start_url: StringQueryOperatorInput
   theme_color: StringQueryOperatorInput
@@ -4124,6 +4135,8 @@ input SitePluginSortInput {
 
 input SiteSiteMetadataFilterInput {
   author: StringQueryOperatorInput
+  description: StringQueryOperatorInput
+  image: StringQueryOperatorInput
   title: StringQueryOperatorInput
   url: StringQueryOperatorInput
 }

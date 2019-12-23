@@ -12,7 +12,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx"
   },
   "dependencies": {
     "@emotion/core": "^10.0.22",
@@ -26,6 +27,7 @@
     "gatsby-plugin-google-gtag": "^1.1.19",
     "gatsby-plugin-manifest": "^2.2.34",
     "gatsby-plugin-mdx": "^1.0.62",
+    "gatsby-plugin-offline": "^3.0.30",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-plugin-sass": "^2.1.26",
     "gatsby-plugin-sharp": "^2.3.7",
@@ -49,8 +51,14 @@
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
     "@types/react-helmet": "^5.0.14",
+    "@typescript-eslint/eslint-plugin": "^2.12.0",
+    "@typescript-eslint/parser": "^2.12.0",
     "dotenv": "^8.2.0",
     "env-cmd": "^10.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
     "gatsby-plugin-netlify-cache": "^1.2.0",
     "node-sass": "^4.13.0",
     "prettier": "^1.18.2",
