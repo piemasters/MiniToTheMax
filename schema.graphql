@@ -755,8 +755,6 @@ type Query {
     id: StringQueryOperatorInput
     internal: InternalFilterInput
     parent: NodeFilterInput
-    pathPrefix: StringQueryOperatorInput
-    polyfill: BooleanQueryOperatorInput
     port: IntQueryOperatorInput
     siteMetadata: SiteSiteMetadataFilterInput
   ): Site
@@ -808,8 +806,6 @@ type Site implements Node {
   id: ID!
   internal: Internal!
   parent: Node
-  pathPrefix: String
-  polyfill: Boolean
   port: Int
   siteMetadata: SiteSiteMetadata
 }
@@ -1061,8 +1057,8 @@ type SiteSiteMetadata {
   author: String
   description: String
   image: String
+  siteUrl: String
   title: String
-  url: String
 }
 
 enum DirectoryFieldsEnum {
@@ -3232,14 +3228,12 @@ enum SiteFieldsEnum {
   parent___parent___internal___type
   parent___parent___parent___children
   parent___parent___parent___id
-  pathPrefix
-  polyfill
   port
   siteMetadata___author
   siteMetadata___description
   siteMetadata___image
+  siteMetadata___siteUrl
   siteMetadata___title
-  siteMetadata___url
 }
 
 enum SitePageFieldsEnum {
@@ -3934,8 +3928,6 @@ input SiteFilterInput {
   id: StringQueryOperatorInput
   internal: InternalFilterInput
   parent: NodeFilterInput
-  pathPrefix: StringQueryOperatorInput
-  polyfill: BooleanQueryOperatorInput
   port: IntQueryOperatorInput
   siteMetadata: SiteSiteMetadataFilterInput
 }
@@ -4137,8 +4129,8 @@ input SiteSiteMetadataFilterInput {
   author: StringQueryOperatorInput
   description: StringQueryOperatorInput
   image: StringQueryOperatorInput
+  siteUrl: StringQueryOperatorInput
   title: StringQueryOperatorInput
-  url: StringQueryOperatorInput
 }
 
 input SiteSortInput {

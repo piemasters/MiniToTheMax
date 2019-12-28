@@ -31,7 +31,7 @@ const Seo = ({
         title: title || defaultTitle,
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
-        url: `${siteUrl}${pathname || '/'}`,
+        siteUrl: `${siteUrl}${pathname || '/'}`,
       };
       return (
         <>
@@ -41,7 +41,7 @@ const Seo = ({
             <meta name="image" content={seo.image} />
 
             {/* OpenGraph tags */}
-            {seo.url && <meta property="og:url" content={seo.url} />}
+            {seo.siteUrl && <meta property="og:url" content={seo.siteUrl} />}
             {(article ? true : null) && (
               <meta property="og:type" content="article" />
             )}
@@ -77,7 +77,7 @@ const query = graphql`
       siteMetadata {
         defaultTitle: title
         defaultDescription: description
-        siteUrl: url
+        siteUrl: siteUrl
         defaultImage: image
       }
     }

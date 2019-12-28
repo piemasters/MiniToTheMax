@@ -13,7 +13,7 @@ module.exports = {
     title: 'MiniToTheMax',
     author: 'David Norton',
     description: `An Aspiring Hobby & Painting Blog`,
-    url: 'https://minitothemax.app',
+    siteUrl: 'https://minitothemax.app',
     image: `content/assets/images/logo.png`,
   },
   plugins: [
@@ -45,6 +45,10 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-emotion',
     'gatsby-plugin-catch-links',
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      output: `/sitemap.xml`,
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -96,7 +100,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/blog/`],
+        precachePages: [`/blog`],
       },
     },
     `gatsby-remark-images-modal`,
