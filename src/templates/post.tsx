@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../layouts/layout';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { kebabCase } from 'lodash';
 import SimplePagination from '../components/simple-pagination';
@@ -8,6 +8,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { safe } from '../utils';
 import Gallery from 'react-grid-gallery';
 import Seo from '../components/seo';
+import PageLink from '../components/page-link';
 
 export const query = graphql`
   query($slug: String!) {
@@ -80,15 +81,25 @@ const Post = (props: any) => {
       <br />
       TAGS:{' '}
       {post.frontmatter.tags.map((tag: any) => (
-        <Link key={tag} to={`/tags/${kebabCase(tag)}/`}>
+        <PageLink
+          key={tag}
+          to={`/tags/${kebabCase(tag)}/`}
+          type={'cover'}
+          direction={'up'}
+        >
           {tag}
-        </Link>
+        </PageLink>
       ))}
       CATEGORIES:
       {post.frontmatter.categories.map((category: any) => (
-        <Link key={category} to={`/categories/${kebabCase(category)}/`}>
+        <PageLink
+          key={category}
+          to={`/categories/${kebabCase(category)}/`}
+          type={'cover'}
+          direction={'up'}
+        >
           {category}
-        </Link>
+        </PageLink>
       ))}
       <MDXRenderer>{post.body}</MDXRenderer>
       <h2>Gallery</h2>

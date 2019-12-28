@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import Layout from '../layouts/layout';
 import Seo from '../components/seo';
+import PageLink from '../components/page-link';
 
 const NotFound = () => {
   return (
@@ -9,7 +9,9 @@ const NotFound = () => {
       <Seo title={'404'} pathname={'/404'} />
       <h1>Page not found</h1>
       <p>
-        <Link to="/">Head home</Link>
+        <PageLink type={'paintDrip'} to="/">
+          Head home
+        </PageLink>
       </p>
     </Layout>
   );

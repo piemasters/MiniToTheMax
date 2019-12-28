@@ -1,10 +1,11 @@
 import React from 'react';
 import Layout from '../layouts/layout';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { css } from '@emotion/core';
 import Pagination from '../components/pagination';
 import Seo from '../components/seo';
+import PageLink from '../components/page-link';
 
 const Blog = ({ data, pageContext }: { data: any; pageContext: any }) => {
   const posts = data.posts.edges;
@@ -57,7 +58,12 @@ const Blog = ({ data, pageContext }: { data: any; pageContext: any }) => {
         {posts.map((edge: any) => {
           return (
             <li css={postStyle} key={edge.node.fields.slug}>
-              <Link css={postLinkStyle} to={edge.node.fields.slug}>
+              <PageLink
+                linkStyle={postLinkStyle}
+                to={edge.node.fields.slug}
+                type={'cover'}
+                direction={'up'}
+              >
                 <h2 css={postHeaderStyle}>{edge.node.frontmatter.title}</h2>
                 <p css={postParagraphStyle}>{edge.node.frontmatter.date}</p>
                 <Img
@@ -73,7 +79,7 @@ const Blog = ({ data, pageContext }: { data: any; pageContext: any }) => {
                         }
                   }
                 />
-              </Link>
+              </PageLink>
             </li>
           );
         })}

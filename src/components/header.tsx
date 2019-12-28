@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import { css } from '@emotion/core';
+import PageLink from './page-link';
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -67,22 +68,23 @@ const Header = () => {
     <header css={headerStyle}>
       <nav>
         <h1>
-          <Link css={titleStyle} to={'/'}>
+          <PageLink type={'paintDrip'} linkStyle={titleStyle} to={'/'}>
             <img src={data.file.publicURL} alt="Logo" width={60 + 'px'} />
             {data.site.siteMetadata.title}
-          </Link>
+          </PageLink>
         </h1>
         <ul css={navListStyle}>
           {pages.map(page => {
             return (
               <li key={page.name}>
-                <Link
-                  css={navItemStyle}
-                  activeStyle={{ color: '#333333' }}
+                <PageLink
+                  type={'paintDrip'}
+                  linkStyle={navItemStyle}
+                  linkActiveStyle={{ color: '#333333' }}
                   to={page.url}
                 >
                   {page.name}
-                </Link>
+                </PageLink>
               </li>
             );
           })}

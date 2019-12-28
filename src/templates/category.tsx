@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Seo from '../components/seo';
+import PageLink from '../components/page-link';
+import Layout from '../layouts/layout';
 const Category = ({ pageContext, data }: { pageContext: any; data: any }) => {
   const { category, url } = pageContext;
   const { edges, totalCount } = data.categories;
@@ -9,7 +11,7 @@ const Category = ({ pageContext, data }: { pageContext: any; data: any }) => {
     totalCount === 1 ? '' : 's'
   } tagged with "${category}"`;
   return (
-    <div>
+    <Layout>
       <Seo title={category} pathname={url} description={categoryHeader} />
       <h1>{categoryHeader}</h1>
       <ul>
@@ -18,13 +20,17 @@ const Category = ({ pageContext, data }: { pageContext: any; data: any }) => {
           const { title } = node.frontmatter;
           return (
             <li key={slug}>
-              <Link to={slug}>{title}</Link>
+              <PageLink to={slug} type={'cover'} direction={'up'}>
+                {title}
+              </PageLink>
             </li>
           );
         })}
       </ul>
-      <Link to="/categories">All categories</Link>
-    </div>
+      <PageLink to="/categories" type={'cover'} direction={'up'}>
+        All categories
+      </PageLink>
+    </Layout>
   );
 };
 Category.propTypes = {

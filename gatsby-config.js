@@ -38,8 +38,10 @@ module.exports = {
         cachePublic: true, // TODO: remove to avoid netlify breaking
       },
     },
+    'gatsby-plugin-eslint',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
+    `gatsby-plugin-transition-link`,
     'gatsby-plugin-sass',
     'gatsby-plugin-emotion',
     'gatsby-plugin-catch-links',

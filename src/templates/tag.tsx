@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Seo from '../components/seo';
+import PageLink from '../components/page-link';
+import Layout from '../layouts/layout';
 
 const Tag = ({ pageContext, data }: { pageContext: any; data: any }) => {
   const { tag, url } = pageContext;
@@ -10,7 +12,7 @@ const Tag = ({ pageContext, data }: { pageContext: any; data: any }) => {
     totalCount === 1 ? '' : 's'
   } tagged with "${tag}"`;
   return (
-    <div>
+    <Layout>
       <Seo title={tag} pathname={url} description={tagHeader} />
       <h1>{tagHeader}</h1>
       <ul>
@@ -19,13 +21,17 @@ const Tag = ({ pageContext, data }: { pageContext: any; data: any }) => {
           const { title } = node.frontmatter;
           return (
             <li key={slug}>
-              <Link to={slug}>{title}</Link>
+              <PageLink to={slug} type={'cover'} direction={'up'}>
+                {title}
+              </PageLink>
             </li>
           );
         })}
       </ul>
-      <Link to="/tags">All tags</Link>
-    </div>
+      <PageLink to="/tags" type={'cover'} direction={'up'}>
+        All tags
+      </PageLink>
+    </Layout>
   );
 };
 Tag.propTypes = {

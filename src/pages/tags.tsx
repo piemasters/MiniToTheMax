@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Seo from '../components/seo';
+import PageLink from '../components/page-link';
 
 const TagsPage = ({
   data: {
@@ -18,9 +19,13 @@ const TagsPage = ({
       <ul>
         {group.map((tag: any) => (
           <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+            <PageLink
+              to={`/tags/${kebabCase(tag.fieldValue)}/`}
+              type={'cover'}
+              direction={'up'}
+            >
               {tag.fieldValue} ({tag.totalCount})
-            </Link>
+            </PageLink>
           </li>
         ))}
       </ul>

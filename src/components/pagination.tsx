@@ -1,6 +1,6 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import { css } from '@emotion/core';
+import PageLink from './page-link';
 
 interface PaginationProps {
   isFirst: boolean;
@@ -45,21 +45,26 @@ const Pagination = ({
   return (
     <ul css={containerStyle}>
       {!isFirst && (
-        <Link to={prevPage} rel="prev">
+        <PageLink to={prevPage} type={'cover'} direction={'right'}>
           ← Previous Page
-        </Link>
+        </PageLink>
       )}
       {Array.from({ length: numPages }, (_, i) => (
         <li key={`pagination-number${i + 1}`} css={numberStyle}>
-          <Link to={`${baseUrl}${i === 0 ? '' : i + 1}`} css={linkStyle(i)}>
+          <PageLink
+            to={`${baseUrl}${i === 0 ? '' : i + 1}`}
+            type={'cover'}
+            direction={'up'}
+            linkStyle={linkStyle(i)}
+          >
             {i + 1}
-          </Link>
+          </PageLink>
         </li>
       ))}
       {!isLast && (
-        <Link to={nextPage} rel="next">
+        <PageLink to={nextPage} type={'cover'} direction={'left'}>
           Next Page →
-        </Link>
+        </PageLink>
       )}
     </ul>
   );

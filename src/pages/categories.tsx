@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
-import { Helmet } from 'react-helmet';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Seo from '../components/seo';
+import PageLink from '../components/page-link';
 
 const CategoriesPage = ({
   data: {
@@ -23,9 +23,13 @@ const CategoriesPage = ({
       <ul>
         {group.map((category: any) => (
           <li key={category.fieldValue}>
-            <Link to={`/categories/${kebabCase(category.fieldValue)}/`}>
+            <PageLink
+              to={`/categories/${kebabCase(category.fieldValue)}/`}
+              type={'cover'}
+              direction={'up'}
+            >
               {category.fieldValue} ({category.totalCount})
-            </Link>
+            </PageLink>
           </li>
         ))}
       </ul>

@@ -1,6 +1,6 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import { css } from '@emotion/core';
+import PageLink from './page-link';
 
 interface SimplePaginationProps {
   previous: any;
@@ -20,16 +20,20 @@ const SimplePagination = ({ previous, next }: SimplePaginationProps) => {
     <ul css={containerStyle}>
       <li>
         {previous && (
-          <Link to={previous.fields.slug} rel="prev">
+          <PageLink
+            to={previous.fields.slug}
+            type={'cover'}
+            direction={'right'}
+          >
             ← {previous.frontmatter.title}
-          </Link>
+          </PageLink>
         )}
       </li>
       <li>
         {next && (
-          <Link to={next.fields.slug} rel="next">
+          <PageLink to={next.fields.slug} type={'cover'} direction={'left'}>
             {next.frontmatter.title} →
-          </Link>
+          </PageLink>
         )}
       </li>
     </ul>
