@@ -45,6 +45,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-emotion',
     'gatsby-plugin-catch-links',
+    'gatsby-plugin-robots-txt',
     {
       resolve: `gatsby-plugin-sitemap`,
       output: `/sitemap.xml`,
