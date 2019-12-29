@@ -9,9 +9,15 @@ import { safe } from '../utils';
 import Gallery from 'react-grid-gallery';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
+import { DiscussionEmbed } from 'disqus-react';
 
 export const query = graphql`
   query($slug: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     post: mdx(fields: { slug: { eq: $slug } }) {
       excerpt
       frontmatter {
@@ -59,6 +65,13 @@ const Post = (props: any) => {
         srcSet: img.childImageSharp.fluid.srcSet,
       }))
     : [];
+
+  const disqusShortname = process.env.GATSBY_DISQUS_NAME || 'disqusShortname';
+  const disqusConfig: { identifier: string; title: string; url: string } = {
+    identifier: post.slug ? post.slug : 'default-identifier',
+    title: post.frontmatter.title ? post.frontmatter.title : 'default-title',
+    url: `${props.data.site.siteMetadata.siteUrl}/${post.slug}`,
+  };
 
   return (
     <Layout>
@@ -110,6 +123,7 @@ const Post = (props: any) => {
         margin={2}
       />
       <SimplePagination previous={previous} next={next} />
+      <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
     </Layout>
   );
 };
