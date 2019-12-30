@@ -1,6 +1,7 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 const { kebabCase } = require('lodash');
+const { readdirSync } = require('fs');
 
 module.exports.onCreateNode = ({ node, getNode, actions }) => {
   /**
@@ -24,6 +25,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const blogTemplate = path.resolve('./src/templates/blog.tsx');
   const tagTemplate = path.resolve('src/templates/tag.tsx');
   const categoryTemplate = path.resolve('src/templates/category.tsx');
+  const postCategoryTemplate = path.resolve('src/templates/post-category.tsx');
 
   /**
    * Handle local markdown posts
@@ -80,6 +82,47 @@ module.exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
+  // Function for getting a list of directories in a path
+  const getDirectories = source =>
+    readdirSync(source, { withFileTypes: true })
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => dirent.name);
+
+  // Function for converting a string into Title Case
+  const titleCase = str => {
+    return str
+      .toLowerCase()
+      .split(' ')
+      .map(word => {
+        return word.replace(word[0], word[0].toUpperCase());
+      })
+      .join(' ');
+  };
+
+  /* Get a list of all directories under content/blog,
+   * then all categories under those and flatten */
+  const postCategories = getDirectories('content/blog')
+    .map(root =>
+      getDirectories(`content/blog/${root}`).map(dir => ({
+        type: titleCase(root.replace(/-/, ' ')),
+        url: `/${root}/${dir}`,
+        name: titleCase(dir.replace(/-/, ' ')),
+      }))
+    )
+    .flat();
+  // Make post category pages
+  postCategories.forEach(category => {
+    createPage({
+      path: category.url,
+      component: postCategoryTemplate,
+      context: {
+        type: category.type,
+        category: category.name,
+        url: category.url,
+      },
+    });
+  });
+
   // Extract tag data from query
   const tags = result.data.tagsGroup.group;
   // Make tag pages
@@ -94,7 +137,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  // Extract tag data from query
+  // Extract category data from query
   const categories = result.data.categoriesGroup.group;
   // Make tag pages
   categories.forEach(category => {

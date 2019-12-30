@@ -55,12 +55,12 @@ const Header = () => {
       url: '/blog',
     },
     {
-      name: 'About',
-      url: '/about',
+      name: 'Showcase',
+      url: '/showcase',
     },
     {
-      name: 'Contact',
-      url: '/contact',
+      name: 'Backlog',
+      url: '/backlog',
     },
   ];
 
