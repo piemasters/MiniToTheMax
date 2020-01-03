@@ -101,9 +101,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
   /* Get a list of all directories under content/blog,
    * then all categories under those and flatten */
-  const postCategories = getDirectories('content/blog')
+  const postCategories = getDirectories('./content/blog')
     .map(root =>
-      getDirectories(`content/blog/${root}`).map(dir => ({
+      getDirectories(`./content/blog/${root}`).map(dir => ({
         type: titleCase(root.replace(/-/, ' ')),
         url: `/${root}/${dir}`,
         name: titleCase(dir.replace(/-/, ' ')),

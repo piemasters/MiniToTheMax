@@ -6,7 +6,7 @@ type AnimationTypes = 'paintDrip' | 'fade' | 'swipe' | 'cover';
 
 interface Props {
   children: any;
-  type: AnimationTypes;
+  type?: AnimationTypes;
   to: string;
   linkStyle?: any;
   linkActiveStyle?: any;
