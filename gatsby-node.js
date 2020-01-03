@@ -99,28 +99,20 @@ module.exports.createPages = async ({ graphql, actions }) => {
       .join(' ');
   };
 
+  // Function for flattening array (netlify doesn't run es9)
+  const flatten = arr => arr.reduce((flat, next) => flat.concat(next), []);
+
   /* Get a list of all directories under content/blog,
    * then all categories under those and flatten */
-
-  const rootDirs = getDirectories('./content/blog');
-  const subDirs = [];
-  console.log('ROOT DIRS: ', rootDirs);
-  for (const dir of rootDirs) {
-    subDirs.push(getDirectories(`./content/blog/${dir}`));
-  }
-  console.log('SUB DIRS: ', subDirs);
-
-  console.log('FLAT DIRS: ', subDirs.flat());
-
-  const postCategories = getDirectories('./content/blog')
-    .map(root =>
+  const postCategories = flatten(
+    getDirectories('./content/blog').map(root =>
       getDirectories(`./content/blog/${root}`).map(dir => ({
         type: titleCase(root.replace(/-/, ' ')),
         url: `/${root}/${dir}`,
         name: titleCase(dir.replace(/-/, ' ')),
       }))
     )
-    .flat();
+  );
   // Make post category pages
   postCategories.forEach(category => {
     createPage({
