@@ -101,6 +101,17 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
   /* Get a list of all directories under content/blog,
    * then all categories under those and flatten */
+
+  const rootDirs = getDirectories('./content/blog');
+  const subDirs = [];
+  console.log('ROOT DIRS: ', rootDirs);
+  for (const dir of rootDirs) {
+    subDirs.push(getDirectories(`./content/blog/${dir}`));
+  }
+  console.log('SUB DIRS: ', subDirs);
+
+  console.log('FLAT DIRS: ', subDirs.flat());
+
   const postCategories = getDirectories('./content/blog')
     .map(root =>
       getDirectories(`./content/blog/${root}`).map(dir => ({
