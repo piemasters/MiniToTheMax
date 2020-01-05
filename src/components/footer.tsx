@@ -1,6 +1,25 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { css } from '@emotion/core';
+import styled from '@emotion/styled';
+
+interface FooterProps {
+  author: string;
+}
+
+export const PureFooter = ({ author }: FooterProps) => {
+  const Footer = styled.footer`
+    margin-top: 3rem;
+  `;
+
+  return (
+    <Footer>
+      <p>
+        Created by {author} © {new Date().getFullYear()}
+      </p>
+    </Footer>
+  );
+};
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -13,15 +32,7 @@ const Footer = () => {
     }
   `);
 
-  const footerStyle = css`
-    margin-top: 3rem;
-  `;
-
-  return (
-    <footer css={footerStyle}>
-      <p>Created by {data.site.siteMetadata.author} © 2019</p>
-    </footer>
-  );
+  return <PureFooter author={data.site.siteMetadata.author} />;
 };
 
 export default Footer;

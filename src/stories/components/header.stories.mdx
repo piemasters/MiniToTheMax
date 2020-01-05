@@ -1,0 +1,26 @@
+import {
+  Story,
+  Preview,
+  Props,
+  Source,
+  Description,
+  Meta,
+} from '@storybook/addon-docs/blocks';
+import Header from '../../components/header';
+
+<Meta title="MDX|Header" component={Header} parameters={{ jest: ['header'] }} />
+
+# Header
+
+With `MDX` we can define a story for `Header` right in the middle of our
+markdown documentation.
+
+<Preview>
+  <Story name="default">
+    <Header />
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Header} />

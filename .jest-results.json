@@ -1,1 +1,57 @@
-{}
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 1,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 1,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": true,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 1,
+    "uncheckedKeysByFile": [
+      {
+        "filePath": "D:\\Projects\\Gatsby\\minitothemax\\src\\tests\\components\\header.test.tsx",
+        "keys": ["Header renders correctly 1"]
+      }
+    ],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1578260396789,
+  "success": false,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["Header"],
+          "failureMessages": [],
+          "fullName": "Header renders correctly",
+          "location": null,
+          "status": "passed",
+          "title": "renders correctly"
+        }
+      ],
+      "endTime": 1578260447703,
+      "message": "",
+      "name": "D:\\Projects\\Gatsby\\minitothemax\\src\\tests\\components\\header.test.tsx",
+      "startTime": 1578260417220,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false
+}

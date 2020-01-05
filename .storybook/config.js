@@ -5,10 +5,12 @@ import { withTests } from '@storybook/addon-jest';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { withCssResources } from '@storybook/addon-cssresources';
+import '../src/styles/index.scss';
 
 addDecorator(
   withTests({
     results,
+    filesExt: '.test.tsx',
   })
 );
 addDecorator(withKnobs);

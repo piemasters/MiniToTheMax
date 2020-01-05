@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import TransitionLink from 'gatsby-plugin-transition-link';
 
@@ -31,6 +32,16 @@ const PageLink = ({
   bg,
   duration,
 }: Props) => {
+  return (
+    <Link
+      to={to}
+      css={linkStyle}
+      activeStyle={linkActiveStyle}
+      partiallyActive={to !== '/'}
+    >
+      {children}
+    </Link>
+  );
   if (type === 'paintDrip') {
     return (
       <AniLink

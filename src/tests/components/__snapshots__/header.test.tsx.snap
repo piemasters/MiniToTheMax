@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header
+  className="css-5l11ia"
+  data-testid="nav-header"
+>
+  <nav>
+    <h1>
+      <div
+        className="css-1oskux0"
+      >
+        <a
+          href="/"
+        >
+          <img
+            alt="Logo"
+            src="/static/logo-37f736b45fa7360612c71ff66ce83af8.png"
+            width="60px"
+          />
+          MiniToTheMax
+        </a>
+      </div>
+    </h1>
+    <ul
+      className="css-icfzt4"
+    >
+      <li
+        className="css-1om4yzi"
+      >
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="css-1om4yzi"
+      >
+        <a
+          href="/blog"
+        >
+          Blog
+        </a>
+      </li>
+      <li
+        className="css-1om4yzi"
+      >
+        <a
+          href="/showcase"
+        >
+          Showcase
+        </a>
+      </li>
+      <li
+        className="css-1om4yzi"
+      >
+        <a
+          href="/backlog"
+        >
+          Backlog
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
