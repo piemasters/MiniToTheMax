@@ -35,5 +35,6 @@ describe('Header', () => {
     );
 
     expect(container.querySelector(`header`)).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 });

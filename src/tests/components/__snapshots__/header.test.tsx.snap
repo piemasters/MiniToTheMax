@@ -1,67 +1,101 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly 1`] = `
-<header
-  className="css-5l11ia"
-  data-testid="nav-header"
->
-  <nav>
-    <h1>
-      <div
-        className="css-1oskux0"
-      >
-        <a
-          href="/"
+.emotion-12 {
+  padding: 1rem 0 3rem;
+}
+
+.emotion-0 a {
+  color: #000000;
+  font-size: 3rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.emotion-2 a {
+  color: #999999;
+  font-size: 0.9rem;
+  margin-right: 1.3rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2 a:hover {
+  color: #666666;
+}
+
+<div>
+  <header
+    class="emotion-12 emotion-13"
+    data-testid="nav-header"
+  >
+    <nav>
+      <h1>
+        <div
+          class="emotion-0 emotion-1"
         >
-          <img
-            alt="Logo"
-            src="/static/logo-37f736b45fa7360612c71ff66ce83af8.png"
-            width="60px"
-          />
-          MiniToTheMax
-        </a>
-      </div>
-    </h1>
-    <ul
-      className="css-icfzt4"
-    >
-      <li
-        className="css-1om4yzi"
+          <a
+            href="/"
+          >
+            <img
+              alt="Logo"
+              src="/static/logo-37f736b45fa7360612c71ff66ce83af8.png"
+              width="60px"
+            />
+            MiniToTheMax
+          </a>
+        </div>
+      </h1>
+      <ul
+        class="emotion-10 emotion-11"
       >
-        <a
-          href="/"
+        <li
+          class="emotion-2 emotion-3"
         >
-          Home
-        </a>
-      </li>
-      <li
-        className="css-1om4yzi"
-      >
-        <a
-          href="/blog"
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          class="emotion-2 emotion-3"
         >
-          Blog
-        </a>
-      </li>
-      <li
-        className="css-1om4yzi"
-      >
-        <a
-          href="/showcase"
+          <a
+            href="/blog"
+          >
+            Blog
+          </a>
+        </li>
+        <li
+          class="emotion-2 emotion-3"
         >
-          Showcase
-        </a>
-      </li>
-      <li
-        className="css-1om4yzi"
-      >
-        <a
-          href="/backlog"
+          <a
+            href="/showcase"
+          >
+            Showcase
+          </a>
+        </li>
+        <li
+          class="emotion-2 emotion-3"
         >
-          Backlog
-        </a>
-      </li>
-    </ul>
-  </nav>
-</header>
+          <a
+            href="/backlog"
+          >
+            Backlog
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
 `;
