@@ -1,8 +1,10 @@
 import React from 'react';
+import styled from '@emotion/styled';
+import { ThemeProvider } from 'emotion-theming';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import theme from '../styles/theme';
 import '../styles/index.scss';
-import styled from '@emotion/styled';
 
 interface Props {
   location?: Location;
@@ -26,13 +28,15 @@ const Layout = ({ children }: Props) => {
   `;
 
   return (
-    <Container>
-      <Content>
-        <Header />
-        {children}
-      </Content>
-      <Footer />
-    </Container>
+    <ThemeProvider theme={theme}>
+      <Container>
+        <Content>
+          <Header />
+          {children}
+        </Content>
+        <Footer />
+      </Container>
+    </ThemeProvider>
   );
 };
 

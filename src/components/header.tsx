@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import PageLink from './page-link';
 import styled from '@emotion/styled';
+import { useTheme } from 'emotion-theming';
 
 interface Page {
   name: string;
@@ -15,13 +16,15 @@ interface HeaderProps {
 }
 
 export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
+  const theme: any = useTheme();
+
   const NavHeader = styled.header`
     padding: 1rem 0 3rem;
   `;
 
   const NavTitle = styled.div`
     a {
-      color: #000000;
+      color: ${theme.colors.text};
       font-size: 3rem;
       text-decoration: none;
     }
@@ -35,7 +38,7 @@ export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
 
   const NavItem = styled.li`
     a {
-      color: #999999;
+      color: ${theme.colors.muted};
       font-size: 0.9rem;
       margin-right: 1.3rem;
       text-decoration: none;

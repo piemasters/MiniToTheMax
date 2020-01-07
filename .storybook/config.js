@@ -5,6 +5,7 @@ import { withTests } from '@storybook/addon-jest';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { withCssResources } from '@storybook/addon-cssresources';
+import themeDecorator from './themeDecorator';
 import '../src/styles/index.scss';
 
 addDecorator(
@@ -16,6 +17,7 @@ addDecorator(
 addDecorator(withKnobs);
 addDecorator(withA11y);
 addDecorator(withCssResources);
+addDecorator(themeDecorator);
 
 addParameters({
   backgrounds: [
