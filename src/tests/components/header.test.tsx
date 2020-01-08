@@ -1,6 +1,8 @@
 import React from 'react';
 import { PureHeader as Header } from '../../components/header';
 import { render, getByTestId } from '@testing-library/react';
+import { ThemeProvider } from 'emotion-theming';
+import theme from '../../styles/theme';
 
 describe('Header', () => {
   test('renders correctly', () => {
@@ -23,11 +25,13 @@ describe('Header', () => {
     ];
 
     const { container } = render(
-      <Header
-        title={data.site.siteMetadata.title}
-        logo={data.file.publicURL}
-        pages={pages}
-      />
+      <ThemeProvider theme={theme}>
+        <Header
+          title={data.site.siteMetadata.title}
+          logo={data.file.publicURL}
+          pages={pages}
+        />
+      </ThemeProvider>
     );
 
     expect(getByTestId(container, 'nav-header')).toHaveTextContent(

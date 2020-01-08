@@ -6,7 +6,7 @@ exports[`Header renders correctly 1`] = `
 }
 
 .emotion-0 a {
-  color: #000000;
+  color: #000;
   font-size: 3rem;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -22,7 +22,7 @@ exports[`Header renders correctly 1`] = `
 }
 
 .emotion-2 a {
-  color: #999999;
+  color: #999;
   font-size: 0.9rem;
   margin-right: 1.3rem;
   -webkit-text-decoration: none;
