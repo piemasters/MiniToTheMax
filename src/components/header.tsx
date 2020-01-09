@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import PageLink from './page-link';
-import styled from '@emotion/styled';
 import { useTheme } from 'emotion-theming';
+import { css } from '@emotion/core';
 
 interface Page {
   name: string;
@@ -18,11 +18,11 @@ interface HeaderProps {
 export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
   const theme: any = useTheme();
 
-  const NavHeader = styled.header`
+  const NavHeader = css`
     padding: 1rem 0 3rem;
   `;
 
-  const NavTitle = styled.div`
+  const NavTitle = css`
     a {
       color: ${theme.colors.text};
       font-size: 3rem;
@@ -30,13 +30,13 @@ export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
     }
   `;
 
-  const NavList = styled.ul`
+  const NavList = css`
     display: flex;
     list-style-type: none;
     margin: 0;
   `;
 
-  const NavItem = styled.li`
+  const NavItem = css`
     a {
       color: ${theme.colors.muted};
       font-size: 0.9rem;
@@ -49,33 +49,33 @@ export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
   `;
 
   return (
-    <NavHeader data-testid="nav-header">
+    <div css={NavHeader} data-testid="nav-header">
       <nav>
         <h1>
-          <NavTitle>
+          <div css={NavTitle}>
             <PageLink type={'paintDrip'} to={'/'}>
               <img src={logo} alt="Logo" width={60 + 'px'} />
               {title}
             </PageLink>
-          </NavTitle>
+          </div>
         </h1>
-        <NavList>
+        <div css={NavList}>
           {pages.map(page => {
             return (
-              <NavItem key={page.name}>
+              <div css={NavItem} key={page.name}>
                 <PageLink
-                  type={'paintDrip'}
+                  type={'cover'}
                   linkActiveStyle={{ color: '#333333' }}
                   to={page.url}
                 >
                   {page.name}
                 </PageLink>
-              </NavItem>
+              </div>
             );
           })}
-        </NavList>
+        </div>
       </nav>
-    </NavHeader>
+    </div>
   );
 };
 

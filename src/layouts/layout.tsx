@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from '@emotion/styled';
 import { ThemeProvider } from 'emotion-theming';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import theme from '../styles/theme';
 import '../styles/index.scss';
+import { css } from '@emotion/core';
 
 interface Props {
   location?: Location;
@@ -13,7 +13,7 @@ interface Props {
 }
 
 const Layout = ({ children }: Props) => {
-  const Container = styled.div`
+  const Container = css`
     margin: 0 auto;
     max-width: 750px;
     padding: 1rem;
@@ -23,19 +23,19 @@ const Layout = ({ children }: Props) => {
     min-height: 100vh;
   `;
 
-  const Content = styled.div`
+  const Content = css`
     flex-grow: 1;
   `;
 
   return (
     <ThemeProvider theme={theme}>
-      <Container>
-        <Content>
+      <div css={Container}>
+        <div css={Content}>
           <Header />
           {children}
-        </Content>
+        </div>
         <Footer />
-      </Container>
+      </div>
     </ThemeProvider>
   );
 };

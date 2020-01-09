@@ -32,16 +32,6 @@ const PageLink = ({
   bg,
   duration,
 }: Props) => {
-  return (
-    <Link
-      to={to}
-      css={linkStyle}
-      activeStyle={linkActiveStyle}
-      partiallyActive={to !== '/'}
-    >
-      {children}
-    </Link>
-  );
   if (type === 'paintDrip') {
     return (
       <AniLink
