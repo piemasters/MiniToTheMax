@@ -1,23 +1,25 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { css } from '@emotion/core';
-import styled from '@emotion/styled';
+import { useTheme } from 'emotion-theming';
 
 interface FooterProps {
   author: string;
 }
 
 export const PureFooter = ({ author }: FooterProps) => {
-  const Footer = styled.footer`
+  const theme: any = useTheme();
+
+  const Footer = css`
     margin-top: 3rem;
   `;
 
   return (
-    <Footer>
+    <footer data-testid="footer" css={Footer}>
       <p>
         Created by {author} © {new Date().getFullYear()}
       </p>
-    </Footer>
+    </footer>
   );
 };
 

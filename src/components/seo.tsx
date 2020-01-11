@@ -1,85 +1,82 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
-const Seo = ({
-  title,
-  description,
-  image,
-  pathname,
-  article,
-}: {
+import { graphql, useStaticQuery } from 'gatsby';
+
+interface SeoProps {
+  title?: string;
+  description?: string;
+  image?: string;
+  pathname?: string;
+  article?: boolean;
+}
+
+interface PureSeoProps {
   title: string;
   description: string;
   image: string;
-  pathname: string;
-  article: boolean;
-}) => (
-  <StaticQuery
-    query={query}
-    render={({
-      site: {
-        siteMetadata: {
-          defaultTitle,
-          defaultDescription,
-          siteUrl,
-          defaultImage,
-        },
-      },
-    }) => {
-      const seo = {
-        title: title || defaultTitle,
-        description: description || defaultDescription,
-        image: `${siteUrl}${image || defaultImage}`,
-        siteUrl: `${siteUrl}${pathname || '/'}`,
-      };
-      return (
-        <>
-          <Helmet title={seo.title}>
-            {/* General tags */}
-            <meta name="description" content={seo.description} />
-            <meta name="image" content={seo.image} />
+  article?: boolean;
+  siteUrl: string;
+}
 
-            {/* OpenGraph tags */}
-            {seo.siteUrl && <meta property="og:url" content={seo.siteUrl} />}
-            {(article ? true : null) && (
-              <meta property="og:type" content="article" />
-            )}
-            {seo.title && <meta property="og:title" content={seo.title} />}
-            {seo.description && (
-              <meta property="og:description" content={seo.description} />
-            )}
-            {seo.image && <meta property="og:image" content={seo.image} />}
-          </Helmet>
-        </>
-      );
-    }}
-  />
-);
-export default Seo;
-Seo.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  image: PropTypes.string,
-  pathname: PropTypes.string,
-  article: PropTypes.bool,
+export const PureSeo = ({
+  title,
+  description,
+  image,
+  article,
+  siteUrl,
+}: PureSeoProps) => {
+  return (
+    <>
+      <Helmet title={title}>
+        {/* General tags */}
+        <meta name="description" content={description} />
+        <meta name="image" content={image} />
+
+        {/* OpenGraph tags */}
+        {siteUrl && <meta property="og:url" content={siteUrl} />}
+        {(article ? true : null) && (
+          <meta property="og:type" content="article" />
+        )}
+        {title && <meta property="og:title" content={title} />}
+        {description && (
+          <meta property="og:description" content={description} />
+        )}
+        {image && <meta property="og:image" content={image} />}
+      </Helmet>
+    </>
+  );
 };
-Seo.defaultProps = {
-  title: null,
-  description: null,
-  image: null,
-  pathname: null,
-  article: false,
-};
-const query = graphql`
-  query SEO {
-    site {
-      siteMetadata {
-        defaultTitle: title
-        defaultDescription: description
-        siteUrl: siteUrl
-        defaultImage: image
+
+const Seo = ({ title, description, image, pathname, article }: SeoProps) => {
+  const data = useStaticQuery(graphql`
+    query SEO {
+      site {
+        siteMetadata {
+          title
+          description
+          siteUrl
+          image
+        }
       }
     }
-  }
-`;
+  `);
+
+  const seo = {
+    title: title || data.site.siteMetadata.title,
+    description: description || data.site.siteMetadata.description,
+    image: `${data.site.siteMetadata.siteUrl}${image ||
+      data.site.siteMetadata.image}`,
+    siteUrl: `${data.site.siteMetadata.siteUrl}${pathname || '/'}`,
+  };
+
+  return (
+    <PureSeo
+      title={seo.title}
+      description={seo.description}
+      image={seo.image}
+      article={article}
+      siteUrl={seo.siteUrl}
+    />
+  );
+};
+export default Seo;

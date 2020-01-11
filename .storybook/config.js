@@ -37,7 +37,13 @@ addParameters({
     inlineStories: true,
     iframeHeight: '60px',
   },
-  options: { sortStoriesByKind: true },
+  options: {
+    showRoots: true,
+    storySort: (a, b) =>
+      a[1].kind === b[1].kind
+        ? 0
+        : a[1].id.localeCompare(b[1].id, { numeric: true }),
+  },
 });
 
 // automatically import all files ending in *.stories.js

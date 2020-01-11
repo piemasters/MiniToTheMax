@@ -43,7 +43,7 @@ const Pagination = ({
   };
 
   return (
-    <ul css={containerStyle}>
+    <ul data-testid="pagination" css={containerStyle}>
       {!isFirst && (
         <PageLink to={prevPage} type={'cover'} direction={'right'}>
           ← Previous Page

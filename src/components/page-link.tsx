@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// @ts-ignore
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+// @ts-ignore
 import TransitionLink from 'gatsby-plugin-transition-link';
 
 type AnimationTypes = 'paintDrip' | 'fade' | 'swipe' | 'cover';
 
-interface Props {
+interface PageLinkProps {
   children: any;
   type?: AnimationTypes;
   to: string;
@@ -31,10 +32,11 @@ const PageLink = ({
   hex,
   bg,
   duration,
-}: Props) => {
+}: PageLinkProps) => {
   if (type === 'paintDrip') {
     return (
       <AniLink
+        data-testid="page-link-paint"
         paintDrip
         hex={hex ? hex : '#eb1d23'}
         to={to}
@@ -49,6 +51,7 @@ const PageLink = ({
   } else if (type === 'fade') {
     return (
       <AniLink
+        data-testid="page-link-fade"
         fade={type === 'fade'}
         to={to}
         duration={duration}
@@ -62,6 +65,7 @@ const PageLink = ({
   } else if (type === 'swipe') {
     return (
       <AniLink
+        data-testid="page-link-swipe"
         swipe
         direction={direction ? direction : 'up'}
         top={top ? top : 'exit'}
@@ -79,6 +83,7 @@ const PageLink = ({
   } else if (type === 'cover') {
     return (
       <AniLink
+        data-testid="page-link-cover"
         cover
         to={to}
         direction={direction ? direction : 'up'}
@@ -94,6 +99,7 @@ const PageLink = ({
   } else {
     return (
       <TransitionLink
+        data-testid="page-link"
         to={to}
         css={linkStyle}
         activeStyle={linkActiveStyle}

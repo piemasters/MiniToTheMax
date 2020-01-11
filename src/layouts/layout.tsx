@@ -1,23 +1,22 @@
 import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
+import { css } from '@emotion/core';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import theme from '../styles/theme';
 import '../styles/index.scss';
-import { css } from '@emotion/core';
 
-interface Props {
+interface LayoutProps {
   location?: Location;
   title?: string;
   children?: any;
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children }: LayoutProps) => {
   const Container = css`
     margin: 0 auto;
     max-width: 750px;
     padding: 1rem;
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;

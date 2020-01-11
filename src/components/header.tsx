@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import PageLink from './page-link';
 import { useTheme } from 'emotion-theming';
 import { css } from '@emotion/core';
+import PageLink from './page-link';
 
 interface Page {
   name: string;
