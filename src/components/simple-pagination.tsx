@@ -8,8 +8,8 @@ interface PureNode {
 }
 
 interface PureSimplePaginationProps {
-  previous: PureNode;
-  next: PureNode;
+  previous?: PureNode;
+  next?: PureNode;
 }
 
 interface Node {
@@ -23,8 +23,8 @@ interface Node {
 }
 
 interface SimplePaginationProps {
-  previous: Node;
-  next: Node;
+  previous?: Node;
+  next?: Node;
 }
 
 export const PureSimplePagination = ({
@@ -59,15 +59,19 @@ export const PureSimplePagination = ({
 };
 
 const SimplePagination = ({ previous, next }: SimplePaginationProps) => {
-  const p = {
-    slug: previous.fields.slug,
-    title: previous.frontmatter.title,
-  };
+  const p = previous
+    ? {
+        slug: previous.fields.slug,
+        title: previous.frontmatter.title,
+      }
+    : undefined;
 
-  const n = {
-    slug: next.fields.slug,
-    title: next.frontmatter.title,
-  };
+  const n = next
+    ? {
+        slug: next.fields.slug,
+        title: next.frontmatter.title,
+      }
+    : undefined;
 
   return <PureSimplePagination previous={p} next={n} />;
 };
