@@ -6,6 +6,7 @@ import { kebabCase } from 'lodash';
 import SimplePagination from '../components/simple-pagination';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { safe } from '../utils';
+// @ts-ignore
 import Gallery from 'react-grid-gallery';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';

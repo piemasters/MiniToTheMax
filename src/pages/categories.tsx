@@ -1,16 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
 import { graphql } from 'gatsby';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
+
+interface CategoryDataType {
+  allMdx: {
+    group: {
+      fieldValue: string;
+      totalCount: string;
+    }[];
+  };
+}
 
 const CategoriesPage = ({
   data: {
     allMdx: { group },
   },
 }: {
-  data: any;
+  data: CategoryDataType;
 }) => (
   <div>
     <Seo
@@ -36,19 +44,9 @@ const CategoriesPage = ({
     </div>
   </div>
 );
-CategoriesPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      group: PropTypes.arrayOf(
-        PropTypes.shape({
-          fieldValue: PropTypes.string.isRequired,
-          totalCount: PropTypes.number.isRequired,
-        }).isRequired
-      ),
-    }),
-  }),
-};
+
 export default CategoriesPage;
+
 export const pageQuery = graphql`
   query {
     allMdx(limit: 2000) {

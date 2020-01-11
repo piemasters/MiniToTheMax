@@ -1,16 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
 import { graphql } from 'gatsby';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
+
+interface TagDataType {
+  allMdx: {
+    group: {
+      fieldValue: string;
+      totalCount: string;
+    }[];
+  };
+}
 
 const TagsPage = ({
   data: {
     allMdx: { group },
   },
 }: {
-  data: any;
+  data: TagDataType;
 }) => (
   <div>
     <Seo title={'Tags'} description={'All blog tags'} pathname={'/tags'} />
@@ -32,19 +40,9 @@ const TagsPage = ({
     </div>
   </div>
 );
-TagsPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      group: PropTypes.arrayOf(
-        PropTypes.shape({
-          fieldValue: PropTypes.string.isRequired,
-          totalCount: PropTypes.number.isRequired,
-        }).isRequired
-      ),
-    }),
-  }),
-};
+
 export default TagsPage;
+
 export const pageQuery = graphql`
   query {
     allMdx(limit: 2000) {

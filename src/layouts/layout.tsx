@@ -7,8 +7,6 @@ import theme from '../styles/theme';
 import '../styles/index.scss';
 
 interface LayoutProps {
-  location?: Location;
-  title?: string;
   children?: any;
 }
 
