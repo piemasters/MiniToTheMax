@@ -1,16 +1,59 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import Layout from '../layouts/layout';
 import Seo from '../components/seo';
-import { graphql } from 'gatsby';
 import PageLink from '../components/page-link';
+import { FluidObject } from 'gatsby-image';
+import Category from './category';
+
+interface PostCategoryContext {
+  type: string;
+  category: string;
+  url: string;
+}
+
+interface PostCategoryEdge {
+  node: {
+    fields: {
+      slug: string;
+    };
+    frontmatter: {
+      title: string;
+      categories: string[];
+      featuredImage: {
+        childImageSharp: {
+          fluid: FluidObject;
+        };
+      };
+    };
+  };
+}
+
+interface PostCategoryData {
+  postCategories: {
+    edges: PostCategoryEdge[];
+  };
+}
+
+interface PostCategory {
+  slug: string;
+  title: string;
+}
 
 const PostCategory = ({
   pageContext,
   data,
 }: {
-  pageContext: any;
-  data: any;
+  pageContext: PostCategoryContext;
+  data: PostCategoryData;
 }) => {
+  const postCategories: PostCategory[] = data.postCategories.edges.map(
+    (edge: PostCategoryEdge) => ({
+      slug: edge.node.fields.slug,
+      title: edge.node.frontmatter.title,
+    })
+  );
+
   return (
     <Layout>
       <Seo
@@ -22,13 +65,11 @@ const PostCategory = ({
       <h1>{pageContext.category}</h1>
 
       <ul>
-        {data.allMdx.edges.map(({ node }: { node: any }) => {
-          const { slug } = node.fields;
-          const { title } = node.frontmatter;
+        {postCategories.map((postCategory: PostCategory) => {
           return (
-            <li key={slug}>
-              <PageLink to={slug} type={'cover'} direction={'up'}>
-                {title}
+            <li key={postCategory.slug}>
+              <PageLink to={postCategory.slug} type={'cover'} direction={'up'}>
+                {postCategory.title}
               </PageLink>
             </li>
           );
@@ -42,7 +83,7 @@ export default PostCategory;
 
 export const pageQuery = graphql`
   query($category: String!, $type: String!) {
-    allMdx(
+    postCategories: allMdx(
       filter: { frontmatter: { categories: { in: [$type], eq: $category } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
@@ -55,7 +96,18 @@ export const pageQuery = graphql`
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800, maxHeight: 400) {
-                  ...GatsbyImageSharpFluid
+                  base64
+                  tracedSVG
+                  aspectRatio
+                  src
+                  srcSet
+                  srcWebp
+                  srcSetWebp
+                  sizes
+                  originalImg
+                  originalName
+                  presentationWidth
+                  presentationHeight
                 }
               }
             }

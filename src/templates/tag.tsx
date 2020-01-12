@@ -1,28 +1,67 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
 import Layout from '../layouts/layout';
 
-const Tag = ({ pageContext, data }: { pageContext: any; data: any }) => {
-  const { tag, url } = pageContext;
-  const { edges, totalCount } = data.tags;
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? '' : 's'
-  } tagged with "${tag}"`;
+interface TagContext {
+  tag: string;
+  url: string;
+}
+
+interface TagEdge {
+  node: {
+    fields: {
+      slug: string;
+    };
+    frontmatter: {
+      title: string;
+    };
+  };
+}
+
+interface TagData {
+  tags: {
+    totalCount: number;
+    edges: TagEdge[];
+  };
+}
+
+interface Tag {
+  slug: string;
+  title: string;
+}
+
+const Tag = ({
+  pageContext,
+  data,
+}: {
+  pageContext: TagContext;
+  data: TagData;
+}) => {
+  const tagHeader = `${data.tags.totalCount} post${
+    data.tags.totalCount === 1 ? '' : 's'
+  } tagged with "${pageContext.tag}"`;
+
+  const tags: Tag[] = data.tags.edges.map((edge: TagEdge) => ({
+    slug: edge.node.fields.slug,
+    title: edge.node.frontmatter.title,
+  }));
+
   return (
     <Layout>
-      <Seo title={tag} pathname={url} description={tagHeader} />
+      <Seo
+        title={pageContext.tag}
+        pathname={pageContext.url}
+        description={tagHeader}
+      />
       <h1>{tagHeader}</h1>
       <ul>
-        {edges.map(({ node }: { node: any }) => {
-          const { slug } = node.fields;
-          const { title } = node.frontmatter;
+        {tags.map((tag: Tag) => {
           return (
-            <li key={slug}>
-              <PageLink to={slug} type={'cover'} direction={'up'}>
-                {title}
+            <li key={tag.slug}>
+              <PageLink to={tag.slug} type={'cover'} direction={'up'}>
+                {tag.title}
               </PageLink>
             </li>
           );
@@ -34,29 +73,9 @@ const Tag = ({ pageContext, data }: { pageContext: any; data: any }) => {
     </Layout>
   );
 };
-Tag.propTypes = {
-  pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
-  }),
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      totalCount: PropTypes.number.isRequired,
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            frontmatter: PropTypes.shape({
-              title: PropTypes.string.isRequired,
-            }),
-            fields: PropTypes.shape({
-              slug: PropTypes.string.isRequired,
-            }),
-          }),
-        }).isRequired
-      ),
-    }),
-  }),
-};
+
 export default Tag;
+
 export const pageQuery = graphql`
   query($tag: String) {
     tags: allMdx(

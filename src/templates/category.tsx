@@ -1,27 +1,69 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
 import Layout from '../layouts/layout';
-const Category = ({ pageContext, data }: { pageContext: any; data: any }) => {
-  const { category, url } = pageContext;
-  const { edges, totalCount } = data.categories;
-  const categoryHeader = `${totalCount} post${
-    totalCount === 1 ? '' : 's'
-  } tagged with "${category}"`;
+
+interface CategoryContext {
+  category: string;
+  url: string;
+}
+
+interface CategoryEdge {
+  node: {
+    fields: {
+      slug: string;
+    };
+    frontmatter: {
+      title: string;
+    };
+  };
+}
+
+interface CategoryData {
+  categories: {
+    totalCount: number;
+    edges: CategoryEdge[];
+  };
+}
+
+interface Category {
+  slug: string;
+  title: string;
+}
+
+const Category = ({
+  pageContext,
+  data,
+}: {
+  pageContext: CategoryContext;
+  data: CategoryData;
+}) => {
+  const categoryHeader = `${data.categories.totalCount} post${
+    data.categories.totalCount === 1 ? '' : 's'
+  } tagged with "${pageContext.category}"`;
+
+  const categories: Category[] = data.categories.edges.map(
+    (edge: CategoryEdge) => ({
+      slug: edge.node.fields.slug,
+      title: edge.node.frontmatter.title,
+    })
+  );
+
   return (
     <Layout>
-      <Seo title={category} pathname={url} description={categoryHeader} />
+      <Seo
+        title={pageContext.category}
+        pathname={pageContext.url}
+        description={categoryHeader}
+      />
       <h1>{categoryHeader}</h1>
       <ul>
-        {edges.map(({ node }: { node: any }) => {
-          const { slug } = node.fields;
-          const { title } = node.frontmatter;
+        {categories.map((category: Category) => {
           return (
-            <li key={slug}>
-              <PageLink to={slug} type={'cover'} direction={'up'}>
-                {title}
+            <li key={category.slug}>
+              <PageLink to={category.slug} type={'cover'} direction={'up'}>
+                {category.title}
               </PageLink>
             </li>
           );
@@ -33,29 +75,9 @@ const Category = ({ pageContext, data }: { pageContext: any; data: any }) => {
     </Layout>
   );
 };
-Category.propTypes = {
-  pageContext: PropTypes.shape({
-    category: PropTypes.string.isRequired,
-  }),
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      totalCount: PropTypes.number.isRequired,
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            frontmatter: PropTypes.shape({
-              title: PropTypes.string.isRequired,
-            }),
-            fields: PropTypes.shape({
-              slug: PropTypes.string.isRequired,
-            }),
-          }),
-        }).isRequired
-      ),
-    }),
-  }),
-};
+
 export default Category;
+
 export const pageQuery = graphql`
   query($category: String) {
     categories: allMdx(

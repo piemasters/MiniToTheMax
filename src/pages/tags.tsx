@@ -5,11 +5,13 @@ import Seo from '../components/seo';
 import PageLink from '../components/page-link';
 
 interface TagDataType {
+  fieldValue: string;
+  totalCount: string;
+}
+
+interface TagGroupDataType {
   allMdx: {
-    group: {
-      fieldValue: string;
-      totalCount: string;
-    }[];
+    group: TagDataType[];
   };
 }
 
@@ -18,14 +20,14 @@ const TagsPage = ({
     allMdx: { group },
   },
 }: {
-  data: TagDataType;
+  data: TagGroupDataType;
 }) => (
   <div>
     <Seo title={'Tags'} description={'All blog tags'} pathname={'/tags'} />
     <div>
       <h1>Tags</h1>
       <ul>
-        {group.map((tag: any) => (
+        {group.map((tag: TagDataType) => (
           <li key={tag.fieldValue}>
             <PageLink
               to={`/tags/${kebabCase(tag.fieldValue)}/`}

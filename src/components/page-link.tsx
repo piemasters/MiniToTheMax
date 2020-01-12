@@ -3,6 +3,7 @@ import React from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 // @ts-ignore
 import TransitionLink from 'gatsby-plugin-transition-link';
+import * as CSS from 'csstype';
 
 type AnimationTypes = 'paintDrip' | 'fade' | 'swipe' | 'cover';
 
@@ -10,8 +11,8 @@ interface PageLinkProps {
   children: any;
   type?: AnimationTypes;
   to: string;
-  linkStyle?: any;
-  linkActiveStyle?: any;
+  linkStyle?: CSS.Properties;
+  linkActiveStyle?: CSS.Properties;
   direction?: string;
   top?: string;
   entryOffset?: number;

@@ -2,13 +2,14 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { css } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
+import * as CSS from 'csstype';
 
 interface FooterProps {
   author: string;
 }
 
 export const PureFooter = ({ author }: FooterProps) => {
-  const theme: any = useTheme();
+  const theme: CSS.Properties = useTheme();
 
   const Footer = css`
     margin-top: 3rem;

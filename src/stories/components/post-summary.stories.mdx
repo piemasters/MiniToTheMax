@@ -1,0 +1,36 @@
+import {
+  Story,
+  Preview,
+  Props,
+  Source,
+  Description,
+  Meta,
+} from '@storybook/addon-docs/blocks';
+import PostSummary from '../../components/post-summary';
+
+<Meta title="Components/PostSummary" component={PostSummary} />
+
+# PostSummary
+
+With `MDX` we can define a story for `PostSummary` right in the middle of our
+markdown documentation.
+
+<Preview>
+  <Story name="default">
+    <PostSummary
+      date={'11/01/2019'}
+      img={{
+        aspectRatio: 1,
+        src: '',
+        srcSet: '',
+        sizes: '(max-width: 800px) 100vw, 800px',
+      }}
+      slug={'slug'}
+      title={'Demo Post Title'}
+    />
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={PostSummary} />

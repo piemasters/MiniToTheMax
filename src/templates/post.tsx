@@ -12,42 +12,14 @@ import Seo from '../components/seo';
 import PageLink from '../components/page-link';
 import { DiscussionEmbed } from 'disqus-react';
 
-export const query = graphql`
-  query($slug: String!) {
-    site {
-      siteMetadata {
-        siteUrl
-      }
-    }
-    post: mdx(fields: { slug: { eq: $slug } }) {
-      excerpt
-      frontmatter {
-        title
-        date
-        tags
-        categories
-        featuredImage {
-          childImageSharp {
-            fluid(maxWidth: 800, maxHeight: 400) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        gallery {
-          publicURL
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-              presentationHeight
-            }
-          }
-        }
-      }
-      body
-    }
-  }
-`;
+interface GalleryImage {
+  src: string;
+  thumbnail: string;
+  thumbnailWidth: number;
+  thumbnailHeight: number;
+  nano: string;
+  srcSet: string[];
+}
 
 const Post = (props: any) => {
   const post = props.data.post;
@@ -56,7 +28,7 @@ const Post = (props: any) => {
   const { frontmatter } = safe(post);
   const { gallery } = safe(frontmatter);
 
-  const galleryImages = gallery
+  const galleryImages: GalleryImage[] = gallery
     ? gallery.map((img: any) => ({
         src: img.childImageSharp.fluid.src,
         thumbnail: img.childImageSharp.fluid.src,
@@ -130,3 +102,40 @@ const Post = (props: any) => {
 };
 
 export default Post;
+
+export const query = graphql`
+  query($slug: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
+    post: mdx(fields: { slug: { eq: $slug } }) {
+      excerpt
+      frontmatter {
+        title
+        date
+        tags
+        categories
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800, maxHeight: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        gallery {
+          publicURL
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+              presentationWidth
+              presentationHeight
+            }
+          }
+        }
+      }
+      body
+    }
+  }
+`;

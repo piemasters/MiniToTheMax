@@ -1,98 +1,111 @@
 import React from 'react';
-import Layout from '../layouts/layout';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import { css } from '@emotion/core';
+import { FluidObject } from 'gatsby-image';
+import Layout from '../layouts/layout';
 import Pagination from '../components/pagination';
 import Seo from '../components/seo';
-import PageLink from '../components/page-link';
+import PostSummary from '../components/post-summary';
 
-const Blog = ({ data, pageContext }: { data: any; pageContext: any }) => {
-  const posts = data.posts.edges;
-  const { currentPage, numPages } = pageContext;
-  const isFirst = currentPage === 1;
-  const isLast = currentPage === numPages;
-  const prevPage =
-    '/blog/' + (currentPage - 1 === 1 ? '' : (currentPage - 1).toString());
-  const nextPage = '/blog/' + (currentPage + 1).toString();
+interface PostContext {
+  limit: number;
+  skip: number;
+  numPages: number;
+  currentPage: number;
+}
 
+interface PostEdge {
+  node: {
+    frontmatter: {
+      title: string;
+      date: string;
+      featuredImage: {
+        childImageSharp: {
+          fluid: FluidObject;
+        };
+      };
+    };
+    fields: {
+      slug: string;
+    };
+  };
+}
+
+interface PostData {
+  posts: {
+    edges: PostEdge[];
+  };
+}
+
+interface Post {
+  slug: string;
+  title: string;
+  date: string;
+  img: FluidObject;
+}
+
+const Blog = ({
+  data,
+  pageContext,
+}: {
+  data: PostData;
+  pageContext: PostContext;
+}) => {
   const postsStyle = css`
     list-style-type: none;
     margin: 0;
   `;
 
-  const postStyle = css`
-    margin: 1rem 0;
-  `;
+  const page = {
+    isFirst: pageContext.currentPage === 1,
+    isLast: pageContext.currentPage === pageContext.numPages,
+    prevPage:
+      '/blog/' +
+      (pageContext.currentPage - 1 === 1
+        ? ''
+        : (pageContext.currentPage - 1).toString()),
+    nextPage: '/blog/' + (pageContext.currentPage + 1).toString(),
+    numPages: pageContext.numPages,
+    currentPage: pageContext.currentPage,
+    baseUrl: '/blog/',
+  };
 
-  const postHeaderStyle = css`
-    margin-bottom: 0;
-  `;
-
-  const postParagraphStyle = css`
-    color: #777777;
-    font-size: 0.8rem;
-    font-style: italic;
-  `;
-
-  const postLinkStyle = css`
-    background-color: #f4f4f4;
-    color: #000000;
-    display: block;
-    padding: 1rem;
-    text-decoration: none;
-    &:hover {
-      background-color: #e4e4e4;
-    }
-  `;
+  const posts: Post[] = data.posts.edges.map((edge: PostEdge) => ({
+    slug: edge.node.fields.slug,
+    title: edge.node.frontmatter.title,
+    date: edge.node.frontmatter.date,
+    img: edge.node.frontmatter.featuredImage.childImageSharp.fluid,
+  }));
 
   return (
     <Layout>
       <Seo
         title={'Blog'}
         description={'Blog Posts'}
-        pathname={`/blog/${currentPage}`}
+        pathname={`/blog/${page.currentPage}`}
       />
       <h1>Blog</h1>
       <ol css={postsStyle}>
-        {posts.map((edge: any) => {
+        {posts.map((post: Post) => {
           return (
-            <li css={postStyle} key={edge.node.fields.slug}>
-              <PageLink
-                linkStyle={postLinkStyle}
-                to={edge.node.fields.slug}
-                type={'cover'}
-                direction={'up'}
-              >
-                <h2 css={postHeaderStyle}>{edge.node.frontmatter.title}</h2>
-                <p css={postParagraphStyle}>{edge.node.frontmatter.date}</p>
-                <Img
-                  fluid={
-                    edge.node.frontmatter.featuredImage
-                      ? edge.node.frontmatter.featuredImage.childImageSharp
-                          .fluid
-                      : {
-                          width: 0,
-                          height: 0,
-                          src: '',
-                          srcSet: null,
-                        }
-                  }
-                />
-              </PageLink>
-            </li>
+            <PostSummary
+              date={post.date}
+              img={post.img}
+              slug={post.slug}
+              title={post.title}
+            />
           );
         })}
       </ol>
 
       <Pagination
-        isFirst={isFirst}
-        isLast={isLast}
-        prevPage={prevPage}
-        nextPage={nextPage}
-        numPages={numPages}
-        currentPage={currentPage}
-        baseUrl={'/blog/'}
+        isFirst={page.isFirst}
+        isLast={page.isLast}
+        prevPage={page.prevPage}
+        nextPage={page.nextPage}
+        numPages={page.numPages}
+        currentPage={page.currentPage}
+        baseUrl={page.baseUrl}
       />
     </Layout>
   );
@@ -113,7 +126,18 @@ export const postQuery = graphql`
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800, maxHeight: 300) {
-                  ...GatsbyImageSharpFluid
+                  base64
+                  tracedSVG
+                  aspectRatio
+                  src
+                  srcSet
+                  srcWebp
+                  srcSetWebp
+                  sizes
+                  originalImg
+                  originalName
+                  presentationWidth
+                  presentationHeight
                 }
               }
             }

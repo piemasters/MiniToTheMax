@@ -755,6 +755,8 @@ type Query {
     id: StringQueryOperatorInput
     internal: InternalFilterInput
     parent: NodeFilterInput
+    pathPrefix: StringQueryOperatorInput
+    polyfill: BooleanQueryOperatorInput
     port: IntQueryOperatorInput
     siteMetadata: SiteSiteMetadataFilterInput
   ): Site
@@ -806,6 +808,8 @@ type Site implements Node {
   id: ID!
   internal: Internal!
   parent: Node
+  pathPrefix: String
+  polyfill: Boolean
   port: Int
   siteMetadata: SiteSiteMetadata
 }
@@ -873,6 +877,7 @@ type SitePageContext {
   skip: Int
   slug: String
   tag: String
+  type: String
   url: String
 }
 
@@ -3228,6 +3233,8 @@ enum SiteFieldsEnum {
   parent___parent___internal___type
   parent___parent___parent___children
   parent___parent___parent___id
+  pathPrefix
+  polyfill
   port
   siteMetadata___author
   siteMetadata___description
@@ -3292,6 +3299,7 @@ enum SitePageFieldsEnum {
   context___skip
   context___slug
   context___tag
+  context___type
   context___url
   id
   internalComponentName
@@ -3928,6 +3936,8 @@ input SiteFilterInput {
   id: StringQueryOperatorInput
   internal: InternalFilterInput
   parent: NodeFilterInput
+  pathPrefix: StringQueryOperatorInput
+  polyfill: BooleanQueryOperatorInput
   port: IntQueryOperatorInput
   siteMetadata: SiteSiteMetadataFilterInput
 }
@@ -3942,6 +3952,7 @@ input SitePageContextFilterInput {
   skip: IntQueryOperatorInput
   slug: StringQueryOperatorInput
   tag: StringQueryOperatorInput
+  type: StringQueryOperatorInput
   url: StringQueryOperatorInput
 }
 

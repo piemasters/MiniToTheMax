@@ -5,11 +5,13 @@ import Seo from '../components/seo';
 import PageLink from '../components/page-link';
 
 interface CategoryDataType {
+  fieldValue: string;
+  totalCount: string;
+}
+
+interface CategoryGroupDataType {
   allMdx: {
-    group: {
-      fieldValue: string;
-      totalCount: string;
-    }[];
+    group: CategoryDataType[];
   };
 }
 
@@ -18,7 +20,7 @@ const CategoriesPage = ({
     allMdx: { group },
   },
 }: {
-  data: CategoryDataType;
+  data: CategoryGroupDataType;
 }) => (
   <div>
     <Seo
@@ -29,7 +31,7 @@ const CategoriesPage = ({
     <div>
       <h1>Categories</h1>
       <ul>
-        {group.map((category: any) => (
+        {group.map((category: CategoryDataType) => (
           <li key={category.fieldValue}>
             <PageLink
               to={`/categories/${kebabCase(category.fieldValue)}/`}
