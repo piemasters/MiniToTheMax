@@ -129,7 +129,6 @@ export const gatsbyImageSharpFluidPreferWebpNoBase64 = graphql`
   }
 `;
 
-// TODO: in v3 remove these legacy fragments
 export const gatsbyImageSharpResolutions = graphql`
   fragment GatsbyImageSharpResolutions on ImageSharpResolutions {
     base64
