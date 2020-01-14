@@ -3,17 +3,19 @@ import { css } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
 import PageLink from './page-link';
 import Img, { FluidObject } from 'gatsby-image';
-import * as CSS from 'csstype';
+import { Theme } from '../types/app.types';
 
 interface PostSummaryProps {
   slug: string;
   title: string;
   date: string;
   img: FluidObject;
+  excerpt: string;
+  timeToRead: number;
 }
 
 const PostSummary = (post: PostSummaryProps) => {
-  const theme: CSS.Properties = useTheme();
+  const theme: Theme = useTheme();
 
   const postStyle = css`
     margin: 1rem 0;
@@ -41,7 +43,7 @@ const PostSummary = (post: PostSummaryProps) => {
   `;
 
   return (
-    <li css={postStyle} key={post.slug} data-testid="post-summary">
+    <div css={postStyle} data-testid="post-summary">
       <PageLink
         linkStyle={postLinkStyle}
         to={post.slug}
@@ -49,10 +51,14 @@ const PostSummary = (post: PostSummaryProps) => {
         direction={'up'}
       >
         <h2 css={postHeaderStyle}>{post.title}</h2>
-        <p css={postParagraphStyle}>{post.date}</p>
+        <p css={postParagraphStyle}>
+          {post.date} - {post.timeToRead} min read
+        </p>
         <Img fluid={post.img} />
+        <br />
+        <p css={postParagraphStyle}>{post.excerpt}</p>
       </PageLink>
-    </li>
+    </div>
   );
 };
 

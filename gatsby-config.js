@@ -104,6 +104,5 @@ module.exports = {
         precachePages: [`/blog`],
       },
     },
-    `gatsby-remark-images-modal`,
   ],
 };

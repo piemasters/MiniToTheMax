@@ -16,6 +16,8 @@ interface PostContext {
 
 interface PostEdge {
   node: {
+    excerpt: string;
+    timeToRead: number;
     frontmatter: {
       title: string;
       date: string;
@@ -42,6 +44,8 @@ interface Post {
   title: string;
   date: string;
   img: FluidObject;
+  excerpt: string;
+  timeToRead: number;
 }
 
 const Blog = ({
@@ -75,6 +79,8 @@ const Blog = ({
     title: edge.node.frontmatter.title,
     date: edge.node.frontmatter.date,
     img: edge.node.frontmatter.featuredImage.childImageSharp.fluid,
+    excerpt: edge.node.excerpt,
+    timeToRead: edge.node.timeToRead,
   }));
 
   return (
@@ -88,12 +94,16 @@ const Blog = ({
       <ol css={postsStyle}>
         {posts.map((post: Post) => {
           return (
-            <PostSummary
-              date={post.date}
-              img={post.img}
-              slug={post.slug}
-              title={post.title}
-            />
+            <li key={post.slug}>
+              <PostSummary
+                date={post.date}
+                img={post.img}
+                slug={post.slug}
+                title={post.title}
+                excerpt={post.excerpt}
+                timeToRead={post.timeToRead}
+              />
+            </li>
           );
         })}
       </ol>
@@ -120,22 +130,15 @@ export const postQuery = graphql`
     ) {
       edges {
         node {
+          excerpt(pruneLength: 300)
+          timeToRead
           frontmatter {
             title
             date
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800, maxHeight: 300) {
-                  base64
-                  tracedSVG
-                  aspectRatio
-                  src
-                  srcSet
-                  srcWebp
-                  srcSetWebp
-                  sizes
-                  originalImg
-                  originalName
+                  ...GatsbyImageSharpFluid
                   presentationWidth
                   presentationHeight
                 }

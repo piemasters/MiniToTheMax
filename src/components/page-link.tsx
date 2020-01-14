@@ -4,6 +4,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 // @ts-ignore
 import TransitionLink from 'gatsby-plugin-transition-link';
 import * as CSS from 'csstype';
+import { SerializedStyles } from '@emotion/core';
 
 type AnimationTypes = 'paintDrip' | 'fade' | 'swipe' | 'cover';
 
@@ -11,8 +12,8 @@ interface PageLinkProps {
   children: any;
   type?: AnimationTypes;
   to: string;
-  linkStyle?: CSS.Properties;
-  linkActiveStyle?: CSS.Properties;
+  linkStyle?: CSS.Properties | SerializedStyles;
+  linkActiveStyle?: CSS.Properties | SerializedStyles;
   direction?: string;
   top?: string;
   entryOffset?: number;

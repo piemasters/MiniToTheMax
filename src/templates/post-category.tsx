@@ -4,7 +4,6 @@ import Layout from '../layouts/layout';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
 import { FluidObject } from 'gatsby-image';
-import Category from './category';
 
 interface PostCategoryContext {
   type: string;

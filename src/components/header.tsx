@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { useTheme } from 'emotion-theming';
 import { css } from '@emotion/core';
 import PageLink from './page-link';
-import * as CSS from 'csstype';
+import { Theme } from '../types/app.types';
 
 interface Page {
   name: string;
@@ -17,7 +17,7 @@ interface HeaderProps {
 }
 
 export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
-  const theme: CSS.Properties = useTheme();
+  const theme: Theme = useTheme();
 
   const NavHeader = css`
     padding: 1rem 0 3rem;
