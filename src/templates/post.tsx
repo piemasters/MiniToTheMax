@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../layouts/layout';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import { kebabCase } from 'lodash';
+import kebabCase from 'lodash.kebabcase';
 import SimplePagination from '../components/simple-pagination';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 // @ts-ignore

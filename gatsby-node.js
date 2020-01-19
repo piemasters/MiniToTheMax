@@ -1,6 +1,6 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
-const { kebabCase } = require('lodash');
+const kebabCase = require('lodash.kebabcase');
 const { readdirSync } = require('fs');
 
 module.exports.onCreateNode = ({ node, getNode, actions }) => {

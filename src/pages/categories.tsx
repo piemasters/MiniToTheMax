@@ -1,5 +1,5 @@
 import React from 'react';
-import { kebabCase } from 'lodash';
+import kebabCase from 'lodash.kebabcase';
 import { graphql } from 'gatsby';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
