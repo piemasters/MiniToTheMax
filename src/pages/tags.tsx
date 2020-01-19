@@ -4,9 +4,10 @@ import { graphql } from 'gatsby';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
 import { Tag, Tags } from '../types/app.types';
+import Layout from '../layouts/layout';
 
-const TagsPage = (data: Tags) => (
-  <div>
+const TagsPage = ({ data }: { data: Tags }) => (
+  <Layout>
     <Seo title={'Tags'} description={'All blog tags'} pathname={'/tags'} />
     <div>
       <h1>Tags</h1>
@@ -24,7 +25,7 @@ const TagsPage = (data: Tags) => (
         ))}
       </ul>
     </div>
-  </div>
+  </Layout>
 );
 
 export default TagsPage;

@@ -4,9 +4,10 @@ import { graphql } from 'gatsby';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
 import { Categories, Category } from '../types/app.types';
+import Layout from '../layouts/layout';
 
-const CategoriesPage = (data: Categories) => (
-  <div>
+const CategoriesPage = ({ data }: { data: Categories }) => (
+  <Layout>
     <Seo
       title={'Categories'}
       description={'All blog categories'}
@@ -28,7 +29,7 @@ const CategoriesPage = (data: Categories) => (
         ))}
       </ul>
     </div>
-  </div>
+  </Layout>
 );
 
 export default CategoriesPage;
