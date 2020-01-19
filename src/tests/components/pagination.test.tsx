@@ -20,7 +20,14 @@ describe('Pagination', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'pagination')).toHaveTextContent('/');
+    expect(getByTestId(container, 'pagination')).toHaveTextContent(
+      'Previous Page'
+    );
+
+    expect(getByTestId(container, 'pagination')).toHaveTextContent('Next Page');
+
+    expect(getByTestId(container, 'pagination')).toHaveTextContent('12345');
+
     expect(container).toMatchSnapshot();
   });
 });

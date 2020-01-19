@@ -5,6 +5,7 @@ import * as CSS from 'csstype';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 // @ts-ignore
 import TransitionLink from 'gatsby-plugin-transition-link';
+import { Link } from 'gatsby';
 
 type AnimationTypes = 'paintDrip' | 'fade' | 'swipe' | 'cover';
 
@@ -35,6 +36,16 @@ const PageLink = ({
   bg,
   duration,
 }: PageLinkProps) => {
+  return (
+    <Link
+      to={to}
+      activeStyle={linkActiveStyle}
+      partiallyActive={to !== '/'}
+      css={linkStyle}
+    >
+      {children}
+    </Link>
+  );
   if (type === 'paintDrip') {
     return (
       <AniLink

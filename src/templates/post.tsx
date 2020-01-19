@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../layouts/layout';
 import { graphql } from 'gatsby';
-import Img, { FluidObject } from 'gatsby-image';
+import Img from 'gatsby-image';
 import { kebabCase } from 'lodash';
 import SimplePagination from '../components/simple-pagination';
 import { MDXRenderer } from 'gatsby-plugin-mdx';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { PureSimplePagination as SimplePagination } from '../../components/simple-pagination';
+import SimplePagination from '../../components/simple-pagination';
 import { render, getByTestId } from '@testing-library/react';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '../../styles/theme';
@@ -22,7 +22,12 @@ describe('SimplePagination', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'simple-pagination')).toHaveTextContent('1');
+    expect(getByTestId(container, 'simple-pagination')).toHaveTextContent(
+      previous.title
+    );
+    expect(getByTestId(container, 'simple-pagination')).toHaveTextContent(
+      next.title
+    );
     expect(container).toMatchSnapshot();
   });
 });

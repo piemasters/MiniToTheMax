@@ -1,49 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders correctly 1`] = `
-.emotion-12 {
-  padding: 1rem 0 3rem;
-}
-
-.emotion-0 a {
-  color: #000;
-  font-size: 3rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-}
-
-.emotion-2 a {
-  color: #999;
-  font-size: 0.9rem;
-  margin-right: 1.3rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-2 a:hover {
-  color: #666666;
-}
-
 <div>
-  <header
-    class="emotion-12 emotion-13"
+  <div
+    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
     data-testid="nav-header"
   >
     <nav>
       <h1>
         <div
-          class="emotion-0 emotion-1"
+          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
         >
           <a
+            aria-current="page"
+            class=""
             href="/"
           >
             <img
@@ -55,47 +25,50 @@ exports[`Header renders correctly 1`] = `
           </a>
         </div>
       </h1>
-      <ul
-        class="emotion-10 emotion-11"
+      <div
+        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
       >
-        <li
-          class="emotion-2 emotion-3"
+        <div
+          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
         >
           <a
+            aria-current="page"
+            class=""
             href="/"
+            style="color: rgb(51, 51, 51);"
           >
             Home
           </a>
-        </li>
-        <li
-          class="emotion-2 emotion-3"
+        </div>
+        <div
+          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
         >
           <a
             href="/blog"
           >
             Blog
           </a>
-        </li>
-        <li
-          class="emotion-2 emotion-3"
+        </div>
+        <div
+          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
         >
           <a
             href="/showcase"
           >
             Showcase
           </a>
-        </li>
-        <li
-          class="emotion-2 emotion-3"
+        </div>
+        <div
+          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
         >
           <a
             href="/backlog"
           >
             Backlog
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
-  </header>
+  </div>
 </div>
 `;
