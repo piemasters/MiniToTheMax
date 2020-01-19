@@ -12,7 +12,7 @@ describe('PostSummary', () => {
           date={'11/01/2019'}
           img={{
             aspectRatio: 1,
-            src: '',
+            src: 'cover.jpeg',
             srcSet: '',
             sizes: '(max-width: 800px) 100vw, 800px',
           }}
