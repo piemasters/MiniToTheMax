@@ -10,74 +10,12 @@ import Gallery from 'react-grid-gallery';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
 import { DiscussionEmbed } from 'disqus-react';
-import { SharpFluidObject } from '../types/app.types';
-
-interface Node {
-  fields: {
-    slug: string;
-  };
-  frontmatter: {
-    title: string;
-    tags?: string[];
-  };
-}
+import { DisqusConfig, MdxPost } from '../types/app.types';
+import { MdxFrontmatterGalleryImage, MdxNode } from '../types/base.types';
 
 interface PostContext {
-  previous: Node;
-  next: Node;
-}
-
-interface SiteData {
-  siteMetadata: {
-    siteUrl: string;
-  };
-}
-
-interface GalleryData {
-  publicURL: string;
-  childImageSharp: {
-    fluid: SharpFluidObject;
-  };
-}
-
-interface Post {
-  excerpt: string;
-  fields: {
-    slug: string;
-  };
-  frontmatter: {
-    title: string;
-    date: string;
-    tags: string[];
-    categories: string[];
-    featuredImage: {
-      childImageSharp: {
-        fluid: FluidObject;
-      };
-    };
-    gallery: GalleryData[];
-  };
-  body: any;
-}
-
-interface PostData {
-  post: Post;
-  site: SiteData;
-}
-
-interface GalleryImage {
-  src: string;
-  thumbnail: string;
-  thumbnailWidth: number;
-  thumbnailHeight: number;
-  nano?: string;
-  srcSet: string | string[];
-}
-
-interface DisqusConfig {
-  identifier: string;
-  title: string;
-  url: string;
+  previous: MdxNode;
+  next: MdxNode;
 }
 
 const Post = ({
@@ -85,44 +23,69 @@ const Post = ({
   data,
 }: {
   pageContext: PostContext;
-  data: PostData;
+  data: MdxPost;
 }) => {
-  const post: Post = data.post;
-  const galleryImages: GalleryImage[] = [];
-  post.frontmatter.gallery.forEach((img: GalleryData) => {
-    const image = img.childImageSharp.fluid;
-    galleryImages.push({
-      src: image.src,
-      thumbnail: image.src,
-      thumbnailWidth: image.presentationWidth,
-      thumbnailHeight: image.presentationHeight,
-      nano: image.base64,
-      srcSet: image.srcSet,
-    });
-  });
+  const pagination = {
+    previous: pageContext.previous
+      ? {
+          slug: pageContext.previous.fields.slug,
+          title: pageContext.previous.frontmatter.title,
+        }
+      : undefined,
+    next: pageContext.next
+      ? {
+          slug: pageContext.next.fields.slug,
+          title: pageContext.next.frontmatter.title,
+        }
+      : undefined,
+  };
+
+  const post = {
+    title: data.post.frontmatter.title,
+    url: data.site.siteMetadata.siteUrl,
+    date: data.post.frontmatter.date,
+    excerpt: data.post.excerpt,
+    body: data.post.body,
+    slug: data.post.fields.slug,
+    tags: data.post.frontmatter.tags,
+    categories: data.post.frontmatter.categories,
+    featuredImage: data.post.frontmatter.featuredImage.childImageSharp.fluid,
+    gallery: data.post.frontmatter.gallery
+      ? data.post.frontmatter.gallery.map(
+          (img: MdxFrontmatterGalleryImage) => ({
+            src: img.childImageSharp.fluid.src,
+            thumbnail: img.childImageSharp.fluid.src,
+            thumbnailWidth: img.childImageSharp.fluid.presentationWidth,
+            thumbnailHeight: img.childImageSharp.fluid.presentationHeight,
+            nano: img.childImageSharp.fluid.base64,
+            srcSet: img.childImageSharp.fluid.srcSet,
+          })
+        )
+      : [],
+  };
 
   const disqusShortname = process.env.GATSBY_DISQUS_NAME || 'disqusShortname';
   const disqusConfig: DisqusConfig = {
-    identifier: post.fields.slug,
-    title: post.frontmatter.title,
-    url: `${data.site.siteMetadata.siteUrl}/${post.fields.slug}`,
+    identifier: post.slug,
+    title: post.title,
+    url: `${data.site.siteMetadata.siteUrl}/${post.slug}`,
   };
 
   return (
     <Layout>
       <Seo
-        title={post.frontmatter.title}
+        title={post.title}
         description={post.excerpt}
-        pathname={post.fields.slug}
-        image={post.frontmatter.featuredImage.childImageSharp.fluid.src}
+        pathname={post.slug}
+        image={post.featuredImage.src}
         article={true}
       />
-      <h1>{data.post.frontmatter.title}</h1>
-      <p>{data.post.frontmatter.date}</p>
-      <Img fluid={data.post.frontmatter.featuredImage.childImageSharp.fluid} />
+      <h1>{post.title}</h1>
+      <p>{post.date}</p>
+      <Img fluid={post.featuredImage} />
       <br />
       TAGS:
-      {data.post.frontmatter.tags.map((tag: any) => (
+      {post.tags.map((tag: any) => (
         <PageLink
           key={tag}
           to={`/tags/${kebabCase(tag)}/`}
@@ -133,7 +96,7 @@ const Post = ({
         </PageLink>
       ))}
       CATEGORIES:
-      {data.post.frontmatter.categories.map((category: any) => (
+      {post.categories.map((category: any) => (
         <PageLink
           key={category}
           to={`/categories/${kebabCase(category)}/`}
@@ -143,18 +106,15 @@ const Post = ({
           {category}
         </PageLink>
       ))}
-      <MDXRenderer>{data.post.body}</MDXRenderer>
+      <MDXRenderer>{post.body}</MDXRenderer>
       <h2>Gallery</h2>
       <Gallery
-        images={galleryImages}
+        images={post.gallery}
         enableImageSelection={false}
         rowHeight={180}
         margin={2}
       />
-      <SimplePagination
-        previous={pageContext.previous}
-        next={pageContext.next}
-      />
+      <SimplePagination previous={pagination.previous} next={pagination.next} />
       <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
     </Layout>
   );

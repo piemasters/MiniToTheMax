@@ -3,25 +3,9 @@ import { kebabCase } from 'lodash';
 import { graphql } from 'gatsby';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
+import { Categories, Category } from '../types/app.types';
 
-interface CategoryDataType {
-  fieldValue: string;
-  totalCount: string;
-}
-
-interface CategoryGroupDataType {
-  allMdx: {
-    group: CategoryDataType[];
-  };
-}
-
-const CategoriesPage = ({
-  data: {
-    allMdx: { group },
-  },
-}: {
-  data: CategoryGroupDataType;
-}) => (
+const CategoriesPage = (data: Categories) => (
   <div>
     <Seo
       title={'Categories'}
@@ -31,7 +15,7 @@ const CategoriesPage = ({
     <div>
       <h1>Categories</h1>
       <ul>
-        {group.map((category: CategoryDataType) => (
+        {data.categories.group.map((category: Category) => (
           <li key={category.fieldValue}>
             <PageLink
               to={`/categories/${kebabCase(category.fieldValue)}/`}
@@ -51,7 +35,7 @@ export default CategoriesPage;
 
 export const pageQuery = graphql`
   query {
-    allMdx(limit: 2000) {
+    categories: allMdx(limit: 2000) {
       group(field: frontmatter___categories) {
         fieldValue
         totalCount

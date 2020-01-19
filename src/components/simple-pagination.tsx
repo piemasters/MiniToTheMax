@@ -2,35 +2,17 @@ import React from 'react';
 import { css } from '@emotion/core';
 import PageLink from './page-link';
 
-interface PureNode {
+interface SimplePaginationNode {
   slug: string;
   title: string;
 }
 
-interface PureSimplePaginationProps {
-  previous?: PureNode;
-  next?: PureNode;
-}
-
-interface Node {
-  fields: {
-    slug: string;
-  };
-  frontmatter: {
-    title: string;
-    tags?: string[];
-  };
-}
-
 interface SimplePaginationProps {
-  previous?: Node;
-  next?: Node;
+  previous?: SimplePaginationNode;
+  next?: SimplePaginationNode;
 }
 
-export const PureSimplePagination = ({
-  previous,
-  next,
-}: PureSimplePaginationProps) => {
+const SimplePagination = ({ previous, next }: SimplePaginationProps) => {
   const containerStyle = css`
     display: flex;
     flex-wrap: wrap;
@@ -56,24 +38,6 @@ export const PureSimplePagination = ({
       </li>
     </ul>
   );
-};
-
-const SimplePagination = ({ previous, next }: SimplePaginationProps) => {
-  const p = previous
-    ? {
-        slug: previous.fields.slug,
-        title: previous.frontmatter.title,
-      }
-    : undefined;
-
-  const n = next
-    ? {
-        slug: next.fields.slug,
-        title: next.frontmatter.title,
-      }
-    : undefined;
-
-  return <PureSimplePagination previous={p} next={n} />;
 };
 
 export default SimplePagination;

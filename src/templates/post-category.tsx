@@ -3,7 +3,8 @@ import { graphql } from 'gatsby';
 import Layout from '../layouts/layout';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
-import { FluidObject } from 'gatsby-image';
+import { Categories, TagLink } from '../types/app.types';
+import { MdxEdge } from '../types/base.types';
 
 interface PostCategoryContext {
   type: string;
@@ -11,43 +12,15 @@ interface PostCategoryContext {
   url: string;
 }
 
-interface PostCategoryEdge {
-  node: {
-    fields: {
-      slug: string;
-    };
-    frontmatter: {
-      title: string;
-      categories: string[];
-      featuredImage: {
-        childImageSharp: {
-          fluid: FluidObject;
-        };
-      };
-    };
-  };
-}
-
-interface PostCategoryData {
-  postCategories: {
-    edges: PostCategoryEdge[];
-  };
-}
-
-interface PostCategory {
-  slug: string;
-  title: string;
-}
-
 const PostCategory = ({
   pageContext,
   data,
 }: {
   pageContext: PostCategoryContext;
-  data: PostCategoryData;
+  data: Categories;
 }) => {
-  const postCategories: PostCategory[] = data.postCategories.edges.map(
-    (edge: PostCategoryEdge) => ({
+  const postCategories: TagLink[] = data.categories.edges.map(
+    (edge: MdxEdge) => ({
       slug: edge.node.fields.slug,
       title: edge.node.frontmatter.title,
     })
@@ -64,7 +37,7 @@ const PostCategory = ({
       <h1>{pageContext.category}</h1>
 
       <ul>
-        {postCategories.map((postCategory: PostCategory) => {
+        {postCategories.map((postCategory: TagLink) => {
           return (
             <li key={postCategory.slug}>
               <PageLink to={postCategory.slug} type={'cover'} direction={'up'}>
@@ -82,7 +55,7 @@ export default PostCategory;
 
 export const pageQuery = graphql`
   query($category: String!, $type: String!) {
-    postCategories: allMdx(
+    categories: allMdx(
       filter: { frontmatter: { categories: { in: [$type], eq: $category } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
@@ -92,24 +65,6 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            featuredImage {
-              childImageSharp {
-                fluid(maxWidth: 800, maxHeight: 400) {
-                  base64
-                  tracedSVG
-                  aspectRatio
-                  src
-                  srcSet
-                  srcWebp
-                  srcSetWebp
-                  sizes
-                  originalImg
-                  originalName
-                  presentationWidth
-                  presentationHeight
-                }
-              }
-            }
             categories
             title
           }

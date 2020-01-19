@@ -3,7 +3,7 @@ import { css } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
 import PageLink from './page-link';
 import Img, { FluidObject } from 'gatsby-image';
-import { Theme } from '../types/app.types';
+import { Theme } from '../styles/theme';
 
 interface PostSummaryProps {
   slug: string;

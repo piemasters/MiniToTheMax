@@ -1,10 +1,10 @@
 import React from 'react';
+import { SerializedStyles } from '@emotion/core';
+import * as CSS from 'csstype';
 // @ts-ignore
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 // @ts-ignore
 import TransitionLink from 'gatsby-plugin-transition-link';
-import * as CSS from 'csstype';
-import { SerializedStyles } from '@emotion/core';
 
 type AnimationTypes = 'paintDrip' | 'fade' | 'swipe' | 'cover';
 

@@ -2,14 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
 
-interface SeoProps {
-  title?: string;
-  description?: string;
-  image?: string;
-  pathname?: string;
-  article?: boolean;
-}
-
 interface PureSeoProps {
   title: string;
   description: string;
@@ -46,6 +38,14 @@ export const PureSeo = ({
     </>
   );
 };
+
+interface SeoProps {
+  title?: string;
+  description?: string;
+  image?: string;
+  article?: boolean;
+  pathname?: string;
+}
 
 const Seo = ({ title, description, image, pathname, article }: SeoProps) => {
   const data = useStaticQuery(graphql`

@@ -3,7 +3,7 @@ import { ThemeProvider } from 'emotion-theming';
 import { css } from '@emotion/core';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import theme from '../styles/theme';
+import appTheme from '../styles/theme';
 import '../styles/index.scss';
 
 interface LayoutProps {
@@ -25,7 +25,7 @@ const Layout = ({ children }: LayoutProps) => {
   `;
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={appTheme}>
       <div css={Container}>
         <div css={Content}>
           <Header />

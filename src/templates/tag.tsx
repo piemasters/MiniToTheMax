@@ -3,33 +3,12 @@ import { graphql } from 'gatsby';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
 import Layout from '../layouts/layout';
+import { TagLink, Tags } from '../types/app.types';
+import { MdxEdge } from '../types/base.types';
 
 interface TagContext {
   tag: string;
   url: string;
-}
-
-interface TagEdge {
-  node: {
-    fields: {
-      slug: string;
-    };
-    frontmatter: {
-      title: string;
-    };
-  };
-}
-
-interface TagData {
-  tags: {
-    totalCount: number;
-    edges: TagEdge[];
-  };
-}
-
-interface Tag {
-  slug: string;
-  title: string;
 }
 
 const Tag = ({
@@ -37,13 +16,13 @@ const Tag = ({
   data,
 }: {
   pageContext: TagContext;
-  data: TagData;
+  data: Tags;
 }) => {
   const tagHeader = `${data.tags.totalCount} post${
     data.tags.totalCount === 1 ? '' : 's'
   } tagged with "${pageContext.tag}"`;
 
-  const tags: Tag[] = data.tags.edges.map((edge: TagEdge) => ({
+  const tags: TagLink[] = data.tags.edges.map((edge: MdxEdge) => ({
     slug: edge.node.fields.slug,
     title: edge.node.frontmatter.title,
   }));
@@ -57,7 +36,7 @@ const Tag = ({
       />
       <h1>{tagHeader}</h1>
       <ul>
-        {tags.map((tag: Tag) => {
+        {tags.map((tag: TagLink) => {
           return (
             <li key={tag.slug}>
               <PageLink to={tag.slug} type={'cover'} direction={'up'}>

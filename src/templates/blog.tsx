@@ -6,6 +6,8 @@ import Layout from '../layouts/layout';
 import Pagination from '../components/pagination';
 import Seo from '../components/seo';
 import PostSummary from '../components/post-summary';
+import { Posts } from '../types/app.types';
+import { MdxEdge } from '../types/base.types';
 
 interface PostContext {
   limit: number;
@@ -14,32 +16,7 @@ interface PostContext {
   currentPage: number;
 }
 
-interface PostEdge {
-  node: {
-    excerpt: string;
-    timeToRead: number;
-    frontmatter: {
-      title: string;
-      date: string;
-      featuredImage: {
-        childImageSharp: {
-          fluid: FluidObject;
-        };
-      };
-    };
-    fields: {
-      slug: string;
-    };
-  };
-}
-
-interface PostData {
-  posts: {
-    edges: PostEdge[];
-  };
-}
-
-interface Post {
+interface PostSummary {
   slug: string;
   title: string;
   date: string;
@@ -52,7 +29,7 @@ const Blog = ({
   data,
   pageContext,
 }: {
-  data: PostData;
+  data: Posts;
   pageContext: PostContext;
 }) => {
   const postsStyle = css`
@@ -74,7 +51,7 @@ const Blog = ({
     baseUrl: '/blog/',
   };
 
-  const posts: Post[] = data.posts.edges.map((edge: PostEdge) => ({
+  const posts: PostSummary[] = data.posts.edges.map((edge: MdxEdge) => ({
     slug: edge.node.fields.slug,
     title: edge.node.frontmatter.title,
     date: edge.node.frontmatter.date,
@@ -92,7 +69,7 @@ const Blog = ({
       />
       <h1>Blog</h1>
       <ol css={postsStyle}>
-        {posts.map((post: Post) => {
+        {posts.map((post: PostSummary) => {
           return (
             <li key={post.slug}>
               <PostSummary

@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { css } from '@emotion/core';
 import { useTheme } from 'emotion-theming';
-import { Theme } from '../types/app.types';
+import { Theme } from '../styles/theme';
 
 interface FooterProps {
   author: string;

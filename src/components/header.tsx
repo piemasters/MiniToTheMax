@@ -3,9 +3,9 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { useTheme } from 'emotion-theming';
 import { css } from '@emotion/core';
 import PageLink from './page-link';
-import { Theme } from '../types/app.types';
+import { Theme } from '../styles/theme';
 
-interface Page {
+interface NavLink {
   name: string;
   url: string;
 }
@@ -13,7 +13,7 @@ interface Page {
 interface HeaderProps {
   title: string;
   logo: string;
-  pages: Page[];
+  pages: NavLink[];
 }
 
 export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
@@ -61,15 +61,15 @@ export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
           </div>
         </h1>
         <div css={NavList}>
-          {pages.map(page => {
+          {pages.map((link: NavLink) => {
             return (
-              <div css={NavItem} key={page.name}>
+              <div css={NavItem} key={link.name}>
                 <PageLink
                   type={'cover'}
                   linkActiveStyle={{ color: '#333333' }}
-                  to={page.url}
+                  to={link.url}
                 >
-                  {page.name}
+                  {link.name}
                 </PageLink>
               </div>
             );
@@ -96,7 +96,7 @@ const Header = () => {
     }
   `);
 
-  const pages = [
+  const pages: NavLink[] = [
     { name: 'Home', url: '/' },
     { name: 'Blog', url: '/blog' },
     { name: 'Showcase', url: '/showcase' },

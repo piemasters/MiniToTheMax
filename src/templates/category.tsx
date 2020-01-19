@@ -3,33 +3,12 @@ import { graphql } from 'gatsby';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
 import Layout from '../layouts/layout';
+import { Categories, TagLink } from '../types/app.types';
+import { MdxEdge } from '../types/base.types';
 
 interface CategoryContext {
   category: string;
   url: string;
-}
-
-interface CategoryEdge {
-  node: {
-    fields: {
-      slug: string;
-    };
-    frontmatter: {
-      title: string;
-    };
-  };
-}
-
-interface CategoryData {
-  categories: {
-    totalCount: number;
-    edges: CategoryEdge[];
-  };
-}
-
-interface Category {
-  slug: string;
-  title: string;
 }
 
 const Category = ({
@@ -37,18 +16,16 @@ const Category = ({
   data,
 }: {
   pageContext: CategoryContext;
-  data: CategoryData;
+  data: Categories;
 }) => {
   const categoryHeader = `${data.categories.totalCount} post${
     data.categories.totalCount === 1 ? '' : 's'
   } tagged with "${pageContext.category}"`;
 
-  const categories: Category[] = data.categories.edges.map(
-    (edge: CategoryEdge) => ({
-      slug: edge.node.fields.slug,
-      title: edge.node.frontmatter.title,
-    })
-  );
+  const categories: TagLink[] = data.categories.edges.map((edge: MdxEdge) => ({
+    slug: edge.node.fields.slug,
+    title: edge.node.frontmatter.title,
+  }));
 
   return (
     <Layout>
@@ -59,7 +36,7 @@ const Category = ({
       />
       <h1>{categoryHeader}</h1>
       <ul>
-        {categories.map((category: Category) => {
+        {categories.map((category: TagLink) => {
           return (
             <li key={category.slug}>
               <PageLink to={category.slug} type={'cover'} direction={'up'}>
