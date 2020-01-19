@@ -105,6 +105,7 @@
     "eslint-plugin-react": "^7.18.0",
     "fork-ts-checker-webpack-plugin": "^4.0.1",
     "gatsby-plugin-eslint": "^2.0.8",
+    "gatsby-plugin-netlify-cache": "^1.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "jest-emotion": "^10.0.27",

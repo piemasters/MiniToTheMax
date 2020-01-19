@@ -32,6 +32,12 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-netlify-cache',
+      options: {
+        cachePublic: true,
+      },
+    },
     'gatsby-plugin-eslint',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
