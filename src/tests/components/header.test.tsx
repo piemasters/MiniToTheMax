@@ -3,6 +3,7 @@ import { PureHeader as Header } from '../../components/header';
 import { render, getByTestId } from '@testing-library/react';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '../../styles/theme';
+import { renderWithTransitionProvider } from '../util/transition-provider';
 
 describe('Header', () => {
   test('renders correctly', () => {
@@ -24,7 +25,7 @@ describe('Header', () => {
       { name: 'Backlog', url: '/backlog' },
     ];
 
-    const { container } = render(
+    const { container } = renderWithTransitionProvider(
       <ThemeProvider theme={theme}>
         <Header
           title={data.site.siteMetadata.title}

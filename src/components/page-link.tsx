@@ -36,16 +36,16 @@ const PageLink = ({
   bg,
   duration,
 }: PageLinkProps) => {
-  return (
-    <Link
-      to={to}
-      activeStyle={linkActiveStyle}
-      partiallyActive={to !== '/'}
-      css={linkStyle}
-    >
-      {children}
-    </Link>
-  );
+  // return (
+  //   <Link
+  //     to={to}
+  //     activeStyle={linkActiveStyle}
+  //     partiallyActive={to !== '/'}
+  //     css={linkStyle}
+  //   >
+  //     {children}
+  //   </Link>
+  // );
   if (type === 'paintDrip') {
     return (
       <AniLink

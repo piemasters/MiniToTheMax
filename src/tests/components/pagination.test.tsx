@@ -1,12 +1,13 @@
 import React from 'react';
 import Pagination from '../../components/pagination';
-import { render, getByTestId } from '@testing-library/react';
+import { getByTestId } from '@testing-library/react';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '../../styles/theme';
+import { renderWithTransitionProvider } from '../util/transition-provider';
 
 describe('Pagination', () => {
   test('renders correctly', () => {
-    const { container } = render(
+    const { container } = renderWithTransitionProvider(
       <ThemeProvider theme={theme}>
         <Pagination
           isFirst={false}

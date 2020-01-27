@@ -14,6 +14,8 @@ exports[`Header renders correctly 1`] = `
           <a
             aria-current="page"
             class=""
+            data-testid="page-link-paint"
+            hex="#eb1d23"
             href="/"
           >
             <img
@@ -33,7 +35,11 @@ exports[`Header renders correctly 1`] = `
         >
           <a
             aria-current="page"
+            bg="#eb1d23"
             class=""
+            data-testid="page-link-cover"
+            direction="up"
+            duration="1"
             href="/"
             style="color: rgb(51, 51, 51);"
           >
@@ -44,6 +50,10 @@ exports[`Header renders correctly 1`] = `
           css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
         >
           <a
+            bg="#eb1d23"
+            data-testid="page-link-cover"
+            direction="up"
+            duration="1"
             href="/blog"
           >
             Blog
@@ -53,6 +63,10 @@ exports[`Header renders correctly 1`] = `
           css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
         >
           <a
+            bg="#eb1d23"
+            data-testid="page-link-cover"
+            direction="up"
+            duration="1"
             href="/showcase"
           >
             Showcase
@@ -62,6 +76,10 @@ exports[`Header renders correctly 1`] = `
           css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
         >
           <a
+            bg="#eb1d23"
+            data-testid="page-link-cover"
+            direction="up"
+            duration="1"
             href="/backlog"
           >
             Backlog

@@ -8,6 +8,10 @@ exports[`SimplePagination renders correctly 1`] = `
   >
     <li>
       <a
+        bg="#eb1d23"
+        data-testid="page-link-cover"
+        direction="right"
+        duration="1"
         href="/previous"
       >
         ← 
@@ -16,6 +20,10 @@ exports[`SimplePagination renders correctly 1`] = `
     </li>
     <li>
       <a
+        bg="#eb1d23"
+        data-testid="page-link-cover"
+        direction="left"
+        duration="1"
         href="/next"
       >
         The Next Page

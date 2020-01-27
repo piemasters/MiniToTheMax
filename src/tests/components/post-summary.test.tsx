@@ -1,12 +1,13 @@
 import React from 'react';
 import PostSummary from '../../components/post-summary';
-import { render, getByTestId } from '@testing-library/react';
+import { getByTestId } from '@testing-library/react';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '../../styles/theme';
+import { renderWithTransitionProvider } from '../util/transition-provider';
 
 describe('PostSummary', () => {
   test('renders correctly', () => {
-    const { container } = render(
+    const { container } = renderWithTransitionProvider(
       <ThemeProvider theme={theme}>
         <PostSummary
           date={'11/01/2019'}
