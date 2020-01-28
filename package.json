@@ -93,7 +93,7 @@
     "babel-plugin-remove-graphql-queries": "^2.7.22",
     "babel-preset-gatsby": "^0.2.27",
     "csstype": "^2.6.8",
-    "cypress": "^3.8.2",
+    "cypress": "^3.8.3",
     "cypress-axe": "^0.5.3",
     "dotenv": "^8.2.0",
     "env-cmd": "^10.0.1",
