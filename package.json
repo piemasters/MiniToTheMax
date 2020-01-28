@@ -71,7 +71,7 @@
     "@storybook/addon-viewport": "^5.3.6",
     "@storybook/addons": "^5.3.6",
     "@storybook/preset-typescript": "^1.2.0",
-    "@storybook/react": "^5.3.6",
+    "@storybook/react": "^5.3.9",
     "@testing-library/cypress": "^5.0.2",
     "@testing-library/jest-dom": "^5.0.2",
     "@testing-library/react": "^9.4.0",
