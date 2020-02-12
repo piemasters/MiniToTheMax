@@ -101,6 +101,7 @@ const Blog = ({
 export const postQuery = graphql`
   query blogPageQuery($skip: Int, $limit: Int) {
     posts: allMdx(
+      filter: { frontmatter: { published: { eq: true } } }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
@@ -114,7 +115,7 @@ export const postQuery = graphql`
             date
             featuredImage {
               childImageSharp {
-                fluid(maxWidth: 800, maxHeight: 300) {
+                fluid(maxWidth: 800, maxHeight: 400) {
                   ...GatsbyImageSharpFluid
                   presentationWidth
                   presentationHeight

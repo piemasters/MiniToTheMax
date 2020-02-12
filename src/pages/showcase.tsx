@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../layouts/layout';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
+import ShowcaseCategory from '../components/showcase-category';
 
 const ShowcasePage = () => {
   return (
@@ -13,6 +14,13 @@ const ShowcasePage = () => {
       />
 
       <h1>Showcase</h1>
+
+      <ShowcaseCategory
+        img={`content/assets/images/icon.png`}
+        slug={`/showcase/board-games`}
+        title={`Board Games`}
+      />
+
       <li>
         <PageLink to={`/showcase/board-games`} type={'cover'} direction={'up'}>
           Board Games

@@ -129,4 +129,5 @@ export interface MdxFrontmatter {
     };
   };
   gallery: [MdxFrontmatterGalleryImage];
+  published: boolean;
 }

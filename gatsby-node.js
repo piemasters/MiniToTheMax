@@ -44,6 +44,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
             frontmatter {
               title
               tags
+              published
             }
           }
         }
@@ -66,7 +67,11 @@ module.exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Create blog post pages
-  const posts = result.data.posts.edges;
+  const allPosts = result.data.posts.edges;
+  const posts =
+    process.env.NODE_ENV === "production"
+      ? allPosts.filter(post => post.node.frontmatter.published === true)
+      : allPosts;
 
   posts.forEach((edge, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node;

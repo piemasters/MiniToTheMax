@@ -25,6 +25,7 @@ export interface TagLink {
   slug: string;
   title: string;
 }
+
 export interface DisqusConfig {
   identifier: string;
   title: string;
