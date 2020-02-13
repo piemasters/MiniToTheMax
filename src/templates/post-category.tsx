@@ -56,7 +56,12 @@ export default PostCategory;
 export const pageQuery = graphql`
   query($category: String!, $type: String!) {
     categories: allMdx(
-      filter: { frontmatter: { categories: { in: [$type], eq: $category } } }
+      filter: {
+        frontmatter: {
+          categories: { in: [$type], eq: $category }
+          published: { eq: true }
+        }
+      }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

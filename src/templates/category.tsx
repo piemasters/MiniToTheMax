@@ -60,7 +60,12 @@ export const pageQuery = graphql`
     categories: allMdx(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { categories: { in: [$category] } } }
+      filter: {
+        frontmatter: {
+          published: { eq: true }
+          categories: { in: [$category] }
+        }
+      }
     ) {
       totalCount
       edges {

@@ -32,7 +32,10 @@ export default TagsPage;
 
 export const pageQuery = graphql`
   query {
-    tags: allMdx(limit: 2000) {
+    tags: allMdx(
+      limit: 2000
+      filter: { frontmatter: { published: { eq: true } } }
+    ) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount

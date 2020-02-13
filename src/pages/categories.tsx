@@ -36,7 +36,10 @@ export default CategoriesPage;
 
 export const pageQuery = graphql`
   query {
-    categories: allMdx(limit: 2000) {
+    categories: allMdx(
+      limit: 2000
+      filter: { frontmatter: { published: { eq: true } } }
+    ) {
       group(field: frontmatter___categories) {
         fieldValue
         totalCount
