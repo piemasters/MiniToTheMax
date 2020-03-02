@@ -116,7 +116,7 @@
     "react-test-renderer": "^16.13.0",
     "start-server-and-test": "^1.10.8",
     "ts-loader": "^6.2.1",
-    "typescript": "^3.8.2"
+    "typescript": "^3.8.3"
   },
   "repository": {
     "type": "git",
