@@ -8635,10 +8635,10 @@ gatsby-plugin-sitemap@^2.2.28:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
-gatsby-plugin-transition-link@^1.17.7:
-  version "1.17.7"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-transition-link/-/gatsby-plugin-transition-link-1.17.7.tgz#59262ba241331f6aed79031849340de725498614"
-  integrity sha512-vVKkMQ1xSY8MpYL3lahik2H+RV0z6CHFPWHSdm9g37w8veQJQVcwOCQtn2FR+MbBWl6hVuM0KNWBf+4xnMbtOQ==
+gatsby-plugin-transition-link@^1.18.0:
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-transition-link/-/gatsby-plugin-transition-link-1.18.0.tgz#85fa875b421915793566230a3dbe20f5280c1071"
+  integrity sha512-fimp3L1RIwD0WN5iX9Yioh/jVSIWCjkRkaTBo4fUoYU6R0Tsg/tKlfd9z3ZbPgOJqixGfDCOgSpkUWpOOO7gJw==
   dependencies:
     babel-preset-gatsby-package "^0.1.2"
     color-convert "^1.9.3"
