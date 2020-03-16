@@ -1846,15 +1846,15 @@
     react "^16.8.3"
     util-deprecate "^1.0.2"
 
-"@storybook/addon-cssresources@^5.3.14":
-  version "5.3.14"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-cssresources/-/addon-cssresources-5.3.14.tgz#119ec582b629b1d73e2663cf9812cd2aeba2ff3b"
-  integrity sha512-3VymPOTJNihnRCfPKJe2as5vu3fwagwtU0v/uw6YLSfRg6KH21/CZov/wNmqhpqnnMEOJYuY1LRaULWpHsgFqg==
+"@storybook/addon-cssresources@^5.3.17":
+  version "5.3.17"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-cssresources/-/addon-cssresources-5.3.17.tgz#aea294c2af5569852c009942bcdbd33d47ee5ad2"
+  integrity sha512-kIJEXhqW7VYdT6B+skDF0727zTaPO6jJAlj9gA0xcty3jqNiwNbOMTaVGSRHqZEqx4Aevi2/4spIex7WMBqi4A==
   dependencies:
-    "@storybook/addons" "5.3.14"
-    "@storybook/api" "5.3.14"
-    "@storybook/components" "5.3.14"
-    "@storybook/core-events" "5.3.14"
+    "@storybook/addons" "5.3.17"
+    "@storybook/api" "5.3.17"
+    "@storybook/components" "5.3.17"
+    "@storybook/core-events" "5.3.17"
     core-js "^3.0.1"
     global "^4.3.2"
     react "^16.8.3"
