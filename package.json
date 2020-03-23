@@ -45,7 +45,7 @@
     "gatsby-plugin-sitemap": "^2.3.0",
     "gatsby-plugin-transition-link": "^1.18.0",
     "gatsby-plugin-typescript": "^2.3.0",
-    "gatsby-remark-images": "^3.1.49",
+    "gatsby-remark-images": "^3.2.0",
     "gatsby-source-filesystem": "^2.2.1",
     "gatsby-transformer-sharp": "^2.4.1",
     "gsap": "^3.2.4",
