@@ -95,7 +95,7 @@
     "babel-preset-gatsby": "^0.3.0",
     "csstype": "^2.6.10",
     "cypress": "^3.8.3",
-    "cypress-axe": "^0.5.3",
+    "cypress-axe": "^0.8.1",
     "dotenv": "^8.2.0",
     "env-cmd": "^10.1.0",
     "eslint": "^6.8.0",
