@@ -108,7 +108,7 @@
     "gatsby-plugin-eslint": "^2.0.8",
     "gatsby-plugin-netlify-cache": "^1.2.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^25.2.4",
+    "jest": "^25.2.7",
     "jest-emotion": "^10.0.32",
     "node-sass": "^4.13.1",
     "prettier": "^2.0.3",
