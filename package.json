@@ -111,7 +111,7 @@
     "jest": "^25.4.0",
     "jest-emotion": "^10.0.32",
     "node-sass": "^4.13.1",
-    "prettier": "^2.0.4",
+    "prettier": "^2.0.5",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-test-renderer": "^16.13.1",
     "start-server-and-test": "^1.11.0",
