@@ -27,7 +27,7 @@
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "@mdx-js/mdx": "^1.5.8",
-    "@mdx-js/react": "^1.5.8",
+    "@mdx-js/react": "^1.5.9",
     "disqus-react": "^1.0.8",
     "emotion-theming": "^10.0.27",
     "gatsby": "^2.20.26",
