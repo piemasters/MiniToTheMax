@@ -115,7 +115,7 @@
     "react-docgen-typescript-loader": "^3.7.2",
     "react-test-renderer": "^16.13.1",
     "start-server-and-test": "^1.11.0",
-    "ts-loader": "^7.0.4",
+    "ts-loader": "^7.0.5",
     "typescript": "^3.9.3"
   },
   "repository": {
