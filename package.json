@@ -91,7 +91,7 @@
     "babel-jest": "^26.0.1",
     "babel-loader": "^8.1.0",
     "babel-plugin-emotion": "^10.0.33",
-    "babel-plugin-remove-graphql-queries": "^2.8.5",
+    "babel-plugin-remove-graphql-queries": "^2.9.3",
     "babel-preset-gatsby": "^0.4.7",
     "csstype": "^2.6.10",
     "cypress": "^4.7.0",
