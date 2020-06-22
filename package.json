@@ -57,7 +57,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.10.3",
     "@babel/preset-typescript": "^7.10.1",
     "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.19",
