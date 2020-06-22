@@ -104,7 +104,7 @@
     "eslint-plugin-graphql": "^4.0.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.19.0",
-    "fork-ts-checker-webpack-plugin": "^5.0.0",
+    "fork-ts-checker-webpack-plugin": "^5.0.4",
     "gatsby-plugin-eslint": "^2.0.8",
     "gatsby-plugin-netlify-cache": "^1.2.0",
     "identity-obj-proxy": "^3.0.0",
