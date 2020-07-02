@@ -5,7 +5,7 @@ import * as CSS from 'csstype';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 // @ts-ignore
 import TransitionLink from 'gatsby-plugin-transition-link';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 type AnimationTypes = 'paintDrip' | 'fade' | 'swipe' | 'cover';
 
