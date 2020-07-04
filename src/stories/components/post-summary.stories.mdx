@@ -7,8 +7,55 @@ import {
   Meta,
 } from '@storybook/addon-docs/blocks';
 import PostSummary from '../../components/post-summary';
+import cover from '../../../content/assets/images/example-cover.jpg';
 
-<Meta title="Components/PostSummary" component={PostSummary} />
+<Meta
+  title="Components/PostSummary"
+  component={PostSummary}
+  argTypes={{
+    date: {
+      name: 'date',
+      description: 'Date the post was published',
+      defaultValue: '11/01/2019',
+      control: { type: 'date' },
+    },
+    img: {
+      name: 'img',
+      description: 'Cover image',
+      defaultValue: {
+        aspectRatio: 1,
+        src: cover,
+        srcSet: '',
+        sizes: '(max-width: 800px) 100vw, 800px',
+      },
+      control: { type: 'object' },
+    },
+    slug: {
+      name: 'slug',
+      description: 'The trailing URL of the post',
+      defaultValue: 'post-slug',
+      control: { type: 'text' },
+    },
+    title: {
+      name: 'title',
+      description: 'The title of the post',
+      defaultValue: 'Post Title',
+      control: { type: 'text' },
+    },
+    excerpt: {
+      name: 'excerpt',
+      description: 'The first few lines of the post',
+      defaultValue: 'Post Title',
+      control: { type: 'text' },
+    },
+    timeToRead: {
+      name: 'timeToRead',
+      description: 'The time in number of minutes to read',
+      defaultValue: 5,
+      control: { type: 'number' },
+    },
+  }}
+/>
 
 # PostSummary
 
@@ -16,21 +63,26 @@ With `MDX` we can define a story for `PostSummary` right in the middle of our
 markdown documentation.
 
 <Preview>
-  <Story name="default">
-    <PostSummary
-      date={'11/01/2019'}
-      img={{
+  <Story
+    name="default"
+    args={{
+      date: '11/01/2019',
+      img: {
         aspectRatio: 1,
-        src: '',
+        src: cover,
         srcSet: '',
         sizes: '(max-width: 800px) 100vw, 800px',
-      }}
-      slug={'slug'}
-      title={'Demo Post Title'}
-    />
+      },
+      slug: 'post-slug',
+      title: 'Post Title',
+      excerpt: 'The is the excerpt of the post',
+      timeToRead: 5,
+    }}
+  >
+    {(args) => <PostSummary {...args} />}
   </Story>
 </Preview>
 
 # Props
 
-<Props of={PostSummary} />
+<Props story="default" />

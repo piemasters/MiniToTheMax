@@ -7,8 +7,44 @@ import {
   Meta,
 } from '@storybook/addon-docs/blocks';
 import Seo from '../../components/seo';
+import cover from '../../../content/assets/images/example-cover.jpg';
 
-<Meta title="Components/Seo" component={Seo} />
+<Meta
+  title="Components/Seo"
+  component={Seo}
+  argTypes={{
+    title: {
+      name: 'title',
+      description: 'Title of the page',
+      defaultValue: 'SEO Title',
+      control: { type: 'text' },
+    },
+    description: {
+      name: 'A brief summary of the page',
+      description: 'SEO description',
+      defaultValue: 'SEO description',
+      control: { type: 'text' },
+    },
+    image: {
+      name: 'image',
+      description: 'Thumbnail used when link is shared',
+      defaultValue: cover,
+      control: { type: 'text' },
+    },
+    article: {
+      name: 'article',
+      description: 'Whether the page type is a blog post',
+      defaultValue: false,
+      control: { type: 'boolean' },
+    },
+    pathname: {
+      name: 'pathname',
+      description: 'The unique slug of the page after the base URL',
+      defaultValue: '',
+      control: { type: 'text' },
+    },
+  }}
+/>
 
 # Seo
 
@@ -16,11 +52,20 @@ With `MDX` we can define a story for `Seo` right in the middle of our
 markdown documentation.
 
 <Preview>
-  <Story name="default">
-    <Seo />
+  <Story
+    name="default"
+    args={{
+      title: 'SEO Title',
+      description: 'Description of the SEO',
+      image: cover,
+      article: true,
+      pathname: 'blog-post-1',
+    }}
+  >
+    {(args) => <Seo {...args} />}
   </Story>
 </Preview>
 
 # Props
 
-<Props of={Seo} />
+<Props story="default" />

@@ -8,7 +8,57 @@ import {
 } from '@storybook/addon-docs/blocks';
 import Pagination from '../../components/pagination';
 
-<Meta title="Components/Pagination" component={Pagination} />
+<Meta
+  title="Components/Pagination"
+  component={Pagination}
+  argTypes={{
+    isFirst: {
+      name: 'isFirst',
+      description:
+        'If the current page is the first page don\'t display the "Previous Page" link',
+      defaultValue: false,
+      control: { type: 'boolean' },
+    },
+    isLast: {
+      name: 'isLast',
+      description:
+        'If the current page is the last page don\'t display the "Next Page" link',
+      defaultValue: false,
+      control: { type: 'boolean' },
+    },
+    prevPage: {
+      name: 'prevPage',
+      description: 'Link to the previous page',
+      defaultValue: '/blog/2',
+      control: { type: 'text' },
+    },
+    nextPage: {
+      name: 'nextPage',
+      description: 'Link to the next page',
+      defaultValue: '/blog/4',
+      control: { type: 'text' },
+    },
+    numPages: {
+      name: 'numPages',
+      description: 'The number of pages to display between Previous and Next',
+      defaultValue: 5,
+      control: { type: 'number' },
+    },
+    currentPage: {
+      name: 'currentPage',
+      description: 'The current page number',
+      defaultValue: 3,
+      control: { type: 'number' },
+    },
+    baseUrl: {
+      name: 'baseUrl',
+      description:
+        'The base URL the prefixs each of the generated page strings/numbers',
+      defaultValue: '/blog/',
+      control: { type: 'text' },
+    },
+  }}
+/>
 
 # Pagination
 
@@ -16,19 +66,22 @@ With `MDX` we can define a story for `Pagination` right in the middle of our
 markdown documentation.
 
 <Preview>
-  <Story name="default">
-    <Pagination
-      isFirst={false}
-      isLast={false}
-      prevPage={'previous'}
-      nextPage={'next'}
-      numPages={5}
-      currentPage={3}
-      baseUrl={'/'}
-    />
+  <Story
+    name="default"
+    args={{
+      isFirst: false,
+      isLast: false,
+      prevPage: 'previous',
+      nextPage: 'next',
+      numPages: 5,
+      currentPage: 3,
+      baseUrl: '/',
+    }}
+  >
+    {(args) => <Pagination {...args} />}
   </Story>
 </Preview>
 
 # Props
 
-<Props of={Pagination} />
+<Props story="default" />

@@ -8,7 +8,24 @@ import {
 } from '@storybook/addon-docs/blocks';
 import SimplePagination from '../../components/simple-pagination';
 
-<Meta title="Components/SimplePagination" component={SimplePagination} />
+<Meta
+  title="Components/SimplePagination"
+  component={SimplePagination}
+  argTypes={{
+    previous: {
+      name: 'prevPage',
+      description: 'Link to the previous page',
+      defaultValue: { slug: 'previous', title: 'Previous Page' },
+      control: { type: 'object' },
+    },
+    next: {
+      name: 'nextPage',
+      description: 'Link to the next page',
+      defaultValue: { slug: 'next', title: 'Next Page' },
+      control: { type: 'object' },
+    },
+  }}
+/>
 
 # SimplePagination
 
@@ -16,28 +33,23 @@ With `MDX` we can define a story for `SimplePagination` right in the middle of o
 markdown documentation.
 
 <Preview>
-  <Story name="default">
-    <SimplePagination
-      previous={{
-        fields: {
-          slug: 'previous',
-        },
-        frontmatter: {
-          title: 'Previous Page',
-        },
-      }}
-      next={{
-        fields: {
-          slug: 'next',
-        },
-        frontmatter: {
-          title: 'Next Page',
-        },
-      }}
-    />
+  <Story
+    name="default"
+    args={{
+      previous: {
+        slug: 'previous',
+        title: 'Previous Page',
+      },
+      next: {
+        slug: 'next',
+        title: 'Next Page',
+      },
+    }}
+  >
+    {(args) => <SimplePagination {...args} />}
   </Story>
 </Preview>
 
 # Props
 
-<Props of={SimplePagination} />
+<Props story="default" />
