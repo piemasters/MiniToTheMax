@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "yarn preoptimize&& gatsby build",
     "build-dev": "env-cmd gatsby build",
     "develop": "env-cmd  gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,tsx,json,md}\"",
@@ -21,7 +21,8 @@
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "prestorybook": "yarn test:output",
     "storybook": "set NODE_ENV=production&& start-storybook -p 6006 -s public",
-    "build-storybook": "set NODE_ENV=production&& build-storybook -s public"
+    "build-storybook": "set NODE_ENV=production&& build-storybook -s public",
+    "preoptimize": "node ./src/scripts/optimize.js"
   },
   "dependencies": {
     "@emotion/core": "^10.0.27",
