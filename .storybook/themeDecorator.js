@@ -5,7 +5,9 @@ import InternalProvider from 'gatsby-plugin-transition-link/context/InternalProv
 
 const ThemeDecorator = (storyFn) => (
   <InternalProvider>
-    <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
+      <div  style={{maxWidth: '750px', margin: 'auto'}}>
+          <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
+      </div>
   </InternalProvider>
 );
 

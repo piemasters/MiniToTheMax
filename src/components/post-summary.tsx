@@ -29,6 +29,7 @@ const PostSummary = (post: PostSummaryProps) => {
     color: #777777;
     font-size: 0.8rem;
     font-style: italic;
+    margin: 0;
   `;
 
   const postLinkStyle = css`

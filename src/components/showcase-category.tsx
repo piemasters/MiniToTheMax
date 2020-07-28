@@ -5,13 +5,13 @@ import PageLink from './page-link';
 import Img, { FluidObject } from 'gatsby-image';
 import { Theme } from '../styles/theme';
 
-interface PostSummaryProps {
+interface ShowcaseCategoryProps {
   slug: string;
   title: string;
-  img: string;
+  img: FluidObject;
 }
 
-const ShowcaseCategory = (post: PostSummaryProps) => {
+const ShowcaseCategory = (category: ShowcaseCategoryProps) => {
   const theme: Theme = useTheme();
 
   const postStyle = css`
@@ -20,12 +20,6 @@ const ShowcaseCategory = (post: PostSummaryProps) => {
 
   const postHeaderStyle = css`
     margin-bottom: 0;
-  `;
-
-  const postParagraphStyle = css`
-    color: #777777;
-    font-size: 0.8rem;
-    font-style: italic;
   `;
 
   const postLinkStyle = css`
@@ -40,15 +34,15 @@ const ShowcaseCategory = (post: PostSummaryProps) => {
   `;
 
   return (
-    <div css={postStyle} data-testid="post-summary">
+    <div css={postStyle} data-testid="showcase-category">
       <PageLink
         linkStyle={postLinkStyle}
-        to={post.slug}
+        to={category.slug}
         type={'cover'}
         direction={'up'}
       >
-        <h2 css={postHeaderStyle}>{post.title}</h2>
-        {/*<Img fluid={post.img} />*/}
+        <h2 css={postHeaderStyle}>{category.title}</h2>
+        <Img fluid={category.img} />
         <br />
       </PageLink>
     </div>

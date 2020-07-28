@@ -1,4 +1,4 @@
-import { AllMdx, MdxGroupConnection, MdxNode, Site } from './base.types';
+import { AllMdx, MdxGroupConnection, MdxNode, MdxFrontmatterGalleryImage, Site } from './base.types';
 
 export interface Posts {
   posts: AllMdx;
@@ -11,6 +11,15 @@ export interface MdxPost {
 
 export interface Categories {
   categories: AllMdx;
+}
+
+export interface Showcase {
+  boardGames: MdxFrontmatterGalleryImage;
+  gloomspiteGitz: MdxFrontmatterGalleryImage;
+  spaceWolves: MdxFrontmatterGalleryImage;
+  greyKnights: MdxFrontmatterGalleryImage;
+  orks: MdxFrontmatterGalleryImage;
+  scenery: MdxFrontmatterGalleryImage;
 }
 
 export interface Category extends MdxGroupConnection {}

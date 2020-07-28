@@ -1,0 +1,67 @@
+import {
+  Story,
+  Preview,
+  Props,
+  Source,
+  Description,
+  Meta,
+} from '@storybook/addon-docs/blocks';
+import ShowcaseCategory from '../../components/showcase-category';
+import cover from '../../../content/assets/images/example-cover.jpg';
+
+<Meta
+  title="Components/ShowcaseCategory"
+  component={ShowcaseCategory}
+  argTypes={{
+    img: {
+      name: 'img',
+      description: 'The cover image of the showcase category',
+      defaultValue: {
+        aspectRatio: 2,
+        src: cover,
+        srcSet: '',
+        sizes: '(max-width: 800px) 100vw, 800px',
+      },
+      control: { type: 'object' },
+    },
+    slug: {
+      name: 'slug',
+      description: 'The url to the showcase category',
+      defaultValue: '/showcase/board-games',
+      control: { type: 'text' },
+    },
+    title: {
+      name: 'title',
+      description: 'The title of the showcase category',
+      defaultValue: 'Board Games',
+      control: { type: 'text' },
+    },
+  }}
+/>
+
+# Showcase Category
+
+With `MDX` we can define a story for `ShowcaseCategory` right in the middle of our
+markdown documentation.
+
+<Preview>
+  <Story
+    name="default"
+    args={{
+      img: {
+        aspectRatio: 2,
+        src: cover,
+        srcSet: '',
+        sizes: '(max-width: 800px) 100vw, 800px',
+      },
+      slug: `/showcase/board-games`,
+      title: `Board Games`,
+    }}
+  >
+    {args => <ShowcaseCategory {...args} />}
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={ShowcaseCategory} />
