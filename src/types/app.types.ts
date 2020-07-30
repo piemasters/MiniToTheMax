@@ -1,4 +1,5 @@
 import { AllMdx, MdxGroupConnection, MdxNode, MdxFrontmatterGalleryImage, Site } from './base.types';
+import {FluidObject} from "gatsby-image";
 
 export interface Posts {
   posts: AllMdx;
@@ -33,6 +34,10 @@ export interface Tag extends MdxGroupConnection {}
 export interface TagLink {
   slug: string;
   title: string;
+}
+
+export interface PostLink extends TagLink {
+  img: FluidObject;
 }
 
 export interface DisqusConfig {

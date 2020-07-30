@@ -16,17 +16,23 @@ const ShowcaseCategory = (category: ShowcaseCategoryProps) => {
 
   const postStyle = css`
     margin: 1rem 0;
+    position: relative;
   `;
 
   const postHeaderStyle = css`
-    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 1rem;
   `;
 
   const postLinkStyle = css`
     background-color: #f4f4f4;
     color: #000000;
     display: block;
-    padding: 1rem;
     text-decoration: none;
     &:hover {
       background-color: #e4e4e4;
@@ -41,9 +47,12 @@ const ShowcaseCategory = (category: ShowcaseCategoryProps) => {
         type={'cover'}
         direction={'up'}
       >
-        <h2 css={postHeaderStyle}>{category.title}</h2>
         <Img fluid={category.img} />
-        <br />
+        <h2 css={postHeaderStyle}>
+          {category.title.slice(0, 10) === 'Showcase: '
+            ? category.title.slice(10)
+            : category.title}
+        </h2>
       </PageLink>
     </div>
   );

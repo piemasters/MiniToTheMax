@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layouts/layout';
 import Seo from '../components/seo';
-import PageLink from '../components/page-link';
-import { Categories, TagLink } from '../types/app.types';
+import { Categories, PostLink } from '../types/app.types';
 import { MdxEdge } from '../types/base.types';
+import ShowcaseCategory from '../components/showcase-category';
 
 interface PostCategoryContext {
   type: string;
@@ -19,10 +19,11 @@ const PostCategory = ({
   pageContext: PostCategoryContext;
   data: Categories;
 }) => {
-  const postCategories: TagLink[] = data.categories.edges.map(
+  const postCategories: PostLink[] = data.categories.edges.map(
     (edge: MdxEdge) => ({
       slug: edge.node.fields.slug,
       title: edge.node.frontmatter.title,
+      img: edge.node.frontmatter.featuredImage.childImageSharp.fluid,
     })
   );
 
@@ -37,13 +38,14 @@ const PostCategory = ({
       <h1>{pageContext.category}</h1>
 
       <ul>
-        {postCategories.map((postCategory: TagLink) => {
+        {postCategories.map((postCategory: PostLink) => {
           return (
-            <li key={postCategory.slug}>
-              <PageLink to={postCategory.slug} type={'cover'} direction={'up'}>
-                {postCategory.title}
-              </PageLink>
-            </li>
+            <ShowcaseCategory
+              key={postCategory.slug}
+              img={postCategory.img}
+              slug={postCategory.slug}
+              title={postCategory.title}
+            />
           );
         })}
       </ul>
@@ -72,6 +74,15 @@ export const pageQuery = graphql`
           frontmatter {
             categories
             title
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800, maxHeight: 400) {
+                  ...GatsbyImageSharpFluid
+                  presentationWidth
+                  presentationHeight
+                }
+              }
+            }
           }
         }
       }

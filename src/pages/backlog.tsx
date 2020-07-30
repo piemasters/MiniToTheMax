@@ -21,6 +21,7 @@ const BacklogPage = () => {
         <li>Grey Knight Terminators Squad II</li>
         <li>Grey Knight Paladins</li>
         <li>Land Raider</li>
+        <li>Grand Master Voldus</li>
       </ul>
 
       <h3>Space Wolves</h3>
@@ -36,7 +37,10 @@ const BacklogPage = () => {
         <li>Grey Hunters II</li>
         <li>Njal Stormcaller</li>
         <li>Krom Dragongaze</li>
+        <li>Arjac Rockfist</li>
         <li>Hunter/Stalker</li>
+        <li>Logan Grimnar</li>
+        <li>Ragnar Blackmane</li>
         <li>Stormbird</li>
       </ul>
 
@@ -109,21 +113,6 @@ const BacklogPage = () => {
       </ul>
 
       <h2>Board Games</h2>
-
-      <h3>Dreadfleet</h3>
-      <ul>
-        <li>The Bloody Reaver</li>
-        <li>Skabrus</li>
-        <li>Curse of Zandri</li>
-        <li>Black Kraken</li>
-        <li>Shadewraith</li>
-        <li>The Heldenhammer</li>
-        <li>The Swordfysh</li>
-        <li>The Flaming Scimitar</li>
-        <li>Grimnir's Thunder</li>
-        <li>Seadrake</li>
-        <li>Cog Auxiliaries</li>
-      </ul>
 
       <h3>Execution Force</h3>
       <ul>
@@ -262,6 +251,17 @@ const BacklogPage = () => {
         <li>Wind Gauge</li>
         <li>Ship's Wheels</li>
         <li>Navigation Rod</li>
+        <li>The Bloody Reaver</li>
+        <li>Skabrus</li>
+        <li>Curse of Zandri</li>
+        <li>Black Kraken</li>
+        <li>Shadewraith</li>
+        <li>The Heldenhammer</li>
+        <li>The Swordfysh</li>
+        <li>The Flaming Scimitar</li>
+        <li>Grimnir's Thunder</li>
+        <li>Seadrake</li>
+        <li>Cog Auxiliaries</li>
       </ul>
 
       <h3>Gorechosen</h3>

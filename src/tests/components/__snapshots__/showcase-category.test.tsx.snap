@@ -14,11 +14,6 @@ exports[`ShowcaseCategory renders correctly 1`] = `
       duration="1"
       href="/showcase/board-games"
     >
-      <h2
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-      >
-        Board Games
-      </h2>
       <div
         class=" gatsby-image-wrapper"
         style="position: relative; overflow: hidden;"
@@ -45,7 +40,11 @@ exports[`ShowcaseCategory renders correctly 1`] = `
           &lt;picture&gt;&lt;source srcset="" sizes="(max-width: 800px) 100vw, 800px" /&gt;&lt;img loading="lazy" sizes="(max-width: 800px) 100vw, 800px" src="cover.jpeg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/&gt;&lt;/picture&gt;
         </noscript>
       </div>
-      <br />
+      <h2
+        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+      >
+        Board Games
+      </h2>
     </a>
   </div>
 </div>

@@ -27,6 +27,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const categoryTemplate = path.resolve('src/templates/category.tsx');
   const postCategoryTemplate = path.resolve('src/templates/post-category.tsx');
 
+  const postsPerPage = 10;
+
   /**
    * Handle local markdown posts
    */
@@ -160,17 +162,16 @@ module.exports.createPages = async ({ graphql, actions }) => {
   });
 
   // Create blog post list pages
-  const postsPerPage = 10;
-  const numPages = Math.ceil(posts.length / postsPerPage);
+  const numPostPages = Math.ceil(posts.length / postsPerPage);
 
-  Array.from({ length: numPages }).forEach((_, i) => {
+  Array.from({ length: numPostPages }).forEach((_, i) => {
     createPage({
       path: i === 0 ? `/blog/` : `/blog/${i + 1}`,
       component: blogTemplate,
       context: {
         limit: postsPerPage,
         skip: i * postsPerPage,
-        numPages,
+        numPostPages,
         currentPage: i + 1,
       },
     });
