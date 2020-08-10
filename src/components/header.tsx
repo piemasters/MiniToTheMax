@@ -25,9 +25,14 @@ export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
 
   const NavTitle = css`
     a {
+      align-items: center;
       color: ${theme.colors.text};
-      font-size: 3rem;
+      display: flex;
+      padding-bottom: 1rem;
       text-decoration: none;
+      h1 {
+        margin: 0 0 0 1rem;
+      }
     }
   `;
 
@@ -39,12 +44,13 @@ export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
 
   const NavItem = css`
     a {
-      color: ${theme.colors.muted};
+      color: ${theme.colors.textSecondary};
       font-size: 0.9rem;
+      font-weight: bold;
       margin-right: 1.3rem;
       text-decoration: none;
       &:hover {
-        color: #666666;
+        color: ${theme.colors.primary};
       }
     }
   `;
@@ -52,21 +58,19 @@ export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
   return (
     <div css={NavHeader} data-testid="nav-header">
       <nav>
-        <h1>
-          <div css={NavTitle}>
-            <PageLink type={'paintDrip'} to={'/'}>
-              <img src={logo} alt="Logo" width={60 + 'px'} />
-              {title}
-            </PageLink>
-          </div>
-        </h1>
+        <div css={NavTitle}>
+          <PageLink type={'paintDrip'} to={'/'}>
+            <img src={logo} alt="Logo" width={60 + 'px'} />
+            <h1>{title} </h1>
+          </PageLink>
+        </div>
         <div css={NavList}>
           {pages.map((link: NavLink) => {
             return (
               <div css={NavItem} key={link.name}>
                 <PageLink
                   type={'cover'}
-                  linkActiveStyle={{ color: '#333333' }}
+                  linkActiveStyle={{ color: theme.colors.primary }}
                   to={link.url}
                 >
                   {link.name}

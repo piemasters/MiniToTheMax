@@ -4,6 +4,7 @@ import { useTheme } from 'emotion-theming';
 import PageLink from './page-link';
 import Img, { FluidObject } from 'gatsby-image';
 import { Theme } from '../styles/theme';
+import CoverImage from './cover-image';
 
 interface ShowcaseCategoryProps {
   slug: string;
@@ -16,17 +17,6 @@ const ShowcaseCategory = (category: ShowcaseCategoryProps) => {
 
   const postStyle = css`
     margin: 1rem 0;
-    position: relative;
-  `;
-
-  const postHeaderStyle = css`
-    background-color: rgba(0, 0, 0, 0.7);
-    bottom: 0px;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-    position: absolute;
-    right: 1rem;
   `;
 
   const postLinkStyle = css`
@@ -47,12 +37,14 @@ const ShowcaseCategory = (category: ShowcaseCategoryProps) => {
         type={'cover'}
         direction={'up'}
       >
-        <Img fluid={category.img} />
-        <h2 css={postHeaderStyle}>
-          {category.title.slice(0, 10) === 'Showcase: '
-            ? category.title.slice(10)
-            : category.title}
-        </h2>
+        <CoverImage
+          image={category.img}
+          title={
+            category.title.slice(0, 10) === 'Showcase: '
+              ? category.title.slice(10)
+              : category.title
+          }
+        />
       </PageLink>
     </div>
   );

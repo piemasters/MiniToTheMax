@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostTag renders correctly 1`] = `
+<div>
+  <div
+    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+    data-testid="post-tag"
+  >
+    <a
+      bg="#eb1d23"
+      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+      data-testid="page-link-cover"
+      direction="up"
+      duration="1"
+      href="/tag/tag/"
+    >
+      Tag
+    </a>
+  </div>
+</div>
+`;

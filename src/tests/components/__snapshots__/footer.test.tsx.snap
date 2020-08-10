@@ -7,9 +7,16 @@ exports[`Footer renders correctly 1`] = `
     data-testid="footer"
   >
     <p>
-      Created by 
-      David Norton
-       © 
+      Created by
+       
+      <a
+        href="https://davidnorton.app/"
+        target="_blank"
+      >
+        David Norton
+      </a>
+       
+      © 
       2020
     </p>
   </footer>

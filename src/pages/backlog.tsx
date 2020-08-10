@@ -30,17 +30,21 @@ const BacklogPage = () => {
         <li>Wolf Guard Terminators</li>
         <li>Blood Claws</li>
         <li>Primaris Captain</li>
+        <li>Primaris Captain</li>
+        <li>Primaris Judicar</li>
+        <li>Primaris Bladeguard Ancient</li>
         <li>Primaris Intercessor Squad</li>
         <li>Primaris Inceptor Squad</li>
         <li>Primaris Hellblaster Squad</li>
+        <li>Primas Infiltrators</li>
         <li>Wolf Guard Terminators</li>
         <li>Grey Hunters II</li>
         <li>Njal Stormcaller</li>
         <li>Krom Dragongaze</li>
         <li>Arjac Rockfist</li>
-        <li>Hunter/Stalker</li>
         <li>Logan Grimnar</li>
         <li>Ragnar Blackmane</li>
+        <li>Hunter/Stalker</li>
         <li>Stormbird</li>
       </ul>
 
@@ -56,6 +60,11 @@ const BacklogPage = () => {
         <li>Ork Nobz</li>
         <li>Killa Kans</li>
         <li>Runtherd</li>
+        <li>Ghazghkull Thraka</li>
+        <li>Ork Nobz</li>
+        <li>Ork Meganobz</li>
+        <li>Ammo Runt</li>
+        <li>Grot Oiler</li>
       </ul>
 
       <h3>Harlequins</h3>

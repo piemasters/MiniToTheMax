@@ -13,12 +13,23 @@ export const PureFooter = ({ author }: FooterProps) => {
 
   const Footer = css`
     margin-top: 3rem;
+    a {
+      color: ${theme.colors.hyperlink};
+      text-decoration: none;
+      &:hover {
+        color: ${theme.colors.hyperlinkActive};
+      }
+    }
   `;
 
   return (
     <footer data-testid="footer" css={Footer}>
       <p>
-        Created by {author} © {new Date().getFullYear()}
+        Created by{' '}
+        <a href="https://davidnorton.app/" target="_blank">
+          {author}
+        </a>{' '}
+        © {new Date().getFullYear()}
       </p>
     </footer>
   );

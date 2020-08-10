@@ -4,6 +4,7 @@ import { useTheme } from 'emotion-theming';
 import PageLink from './page-link';
 import Img, { FluidObject } from 'gatsby-image';
 import { Theme } from '../styles/theme';
+import CoverImage from './cover-image';
 
 interface PostSummaryProps {
   slug: string;
@@ -21,26 +22,24 @@ const PostSummary = (post: PostSummaryProps) => {
     margin: 1rem 0;
   `;
 
-  const postHeaderStyle = css`
-    margin-bottom: 0;
-  `;
-
   const postParagraphStyle = css`
-    color: #777777;
+    color: ${theme.colors.textSecondary};
     font-size: 0.8rem;
     font-style: italic;
     margin: 0;
   `;
 
   const postLinkStyle = css`
-    background-color: #f4f4f4;
-    color: #000000;
+    background-color: ${theme.colors.lightgrey};
     display: block;
-    padding: 1rem;
     text-decoration: none;
     &:hover {
-      background-color: #e4e4e4;
+      background-color: ${theme.colors.lightgreyHover};
     }
+  `;
+
+  const postContents = css`
+    padding: 1rem;
   `;
 
   return (
@@ -51,13 +50,17 @@ const PostSummary = (post: PostSummaryProps) => {
         type={'cover'}
         direction={'up'}
       >
-        <h2 css={postHeaderStyle}>{post.title}</h2>
-        <p css={postParagraphStyle}>
-          {post.date} - {post.timeToRead} min read
-        </p>
-        <Img fluid={post.img} />
-        <br />
-        <p css={postParagraphStyle}>{post.excerpt}</p>
+        <CoverImage image={post.img} title={post.title} tall={true} />
+        <div css={postContents}>
+          {' '}
+          <p css={postParagraphStyle}>
+            <strong>
+              {post.date} - {post.timeToRead} min read
+            </strong>
+          </p>
+          <hr />
+          <p css={postParagraphStyle}>{post.excerpt}</p>
+        </div>
       </PageLink>
     </div>
   );

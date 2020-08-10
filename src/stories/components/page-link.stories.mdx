@@ -12,6 +12,7 @@ import { css } from '@emotion/core';
 <Meta
   title="Components/PageLink"
   component={PageLink}
+  parameters={{ jest: ['page-link'] }}
   argTypes={{
     type: {
       name: 'type',
@@ -117,7 +118,7 @@ markdown documentation.
       `,
     }}
   >
-    {(args) => <PageLink {...args}>{args.children}</PageLink>}
+    {args => <PageLink {...args}>{args.children}</PageLink>}
   </Story>
 </Preview>
 

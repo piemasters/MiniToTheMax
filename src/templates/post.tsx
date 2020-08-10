@@ -1,17 +1,17 @@
 import React from 'react';
 import Layout from '../layouts/layout';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
-import kebabCase from 'lodash.kebabcase';
 import SimplePagination from '../components/simple-pagination';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 // @ts-ignore
 import Gallery from 'react-grid-gallery';
 import Seo from '../components/seo';
-import PageLink from '../components/page-link';
 import { DiscussionEmbed } from 'disqus-react';
 import { DisqusConfig, MdxPost } from '../types/app.types';
 import { MdxFrontmatterGalleryImage, MdxNode } from '../types/base.types';
+import PostTag from '../components/post-tag';
+import { css } from '@emotion/core';
+import CoverImage from '../components/cover-image';
 
 interface PostContext {
   previous: MdxNode;
@@ -71,6 +71,20 @@ const Post = ({
     url: `${data.site.siteMetadata.siteUrl}/${post.slug}`,
   };
 
+  const tagsStyle = css`
+    padding: 0.5rem 0;
+  `;
+
+  const dateStyle = css`
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    text-align: right;
+  `;
+
+  const galleryContainerStyle = css`
+    overflow: hidden;
+  `;
+
   return (
     <Layout>
       <Seo
@@ -80,40 +94,30 @@ const Post = ({
         image={post.featuredImage.src}
         article={true}
       />
-      <h1>{post.title}</h1>
-      <p>{post.date}</p>
-      <Img fluid={post.featuredImage} />
-      <br />
-      TAGS:
-      {post.tags.map((tag: any) => (
-        <PageLink
-          key={tag}
-          to={`/tags/${kebabCase(tag)}/`}
-          type={'cover'}
-          direction={'up'}
-        >
-          {tag}
-        </PageLink>
-      ))}
-      CATEGORIES:
-      {post.categories.map((category: any) => (
-        <PageLink
-          key={category}
-          to={`/categories/${kebabCase(category)}/`}
-          type={'cover'}
-          direction={'up'}
-        >
-          {category}
-        </PageLink>
-      ))}
+      <CoverImage image={post.featuredImage} title={post.title} />
+      <div css={tagsStyle}>
+        {post.categories.map((category: string) => (
+          <PostTag type={'categories'} name={category} key={category} />
+        ))}
+        {post.tags.map((tag: string) => (
+          <PostTag type={'tags'} name={tag} key={tag} />
+        ))}
+      </div>
+      <div css={dateStyle}>
+        <strong>Published</strong> {post.date}
+      </div>
+
       <MDXRenderer>{post.body}</MDXRenderer>
       <h2>Gallery</h2>
-      <Gallery
-        images={post.gallery}
-        enableImageSelection={false}
-        rowHeight={180}
-        margin={2}
-      />
+      <div css={galleryContainerStyle}>
+        <Gallery
+          images={post.gallery}
+          enableImageSelection={false}
+          rowHeight={180}
+          margin={2}
+        />
+      </div>
+
       <SimplePagination previous={pagination.previous} next={pagination.next} />
       <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
     </Layout>
