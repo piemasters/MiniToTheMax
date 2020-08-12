@@ -19,24 +19,63 @@ const SimplePagination = ({ previous, next }: SimplePaginationProps) => {
     justify-content: space-between;
     list-style: none;
     padding: 0;
+    text-decoration: none;
   `;
+
+  const paginationStyleLeft = css`
+    flex: 1;
+    padding: 2rem 2rem 2rem 0;
+  `;
+
+  const paginationStyleRight = css`
+    flex: 1;
+    padding: 2rem 0 2rem 2rem;
+  `;
+
+  const textStyle = css`
+    flex: 1;
+  `;
+
+  const arrowLeftStyle = css`
+    padding-right: 0.4rem;
+  `;
+
+  const arrowRightStyle = css`
+    padding-left: 0.4rem;
+  `;
+
+  const leftStyle = css`
+    display: flex;
+  `;
+
+  const rightStyle = css`
+    display: flex;
+    text-align: right;
+  `;
+
   return (
-    <ul data-testid="simple-pagination" css={containerStyle}>
-      <li>
+    <div data-testid="simple-pagination" css={containerStyle}>
+      <div css={paginationStyleLeft}>
         {previous && (
           <PageLink to={previous.slug} type={'cover'} direction={'right'}>
-            ← {previous.title}
+            <div css={leftStyle}>
+              <div css={arrowLeftStyle}>← </div>
+              <div css={textStyle}>{previous.title}</div>
+            </div>
           </PageLink>
         )}
-      </li>
-      <li>
+      </div>
+      <div css={paginationStyleRight}>
         {next && (
           <PageLink to={next.slug} type={'cover'} direction={'left'}>
-            {next.title} →
+            <div css={rightStyle}>
+              <div css={textStyle}>{next.title}</div>
+              <div css={arrowRightStyle}>→</div>
+            </div>
           </PageLink>
         )}
-      </li>
-    </ul>
+      </div>
+    </div>
   );
 };
 

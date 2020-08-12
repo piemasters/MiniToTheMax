@@ -83,6 +83,7 @@ const Post = ({
 
   const galleryContainerStyle = css`
     overflow: hidden;
+    margin-bottom: 2rem;
   `;
 
   return (
@@ -119,6 +120,7 @@ const Post = ({
       </div>
 
       <SimplePagination previous={pagination.previous} next={pagination.next} />
+      <hr />
       <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
     </Layout>
   );

@@ -6,6 +6,7 @@ exports[`PageLink cover renders correctly 1`] = `
     aria-current="page"
     bg="#eb1d23"
     class=""
+    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
     data-testid="page-link-cover"
     direction="up"
     duration="1"
@@ -21,6 +22,7 @@ exports[`PageLink fade renders correctly 1`] = `
   <a
     aria-current="page"
     class=""
+    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
     data-testid="page-link-fade"
     href="/"
   >
@@ -34,6 +36,7 @@ exports[`PageLink paintDrip renders correctly 1`] = `
   <a
     aria-current="page"
     class=""
+    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
     data-testid="page-link-paint"
     hex="#eb1d23"
     href="/"
@@ -48,6 +51,7 @@ exports[`PageLink renders correctly 1`] = `
   <a
     aria-current="page"
     class=""
+    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
     data-testid="page-link"
     href="/"
   >
@@ -61,6 +65,7 @@ exports[`PageLink swipe renders correctly 1`] = `
   <a
     aria-current="page"
     class=""
+    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
     data-testid="page-link-swipe"
     direction="up"
     hex="#eb1d23"

@@ -42,7 +42,7 @@ import Pagination from '../../components/pagination';
     numPages: {
       name: 'numPages',
       description: 'The number of pages to display between Previous and Next',
-      defaultValue: 5,
+      defaultValue: 20,
       control: { type: 'number' },
     },
     currentPage: {
@@ -51,10 +51,16 @@ import Pagination from '../../components/pagination';
       defaultValue: 3,
       control: { type: 'number' },
     },
+    maxPages: {
+      name: 'maxPages',
+      description: 'The maximum number of pages to show at once',
+      defaultValue: 10,
+      control: { type: 'number' },
+    },
     baseUrl: {
       name: 'baseUrl',
       description:
-        'The base URL the prefixs each of the generated page strings/numbers',
+        'The base URL the prefixes each of the generated page strings/numbers',
       defaultValue: '/blog/',
       control: { type: 'text' },
     },
@@ -74,12 +80,13 @@ markdown documentation.
       isLast: false,
       prevPage: 'previous',
       nextPage: 'next',
-      numPages: 5,
+      numPages: 20,
       currentPage: 3,
+      maxPages: 10,
       baseUrl: '/',
     }}
   >
-    {(args) => <Pagination {...args} />}
+    {args => <Pagination {...args} />}
   </Story>
 </Preview>
 

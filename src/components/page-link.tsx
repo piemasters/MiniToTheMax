@@ -1,10 +1,12 @@
 import React from 'react';
-import { SerializedStyles } from '@emotion/core';
+import { css, SerializedStyles } from '@emotion/core';
 import * as CSS from 'csstype';
 // @ts-ignore
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 // @ts-ignore
 import TransitionLink from 'gatsby-plugin-transition-link';
+import { Theme } from '../styles/theme';
+import { useTheme } from 'emotion-theming';
 // import { Link } from 'gatsby';
 
 type AnimationTypes = 'paintDrip' | 'fade' | 'swipe' | 'cover';
@@ -36,6 +38,20 @@ const PageLink = ({
   bg,
   duration,
 }: PageLinkProps) => {
+  const theme: Theme = useTheme();
+
+  const baseStyle = css`
+    color: ${theme.colors.hyperlink};
+    text-decoration: none;
+    &:visited {
+      color: ${theme.colors.hyperlink};
+    }
+    &:hover {
+      color: ${theme.colors.hyperlinkActive};
+    }
+  `;
+
+  const activeStyle = linkStyle ? linkStyle : baseStyle;
   // return (
   //   <Link
   //     to={to}
@@ -54,7 +70,7 @@ const PageLink = ({
         hex={hex ? hex : '#eb1d23'}
         to={to}
         duration={duration}
-        css={linkStyle}
+        css={activeStyle}
         activeStyle={linkActiveStyle}
         partiallyActive={to !== '/'}
       >
@@ -68,7 +84,7 @@ const PageLink = ({
         fade={type === 'fade'}
         to={to}
         duration={duration}
-        css={linkStyle}
+        css={activeStyle}
         activeStyle={linkActiveStyle}
         partiallyActive={to !== '/'}
       >
@@ -86,7 +102,7 @@ const PageLink = ({
         hex={hex ? hex : '#eb1d23'}
         to={to}
         duration={duration}
-        css={linkStyle}
+        css={activeStyle}
         activeStyle={linkActiveStyle}
         partiallyActive={to !== '/'}
       >
@@ -102,7 +118,7 @@ const PageLink = ({
         direction={direction ? direction : 'up'}
         bg={bg ? bg : '#eb1d23'}
         duration={duration ? duration : 1}
-        css={linkStyle}
+        css={activeStyle}
         activeStyle={linkActiveStyle}
         partiallyActive={to !== '/'}
       >
@@ -114,7 +130,7 @@ const PageLink = ({
       <TransitionLink
         data-testid="page-link"
         to={to}
-        css={linkStyle}
+        css={activeStyle}
         activeStyle={linkActiveStyle}
         partiallyActive={to !== '/'}
       >

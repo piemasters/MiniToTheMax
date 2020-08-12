@@ -12,7 +12,7 @@ import { MdxEdge } from '../types/base.types';
 interface PostContext {
   limit: number;
   skip: number;
-  numPages: number;
+  numPostPages: number;
   currentPage: number;
 }
 
@@ -39,14 +39,14 @@ const Blog = ({
 
   const page = {
     isFirst: pageContext.currentPage === 1,
-    isLast: pageContext.currentPage === pageContext.numPages,
+    isLast: pageContext.currentPage === pageContext.numPostPages,
     prevPage:
       '/blog/' +
       (pageContext.currentPage - 1 === 1
         ? ''
         : (pageContext.currentPage - 1).toString()),
     nextPage: '/blog/' + (pageContext.currentPage + 1).toString(),
-    numPages: pageContext.numPages,
+    numPages: pageContext.numPostPages,
     currentPage: pageContext.currentPage,
     baseUrl: '/blog/',
   };

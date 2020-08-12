@@ -8,6 +8,7 @@ exports[`Pagination renders correctly 1`] = `
   >
     <a
       bg="#eb1d23"
+      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
       data-testid="page-link-cover"
       direction="right"
       duration="1"
@@ -15,80 +16,91 @@ exports[`Pagination renders correctly 1`] = `
     >
       ← Previous Page
     </a>
-    <li
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-    >
-      <a
-        aria-current="page"
-        bg="#eb1d23"
-        class=""
+    <div>
+      <li
         css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-        data-testid="page-link-cover"
-        direction="up"
-        duration="1"
-        href="/"
       >
-        1
-      </a>
-    </li>
-    <li
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-    >
-      <a
-        bg="#eb1d23"
+        <a
+          aria-current="page"
+          bg="#eb1d23"
+          class=""
+          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          data-testid="page-link-cover"
+          direction="up"
+          duration="1"
+          href="/"
+        >
+          1
+        </a>
+      </li>
+    </div>
+    <div>
+      <li
         css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-        data-testid="page-link-cover"
-        direction="up"
-        duration="1"
-        href="/2"
       >
-        2
-      </a>
-    </li>
-    <li
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-    >
-      <a
-        bg="#eb1d23"
+        <a
+          bg="#eb1d23"
+          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          data-testid="page-link-cover"
+          direction="up"
+          duration="1"
+          href="/2"
+        >
+          2
+        </a>
+      </li>
+    </div>
+    <div>
+      <li
         css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-        data-testid="page-link-cover"
-        direction="up"
-        duration="1"
-        href="/3"
       >
-        3
-      </a>
-    </li>
-    <li
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-    >
-      <a
-        bg="#eb1d23"
+        <a
+          bg="#eb1d23"
+          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          data-testid="page-link-cover"
+          direction="up"
+          duration="1"
+          href="/3"
+        >
+          3
+        </a>
+      </li>
+    </div>
+    <div>
+      <li
         css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-        data-testid="page-link-cover"
-        direction="up"
-        duration="1"
-        href="/4"
       >
-        4
-      </a>
-    </li>
-    <li
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-    >
-      <a
-        bg="#eb1d23"
+        <a
+          bg="#eb1d23"
+          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          data-testid="page-link-cover"
+          direction="up"
+          duration="1"
+          href="/4"
+        >
+          4
+        </a>
+      </li>
+    </div>
+    <div>
+      <li
         css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-        data-testid="page-link-cover"
-        direction="up"
-        duration="1"
-        href="/5"
       >
-        5
-      </a>
-    </li>
+        <a
+          bg="#eb1d23"
+          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          data-testid="page-link-cover"
+          direction="up"
+          duration="1"
+          href="/5"
+        >
+          5
+        </a>
+      </li>
+    </div>
     <a
       bg="#eb1d23"
+      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
       data-testid="page-link-cover"
       direction="left"
       duration="1"

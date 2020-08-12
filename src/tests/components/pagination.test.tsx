@@ -16,6 +16,7 @@ describe('Pagination', () => {
           nextPage={'next'}
           numPages={5}
           currentPage={3}
+          maxPages={10}
           baseUrl={'/'}
         />
       </ThemeProvider>
