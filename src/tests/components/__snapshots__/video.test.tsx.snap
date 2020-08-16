@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video renders correctly 1`] = `
+<div>
+  <div
+    data-testid="video"
+  >
+    <iframe
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen=""
+      frameborder="0"
+      height="401.625"
+      src="https://www.youtube.com/embed/qcWaykRRDfM"
+      title="Grey Knight Stormraven"
+      width="714"
+    />
+  </div>
+   
+</div>
+`;
