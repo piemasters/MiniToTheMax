@@ -22,7 +22,7 @@ const Pagination = ({
   nextPage,
   numPages,
   currentPage,
-  maxPages = 10,
+  maxPages = 8,
   baseUrl,
 }: PaginationProps) => {
   const theme: Theme = useTheme();
@@ -37,61 +37,100 @@ const Pagination = ({
     margin: 2rem 0;
   `;
 
-  const numberStyle = css`
-    margin: 0;
-  `;
-
   const linkStyle = (i: number) => {
     return css`
-      background: ${i + 1 === currentPage ? theme.colors.hyperlinkActive : ''};
-      color: ${i + 1 === currentPage ? '#ffffff' : theme.colors.hyperlink};
+      background: ${i === currentPage ? theme.colors.hyperlinkActive : ''};
+      color: ${i === currentPage ? '#ffffff' : theme.colors.hyperlink};
       padding: 0.5rem;
       text-decoration: none;
       &:visited {
-        color: ${i + 1 === currentPage ? '#ffffff' : theme.colors.hyperlink};
+        color: ${i === currentPage ? '#ffffff' : theme.colors.hyperlink};
       }
       &:hover {
-        color: ${i + 1 === currentPage
-          ? '#ffffff'
-          : theme.colors.hyperlinkActive};
+        color: ${i === currentPage ? '#ffffff' : theme.colors.hyperlinkActive};
       }
     `;
   };
 
-  const pageLength = numPages > maxPages ? maxPages : numPages;
-  const offset =
-    currentPage > Math.ceil(pageLength / 2)
-      ? currentPage + 1 - Math.ceil(pageLength / 2)
-      : 1;
+  let startPage: number;
+  let endPage: number;
+  if (numPages <= maxPages) {
+    // Show all pages
+    startPage = 1;
+    endPage = numPages;
+  } else {
+    // Calculate start and end pages
+    if (currentPage <= maxPages / 2 + 1) {
+      startPage = 1;
+      endPage = maxPages;
+    } else if (currentPage + (maxPages / 2 - 1) >= numPages) {
+      startPage = numPages - maxPages - 1;
+      endPage = numPages;
+    } else {
+      startPage = Math.ceil(currentPage - maxPages / 2);
+      endPage = Math.ceil(currentPage + (maxPages / 2 - 1));
+    }
+  }
+
+  // Return an array of pages to repeat
+  const pages = [...Array(endPage + 1 - startPage).keys()].map(
+    (i) => startPage + i
+  );
 
   return (
-    <ul data-testid="pagination" css={containerStyle}>
-      {!isFirst && (
-        <PageLink to={prevPage} type={'cover'} direction={'right'}>
-          ← Previous Page
+    <ul css={containerStyle} data-testid="pagination">
+      <li>
+        <PageLink
+          to={`${baseUrl}`}
+          type={'cover'}
+          direction={'right'}
+          disabled={currentPage === 1}
+        >
+          &lt;&lt;
         </PageLink>
-      )}
-      {Array.from({ length: pageLength }, (_, i) => (
-        <div key={`pagination-number${i + offset}`}>
-          {i + offset <= numPages && (
-            <li css={numberStyle}>
-              <PageLink
-                to={`${baseUrl}${i === 0 ? '' : i + offset}`}
-                type={'cover'}
-                direction={'up'}
-                linkStyle={linkStyle(i + offset - 1)}
-              >
-                {i + offset}
-              </PageLink>
-            </li>
-          )}
-        </div>
+      </li>
+      {/*<li>*/}
+      {/*  <PageLink*/}
+      {/*    to={`${baseUrl}${currentPage - 1 === 1 ? '' : currentPage - 1}`}*/}
+      {/*    type={'cover'}*/}
+      {/*    direction={'right'}*/}
+      {/*    disabled={currentPage === 1}*/}
+      {/*  >*/}
+      {/*    &lt;*/}
+      {/*  </PageLink>*/}
+      {/*</li>*/}
+      {pages.map((page: number, index: number) => (
+        <li key={index}>
+          <PageLink
+            to={`${baseUrl}${page === 1 ? '' : page}`}
+            type={'cover'}
+            direction={page > currentPage ? 'left' : 'right'}
+            linkStyle={linkStyle(page)}
+          >
+            {page}
+          </PageLink>
+        </li>
       ))}
-      {!isLast && (
-        <PageLink to={nextPage} type={'cover'} direction={'left'}>
-          Next Page →
+      {/*<li>*/}
+      {/*  <PageLink*/}
+      {/*    to={`${baseUrl}${currentPage + 1}`}*/}
+      {/*    type={'cover'}*/}
+      {/*    direction={'right'}*/}
+      {/*    disabled={currentPage === numPages}*/}
+      {/*  >*/}
+      {/*    &gt;*/}
+      {/*  </PageLink>*/}
+      {/*</li>*/}
+      <li>
+        <PageLink
+          to={`${baseUrl}${numPages}`}
+          type={'cover'}
+          direction={'right'}
+          disabled={currentPage === numPages}
+        >
+          &gt;&gt;
         </PageLink>
-      )}
+      </li>
     </ul>
   );
 };

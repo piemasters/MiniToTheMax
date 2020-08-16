@@ -7,7 +7,6 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import TransitionLink from 'gatsby-plugin-transition-link';
 import { Theme } from '../styles/theme';
 import { useTheme } from 'emotion-theming';
-// import { Link } from 'gatsby';
 
 type AnimationTypes = 'paintDrip' | 'fade' | 'swipe' | 'cover';
 
@@ -23,6 +22,7 @@ interface PageLinkProps {
   hex?: string;
   bg?: string;
   duration?: string;
+  disabled?: boolean;
 }
 
 const PageLink = ({
@@ -37,6 +37,7 @@ const PageLink = ({
   hex,
   bg,
   duration,
+  disabled,
 }: PageLinkProps) => {
   const theme: Theme = useTheme();
 
@@ -51,17 +52,14 @@ const PageLink = ({
     }
   `;
 
+  const disabledStyle = css`
+    color: grey;
+  `;
+
   const activeStyle = linkStyle ? linkStyle : baseStyle;
-  // return (
-  //   <Link
-  //     to={to}
-  //     activeStyle={linkActiveStyle}
-  //     partiallyActive={to !== '/'}
-  //     css={linkStyle}
-  //   >
-  //     {children}
-  //   </Link>
-  // );
+  if (disabled) {
+    return <div css={disabledStyle}>{children}</div>;
+  }
   if (type === 'paintDrip') {
     return (
       <AniLink
