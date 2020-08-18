@@ -16,6 +16,7 @@ const ShowcaseCategory = (category: ShowcaseCategoryProps) => {
   const theme: Theme = useTheme();
   const postStyle = css`
     margin: 1rem 0;
+    transition: 0.3s;
     &:hover {
       box-shadow: 6px 6px 60px 5px ${theme.colors.backgroundTransparent};
     }

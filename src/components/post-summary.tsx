@@ -33,6 +33,7 @@ const PostSummary = (post: PostSummaryProps) => {
     background-color: ${theme.colors.lightgrey};
     display: block;
     text-decoration: none;
+    transition: 0.3s;
     &:hover {
       background-color: ${theme.colors.lightgreyHover};
       box-shadow: 6px 6px 60px 5px ${theme.colors.backgroundTransparent};
