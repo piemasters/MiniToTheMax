@@ -20,7 +20,16 @@ export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
   const theme: Theme = useTheme();
 
   const NavHeader = css`
-    padding: 1rem 0 3rem;
+    background-color: ${theme.colors.lightgrey};
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+  `;
+
+  const navContainerStyles = css`
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 750px;
   `;
 
   const titleLinkStyle = css`
@@ -54,10 +63,10 @@ export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
 
   return (
     <div css={NavHeader} data-testid="nav-header">
-      <nav>
+      <nav css={navContainerStyles}>
         <PageLink type={'paintDrip'} to={'/'} linkStyle={titleLinkStyle}>
           <img src={logo} alt="Logo" width={60 + 'px'} />
-          <h1 css={titleStyle}>{title} </h1>
+          <h1 css={titleStyle}>{title}</h1>
         </PageLink>
         <div css={navListStyle}>
           {pages.map((link: NavLink) => {

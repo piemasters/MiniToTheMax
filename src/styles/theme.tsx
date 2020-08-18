@@ -9,6 +9,7 @@ export interface Theme {
     lightgrey: string;
     lightgreyHover: string;
     primary: string;
+    primaryDark: string;
     backgroundTransparent: string;
   };
 }
@@ -24,6 +25,7 @@ const appTheme: Theme = {
     lightgrey: '#ececec',
     lightgreyHover: 'e4e4e4',
     primary: '#eb1d23',
+    primaryDark: '#cb070c',
     backgroundTransparent: 'rgba(0, 0, 0, 0.7)',
   },
 };

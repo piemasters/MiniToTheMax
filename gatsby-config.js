@@ -11,7 +11,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'MiniToTheMax',
-    author: 'David Norton',
+    author: 'MiniToTheMax',
     description: `An Aspiring Hobby & Painting Blog`,
     siteUrl: 'https://minitothemax.app',
     image: `content/assets/images/logo.png`,
@@ -63,6 +63,14 @@ module.exports = {
         path: `${__dirname}/content/assets/images`,
         name: `images`,
       },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svg/
+        }
+      }
     },
     'gatsby-plugin-sharp',
     `gatsby-transformer-sharp`,

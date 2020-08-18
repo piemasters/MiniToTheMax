@@ -6,19 +6,48 @@ exports[`Footer renders correctly 1`] = `
     css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
     data-testid="footer"
   >
-    <p>
-      Created by
-       
+    <div
+      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+    >
       <a
         href="https://davidnorton.app/"
         target="_blank"
       >
+        © 
+        2020
+         
         David Norton
       </a>
-       
-      © 
-      2020
-    </p>
+       | All Rights Reserved
+      <div
+        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+      >
+        <a
+          href="https://www.facebook.com/minitothemax"
+          target="_blank"
+        >
+          <test-file-stub
+            css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/minitothemax/"
+          target="_blank"
+        >
+          <test-file-stub
+            css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/user/piemasters29"
+          target="_blank"
+        >
+          <test-file-stub
+            css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          />
+        </a>
+      </div>
+    </div>
   </footer>
 </div>
 `;

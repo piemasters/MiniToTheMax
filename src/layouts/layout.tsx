@@ -11,25 +11,25 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
-  const Container = css`
-    margin: 0 auto;
-    max-width: 750px;
-    padding: 1rem;
+  const containerStyles = css`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
   `;
 
-  const Content = css`
+  const contentStyles = css`
     flex-grow: 1;
+    margin: 0 auto;
+    max-width: 750px;
+    width: 100%;
   `;
 
   return (
     <ThemeProvider theme={appTheme}>
-      <div css={Container}>
-        <div css={Content}>
-          <Header />
-          {children}
+      <div css={containerStyles}>
+        <Header />
+        <div css={contentStyles}>
+          <div>{children}</div>
         </div>
         <Footer />
       </div>

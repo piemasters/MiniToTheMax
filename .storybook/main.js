@@ -5,12 +5,12 @@ module.exports = {
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
   // All Storybook addons must be defined here
   addons: [
+    '@storybook/addon-docs',
     '@storybook/addon-a11y',
     '@storybook/addon-actions',
     '@storybook/addon-backgrounds',
     '@storybook/addon-controls',
     '@storybook/addon-cssresources',
-    '@storybook/addon-docs',
     '@storybook/addon-jest',
     '@storybook/addon-links',
     '@storybook/addon-storysource',
@@ -39,6 +39,14 @@ module.exports = {
       test: /\.scss$/,
       use: ['style-loader', 'css-loader', 'sass-loader'],
       include: path.resolve(__dirname, '../'),
+    });
+
+    const fileLoaderRule = config.module.rules.find(rule => rule.test && rule.test.toString().indexOf("svg") !== -1);
+    fileLoaderRule.exclude = /\.svg$/;
+    config.module.rules.push({
+      test: /\.svg$/,
+      enforce: 'pre',
+      loader: require.resolve('@svgr/webpack'),
     });
 
     config.module.rules.push({
