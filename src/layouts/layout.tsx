@@ -21,6 +21,7 @@ const Layout = ({ children }: LayoutProps) => {
     flex-grow: 1;
     margin: 0 auto;
     max-width: 750px;
+    padding: 0 1rem;
     width: 100%;
   `;
 
