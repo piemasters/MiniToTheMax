@@ -10,7 +10,7 @@ const IndexPage = () => {
       <h1>Hello</h1>
       <h2>Latest Video</h2>
       <Video
-        src="https://www.youtube.com/embed/qcWaykRRDfM"
+        src="https://www.youtube.com/embed/R0yWxR0tras"
         title="Grey Knight Stormraven"
       />
     </Layout>
