@@ -20,7 +20,7 @@ const Video = ({
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       frameBorder="0"
       allowFullScreen
-      width={width}
+      width={'100%'}
       height={width / aspectRatio}
     />
   </div>

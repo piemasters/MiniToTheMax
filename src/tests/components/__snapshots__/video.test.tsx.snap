@@ -12,7 +12,7 @@ exports[`Video renders correctly 1`] = `
       height="401.625"
       src="https://www.youtube.com/embed/qcWaykRRDfM"
       title="Grey Knight Stormraven"
-      width="714"
+      width="100%"
     />
   </div>
    
