@@ -23,7 +23,7 @@ const appTheme: Theme = {
     hyperlinkActive: '#0231e9',
     muted: '#999',
     lightgrey: '#ececec',
-    lightgreyHover: 'e4e4e4',
+    lightgreyHover: '#e4e4e4',
     primary: '#eb1d23',
     primaryDark: '#cb070c',
     backgroundTransparent: 'rgba(0, 0, 0, 0.7)',

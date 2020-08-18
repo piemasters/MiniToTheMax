@@ -35,6 +35,7 @@ const PostSummary = (post: PostSummaryProps) => {
     text-decoration: none;
     &:hover {
       background-color: ${theme.colors.lightgreyHover};
+      box-shadow: 6px 6px 60px 5px ${theme.colors.backgroundTransparent};
     }
   `;
 
