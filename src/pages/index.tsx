@@ -7,7 +7,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo />
-      <h1>Hello</h1>
       <h2>Latest Video</h2>
       <Video
         src="https://www.youtube.com/embed/R0yWxR0tras"

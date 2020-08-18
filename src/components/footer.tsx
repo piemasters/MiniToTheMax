@@ -30,6 +30,7 @@ export const PureFooter = ({ author }: FooterProps) => {
     justify-content: flex-end;
     margin: 0 auto;
     max-width: 750px;
+    padding: 0 1rem;
     a {
       color: ${theme.colors.hyperlink};
       text-decoration: none;
