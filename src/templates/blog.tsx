@@ -1,28 +1,19 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { css } from '@emotion/core';
-import { FluidObject } from 'gatsby-image';
 import Layout from '../layouts/layout';
 import Pagination from '../components/pagination';
 import Seo from '../components/seo';
 import PostSummary from '../components/post-summary';
 import { Posts } from '../types/app.types';
 import { MdxEdge } from '../types/base.types';
+import { PostSummary as PostSummaryType } from '../types/app.types';
 
 interface PostContext {
   limit: number;
   skip: number;
   numPostPages: number;
   currentPage: number;
-}
-
-interface PostSummary {
-  slug: string;
-  title: string;
-  date: string;
-  img: FluidObject;
-  excerpt: string;
-  timeToRead: number;
 }
 
 const Blog = ({
@@ -51,7 +42,7 @@ const Blog = ({
     baseUrl: '/blog/',
   };
 
-  const posts: PostSummary[] = data.posts.edges.map((edge: MdxEdge) => ({
+  const posts: PostSummaryType[] = data.posts.edges.map((edge: MdxEdge) => ({
     slug: edge.node.fields.slug,
     title: edge.node.frontmatter.title,
     date: edge.node.frontmatter.date,
@@ -69,7 +60,7 @@ const Blog = ({
       />
       <h1>Blog</h1>
       <ol css={postsStyle}>
-        {posts.map((post: PostSummary) => {
+        {posts.map((post: PostSummaryType) => {
           return (
             <li key={post.slug}>
               <PostSummary
