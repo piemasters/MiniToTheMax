@@ -5,6 +5,15 @@ export interface Posts {
   posts: AllMdx;
 }
 
+export interface PostSummary {
+  slug: string;
+  title: string;
+  date: string;
+  img: FluidObject;
+  excerpt: string;
+  timeToRead: number;
+}
+
 export interface MdxPost {
   site: Site;
   post: MdxNode;
@@ -44,4 +53,12 @@ export interface DisqusConfig {
   identifier: string;
   title: string;
   url: string;
+}
+
+export enum BadgeNames {
+  tutorials = 'tutorials',
+  showcase = 'showcase',
+  build = 'build',
+  battleReports = 'battleReports',
+  reviews = 'reviews',
 }
