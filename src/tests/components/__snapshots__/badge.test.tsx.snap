@@ -2,17 +2,17 @@
 
 exports[`Badge renders correctly 1`] = `
 <div>
-  <a
-    bg="#eb1d23"
+  <div
     css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-    data-testid="page-link-cover"
-    direction="up"
-    duration="1"
-    href="/showcase"
+    data-testid="badge"
   >
-    <div
+    <a
+      bg="#eb1d23"
       css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-      data-testid="badge"
+      data-testid="page-link-cover"
+      direction="up"
+      duration="1"
+      href="/showcase"
     >
       <img
         alt=""
@@ -24,7 +24,7 @@ exports[`Badge renders correctly 1`] = `
       >
         showcase
       </p>
-    </div>
-  </a>
+    </a>
+  </div>
 </div>
 `;
