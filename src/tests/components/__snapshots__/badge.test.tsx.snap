@@ -2,20 +2,29 @@
 
 exports[`Badge renders correctly 1`] = `
 <div>
-  <div
+  <a
+    bg="#eb1d23"
     css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-    data-testid="badge"
+    data-testid="page-link-cover"
+    direction="up"
+    duration="1"
+    href="/showcase"
   >
-    <img
-      alt=""
+    <div
       css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-      src="test-file-stub"
-    />
-    <p
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+      data-testid="badge"
     >
-      showcase
-    </p>
-  </div>
+      <img
+        alt=""
+        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        src="test-file-stub"
+      />
+      <p
+        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+      >
+        showcase
+      </p>
+    </div>
+  </a>
 </div>
 `;

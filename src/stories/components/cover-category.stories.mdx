@@ -6,17 +6,17 @@ import {
   Description,
   Meta,
 } from '@storybook/addon-docs/blocks';
-import ShowcaseCategory from '../../components/showcase-category';
+import CoverCategory from '../../components/cover-category';
 import cover from '../../../content/assets/images/example-cover.jpg';
 
 <Meta
-  title="Components/ShowcaseCategory"
-  component={ShowcaseCategory}
-  parameters={{ jest: ['showcase-category'] }}
+  title="Components/CoverCategory"
+  component={CoverCategory}
+  parameters={{ jest: ['cover-category'] }}
   argTypes={{
     img: {
       name: 'img',
-      description: 'The cover image of the showcase category',
+      description: 'The cover image of the category',
       defaultValue: {
         aspectRatio: 2,
         src: cover,
@@ -27,22 +27,22 @@ import cover from '../../../content/assets/images/example-cover.jpg';
     },
     slug: {
       name: 'slug',
-      description: 'The url to the showcase category',
+      description: 'The url to the category',
       defaultValue: '/showcase/board-games',
       control: { type: 'text' },
     },
     title: {
       name: 'title',
-      description: 'The title of the showcase category',
+      description: 'The title of the category',
       defaultValue: 'Board Games',
       control: { type: 'text' },
     },
   }}
 />
 
-# Showcase Category
+# CoverCategory
 
-With `MDX` we can define a story for `ShowcaseCategory` right in the middle of our
+With `MDX` we can define a story for `CoverCategory` right in the middle of our
 markdown documentation.
 
 <Preview>
@@ -59,10 +59,10 @@ markdown documentation.
       title: `Board Games`,
     }}
   >
-    {args => <ShowcaseCategory {...args} />}
+    {args => <CoverCategory {...args} />}
   </Story>
 </Preview>
 
 # Props
 
-<Props of={ShowcaseCategory} />
+<Props of={CoverCategory} />

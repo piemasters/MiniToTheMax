@@ -1,15 +1,15 @@
 import React from 'react';
-import ShowcaseCategory from '../../components/showcase-category';
+import CoverCategory from '../../components/cover-category';
 import { getByTestId } from '@testing-library/react';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '../../styles/theme';
 import { renderWithTransitionProvider } from '../util/transition-provider';
 
-describe('ShowcaseCategory', () => {
+describe('CoverCategory', () => {
   test('renders correctly', () => {
     const { container } = renderWithTransitionProvider(
       <ThemeProvider theme={theme}>
-        <ShowcaseCategory
+        <CoverCategory
           img={{
             aspectRatio: 2,
             src: 'cover.jpeg',
@@ -22,7 +22,7 @@ describe('ShowcaseCategory', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'showcase-category')).toHaveTextContent(
+    expect(getByTestId(container, 'cover-category')).toHaveTextContent(
       'Board Games'
     );
     expect(container).toMatchSnapshot();

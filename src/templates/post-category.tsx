@@ -4,7 +4,7 @@ import Layout from '../layouts/layout';
 import Seo from '../components/seo';
 import { Categories, PostLink } from '../types/app.types';
 import { MdxEdge } from '../types/base.types';
-import ShowcaseCategory from '../components/showcase-category';
+import CoverCategory from '../components/cover-category';
 
 interface PostCategoryContext {
   type: string;
@@ -40,7 +40,7 @@ const PostCategory = ({
       <ul>
         {postCategories.map((postCategory: PostLink) => {
           return (
-            <ShowcaseCategory
+            <CoverCategory
               key={postCategory.slug}
               img={postCategory.img}
               slug={postCategory.slug}

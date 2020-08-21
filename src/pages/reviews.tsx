@@ -4,7 +4,7 @@ import Seo from '../components/seo';
 import PageLink from '../components/page-link';
 import { graphql } from 'gatsby';
 import { Reviews } from '../types/app.types';
-import ShowcaseCategory from '../components/showcase-category';
+import CoverCategory from '../components/cover-category';
 
 const ReviewsPage = ({ data }: { data: Reviews }) => {
   const categories = [
@@ -36,7 +36,7 @@ const ReviewsPage = ({ data }: { data: Reviews }) => {
       <h1>Reviews</h1>
       {categories.map((category) => {
         return (
-          <ShowcaseCategory
+          <CoverCategory
             key={category.title}
             img={category.img}
             slug={category.slug}

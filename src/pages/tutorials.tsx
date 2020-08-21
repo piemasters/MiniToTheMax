@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../layouts/layout';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
-import ShowcaseCategory from '../components/showcase-category';
+import CoverCategory from '../components/cover-category';
 import { graphql } from 'gatsby';
 import { Tutorials } from '../types/app.types';
 
@@ -42,7 +42,7 @@ const TutorialsPage = ({ data }: { data: Tutorials }) => {
 
       {categories.map((category) => {
         return (
-          <ShowcaseCategory
+          <CoverCategory
             key={category.title}
             img={category.img}
             slug={category.slug}

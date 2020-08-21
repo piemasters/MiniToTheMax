@@ -4,7 +4,7 @@ import Seo from '../components/seo';
 import PageLink from '../components/page-link';
 import { graphql } from 'gatsby';
 import { BattleReports } from '../types/app.types';
-import ShowcaseCategory from '../components/showcase-category';
+import CoverCategory from '../components/cover-category';
 
 const BattleReportsPage = ({ data }: { data: BattleReports }) => {
   const categories = [
@@ -25,7 +25,7 @@ const BattleReportsPage = ({ data }: { data: BattleReports }) => {
       <h1>Battle Reports</h1>
       {categories.map((category) => {
         return (
-          <ShowcaseCategory
+          <CoverCategory
             key={category.title}
             img={category.img}
             slug={category.slug}

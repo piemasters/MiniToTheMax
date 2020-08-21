@@ -3,7 +3,8 @@ import { Theme } from '../styles/theme';
 import { useTheme } from 'emotion-theming';
 import { css } from '@emotion/core';
 import { BadgeNames } from '../types/app.types';
-
+import PageLink from './page-link';
+import kebabCase from 'lodash.kebabcase';
 import tutorials from '../../content/assets/images/tutorials-badge.png';
 import showcase from '../../content/assets/images/showcase-badge.png';
 import battleReports from '../../content/assets/images/battle-reports-badge.png';
@@ -21,6 +22,17 @@ const Badges = ({ type }: { type: BadgeNames }) => {
     [BadgeNames.build]: build,
   };
 
+  const linkStyles = css`
+    color: ${theme.colors.textSecondary};
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+    }
+  `;
+
   const badgeStyles = css`
     display: flex;
     flex-direction: column;
@@ -32,6 +44,10 @@ const Badges = ({ type }: { type: BadgeNames }) => {
     margin: 0 auto;
     margin-bottom: 1rem;
     width: 60%; // 75% for 5
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+    }
   `;
 
   const badgeTextStyles = css`
@@ -41,8 +57,15 @@ const Badges = ({ type }: { type: BadgeNames }) => {
 
   return (
     <div css={badgeStyles} data-testid="badge">
-      <img src={badgeImages[type]} alt="" css={badgeImageStyles} />
-      <p css={badgeTextStyles}>{type.replace(/([A-Z])/g, ' $1').trim()}</p>
+      <PageLink
+        to={kebabCase(type)}
+        type={'cover'}
+        direction={'up'}
+        linkStyle={linkStyles}
+      >
+        <img src={badgeImages[type]} alt="" css={badgeImageStyles} />
+        <p css={badgeTextStyles}>{type.replace(/([A-Z])/g, ' $1').trim()}</p>
+      </PageLink>
     </div>
   );
 };
