@@ -2,8 +2,34 @@ import React from 'react';
 import Layout from '../layouts/layout';
 import Seo from '../components/seo';
 import PageLink from '../components/page-link';
+import ShowcaseCategory from '../components/showcase-category';
+import { graphql } from 'gatsby';
+import { Tutorials } from '../types/app.types';
 
-const TutorialsPage = () => {
+const TutorialsPage = ({ data }: { data: Tutorials }) => {
+  const categories = [
+    {
+      title: '40k',
+      slug: '/tutorials/40k',
+      img: data.fortyThousand.childImageSharp.fluid,
+    },
+    {
+      title: 'Bases',
+      slug: '/tutorials/bases',
+      img: data.bases.childImageSharp.fluid,
+    },
+    {
+      title: 'Scenery',
+      slug: '/tutorials/scenery',
+      img: data.scenery.childImageSharp.fluid,
+    },
+    {
+      title: 'Tools',
+      slug: '/tutorials/tools',
+      img: data.tools.childImageSharp.fluid,
+    },
+  ];
+
   return (
     <Layout>
       <Seo
@@ -13,28 +39,66 @@ const TutorialsPage = () => {
       />
 
       <h1>Tutorials</h1>
-      <li>
-        <PageLink to={`/tutorials/40k`} type={'cover'} direction={'up'}>
-          40k
-        </PageLink>
-      </li>
-      <li>
-        <PageLink to={`/tutorials/bases`} type={'cover'} direction={'up'}>
-          Bases
-        </PageLink>
-      </li>
-      <li>
-        <PageLink to={`/tutorials/scenery`} type={'cover'} direction={'up'}>
-          Scenery
-        </PageLink>
-      </li>
-      <li>
-        <PageLink to={`/tutorials/tools`} type={'cover'} direction={'up'}>
-          Tools
-        </PageLink>
-      </li>
+
+      {categories.map((category) => {
+        return (
+          <ShowcaseCategory
+            key={category.title}
+            img={category.img}
+            slug={category.slug}
+            title={category.title}
+          />
+        );
+      })}
     </Layout>
   );
 };
 
 export default TutorialsPage;
+
+export const pageQuery = graphql`
+  query {
+    fortyThousand: file(
+      relativePath: {
+        eq: "tutorials/40k/force-weapons/force-weapons-cover.jpg"
+      }
+    ) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    bases: file(
+      relativePath: { eq: "tutorials/bases/snow-bases/snow-bases-cover.jpg" }
+    ) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    scenery: file(
+      relativePath: {
+        eq: "tutorials/scenery/battle-boards/battle-boards-tutorial-cover.jpg"
+      }
+    ) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    tools: file(
+      relativePath: {
+        eq: "tutorials/tools/paint-stripping/paint-stripping-cover.jpg"
+      }
+    ) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

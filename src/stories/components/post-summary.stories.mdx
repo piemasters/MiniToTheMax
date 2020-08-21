@@ -55,6 +55,12 @@ import cover from '../../../content/assets/images/example-cover.jpg';
       defaultValue: 5,
       control: { type: 'number' },
     },
+    tall: {
+      name: 'tall',
+      description: 'Increase the offset of the title for taller images',
+      defaultValue: false,
+      control: { type: 'boolean' },
+    },
   }}
 />
 
@@ -78,9 +84,10 @@ markdown documentation.
       title: 'Post Title',
       excerpt: 'The is the excerpt of the post',
       timeToRead: 5,
+      tall: true,
     }}
   >
-    {(args) => <PostSummary {...args} />}
+    {args => <PostSummary {...args} />}
   </Story>
 </Preview>
 

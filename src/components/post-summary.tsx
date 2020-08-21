@@ -13,6 +13,7 @@ interface PostSummaryProps {
   img: FluidObject;
   excerpt: string;
   timeToRead: number;
+  tall?: boolean;
 }
 
 const PostSummary = (post: PostSummaryProps) => {
@@ -52,7 +53,7 @@ const PostSummary = (post: PostSummaryProps) => {
         type={'cover'}
         direction={'up'}
       >
-        <CoverImage image={post.img} title={post.title} tall={true} />
+        <CoverImage image={post.img} title={post.title} tall={post.tall} />
         <div css={postContents}>
           {' '}
           <p css={postParagraphStyle}>

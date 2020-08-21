@@ -70,6 +70,7 @@ const Blog = ({
                 title={post.title}
                 excerpt={post.excerpt}
                 timeToRead={post.timeToRead}
+                tall={true}
               />
             </li>
           );

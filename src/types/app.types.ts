@@ -32,6 +32,23 @@ export interface Showcase {
   scenery: MdxFrontmatterGalleryImage;
 }
 
+export interface Tutorials {
+  fortyThousand: MdxFrontmatterGalleryImage;
+  bases: MdxFrontmatterGalleryImage;
+  scenery: MdxFrontmatterGalleryImage;
+  tools: MdxFrontmatterGalleryImage;
+}
+
+export interface Reviews {
+  boardGames: MdxFrontmatterGalleryImage;
+  books: MdxFrontmatterGalleryImage;
+  tools: MdxFrontmatterGalleryImage;
+}
+
+export interface BattleReports {
+  fortyThousand: MdxFrontmatterGalleryImage;
+}
+
 export interface Category extends MdxGroupConnection {}
 
 export interface Tags {
