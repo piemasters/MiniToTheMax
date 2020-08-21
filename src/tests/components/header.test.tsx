@@ -1,6 +1,6 @@
 import React from 'react';
-import { PureHeader as Header } from '../../components/header';
-import { render, getByTestId } from '@testing-library/react';
+import Header from '../../components/header';
+import { getByTestId } from '@testing-library/react';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '../../styles/theme';
 import { renderWithTransitionProvider } from '../util/transition-provider';

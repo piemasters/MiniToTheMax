@@ -1,7 +1,7 @@
 import React from 'react';
 import kebabCase from 'lodash.kebabcase';
 import { graphql } from 'gatsby';
-import Seo from '../components/seo';
+import Seo from '../components/stateful/seo';
 import PageLink from '../components/page-link';
 import { Tag, Tags } from '../types/app.types';
 import Layout from '../layouts/layout';

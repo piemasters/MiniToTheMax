@@ -5,7 +5,7 @@ import SimplePagination from '../components/simple-pagination';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 // @ts-ignore
 import Gallery from 'react-grid-gallery';
-import Seo from '../components/seo';
+import Seo from '../components/stateful/seo';
 import { DiscussionEmbed } from 'disqus-react';
 import { DisqusConfig, MdxPost } from '../types/app.types';
 import { MdxFrontmatterGalleryImage, MdxNode } from '../types/base.types';

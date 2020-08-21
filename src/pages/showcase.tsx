@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../layouts/layout';
-import Seo from '../components/seo';
+import Seo from '../components/stateful/seo';
 import CoverCategory from '../components/cover-category';
 import { graphql } from 'gatsby';
 import { Showcase } from '../types/app.types';

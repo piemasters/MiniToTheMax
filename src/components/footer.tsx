@@ -14,7 +14,7 @@ interface FooterProps {
   author: string;
 }
 
-export const PureFooter = ({ author }: FooterProps) => {
+const Footer = ({ author }: FooterProps) => {
   const theme: Theme = useTheme();
 
   const footerStyle = css`
@@ -76,20 +76,6 @@ export const PureFooter = ({ author }: FooterProps) => {
       </div>
     </footer>
   );
-};
-
-const Footer = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          author
-        }
-      }
-    }
-  `);
-
-  return <PureFooter author={data.site.siteMetadata.author} />;
 };
 
 export default Footer;

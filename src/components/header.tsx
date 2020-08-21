@@ -1,9 +1,8 @@
-import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { Theme } from '../styles/theme';
 import { useTheme } from 'emotion-theming';
 import { css } from '@emotion/core';
 import PageLink from './page-link';
-import { Theme } from '../styles/theme';
+import React from 'react';
 
 interface NavLink {
   name: string;
@@ -16,7 +15,7 @@ interface HeaderProps {
   pages: NavLink[];
 }
 
-export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
+const Header = ({ title, logo, pages }: HeaderProps) => {
   const theme: Theme = useTheme();
 
   const NavHeader = css`
@@ -85,38 +84,6 @@ export const PureHeader = ({ title, logo, pages }: HeaderProps) => {
         </div>
       </nav>
     </div>
-  );
-};
-
-const Header = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-      file(name: { eq: "logo" }) {
-        size
-        relativeDirectory
-        publicURL
-      }
-    }
-  `);
-
-  const pages: NavLink[] = [
-    { name: 'Home', url: '/' },
-    { name: 'Blog', url: '/blog' },
-    { name: 'Showcase', url: '/showcase' },
-    { name: 'Backlog', url: '/backlog' },
-  ];
-
-  return (
-    <PureHeader
-      title={data.site.siteMetadata.title}
-      logo={data.file.publicURL}
-      pages={pages}
-    />
   );
 };
 

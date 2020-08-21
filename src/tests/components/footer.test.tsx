@@ -1,5 +1,5 @@
 import React from 'react';
-import { PureFooter as Footer } from '../../components/footer';
+import Footer from '../../components/footer';
 import { render, getByTestId } from '@testing-library/react';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '../../styles/theme';

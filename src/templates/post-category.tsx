@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layouts/layout';
-import Seo from '../components/seo';
+import Seo from '../components/stateful/seo';
 import { Categories, PostLink } from '../types/app.types';
 import { MdxEdge } from '../types/base.types';
 import CoverCategory from '../components/cover-category';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { PureSeo as Seo } from '../../components/seo';
+import Seo from '../../components/seo';
 import { render } from '@testing-library/react';
 import { ThemeProvider } from 'emotion-theming';
 import theme from '../../styles/theme';

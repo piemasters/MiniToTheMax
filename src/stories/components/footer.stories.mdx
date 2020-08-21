@@ -8,7 +8,19 @@ import {
 } from '@storybook/addon-docs/blocks';
 import Footer from '../../components/footer';
 
-<Meta title="Components/Footer" component={Footer}   parameters={{ jest: ['footer'] }} />
+<Meta
+  title="Components/Footer"
+  component={Footer}
+  parameters={{ jest: ['footer'] }}
+  argTypes={{
+    author: {
+      name: 'author',
+      description: 'Website author',
+      defaultValue: 'MiniToTheMax',
+      control: { type: 'text' },
+    },
+  }}
+/>
 
 # Footer
 
@@ -16,11 +28,16 @@ With `MDX` we can define a story for `Footer` right in the middle of our
 markdown documentation.
 
 <Preview>
-  <Story name="default">
-    <Footer />
+  <Story
+    name="default"
+    args={{
+      author: 'MiniToTheMax',
+    }}
+  >
+    {args => <Footer {...args} />}
   </Story>
 </Preview>
 
 # Props
 
-<Props of={Footer} />
+<Props story="default" />

@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import { css } from '@emotion/core';
 import Layout from '../layouts/layout';
 import Pagination from '../components/pagination';
-import Seo from '../components/seo';
+import Seo from '../components/stateful/seo';
 import PostSummary from '../components/post-summary';
 import { Posts } from '../types/app.types';
 import { MdxEdge } from '../types/base.types';

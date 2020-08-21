@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Layout from '../layouts/layout';
-import Seo from '../components/seo';
+import Seo from '../components/stateful/seo';
 import Video from '../components/video';
 import PostSummary from '../components/post-summary';
 import Badges from '../components/badges';

@@ -1,8 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
 import { css } from '@emotion/core';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '../components/stateful/header';
+import Footer from '../components/stateful/footer';
 import appTheme from '../styles/theme';
 import '../styles/index.scss';
 
