@@ -59,16 +59,23 @@ const Pagination = ({
     startPage = 1;
     endPage = numPages;
   } else {
-    // Calculate start and end pages
-    if (currentPage <= maxPages / 2 + 1) {
+    if (currentPage <= Math.floor(maxPages / 2)) {
+      // Left end [ 1 [2] 3 4 ] || [ 1 [2] 3 ]
       startPage = 1;
       endPage = maxPages;
-    } else if (currentPage + (maxPages / 2 - 1) >= numPages) {
-      startPage = numPages - maxPages - 1;
+    } else if (numPages - currentPage < Math.floor(maxPages / 2) + 1) {
+      // Right end [ 7 [8] 9 10 ] || [ 8 [9] 10 ]
+      startPage = numPages - maxPages + 1;
       endPage = numPages;
     } else {
-      startPage = Math.ceil(currentPage - maxPages / 2);
-      endPage = Math.ceil(currentPage + (maxPages / 2 - 1));
+      // Middle [ 4 5 [6] 7 8 ] || [ 4 [5] 6 7 ]
+      const even = maxPages % 2 === 0;
+      startPage = even
+        ? currentPage - Math.floor(maxPages / 2) + 1
+        : currentPage - Math.floor(maxPages / 2);
+      endPage = even
+        ? currentPage + Math.ceil(maxPages / 2)
+        : currentPage + Math.ceil(maxPages / 2) - 1;
     }
   }
 
