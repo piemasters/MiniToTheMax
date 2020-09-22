@@ -114,7 +114,7 @@
     "prettier": "^1.19.1",
     "react-docgen-typescript-loader": "^3.6.0",
     "react-test-renderer": "^16.12.0",
-    "start-server-and-test": "^1.10.8",
+    "start-server-and-test": "^1.11.4",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.5"
   },
