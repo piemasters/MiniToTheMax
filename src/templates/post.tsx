@@ -77,7 +77,7 @@ const Post = ({
 
   const dateStyle = css`
     font-size: 0.8rem;
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     text-align: right;
   `;
 
@@ -109,15 +109,19 @@ const Post = ({
       </div>
 
       <MDXRenderer>{post.body}</MDXRenderer>
-      <h2>Gallery</h2>
-      <div css={galleryContainerStyle}>
-        <Gallery
-          images={post.gallery}
-          enableImageSelection={false}
-          rowHeight={180}
-          margin={2}
-        />
-      </div>
+      {post.gallery.length >= 1 && (
+        <div>
+          <h2>Gallery</h2>
+          <div css={galleryContainerStyle}>
+            <Gallery
+              images={post.gallery}
+              enableImageSelection={false}
+              rowHeight={180}
+              margin={2}
+            />
+          </div>
+        </div>
+      )}
 
       <SimplePagination previous={pagination.previous} next={pagination.next} />
       <hr />

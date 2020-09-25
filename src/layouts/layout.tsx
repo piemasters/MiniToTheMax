@@ -1,10 +1,11 @@
 import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
-import { css } from '@emotion/core';
+import { Global, css } from '@emotion/core';
 import Header from '../components/stateful/header';
 import Footer from '../components/stateful/footer';
 import appTheme from '../styles/theme';
 import '../styles/index.scss';
+import { globalStyles } from '../styles/global';
 
 interface LayoutProps {
   children?: any;
@@ -27,6 +28,7 @@ const Layout = ({ children }: LayoutProps) => {
 
   return (
     <ThemeProvider theme={appTheme}>
+      <Global styles={globalStyles(appTheme)} />
       <div css={containerStyles}>
         <Header />
         <div css={contentStyles}>
