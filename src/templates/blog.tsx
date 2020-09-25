@@ -93,7 +93,7 @@ const Blog = ({
 export const postQuery = graphql`
   query blogPageQuery($skip: Int, $limit: Int) {
     posts: allMdx(
-      filter: { frontmatter: { published: { eq: true } } } #comment to show unpublished posts
+      #      filter: { frontmatter: { published: { eq: true } } } #comment to show unpublished posts
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
