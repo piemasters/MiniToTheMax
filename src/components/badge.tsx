@@ -11,7 +11,7 @@ import battleReports from '../../content/assets/images/battle-reports-badge.png'
 import reviews from '../../content/assets/images/reviews-badge.png';
 import build from '../../content/assets/images/build-badge.png';
 
-const Badges = ({ type }: { type: BadgeNames }) => {
+const Badge = ({ type }: { type: BadgeNames }) => {
   const theme: Theme = useTheme();
 
   const badgeImages: any = {
@@ -70,4 +70,4 @@ const Badges = ({ type }: { type: BadgeNames }) => {
   );
 };
 
-export default Badges;
+export default Badge;

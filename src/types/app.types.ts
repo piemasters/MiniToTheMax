@@ -79,3 +79,17 @@ export enum BadgeNames {
   battleReports = 'battleReports',
   reviews = 'reviews',
 }
+
+export interface PaintGradient {
+  offset: number;
+  color: string;
+}
+
+export interface PaintDetails {
+  name: string;
+  type: string;
+  color: string;
+  hex: string;
+  gradient?: PaintGradient[];
+  stroke?: string;
+}
