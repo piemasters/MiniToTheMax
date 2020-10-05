@@ -232,7 +232,7 @@ export const contrastFyreslayerFlesh: PaintDetails = {
 };
 
 export const contrastGuillimanFlesh: PaintDetails = {
-  name: 'Fyreslayer Flesh',
+  name: 'Guilliman Flesh',
   type: 'contrast',
   color: 'flesh',
   hex: '#D1A194',
