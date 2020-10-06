@@ -64,7 +64,7 @@
     "@storybook/addon-backgrounds": "^5.3.12",
     "@storybook/addon-cssresources": "^5.3.12",
     "@storybook/addon-docs": "^5.3.12",
-    "@storybook/addon-jest": "^5.3.12",
+    "@storybook/addon-jest": "^6.0.26",
     "@storybook/addon-knobs": "^5.3.12",
     "@storybook/addon-links": "^5.3.12",
     "@storybook/addon-storyshots": "^5.3.12",
