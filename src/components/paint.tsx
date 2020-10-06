@@ -40,82 +40,74 @@ const getGradients = ({
   paintType,
   paintHex,
   paintName,
+  paintGloss,
 }: {
   paintGradients: PaintGradient[] | undefined;
   paintType: string;
   paintHex: string;
   paintName: string;
+  paintGloss: boolean | undefined;
 }) => {
   if (paintGradients) {
+    const gradients: JSX.Element[] = [];
     if (paintType === 'contrast') {
-      return (
-        <defs>
-          <linearGradient
-            y1="0%"
-            x1="100%"
-            x2="0%"
-            y2="0%"
-            id={`${paintType}_gradient_${paintHex.substring(1, 7)}`}
-          >
-            {getStopGradients(paintGradients)}
-          </linearGradient>
-        </defs>
-      );
-    } else if (paintType === 'shade' && paintName.includes('Gloss')) {
-      return (
-        <defs>
-          <radialGradient
-            id={`${paintType}_gloss_gradient_${paintHex.substring(1, 7)}`}
-            cx="0"
-            cy="0"
-            r="1"
-            gradientUnits="userSpaceOnUse"
-            gradientTransform="translate(14.5226 43.0942) rotate(25.9038) scale(62.7474 27.1872)"
-          >
-            <stop stopColor="white" stopOpacity="0.35" />
-            <stop offset="1" stopColor="white" stopOpacity="0" />
-          </radialGradient>
-          <linearGradient
-            y1="100%"
-            x1="0%"
-            x2="0%"
-            y2="0%"
-            id={`${paintType}_gradient_${paintHex.substring(1, 7)}`}
-          >
-            {getStopGradients(paintGradients)}
-          </linearGradient>
-        </defs>
+      gradients.push(
+        <linearGradient
+          y1="0%"
+          x1="100%"
+          x2="0%"
+          y2="0%"
+          id={`${paintType}_gradient_${paintHex.substring(1, 7)}`}
+          key={`${paintName}_${paintType}`}
+        >
+          {getStopGradients(paintGradients)}
+        </linearGradient>
       );
     } else if (paintType === 'shade' || paintType === 'technical') {
-      return (
-        <defs>
-          <linearGradient
-            y1="100%"
-            x1="0%"
-            x2="0%"
-            y2="0%"
-            id={`${paintType}_gradient_${paintHex.substring(1, 7)}`}
-          >
-            {getStopGradients(paintGradients)}
-          </linearGradient>
-        </defs>
+      gradients.push(
+        <linearGradient
+          y1="100%"
+          x1="0%"
+          x2="0%"
+          y2="0%"
+          id={`${paintType}_gradient_${paintHex.substring(1, 7)}`}
+          key={`${paintName}_${paintType}`}
+        >
+          {getStopGradients(paintGradients)}
+        </linearGradient>
       );
     } else {
-      return (
-        <defs>
-          <radialGradient
-            cx="0"
-            cy="0"
-            r="1"
-            gradientUnits="userSpaceOnUse"
-            gradientTransform="translate(25 32) scale(39)"
-            id={`${paintType}_gradient_${paintHex.substring(1, 7)}`}
-          >
-            {getStopGradients(paintGradients)}
-          </radialGradient>
-        </defs>
+      gradients.push(
+        <radialGradient
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(25 32) scale(39)"
+          id={`${paintType}_gradient_${paintHex.substring(1, 7)}`}
+          key={`${paintName}_${paintType}`}
+        >
+          {getStopGradients(paintGradients)}
+        </radialGradient>
       );
     }
+    if (paintGloss) {
+      gradients.push(
+        <radialGradient
+          id={`${paintType}_gloss_gradient_${paintHex.substring(1, 7)}`}
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(14.5226 43.0942) rotate(25.9038) scale(62.7474 27.1872)"
+          key={`${paintName}_${paintType}_gloss`}
+        >
+          <stop stopColor="white" stopOpacity="0.35" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
+        </radialGradient>
+      );
+    }
+    return <defs>{gradients}</defs>;
   } else {
     return null;
   }
@@ -220,13 +212,13 @@ const getShape = ({
 const getGloss = ({
   paintType,
   paintHex,
-  paintName,
+  paintGloss,
 }: {
   paintType: string;
   paintHex: string;
-  paintName: string;
+  paintGloss: boolean | undefined;
 }) => {
-  if (paintType === 'shade' && paintName.includes('Gloss')) {
+  if (paintGloss) {
     return (
       <path
         strokeWidth="0"
@@ -238,33 +230,59 @@ const getGloss = ({
   }
 };
 
-const Paint = ({ name, type, color, hex, gradient, stroke }: PaintDetails) => {
+const Paint = ({
+  name,
+  type,
+  color,
+  hex,
+  gradient,
+  stroke,
+  gloss,
+  img,
+}: PaintDetails) => {
   const paintStyles = css`
     height: 50px;
     width: 50px;
     display: inline-block;
   `;
 
-  return (
-    <div data-testid="paint" css={paintStyles}>
-      <svg viewBox="-1 0 52 62" xmlns="http://www.w3.org/2000/svg">
-        {getShape({
-          paintGradients: gradient,
-          paintType: type,
-          paintHex: hex,
-          paintStroke: stroke,
-        })}
-        {getGradients({
-          paintGradients: gradient,
-          paintType: type,
-          paintHex: hex,
-          paintName: name,
-        })}
-        {getGloss({ paintType: type, paintHex: hex, paintName: name })}
-        {getText({ paintType: type, paintHex: hex, paintGradients: gradient })}
-      </svg>
-    </div>
-  );
+  if (img) {
+    return (
+      <div data-testid="paint" css={paintStyles}>
+        {img}
+      </div>
+    );
+  } else {
+    return (
+      <div data-testid="paint" css={paintStyles}>
+        <svg viewBox="-1 0 52 62" xmlns="http://www.w3.org/2000/svg">
+          {getShape({
+            paintGradients: gradient,
+            paintType: type,
+            paintHex: hex,
+            paintStroke: stroke,
+          })}
+          {getGradients({
+            paintGradients: gradient,
+            paintType: type,
+            paintHex: hex,
+            paintName: name,
+            paintGloss: gloss,
+          })}
+          {getGloss({
+            paintType: type,
+            paintHex: hex,
+            paintGloss: gloss,
+          })}
+          {getText({
+            paintType: type,
+            paintHex: hex,
+            paintGradients: gradient,
+          })}
+        </svg>
+      </div>
+    );
+  }
 };
 
 export default Paint;

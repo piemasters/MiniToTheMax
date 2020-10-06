@@ -137,6 +137,7 @@ export const shadeNulnOilGloss: PaintDetails = {
   type: 'shade',
   color: 'black',
   hex: '#101010',
+  gloss: true,
   gradient: [
     { offset: 0, color: 'rgb(16, 16, 16)' },
     { offset: 100, color: 'rgb(223, 217, 214)' },
@@ -148,6 +149,7 @@ export const shadeAgraxEarthshadeGloss: PaintDetails = {
   type: 'shade',
   color: 'brown',
   hex: '#2D190C',
+  gloss: true,
   gradient: [
     { offset: 0, color: 'rgb(45, 25, 12)' },
     { offset: 100, color: 'rgb(226, 218, 200)' },
@@ -159,6 +161,7 @@ export const shadeReiklandFleshshadeGloss: PaintDetails = {
   type: 'shade',
   color: 'flesh',
   hex: '#311908',
+  gloss: true,
   gradient: [
     { offset: 0, color: 'rgb(49, 25, 8)' },
     { offset: 100, color: 'rgb(255, 213, 183)' },

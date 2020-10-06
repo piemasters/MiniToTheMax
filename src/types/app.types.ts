@@ -92,4 +92,6 @@ export interface PaintDetails {
   hex: string;
   gradient?: PaintGradient[];
   stroke?: string;
+  gloss?: boolean;
+  img?: JSX.Element;
 }
