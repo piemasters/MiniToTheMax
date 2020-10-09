@@ -69,6 +69,59 @@ const Paints = () => {
     technical: true,
   });
 
+  const [allFilters, setAllFilters] = useState<PaintFiltersObject>({
+    color: { ...colorFilters },
+    type: { ...typeFilters },
+  });
+
+  const togglePaints = (filters: PaintFiltersObject) => {
+    let filteredPaints = [...allPaints];
+    for (const [type, filter] of Object.entries(filters)) {
+      for (const [key, value] of Object.entries(filter)) {
+        if (!filter[key]) {
+          filteredPaints = filteredPaints.filter(
+            (paint: PaintDetails) => paint[type] !== key
+          );
+        }
+      }
+    }
+    return filteredPaints;
+  };
+
+  const updateFilter = (type: string, field: string) => {
+    if (type === 'color') {
+      const updatedFilters: PaintFilters = colorFilters;
+      updatedFilters[field] = !updatedFilters[field];
+      setColorFilters(updatedFilters);
+      setFilteredPaints(
+        togglePaints({ color: updatedFilters, type: typeFilters })
+      );
+    } else if (type === 'type') {
+      const updatedFilters: PaintFilters = typeFilters;
+      updatedFilters[field] = !updatedFilters[field];
+      setTypeFilters(updatedFilters);
+      setFilteredPaints(
+        togglePaints({ color: colorFilters, type: updatedFilters })
+      );
+    }
+  };
+
+  const toggleAll = (filters: PaintFilters, type: string) => {
+    const allFiltersTrue = Object.keys(filters).every((k) => !filters[k]);
+    Object.keys(allFilters[type]).forEach(
+      (v) => (allFilters[type][v] = allFiltersTrue)
+    );
+    switch (type) {
+      case 'color':
+        setColorFilters(allFilters[type]);
+        break;
+      case 'type':
+        setTypeFilters(allFilters[type]);
+        break;
+    }
+    setFilteredPaints(togglePaints(allFilters));
+  };
+
   const filterWrapperStyle = css`
     display: flex;
     flex-flow: row wrap;
@@ -88,20 +141,6 @@ const Paints = () => {
       margin-right: 0.4rem;
     }
   `;
-
-  const togglePaints = (filters: PaintFiltersObject) => {
-    let filteredPaints = [...allPaints];
-    for (const [type, filter] of Object.entries(filters)) {
-      for (const [key, value] of Object.entries(filter)) {
-        if (!filter[key]) {
-          filteredPaints = filteredPaints.filter(
-            (paint: PaintDetails) => paint[type] !== key
-          );
-        }
-      }
-    }
-    return filteredPaints;
-  };
 
   const filterElements = (filters: PaintFilters, type: string) => {
     const filtersJsx: JSX.Element[] = [];
@@ -123,57 +162,6 @@ const Paints = () => {
     return filtersJsx;
   };
 
-  const updateFilter = (type: string, field: string) => {
-    if (type === 'color') {
-      const updatedFilters: PaintFilters = colorFilters;
-      updatedFilters[field] = !updatedFilters[field];
-      setColorFilters(updatedFilters);
-      setFilteredPaints(
-        togglePaints({ color: updatedFilters, type: typeFilters })
-      );
-    } else if (type === 'type') {
-      const updatedFilters: PaintFilters = typeFilters;
-      updatedFilters[field] = !updatedFilters[field];
-      setTypeFilters(updatedFilters);
-      setFilteredPaints(
-        togglePaints({ color: colorFilters, type: updatedFilters })
-      );
-    }
-  };
-
-  const allFiltersActive = (filters: PaintFilters) => {
-    return Object.keys(filters).every((k) => !filters[k]);
-  };
-
-  const setAllFilters = (filters: PaintFilters, value: boolean) => {
-    const updatedFilters: PaintFilters = { ...filters };
-    Object.keys(updatedFilters).forEach((v) => (updatedFilters[v] = value));
-    return updatedFilters;
-  };
-
-  const toggleAll = (type: string) => {
-    if (type === 'color') {
-      const updatedFilters = setAllFilters(
-        colorFilters,
-        allFiltersActive(colorFilters)
-      );
-      setColorFilters(updatedFilters);
-      setFilteredPaints(
-        togglePaints({ color: updatedFilters, type: typeFilters })
-      );
-    }
-    if (type === 'type') {
-      const updatedFilters = setAllFilters(
-        typeFilters,
-        allFiltersActive(typeFilters)
-      );
-      setTypeFilters(updatedFilters);
-      setFilteredPaints(
-        togglePaints({ color: colorFilters, type: updatedFilters })
-      );
-    }
-  };
-
   return (
     <Layout>
       <Seo title={'Paints'} pathname={'/paints'} />
@@ -185,7 +173,7 @@ const Paints = () => {
           name={'toggleAllColor'}
           checked={!Object.keys(colorFilters).every((k) => !colorFilters[k])}
           type="checkbox"
-          onChange={() => toggleAll('color')}
+          onChange={() => toggleAll(colorFilters, 'color')}
         />{' '}
         Toggle All
       </label>
@@ -199,7 +187,7 @@ const Paints = () => {
           name={'toggleAllColor'}
           checked={!Object.keys(typeFilters).every((k) => !typeFilters[k])}
           type="checkbox"
-          onChange={() => toggleAll('type')}
+          onChange={() => toggleAll(typeFilters, 'type')}
         />{' '}
         Toggle All
       </label>
