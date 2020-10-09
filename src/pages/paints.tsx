@@ -17,6 +17,10 @@ export interface PaintFilters {
   [key: string]: boolean;
 }
 
+export interface PaintFiltersObject {
+  [key: string]: PaintFilters;
+}
+
 const Paints = () => {
   const allPaints = [
     ...airPaints,
@@ -65,24 +69,6 @@ const Paints = () => {
     technical: true,
   });
 
-  const togglePaints = (
-    colorFilters: PaintFilters,
-    typeFilters: PaintFilters
-  ) => {
-    let filteredPaints = [...allPaints];
-    for (const [key, value] of Object.entries(colorFilters)) {
-      if (!colorFilters[key]) {
-        filteredPaints = filteredPaints.filter((paint) => paint.color !== key);
-      }
-    }
-    for (const [key, value] of Object.entries(typeFilters)) {
-      if (!typeFilters[key]) {
-        filteredPaints = filteredPaints.filter((paint) => paint.type !== key);
-      }
-    }
-    return filteredPaints;
-  };
-
   const filterWrapperStyle = css`
     display: flex;
     flex-flow: row wrap;
@@ -103,64 +89,57 @@ const Paints = () => {
     }
   `;
 
-  const filterColorElements = () => {
-    const filters: JSX.Element[] = [];
-    for (const [key, value] of Object.entries(colorFilters)) {
-      filters.push(
+  const togglePaints = (filters: PaintFiltersObject) => {
+    let filteredPaints = [...allPaints];
+    for (const [type, filter] of Object.entries(filters)) {
+      for (const [key, value] of Object.entries(filter)) {
+        if (!filter[key]) {
+          filteredPaints = filteredPaints.filter(
+            (paint: PaintDetails) => paint[type] !== key
+          );
+        }
+      }
+    }
+    return filteredPaints;
+  };
+
+  const filterElements = (filters: PaintFilters, type: string) => {
+    const filtersJsx: JSX.Element[] = [];
+    for (const [key, value] of Object.entries(filters)) {
+      filtersJsx.push(
         <div css={filterStyle} key={key}>
           <label>
             <input
               name={key}
               checked={value}
               type="checkbox"
-              onChange={() => updateColor(key)}
+              onChange={() => updateFilter(type, key)}
             />
             {key.replace(/\b\w/g, (l) => l.toUpperCase())}
           </label>
         </div>
       );
     }
-    return filters;
+    return filtersJsx;
   };
 
-  const filterTypeElements = () => {
-    const filters: JSX.Element[] = [];
-    for (const [key, value] of Object.entries(typeFilters)) {
-      filters.push(
-        <div key={key} css={filterStyle}>
-          <label>
-            <input
-              name={key}
-              checked={value}
-              type="checkbox"
-              onChange={() => updateType(key)}
-            />
-            {key.replace(/\b\w/g, (l) => l.toUpperCase())}
-          </label>
-        </div>
+  const updateFilter = (type: string, field: string) => {
+    if (type === 'color') {
+      const updatedFilters: PaintFilters = colorFilters;
+      updatedFilters[field] = !updatedFilters[field];
+      setColorFilters(updatedFilters);
+      setFilteredPaints(
+        togglePaints({ color: updatedFilters, type: typeFilters })
+      );
+    } else if (type === 'type') {
+      const updatedFilters: PaintFilters = typeFilters;
+      updatedFilters[field] = !updatedFilters[field];
+      setTypeFilters(updatedFilters);
+      setFilteredPaints(
+        togglePaints({ color: colorFilters, type: updatedFilters })
       );
     }
-    return filters;
   };
-
-  const updateColor = (color: string) => {
-    const updatedFilters: PaintFilters = colorFilters;
-    updatedFilters[color] = !updatedFilters[color];
-    setColorFilters(updatedFilters);
-    setFilteredPaints(togglePaints(updatedFilters, typeFilters));
-  };
-
-  const updateType = (type: string) => {
-    const updatedFilters: PaintFilters = typeFilters;
-    updatedFilters[type] = !updatedFilters[type];
-    setTypeFilters(updatedFilters);
-    setFilteredPaints(togglePaints(colorFilters, updatedFilters));
-  };
-
-  const allColorFilters = Object.keys(colorFilters).every(
-    (k) => !colorFilters[k]
-  );
-  const allTypeFilters = Object.keys(typeFilters).every((k) => !typeFilters[k]);
 
   const allFiltersActive = (filters: PaintFilters) => {
     return Object.keys(filters).every((k) => !filters[k]);
@@ -179,7 +158,9 @@ const Paints = () => {
         allFiltersActive(colorFilters)
       );
       setColorFilters(updatedFilters);
-      setFilteredPaints(togglePaints(updatedFilters, typeFilters));
+      setFilteredPaints(
+        togglePaints({ color: updatedFilters, type: typeFilters })
+      );
     }
     if (type === 'type') {
       const updatedFilters = setAllFilters(
@@ -187,7 +168,9 @@ const Paints = () => {
         allFiltersActive(typeFilters)
       );
       setTypeFilters(updatedFilters);
-      setFilteredPaints(togglePaints(colorFilters, updatedFilters));
+      setFilteredPaints(
+        togglePaints({ color: colorFilters, type: updatedFilters })
+      );
     }
   };
 
@@ -200,25 +183,27 @@ const Paints = () => {
       <label>
         <input
           name={'toggleAllColor'}
-          checked={!allColorFilters}
+          checked={!Object.keys(colorFilters).every((k) => !colorFilters[k])}
           type="checkbox"
           onChange={() => toggleAll('color')}
         />{' '}
         Toggle All
       </label>
-      <div css={filterWrapperStyle}>{filterColorElements()}</div>
+      <div css={filterWrapperStyle}>
+        {filterElements(colorFilters, 'color')}
+      </div>
       <hr />
       <h3>Paint Type</h3>
       <label>
         <input
           name={'toggleAllColor'}
-          checked={!allTypeFilters}
+          checked={!Object.keys(typeFilters).every((k) => !typeFilters[k])}
           type="checkbox"
           onChange={() => toggleAll('type')}
         />{' '}
         Toggle All
       </label>
-      <div css={filterWrapperStyle}>{filterTypeElements()}</div>
+      <div css={filterWrapperStyle}>{filterElements(typeFilters, 'type')}</div>
       <hr />
       <br />
       {filteredPaints.map((paint: PaintDetails) => {
