@@ -17,7 +17,7 @@ export interface PaintFilters {
   [key: string]: boolean;
 }
 
-export interface PaintFiltersObject {
+export interface AllPaintFilters {
   [key: string]: PaintFilters;
 }
 
@@ -35,7 +35,7 @@ const Paints = () => {
 
   const [filteredPaints, setFilteredPaints] = useState([...allPaints]);
 
-  const [colorFilters, setColorFilters] = useState<PaintFilters>({
+  const colorFilters: PaintFilters = {
     black: true,
     blue: true,
     bone: true,
@@ -56,9 +56,9 @@ const Paints = () => {
     turquoise: true,
     white: true,
     yellow: true,
-  });
+  };
 
-  const [typeFilters, setTypeFilters] = useState<PaintFilters>({
+  const typeFilters: PaintFilters = {
     air: true,
     base: true,
     contrast: true,
@@ -67,14 +67,14 @@ const Paints = () => {
     shade: true,
     spray: true,
     technical: true,
-  });
+  };
 
-  const [allFilters, setAllFilters] = useState<PaintFiltersObject>({
+  const [allFilters, setAllFilters] = useState<AllPaintFilters>({
     color: { ...colorFilters },
     type: { ...typeFilters },
   });
 
-  const togglePaints = (filters: PaintFiltersObject) => {
+  const togglePaints = (filters: AllPaintFilters) => {
     let filteredPaints = [...allPaints];
     for (const [type, filter] of Object.entries(filters)) {
       for (const [key, value] of Object.entries(filter)) {
@@ -89,21 +89,9 @@ const Paints = () => {
   };
 
   const updateFilter = (type: string, field: string) => {
-    if (type === 'color') {
-      const updatedFilters: PaintFilters = colorFilters;
-      updatedFilters[field] = !updatedFilters[field];
-      setColorFilters(updatedFilters);
-      setFilteredPaints(
-        togglePaints({ color: updatedFilters, type: typeFilters })
-      );
-    } else if (type === 'type') {
-      const updatedFilters: PaintFilters = typeFilters;
-      updatedFilters[field] = !updatedFilters[field];
-      setTypeFilters(updatedFilters);
-      setFilteredPaints(
-        togglePaints({ color: colorFilters, type: updatedFilters })
-      );
-    }
+    allFilters[type][field] = !allFilters[type][field];
+    setAllFilters(allFilters);
+    setFilteredPaints(togglePaints(allFilters));
   };
 
   const toggleAll = (filters: PaintFilters, type: string) => {
@@ -111,14 +99,7 @@ const Paints = () => {
     Object.keys(allFilters[type]).forEach(
       (v) => (allFilters[type][v] = allFiltersTrue)
     );
-    switch (type) {
-      case 'color':
-        setColorFilters(allFilters[type]);
-        break;
-      case 'type':
-        setTypeFilters(allFilters[type]);
-        break;
-    }
+    setAllFilters(allFilters);
     setFilteredPaints(togglePaints(allFilters));
   };
 
@@ -137,7 +118,18 @@ const Paints = () => {
       display: flex;
     }
     input {
-      height: 1rem;
+      margin-right: 0.4rem;
+    }
+  `;
+
+  const toggleAllStyles = css`
+    align-items: center;
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+
+    input {
       margin-right: 0.4rem;
     }
   `;
@@ -159,7 +151,31 @@ const Paints = () => {
         </div>
       );
     }
-    return filtersJsx;
+    return (
+      <div>
+        <h3>{type.replace(/\b\w/g, (l) => l.toUpperCase())}</h3>
+        <label css={toggleAllStyles}>
+          <input
+            checked={
+              !Object.keys(allFilters[type]).every((k) => !allFilters[type][k])
+            }
+            type="checkbox"
+            onChange={() => toggleAll(allFilters[type], type)}
+          />
+          Toggle All
+        </label>
+        <div css={filterWrapperStyle}>{filtersJsx}</div>
+        <hr />
+      </div>
+    );
+  };
+
+  const allFilterElements = () => {
+    const filters: JSX.Element[] = [];
+    for (const [key, value] of Object.entries(allFilters)) {
+      filters.push(<div key={key}>{filterElements(value, key)}</div>);
+    }
+    return <div>{filters}</div>;
   };
 
   return (
@@ -167,32 +183,7 @@ const Paints = () => {
       <Seo title={'Paints'} pathname={'/paints'} />
       <h1>Paints</h1>
       <hr />
-      <h3>Colors</h3>
-      <label>
-        <input
-          name={'toggleAllColor'}
-          checked={!Object.keys(colorFilters).every((k) => !colorFilters[k])}
-          type="checkbox"
-          onChange={() => toggleAll(colorFilters, 'color')}
-        />{' '}
-        Toggle All
-      </label>
-      <div css={filterWrapperStyle}>
-        {filterElements(colorFilters, 'color')}
-      </div>
-      <hr />
-      <h3>Paint Type</h3>
-      <label>
-        <input
-          name={'toggleAllColor'}
-          checked={!Object.keys(typeFilters).every((k) => !typeFilters[k])}
-          type="checkbox"
-          onChange={() => toggleAll(typeFilters, 'type')}
-        />{' '}
-        Toggle All
-      </label>
-      <div css={filterWrapperStyle}>{filterElements(typeFilters, 'type')}</div>
-      <hr />
+      {allFilterElements()}
       <br />
       {filteredPaints.map((paint: PaintDetails) => {
         return <Paint {...paint} key={`${paint.name}_${paint.type}`} />;
