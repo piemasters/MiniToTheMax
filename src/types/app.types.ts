@@ -95,3 +95,39 @@ export interface PaintDetails {
   gloss?: boolean;
   img?: JSX.Element;
 }
+
+// export interface PaintColorFilters {
+//   [key: string]: boolean;
+//   black: boolean;
+//   blue: boolean;
+//   bone: boolean;
+//   brass: boolean;
+//   bronze: boolean;
+//   brown: boolean;
+//   clear: boolean;
+//   copper: boolean;
+//   flesh: boolean;
+//   gold: boolean;
+//   green: boolean;
+//   grey: boolean;
+//   orange: boolean;
+//   pink: boolean;
+//   purple: boolean;
+//   red: boolean;
+//   silver: boolean;
+//   turquoise: boolean;
+//   white: boolean;
+//   yellow: boolean;
+// }
+//
+// export interface PaintTypeFilters {
+//   [key: string]: boolean;
+//   air: boolean;
+//   base: boolean;
+//   contrast: boolean;
+//   dry: boolean;
+//   layer: boolean;
+//   shade: boolean;
+//   spray: boolean;
+//   technical: boolean;
+// }
