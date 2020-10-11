@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Layout from '../layouts/layout';
 import Seo from '../components/stateful/seo';
 import { airPaints } from '../data/paints/air';
@@ -78,7 +78,7 @@ const Paints = () => {
     let filteredPaints = [...allPaints];
     for (const [type, filter] of Object.entries(filters)) {
       for (const [key, value] of Object.entries(filter)) {
-        if (!filter[key]) {
+        if (!value) {
           filteredPaints = filteredPaints.filter(
             (paint: PaintDetails) => paint[type] !== key
           );
@@ -186,7 +186,7 @@ const Paints = () => {
       {allFilterElements()}
       <br />
       {filteredPaints.map((paint: PaintDetails) => {
-        return <Paint {...paint} key={`${paint.name}_${paint.type}`} />;
+        return <Paint paint={paint} key={`${paint.name}_${paint.type}`} />;
       })}
     </Layout>
   );

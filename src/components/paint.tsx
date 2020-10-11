@@ -247,19 +247,16 @@ const getSVG = ({
 };
 
 const Paint = ({
-  name,
-  type,
-  color,
-  hex,
-  gradient,
-  stroke,
-  gloss,
-  img,
-}: PaintDetails) => {
+  paint,
+  size = 60,
+}: {
+  paint: PaintDetails;
+  size?: number;
+}) => {
   const paintStyles = css`
     display: inline-block;
     margin: 0.2rem;
-    width: 80px;
+    width: ${size}px;
   `;
 
   const paintWrapperStyles = css`
@@ -276,6 +273,8 @@ const Paint = ({
   `;
 
   const paintSVGWrapperStyles = css``;
+
+  const { name, type, color, hex, gradient, stroke, gloss, img } = paint;
 
   return (
     <div data-testid="paint" css={paintStyles}>
