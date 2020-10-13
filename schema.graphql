@@ -449,6 +449,7 @@ type Mdx implements Node {
     mdxAST: JSON
     parent: Node
     rawBody: String!
+    slug: String
     tableOfContents(maxDepth: Int): JSON
     timeToRead: Int
     wordCount: MdxWordCount
@@ -534,8 +535,8 @@ type Query {
     directory(absolutePath: StringQueryOperatorInput, accessTime: DateQueryOperatorInput, atime: DateQueryOperatorInput, atimeMs: FloatQueryOperatorInput, base: StringQueryOperatorInput, birthTime: DateQueryOperatorInput, birthtime: DateQueryOperatorInput, birthtimeMs: FloatQueryOperatorInput, blksize: IntQueryOperatorInput, blocks: IntQueryOperatorInput, changeTime: DateQueryOperatorInput, children: NodeFilterListInput, ctime: DateQueryOperatorInput, ctimeMs: FloatQueryOperatorInput, dev: IntQueryOperatorInput, dir: StringQueryOperatorInput, ext: StringQueryOperatorInput, extension: StringQueryOperatorInput, gid: IntQueryOperatorInput, id: StringQueryOperatorInput, ino: FloatQueryOperatorInput, internal: InternalFilterInput, mode: IntQueryOperatorInput, modifiedTime: DateQueryOperatorInput, mtime: DateQueryOperatorInput, mtimeMs: FloatQueryOperatorInput, name: StringQueryOperatorInput, nlink: IntQueryOperatorInput, parent: NodeFilterInput, prettySize: StringQueryOperatorInput, rdev: IntQueryOperatorInput, relativeDirectory: StringQueryOperatorInput, relativePath: StringQueryOperatorInput, root: StringQueryOperatorInput, size: IntQueryOperatorInput, sourceInstanceName: StringQueryOperatorInput, uid: IntQueryOperatorInput): Directory
     file(absolutePath: StringQueryOperatorInput, accessTime: DateQueryOperatorInput, atime: DateQueryOperatorInput, atimeMs: FloatQueryOperatorInput, base: StringQueryOperatorInput, birthTime: DateQueryOperatorInput, birthtime: DateQueryOperatorInput, birthtimeMs: FloatQueryOperatorInput, blksize: IntQueryOperatorInput, blocks: IntQueryOperatorInput, changeTime: DateQueryOperatorInput, childImageSharp: ImageSharpFilterInput, childMdx: MdxFilterInput, children: NodeFilterListInput, ctime: DateQueryOperatorInput, ctimeMs: FloatQueryOperatorInput, dev: IntQueryOperatorInput, dir: StringQueryOperatorInput, ext: StringQueryOperatorInput, extension: StringQueryOperatorInput, gid: IntQueryOperatorInput, id: StringQueryOperatorInput, ino: FloatQueryOperatorInput, internal: InternalFilterInput, mode: IntQueryOperatorInput, modifiedTime: DateQueryOperatorInput, mtime: DateQueryOperatorInput, mtimeMs: FloatQueryOperatorInput, name: StringQueryOperatorInput, nlink: IntQueryOperatorInput, parent: NodeFilterInput, prettySize: StringQueryOperatorInput, publicURL: StringQueryOperatorInput, rdev: IntQueryOperatorInput, relativeDirectory: StringQueryOperatorInput, relativePath: StringQueryOperatorInput, root: StringQueryOperatorInput, size: IntQueryOperatorInput, sourceInstanceName: StringQueryOperatorInput, uid: IntQueryOperatorInput): File
     imageSharp(children: NodeFilterListInput, fixed: ImageSharpFixedFilterInput, fluid: ImageSharpFluidFilterInput, id: StringQueryOperatorInput, internal: InternalFilterInput, original: ImageSharpOriginalFilterInput, parent: NodeFilterInput, resize: ImageSharpResizeFilterInput, resolutions: ImageSharpResolutionsFilterInput, sizes: ImageSharpSizesFilterInput): ImageSharp
-    mdx(body: StringQueryOperatorInput, children: NodeFilterListInput, excerpt: StringQueryOperatorInput, fields: MdxFieldsFilterInput, fileAbsolutePath: StringQueryOperatorInput, frontmatter: MdxFrontmatterFilterInput, headings: MdxHeadingMdxFilterListInput, html: StringQueryOperatorInput, id: StringQueryOperatorInput, internal: InternalFilterInput, mdxAST: JSONQueryOperatorInput, parent: NodeFilterInput, rawBody: StringQueryOperatorInput, tableOfContents: JSONQueryOperatorInput, timeToRead: IntQueryOperatorInput, wordCount: MdxWordCountFilterInput): Mdx
-    site(buildTime: DateQueryOperatorInput, children: NodeFilterListInput, host: StringQueryOperatorInput, id: StringQueryOperatorInput, internal: InternalFilterInput, parent: NodeFilterInput, pathPrefix: StringQueryOperatorInput, polyfill: BooleanQueryOperatorInput, port: DateQueryOperatorInput, siteMetadata: SiteSiteMetadataFilterInput): Site
+    mdx(body: StringQueryOperatorInput, children: NodeFilterListInput, excerpt: StringQueryOperatorInput, fields: MdxFieldsFilterInput, fileAbsolutePath: StringQueryOperatorInput, frontmatter: MdxFrontmatterFilterInput, headings: MdxHeadingMdxFilterListInput, html: StringQueryOperatorInput, id: StringQueryOperatorInput, internal: InternalFilterInput, mdxAST: JSONQueryOperatorInput, parent: NodeFilterInput, rawBody: StringQueryOperatorInput, slug: StringQueryOperatorInput, tableOfContents: JSONQueryOperatorInput, timeToRead: IntQueryOperatorInput, wordCount: MdxWordCountFilterInput): Mdx
+    site(buildTime: DateQueryOperatorInput, children: NodeFilterListInput, host: StringQueryOperatorInput, id: StringQueryOperatorInput, internal: InternalFilterInput, parent: NodeFilterInput, pathPrefix: StringQueryOperatorInput, polyfill: BooleanQueryOperatorInput, port: IntQueryOperatorInput, siteMetadata: SiteSiteMetadataFilterInput): Site
     siteBuildMetadata(buildTime: DateQueryOperatorInput, children: NodeFilterListInput, id: StringQueryOperatorInput, internal: InternalFilterInput, parent: NodeFilterInput): SiteBuildMetadata
     sitePage(children: NodeFilterListInput, component: StringQueryOperatorInput, componentChunkName: StringQueryOperatorInput, componentPath: StringQueryOperatorInput, context: SitePageContextFilterInput, id: StringQueryOperatorInput, internal: InternalFilterInput, internalComponentName: StringQueryOperatorInput, isCreatedByStatefulCreatePages: BooleanQueryOperatorInput, matchPath: StringQueryOperatorInput, parent: NodeFilterInput, path: StringQueryOperatorInput, pluginCreator: SitePluginFilterInput, pluginCreatorId: StringQueryOperatorInput): SitePage
     sitePlugin(browserAPIs: StringQueryOperatorInput, children: NodeFilterListInput, id: StringQueryOperatorInput, internal: InternalFilterInput, name: StringQueryOperatorInput, nodeAPIs: StringQueryOperatorInput, packageJson: SitePluginPackageJsonFilterInput, parent: NodeFilterInput, pluginFilepath: StringQueryOperatorInput, pluginOptions: SitePluginPluginOptionsFilterInput, resolve: StringQueryOperatorInput, ssrAPIs: StringQueryOperatorInput, version: StringQueryOperatorInput): SitePlugin
@@ -559,16 +560,7 @@ type Site implements Node {
     parent: Node
     pathPrefix: String
     polyfill: Boolean
-    port(
-        "Returns the difference between this date and the current time. Defaults to \"milliseconds\" but you can also pass in as the measurement \"years\", \"months\", \"weeks\", \"days\", \"hours\", \"minutes\", and \"seconds\"."
-        difference: String,
-        "Format the date using Moment.js' date tokens, e.g. `date(formatString: \"YYYY MMMM DD\")`. See https://momentjs.com/docs/#/displaying/format/ for documentation for different tokens."
-        formatString: String,
-        "Returns a string generated with Moment.js' `fromNow` function"
-        fromNow: Boolean,
-        "Configures the locale Moment.js will use to format the date."
-        locale: String
-    ): Date
+    port: Int
     siteMetadata: SiteSiteMetadata
 }
 
@@ -823,18 +815,9 @@ type SitePluginPluginOptionsGatsbyRemarkPlugins {
 }
 
 type SitePluginPluginOptionsGatsbyRemarkPluginsOptions {
-    backgroundColor: String
-    disableBgImage: Boolean
-    disableBgImageOnAlpha: Boolean
     linkImagesToOriginal: Boolean
-    loading: String
-    markdownCaptions: Boolean
     maxWidth: Int
-    pathPrefix: String
-    showCaptions: Boolean
-    tracedSVG: Boolean
     withWebp: Boolean
-    wrapperStyle: String
 }
 
 type SitePluginPluginOptionsGtagConfig {
@@ -1216,6 +1199,7 @@ enum FileFieldsEnum {
     childMdx___parent___parent___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childMdx___parent___parent___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childMdx___rawBody
+    childMdx___slug
     childMdx___tableOfContents @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childMdx___timeToRead @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childMdx___wordCount___paragraphs @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
@@ -1580,6 +1564,7 @@ enum MdxFieldsEnum {
     frontmatter___featuredImage___childMdx___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___featuredImage___childMdx___mdxAST @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___featuredImage___childMdx___rawBody
+    frontmatter___featuredImage___childMdx___slug
     frontmatter___featuredImage___childMdx___tableOfContents @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___featuredImage___childMdx___timeToRead @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___featuredImage___children
@@ -1642,6 +1627,7 @@ enum MdxFieldsEnum {
     frontmatter___gallery___childMdx___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___gallery___childMdx___mdxAST @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___gallery___childMdx___rawBody
+    frontmatter___gallery___childMdx___slug
     frontmatter___gallery___childMdx___tableOfContents @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___gallery___childMdx___timeToRead @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___gallery___children
@@ -1737,6 +1723,7 @@ enum MdxFieldsEnum {
     parent___parent___parent___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     parent___parent___parent___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     rawBody
+    slug
     tableOfContents @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     timeToRead @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     wordCount___paragraphs @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
@@ -2266,18 +2253,9 @@ enum SitePluginFieldsEnum {
     pluginOptions___display
     pluginOptions___extensions
     pluginOptions___gatsbyRemarkPlugins
-    pluginOptions___gatsbyRemarkPlugins___options___backgroundColor
-    pluginOptions___gatsbyRemarkPlugins___options___disableBgImage
-    pluginOptions___gatsbyRemarkPlugins___options___disableBgImageOnAlpha
     pluginOptions___gatsbyRemarkPlugins___options___linkImagesToOriginal
-    pluginOptions___gatsbyRemarkPlugins___options___loading
-    pluginOptions___gatsbyRemarkPlugins___options___markdownCaptions
     pluginOptions___gatsbyRemarkPlugins___options___maxWidth
-    pluginOptions___gatsbyRemarkPlugins___options___pathPrefix
-    pluginOptions___gatsbyRemarkPlugins___options___showCaptions
-    pluginOptions___gatsbyRemarkPlugins___options___tracedSVG
     pluginOptions___gatsbyRemarkPlugins___options___withWebp
-    pluginOptions___gatsbyRemarkPlugins___options___wrapperStyle
     pluginOptions___gatsbyRemarkPlugins___resolve
     pluginOptions___gtagConfig___anonymize_ip
     pluginOptions___gtagConfig___cookie_expires
@@ -2584,6 +2562,7 @@ input MdxFilterInput {
     mdxAST: JSONQueryOperatorInput
     parent: NodeFilterInput
     rawBody: StringQueryOperatorInput
+    slug: StringQueryOperatorInput
     tableOfContents: JSONQueryOperatorInput
     timeToRead: IntQueryOperatorInput
     wordCount: MdxWordCountFilterInput
@@ -2664,7 +2643,7 @@ input SiteFilterInput {
     parent: NodeFilterInput
     pathPrefix: StringQueryOperatorInput
     polyfill: BooleanQueryOperatorInput
-    port: DateQueryOperatorInput
+    port: IntQueryOperatorInput
     siteMetadata: SiteSiteMetadataFilterInput
 }
 
@@ -2827,18 +2806,9 @@ input SitePluginPluginOptionsGatsbyRemarkPluginsFilterListInput {
 }
 
 input SitePluginPluginOptionsGatsbyRemarkPluginsOptionsFilterInput {
-    backgroundColor: StringQueryOperatorInput
-    disableBgImage: BooleanQueryOperatorInput
-    disableBgImageOnAlpha: BooleanQueryOperatorInput
     linkImagesToOriginal: BooleanQueryOperatorInput
-    loading: StringQueryOperatorInput
-    markdownCaptions: BooleanQueryOperatorInput
     maxWidth: IntQueryOperatorInput
-    pathPrefix: StringQueryOperatorInput
-    showCaptions: BooleanQueryOperatorInput
-    tracedSVG: BooleanQueryOperatorInput
     withWebp: BooleanQueryOperatorInput
-    wrapperStyle: StringQueryOperatorInput
 }
 
 input SitePluginPluginOptionsGtagConfigFilterInput {

@@ -41,8 +41,7 @@ const Badge = ({ type }: { type: BadgeNames }) => {
   `;
 
   const badgeImageStyles = css`
-    margin: 0 auto;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
     width: 60%; // 75% for 5
     opacity: 0.9;
     &:hover {
