@@ -28,6 +28,7 @@ const Header = () => {
     { name: 'Blog', url: '/blog' },
     { name: 'Showcase', url: '/showcase' },
     { name: 'Backlog', url: '/backlog' },
+    { name: 'Paints', url: '/paints' },
   ];
 
   return (
