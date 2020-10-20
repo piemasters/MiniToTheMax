@@ -1,8 +1,328 @@
 import React from 'react';
 import Layout from '../layouts/layout';
 import Seo from '../components/stateful/seo';
+import PageLink from '../components/page-link';
+import kebabCase from 'lodash.kebabcase';
+
+export interface BacklogEntry {
+  name: string;
+  link?: string;
+}
 
 const BacklogPage = () => {
+  const generateEntries = (entries: BacklogEntry[]) => {
+    entries.sort(function (a, b) {
+      return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+    });
+
+    const domList = [];
+
+    for (const [index, value] of entries.entries()) {
+      if (value.link) {
+        domList.push(
+          <li key={index} style={{ listStyleType: 'none' }}>
+            <label>
+              <input type="checkbox" checked onChange={() => {}} />{' '}
+              <PageLink to={value.link} type={'cover'} direction={'up'}>
+                {value.name}
+              </PageLink>
+            </label>
+          </li>
+        );
+      } else {
+        domList.push(
+          <li key={index} style={{ listStyleType: 'none' }}>
+            <label>
+              <input type="checkbox" checked={false} onChange={() => {}} />{' '}
+              {value.name}
+            </label>
+          </li>
+        );
+      }
+    }
+    return domList;
+  };
+
+  const spaceWolves = [
+    {
+      name: 'Imperial Knight',
+      link: '/showcase/space-wolves/imperial-knight/',
+    },
+    { name: 'Krom Dragongaze' },
+    { name: 'Arjac Rockfist' },
+    { name: 'Logan Grimnar' },
+    { name: 'Ragnar Blackmane' },
+    { name: 'Canis Wolfborn' },
+    { name: 'Geigor Fell-Hand' },
+    { name: 'Njal Stormcaller' },
+    { name: 'Wolf Guard Terminators' },
+    { name: 'Wolf Guard Swiftclaws' },
+    { name: 'Centurions' },
+    { name: 'Wolf Guard Terminators' },
+    { name: 'Blood Claws' },
+    { name: 'Grey Hunters' },
+    { name: 'Grey Hunters II' },
+    { name: 'Wolves' },
+    { name: 'Hunter/Stalker' },
+    { name: 'Stormbird' },
+    { name: 'Primaris Captain' },
+    { name: 'Primaris Captain' },
+    { name: 'Primaris Judicar' },
+    { name: 'Primaris Bladeguard Ancient' },
+    { name: 'Primaris Intercessor Squad' },
+    { name: 'Primaris Inceptor Squad' },
+    { name: 'Primaris Hellblaster Squad' },
+    { name: 'Primaris Infiltrators' },
+  ];
+
+  const greyKnights = [
+    { name: 'Strike Squad', link: '/showcase/grey-knights/strike-squad/' },
+    { name: 'Brother Captain Stern', link: '/showcase/grey-knights/stern/' },
+    { name: 'Terminator Squad', link: '/showcase/grey-knights/terminators/' },
+    { name: 'Chaplain', link: '/showcase/grey-knights/chaplain/' },
+    {
+      name: 'Purgation Squad',
+      link: '/showcase/grey-knights/purgation-squad/',
+    },
+    { name: 'Stormraven', link: '/showcase/grey-knights/stormraven/' },
+    { name: 'Dreadknight', link: '/showcase/grey-knights/dreadknight/' },
+    { name: 'Razorback', link: '/showcase/grey-knights/razorback/' },
+    { name: 'Dreadknight II', link: '/showcase/grey-knights/dreadknight-2/' },
+    {
+      name: 'Brotherhood Champion',
+      link: '/showcase/grey-knights/brotherhood-champion/',
+    },
+    { name: 'Dreadnought', link: '/showcase/grey-knights/dreadnought/' },
+    { name: 'Purifiers', link: '/showcase/grey-knights/purifiers/' },
+    { name: 'Interceptor Squad', link: '/showcase/grey-knights/interceptors/' },
+    { name: 'Librarian', link: '/showcase/grey-knights/librarian/' },
+    {
+      name: 'Castellan Crowe',
+      link: '/showcase/grey-knights/castellan-crowe/',
+    },
+    { name: 'Imperial Knight' },
+    { name: 'Kaldor Draigo' },
+    { name: 'Terminators Squad II' },
+    { name: 'Paladins' },
+    { name: 'Land Raider' },
+    { name: 'Grand Master Voldus' },
+    { name: 'Inquisitor Coteaz' },
+  ];
+
+  const darkAngels = [
+    { name: 'Company Master' },
+    { name: 'Librarian' },
+    { name: 'Chaplain Seraphicus' },
+    { name: 'Death Wing Terminators' },
+    { name: 'Tactical Marines' },
+    { name: 'Ravenwing Bikes' },
+  ];
+
+  const orks = [
+    { name: 'Gretchin', link: '/showcase/orks/gretchin/' },
+    { name: 'Grukk Face-Rippa' },
+    { name: 'Nobz' },
+    { name: 'Kans' },
+    { name: 'Runtherd' },
+    { name: 'Ghazghkull Thraka' },
+    { name: 'Nobz II' },
+    { name: 'Meganobz' },
+    { name: 'Ammo Runt' },
+    { name: 'Grot Oiler' },
+  ];
+
+  const harlequins = [
+    { name: 'Solitaire' },
+    { name: 'Shadowseer' },
+    { name: 'Death Jester' },
+  ];
+
+  const deathGuard = [
+    { name: 'Lord of Contagion' },
+    { name: 'Plague Marines' },
+    { name: 'Foetid Bloat-drone' },
+    { name: 'Poxwalkers' },
+    { name: 'Helbrute' },
+    { name: 'Kranon the Relentless' },
+    { name: "Chosen Draznicht's Ravagers" },
+    { name: 'Cultists' },
+    { name: 'Cultists II' },
+  ];
+
+  const gloomspiteGitz = [
+    {
+      name: 'Mangler Squigs',
+      link: '/showcase/gloomspite-gitz/mangler-squigs/',
+    },
+    {
+      name: 'Spearmen',
+      link: '/showcase/gloomspite-gitz/spearmen/',
+    },
+    {
+      name: 'Morglum Necksnapper',
+      link: '/showcase/gloomspite-gitz/morglum-necksnapper/',
+    },
+    { name: 'Skragrott' },
+    { name: 'Throgg' },
+  ];
+
+  const malignSorcery = [
+    { name: 'Purple Sun of Shyish' },
+    { name: 'Ravenak’s Gnashing Jaws' },
+    { name: 'Suffocating Gravetide' },
+    { name: 'Quicksilver Swords' },
+    { name: 'Aethervoid Pendulun' },
+    { name: 'Chronomantic Cogs' },
+    { name: 'Umbral Spellportal' },
+    { name: 'Soulsnare Shackles' },
+    { name: 'Geminids of Uhl-Ghysh' },
+    { name: 'Burning Head' },
+    { name: 'Malevolent Maelstrom' },
+    { name: 'Prismatic Palisade' },
+    { name: 'Emerald Lifeswarm' },
+  ];
+
+  const objectives = [
+    { name: 'Hallowed Tomb' },
+    { name: 'Trove of Arcane Glory' },
+    { name: 'Soul Stone' },
+    { name: 'The Realm’s Ransom' },
+    { name: 'Ensorcelled Armoury' },
+    { name: 'Iconoclast Axe' },
+    { name: 'Realmvault Key' },
+    { name: 'Soulsnare Shackles' },
+    { name: 'Geminids of Uhl-Ghysh' },
+    { name: 'Burning Head' },
+    { name: 'Malevolent Maelstrom' },
+    { name: 'Prismatic Palisade' },
+    { name: 'Emerald Lifeswarm' },
+  ];
+
+  const dreadfleet = [
+    { name: 'Black Kraken' },
+    { name: 'Bloody Reaver' },
+    { name: 'Curse of Zandri' },
+    { name: 'Flaming Scimitar' },
+    { name: "Grimnir's Thunder" },
+    { name: 'Heldenhammer' },
+    { name: 'Seadrake' },
+    { name: 'Shadewraith' },
+    { name: 'Skabrus' },
+    { name: 'Swordfysh' },
+    { name: 'Auxiliaries' },
+    { name: 'Components' },
+    { name: 'Islands' },
+    { name: 'Monsters' },
+    { name: 'Shipwrecks' },
+  ];
+
+  const gorechosen = [
+    { name: 'Exalted Deathbringer' },
+    { name: 'Skullgrinder ' },
+    { name: 'Slaughterpriest' },
+    { name: 'Aspiring Deathbringer' },
+    { name: 'Slaughterpriest' },
+  ];
+
+  const silverTower = [
+    { name: 'Knight Questor ' },
+    { name: 'Darkoeth Chieftan' },
+    { name: 'Fyreslayer Doomseeker' },
+    { name: 'Excelsior War Priest' },
+    { name: 'Mistweaver Saith' },
+    { name: 'Tenebrand Shard' },
+    { name: 'Gaunt Summoner' },
+    { name: 'Familiars' },
+    { name: 'Ogroid Traumaturge' },
+    { name: 'Skaven Deathrunners' },
+    {
+      name: 'Kairic Acolytes',
+      link: '/showcase/board-games/silver-tower/kairic-acolytes/',
+    },
+    {
+      name: 'Grot Scuttlings',
+      link: '/showcase/board-games/silver-tower/grot-scuttlings/',
+    },
+    { name: 'Tzaangors' },
+    { name: 'Pink Horrors' },
+    { name: 'Blue Horrors' },
+    {
+      name: 'Brimstone Horrors',
+      link: '/showcase/board-games/silver-tower/brimstone-horrors/',
+    },
+  ];
+
+  const spaceHulk = [
+    { name: 'Space Marine Terminators' },
+    { name: 'Genestealers' },
+    { name: 'Broodlord' },
+    { name: 'Artefact' },
+    { name: 'Dead Space Marine' },
+    { name: 'C.A.T' },
+  ];
+
+  const executionForce = [
+    { name: 'Callidus' },
+    { name: 'Cullexus' },
+    { name: 'Eversor' },
+    { name: 'Vindicare' },
+    { name: 'Chaos Terminator Lord' },
+    { name: 'Chaos Space Marines' },
+    { name: 'Chaos Cultists' },
+  ];
+
+  const deathwatchOverkill = [
+    { name: 'Chaplain Cassius' },
+    { name: 'Deathwatch Members' },
+    { name: 'Patriarch' },
+    { name: 'Magus' },
+    { name: 'Primus' },
+    { name: 'Familiars' },
+    { name: 'Acolyte Hybrids' },
+    { name: 'Neophyte Cultists' },
+    { name: 'Genestealers' },
+    { name: 'Genestealer Aberrants' },
+  ];
+
+  const lostPatrol = [
+    { name: 'Space Marine Scouts' },
+    { name: 'Genestealers' },
+    { name: 'Infestations' },
+  ];
+
+  const underworlds = [
+    { name: "Zarbag's Gitz" },
+    { name: "Stormsire's Cursebreakers" },
+    { name: 'Thorns of the Briar Queen' },
+  ];
+
+  const burningOfProspero = [
+    { name: 'Ahzek Ahriman' },
+    { name: 'Geigor Fell-Hand' },
+    { name: 'Tartaros Terminators' },
+    { name: 'Legion Veterans' },
+    { name: 'Legion Veterans II' },
+    { name: 'Legion Veterans III' },
+    { name: 'Custodian Guard' },
+    { name: 'Sisters of Silence' },
+  ];
+
+  const scenery = [
+    { name: 'Skullvane Manse', link: '/showcase/scenery/skullvane/' },
+    {
+      name: 'Realm of Battle Boards',
+      link: '/showcase/scenery/battle-boards/',
+    },
+    { name: 'Iron Battlefield' },
+    { name: 'Aquila Strongpoint' },
+    { name: 'Firestorm Redoubt' },
+    { name: 'Firestorm Redoubt II' },
+    { name: 'Vengeance Weapon Battery' },
+    { name: 'Imperial Bunker' },
+    { name: 'Imperial Defence Line' },
+    { name: 'Imperial Defence Emplacement' },
+  ];
+
   return (
     <Layout>
       <Seo
@@ -12,155 +332,72 @@ const BacklogPage = () => {
       />
       <h1>Backlog</h1>
 
-      <h2>Writing Posts</h2>
-      <hr />
-
-      <h3>Space Wolves</h3>
-      <p>
-        Canis Wolfborn | Wolves | Geigor Fell-Hand | Wolf Guard Swiftclaws |
-        Thunderwolves | Grey Hunters
-      </p>
-
-      <h3>Gloomspite Gitz</h3>
-      <p>Throgg</p>
-
-      <h3>Dreadfleet</h3>
-      <p>
-        Dragon Auxiliary | Dirigible Auxiliary | Islands | Shipwreck Pieces |
-        Sea Monsters | Treasure Tokens | Wind Gauge | Ship's Wheels | Navigation
-        Rod | The Bloody Reaver | Skabrus | Curse of Zandri | Black Kraken |
-        Shadewraith | The Heldenhammer | The Swordfysh | The Flaming Scimitar |
-        Grimnir's Thunder | Seadrake | Cog Auxiliaries
-      </p>
-
-      <h3>Gorechosen</h3>
-      <p>
-        Exalted Deathbringer | Skullgrinder | Slaughterpriest | Aspiring
-        Deathbringer | Slaughterpriest
-      </p>
-
-      <h3>Silver Tower</h3>
-      <p>
-        Knight Questor | Darkoeth Chieftan | Fyreslayer Doomseeker | Excelsior
-        War Priest | Mistweaver Saith | Tenebrand Shard | Gaunt Summoner |
-        Ogroid Traumaturge | Skaven Deathrunners | Familiars | Tzaangors | Pink
-        Horrors | Blue Horrors
-      </p>
-
-      <h3>Scenery</h3>
-      <p>
-        Corridor Ends | Corridor 1 Tiles | Corridor 2 Tiles | Corridor 3 Tiles |
-        Corridor 4 Tiles | Corridor Corners | Corridor Intersections | Corridor
-        Bifurcations | Corridor Special Intersection | Corridor Wide 4 Tiles | 1
-        Access 3x3 Room | 2 Access 3x3 Room L | 2 Access 3x3 Room | 3 Access 3x3
-        Room | 4 Access 3x3 Room | 1 Access 3x4 Room | Divided Stairs | 4 Tiles
-        Catwalk | Continuous Stairs | Octagon Platform
-      </p>
-
-      <h2>Painting</h2>
-      <hr />
-
-      <h3>Gloomspite Gitz</h3>
-      <p>Skragrott</p>
-
-      <h2>Assembled</h2>
+      <h2>40k</h2>
       <hr />
 
       <h3>Grey Knights</h3>
-      <p>
-        Imperial Knight | Kaldor Draigo | Grey Knight Terminators Squad II |
-        Grey Knight Paladins | Land Raider | Grand Master Voldus
-      </p>
+      <ul>{generateEntries(greyKnights)}</ul>
 
       <h3>Space Wolves</h3>
-      <p>
-        Centurions | Wolf Guard Terminators | Blood Claws | Primaris Captain |
-        Primaris Captain | Primaris Judicar | Primaris Bladeguard Ancient|
-        Primaris Intercessor Squad | Primaris Inceptor Squad | Primaris
-        Hellblaster Squad | Primaris Infiltrators | Wolf Guard Terminators |
-        Grey Hunters II | Njal Stormcaller | Krom Dragongaze | Arjac Rockfist |
-        Logan Grimnar | Ragnar Blackmane | Hunter/Stalker | Stormbird
-      </p>
-
-      <h3>Inquisition</h3>
-      <p>Inquisitor Coteaz | Assassins</p>
-
-      <h3>Orks</h3>
-      <p>
-        Grukk Face-Rippa | Ork Nobz | Kans | Runtherd | Ghazghkull Thraka | Ork
-        Nobz | Ork Meganobz | Ammo Runt | Grot Oiler
-      </p>
-
-      <h3>Harlequins</h3>
-      <p>Solitaire | Shadowseer | Death Jester</p>
+      <ul>{generateEntries(spaceWolves)}</ul>
 
       <h3>Dark Angels</h3>
-      <p>
-        Company Master | Librarian | Chaplain Seraphicus | Death Wing
-        Terminators | Tactical Marines | Ravenwing Bikes
-      </p>
+      <ul>{generateEntries(darkAngels)}</ul>
+
+      <h3>Orks</h3>
+      <ul>{generateEntries(orks)}</ul>
+
+      <h3>Harlequins</h3>
+      <ul>{generateEntries(harlequins)}</ul>
 
       <h3>Death Guard</h3>
-      <p>
-        Lord of Contagion | Plague Marines | Foetid Bloat-drone | Death Guard
-        Poxwalkers | Helbrute | Chaos Lord Kranon the Relentless | Chosen
-        Draznicht's Ravagers | Cultists | Cultists II
-      </p>
+      <ul>{generateEntries(deathGuard)}</ul>
+
+      <h2>Age of Sigmar</h2>
+      <hr />
+
+      <h3>Gloomspite Gitz</h3>
+      <ul>{generateEntries(gloomspiteGitz)}</ul>
 
       <h3>Malign Sorcery</h3>
-      <p>
-        Purple Sun of Shyish | Ravenak’s Gnashing Jaws | Suffocating Gravetide |
-        Quicksilver Swords | Aethervoid Pendulun | Chronomantic Cogs | Umbral
-        Spellportal | Soulsnare Shackles | Geminids of Uhl-Ghysh | Burning Head
-        | Malevolent Maelstrom | Prismatic Palisade | Emerald Lifeswarm
-      </p>
+      <ul>{generateEntries(malignSorcery)}</ul>
 
-      <h3>Execution Force</h3>
-      <p>
-        Callidus | Cullexus | Eversor | Vindicare | Chaos Terminator Lord |
-        Chaos Space Marines | Chaos Cultists
-      </p>
+      <h3>Objectives</h3>
+      <ul>{generateEntries(objectives)}</ul>
 
-      <h3>Deathwatch Overkill</h3>
-      <p>
-        Chaplain Cassius | Deathwatch Members | Patriarch | Magus | Primus |
-        Familiars | Acolyte Hybrids | Neophyte Cultists | Genestealers |
-        Genestealer Aberrants
-      </p>
+      <h2>Scenery</h2>
+      <hr />
+      <ul>{generateEntries(scenery)}</ul>
+
+      <h2>Board Games</h2>
+      <hr />
+
+      <h3>Dreadfleet</h3>
+      <ul>{generateEntries(dreadfleet)}</ul>
+
+      <h3>Gorechosen</h3>
+      <ul>{generateEntries(gorechosen)}</ul>
+
+      <h3>Silver Tower</h3>
+      <ul>{generateEntries(silverTower)}</ul>
 
       <h3>Space Hulk</h3>
-      <p>
-        Space Marine Terminators | Genestealers | Broodlord | Artefact | Dead
-        Space Marine | C.A.T
-      </p>
+      <ul>{generateEntries(spaceHulk)}</ul>
+
+      <h3>Execution Force</h3>
+      <ul>{generateEntries(executionForce)}</ul>
+
+      <h3>Deathwatch Overkill</h3>
+      <ul>{generateEntries(deathwatchOverkill)}</ul>
 
       <h3>Lost Patrol</h3>
-      <p>Space Marine Scouts | Genestealers | Infestations</p>
+      <ul>{generateEntries(lostPatrol)}</ul>
 
       <h3>Underworlds</h3>
-      <p>
-        Zarbag's Gitz | Stormsire's Cursebreakers | Thorns of the Briar Queen
-      </p>
+      <ul>{generateEntries(underworlds)}</ul>
 
       <h3>Burning of Prospero</h3>
-      <p>
-        Ahzek Ahriman | Geigor Fell-Hand | Tartaros Terminators | Legion
-        Veterans | Legion Veterans II | Legion Veterans III | Custodian Guard |
-        Sisters of Silence
-      </p>
-
-      <h3>Age of Sigmar Objectives</h3>
-      <p>
-        Hallowed Tomb | Trove of Arcane Glory | Soul Stone | The Realm’s Ransom
-        | Ensorcelled Armoury | Iconoclast Axe | Realmvault Key
-      </p>
-
-      <h3>Wall of Martyrs</h3>
-      <p>
-        Aquila Strongpoint | Firestorm Redoubt | Firestorm Redoubt | Vengeance
-        Weapon Battery | Imperial Bunker | Imperial Defence Line | Imperial
-        Defence Emplacement
-      </p>
+      <ul>{generateEntries(burningOfProspero)}</ul>
     </Layout>
   );
 };
