@@ -56,20 +56,20 @@ const SimplePagination = ({ previous, next }: SimplePaginationProps) => {
   return (
     <div data-testid="simple-pagination" css={containerStyle}>
       <div css={paginationStyleLeft}>
-        {previous && (
-          <PageLink to={previous.slug} type={'cover'} direction={'right'}>
-            <div css={leftStyle}>
+        {next && (
+          <PageLink to={next.slug} type={'cover'} direction={'left'}>
+            <div css={rightStyle}>
               <div css={arrowLeftStyle}>← </div>
-              <div css={textStyle}>{previous.title}</div>
+              <div css={textStyle}>{next.title}</div>
             </div>
           </PageLink>
         )}
       </div>
       <div css={paginationStyleRight}>
-        {next && (
-          <PageLink to={next.slug} type={'cover'} direction={'left'}>
-            <div css={rightStyle}>
-              <div css={textStyle}>{next.title}</div>
+        {previous && (
+          <PageLink to={previous.slug} type={'cover'} direction={'right'}>
+            <div css={leftStyle}>
+              <div css={textStyle}>{previous.title}</div>
               <div css={arrowRightStyle}>→</div>
             </div>
           </PageLink>

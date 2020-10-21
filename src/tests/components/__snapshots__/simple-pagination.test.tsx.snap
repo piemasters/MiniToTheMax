@@ -13,9 +13,9 @@ exports[`SimplePagination renders correctly 1`] = `
         bg="#eb1d23"
         css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
         data-testid="page-link-cover"
-        direction="right"
+        direction="left"
         duration="1"
-        href="/previous"
+        href="/next"
       >
         <div
           css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
@@ -28,7 +28,7 @@ exports[`SimplePagination renders correctly 1`] = `
           <div
             css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
           >
-            The Previous Page
+            The Next Page
           </div>
         </div>
       </a>
@@ -40,9 +40,9 @@ exports[`SimplePagination renders correctly 1`] = `
         bg="#eb1d23"
         css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
         data-testid="page-link-cover"
-        direction="left"
+        direction="right"
         duration="1"
-        href="/next"
+        href="/previous"
       >
         <div
           css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
@@ -50,7 +50,7 @@ exports[`SimplePagination renders correctly 1`] = `
           <div
             css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
           >
-            The Next Page
+            The Previous Page
           </div>
           <div
             css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
