@@ -22,16 +22,23 @@ export interface AllPaintFilters {
 }
 
 const Paints = () => {
+  const sortPaints = (a: PaintDetails, b: PaintDetails) => {
+    if (a.name < b.name) return -1;
+    if (a.name > b.name) return 1;
+    return 0;
+  };
+
   const allPaints = [
-    ...airPaints,
-    ...basePaints,
-    ...contrastPaints,
-    ...dryPaints,
-    ...layerPaints,
-    ...shadePaints,
-    ...sprayPaints,
-    ...technicalPaints,
+    ...airPaints.sort(sortPaints),
+    ...basePaints.sort(sortPaints),
+    ...contrastPaints.sort(sortPaints),
+    ...dryPaints.sort(sortPaints),
+    ...layerPaints.sort(sortPaints),
+    ...shadePaints.sort(sortPaints),
+    ...sprayPaints.sort(sortPaints),
+    ...technicalPaints.sort(sortPaints),
   ];
+  //allPaints.sort(sortPaints);
 
   const [filteredPaints, setFilteredPaints] = useState([...allPaints]);
 
@@ -85,6 +92,7 @@ const Paints = () => {
         }
       }
     }
+    filteredPaints.sort(sortPaints);
     return filteredPaints;
   };
 
