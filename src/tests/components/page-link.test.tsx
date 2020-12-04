@@ -1,7 +1,7 @@
 import React from 'react';
 import PageLink from '../../components/page-link';
 import { render, getByTestId } from '@testing-library/react';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 import theme from '../../styles/theme';
 import { renderWithTransitionProvider } from '../util/transition-provider';
 
@@ -13,7 +13,9 @@ describe('PageLink', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'page-link')).toHaveTextContent('Default');
+    expect(
+      getByTestId(container as HTMLElement, 'page-link')
+    ).toHaveTextContent('Default');
     expect(container).toMatchSnapshot();
   });
 
@@ -26,9 +28,9 @@ describe('PageLink', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'page-link-paint')).toHaveTextContent(
-      'Paint Drip'
-    );
+    expect(
+      getByTestId(container as HTMLElement, 'page-link-paint')
+    ).toHaveTextContent('Paint Drip');
     expect(container).toMatchSnapshot();
   });
 
@@ -41,7 +43,9 @@ describe('PageLink', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'page-link-fade')).toHaveTextContent('Fade');
+    expect(
+      getByTestId(container as HTMLElement, 'page-link-fade')
+    ).toHaveTextContent('Fade');
     expect(container).toMatchSnapshot();
   });
 
@@ -54,9 +58,9 @@ describe('PageLink', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'page-link-swipe')).toHaveTextContent(
-      'Swipe'
-    );
+    expect(
+      getByTestId(container as HTMLElement, 'page-link-swipe')
+    ).toHaveTextContent('Swipe');
     expect(container).toMatchSnapshot();
   });
 
@@ -69,9 +73,9 @@ describe('PageLink', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'page-link-cover')).toHaveTextContent(
-      'Cover'
-    );
+    expect(
+      getByTestId(container as HTMLElement, 'page-link-cover')
+    ).toHaveTextContent('Cover');
     expect(container).toMatchSnapshot();
   });
 });

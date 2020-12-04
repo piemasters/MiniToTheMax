@@ -1,8 +1,8 @@
 import React from 'react';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 import theme from '../src/styles/theme';
 import InternalProvider from 'gatsby-plugin-transition-link/context/InternalProvider';
-import { Global } from '@emotion/core';
+import { Global } from '@emotion/react';
 import { globalStyles } from '../src/styles/global';
 
 const ThemeDecorator = storyFn => (

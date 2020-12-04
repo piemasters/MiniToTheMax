@@ -1,7 +1,7 @@
 import React from 'react';
 import CoverCategory from '../../components/cover-category';
 import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 import theme from '../../styles/theme';
 import { renderWithTransitionProvider } from '../util/transition-provider';
 
@@ -22,9 +22,9 @@ describe('CoverCategory', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'cover-category')).toHaveTextContent(
-      'Board Games'
-    );
+    expect(
+      getByTestId(container as HTMLElement, 'cover-category')
+    ).toHaveTextContent('Board Games');
     expect(container).toMatchSnapshot();
   });
 });

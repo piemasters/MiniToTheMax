@@ -1,7 +1,6 @@
 import React from 'react';
 import { Theme } from '../styles/theme';
-import { useTheme } from 'emotion-theming';
-import { css } from '@emotion/core';
+import { css, useTheme } from '@emotion/react';
 import { BadgeNames } from '../types/app.types';
 import PageLink from './page-link';
 import kebabCase from 'lodash.kebabcase';
@@ -12,7 +11,7 @@ import reviews from '../../content/assets/images/reviews-badge.png';
 import build from '../../content/assets/images/build-badge.png';
 
 const Badge = ({ type }: { type: BadgeNames }) => {
-  const theme: Theme = useTheme();
+  const theme = useTheme() as Theme;
 
   const badgeImages: any = {
     [BadgeNames.showcase]: showcase,

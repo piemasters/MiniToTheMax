@@ -1,13 +1,8 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import { css } from '@emotion/core';
-import { useTheme } from 'emotion-theming';
+import { css, useTheme } from '@emotion/react';
 import { Theme } from '../styles/theme';
-// @ts-ignore
 import Facebook from '../../content/assets/svg/facebook.svg';
-// @ts-ignore
 import Instagram from '../../content/assets/svg/instagram.svg';
-// @ts-ignore
 import Youtube from '../../content/assets/svg/youtube.svg';
 
 interface FooterProps {
@@ -15,7 +10,7 @@ interface FooterProps {
 }
 
 const Footer = ({ author }: FooterProps) => {
-  const theme: Theme = useTheme();
+  const theme = useTheme() as Theme;
 
   const footerStyle = css`
     margin-top: 3rem;

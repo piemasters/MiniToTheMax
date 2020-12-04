@@ -10,7 +10,7 @@ import { DiscussionEmbed } from 'disqus-react';
 import { DisqusConfig, MdxPost } from '../types/app.types';
 import { MdxFrontmatterGalleryImage, MdxNode } from '../types/base.types';
 import PostTag from '../components/post-tag';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import CoverImage from '../components/cover-image';
 
 interface PostContext {

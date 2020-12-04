@@ -2,7 +2,6 @@ import { addParameters, addDecorator } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import results from '../.jest-results.json';
 import { withTests } from '@storybook/addon-jest';
-import { withCssResources } from '@storybook/addon-cssresources';
 import themeDecorator from './themeDecorator';
 import '../src/styles/index.scss';
 import theme from './theme';
@@ -15,30 +14,11 @@ addDecorator(
     filesExt: '.test.tsx',
   })
 );
-addDecorator(withCssResources);
 addDecorator(themeDecorator);
 
 addParameters({
   // Define settings for accessibility
   ally: {},
-  // Define possible background colors which can be toggled in the canvas view
-  backgrounds: {
-    default: 'white',
-    values: [
-      { name: 'white', value: '#ffffff' },
-      { name: 'black', value: '#000000' },
-      { name: 'twitter', value: '#00aced' },
-      { name: 'facebook', value: '#3b5998' },
-    ],
-  },
-  // Define global css that can be toggled on/off in the canvas view
-  cssresources: [
-    {
-      id: `bluetheme`,
-      code: `<style>body { background-color: lightblue; }</style>`,
-      picked: false,
-    },
-  ],
   // Settings for the Docs plugin
   docs: {
     inlineStories: true,

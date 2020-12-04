@@ -1,7 +1,6 @@
 import React from 'react';
-import { css } from '@emotion/core';
 import { Theme } from '../styles/theme';
-import { useTheme } from 'emotion-theming';
+import { css, useTheme } from '@emotion/react';
 
 interface VideoProps {
   src: string;
@@ -16,7 +15,7 @@ const Video = ({
   width = 714,
   aspectRatio = 16 / 9,
 }: VideoProps) => {
-  const theme: Theme = useTheme();
+  const theme = useTheme() as Theme;
 
   const videoStyle = css`
     iframe {

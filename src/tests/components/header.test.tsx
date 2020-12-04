@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../components/header';
 import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 import theme from '../../styles/theme';
 import { renderWithTransitionProvider } from '../util/transition-provider';
 
@@ -35,9 +35,9 @@ describe('Header', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'nav-header')).toHaveTextContent(
-      'MiniToTheMax'
-    );
+    expect(
+      getByTestId(container as HTMLElement, 'nav-header')
+    ).toHaveTextContent('MiniToTheMax');
 
     expect(container).toMatchSnapshot();
   });

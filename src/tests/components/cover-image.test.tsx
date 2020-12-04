@@ -1,7 +1,7 @@
 import React from 'react';
 import CoverImage from '../../components/cover-image';
 import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 import theme from '../../styles/theme';
 import { renderWithTransitionProvider } from '../util/transition-provider';
 
@@ -21,9 +21,9 @@ describe('CoverImage', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'cover-image')).toHaveTextContent(
-      'Demo Post Title'
-    );
+    expect(
+      getByTestId(container as HTMLElement, 'cover-image')
+    ).toHaveTextContent('Demo Post Title');
     expect(container).toMatchSnapshot();
   });
 });

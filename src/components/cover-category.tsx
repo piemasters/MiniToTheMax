@@ -1,10 +1,9 @@
 import React from 'react';
-import { css } from '@emotion/core';
 import PageLink from './page-link';
 import { FluidObject } from 'gatsby-image';
 import CoverImage from './cover-image';
 import { Theme } from '../styles/theme';
-import { useTheme } from 'emotion-theming';
+import { css, useTheme } from '@emotion/react';
 
 interface CoverCategoryProps {
   slug: string;
@@ -13,7 +12,7 @@ interface CoverCategoryProps {
 }
 
 const CoverCategory = (category: CoverCategoryProps) => {
-  const theme: Theme = useTheme();
+  const theme = useTheme() as Theme;
   const postStyle = css`
     margin: 1rem 0;
     transition: 0.3s;

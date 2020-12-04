@@ -1,6 +1,5 @@
 import React from 'react';
-import { ThemeProvider } from 'emotion-theming';
-import { Global, css } from '@emotion/core';
+import { Global, css, ThemeProvider } from '@emotion/react';
 import Header from '../components/stateful/header';
 import Footer from '../components/stateful/footer';
 import appTheme from '../styles/theme';

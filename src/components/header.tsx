@@ -1,6 +1,5 @@
 import { Theme } from '../styles/theme';
-import { useTheme } from 'emotion-theming';
-import { css } from '@emotion/core';
+import { css, useTheme } from '@emotion/react';
 import PageLink from './page-link';
 import React from 'react';
 
@@ -16,7 +15,7 @@ interface HeaderProps {
 }
 
 const Header = ({ title, logo, pages }: HeaderProps) => {
-  const theme: Theme = useTheme();
+  const theme = useTheme() as Theme;
 
   const NavHeader = css`
     background-color: ${theme.colors.lightgrey};

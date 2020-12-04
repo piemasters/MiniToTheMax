@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from '../layouts/layout';
 import Seo from '../components/stateful/seo';
 import PageLink from '../components/page-link';
-import kebabCase from 'lodash.kebabcase';
 
 export interface BacklogEntry {
   name: string;

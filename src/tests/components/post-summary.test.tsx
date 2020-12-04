@@ -1,7 +1,7 @@
 import React from 'react';
 import PostSummary from '../../components/post-summary';
 import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 import theme from '../../styles/theme';
 import { renderWithTransitionProvider } from '../util/transition-provider';
 
@@ -25,9 +25,9 @@ describe('PostSummary', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'post-summary')).toHaveTextContent(
-      'Demo Post Title'
-    );
+    expect(
+      getByTestId(container as HTMLElement, 'post-summary')
+    ).toHaveTextContent('Demo Post Title');
     expect(container).toMatchSnapshot();
   });
 });

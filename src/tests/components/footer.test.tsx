@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../../components/footer';
 import { render, getByTestId } from '@testing-library/react';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 import theme from '../../styles/theme';
 
 describe('Footer', () => {
@@ -20,7 +20,9 @@ describe('Footer', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'footer')).toHaveTextContent('David Norton');
+    expect(getByTestId(container as HTMLElement, 'footer')).toHaveTextContent(
+      'David Norton'
+    );
     expect(container).toMatchSnapshot();
   });
 });

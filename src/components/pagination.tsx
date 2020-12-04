@@ -1,8 +1,7 @@
 import React from 'react';
-import { css } from '@emotion/core';
 import PageLink from './page-link';
 import { Theme } from '../styles/theme';
-import { useTheme } from 'emotion-theming';
+import { css, useTheme } from '@emotion/react';
 
 interface PaginationProps {
   isFirst: boolean;
@@ -16,16 +15,12 @@ interface PaginationProps {
 }
 
 const Pagination = ({
-  isFirst,
-  isLast,
-  prevPage,
-  nextPage,
   numPages,
   currentPage,
   maxPages = 8,
   baseUrl,
 }: PaginationProps) => {
-  const theme: Theme = useTheme();
+  const theme = useTheme() as Theme;
 
   const containerStyle = css`
     align-items: center;

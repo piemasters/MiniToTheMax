@@ -1,5 +1,5 @@
 /* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 export const resetStyles = css`
   html {

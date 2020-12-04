@@ -1,7 +1,7 @@
 import React from 'react';
 import Seo from '../../components/seo';
 import { render } from '@testing-library/react';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 import theme from '../../styles/theme';
 
 describe('Seo', () => {

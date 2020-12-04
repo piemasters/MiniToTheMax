@@ -1,9 +1,8 @@
 import React from 'react';
 import { Theme } from '../styles/theme';
-import { useTheme } from 'emotion-theming';
-import { css } from '@emotion/core';
+import { css, useTheme } from '@emotion/react';
 import Img from 'gatsby-image';
-import { FluidObject } from 'gatsby-image/index';
+import { FluidObject } from 'gatsby-image';
 
 const CoverImage = ({
   image,
@@ -14,7 +13,7 @@ const CoverImage = ({
   title: string;
   tall?: boolean;
 }) => {
-  const theme: Theme = useTheme();
+  const theme = useTheme() as Theme;
 
   const headerContainer = css`
     position: relative;

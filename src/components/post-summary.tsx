@@ -1,8 +1,7 @@
 import React from 'react';
-import { css } from '@emotion/core';
-import { useTheme } from 'emotion-theming';
+import { css, useTheme } from '@emotion/react';
 import PageLink from './page-link';
-import Img, { FluidObject } from 'gatsby-image';
+import { FluidObject } from 'gatsby-image';
 import { Theme } from '../styles/theme';
 import CoverImage from './cover-image';
 
@@ -17,7 +16,7 @@ interface PostSummaryProps {
 }
 
 const PostSummary = (post: PostSummaryProps) => {
-  const theme: Theme = useTheme();
+  const theme = useTheme() as Theme;
 
   const postStyle = css`
     margin: 1rem 0;

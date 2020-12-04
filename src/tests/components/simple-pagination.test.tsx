@@ -1,7 +1,7 @@
 import React from 'react';
 import SimplePagination from '../../components/simple-pagination';
 import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 import theme from '../../styles/theme';
 import { renderWithTransitionProvider } from '../util/transition-provider';
 
@@ -23,12 +23,12 @@ describe('SimplePagination', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'simple-pagination')).toHaveTextContent(
-      previous.title
-    );
-    expect(getByTestId(container, 'simple-pagination')).toHaveTextContent(
-      next.title
-    );
+    expect(
+      getByTestId(container as HTMLElement, 'simple-pagination')
+    ).toHaveTextContent(previous.title);
+    expect(
+      getByTestId(container as HTMLElement, 'simple-pagination')
+    ).toHaveTextContent(next.title);
     expect(container).toMatchSnapshot();
   });
 });

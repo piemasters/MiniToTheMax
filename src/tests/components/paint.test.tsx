@@ -1,7 +1,7 @@
 import React from 'react';
 import Paint from '../../components/paint';
 import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 import theme from '../../styles/theme';
 import { renderWithTransitionProvider } from '../util/transition-provider';
 import { baseRetributorArmour } from '../../data/paints/base';
@@ -14,7 +14,7 @@ describe('Paint', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'paint')).toBeTruthy();
+    expect(getByTestId(container as HTMLElement, 'paint')).toBeTruthy();
     expect(container).toMatchSnapshot();
   });
 });

@@ -1,13 +1,9 @@
 import React from 'react';
-import { Theme } from '../styles/theme';
-import { useTheme } from 'emotion-theming';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import Badge from './badge';
 import { BadgeNames } from '../types/app.types';
 
 const Badges = () => {
-  const theme: Theme = useTheme();
-
   const badgeContainerStyles = css`
     display: flex;
     flex-direction: row;

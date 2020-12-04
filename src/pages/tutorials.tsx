@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../layouts/layout';
 import Seo from '../components/stateful/seo';
-import PageLink from '../components/page-link';
 import CoverCategory from '../components/cover-category';
 import { graphql } from 'gatsby';
 import { Tutorials } from '../types/app.types';

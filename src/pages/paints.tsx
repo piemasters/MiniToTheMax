@@ -11,7 +11,7 @@ import { sprayPaints } from '../data/paints/spray';
 import { technicalPaints } from '../data/paints/technical';
 import Paint from '../components/paint';
 import { PaintDetails } from '../types/app.types';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 export interface PaintFilters {
   [key: string]: boolean;

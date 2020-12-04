@@ -1,7 +1,7 @@
 import React from 'react';
 import Pagination from '../../components/pagination';
 import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 import theme from '../../styles/theme';
 import { renderWithTransitionProvider } from '../util/transition-provider';
 
@@ -22,7 +22,9 @@ describe('Pagination', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'pagination')).toHaveTextContent('<<12345>>');
+    expect(
+      getByTestId(container as HTMLElement, 'pagination')
+    ).toHaveTextContent('<<12345>>');
     expect(container).toMatchSnapshot();
   });
 });

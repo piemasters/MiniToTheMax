@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import Layout from '../layouts/layout';
 import Pagination from '../components/pagination';
 import Seo from '../components/stateful/seo';

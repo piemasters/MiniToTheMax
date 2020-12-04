@@ -2,11 +2,10 @@ import React from 'react';
 import PageLink from './page-link';
 import kebabCase from 'lodash.kebabcase';
 import { Theme } from '../styles/theme';
-import { useTheme } from 'emotion-theming';
-import { css } from '@emotion/core';
+import { css, useTheme } from '@emotion/react';
 
 const PostTag = ({ name, type }: { name: string; type: string }) => {
-  const theme: Theme = useTheme();
+  const theme = useTheme() as Theme;
 
   const tagStyles = css`
     display: inline-block;

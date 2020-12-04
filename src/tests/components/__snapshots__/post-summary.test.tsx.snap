@@ -27,10 +27,7 @@ exports[`PostSummary renders correctly 1`] = `
             style="width: 100%; padding-bottom: 100%;"
           />
           <picture>
-            <source
-              sizes="(max-width: 800px) 100vw, 800px"
-              srcset=""
-            />
+            
             <img
               alt=""
               loading="lazy"

@@ -1,12 +1,11 @@
 import React from 'react';
-import { css, SerializedStyles } from '@emotion/core';
 import * as CSS from 'csstype';
 // @ts-ignore
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 // @ts-ignore
 import TransitionLink from 'gatsby-plugin-transition-link';
 import { Theme } from '../styles/theme';
-import { useTheme } from 'emotion-theming';
+import { css, SerializedStyles, useTheme } from '@emotion/react';
 
 type AnimationTypes = 'paintDrip' | 'fade' | 'swipe' | 'cover';
 
@@ -39,7 +38,7 @@ const PageLink = ({
   duration,
   disabled,
 }: PageLinkProps) => {
-  const theme: Theme = useTheme();
+  const theme = useTheme() as Theme;
 
   const baseStyle = css`
     color: ${theme.colors.hyperlink};

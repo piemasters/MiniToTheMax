@@ -1,7 +1,7 @@
 import React from 'react';
 import PostTag from '../../components/post-tag';
 import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 import theme from '../../styles/theme';
 import { renderWithTransitionProvider } from '../util/transition-provider';
 
@@ -13,7 +13,9 @@ describe('PostTag', () => {
       </ThemeProvider>
     );
 
-    expect(getByTestId(container, 'post-tag')).toHaveTextContent('Tag');
+    expect(getByTestId(container as HTMLElement, 'post-tag')).toHaveTextContent(
+      'Tag'
+    );
     expect(container).toMatchSnapshot();
   });
 });
