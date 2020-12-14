@@ -4285,13 +4285,13 @@
   dependencies:
     "@types/jest" "*"
 
-"@types/jest@*":
-  version "26.0.10"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.10.tgz#8faf7e9756c033c39014ae76a7329efea00ea607"
-  integrity sha512-i2m0oyh8w/Lum7wWK/YOZJakYF8Mx08UaKA1CtbmFeDquVhAEdA7znacsVSf2hJ1OQ/OfVMGN90pw/AtzF8s/Q==
+"@types/jest@*", "@types/jest@^26.0.19":
+  version "26.0.19"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.19.tgz#e6fa1e3def5842ec85045bd5210e9bb8289de790"
+  integrity sha512-jqHoirTG61fee6v6rwbnEuKhpSKih0tuhqeFbCmMmErhtu3BYlOZaXWjffgOstMM4S/3iQD31lI5bGLTrs97yQ==
   dependencies:
-    jest-diff "^25.2.1"
-    pretty-format "^25.2.1"
+    jest-diff "^26.0.0"
+    pretty-format "^26.0.0"
 
 "@types/jest@^25.1.1":
   version "25.2.3"
@@ -4300,14 +4300,6 @@
   dependencies:
     jest-diff "^25.2.1"
     pretty-format "^25.2.1"
-
-"@types/jest@^26.0.16":
-  version "26.0.16"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.16.tgz#b47abd50f6ed0503f589db8e126fc8eb470cf87c"
-  integrity sha512-Gp12+7tmKCgv9JjtltxUXokohCAEZfpJaEW5tn871SGRp8I+bRWBonQO7vW5NHwnAHe5dd50+Q4zyKuN35i09g==
-  dependencies:
-    jest-diff "^26.0.0"
-    pretty-format "^26.0.0"
 
 "@types/json-schema@^7.0.3", "@types/json-schema@^7.0.4", "@types/json-schema@^7.0.5":
   version "7.0.5"
@@ -8550,11 +8542,6 @@ diff-sequences@^25.2.6:
   version "25.2.6"
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-25.2.6.tgz#5f467c00edd35352b7bca46d7927d60e687a76dd"
   integrity sha512-Hq8o7+6GaZeoFjtpgvRBUknSXNeJiCx7V9Fr94ZMljNiCr9n9L8H8aJqgWOQiDDGdyn29fRNcDdRVJ5fdyihfg==
-
-diff-sequences@^26.3.0:
-  version "26.3.0"
-  resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-26.3.0.tgz#62a59b1b29ab7fd27cef2a33ae52abe73042d0a2"
-  integrity sha512-5j5vdRcw3CNctePNYN0Wy2e/JbWT6cAYnXv5OuqPhDpyCGc0uLu2TK0zOCJWNB9kOIfYMSpIulRaDgIi4HJ6Ig==
 
 diff-sequences@^26.6.2:
   version "26.6.2"
@@ -13312,7 +13299,7 @@ jest-diff@^25.2.1, jest-diff@^25.5.0:
     jest-get-type "^25.2.6"
     pretty-format "^25.5.0"
 
-jest-diff@^26.0.0, jest-diff@^26.6.2:
+jest-diff@^26.0.0, jest-diff@^26.4.0, jest-diff@^26.6.2:
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-26.6.2.tgz#1aa7468b52c3a68d7d5c5fdcdfcd5e49bd164394"
   integrity sha512-6m+9Z3Gv9wN0WFVasqjCL/06+EFCMTqDEUl/b87HYK2rAPTyfz4ZIuSlPhY51PIQRWx5TaxeF1qmXKe9gfN3sA==
@@ -13321,16 +13308,6 @@ jest-diff@^26.0.0, jest-diff@^26.6.2:
     diff-sequences "^26.6.2"
     jest-get-type "^26.3.0"
     pretty-format "^26.6.2"
-
-jest-diff@^26.4.0:
-  version "26.4.0"
-  resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-26.4.0.tgz#d073a0a11952b5bd9f1ff39bb9ad24304a0c55f7"
-  integrity sha512-wwC38HlOW+iTq6j5tkj/ZamHn6/nrdcEOc/fKaVILNtN2NLWGdkfRaHWwfNYr5ehaLvuoG2LfCZIcWByVj0gjg==
-  dependencies:
-    chalk "^4.0.0"
-    diff-sequences "^26.3.0"
-    jest-get-type "^26.3.0"
-    pretty-format "^26.4.0"
 
 jest-docblock@^26.0.0:
   version "26.0.0"
@@ -17112,7 +17089,7 @@ pretty-format@^25.2.1, pretty-format@^25.5.0:
     ansi-styles "^4.0.0"
     react-is "^16.12.0"
 
-pretty-format@^26.0.0, pretty-format@^26.6.2:
+pretty-format@^26.0.0, pretty-format@^26.4.0, pretty-format@^26.6.2:
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-26.6.2.tgz#e35c2705f14cb7fe2fe94fa078345b444120fc93"
   integrity sha512-7AeGuCYNGmycyQbCqd/3PWH4eOoX/OiCa0uphp57NVTeAGdJGaAliecxwBDHYQCIvrW7aDBZCYeNTP/WX69mkg==
@@ -17121,16 +17098,6 @@ pretty-format@^26.0.0, pretty-format@^26.6.2:
     ansi-regex "^5.0.0"
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
-
-pretty-format@^26.4.0:
-  version "26.4.0"
-  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-26.4.0.tgz#c08073f531429e9e5024049446f42ecc9f933a3b"
-  integrity sha512-mEEwwpCseqrUtuMbrJG4b824877pM5xald3AkilJ47Po2YLr97/siejYQHqj2oDQBeJNbu+Q0qUuekJ8F0NAPg==
-  dependencies:
-    "@jest/types" "^26.3.0"
-    ansi-regex "^5.0.0"
-    ansi-styles "^4.0.0"
-    react-is "^16.12.0"
 
 pretty-hrtime@^1.0.3:
   version "1.0.3"
