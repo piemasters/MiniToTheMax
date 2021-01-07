@@ -243,8 +243,14 @@ const BacklogPage = () => {
       link: '/showcase/board-games/silver-tower/grot-scuttlings/',
     },
     { name: 'Tzaangors' },
-    { name: 'Pink Horrors' },
-    { name: 'Blue Horrors' },
+    {
+      name: 'Pink Horrors',
+      link: '/showcase/board-games/silver-tower/pink-horrors/',
+    },
+    {
+      name: 'Blue Horrors',
+      link: '/showcase/board-games/silver-tower/blue-horrors/',
+    },
     {
       name: 'Brimstone Horrors',
       link: '/showcase/board-games/silver-tower/brimstone-horrors/',
