@@ -232,8 +232,12 @@ const BacklogPage = () => {
     { name: 'Tenebrand Shard' },
     { name: 'Gaunt Summoner' },
     { name: 'Familiars' },
-    { name: 'Ogroid Traumaturge' },
     { name: 'Skaven Deathrunners' },
+    { name: 'Tzaangors' },
+    {
+      name: 'Ogroid Traumaturge',
+      link: '/showcase/board-games/silver-tower/ogroid-thaumaturge/'
+    },
     {
       name: 'Kairic Acolytes',
       link: '/showcase/board-games/silver-tower/kairic-acolytes/',
@@ -242,7 +246,6 @@ const BacklogPage = () => {
       name: 'Grot Scuttlings',
       link: '/showcase/board-games/silver-tower/grot-scuttlings/',
     },
-    { name: 'Tzaangors' },
     {
       name: 'Pink Horrors',
       link: '/showcase/board-games/silver-tower/pink-horrors/',
