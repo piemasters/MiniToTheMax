@@ -47,7 +47,7 @@ const IndexPage = () => {
           <Badges />
           <h2>Latest Video</h2>
           <Video
-            src="https://www.youtube.com/embed/ilXdcBdT3jo"
+            src="https://www.youtube.com/embed/irXsZjAMGh0"
             title="Warhammer Quest: Horrors"
           />
           <h2>Latest Post</h2>
