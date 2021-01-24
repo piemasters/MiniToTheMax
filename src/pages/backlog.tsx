@@ -256,7 +256,10 @@ const BacklogPage = () => {
     },
     { name: 'Tenebrand Shard' },
 
-    { name: 'Tzaangors' },
+    {
+      name: 'Tzaangors',
+      link: '/showcase/board-games/silver-tower/tzaangors/',
+    },
   ];
 
   const spaceHulk = [
