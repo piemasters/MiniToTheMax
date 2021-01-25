@@ -42,7 +42,7 @@
     "gatsby-plugin-robots-txt": "^1.5.5",
     "gatsby-plugin-sass": "^2.8.0",
     "gatsby-plugin-sharp": "^2.13.1",
-    "gatsby-plugin-sitemap": "^2.10.0",
+    "gatsby-plugin-sitemap": "^2.11.0",
     "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-plugin-typescript": "^2.10.0",
     "gatsby-remark-images": "^3.10.0",
