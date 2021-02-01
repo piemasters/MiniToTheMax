@@ -231,7 +231,10 @@ const BacklogPage = () => {
     { name: 'Familiars' },
     { name: 'Fyreslayer Doomseeker' },
 
-    { name: 'Gaunt Summoner' },
+    {
+      name: 'Gaunt Summoner',
+      link: '/showcase/board-games/silver-tower/gaunt-summoner/',
+    },
     {
       name: 'Grot Scuttlings',
       link: '/showcase/board-games/silver-tower/grot-scuttlings/',
