@@ -168,6 +168,18 @@ export const shadeReiklandFleshshadeGloss: PaintDetails = {
   ],
 };
 
+export const shadeCryptekArmourshadeGloss: PaintDetails = {
+  name: 'Cryptek Armourshade Gloss',
+  type: 'shade',
+  color: 'brown',
+  hex: '#311908',
+  gloss: true,
+  gradient: [
+    { offset: 0, color: 'rgb(83, 39, 36)' },
+    { offset: 100, color: 'rgb(250, 238, 237)' },
+  ],
+};
+
 export const shadePaints = [
   shadeCarroburgCrimson,
   shadeNulnOil,
@@ -184,4 +196,5 @@ export const shadePaints = [
   shadeNulnOilGloss,
   shadeAgraxEarthshadeGloss,
   shadeReiklandFleshshadeGloss,
+  shadeCryptekArmourshadeGloss,
 ];

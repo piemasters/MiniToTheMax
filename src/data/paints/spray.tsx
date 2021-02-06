@@ -100,6 +100,18 @@ export const sprayGreySeer: PaintDetails = {
   hex: '#A2A5A7',
 };
 
+export const sprayRunelordBrass: PaintDetails = {
+  name: 'Runelord Brass',
+  type: 'spray',
+  color: 'brass',
+  hex: '#74624D',
+  gradient: [
+    { offset: 0, color: 'rgb(245, 237, 227)' },
+    { offset: 50, color: 'rgb(116, 98, 77)' },
+    { offset: 100, color: 'rgb(25, 14, 7)' },
+  ],
+};
+
 export const sprayPaints = [
   sprayCoraxWhite,
   sprayChaosBlack,
@@ -113,4 +125,5 @@ export const sprayPaints = [
   sprayMunitorumVarnish,
   sprayWraithBone,
   sprayGreySeer,
+  sprayRunelordBrass,
 ];

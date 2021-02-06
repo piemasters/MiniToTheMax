@@ -624,6 +624,17 @@ export const layerAdministratumGrey: PaintDetails = {
   color: 'grey',
   hex: '#989C94',
 };
+export const layerCanoptekAlloy: PaintDetails = {
+  name: 'CanoptekAlloy',
+  type: 'layer',
+  color: 'bronze',
+  hex: '#967F7A',
+  gradient: [
+    { offset: 0, color: 'rgb(255, 254, 254)' },
+    { offset: 50, color: 'rgb(187, 161, 155)' },
+    { offset: 100, color: 'rgb(150, 127, 122)' },
+  ],
+};
 
 export const layerPaints = [
   layerYrielYellow,
@@ -719,4 +730,5 @@ export const layerPaints = [
   layerBloodreaverFlesh,
   layerKnightQuestorFlesh,
   layerAdministratumGrey,
+  layerCanoptekAlloy,
 ];

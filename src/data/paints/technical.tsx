@@ -289,6 +289,13 @@ export const technicalStormShield: PaintDetails = {
   ],
 };
 
+export const technicalTesseractGlow: PaintDetails = {
+  name: 'Tesseract Glow',
+  type: 'technical',
+  color: 'green',
+  hex: '#49AD33',
+};
+
 export const technicalPaints = [
   technicalBloodForTheBloodGod,
   technicalNihilakhOxide,
@@ -315,4 +322,5 @@ export const technicalPaints = [
   technicalArdcoat,
   technicalContrastMedium,
   technicalStormShield,
+  technicalTesseractGlow,
 ];

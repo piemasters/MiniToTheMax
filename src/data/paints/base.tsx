@@ -412,6 +412,18 @@ export const baseGreySeer: PaintDetails = {
   hex: '#A2A5A7',
 };
 
+export const baseRunelordBrass: PaintDetails = {
+  name: 'Runelord Brass',
+  type: 'base',
+  color: 'brass',
+  hex: '#74624D',
+  gradient: [
+    { offset: 0, color: 'rgb(245, 237, 227)' },
+    { offset: 50, color: 'rgb(116, 98, 77)' },
+    { offset: 100, color: 'rgb(25, 14, 7)' },
+  ],
+};
+
 export const basePaints = [
   baseAverlandSunset,
   baseJokaeroOrange,
@@ -466,4 +478,5 @@ export const basePaints = [
   baseCoraxWhite,
   baseWraithBone,
   baseGreySeer,
+  baseRunelordBrass,
 ];

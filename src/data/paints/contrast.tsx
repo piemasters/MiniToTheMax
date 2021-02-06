@@ -363,6 +363,17 @@ export const contrastTerradonTurquoise: PaintDetails = {
   ],
 };
 
+export const contrastCygorBrown: PaintDetails = {
+  name: 'Cygor Brown',
+  type: 'contrast',
+  color: 'brown',
+  hex: '#754A47',
+  gradient: [
+    { offset: 0, color: 'rgb(117, 74, 71)' },
+    { offset: 100, color: 'rgb(47, 13, 10)' },
+  ],
+};
+
 export const contrastPaints = [
   contrastIyandenYellow,
   contrastGryphHoundOrange,
@@ -397,4 +408,5 @@ export const contrastPaints = [
   contrastAethermaticBlue,
   contrastPlaguebearerFlesh,
   contrastTerradonTurquoise,
+  contrastCygorBrown,
 ];
