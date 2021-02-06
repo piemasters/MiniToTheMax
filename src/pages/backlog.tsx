@@ -226,11 +226,16 @@ const BacklogPage = () => {
       name: 'Brimstone Horrors',
       link: '/showcase/board-games/silver-tower/brimstone-horrors/',
     },
-    { name: 'Darkoeth Chieftan' },
+    {
+      name: 'Darkoeth Chieftan',
+      link: '/showcase/board-games/silver-tower/darkoath-chieftain/',
+    },
     { name: 'Excelsior War Priest' },
-    { name: 'Familiars' },
+    {
+      name: 'Familiars',
+      link: '/showcase/board-games/silver-tower/gaunt-summoner/',
+    },
     { name: 'Fyreslayer Doomseeker' },
-
     {
       name: 'Gaunt Summoner',
       link: '/showcase/board-games/silver-tower/gaunt-summoner/',
@@ -258,7 +263,6 @@ const BacklogPage = () => {
       link: '/showcase/board-games/silver-tower/skaven-deathrunners/',
     },
     { name: 'Tenebrand Shard' },
-
     {
       name: 'Tzaangors',
       link: '/showcase/board-games/silver-tower/tzaangors/',
