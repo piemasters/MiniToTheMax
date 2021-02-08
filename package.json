@@ -69,7 +69,7 @@
     "@svgr/webpack": "^5.5.0",
     "@testing-library/cypress": "^7.0.3",
     "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.3",
+    "@testing-library/react": "^11.2.5",
     "@types/jest": "^26.0.20",
     "@types/lodash": "^4.14.168",
     "@types/lodash.kebabcase": "^4.1.6",
