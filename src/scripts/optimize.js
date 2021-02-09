@@ -3,7 +3,7 @@ const glob = require(`glob`);
 const fs = require(`fs-extra`);
 const matches = glob.sync(`content/blog/**/*.{png,jpg,jpeg}`);
 const MAX_WIDTH = 1800;
-const QUALITY = 70;
+const QUALITY = 85;
 Promise.all(
   matches.map(async (match) => {
     const stream = sharp(match);
