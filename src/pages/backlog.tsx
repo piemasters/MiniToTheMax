@@ -235,7 +235,10 @@ const BacklogPage = () => {
       name: 'Familiars',
       link: '/showcase/board-games/silver-tower/gaunt-summoner/',
     },
-    { name: 'Fyreslayer Doomseeker' },
+    {
+      name: 'Fyreslayer Doomseeker',
+      link: '/showcase/board-games/silver-tower/fyreslayer-doomseeker/',
+    },
     {
       name: 'Gaunt Summoner',
       link: '/showcase/board-games/silver-tower/gaunt-summoner/',
