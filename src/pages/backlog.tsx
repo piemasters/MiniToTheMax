@@ -230,7 +230,10 @@ const BacklogPage = () => {
       name: 'Darkoeth Chieftan',
       link: '/showcase/board-games/silver-tower/darkoath-chieftain/',
     },
-    { name: 'Excelsior War Priest' },
+    {
+      name: 'Excelsior War Priest',
+      link: '/showcase/board-games/silver-tower/excelsior-warpriest/',
+    },
     {
       name: 'Familiars',
       link: '/showcase/board-games/silver-tower/gaunt-summoner/',
