@@ -88,7 +88,7 @@
     "babel-preset-gatsby": "^0.12.1",
     "babel-preset-react-app": "^10.0.0",
     "csstype": "^3.0.6",
-    "cypress": "^6.4.0",
+    "cypress": "^6.5.0",
     "cypress-axe": "^0.12.2",
     "dotenv": "^8.2.0",
     "env-cmd": "^10.1.0",
