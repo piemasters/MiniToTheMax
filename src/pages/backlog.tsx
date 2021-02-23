@@ -254,7 +254,10 @@ const BacklogPage = () => {
       name: 'Kairic Acolytes',
       link: '/showcase/board-games/silver-tower/kairic-acolytes/',
     },
-    { name: 'Knight Questor ' },
+    {
+      name: 'Knight Questor ',
+      link: '/showcase/board-games/silver-tower/knight-questor/',
+    },
     { name: 'Mistweaver Saith' },
     {
       name: 'Ogroid Traumaturge',
