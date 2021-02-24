@@ -399,7 +399,7 @@ export const baseCoraxWhite: PaintDetails = {
 };
 
 export const baseWraithBone: PaintDetails = {
-  name: 'Wraith Bone',
+  name: 'Wraithbone',
   type: 'base',
   color: 'bone',
   hex: '#DBD1B2',

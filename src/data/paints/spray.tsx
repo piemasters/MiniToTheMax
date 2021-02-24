@@ -87,7 +87,7 @@ export const sprayMunitorumVarnish: PaintDetails = {
 };
 
 export const sprayWraithBone: PaintDetails = {
-  name: 'Wraith Bone',
+  name: 'Wraithbone',
   type: 'spray',
   color: 'bone',
   hex: '#DBD1B2',
