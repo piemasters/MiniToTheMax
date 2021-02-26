@@ -258,7 +258,10 @@ const BacklogPage = () => {
       name: 'Knight Questor ',
       link: '/showcase/board-games/silver-tower/knight-questor/',
     },
-    { name: 'Mistweaver Saith' },
+    {
+      name: 'Mistweaver Saith',
+      link: '/showcase/board-games/silver-tower/mistweaver-saih/',
+    },
     {
       name: 'Ogroid Traumaturge',
       link: '/showcase/board-games/silver-tower/ogroid-thaumaturge/',
