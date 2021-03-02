@@ -5419,7 +5419,7 @@ babel-preset-gatsby-package@^0.1.2:
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
 
-babel-preset-gatsby@^0.12.1, babel-preset-gatsby@^0.12.2:
+babel-preset-gatsby@^0.12.2:
   version "0.12.2"
   resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.12.2.tgz#784d41fd622afd50fbf8d9bcde0cdf48d5b78152"
   integrity sha512-MQhUnp+DO9FFCdSyhXkLsNpuTxIkB02NnA9eOkV5HtJsRIhX85ZYw+pJeSTPl9d3QdEP/GyiQWPHigU6TAOyqg==
@@ -7443,10 +7443,10 @@ csstype@^2.5.7:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.14.tgz#004822a4050345b55ad4dcc00be1d9cf2f4296de"
   integrity sha512-2mSc+VEpGPblzAxyeR+vZhJKgYg0Og0nnRi7pmRXFYYxSfnOnW8A5wwQb4n4cE2nIOzqKOAzLCaEX6aBmNEv8A==
 
-csstype@^3.0.2, csstype@^3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.6.tgz#865d0b5833d7d8d40f4e5b8a6d76aea3de4725ef"
-  integrity sha512-+ZAmfyWMT7TiIlzdqJgjMb7S4f1beorDbWbsocyK4RaiqA5RTX3K14bnBWmmA9QEM0gRdsjyyrEmcyga8Zsxmw==
+csstype@^3.0.2, csstype@^3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.7.tgz#2a5fb75e1015e84dd15692f71e89a1450290950b"
+  integrity sha512-KxnUB0ZMlnUWCsx2Z8MUsr6qV6ja1w9ArPErJaJaF8a5SOWoHLIszeCTKGRGRgtLgYrs1E8CHkNSP1VZTTPc9g==
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -10369,7 +10369,7 @@ gatsby-source-filesystem@^2.11.1:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-telemetry@^1.10.0, gatsby-telemetry@^1.10.1:
+gatsby-telemetry@^1.10.1:
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.10.1.tgz#f32ed4fa9bb4d352cf9f1f973e5474d3d6d4a2d0"
   integrity sha512-iIXWHD6CSePzL77ZeBnWVRHKh9MxB8QaEf1eRUODH8uqK7GnyV34zJclSD4EIGVFWwd419MhrWqI1oE9iouskA==
