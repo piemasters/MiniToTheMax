@@ -5419,7 +5419,7 @@ babel-preset-gatsby-package@^0.1.2:
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
 
-babel-preset-gatsby@^0.12.1, babel-preset-gatsby@^0.12.2:
+babel-preset-gatsby@^0.12.2:
   version "0.12.2"
   resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.12.2.tgz#784d41fd622afd50fbf8d9bcde0cdf48d5b78152"
   integrity sha512-MQhUnp+DO9FFCdSyhXkLsNpuTxIkB02NnA9eOkV5HtJsRIhX85ZYw+pJeSTPl9d3QdEP/GyiQWPHigU6TAOyqg==
@@ -10134,14 +10134,14 @@ gatsby-plugin-netlify-cache@^1.2.0:
     babel-runtime "^6.26.0"
     fs-extra "^7.0.0"
 
-gatsby-plugin-offline@^3.10.1:
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.10.1.tgz#fac57c17017358ea72b31d3ad116dbc8208eeeee"
-  integrity sha512-Bqtru0P1x/1dtHyiwwds9RLFWAZPmM04L18k2LHfugGKuYIWbyXjT511oWzqEGPpgHzOuBTXCyTIapVXC8ZkYg==
+gatsby-plugin-offline@^3.10.2:
+  version "3.10.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.10.2.tgz#f17605ba567434908cc5ff33e702e26bf4a610fc"
+  integrity sha512-W67KLTtxDqaVHYmGBLuX6BwRvzIIiNjhoWEBw8VA1cM54QYyDykD+rXrs/mWCcBIiCQEj2xbuJc5jfdJh1Qptw==
   dependencies:
     "@babel/runtime" "^7.12.5"
     cheerio "^1.0.0-rc.3"
-    gatsby-core-utils "^1.10.0"
+    gatsby-core-utils "^1.10.1"
     glob "^7.1.6"
     idb-keyval "^3.2.0"
     lodash "^4.17.20"
@@ -10369,7 +10369,7 @@ gatsby-source-filesystem@^2.11.1:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-telemetry@^1.10.0, gatsby-telemetry@^1.10.1:
+gatsby-telemetry@^1.10.1:
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.10.1.tgz#f32ed4fa9bb4d352cf9f1f973e5474d3d6d4a2d0"
   integrity sha512-iIXWHD6CSePzL77ZeBnWVRHKh9MxB8QaEf1eRUODH8uqK7GnyV34zJclSD4EIGVFWwd419MhrWqI1oE9iouskA==
