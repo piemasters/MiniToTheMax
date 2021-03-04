@@ -274,7 +274,10 @@ const BacklogPage = () => {
       name: 'Skaven Deathrunners',
       link: '/showcase/board-games/silver-tower/skaven-deathrunners/',
     },
-    { name: 'Tenebrand Shard' },
+    {
+      name: 'Tenebrand Shard',
+      link: '/showcase/board-games/silver-tower/tenebrael-shard',
+    },
     {
       name: 'Tzaangors',
       link: '/showcase/board-games/silver-tower/tzaangors/',
