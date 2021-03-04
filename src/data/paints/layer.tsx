@@ -595,17 +595,6 @@ export const layerHashutCopper: PaintDetails = {
     { offset: 100, color: 'rgb(73, 33, 9)' },
   ],
 };
-export const layerRunelordBrass: PaintDetails = {
-  name: 'Runelord Brass',
-  type: 'layer',
-  color: 'brass',
-  hex: '#74624d',
-  gradient: [
-    { offset: 0, color: 'rgb(245, 237, 227)' },
-    { offset: 50, color: 'rgb(116, 98, 77)' },
-    { offset: 100, color: 'rgb(25, 14, 7)' },
-  ],
-};
 export const layerBloodreaverFlesh: PaintDetails = {
   name: 'Bloodreaver Flesh',
   type: 'layer',
@@ -625,9 +614,9 @@ export const layerAdministratumGrey: PaintDetails = {
   hex: '#989C94',
 };
 export const layerCanoptekAlloy: PaintDetails = {
-  name: 'CanoptekAlloy',
+  name: 'Canoptek Alloy',
   type: 'layer',
-  color: 'bronze',
+  color: 'brass',
   hex: '#967F7A',
   gradient: [
     { offset: 0, color: 'rgb(255, 254, 254)' },
@@ -726,7 +715,6 @@ export const layerPaints = [
   layerVulkanGreen,
   layerWordBearersRed,
   layerHashutCopper,
-  layerRunelordBrass,
   layerBloodreaverFlesh,
   layerKnightQuestorFlesh,
   layerAdministratumGrey,
