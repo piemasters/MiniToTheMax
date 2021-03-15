@@ -73,7 +73,7 @@
     "@types/jest": "^26.0.20",
     "@types/lodash": "^4.14.168",
     "@types/lodash.kebabcase": "^4.1.6",
-    "@types/node": "^14.14.32",
+    "@types/node": "^14.14.34",
     "@types/node-sass": "^4.11.1",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.1",
