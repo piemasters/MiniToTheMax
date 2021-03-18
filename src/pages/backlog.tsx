@@ -217,7 +217,10 @@ const BacklogPage = () => {
     { name: 'Heldrax Goretouched ' },
     { name: 'Kore Hammerskull' },
     { name: 'Redarg Bloodfane' },
-    { name: 'Vexnar the Reaper' },
+    {
+      name: 'Vexnar the Reaper',
+      link: '/showcase/board-games/gorechosen/vexnar-the-reaper/',
+    },
   ];
 
   const silverTower = [
