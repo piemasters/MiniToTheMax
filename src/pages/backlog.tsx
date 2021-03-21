@@ -214,7 +214,10 @@ const BacklogPage = () => {
       name: 'Fexgore the Flayer',
       link: '/showcase/board-games/gorechosen/fexgor-the-flayer/',
     },
-    { name: 'Heldrax Goretouched ' },
+    {
+      name: 'Heldrax Goretouched',
+      link: '/showcase/board-games/gorechosen/heldrax-goretouched/',
+    },
     { name: 'Kore Hammerskull' },
     { name: 'Redarg Bloodfane' },
     {
