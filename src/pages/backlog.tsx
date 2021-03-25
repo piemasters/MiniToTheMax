@@ -218,7 +218,10 @@ const BacklogPage = () => {
       name: 'Heldrax Goretouched',
       link: '/showcase/board-games/gorechosen/heldrax-goretouched/',
     },
-    { name: 'Kore Hammerskull' },
+    {
+      name: 'Kore Hammerskull',
+      link: '/showcase/board-games/gorechosen/kore-hammerskull/',
+    },
     { name: 'Redarg Bloodfane' },
     {
       name: 'Vexnar the Reaper',
