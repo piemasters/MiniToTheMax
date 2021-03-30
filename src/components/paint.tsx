@@ -225,13 +225,12 @@ const getGloss = ({
 const getSVG = ({
   name,
   type,
-  color,
   hex,
   gradient,
   stroke,
   gloss,
   img,
-}: PaintDetails) => {
+}: PaintDetails): JSX.Element => {
   if (img) {
     return img;
   } else {
@@ -252,7 +251,7 @@ const Paint = ({
 }: {
   paint: PaintDetails;
   size?: number;
-}) => {
+}): JSX.Element => {
   const paintStyles = css`
     display: inline-block;
     margin: 0.2rem;

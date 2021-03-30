@@ -5,7 +5,7 @@ import CoverCategory from '../components/cover-category';
 import { graphql } from 'gatsby';
 import { Tutorials } from '../types/app.types';
 
-const TutorialsPage = ({ data }: { data: Tutorials }) => {
+const TutorialsPage = ({ data }: { data: Tutorials }): React.ReactNode => {
   const categories = [
     {
       title: '40k',

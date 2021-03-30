@@ -4,7 +4,13 @@ import kebabCase from 'lodash.kebabcase';
 import { Theme } from '../styles/theme';
 import { css, useTheme } from '@emotion/react';
 
-const PostTag = ({ name, type }: { name: string; type: string }) => {
+const PostTag = ({
+  name,
+  type,
+}: {
+  name: string;
+  type: string;
+}): JSX.Element => {
   const theme = useTheme() as Theme;
 
   const tagStyles = css`

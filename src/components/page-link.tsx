@@ -1,8 +1,8 @@
 import React from 'react';
 import * as CSS from 'csstype';
-// @ts-ignore
+// @ts-expect-error: AniLink doesn't use TypeScript
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
-// @ts-ignore
+// @ts-expect-error: TransitionLink doesn't use TypeScript
 import TransitionLink from 'gatsby-plugin-transition-link';
 import { Theme } from '../styles/theme';
 import { css, SerializedStyles, useTheme } from '@emotion/react';
@@ -10,7 +10,7 @@ import { css, SerializedStyles, useTheme } from '@emotion/react';
 type AnimationTypes = 'paintDrip' | 'fade' | 'swipe' | 'cover';
 
 interface PageLinkProps {
-  children: any;
+  children: React.ReactNode;
   type?: AnimationTypes;
   to: string;
   linkStyle?: CSS.Properties | SerializedStyles;
@@ -37,7 +37,7 @@ const PageLink = ({
   bg,
   duration,
   disabled,
-}: PageLinkProps) => {
+}: PageLinkProps): JSX.Element => {
   const theme = useTheme() as Theme;
 
   const baseStyle = css`

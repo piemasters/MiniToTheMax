@@ -5,7 +5,7 @@ import CoverCategory from '../components/cover-category';
 import { graphql } from 'gatsby';
 import { Showcase } from '../types/app.types';
 
-const ShowcasePage = ({ data }: { data: Showcase }) => {
+const ShowcasePage = ({ data }: { data: Showcase }): React.ReactNode => {
   const categories = [
     {
       title: 'Board Games',

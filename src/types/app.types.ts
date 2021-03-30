@@ -86,7 +86,7 @@ export interface PaintGradient {
 }
 
 export interface PaintDetails {
-  [key: string]: any;
+  [key: string]: string | boolean | PaintGradient[] | JSX.Element | undefined;
   name: string;
   type: string;
   color: string;

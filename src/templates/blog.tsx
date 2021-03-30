@@ -22,7 +22,7 @@ const Blog = ({
 }: {
   data: Posts;
   pageContext: PostContext;
-}) => {
+}): React.ReactNode => {
   const postsStyle = css`
     list-style-type: none;
     margin: 0;

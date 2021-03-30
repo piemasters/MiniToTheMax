@@ -9,7 +9,13 @@ interface SeoProps {
   siteUrl: string;
 }
 
-const Seo = ({ title, description, image, article, siteUrl }: SeoProps) => {
+const Seo = ({
+  title,
+  description,
+  image,
+  article,
+  siteUrl,
+}: SeoProps): JSX.Element => {
   return (
     <>
       <Helmet title={title}>

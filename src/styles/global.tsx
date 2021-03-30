@@ -1,9 +1,11 @@
-import { css } from '@emotion/react';
+import { css, SerializedStyles } from '@emotion/react';
 import { Theme } from './theme';
 import { resetStyles } from './reset';
 
-export const globalStyles = (theme: Theme) => {
-  return [resetStyles, gatsby(theme), blockquote(theme)];
+export const globalStyles = (
+  theme: Theme
+): [SerializedStyles, SerializedStyles, SerializedStyles] => {
+  return [resetStyles, gatsby(), blockquote(theme)];
 };
 
 const blockquote = (theme: Theme) => css`
@@ -35,7 +37,7 @@ const blockquote = (theme: Theme) => css`
   }
 `;
 
-const gatsby = (theme: Theme) => css`
+const gatsby = () => css`
   .gatsby-resp-image-wrapper {
     width: 100%;
   }

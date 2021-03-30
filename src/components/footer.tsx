@@ -9,7 +9,7 @@ interface FooterProps {
   author: string;
 }
 
-const Footer = ({ author }: FooterProps) => {
+const Footer = ({ author }: FooterProps): JSX.Element => {
   const theme = useTheme() as Theme;
 
   const footerStyle = css`
@@ -53,18 +53,30 @@ const Footer = ({ author }: FooterProps) => {
   return (
     <footer data-testid="footer" css={footerStyle}>
       <div css={footerContentsStyle}>
-        <a href="https://davidnorton.app/" target="_blank">
+        <a href="https://davidnorton.app/" target="_blank" rel="noreferrer">
           © {new Date().getFullYear()} {author}
         </a>
         &nbsp;| All Rights Reserved
         <div css={iconContainerStyles}>
-          <a href="https://www.facebook.com/minitothemax" target={'_blank'}>
+          <a
+            href="https://www.facebook.com/minitothemax"
+            target={'_blank'}
+            rel="noreferrer"
+          >
             <Facebook css={iconStyles} />
           </a>
-          <a href="https://www.instagram.com/minitothemax/" target={'_blank'}>
+          <a
+            href="https://www.instagram.com/minitothemax/"
+            target={'_blank'}
+            rel="noreferrer"
+          >
             <Instagram css={iconStyles} />
           </a>
-          <a href="https://www.youtube.com/user/piemasters29" target={'_blank'}>
+          <a
+            href="https://www.youtube.com/user/piemasters29"
+            target={'_blank'}
+            rel="noreferrer"
+          >
             <Youtube css={iconStyles} />
           </a>
         </div>

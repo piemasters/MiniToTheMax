@@ -14,7 +14,7 @@ const Video = ({
   title,
   width = 714,
   aspectRatio = 16 / 9,
-}: VideoProps) => {
+}: VideoProps): JSX.Element => {
   const theme = useTheme() as Theme;
 
   const videoStyle = css`

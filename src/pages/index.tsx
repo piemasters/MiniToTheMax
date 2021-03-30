@@ -6,7 +6,7 @@ import Video from '../components/video';
 import PostSummary from '../components/post-summary';
 import Badges from '../components/badges';
 
-const IndexPage = () => {
+const IndexPage = (): React.ReactNode => {
   return (
     <StaticQuery
       query={graphql`

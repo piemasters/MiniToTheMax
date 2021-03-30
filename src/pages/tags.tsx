@@ -6,7 +6,7 @@ import PageLink from '../components/page-link';
 import { Tag, Tags } from '../types/app.types';
 import Layout from '../layouts/layout';
 
-const TagsPage = ({ data }: { data: Tags }) => (
+const TagsPage = ({ data }: { data: Tags }): React.ReactNode => (
   <Layout>
     <Seo title={'Tags'} description={'All blog tags'} pathname={'/tags'} />
     <div>

@@ -11,7 +11,7 @@ interface CoverCategoryProps {
   img: FluidObject;
 }
 
-const CoverCategory = (category: CoverCategoryProps) => {
+const CoverCategory = (category: CoverCategoryProps): JSX.Element => {
   const theme = useTheme() as Theme;
   const postStyle = css`
     margin: 1rem 0;

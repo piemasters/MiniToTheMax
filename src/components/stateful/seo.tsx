@@ -10,7 +10,13 @@ interface SeoProps {
   pathname?: string;
 }
 
-const Seo = ({ title, description, image, pathname, article }: SeoProps) => {
+const Seo = ({
+  title,
+  description,
+  image,
+  pathname,
+  article,
+}: SeoProps): JSX.Element => {
   const data = useStaticQuery(graphql`
     query SEO {
       site {

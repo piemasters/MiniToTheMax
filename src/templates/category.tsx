@@ -17,7 +17,7 @@ const Category = ({
 }: {
   pageContext: CategoryContext;
   data: Categories;
-}) => {
+}): React.ReactNode => {
   const categoryHeader = `${data.categories.totalCount} post${
     data.categories.totalCount === 1 ? '' : 's'
   } tagged with "${pageContext.category}"`;

@@ -3,7 +3,7 @@ import Layout from '../layouts/layout';
 import { graphql } from 'gatsby';
 import SimplePagination from '../components/simple-pagination';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-// @ts-ignore
+// @ts-expect-error: react-grid-gallery doesn't use TypeScript
 import Gallery from 'react-grid-gallery';
 import Seo from '../components/stateful/seo';
 import { DiscussionEmbed } from 'disqus-react';
@@ -24,7 +24,7 @@ const Post = ({
 }: {
   pageContext: PostContext;
   data: MdxPost;
-}) => {
+}): React.ReactNode => {
   const pagination = {
     previous: pageContext.previous
       ? {

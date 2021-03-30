@@ -18,7 +18,7 @@ const PostCategory = ({
 }: {
   pageContext: PostCategoryContext;
   data: Categories;
-}) => {
+}): React.ReactNode => {
   const postCategories: PostLink[] = data.categories.edges.map(
     (edge: MdxEdge) => ({
       slug: edge.node.fields.slug,

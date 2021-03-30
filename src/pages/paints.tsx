@@ -21,7 +21,7 @@ export interface AllPaintFilters {
   [key: string]: PaintFilters;
 }
 
-const Paints = () => {
+const Paints = (): React.ReactNode => {
   const sortPaints = (a: PaintDetails, b: PaintDetails) => {
     if (a.name < b.name) return -1;
     if (a.name > b.name) return 1;

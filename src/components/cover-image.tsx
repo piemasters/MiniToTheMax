@@ -12,7 +12,7 @@ const CoverImage = ({
   image: FluidObject;
   title: string;
   tall?: boolean;
-}) => {
+}): JSX.Element => {
   const theme = useTheme() as Theme;
 
   const headerContainer = css`

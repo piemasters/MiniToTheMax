@@ -15,7 +15,7 @@ interface PostSummaryProps {
   tall?: boolean;
 }
 
-const PostSummary = (post: PostSummaryProps) => {
+const PostSummary = (post: PostSummaryProps): JSX.Element => {
   const theme = useTheme() as Theme;
 
   const postStyle = css`
