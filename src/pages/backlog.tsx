@@ -222,7 +222,10 @@ const BacklogPage = () => {
       name: 'Kore Hammerskull',
       link: '/showcase/board-games/gorechosen/kore-hammerskull/',
     },
-    { name: 'Redarg Bloodfane' },
+    {
+      name: 'Redarg Bloodfane',
+      link: '/showcase/board-games/gorechosen/redarg-bloodfane/',
+    },
     {
       name: 'Vexnar the Reaper',
       link: '/showcase/board-games/gorechosen/vexnar-the-reaper/',
