@@ -51,9 +51,11 @@ const Post = ({
     imgPublicURL: data.post.frontmatter.featuredImage.publicURL,
     featuredImage:
       data.post.frontmatter.featuredImage.childImageSharp.gatsbyImageData,
-    gallery: data.post.frontmatter.gallery.map(
-      (node: MdxFrontmatterGalleryImage) => node.childImageSharp
-    ),
+    gallery: data.post.frontmatter.gallery
+      ? data.post.frontmatter.gallery.map(
+          (node: MdxFrontmatterGalleryImage) => node.childImageSharp
+        )
+      : [],
   };
 
   const disqusShortname = process.env.GATSBY_DISQUS_NAME || 'disqusShortname';
@@ -104,7 +106,7 @@ const Post = ({
       </div>
 
       <MDXRenderer>{post.body}</MDXRenderer>
-      {post.gallery && post.gallery.length > 0 && (
+      {post.gallery.length > 0 && (
         <div>
           <h2>Gallery</h2>
           <div css={galleryContainerStyle}>
