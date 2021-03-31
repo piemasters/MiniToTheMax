@@ -25,11 +25,7 @@ const IndexPage = (): React.ReactNode => {
                   date
                   featuredImage {
                     childImageSharp {
-                      fluid(maxWidth: 800, maxHeight: 400) {
-                        ...GatsbyImageSharpFluid
-                        presentationWidth
-                        presentationHeight
-                      }
+                      gatsbyImageData(layout: CONSTRAINED)
                     }
                   }
                 }
@@ -56,7 +52,7 @@ const IndexPage = (): React.ReactNode => {
             date={data.posts.edges[0].node.frontmatter.date}
             img={
               data.posts.edges[0].node.frontmatter.featuredImage.childImageSharp
-                .fluid
+                .gatsbyImageData
             }
             slug={data.posts.edges[0].node.fields.slug}
             title={data.posts.edges[0].node.frontmatter.title}

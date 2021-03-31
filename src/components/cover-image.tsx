@@ -1,15 +1,14 @@
 import React from 'react';
 import { Theme } from '../styles/theme';
 import { css, useTheme } from '@emotion/react';
-import Img from 'gatsby-image';
-import { FluidObject } from 'gatsby-image';
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 
 const CoverImage = ({
   image,
   title,
   tall = false,
 }: {
-  image: FluidObject;
+  image: IGatsbyImageData;
   title: string;
   tall?: boolean;
 }): JSX.Element => {
@@ -31,7 +30,13 @@ const CoverImage = ({
 
   return (
     <div css={headerContainer} data-testid="cover-image">
-      <Img fluid={image} />
+      <GatsbyImage
+        alt={'test'}
+        image={image}
+        css={css`
+          position: initial;
+        `}
+      />
       <h2 css={postHeaderStyle}>{title}</h2>
     </div>
   );

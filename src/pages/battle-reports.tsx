@@ -14,7 +14,7 @@ const BattleReportsPage = ({
     {
       title: '40k',
       slug: '/battle-reports/40k',
-      img: data.fortyThousand.childImageSharp.fluid,
+      img: data.fortyThousand.childImageSharp.gatsbyImageData,
     },
   ];
   return (
@@ -50,9 +50,7 @@ export const pageQuery = graphql`
       }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
   }

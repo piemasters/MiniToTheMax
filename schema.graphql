@@ -187,9 +187,15 @@ type File implements Node {
         "Configures the locale Moment.js will use to format the date."
         locale: String
     ): Date!
+    "Returns the first child node of type ImageSharp or null if there are no children of given type on this node"
     childImageSharp: ImageSharp
+    "Returns the first child node of type Mdx or null if there are no children of given type on this node"
     childMdx: Mdx
     children: [Node!]!
+    "Returns all children nodes filtered by type ImageSharp"
+    childrenImageSharp: [ImageSharp]
+    "Returns all children nodes filtered by type Mdx"
+    childrenMdx: [Mdx]
     ctime(
         "Returns the difference between this date and the current time. Defaults to \"milliseconds\" but you can also pass in as the measurement \"years\", \"months\", \"weeks\", \"days\", \"hours\", \"minutes\", and \"seconds\"."
         difference: String,
@@ -272,7 +278,7 @@ type FileGroupConnection {
 
 type ImageSharp implements Node {
     children: [Node!]!
-    fixed(background: String = "rgba(0,0,0,1)", base64Width: Int, cropFocus: ImageCropFocus = ATTENTION, duotone: DuotoneGradient, fit: ImageFit = COVER, grayscale: Boolean = false, height: Int, jpegProgressive: Boolean = true, jpegQuality: Int, pngCompressionSpeed: Int = 4, pngQuality: Int, quality: Int, rotate: Int = 0, toFormat: ImageFormat = NO_CHANGE, toFormatBase64: ImageFormat = NO_CHANGE, traceSVG: Potrace, trim: Float = 0.0, webpQuality: Int, width: Int): ImageSharpFixed
+    fixed(background: String = "rgba(0,0,0,1)", base64Width: Int, cropFocus: ImageCropFocus = ATTENTION, duotone: DuotoneGradient, fit: ImageFit = COVER, grayscale: Boolean = false, height: Int, jpegProgressive: Boolean = true, jpegQuality: Int, pngCompressionSpeed: Int = 4, pngQuality: Int, quality: Int, rotate: Int = 0, toFormat: ImageFormat = AUTO, toFormatBase64: ImageFormat = AUTO, traceSVG: Potrace, trim: Float = 0.0, webpQuality: Int, width: Int): ImageSharpFixed
     fluid(
         background: String = "rgba(0,0,0,1)",
         base64Width: Int,
@@ -291,42 +297,103 @@ type ImageSharp implements Node {
         sizes: String = "",
         "A list of image widths to be generated. Example: [ 200, 340, 520, 890 ]"
         srcSetBreakpoints: [Int] = [],
-        toFormat: ImageFormat = NO_CHANGE,
-        toFormatBase64: ImageFormat = NO_CHANGE,
+        toFormat: ImageFormat = AUTO,
+        toFormatBase64: ImageFormat = AUTO,
         traceSVG: Potrace,
         trim: Float = 0.0,
         webpQuality: Int
     ): ImageSharpFluid
+    gatsbyImageData(
+        """
+
+        If set along with width or height, this will set the value of the other dimension to match the provided aspect ratio, cropping the image if needed.
+        If neither width or height is provided, height will be set based on the intrinsic width of the source image.
+        """
+        aspectRatio: Float,
+        "Options to pass to sharp when generating AVIF images."
+        avifOptions: AVIFOptions,
+        "Background color applied to the wrapper. Also passed to sharp to use as a background when \"letterboxing\" an image to another aspect ratio."
+        backgroundColor: String,
+        "Options for the low-resolution placeholder image. Set placeholder to \"BLURRED\" to use this"
+        blurredOptions: BlurredOptions,
+        """
+
+        Specifies the image widths to generate. For FIXED and CONSTRAINED images it is better to allow these to be determined automatically,
+        based on the image size. For FULL_WIDTH images this can be used to override the default, which is [750, 1080, 1366, 1920].
+        It will never generate any images larger than the source.
+        """
+        breakpoints: [Int],
+        """
+
+        The image formats to generate. Valid values are "AUTO" (meaning the same format as the source image), "JPG", "PNG", "WEBP" and "AVIF".
+        The default value is [AUTO, WEBP], and you should rarely need to change this. Take care if you specify JPG or PNG when you do
+        not know the formats of the source images, as this could lead to unwanted results such as converting JPEGs to PNGs. Specifying
+        both PNG and JPG is not supported and will be ignored.
+        """
+        formats: [ImageFormat],
+        """
+
+        The display height of the generated image for layout = FIXED, and the maximum display height of the largest image for layout = CONSTRAINED.
+        The image will be cropped if the aspect ratio does not match the source image. If omitted, it is calculated from the supplied width,
+        matching the aspect ratio of the source image.
+        """
+        height: Int,
+        "Options to pass to sharp when generating JPG images."
+        jpgOptions: JPGOptions,
+        """
+
+        The layout for the image.
+        FIXED: A static image sized, that does not resize according to the screen width
+        FULL_WIDTH: The image resizes to fit its container. Pass a "sizes" option if it isn't going to be the full width of the screen.
+        CONSTRAINED: Resizes to fit its container, up to a maximum width, at which point it will remain fixed in size.
+        """
+        layout: ImageLayout = CONSTRAINED,
+        """
+
+        A list of image pixel densities to generate. It will never generate images larger than the source, and will always include a 1x image.
+        Default is [ 1, 2 ] for FIXED images, meaning 1x and 2x and [0.25, 0.5, 1, 2] for CONSTRAINED. In this case, an image with a constrained layout
+        and width = 400 would generate images at 100, 200, 400 and 800px wide. Ignored for FULL_WIDTH images, which use breakpoints instead
+        """
+        outputPixelDensities: [Float],
+        """
+
+        Format of generated placeholder image, displayed while the main image loads.
+        BLURRED: a blurred, low resolution image, encoded as a base64 data URI (default)
+        DOMINANT_COLOR: a solid color, calculated from the dominant color of the image.
+        TRACED_SVG: a low-resolution traced SVG of the image.
+        NONE: no placeholder. Set "background" to use a fixed background color.
+        """
+        placeholder: ImagePlaceholder,
+        "Options to pass to sharp when generating PNG images."
+        pngOptions: PNGOptions,
+        "The default quality. This is overridden by any format-specific options"
+        quality: Int,
+        """
+
+        The "sizes" property, passed to the img tag. This describes the display size of the image.
+        This does not affect the generated images, but is used by the browser to decide which images to download.
+        You should usually leave this blank, and a suitable value will be calculated. The exception is if a FULL_WIDTH image
+        does not actually span the full width of the screen, in which case you should pass the correct size here.
+        """
+        sizes: String,
+        "Options for traced placeholder SVGs. You also should set placeholder to \"TRACED_SVG\"."
+        tracedSVGOptions: Potrace,
+        "Options to pass to sharp to control cropping and other image manipulations."
+        transformOptions: TransformOptions,
+        "Options to pass to sharp when generating WebP images."
+        webpOptions: WebPOptions,
+        """
+
+        The display width of the generated image for layout = FIXED, and the maximum display width of the largest image for layout = CONSTRAINED.
+        Ignored if layout = FLUID.
+        """
+        width: Int
+    ): JSON!
     id: ID!
     internal: Internal!
     original: ImageSharpOriginal
     parent: Node
-    resize(background: String = "rgba(0,0,0,1)", base64: Boolean = false, cropFocus: ImageCropFocus = ATTENTION, duotone: DuotoneGradient, fit: ImageFit = COVER, grayscale: Boolean = false, height: Int, jpegProgressive: Boolean = true, jpegQuality: Int, pngCompressionLevel: Int = 9, pngCompressionSpeed: Int = 4, pngQuality: Int, quality: Int, rotate: Int = 0, toFormat: ImageFormat = NO_CHANGE, traceSVG: Potrace, trim: Float = 0.0, webpQuality: Int, width: Int): ImageSharpResize
-    resolutions(background: String = "rgba(0,0,0,1)", base64Width: Int, cropFocus: ImageCropFocus = ATTENTION, duotone: DuotoneGradient, fit: ImageFit = COVER, grayscale: Boolean = false, height: Int, jpegProgressive: Boolean = true, jpegQuality: Int, pngCompressionSpeed: Int = 4, pngQuality: Int, quality: Int, rotate: Int = 0, toFormat: ImageFormat = NO_CHANGE, toFormatBase64: ImageFormat = NO_CHANGE, traceSVG: Potrace, trim: Float = 0.0, webpQuality: Int, width: Int): ImageSharpResolutions @deprecated(reason : "Resolutions was deprecated in Gatsby v2. It's been renamed to \"fixed\" https://example.com/write-docs-and-fix-this-example-link")
-    sizes(
-        background: String = "rgba(0,0,0,1)",
-        base64Width: Int,
-        cropFocus: ImageCropFocus = ATTENTION,
-        duotone: DuotoneGradient,
-        fit: ImageFit = COVER,
-        grayscale: Boolean = false,
-        jpegProgressive: Boolean = true,
-        jpegQuality: Int,
-        maxHeight: Int,
-        maxWidth: Int,
-        pngCompressionSpeed: Int = 4,
-        pngQuality: Int,
-        quality: Int,
-        rotate: Int = 0,
-        sizes: String = "",
-        "A list of image widths to be generated. Example: [ 200, 340, 520, 890 ]"
-        srcSetBreakpoints: [Int] = [],
-        toFormat: ImageFormat = NO_CHANGE,
-        toFormatBase64: ImageFormat = NO_CHANGE,
-        traceSVG: Potrace,
-        trim: Float = 0.0,
-        webpQuality: Int
-    ): ImageSharpSizes @deprecated(reason : "Sizes was deprecated in Gatsby v2. It's been renamed to \"fluid\" https://example.com/write-docs-and-fix-this-example-link")
+    resize(background: String = "rgba(0,0,0,1)", base64: Boolean = false, cropFocus: ImageCropFocus = ATTENTION, duotone: DuotoneGradient, fit: ImageFit = COVER, grayscale: Boolean = false, height: Int, jpegProgressive: Boolean = true, jpegQuality: Int, pngCompressionLevel: Int = 9, pngCompressionSpeed: Int = 4, pngQuality: Int, quality: Int, rotate: Int = 0, toFormat: ImageFormat = AUTO, traceSVG: Potrace, trim: Float = 0.0, webpQuality: Int, width: Int): ImageSharpResize
 }
 
 type ImageSharpConnection {
@@ -394,34 +461,6 @@ type ImageSharpResize {
     src: String
     tracedSVG: String
     width: Int
-}
-
-type ImageSharpResolutions {
-    aspectRatio: Float
-    base64: String
-    height: Float!
-    originalName: String
-    src: String!
-    srcSet: String!
-    srcSetWebp: String
-    srcWebp: String
-    tracedSVG: String
-    width: Float!
-}
-
-type ImageSharpSizes {
-    aspectRatio: Float!
-    base64: String
-    originalImg: String
-    originalName: String
-    presentationHeight: Int!
-    presentationWidth: Int!
-    sizes: String!
-    src: String!
-    srcSet: String!
-    srcSetWebp: String
-    srcWebp: String
-    tracedSVG: String
 }
 
 type Internal {
@@ -533,8 +572,8 @@ type Query {
     allSitePage(filter: SitePageFilterInput, limit: Int, skip: Int, sort: SitePageSortInput): SitePageConnection!
     allSitePlugin(filter: SitePluginFilterInput, limit: Int, skip: Int, sort: SitePluginSortInput): SitePluginConnection!
     directory(absolutePath: StringQueryOperatorInput, accessTime: DateQueryOperatorInput, atime: DateQueryOperatorInput, atimeMs: FloatQueryOperatorInput, base: StringQueryOperatorInput, birthTime: DateQueryOperatorInput, birthtime: DateQueryOperatorInput, birthtimeMs: FloatQueryOperatorInput, blksize: IntQueryOperatorInput, blocks: IntQueryOperatorInput, changeTime: DateQueryOperatorInput, children: NodeFilterListInput, ctime: DateQueryOperatorInput, ctimeMs: FloatQueryOperatorInput, dev: IntQueryOperatorInput, dir: StringQueryOperatorInput, ext: StringQueryOperatorInput, extension: StringQueryOperatorInput, gid: IntQueryOperatorInput, id: StringQueryOperatorInput, ino: FloatQueryOperatorInput, internal: InternalFilterInput, mode: IntQueryOperatorInput, modifiedTime: DateQueryOperatorInput, mtime: DateQueryOperatorInput, mtimeMs: FloatQueryOperatorInput, name: StringQueryOperatorInput, nlink: IntQueryOperatorInput, parent: NodeFilterInput, prettySize: StringQueryOperatorInput, rdev: IntQueryOperatorInput, relativeDirectory: StringQueryOperatorInput, relativePath: StringQueryOperatorInput, root: StringQueryOperatorInput, size: IntQueryOperatorInput, sourceInstanceName: StringQueryOperatorInput, uid: IntQueryOperatorInput): Directory
-    file(absolutePath: StringQueryOperatorInput, accessTime: DateQueryOperatorInput, atime: DateQueryOperatorInput, atimeMs: FloatQueryOperatorInput, base: StringQueryOperatorInput, birthTime: DateQueryOperatorInput, birthtime: DateQueryOperatorInput, birthtimeMs: FloatQueryOperatorInput, blksize: IntQueryOperatorInput, blocks: IntQueryOperatorInput, changeTime: DateQueryOperatorInput, childImageSharp: ImageSharpFilterInput, childMdx: MdxFilterInput, children: NodeFilterListInput, ctime: DateQueryOperatorInput, ctimeMs: FloatQueryOperatorInput, dev: IntQueryOperatorInput, dir: StringQueryOperatorInput, ext: StringQueryOperatorInput, extension: StringQueryOperatorInput, gid: IntQueryOperatorInput, id: StringQueryOperatorInput, ino: FloatQueryOperatorInput, internal: InternalFilterInput, mode: IntQueryOperatorInput, modifiedTime: DateQueryOperatorInput, mtime: DateQueryOperatorInput, mtimeMs: FloatQueryOperatorInput, name: StringQueryOperatorInput, nlink: IntQueryOperatorInput, parent: NodeFilterInput, prettySize: StringQueryOperatorInput, publicURL: StringQueryOperatorInput, rdev: IntQueryOperatorInput, relativeDirectory: StringQueryOperatorInput, relativePath: StringQueryOperatorInput, root: StringQueryOperatorInput, size: IntQueryOperatorInput, sourceInstanceName: StringQueryOperatorInput, uid: IntQueryOperatorInput): File
-    imageSharp(children: NodeFilterListInput, fixed: ImageSharpFixedFilterInput, fluid: ImageSharpFluidFilterInput, id: StringQueryOperatorInput, internal: InternalFilterInput, original: ImageSharpOriginalFilterInput, parent: NodeFilterInput, resize: ImageSharpResizeFilterInput, resolutions: ImageSharpResolutionsFilterInput, sizes: ImageSharpSizesFilterInput): ImageSharp
+    file(absolutePath: StringQueryOperatorInput, accessTime: DateQueryOperatorInput, atime: DateQueryOperatorInput, atimeMs: FloatQueryOperatorInput, base: StringQueryOperatorInput, birthTime: DateQueryOperatorInput, birthtime: DateQueryOperatorInput, birthtimeMs: FloatQueryOperatorInput, blksize: IntQueryOperatorInput, blocks: IntQueryOperatorInput, changeTime: DateQueryOperatorInput, childImageSharp: ImageSharpFilterInput, childMdx: MdxFilterInput, children: NodeFilterListInput, childrenImageSharp: ImageSharpFilterListInput, childrenMdx: MdxFilterListInput, ctime: DateQueryOperatorInput, ctimeMs: FloatQueryOperatorInput, dev: IntQueryOperatorInput, dir: StringQueryOperatorInput, ext: StringQueryOperatorInput, extension: StringQueryOperatorInput, gid: IntQueryOperatorInput, id: StringQueryOperatorInput, ino: FloatQueryOperatorInput, internal: InternalFilterInput, mode: IntQueryOperatorInput, modifiedTime: DateQueryOperatorInput, mtime: DateQueryOperatorInput, mtimeMs: FloatQueryOperatorInput, name: StringQueryOperatorInput, nlink: IntQueryOperatorInput, parent: NodeFilterInput, prettySize: StringQueryOperatorInput, publicURL: StringQueryOperatorInput, rdev: IntQueryOperatorInput, relativeDirectory: StringQueryOperatorInput, relativePath: StringQueryOperatorInput, root: StringQueryOperatorInput, size: IntQueryOperatorInput, sourceInstanceName: StringQueryOperatorInput, uid: IntQueryOperatorInput): File
+    imageSharp(children: NodeFilterListInput, fixed: ImageSharpFixedFilterInput, fluid: ImageSharpFluidFilterInput, gatsbyImageData: JSONQueryOperatorInput, id: StringQueryOperatorInput, internal: InternalFilterInput, original: ImageSharpOriginalFilterInput, parent: NodeFilterInput, resize: ImageSharpResizeFilterInput): ImageSharp
     mdx(body: StringQueryOperatorInput, children: NodeFilterListInput, excerpt: StringQueryOperatorInput, fields: MdxFieldsFilterInput, fileAbsolutePath: StringQueryOperatorInput, frontmatter: MdxFrontmatterFilterInput, headings: MdxHeadingMdxFilterListInput, html: StringQueryOperatorInput, id: StringQueryOperatorInput, internal: InternalFilterInput, mdxAST: JSONQueryOperatorInput, parent: NodeFilterInput, rawBody: StringQueryOperatorInput, slug: StringQueryOperatorInput, tableOfContents: JSONQueryOperatorInput, timeToRead: IntQueryOperatorInput, wordCount: MdxWordCountFilterInput): Mdx
     site(buildTime: DateQueryOperatorInput, children: NodeFilterListInput, host: StringQueryOperatorInput, id: StringQueryOperatorInput, internal: InternalFilterInput, parent: NodeFilterInput, pathPrefix: StringQueryOperatorInput, polyfill: BooleanQueryOperatorInput, port: IntQueryOperatorInput, siteMetadata: SiteSiteMetadataFilterInput): Site
     siteBuildMetadata(buildTime: DateQueryOperatorInput, children: NodeFilterListInput, id: StringQueryOperatorInput, internal: InternalFilterInput, parent: NodeFilterInput): SiteBuildMetadata
@@ -783,30 +822,58 @@ type SitePluginPackageJsonPeerDependencies {
 }
 
 type SitePluginPluginOptions {
+    allExtensions: Boolean
+    autoLabel: String
+    backgroundColor: String
     background_color: String
+    base64Width: Int
     cacheDigest: String
-    cachePublic: Boolean
     cache_busting_mode: String
+    createLinkInHead: Boolean
+    crossOrigin: String
+    cssPropOptimization: Boolean
+    defaultQuality: Int
     description: String
+    disableBgImage: Boolean
+    disableBgImageOnAlpha: Boolean
     display: String
     extensions: [String]
+    failOnError: Boolean
     gatsbyRemarkPlugins: [SitePluginPluginOptionsGatsbyRemarkPlugins]
     gtagConfig: SitePluginPluginOptionsGtagConfig
     icon: String
     include_favicon: Boolean
+    isTSX: Boolean
+    jsxPragma: String
+    labelFormat: String
     lang: String
     legacy: Boolean
+    lessBabel: Boolean
+    linkImagesToOriginal: Boolean
+    loading: String
+    markdownCaptions: Boolean
+    maxWidth: Int
+    mediaTypes: [String]
     name: String
+    output: String
     path: String
     pathCheck: Boolean
     pluginConfig: SitePluginPluginOptionsPluginConfig
     plugins: [SitePluginPluginOptionsPlugins]
     precachePages: [String]
+    quality: Int
+    root: String
     short_name: String
+    showCaptions: Boolean
+    sizeByPixelDensity: Boolean
+    sourceMap: Boolean
     start_url: String
+    stripMetadata: Boolean
     theme_color: String
     theme_color_in_head: Boolean
+    tracedSVG: Boolean
     trackingIds: [String]
+    withWebp: Boolean
 }
 
 type SitePluginPluginOptionsGatsbyRemarkPlugins {
@@ -835,9 +902,26 @@ type SitePluginPluginOptionsPlugins {
     browserAPIs: [String]
     id: String
     name: String
+    nodeAPIs: [String]
     pluginFilepath: String
+    pluginOptions: SitePluginPluginOptionsPluginsPluginOptions
     resolve: String
     version: String
+}
+
+type SitePluginPluginOptionsPluginsPluginOptions {
+    backgroundColor: String
+    disableBgImage: Boolean
+    disableBgImageOnAlpha: Boolean
+    linkImagesToOriginal: Boolean
+    loading: String
+    markdownCaptions: Boolean
+    maxWidth: Int
+    quality: Int
+    showCaptions: Boolean
+    sizeByPixelDensity: Boolean
+    tracedSVG: Boolean
+    withWebp: Boolean
 }
 
 type SiteSiteMetadata {
@@ -1019,6 +1103,7 @@ enum FileFieldsEnum {
     childImageSharp___fluid___srcSetWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childImageSharp___fluid___srcWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childImageSharp___fluid___tracedSVG @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childImageSharp___gatsbyImageData @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childImageSharp___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childImageSharp___internal___content @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childImageSharp___internal___contentDigest @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
@@ -1051,28 +1136,6 @@ enum FileFieldsEnum {
     childImageSharp___resize___src @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childImageSharp___resize___tracedSVG @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childImageSharp___resize___width @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___resolutions___aspectRatio @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___resolutions___base64 @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___resolutions___height @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___resolutions___originalName @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___resolutions___src @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___resolutions___srcSet @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___resolutions___srcSetWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___resolutions___srcWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___resolutions___tracedSVG @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___resolutions___width @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___sizes___aspectRatio @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___sizes___base64 @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___sizes___originalImg @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___sizes___originalName @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___sizes___presentationHeight @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___sizes___presentationWidth @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___sizes___sizes @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___sizes___src @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___sizes___srcSet @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___sizes___srcSetWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___sizes___srcWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    childImageSharp___sizes___tracedSVG @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childMdx___body
     childMdx___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childMdx___children___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
@@ -1106,6 +1169,8 @@ enum FileFieldsEnum {
     childMdx___frontmatter___featuredImage___blocks
     childMdx___frontmatter___featuredImage___changeTime
     childMdx___frontmatter___featuredImage___children
+    childMdx___frontmatter___featuredImage___childrenImageSharp
+    childMdx___frontmatter___featuredImage___childrenMdx
     childMdx___frontmatter___featuredImage___ctime
     childMdx___frontmatter___featuredImage___ctimeMs
     childMdx___frontmatter___featuredImage___dev
@@ -1143,6 +1208,8 @@ enum FileFieldsEnum {
     childMdx___frontmatter___gallery___blocks
     childMdx___frontmatter___gallery___changeTime
     childMdx___frontmatter___gallery___children
+    childMdx___frontmatter___gallery___childrenImageSharp
+    childMdx___frontmatter___gallery___childrenMdx
     childMdx___frontmatter___gallery___ctime
     childMdx___frontmatter___gallery___ctimeMs
     childMdx___frontmatter___gallery___dev
@@ -1206,6 +1273,214 @@ enum FileFieldsEnum {
     childMdx___wordCount___sentences @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     childMdx___wordCount___words @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     children
+    childrenImageSharp
+    childrenImageSharp___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___children___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___children___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___internal___content @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___internal___contentDigest @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___internal___description @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___internal___fieldOwners @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___internal___ignoreType @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___internal___mediaType @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___internal___owner @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___internal___type @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___parent___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___children___parent___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fixed___aspectRatio @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fixed___base64 @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fixed___height @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fixed___originalName @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fixed___src @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fixed___srcSet @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fixed___srcSetWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fixed___srcWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fixed___tracedSVG @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fixed___width @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fluid___aspectRatio @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fluid___base64 @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fluid___originalImg @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fluid___originalName @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fluid___presentationHeight @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fluid___presentationWidth @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fluid___sizes @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fluid___src @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fluid___srcSet @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fluid___srcSetWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fluid___srcWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___fluid___tracedSVG @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___gatsbyImageData @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___internal___content @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___internal___contentDigest @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___internal___description @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___internal___fieldOwners @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___internal___ignoreType @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___internal___mediaType @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___internal___owner @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___internal___type @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___original___height @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___original___src @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___original___width @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___children___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___children___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___internal___content @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___internal___contentDigest @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___internal___description @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___internal___fieldOwners @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___internal___ignoreType @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___internal___mediaType @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___internal___owner @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___internal___type @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___parent___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___parent___parent___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___resize___aspectRatio @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___resize___height @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___resize___originalName @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___resize___src @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___resize___tracedSVG @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenImageSharp___resize___width @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx
+    childrenMdx___body
+    childrenMdx___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___children___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___children___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___internal___content @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___internal___contentDigest @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___internal___description @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___internal___fieldOwners @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___internal___ignoreType @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___internal___mediaType @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___internal___owner @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___internal___type @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___parent___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___children___parent___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___excerpt @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___fields___slug @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___fileAbsolutePath
+    childrenMdx___frontmatter___categories
+    childrenMdx___frontmatter___date
+    childrenMdx___frontmatter___featuredImage___absolutePath
+    childrenMdx___frontmatter___featuredImage___accessTime
+    childrenMdx___frontmatter___featuredImage___atime
+    childrenMdx___frontmatter___featuredImage___atimeMs
+    childrenMdx___frontmatter___featuredImage___base
+    childrenMdx___frontmatter___featuredImage___birthTime
+    childrenMdx___frontmatter___featuredImage___birthtime
+    childrenMdx___frontmatter___featuredImage___birthtimeMs
+    childrenMdx___frontmatter___featuredImage___blksize
+    childrenMdx___frontmatter___featuredImage___blocks
+    childrenMdx___frontmatter___featuredImage___changeTime
+    childrenMdx___frontmatter___featuredImage___children
+    childrenMdx___frontmatter___featuredImage___childrenImageSharp
+    childrenMdx___frontmatter___featuredImage___childrenMdx
+    childrenMdx___frontmatter___featuredImage___ctime
+    childrenMdx___frontmatter___featuredImage___ctimeMs
+    childrenMdx___frontmatter___featuredImage___dev
+    childrenMdx___frontmatter___featuredImage___dir
+    childrenMdx___frontmatter___featuredImage___ext
+    childrenMdx___frontmatter___featuredImage___extension
+    childrenMdx___frontmatter___featuredImage___gid
+    childrenMdx___frontmatter___featuredImage___id
+    childrenMdx___frontmatter___featuredImage___ino
+    childrenMdx___frontmatter___featuredImage___mode
+    childrenMdx___frontmatter___featuredImage___modifiedTime
+    childrenMdx___frontmatter___featuredImage___mtime
+    childrenMdx___frontmatter___featuredImage___mtimeMs
+    childrenMdx___frontmatter___featuredImage___name
+    childrenMdx___frontmatter___featuredImage___nlink
+    childrenMdx___frontmatter___featuredImage___prettySize
+    childrenMdx___frontmatter___featuredImage___publicURL
+    childrenMdx___frontmatter___featuredImage___rdev
+    childrenMdx___frontmatter___featuredImage___relativeDirectory
+    childrenMdx___frontmatter___featuredImage___relativePath
+    childrenMdx___frontmatter___featuredImage___root
+    childrenMdx___frontmatter___featuredImage___size
+    childrenMdx___frontmatter___featuredImage___sourceInstanceName
+    childrenMdx___frontmatter___featuredImage___uid
+    childrenMdx___frontmatter___gallery
+    childrenMdx___frontmatter___gallery___absolutePath
+    childrenMdx___frontmatter___gallery___accessTime
+    childrenMdx___frontmatter___gallery___atime
+    childrenMdx___frontmatter___gallery___atimeMs
+    childrenMdx___frontmatter___gallery___base
+    childrenMdx___frontmatter___gallery___birthTime
+    childrenMdx___frontmatter___gallery___birthtime
+    childrenMdx___frontmatter___gallery___birthtimeMs
+    childrenMdx___frontmatter___gallery___blksize
+    childrenMdx___frontmatter___gallery___blocks
+    childrenMdx___frontmatter___gallery___changeTime
+    childrenMdx___frontmatter___gallery___children
+    childrenMdx___frontmatter___gallery___childrenImageSharp
+    childrenMdx___frontmatter___gallery___childrenMdx
+    childrenMdx___frontmatter___gallery___ctime
+    childrenMdx___frontmatter___gallery___ctimeMs
+    childrenMdx___frontmatter___gallery___dev
+    childrenMdx___frontmatter___gallery___dir
+    childrenMdx___frontmatter___gallery___ext
+    childrenMdx___frontmatter___gallery___extension
+    childrenMdx___frontmatter___gallery___gid
+    childrenMdx___frontmatter___gallery___id
+    childrenMdx___frontmatter___gallery___ino
+    childrenMdx___frontmatter___gallery___mode
+    childrenMdx___frontmatter___gallery___modifiedTime
+    childrenMdx___frontmatter___gallery___mtime
+    childrenMdx___frontmatter___gallery___mtimeMs
+    childrenMdx___frontmatter___gallery___name
+    childrenMdx___frontmatter___gallery___nlink
+    childrenMdx___frontmatter___gallery___prettySize
+    childrenMdx___frontmatter___gallery___publicURL
+    childrenMdx___frontmatter___gallery___rdev
+    childrenMdx___frontmatter___gallery___relativeDirectory
+    childrenMdx___frontmatter___gallery___relativePath
+    childrenMdx___frontmatter___gallery___root
+    childrenMdx___frontmatter___gallery___size
+    childrenMdx___frontmatter___gallery___sourceInstanceName
+    childrenMdx___frontmatter___gallery___uid
+    childrenMdx___frontmatter___published
+    childrenMdx___frontmatter___tags
+    childrenMdx___frontmatter___title
+    childrenMdx___headings @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___headings___depth @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___headings___value @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___html @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___internal___content @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___internal___contentDigest @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___internal___description @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___internal___fieldOwners @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___internal___ignoreType @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___internal___mediaType @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___internal___owner @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___internal___type @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___mdxAST @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___children___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___children___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___internal___content @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___internal___contentDigest @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___internal___description @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___internal___fieldOwners @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___internal___ignoreType @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___internal___mediaType @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___internal___owner @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___internal___type @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___parent___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___parent___parent___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___rawBody
+    childrenMdx___slug
+    childrenMdx___tableOfContents @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___timeToRead @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___wordCount___paragraphs @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___wordCount___sentences @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    childrenMdx___wordCount___words @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     children___children
     children___children___children
     children___children___children___children
@@ -1348,10 +1623,25 @@ enum ImageFit {
 }
 
 enum ImageFormat {
+    AUTO
+    AVIF
     JPG
     NO_CHANGE
     PNG
     WEBP
+}
+
+enum ImageLayout {
+    CONSTRAINED
+    FIXED
+    FULL_WIDTH
+}
+
+enum ImagePlaceholder {
+    BLURRED
+    DOMINANT_COLOR
+    NONE
+    TRACED_SVG
 }
 
 enum ImageSharpFieldsEnum {
@@ -1416,6 +1706,7 @@ enum ImageSharpFieldsEnum {
     fluid___srcSetWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     fluid___srcWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     fluid___tracedSVG @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    gatsbyImageData @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     internal___content @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     internal___contentDigest @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
@@ -1472,28 +1763,6 @@ enum ImageSharpFieldsEnum {
     resize___src @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     resize___tracedSVG @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     resize___width @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    resolutions___aspectRatio @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    resolutions___base64 @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    resolutions___height @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    resolutions___originalName @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    resolutions___src @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    resolutions___srcSet @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    resolutions___srcSetWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    resolutions___srcWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    resolutions___tracedSVG @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    resolutions___width @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    sizes___aspectRatio @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    sizes___base64 @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    sizes___originalImg @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    sizes___originalName @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    sizes___presentationHeight @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    sizes___presentationWidth @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    sizes___sizes @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    sizes___src @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    sizes___srcSet @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    sizes___srcSetWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    sizes___srcWebp @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
-    sizes___tracedSVG @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
 }
 
 enum MdxFieldsEnum {
@@ -1554,6 +1823,7 @@ enum MdxFieldsEnum {
     frontmatter___featuredImage___blocks
     frontmatter___featuredImage___changeTime
     frontmatter___featuredImage___childImageSharp___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___featuredImage___childImageSharp___gatsbyImageData @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___featuredImage___childImageSharp___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___featuredImage___childMdx___body
     frontmatter___featuredImage___childMdx___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
@@ -1568,6 +1838,23 @@ enum MdxFieldsEnum {
     frontmatter___featuredImage___childMdx___tableOfContents @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___featuredImage___childMdx___timeToRead @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___featuredImage___children
+    frontmatter___featuredImage___childrenImageSharp
+    frontmatter___featuredImage___childrenImageSharp___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___featuredImage___childrenImageSharp___gatsbyImageData @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___featuredImage___childrenImageSharp___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___featuredImage___childrenMdx
+    frontmatter___featuredImage___childrenMdx___body
+    frontmatter___featuredImage___childrenMdx___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___featuredImage___childrenMdx___excerpt @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___featuredImage___childrenMdx___fileAbsolutePath
+    frontmatter___featuredImage___childrenMdx___headings @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___featuredImage___childrenMdx___html @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___featuredImage___childrenMdx___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___featuredImage___childrenMdx___mdxAST @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___featuredImage___childrenMdx___rawBody
+    frontmatter___featuredImage___childrenMdx___slug
+    frontmatter___featuredImage___childrenMdx___tableOfContents @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___featuredImage___childrenMdx___timeToRead @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___featuredImage___children___children
     frontmatter___featuredImage___children___id
     frontmatter___featuredImage___ctime
@@ -1617,6 +1904,7 @@ enum MdxFieldsEnum {
     frontmatter___gallery___blocks
     frontmatter___gallery___changeTime
     frontmatter___gallery___childImageSharp___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___gallery___childImageSharp___gatsbyImageData @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___gallery___childImageSharp___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___gallery___childMdx___body
     frontmatter___gallery___childMdx___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
@@ -1631,6 +1919,23 @@ enum MdxFieldsEnum {
     frontmatter___gallery___childMdx___tableOfContents @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___gallery___childMdx___timeToRead @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___gallery___children
+    frontmatter___gallery___childrenImageSharp
+    frontmatter___gallery___childrenImageSharp___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___gallery___childrenImageSharp___gatsbyImageData @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___gallery___childrenImageSharp___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___gallery___childrenMdx
+    frontmatter___gallery___childrenMdx___body
+    frontmatter___gallery___childrenMdx___children @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___gallery___childrenMdx___excerpt @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___gallery___childrenMdx___fileAbsolutePath
+    frontmatter___gallery___childrenMdx___headings @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___gallery___childrenMdx___html @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___gallery___childrenMdx___id @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___gallery___childrenMdx___mdxAST @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___gallery___childrenMdx___rawBody
+    frontmatter___gallery___childrenMdx___slug
+    frontmatter___gallery___childrenMdx___tableOfContents @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
+    frontmatter___gallery___childrenMdx___timeToRead @deprecated(reason : "Sorting on fields that need arguments to resolve is deprecated.")
     frontmatter___gallery___children___children
     frontmatter___gallery___children___id
     frontmatter___gallery___ctime
@@ -2099,13 +2404,23 @@ enum SitePageFieldsEnum {
     pluginCreator___parent___parent___children
     pluginCreator___parent___parent___id
     pluginCreator___pluginFilepath
+    pluginCreator___pluginOptions___allExtensions
+    pluginCreator___pluginOptions___autoLabel
+    pluginCreator___pluginOptions___backgroundColor
     pluginCreator___pluginOptions___background_color
+    pluginCreator___pluginOptions___base64Width
     pluginCreator___pluginOptions___cacheDigest
-    pluginCreator___pluginOptions___cachePublic
     pluginCreator___pluginOptions___cache_busting_mode
+    pluginCreator___pluginOptions___createLinkInHead
+    pluginCreator___pluginOptions___crossOrigin
+    pluginCreator___pluginOptions___cssPropOptimization
+    pluginCreator___pluginOptions___defaultQuality
     pluginCreator___pluginOptions___description
+    pluginCreator___pluginOptions___disableBgImage
+    pluginCreator___pluginOptions___disableBgImageOnAlpha
     pluginCreator___pluginOptions___display
     pluginCreator___pluginOptions___extensions
+    pluginCreator___pluginOptions___failOnError
     pluginCreator___pluginOptions___gatsbyRemarkPlugins
     pluginCreator___pluginOptions___gatsbyRemarkPlugins___resolve
     pluginCreator___pluginOptions___gtagConfig___anonymize_ip
@@ -2113,9 +2428,19 @@ enum SitePageFieldsEnum {
     pluginCreator___pluginOptions___gtagConfig___optimize_id
     pluginCreator___pluginOptions___icon
     pluginCreator___pluginOptions___include_favicon
+    pluginCreator___pluginOptions___isTSX
+    pluginCreator___pluginOptions___jsxPragma
+    pluginCreator___pluginOptions___labelFormat
     pluginCreator___pluginOptions___lang
     pluginCreator___pluginOptions___legacy
+    pluginCreator___pluginOptions___lessBabel
+    pluginCreator___pluginOptions___linkImagesToOriginal
+    pluginCreator___pluginOptions___loading
+    pluginCreator___pluginOptions___markdownCaptions
+    pluginCreator___pluginOptions___maxWidth
+    pluginCreator___pluginOptions___mediaTypes
     pluginCreator___pluginOptions___name
+    pluginCreator___pluginOptions___output
     pluginCreator___pluginOptions___path
     pluginCreator___pluginOptions___pathCheck
     pluginCreator___pluginOptions___pluginConfig___head
@@ -2124,15 +2449,24 @@ enum SitePageFieldsEnum {
     pluginCreator___pluginOptions___plugins___browserAPIs
     pluginCreator___pluginOptions___plugins___id
     pluginCreator___pluginOptions___plugins___name
+    pluginCreator___pluginOptions___plugins___nodeAPIs
     pluginCreator___pluginOptions___plugins___pluginFilepath
     pluginCreator___pluginOptions___plugins___resolve
     pluginCreator___pluginOptions___plugins___version
     pluginCreator___pluginOptions___precachePages
+    pluginCreator___pluginOptions___quality
+    pluginCreator___pluginOptions___root
     pluginCreator___pluginOptions___short_name
+    pluginCreator___pluginOptions___showCaptions
+    pluginCreator___pluginOptions___sizeByPixelDensity
+    pluginCreator___pluginOptions___sourceMap
     pluginCreator___pluginOptions___start_url
+    pluginCreator___pluginOptions___stripMetadata
     pluginCreator___pluginOptions___theme_color
     pluginCreator___pluginOptions___theme_color_in_head
+    pluginCreator___pluginOptions___tracedSVG
     pluginCreator___pluginOptions___trackingIds
+    pluginCreator___pluginOptions___withWebp
     pluginCreator___resolve
     pluginCreator___ssrAPIs
     pluginCreator___version
@@ -2245,13 +2579,23 @@ enum SitePluginFieldsEnum {
     parent___parent___parent___children
     parent___parent___parent___id
     pluginFilepath
+    pluginOptions___allExtensions
+    pluginOptions___autoLabel
+    pluginOptions___backgroundColor
     pluginOptions___background_color
+    pluginOptions___base64Width
     pluginOptions___cacheDigest
-    pluginOptions___cachePublic
     pluginOptions___cache_busting_mode
+    pluginOptions___createLinkInHead
+    pluginOptions___crossOrigin
+    pluginOptions___cssPropOptimization
+    pluginOptions___defaultQuality
     pluginOptions___description
+    pluginOptions___disableBgImage
+    pluginOptions___disableBgImageOnAlpha
     pluginOptions___display
     pluginOptions___extensions
+    pluginOptions___failOnError
     pluginOptions___gatsbyRemarkPlugins
     pluginOptions___gatsbyRemarkPlugins___options___linkImagesToOriginal
     pluginOptions___gatsbyRemarkPlugins___options___maxWidth
@@ -2262,9 +2606,19 @@ enum SitePluginFieldsEnum {
     pluginOptions___gtagConfig___optimize_id
     pluginOptions___icon
     pluginOptions___include_favicon
+    pluginOptions___isTSX
+    pluginOptions___jsxPragma
+    pluginOptions___labelFormat
     pluginOptions___lang
     pluginOptions___legacy
+    pluginOptions___lessBabel
+    pluginOptions___linkImagesToOriginal
+    pluginOptions___loading
+    pluginOptions___markdownCaptions
+    pluginOptions___maxWidth
+    pluginOptions___mediaTypes
     pluginOptions___name
+    pluginOptions___output
     pluginOptions___path
     pluginOptions___pathCheck
     pluginOptions___pluginConfig___head
@@ -2273,15 +2627,36 @@ enum SitePluginFieldsEnum {
     pluginOptions___plugins___browserAPIs
     pluginOptions___plugins___id
     pluginOptions___plugins___name
+    pluginOptions___plugins___nodeAPIs
     pluginOptions___plugins___pluginFilepath
+    pluginOptions___plugins___pluginOptions___backgroundColor
+    pluginOptions___plugins___pluginOptions___disableBgImage
+    pluginOptions___plugins___pluginOptions___disableBgImageOnAlpha
+    pluginOptions___plugins___pluginOptions___linkImagesToOriginal
+    pluginOptions___plugins___pluginOptions___loading
+    pluginOptions___plugins___pluginOptions___markdownCaptions
+    pluginOptions___plugins___pluginOptions___maxWidth
+    pluginOptions___plugins___pluginOptions___quality
+    pluginOptions___plugins___pluginOptions___showCaptions
+    pluginOptions___plugins___pluginOptions___sizeByPixelDensity
+    pluginOptions___plugins___pluginOptions___tracedSVG
+    pluginOptions___plugins___pluginOptions___withWebp
     pluginOptions___plugins___resolve
     pluginOptions___plugins___version
     pluginOptions___precachePages
+    pluginOptions___quality
+    pluginOptions___root
     pluginOptions___short_name
+    pluginOptions___showCaptions
+    pluginOptions___sizeByPixelDensity
+    pluginOptions___sourceMap
     pluginOptions___start_url
+    pluginOptions___stripMetadata
     pluginOptions___theme_color
     pluginOptions___theme_color_in_head
+    pluginOptions___tracedSVG
     pluginOptions___trackingIds
+    pluginOptions___withWebp
     resolve
     ssrAPIs
     version
@@ -2290,6 +2665,19 @@ enum SitePluginFieldsEnum {
 enum SortOrderEnum {
     ASC
     DESC
+}
+
+input AVIFOptions {
+    lossless: Boolean
+    quality: Int
+    speed: Int
+}
+
+input BlurredOptions {
+    "Force the output format for the low-res preview. Default is to use the same format as the input. You should rarely need to change this"
+    toFormat: ImageFormat
+    "Width of the generated low-res preview. Default is 20px"
+    width: Int
 }
 
 input BooleanQueryOperatorInput {
@@ -2376,6 +2764,8 @@ input FileFilterInput {
     childImageSharp: ImageSharpFilterInput
     childMdx: MdxFilterInput
     children: NodeFilterListInput
+    childrenImageSharp: ImageSharpFilterListInput
+    childrenMdx: MdxFilterListInput
     ctime: DateQueryOperatorInput
     ctimeMs: FloatQueryOperatorInput
     dev: IntQueryOperatorInput
@@ -2428,13 +2818,16 @@ input ImageSharpFilterInput {
     children: NodeFilterListInput
     fixed: ImageSharpFixedFilterInput
     fluid: ImageSharpFluidFilterInput
+    gatsbyImageData: JSONQueryOperatorInput
     id: StringQueryOperatorInput
     internal: InternalFilterInput
     original: ImageSharpOriginalFilterInput
     parent: NodeFilterInput
     resize: ImageSharpResizeFilterInput
-    resolutions: ImageSharpResolutionsFilterInput
-    sizes: ImageSharpSizesFilterInput
+}
+
+input ImageSharpFilterListInput {
+    elemMatch: ImageSharpFilterInput
 }
 
 input ImageSharpFixedFilterInput {
@@ -2480,34 +2873,6 @@ input ImageSharpResizeFilterInput {
     width: IntQueryOperatorInput
 }
 
-input ImageSharpResolutionsFilterInput {
-    aspectRatio: FloatQueryOperatorInput
-    base64: StringQueryOperatorInput
-    height: FloatQueryOperatorInput
-    originalName: StringQueryOperatorInput
-    src: StringQueryOperatorInput
-    srcSet: StringQueryOperatorInput
-    srcSetWebp: StringQueryOperatorInput
-    srcWebp: StringQueryOperatorInput
-    tracedSVG: StringQueryOperatorInput
-    width: FloatQueryOperatorInput
-}
-
-input ImageSharpSizesFilterInput {
-    aspectRatio: FloatQueryOperatorInput
-    base64: StringQueryOperatorInput
-    originalImg: StringQueryOperatorInput
-    originalName: StringQueryOperatorInput
-    presentationHeight: IntQueryOperatorInput
-    presentationWidth: IntQueryOperatorInput
-    sizes: StringQueryOperatorInput
-    src: StringQueryOperatorInput
-    srcSet: StringQueryOperatorInput
-    srcSetWebp: StringQueryOperatorInput
-    srcWebp: StringQueryOperatorInput
-    tracedSVG: StringQueryOperatorInput
-}
-
 input ImageSharpSortInput {
     fields: [ImageSharpFieldsEnum]
     order: [SortOrderEnum] = [ASC]
@@ -2533,6 +2898,11 @@ input InternalFilterInput {
     mediaType: StringQueryOperatorInput
     owner: StringQueryOperatorInput
     type: StringQueryOperatorInput
+}
+
+input JPGOptions {
+    progressive: Boolean = true
+    quality: Int
 }
 
 input JSONQueryOperatorInput {
@@ -2566,6 +2936,10 @@ input MdxFilterInput {
     tableOfContents: JSONQueryOperatorInput
     timeToRead: IntQueryOperatorInput
     wordCount: MdxWordCountFilterInput
+}
+
+input MdxFilterListInput {
+    elemMatch: MdxFilterInput
 }
 
 input MdxFrontmatterFilterInput {
@@ -2607,6 +2981,11 @@ input NodeFilterInput {
 
 input NodeFilterListInput {
     elemMatch: NodeFilterInput
+}
+
+input PNGOptions {
+    compressionSpeed: Int = 4
+    quality: Int
 }
 
 input Potrace {
@@ -2770,30 +3149,58 @@ input SitePluginPackageJsonPeerDependenciesFilterListInput {
 }
 
 input SitePluginPluginOptionsFilterInput {
+    allExtensions: BooleanQueryOperatorInput
+    autoLabel: StringQueryOperatorInput
+    backgroundColor: StringQueryOperatorInput
     background_color: StringQueryOperatorInput
+    base64Width: IntQueryOperatorInput
     cacheDigest: StringQueryOperatorInput
-    cachePublic: BooleanQueryOperatorInput
     cache_busting_mode: StringQueryOperatorInput
+    createLinkInHead: BooleanQueryOperatorInput
+    crossOrigin: StringQueryOperatorInput
+    cssPropOptimization: BooleanQueryOperatorInput
+    defaultQuality: IntQueryOperatorInput
     description: StringQueryOperatorInput
+    disableBgImage: BooleanQueryOperatorInput
+    disableBgImageOnAlpha: BooleanQueryOperatorInput
     display: StringQueryOperatorInput
     extensions: StringQueryOperatorInput
+    failOnError: BooleanQueryOperatorInput
     gatsbyRemarkPlugins: SitePluginPluginOptionsGatsbyRemarkPluginsFilterListInput
     gtagConfig: SitePluginPluginOptionsGtagConfigFilterInput
     icon: StringQueryOperatorInput
     include_favicon: BooleanQueryOperatorInput
+    isTSX: BooleanQueryOperatorInput
+    jsxPragma: StringQueryOperatorInput
+    labelFormat: StringQueryOperatorInput
     lang: StringQueryOperatorInput
     legacy: BooleanQueryOperatorInput
+    lessBabel: BooleanQueryOperatorInput
+    linkImagesToOriginal: BooleanQueryOperatorInput
+    loading: StringQueryOperatorInput
+    markdownCaptions: BooleanQueryOperatorInput
+    maxWidth: IntQueryOperatorInput
+    mediaTypes: StringQueryOperatorInput
     name: StringQueryOperatorInput
+    output: StringQueryOperatorInput
     path: StringQueryOperatorInput
     pathCheck: BooleanQueryOperatorInput
     pluginConfig: SitePluginPluginOptionsPluginConfigFilterInput
     plugins: SitePluginPluginOptionsPluginsFilterListInput
     precachePages: StringQueryOperatorInput
+    quality: IntQueryOperatorInput
+    root: StringQueryOperatorInput
     short_name: StringQueryOperatorInput
+    showCaptions: BooleanQueryOperatorInput
+    sizeByPixelDensity: BooleanQueryOperatorInput
+    sourceMap: BooleanQueryOperatorInput
     start_url: StringQueryOperatorInput
+    stripMetadata: BooleanQueryOperatorInput
     theme_color: StringQueryOperatorInput
     theme_color_in_head: BooleanQueryOperatorInput
+    tracedSVG: BooleanQueryOperatorInput
     trackingIds: StringQueryOperatorInput
+    withWebp: BooleanQueryOperatorInput
 }
 
 input SitePluginPluginOptionsGatsbyRemarkPluginsFilterInput {
@@ -2826,13 +3233,30 @@ input SitePluginPluginOptionsPluginsFilterInput {
     browserAPIs: StringQueryOperatorInput
     id: StringQueryOperatorInput
     name: StringQueryOperatorInput
+    nodeAPIs: StringQueryOperatorInput
     pluginFilepath: StringQueryOperatorInput
+    pluginOptions: SitePluginPluginOptionsPluginsPluginOptionsFilterInput
     resolve: StringQueryOperatorInput
     version: StringQueryOperatorInput
 }
 
 input SitePluginPluginOptionsPluginsFilterListInput {
     elemMatch: SitePluginPluginOptionsPluginsFilterInput
+}
+
+input SitePluginPluginOptionsPluginsPluginOptionsFilterInput {
+    backgroundColor: StringQueryOperatorInput
+    disableBgImage: BooleanQueryOperatorInput
+    disableBgImageOnAlpha: BooleanQueryOperatorInput
+    linkImagesToOriginal: BooleanQueryOperatorInput
+    loading: StringQueryOperatorInput
+    markdownCaptions: BooleanQueryOperatorInput
+    maxWidth: IntQueryOperatorInput
+    quality: IntQueryOperatorInput
+    showCaptions: BooleanQueryOperatorInput
+    sizeByPixelDensity: BooleanQueryOperatorInput
+    tracedSVG: BooleanQueryOperatorInput
+    withWebp: BooleanQueryOperatorInput
 }
 
 input SitePluginSortInput {
@@ -2860,6 +3284,19 @@ input StringQueryOperatorInput {
     ne: String
     nin: [String]
     regex: String
+}
+
+input TransformOptions {
+    cropFocus: ImageCropFocus = ATTENTION
+    duotone: DuotoneGradient
+    fit: ImageFit = COVER
+    grayscale: Boolean = false
+    rotate: Int = 0
+    trim: Float = 0.0
+}
+
+input WebPOptions {
+    quality: Int
 }
 
 

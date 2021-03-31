@@ -1,15 +1,15 @@
 import React from 'react';
 import { css, useTheme } from '@emotion/react';
 import PageLink from './page-link';
-import { FluidObject } from 'gatsby-image';
 import { Theme } from '../styles/theme';
 import CoverImage from './cover-image';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 interface PostSummaryProps {
   slug: string;
   title: string;
   date: string;
-  img: FluidObject;
+  img: IGatsbyImageData;
   excerpt: string;
   timeToRead: number;
   tall?: boolean;

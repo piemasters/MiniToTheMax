@@ -10,33 +10,33 @@ const ShowcasePage = ({ data }: { data: Showcase }): React.ReactNode => {
     {
       title: 'Board Games',
       slug: '/showcase/board-games',
-      img: data.boardGames.childImageSharp.fluid,
+      img: data.boardGames.childImageSharp.gatsbyImageData,
     },
     {
       title: 'Gloomspite Gitz',
       slug: '/showcase/gloomspite-gitz',
-      img: data.gloomspiteGitz.childImageSharp.fluid,
+      img: data.gloomspiteGitz.childImageSharp.gatsbyImageData,
     },
     {
       title: 'Grey Knights',
       slug: '/showcase/grey-knights',
-      img: data.greyKnights.childImageSharp.fluid,
+      img: data.greyKnights.childImageSharp.gatsbyImageData,
     },
     {
       title: 'Orks',
       slug: '/showcase/orks',
-      img: data.orks.childImageSharp.fluid,
+      img: data.orks.childImageSharp.gatsbyImageData,
     },
 
     {
       title: 'Scenery',
       slug: '/showcase/scenery',
-      img: data.scenery.childImageSharp.fluid,
+      img: data.scenery.childImageSharp.gatsbyImageData,
     },
     {
       title: 'Space Wolves',
       slug: '/showcase/space-wolves',
-      img: data.spaceWolves.childImageSharp.fluid,
+      img: data.spaceWolves.childImageSharp.gatsbyImageData,
     },
   ];
 
@@ -74,9 +74,7 @@ export const pageQuery = graphql`
       }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
     gloomspiteGitz: file(
@@ -85,9 +83,7 @@ export const pageQuery = graphql`
       }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
     greyKnights: file(
@@ -96,18 +92,14 @@ export const pageQuery = graphql`
       }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
     orks: file(
       relativePath: { eq: "showcase/orks/gretchin/gretchin-cover.jpg" }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
     scenery: file(
@@ -116,9 +108,7 @@ export const pageQuery = graphql`
       }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
     spaceWolves: file(
@@ -127,9 +117,7 @@ export const pageQuery = graphql`
       }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
   }
