@@ -11,10 +11,15 @@ describe('CoverCategory', () => {
       <ThemeProvider theme={theme}>
         <CoverCategory
           img={{
-            aspectRatio: 2,
-            src: 'cover.jpeg',
-            srcSet: '',
-            sizes: '(max-width: 800px) 100vw, 800px',
+            layout: 'constrained',
+            width: 1800,
+            height: 900,
+            backgroundColor: '#282828',
+            images: {
+              fallback: {
+                src: 'cover.jpeg',
+              },
+            },
           }}
           slug={'/showcase/board-games'}
           title={'Board Games'}

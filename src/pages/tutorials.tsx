@@ -5,27 +5,27 @@ import CoverCategory from '../components/cover-category';
 import { graphql } from 'gatsby';
 import { Tutorials } from '../types/app.types';
 
-const TutorialsPage = ({ data }: { data: Tutorials }) => {
+const TutorialsPage = ({ data }: { data: Tutorials }): React.ReactNode => {
   const categories = [
     {
       title: '40k',
       slug: '/tutorials/40k',
-      img: data.fortyThousand.childImageSharp.fluid,
+      img: data.fortyThousand.childImageSharp.gatsbyImageData,
     },
     {
       title: 'Bases',
       slug: '/tutorials/bases',
-      img: data.bases.childImageSharp.fluid,
+      img: data.bases.childImageSharp.gatsbyImageData,
     },
     {
       title: 'Scenery',
       slug: '/tutorials/scenery',
-      img: data.scenery.childImageSharp.fluid,
+      img: data.scenery.childImageSharp.gatsbyImageData,
     },
     {
       title: 'Tools',
       slug: '/tutorials/tools',
-      img: data.tools.childImageSharp.fluid,
+      img: data.tools.childImageSharp.gatsbyImageData,
     },
   ];
 
@@ -63,18 +63,14 @@ export const pageQuery = graphql`
       }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
     bases: file(
       relativePath: { eq: "tutorials/bases/snow-bases/snow-bases-cover.jpg" }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
     scenery: file(
@@ -83,9 +79,7 @@ export const pageQuery = graphql`
       }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
     tools: file(
@@ -94,9 +88,7 @@ export const pageQuery = graphql`
       }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
   }

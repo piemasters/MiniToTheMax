@@ -12,7 +12,10 @@ interface SimplePaginationProps {
   next?: SimplePaginationNode;
 }
 
-const SimplePagination = ({ previous, next }: SimplePaginationProps) => {
+const SimplePagination = ({
+  previous,
+  next,
+}: SimplePaginationProps): JSX.Element => {
   const containerStyle = css`
     display: flex;
     flex-wrap: wrap;

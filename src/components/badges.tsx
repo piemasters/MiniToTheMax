@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 import Badge from './badge';
 import { BadgeNames } from '../types/app.types';
 
-const Badges = () => {
+const Badges = (): JSX.Element => {
   const badgeContainerStyles = css`
     display: flex;
     flex-direction: row;

@@ -11,6 +11,7 @@ exports[`Footer renders correctly 1`] = `
     >
       <a
         href="https://davidnorton.app/"
+        rel="noreferrer"
         target="_blank"
       >
         © 
@@ -24,6 +25,7 @@ exports[`Footer renders correctly 1`] = `
       >
         <a
           href="https://www.facebook.com/minitothemax"
+          rel="noreferrer"
           target="_blank"
         >
           <test-file-stub
@@ -32,6 +34,7 @@ exports[`Footer renders correctly 1`] = `
         </a>
         <a
           href="https://www.instagram.com/minitothemax/"
+          rel="noreferrer"
           target="_blank"
         >
           <test-file-stub
@@ -40,6 +43,7 @@ exports[`Footer renders correctly 1`] = `
         </a>
         <a
           href="https://www.youtube.com/user/piemasters29"
+          rel="noreferrer"
           target="_blank"
         >
           <test-file-stub

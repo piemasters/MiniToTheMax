@@ -1,17 +1,17 @@
 import React from 'react';
 import PageLink from './page-link';
-import { FluidObject } from 'gatsby-image';
 import CoverImage from './cover-image';
 import { Theme } from '../styles/theme';
 import { css, useTheme } from '@emotion/react';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 interface CoverCategoryProps {
   slug: string;
   title: string;
-  img: FluidObject;
+  img: IGatsbyImageData;
 }
 
-const CoverCategory = (category: CoverCategoryProps) => {
+const CoverCategory = (category: CoverCategoryProps): JSX.Element => {
   const theme = useTheme() as Theme;
   const postStyle = css`
     margin: 1rem 0;

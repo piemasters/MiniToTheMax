@@ -3,7 +3,7 @@ import Layout from '../layouts/layout';
 import Seo from '../components/stateful/seo';
 import PageLink from '../components/page-link';
 
-const NotFound = () => {
+const NotFound = (): React.ReactNode => {
   return (
     <Layout>
       <Seo title={'404'} pathname={'/404'} />

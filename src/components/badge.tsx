@@ -10,10 +10,10 @@ import battleReports from '../../content/assets/images/battle-reports-badge.png'
 import reviews from '../../content/assets/images/reviews-badge.png';
 import build from '../../content/assets/images/build-badge.png';
 
-const Badge = ({ type }: { type: BadgeNames }) => {
+const Badge = ({ type }: { type: BadgeNames }): JSX.Element => {
   const theme = useTheme() as Theme;
 
-  const badgeImages: any = {
+  const badgeImages: { [key: string]: string } = {
     [BadgeNames.showcase]: showcase,
     [BadgeNames.tutorials]: tutorials,
     [BadgeNames.reviews]: reviews,

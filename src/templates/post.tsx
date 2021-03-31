@@ -3,8 +3,7 @@ import Layout from '../layouts/layout';
 import { graphql } from 'gatsby';
 import SimplePagination from '../components/simple-pagination';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-// @ts-ignore
-import Gallery from 'react-grid-gallery';
+import Gallery from '@browniebroke/gatsby-image-gallery';
 import Seo from '../components/stateful/seo';
 import { DiscussionEmbed } from 'disqus-react';
 import { DisqusConfig, MdxPost } from '../types/app.types';
@@ -24,7 +23,7 @@ const Post = ({
 }: {
   pageContext: PostContext;
   data: MdxPost;
-}) => {
+}): React.ReactNode => {
   const pagination = {
     previous: pageContext.previous
       ? {
@@ -49,17 +48,12 @@ const Post = ({
     slug: data.post.fields.slug,
     tags: data.post.frontmatter.tags,
     categories: data.post.frontmatter.categories,
-    featuredImage: data.post.frontmatter.featuredImage.childImageSharp.fluid,
+    imgPublicURL: data.post.frontmatter.featuredImage.publicURL,
+    featuredImage:
+      data.post.frontmatter.featuredImage.childImageSharp.gatsbyImageData,
     gallery: data.post.frontmatter.gallery
       ? data.post.frontmatter.gallery.map(
-          (img: MdxFrontmatterGalleryImage) => ({
-            src: img.childImageSharp.fluid.src,
-            thumbnail: img.childImageSharp.fluid.src,
-            thumbnailWidth: img.childImageSharp.fluid.presentationWidth,
-            thumbnailHeight: img.childImageSharp.fluid.presentationHeight,
-            nano: img.childImageSharp.fluid.base64,
-            srcSet: img.childImageSharp.fluid.srcSet,
-          })
+          (node: MdxFrontmatterGalleryImage) => node.childImageSharp
         )
       : [],
   };
@@ -82,9 +76,12 @@ const Post = ({
   `;
 
   const galleryContainerStyle = css`
+    cursor: pointer;
     overflow: hidden;
     margin-bottom: 2rem;
   `;
+
+  console.log(post.gallery);
 
   return (
     <Layout>
@@ -92,7 +89,7 @@ const Post = ({
         title={post.title}
         description={post.excerpt}
         pathname={post.slug}
-        image={post.featuredImage.src}
+        image={post.imgPublicURL}
         article={true}
       />
       <CoverImage image={post.featuredImage} title={post.title} />
@@ -109,16 +106,11 @@ const Post = ({
       </div>
 
       <MDXRenderer>{post.body}</MDXRenderer>
-      {post.gallery.length >= 1 && (
+      {post.gallery.length > 0 && (
         <div>
           <h2>Gallery</h2>
           <div css={galleryContainerStyle}>
-            <Gallery
-              images={post.gallery}
-              enableImageSelection={false}
-              rowHeight={180}
-              margin={2}
-            />
+            <Gallery images={post.gallery} />
           </div>
         </div>
       )}
@@ -150,22 +142,20 @@ export const query = graphql`
         tags
         categories
         featuredImage {
+          publicURL
           childImageSharp {
-            fluid(maxWidth: 800, maxHeight: 400) {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-              presentationHeight
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         gallery {
           publicURL
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-              presentationWidth
-              presentationHeight
-            }
+            thumb: gatsbyImageData(
+              width: 270
+              height: 270
+              placeholder: BLURRED
+            )
+            full: gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }

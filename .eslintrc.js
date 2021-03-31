@@ -10,8 +10,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended',
+    'prettier',
   ],
   settings: {
     react: {
@@ -34,7 +33,13 @@ module.exports = {
   rules: {
     'react/prop-types': 'off', // Disable prop-types as we use TypeScript for type checking
     '@typescript-eslint/explicit-function-return-type': 'off',
-    'jsx-a11y/rule-name': 'warning',
+    "@typescript-eslint/no-empty-interface": [
+      "error",
+      {
+        "allowSingleExtends": true
+      }
+    ]
+    //'jsx-a11y/rule-name': 1,
   },
   overrides: [
     // Override some TypeScript rules just for .js files

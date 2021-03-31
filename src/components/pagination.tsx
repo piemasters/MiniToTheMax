@@ -19,7 +19,7 @@ const Pagination = ({
   currentPage,
   maxPages = 8,
   baseUrl,
-}: PaginationProps) => {
+}: PaginationProps): JSX.Element => {
   const theme = useTheme() as Theme;
 
   const containerStyle = css`

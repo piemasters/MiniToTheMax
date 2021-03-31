@@ -7,7 +7,7 @@ interface NavLink {
   url: string;
 }
 
-const Header = () => {
+const Header = (): JSX.Element => {
   const data = useStaticQuery(graphql`
     query {
       site {

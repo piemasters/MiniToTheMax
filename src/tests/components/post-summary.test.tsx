@@ -12,10 +12,15 @@ describe('PostSummary', () => {
         <PostSummary
           date={'11/01/2019'}
           img={{
-            aspectRatio: 1,
-            src: 'cover.jpeg',
-            srcSet: '',
-            sizes: '(max-width: 800px) 100vw, 800px',
+            layout: 'constrained',
+            width: 1800,
+            height: 900,
+            backgroundColor: '#282828',
+            images: {
+              fallback: {
+                src: 'cover.jpeg',
+              },
+            },
           }}
           slug={'slug'}
           title={'Demo Post Title'}

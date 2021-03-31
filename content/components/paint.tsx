@@ -22,7 +22,13 @@ const allPaints = [
   ...airPaints,
 ];
 
-const Paint = ({ name, type }: { name: String; type?: String }) => {
+const Paint = ({
+  name,
+  type,
+}: {
+  name: string;
+  type?: string;
+}): React.ReactNode => {
   const paintWrapperStyles = css`
     display: inline-block;
     margin-bottom: 12px;

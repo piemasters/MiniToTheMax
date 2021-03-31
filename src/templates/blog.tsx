@@ -22,7 +22,7 @@ const Blog = ({
 }: {
   data: Posts;
   pageContext: PostContext;
-}) => {
+}): React.ReactNode => {
   const postsStyle = css`
     list-style-type: none;
     margin: 0;
@@ -46,7 +46,7 @@ const Blog = ({
     slug: edge.node.fields.slug,
     title: edge.node.frontmatter.title,
     date: edge.node.frontmatter.date,
-    img: edge.node.frontmatter.featuredImage.childImageSharp.fluid,
+    img: edge.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData,
     excerpt: edge.node.excerpt,
     timeToRead: edge.node.timeToRead,
   }));
@@ -107,11 +107,7 @@ export const postQuery = graphql`
             date
             featuredImage {
               childImageSharp {
-                fluid(maxWidth: 800, maxHeight: 400) {
-                  ...GatsbyImageSharpFluid
-                  presentationWidth
-                  presentationHeight
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }

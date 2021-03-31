@@ -7,10 +7,10 @@ import '../styles/index.scss';
 import { globalStyles } from '../styles/global';
 
 interface LayoutProps {
-  children?: any;
+  children?: React.ReactNode;
 }
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children }: LayoutProps): JSX.Element => {
   const containerStyles = css`
     display: flex;
     flex-direction: column;

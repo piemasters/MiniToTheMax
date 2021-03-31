@@ -1,5 +1,11 @@
-import { AllMdx, MdxGroupConnection, MdxNode, MdxFrontmatterGalleryImage, Site } from './base.types';
-import {FluidObject} from "gatsby-image";
+import {
+  AllMdx,
+  MdxGroupConnection,
+  MdxNode,
+  MdxFrontmatterImage,
+  Site,
+} from './base.types';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 export interface Posts {
   posts: AllMdx;
@@ -9,7 +15,7 @@ export interface PostSummary {
   slug: string;
   title: string;
   date: string;
-  img: FluidObject;
+  img: IGatsbyImageData;
   excerpt: string;
   timeToRead: number;
 }
@@ -24,29 +30,29 @@ export interface Categories {
 }
 
 export interface Showcase {
-  boardGames: MdxFrontmatterGalleryImage;
-  gloomspiteGitz: MdxFrontmatterGalleryImage;
-  spaceWolves: MdxFrontmatterGalleryImage;
-  greyKnights: MdxFrontmatterGalleryImage;
-  orks: MdxFrontmatterGalleryImage;
-  scenery: MdxFrontmatterGalleryImage;
+  boardGames: MdxFrontmatterImage;
+  gloomspiteGitz: MdxFrontmatterImage;
+  spaceWolves: MdxFrontmatterImage;
+  greyKnights: MdxFrontmatterImage;
+  orks: MdxFrontmatterImage;
+  scenery: MdxFrontmatterImage;
 }
 
 export interface Tutorials {
-  fortyThousand: MdxFrontmatterGalleryImage;
-  bases: MdxFrontmatterGalleryImage;
-  scenery: MdxFrontmatterGalleryImage;
-  tools: MdxFrontmatterGalleryImage;
+  fortyThousand: MdxFrontmatterImage;
+  bases: MdxFrontmatterImage;
+  scenery: MdxFrontmatterImage;
+  tools: MdxFrontmatterImage;
 }
 
 export interface Reviews {
-  boardGames: MdxFrontmatterGalleryImage;
-  books: MdxFrontmatterGalleryImage;
-  tools: MdxFrontmatterGalleryImage;
+  boardGames: MdxFrontmatterImage;
+  books: MdxFrontmatterImage;
+  tools: MdxFrontmatterImage;
 }
 
 export interface BattleReports {
-  fortyThousand: MdxFrontmatterGalleryImage;
+  fortyThousand: MdxFrontmatterImage;
 }
 
 export interface Category extends MdxGroupConnection {}
@@ -63,7 +69,7 @@ export interface TagLink {
 }
 
 export interface PostLink extends TagLink {
-  img: FluidObject;
+  img: IGatsbyImageData;
 }
 
 export interface DisqusConfig {
@@ -86,7 +92,7 @@ export interface PaintGradient {
 }
 
 export interface PaintDetails {
-  [key: string]: any;
+  [key: string]: string | boolean | PaintGradient[] | JSX.Element | undefined;
   name: string;
   type: string;
   color: string;

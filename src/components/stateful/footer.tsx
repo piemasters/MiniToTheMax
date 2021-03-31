@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import PureFooter from '../footer';
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   const data = useStaticQuery(graphql`
     query {
       site {

@@ -5,22 +5,22 @@ import { graphql } from 'gatsby';
 import { Reviews } from '../types/app.types';
 import CoverCategory from '../components/cover-category';
 
-const ReviewsPage = ({ data }: { data: Reviews }) => {
+const ReviewsPage = ({ data }: { data: Reviews }): React.ReactNode => {
   const categories = [
     {
       title: 'Board Games',
       slug: '/reviews/board-games',
-      img: data.boardGames.childImageSharp.fluid,
+      img: data.boardGames.childImageSharp.gatsbyImageData,
     },
     {
       title: 'Books',
       slug: '/reviews/books',
-      img: data.books.childImageSharp.fluid,
+      img: data.books.childImageSharp.gatsbyImageData,
     },
     {
       title: 'Tools',
       slug: '/reviews/tools',
-      img: data.tools.childImageSharp.fluid,
+      img: data.tools.childImageSharp.gatsbyImageData,
     },
   ];
 
@@ -57,9 +57,7 @@ export const pageQuery = graphql`
       }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
     books: file(
@@ -68,18 +66,14 @@ export const pageQuery = graphql`
       }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
     tools: file(
       relativePath: { eq: "reviews/tools/instant-mold/instantmold-cover.jpg" }
     ) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
   }

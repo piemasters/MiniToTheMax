@@ -18,12 +18,12 @@ const PostCategory = ({
 }: {
   pageContext: PostCategoryContext;
   data: Categories;
-}) => {
+}): React.ReactNode => {
   const postCategories: PostLink[] = data.categories.edges.map(
     (edge: MdxEdge) => ({
       slug: edge.node.fields.slug,
       title: edge.node.frontmatter.title,
-      img: edge.node.frontmatter.featuredImage.childImageSharp.fluid,
+      img: edge.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData,
     })
   );
 
@@ -76,11 +76,7 @@ export const pageQuery = graphql`
             title
             featuredImage {
               childImageSharp {
-                fluid(maxWidth: 800, maxHeight: 400) {
-                  ...GatsbyImageSharpFluid
-                  presentationWidth
-                  presentationHeight
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }

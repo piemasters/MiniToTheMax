@@ -6,7 +6,7 @@ import PageLink from '../components/page-link';
 import { Categories, Category } from '../types/app.types';
 import Layout from '../layouts/layout';
 
-const CategoriesPage = ({ data }: { data: Categories }) => (
+const CategoriesPage = ({ data }: { data: Categories }): React.ReactNode => (
   <Layout>
     <Seo
       title={'Categories'}

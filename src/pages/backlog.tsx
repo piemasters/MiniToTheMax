@@ -8,7 +8,7 @@ export interface BacklogEntry {
   link?: string;
 }
 
-const BacklogPage = () => {
+const BacklogPage = (): React.ReactNode => {
   const generateEntries = (entries: BacklogEntry[]) => {
     entries.sort(function (a, b) {
       return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
@@ -21,7 +21,13 @@ const BacklogPage = () => {
         domList.push(
           <li key={index} style={{ listStyleType: 'none' }}>
             <label>
-              <input type="checkbox" checked onChange={() => {}} />{' '}
+              <input
+                type="checkbox"
+                checked
+                onChange={() => {
+                  /*do nothing */
+                }}
+              />{' '}
               <PageLink to={value.link} type={'cover'} direction={'up'}>
                 {value.name}
               </PageLink>
@@ -32,7 +38,13 @@ const BacklogPage = () => {
         domList.push(
           <li key={index} style={{ listStyleType: 'none' }}>
             <label>
-              <input type="checkbox" checked={false} onChange={() => {}} />{' '}
+              <input
+                type="checkbox"
+                checked={false}
+                onChange={() => {
+                  /*do nothing */
+                }}
+              />{' '}
               {value.name}
             </label>
           </li>

@@ -17,7 +17,7 @@ const Tag = ({
 }: {
   pageContext: TagContext;
   data: Tags;
-}) => {
+}): React.ReactNode => {
   const tagHeader = `${data.tags.totalCount} post${
     data.tags.totalCount === 1 ? '' : 's'
   } tagged with "${pageContext.tag}"`;

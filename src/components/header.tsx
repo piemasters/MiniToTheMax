@@ -14,7 +14,7 @@ interface HeaderProps {
   pages: NavLink[];
 }
 
-const Header = ({ title, logo, pages }: HeaderProps) => {
+const Header = ({ title, logo, pages }: HeaderProps): JSX.Element => {
   const theme = useTheme() as Theme;
 
   const NavHeader = css`

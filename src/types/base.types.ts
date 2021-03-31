@@ -1,4 +1,4 @@
-import { FluidObject } from 'gatsby-image';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 export type SiteSiteMetadata = {
   title: string;
@@ -106,16 +106,23 @@ export interface AllMdx {
   group: [MdxGroupConnection];
 }
 
-export interface SharpFluidObject extends FluidObject {
-  presentationWidth: number;
-  presentationHeight: number;
+export interface MdxFrontmatterImage {
+  childImageSharp: {
+    gatsbyImageData: IGatsbyImageData;
+  };
+}
+
+export interface ImageProp {
+  full: IGatsbyImageData;
+  thumb: IGatsbyImageData;
+  thumbAlt?: string;
+  title?: string;
+  caption?: string;
 }
 
 export interface MdxFrontmatterGalleryImage {
   publicURL: string;
-  childImageSharp: {
-    fluid: SharpFluidObject;
-  };
+  childImageSharp: ImageProp;
 }
 
 export interface MdxFrontmatter {
@@ -124,8 +131,9 @@ export interface MdxFrontmatter {
   categories: [string];
   tags: [string];
   featuredImage: {
+    publicURL?: string;
     childImageSharp: {
-      fluid: FluidObject;
+      gatsbyImageData: IGatsbyImageData;
     };
   };
   gallery: [MdxFrontmatterGalleryImage];

@@ -32,12 +32,6 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: 'gatsby-plugin-netlify-cache',
-      options: {
-        cachePublic: true,
-      },
-    },
     'gatsby-plugin-eslint',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
@@ -72,7 +66,8 @@ module.exports = {
         }
       }
     },
-    'gatsby-plugin-sharp',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
