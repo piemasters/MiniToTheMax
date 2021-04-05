@@ -3227,21 +3227,21 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-jest@^6.1.21":
-  version "6.1.21"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-jest/-/addon-jest-6.1.21.tgz#4198af064b880655e4c27934dacc9d92f950d277"
-  integrity sha512-b5CXArtVrY6UuF57zodqmrE1cGZuCGWj+42zHk0lbcSf3BudcJyEKO4+gLteK7TDAPpq/Rq0HywC9d8tUB3Aow==
+"@storybook/addon-jest@^6.2.2":
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-jest/-/addon-jest-6.2.2.tgz#e6317e06ca1a60b650c4eea74ddf9be7b156f695"
+  integrity sha512-5UuomnmeatDPGrzYS4Ms4il3edduTxAKIJ4ydbcqW4ejIsEg4vzT8hIQs3IEkNsrz7Og5igyuzqNw/YN8I1TZw==
   dependencies:
-    "@storybook/addons" "6.1.21"
-    "@storybook/api" "6.1.21"
-    "@storybook/components" "6.1.21"
-    "@storybook/core-events" "6.1.21"
-    "@storybook/theming" "6.1.21"
-    core-js "^3.0.1"
-    global "^4.3.2"
-    react-sizeme "^2.5.2"
+    "@storybook/addons" "6.2.2"
+    "@storybook/api" "6.2.2"
+    "@storybook/components" "6.2.2"
+    "@storybook/core-events" "6.2.2"
+    "@storybook/theming" "6.2.2"
+    core-js "^3.8.2"
+    global "^4.4.0"
+    react-sizeme "^3.0.1"
     regenerator-runtime "^0.13.7"
-    upath "^1.1.0"
+    upath "^1.2.0"
 
 "@storybook/addon-links@^6.2.2":
   version "6.2.2"
@@ -17949,7 +17949,7 @@ react-side-effect@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
   integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
 
-react-sizeme@^2.5.2, react-sizeme@^2.6.7:
+react-sizeme@^2.6.7:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/react-sizeme/-/react-sizeme-2.6.12.tgz#ed207be5476f4a85bf364e92042520499455453e"
   integrity sha512-tL4sCgfmvapYRZ1FO2VmBmjPVzzqgHA7kI8lSJ6JS6L78jXFNRdOZFpXyK6P1NBZvKPPCZxReNgzZNUajAerZw==
@@ -21171,7 +21171,7 @@ untildify@^4.0.0:
   resolved "https://registry.yarnpkg.com/untildify/-/untildify-4.0.0.tgz#2bc947b953652487e4600949fb091e3ae8cd919b"
   integrity sha512-KK8xQ1mkzZeg9inewmFVDNkg3l5LUhoq9kN6iWYB/CC9YMG8HA+c1Q8HwDe6dEX7kErrEVNVBO3fWsVq5iDgtw==
 
-upath@^1.1.0, upath@^1.1.1:
+upath@^1.1.1, upath@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/upath/-/upath-1.2.0.tgz#8f66dbcd55a883acdae4408af8b035a5044c1894"
   integrity sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==
