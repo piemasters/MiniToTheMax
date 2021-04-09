@@ -81,8 +81,6 @@ const Post = ({
     margin-bottom: 2rem;
   `;
 
-  console.log(post.gallery);
-
   return (
     <Layout>
       <Seo

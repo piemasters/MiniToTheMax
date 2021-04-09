@@ -31,7 +31,7 @@ const CoverImage = ({
   return (
     <div css={headerContainer} data-testid="cover-image">
       <GatsbyImage
-        alt={'test'}
+        alt={title}
         image={image}
         css={css`
           position: initial;
