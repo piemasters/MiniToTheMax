@@ -373,7 +373,10 @@ const BacklogPage = (): React.ReactNode => {
     { name: 'Imperial Bunker' },
     { name: 'Imperial Defence Emplacement' },
     { name: 'Imperial Defence Line' },
-    { name: 'Iron Battlefield' },
+    {
+      name: 'Iron Battlefield',
+      link: '/showcase/scenery/iron-battlefield/',
+    },
     {
       name: 'Realm of Battle Boards',
       link: '/showcase/scenery/battle-boards/',
