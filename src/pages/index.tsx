@@ -5,6 +5,7 @@ import Seo from '../components/stateful/seo';
 import Video from '../components/video';
 import PostSummary from '../components/post-summary';
 import Badges from '../components/badges';
+import { getImage } from 'gatsby-plugin-image';
 
 const IndexPage = (): React.ReactNode => {
   return (
@@ -50,10 +51,7 @@ const IndexPage = (): React.ReactNode => {
 
           <PostSummary
             date={data.posts.edges[0].node.frontmatter.date}
-            img={
-              data.posts.edges[0].node.frontmatter.featuredImage.childImageSharp
-                .gatsbyImageData
-            }
+            img={getImage(data.posts.edges[0].node.frontmatter.featuredImage)}
             slug={data.posts.edges[0].node.fields.slug}
             title={data.posts.edges[0].node.frontmatter.title}
             excerpt={data.posts.edges[0].node.excerpt}

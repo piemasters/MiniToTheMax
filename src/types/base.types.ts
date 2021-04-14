@@ -106,12 +106,6 @@ export interface AllMdx {
   group: [MdxGroupConnection];
 }
 
-export interface MdxFrontmatterImage {
-  childImageSharp: {
-    gatsbyImageData: IGatsbyImageData;
-  };
-}
-
 export interface ImageProp {
   full: IGatsbyImageData;
   thumb: IGatsbyImageData;

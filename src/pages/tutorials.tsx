@@ -4,28 +4,29 @@ import Seo from '../components/stateful/seo';
 import CoverCategory from '../components/cover-category';
 import { graphql } from 'gatsby';
 import { Tutorials } from '../types/app.types';
+import { getImage } from 'gatsby-plugin-image';
 
 const TutorialsPage = ({ data }: { data: Tutorials }): React.ReactNode => {
   const categories = [
     {
       title: '40k',
       slug: '/tutorials/40k',
-      img: data.fortyThousand.childImageSharp.gatsbyImageData,
+      img: getImage(data.fortyThousand),
     },
     {
       title: 'Bases',
       slug: '/tutorials/bases',
-      img: data.bases.childImageSharp.gatsbyImageData,
+      img: getImage(data.bases),
     },
     {
       title: 'Scenery',
       slug: '/tutorials/scenery',
-      img: data.scenery.childImageSharp.gatsbyImageData,
+      img: getImage(data.scenery),
     },
     {
       title: 'Tools',
       slug: '/tutorials/tools',
-      img: data.tools.childImageSharp.gatsbyImageData,
+      img: getImage(data.tools),
     },
   ];
 

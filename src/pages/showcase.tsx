@@ -4,39 +4,40 @@ import Seo from '../components/stateful/seo';
 import CoverCategory from '../components/cover-category';
 import { graphql } from 'gatsby';
 import { Showcase } from '../types/app.types';
+import { getImage } from 'gatsby-plugin-image';
 
 const ShowcasePage = ({ data }: { data: Showcase }): React.ReactNode => {
   const categories = [
     {
       title: 'Board Games',
       slug: '/showcase/board-games',
-      img: data.boardGames.childImageSharp.gatsbyImageData,
+      img: getImage(data.boardGames),
     },
     {
       title: 'Gloomspite Gitz',
       slug: '/showcase/gloomspite-gitz',
-      img: data.gloomspiteGitz.childImageSharp.gatsbyImageData,
+      img: getImage(data.gloomspiteGitz),
     },
     {
       title: 'Grey Knights',
       slug: '/showcase/grey-knights',
-      img: data.greyKnights.childImageSharp.gatsbyImageData,
+      img: getImage(data.greyKnights),
     },
     {
       title: 'Orks',
       slug: '/showcase/orks',
-      img: data.orks.childImageSharp.gatsbyImageData,
+      img: getImage(data.orks),
     },
 
     {
       title: 'Scenery',
       slug: '/showcase/scenery',
-      img: data.scenery.childImageSharp.gatsbyImageData,
+      img: getImage(data.scenery),
     },
     {
       title: 'Space Wolves',
       slug: '/showcase/space-wolves',
-      img: data.spaceWolves.childImageSharp.gatsbyImageData,
+      img: getImage(data.spaceWolves),
     },
   ];
 

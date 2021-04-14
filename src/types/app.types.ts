@@ -2,7 +2,6 @@ import {
   AllMdx,
   MdxGroupConnection,
   MdxNode,
-  MdxFrontmatterImage,
   Site,
 } from './base.types';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
@@ -30,29 +29,29 @@ export interface Categories {
 }
 
 export interface Showcase {
-  boardGames: MdxFrontmatterImage;
-  gloomspiteGitz: MdxFrontmatterImage;
-  spaceWolves: MdxFrontmatterImage;
-  greyKnights: MdxFrontmatterImage;
-  orks: MdxFrontmatterImage;
-  scenery: MdxFrontmatterImage;
+  boardGames: IGatsbyImageData;
+  gloomspiteGitz: IGatsbyImageData;
+  spaceWolves: IGatsbyImageData;
+  greyKnights: IGatsbyImageData;
+  orks: IGatsbyImageData;
+  scenery: IGatsbyImageData;
 }
 
 export interface Tutorials {
-  fortyThousand: MdxFrontmatterImage;
-  bases: MdxFrontmatterImage;
-  scenery: MdxFrontmatterImage;
-  tools: MdxFrontmatterImage;
+  fortyThousand: IGatsbyImageData;
+  bases: IGatsbyImageData;
+  scenery: IGatsbyImageData;
+  tools: IGatsbyImageData;
 }
 
 export interface Reviews {
-  boardGames: MdxFrontmatterImage;
-  books: MdxFrontmatterImage;
-  tools: MdxFrontmatterImage;
+  boardGames: IGatsbyImageData;
+  books: IGatsbyImageData;
+  tools: IGatsbyImageData;
 }
 
 export interface BattleReports {
-  fortyThousand: MdxFrontmatterImage;
+  fortyThousand: IGatsbyImageData;
 }
 
 export interface Category extends MdxGroupConnection {}

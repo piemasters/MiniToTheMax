@@ -4,23 +4,24 @@ import Seo from '../components/stateful/seo';
 import { graphql } from 'gatsby';
 import { Reviews } from '../types/app.types';
 import CoverCategory from '../components/cover-category';
+import { getImage } from 'gatsby-plugin-image';
 
 const ReviewsPage = ({ data }: { data: Reviews }): React.ReactNode => {
   const categories = [
     {
       title: 'Board Games',
       slug: '/reviews/board-games',
-      img: data.boardGames.childImageSharp.gatsbyImageData,
+      img: getImage(data.boardGames),
     },
     {
       title: 'Books',
       slug: '/reviews/books',
-      img: data.books.childImageSharp.gatsbyImageData,
+      img: getImage(data.books),
     },
     {
       title: 'Tools',
       slug: '/reviews/tools',
-      img: data.tools.childImageSharp.gatsbyImageData,
+      img: getImage(data.tools),
     },
   ];
 

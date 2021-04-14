@@ -4,6 +4,7 @@ import Seo from '../components/stateful/seo';
 import { graphql } from 'gatsby';
 import { BattleReports } from '../types/app.types';
 import CoverCategory from '../components/cover-category';
+import { getImage } from 'gatsby-plugin-image';
 
 const BattleReportsPage = ({
   data,
@@ -14,7 +15,7 @@ const BattleReportsPage = ({
     {
       title: '40k',
       slug: '/battle-reports/40k',
-      img: data.fortyThousand.childImageSharp.gatsbyImageData,
+      img: getImage(data.fortyThousand),
     },
   ];
   return (

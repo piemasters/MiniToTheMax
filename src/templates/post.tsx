@@ -90,7 +90,9 @@ const Post = ({
         image={post.imgPublicURL}
         article={true}
       />
-      <CoverImage image={post.featuredImage} title={post.title} />
+      {post.featuredImage && (
+        <CoverImage image={post.featuredImage} title={post.title} />
+      )}
       <div css={tagsStyle}>
         {post.categories.map((category: string) => (
           <PostTag type={'categories'} name={category} key={category} />

@@ -52,7 +52,9 @@ const PostSummary = (post: PostSummaryProps): JSX.Element => {
         type={'cover'}
         direction={'up'}
       >
-        <CoverImage image={post.img} title={post.title} tall={post.tall} />
+        {post.img && (
+          <CoverImage image={post.img} title={post.title} tall={post.tall} />
+        )}
         <div css={postContents}>
           {' '}
           <p css={postParagraphStyle}>

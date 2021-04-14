@@ -8,7 +8,7 @@ import { IGatsbyImageData } from 'gatsby-plugin-image';
 interface CoverCategoryProps {
   slug: string;
   title: string;
-  img: IGatsbyImageData;
+  img: IGatsbyImageData | undefined;
 }
 
 const CoverCategory = (category: CoverCategoryProps): JSX.Element => {
@@ -40,10 +40,12 @@ const CoverCategory = (category: CoverCategoryProps): JSX.Element => {
   return (
     <div css={postStyle} data-testid="cover-category">
       <PageLink to={category.slug} type={'cover'} direction={'up'}>
-        <CoverImage
-          image={category.img}
-          title={removeCategoryName(category.title)}
-        />
+        {category.img && (
+          <CoverImage
+            image={category.img}
+            title={removeCategoryName(category.title)}
+          />
+        )}
       </PageLink>
     </div>
   );
