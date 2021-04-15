@@ -9,7 +9,7 @@ interface PostSummaryProps {
   slug: string;
   title: string;
   date: string;
-  img: IGatsbyImageData;
+  img?: IGatsbyImageData;
   excerpt: string;
   timeToRead: number;
   tall?: boolean;
