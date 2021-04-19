@@ -44,7 +44,7 @@ const IndexPage = (): React.ReactNode => {
           <Badges />
           <h2>Latest Video</h2>
           <Video
-            src="https://www.youtube.com/embed/DpzNSFCK8WU"
+            src="https://www.youtube.com/embed/qyTeSQSWs6I"
             title="Gorechosen"
           />
           <h2>Latest Post</h2>
