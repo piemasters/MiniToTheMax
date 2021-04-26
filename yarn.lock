@@ -7769,14 +7769,14 @@ debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@4.3.1, debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@~4.3.1:
+debug@4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
   integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
   dependencies:
     ms "2.1.2"
 
-debug@4.3.2:
+debug@4.3.2, debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@~4.3.1:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
   integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
@@ -10453,10 +10453,10 @@ gatsby-transformer-sharp@3.3.0:
     semver "^7.3.4"
     sharp "^0.28.0"
 
-gatsby@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-3.3.0.tgz#815884c669f15b50191509ec8c178e5eab47e633"
-  integrity sha512-u9C7ER0Jz89BtjFtbuiCmsZmlKagr6we8GaARgkCpdi9csKpsTq7JBqZcOglKI4qx6iMKMIu0h9FwdBjPSYKng==
+gatsby@3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-3.3.1.tgz#6e4720c48f155f5abb947fb7d2cfda3b091ae1e0"
+  integrity sha512-Eprejb4317ZYFZXYdXErYGcOZuscXIln5v0JTPFbXtejrM+MMr7qa3GF8NztyOH3alpqAMXm6LyHDMf9oQpLSA==
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/core" "^7.12.3"
