@@ -59,7 +59,10 @@ const BacklogPage = (): React.ReactNode => {
     { name: 'Blood Claws' },
     { name: 'Canis Wolfborn' },
     { name: 'Centurions' },
-    { name: 'Geigor Fell-Hand' },
+    {
+      name: 'Geigor Fell-Hand',
+      link: '/showcase/space-wolves/greigor-fell-hand/',
+    },
     {
       name: 'Grey Hunters',
       link: '/showcase/space-wolves/grey-hunters/',
