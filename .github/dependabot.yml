@@ -1,0 +1,31 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "10:00"
+    timezone: Europe/London
+  open-pull-requests-limit: 100
+  ignore:
+  - dependency-name: "@storybook/addon-essentials"
+    versions:
+    - 6.2.7
+  - dependency-name: "@storybook/react"
+    versions:
+    - 6.2.7
+  - dependency-name: react-test-renderer
+    versions:
+    - 17.0.2
+  - dependency-name: react-dom
+    versions:
+    - 17.0.2
+  - dependency-name: react
+    versions:
+    - 17.0.2
+  - dependency-name: "@typescript-eslint/parser"
+    versions:
+    - 4.15.2
+  - dependency-name: gatsby-plugin-typescript
+    versions:
+    - 2.12.1
