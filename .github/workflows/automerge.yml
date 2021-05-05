@@ -22,6 +22,7 @@ jobs:
         uses: pascalgn/automerge-action@v0.11.0
         if: steps.waitforstatuschecks.outputs.status == 'success'
         env:
-          MERGE_LABELS: "update"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MERGE_LABELS: ""
           MERGE_DELETE_BRANCH: true
+          MERGE_FILTER_AUTHOR: "dependabot[bot]"
