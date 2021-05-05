@@ -86,7 +86,10 @@ const BacklogPage = (): React.ReactNode => {
     { name: 'Primaris Judicar' },
     { name: 'Ragnar Blackmane' },
     { name: 'Stormbird' },
-    { name: 'Wolf Guard Swiftclaws' },
+    {
+      name: 'Wolf Guard Swiftclaws',
+      link: '/showcase/space-wolves/swiftclaws/',
+    },
     { name: 'Wolf Guard Terminators' },
     { name: 'Wolf Guard Terminators II' },
     {
