@@ -10006,7 +10006,7 @@ gatsby-plugin-typescript@^3.5.0:
     "@babel/runtime" "^7.12.5"
     babel-plugin-remove-graphql-queries "^3.5.0"
 
-gatsby-plugin-utils@^1.4.0, gatsby-plugin-utils@^1.5.0:
+gatsby-plugin-utils@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-1.5.0.tgz#793b0796ea225cf3c75871d06f5e75e3c3fa82c9"
   integrity sha512-IqCXOGTC+WRtzLUhEbJzR9RlumDGtN/xmsl41AOgfeJvfdeXiomm9nrlCs915XDZh/fYa5MbRpf7Xu4S3skhLA==

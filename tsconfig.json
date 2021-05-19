@@ -10,7 +10,8 @@
     "esModuleInterop": true,
     "noUnusedLocals": false,
     "allowJs": true,
-    "jsxImportSource": "@emotion/react"
+    "jsxImportSource": "@emotion/react",
+    "allowSyntheticDefaultImports": true,
   },
   "include": ["src/components", "src/data", "src/custom.d.ts"],
   "exclude": ["node_modules", "public", ".cache"]
