@@ -231,7 +231,10 @@ const BacklogPage = (): React.ReactNode => {
     { name: 'Flaming Scimitar' },
     { name: "Grimnir's Thunder" },
     { name: 'Heldenhammer' },
-    { name: 'Islands' },
+    {
+      name: 'Islands',
+      link: '/showcase/board-games/dreadfleet/islands/',
+    },
     { name: 'Monsters' },
     { name: 'Seadrake' },
     { name: 'Shadewraith' },
