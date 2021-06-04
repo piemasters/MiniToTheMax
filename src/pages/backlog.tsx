@@ -226,7 +226,10 @@ const BacklogPage = (): React.ReactNode => {
     { name: 'Auxiliaries' },
     { name: 'Black Kraken' },
     { name: 'Bloody Reaver' },
-    { name: 'Components' },
+    {
+      name: 'Components',
+      link: '/showcase/board-games/dreadfleet/components/',
+    },
     { name: 'Curse of Zandri' },
     { name: 'Flaming Scimitar' },
     { name: "Grimnir's Thunder" },
