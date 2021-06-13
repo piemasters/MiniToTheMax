@@ -9795,10 +9795,10 @@ gatsby-plugin-eslint@3.0.0:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint/-/gatsby-plugin-eslint-3.0.0.tgz#af6a70158f1751f03f804430aa8b1feeac7db97c"
   integrity sha512-nvyLz067k8lmhWIalhgFCzlNIjHIabYPZXpARM0k4AGRJWOPgOxc5P0T+G/TjCvtSg4+jtKotbE5ranMbxIBiw==
 
-gatsby-plugin-google-gtag@3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-3.5.0.tgz#db5dacf58a01f56109c19fb3cf9ceefed684c45f"
-  integrity sha512-txf6ppVqXN7w5SuYAmuFU8/XQ8mf/5qRBtN0YqQRXd3hYqqKvBgzrk+Fnz0oyTLfPJg+HAvTOVHeKK5ZN9crpg==
+gatsby-plugin-google-gtag@3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-3.6.0.tgz#b182bbc29ff0e6efacc37a3ff528390bd85d0054"
+  integrity sha512-qqUTgHcAi6Wwrpiu6AKBK2MQd82dOgWIGFB3CYC2NyYskMlNnbWExObWwmAQVQ0w93atf55Igyuv8uH9y3Y66w==
   dependencies:
     "@babel/runtime" "^7.12.5"
     minimatch "^3.0.4"
