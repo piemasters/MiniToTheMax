@@ -223,10 +223,16 @@ const BacklogPage = (): React.ReactNode => {
   ];
 
   const dreadfleet = [
-    { name: 'Auxiliaries' },
+    {
+      name: 'Auxiliaries',
+      link: '/showcase/board-games/dreadfleet/auxiliaries/',
+    },
     { name: 'Black Kraken' },
     { name: 'Bloody Reaver' },
-    { name: 'Components' },
+    {
+      name: 'Components',
+      link: '/showcase/board-games/dreadfleet/components/',
+    },
     { name: 'Curse of Zandri' },
     { name: 'Flaming Scimitar' },
     { name: "Grimnir's Thunder" },
