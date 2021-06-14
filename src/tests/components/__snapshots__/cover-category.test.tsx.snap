@@ -21,7 +21,7 @@ exports[`CoverCategory renders correctly 1`] = `
         <div
           class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
           data-gatsby-image-wrapper=""
-          style="position: relative; overflow: hidden; display: inline-block;"
+          style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
         >
           <div
             style="max-width: 1800px; display: block;"
