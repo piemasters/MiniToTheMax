@@ -86,7 +86,7 @@
     "babel-jest": "27.0.2",
     "babel-loader": "8.2.2",
     "babel-plugin-remove-graphql-queries": "3.7.1",
-    "babel-preset-gatsby": "1.7.1",
+    "babel-preset-gatsby": "1.8.0",
     "babel-preset-react-app": "10.0.0",
     "csstype": "3.0.8",
     "cypress": "6.9.1",
