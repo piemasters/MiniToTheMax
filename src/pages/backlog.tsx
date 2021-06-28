@@ -241,14 +241,20 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Islands',
       link: '/showcase/board-games/dreadfleet/islands/',
     },
-    { name: 'Monsters', link: '/showcase/board-games/dreadfleet/monsters/' },
+    {
+      name: 'Monsters',
+      link: '/showcase/board-games/dreadfleet/monsters/',
+    },
     { name: 'Seadrake' },
     { name: 'Shadewraith' },
     {
       name: 'Shipwrecks',
       link: '/showcase/board-games/dreadfleet/shipwrecks/',
     },
-    { name: 'Skabrus' },
+    {
+      name: 'Skabrus',
+      link: '/showcase/board-games/dreadfleet/skabrus/',
+    },
     { name: 'Swordfysh' },
   ];
 
