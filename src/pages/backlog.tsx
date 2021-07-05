@@ -227,7 +227,10 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Auxiliaries',
       link: '/showcase/board-games/dreadfleet/auxiliaries/',
     },
-    { name: 'Black Kraken' },
+    {
+      name: 'Black Kraken',
+      link: '/showcase/board-games/dreadfleet/black-kraken/',
+    },
     { name: 'Bloody Reaver' },
     {
       name: 'Components',
