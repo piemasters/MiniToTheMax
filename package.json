@@ -104,7 +104,7 @@
     "fork-ts-checker-webpack-plugin": "6.2.12",
     "gatsby-plugin-eslint": "3.0.0",
     "identity-obj-proxy": "3.0.0",
-    "jest": "27.0.5",
+    "jest": "27.0.6",
     "jest-emotion": "11.0.0",
     "node-sass": "6.0.1",
     "prettier": "2.3.2",
