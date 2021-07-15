@@ -424,6 +424,27 @@ export const baseRunelordBrass: PaintDetails = {
   ],
 };
 
+export const baseOrrukFlesh: PaintDetails = {
+  name: 'Orruk Flesh',
+  type: 'base',
+  color: 'green',
+  hex: '#8CC276',
+};
+
+export const baseThondiaBrown: PaintDetails = {
+  name: 'Thondia Brown',
+  type: 'base',
+  color: 'brown',
+  hex: '#54302A',
+};
+
+export const baseHobgrotHide: PaintDetails = {
+  name: 'Hobgrot Hide',
+  type: 'base',
+  color: 'brown',
+  hex: '#A1812A',
+};
+
 export const basePaints = [
   baseAverlandSunset,
   baseJokaeroOrange,
@@ -479,4 +500,7 @@ export const basePaints = [
   baseWraithBone,
   baseGreySeer,
   baseRunelordBrass,
+  baseOrrukFlesh,
+  baseThondiaBrown,
+  baseHobgrotHide,
 ];
