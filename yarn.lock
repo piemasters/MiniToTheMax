@@ -1929,14 +1929,6 @@
     "@babel/helper-validator-identifier" "^7.14.8"
     to-fast-properties "^2.0.0"
 
-"@babel/types@^7.14.8":
-  version "7.14.8"
-  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.14.8.tgz#38109de8fcadc06415fbd9b74df0065d4d41c728"
-  integrity sha512-iob4soQa7dZw8nodR/KlOQkPh9S4I8RwCxwRIFuiMRYjOzH/KJzdUfDgz6cGi5dDaclXF4P2PAhCdrBJNIg68Q==
-  dependencies:
-    "@babel/helper-validator-identifier" "^7.14.8"
-    to-fast-properties "^2.0.0"
-
 "@base2/pretty-print-object@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@base2/pretty-print-object/-/pretty-print-object-1.0.0.tgz#860ce718b0b73f4009e153541faff2cb6b85d047"
@@ -10547,16 +10539,16 @@ gatsby-plugin-image@1.9.0:
     objectFitPolyfill "^2.3.0"
     prop-types "^15.7.2"
 
-gatsby-plugin-manifest@3.9.0:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.9.0.tgz#28e84611382b3d068c03417337ffee6438925a5c"
-  integrity sha512-cRGsgvwtYLWLJUvbrl6uAWwv4ragPKGjPF7w9m5uRlpXh5zLguMqcgUVL9SfLMH2LJUyM7P5YyyiE/6tigOHqA==
+gatsby-plugin-manifest@3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.10.0.tgz#87ce4383b938b06a9346610b9e4bd0cccd72c15a"
+  integrity sha512-vx5bZDxEUYgXYXo4OqMJ+affCUi6mDhgT39Oppy1hBMkwYeNQKeiP8mJ77kRqlGUX44rsTJ4/bD2qvJgJLHaMQ==
   dependencies:
-    "@babel/runtime" "^7.14.0"
-    gatsby-core-utils "^2.9.0"
-    gatsby-plugin-utils "^1.9.0"
+    "@babel/runtime" "^7.14.6"
+    gatsby-core-utils "^2.10.0"
+    gatsby-plugin-utils "^1.10.0"
     semver "^7.3.5"
-    sharp "^0.28.1"
+    sharp "^0.28.3"
 
 gatsby-plugin-mdx@2.9.0:
   version "2.9.0"
@@ -18748,7 +18740,7 @@ shallowequal@^1.1.0:
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
-sharp@^0.28.0, sharp@^0.28.1, sharp@^0.28.3:
+sharp@^0.28.3:
   version "0.28.3"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.28.3.tgz#ecd74cefd020bee4891bb137c9850ee2ce277a8b"
   integrity sha512-21GEP45Rmr7q2qcmdnjDkNP04Ooh5v0laGS5FDpojOO84D1DJwUijLiSq8XNNM6e8aGXYtoYRh3sVNdm8NodMA==
