@@ -239,9 +239,15 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Components',
       link: '/showcase/board-games/dreadfleet/components/',
     },
-    { name: 'Curse of Zandri' },
+    {
+      name: 'Curse of Zandri',
+      link: '/showcase/board-games/dreadfleet/curse-of-zandri/',
+    },
     { name: 'Flaming Scimitar' },
-    { name: "Grimnir's Thunder" },
+    {
+      name: "Grimnir's Thunder",
+      link: '/showcase/board-games/dreadfleet/grimnirs-thunder/',
+    },
     { name: 'Heldenhammer' },
     {
       name: 'Islands',
