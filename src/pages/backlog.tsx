@@ -257,7 +257,10 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Monsters',
       link: '/showcase/board-games/dreadfleet/monsters/',
     },
-    { name: 'Seadrake' },
+    {
+      name: 'Seadrake',
+      link: '/showcase/board-games/dreadfleet/seadrake/',
+    },
     {
       name: 'Shadewraith',
       link: '/showcase/board-games/dreadfleet/shadewraith/',
