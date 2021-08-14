@@ -4794,14 +4794,6 @@
     "@typescript-eslint/typescript-estree" "4.29.1"
     debug "^4.3.1"
 
-"@typescript-eslint/scope-manager@4.28.5":
-  version "4.28.5"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/scope-manager/-/scope-manager-4.28.5.tgz#3a1b70c50c1535ac33322786ea99ebe403d3b923"
-  integrity sha512-PHLq6n9nTMrLYcVcIZ7v0VY1X7dK309NM8ya9oL/yG8syFINIMHxyr2GzGoBYUdv3NUfCOqtuqps0ZmcgnZTfQ==
-  dependencies:
-    "@typescript-eslint/types" "4.28.5"
-    "@typescript-eslint/visitor-keys" "4.28.5"
-
 "@typescript-eslint/scope-manager@4.29.1":
   version "4.29.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/scope-manager/-/scope-manager-4.29.1.tgz#f25da25bc6512812efa2ce5ebd36619d68e61358"
@@ -4810,28 +4802,10 @@
     "@typescript-eslint/types" "4.29.1"
     "@typescript-eslint/visitor-keys" "4.29.1"
 
-"@typescript-eslint/types@4.28.5":
-  version "4.28.5"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-4.28.5.tgz#d33edf8e429f0c0930a7c3d44e9b010354c422e9"
-  integrity sha512-MruOu4ZaDOLOhw4f/6iudyks/obuvvZUAHBDSW80Trnc5+ovmViLT2ZMDXhUV66ozcl6z0LJfKs1Usldgi/WCA==
-
 "@typescript-eslint/types@4.29.1":
   version "4.29.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-4.29.1.tgz#94cce6cf7cc83451df03339cda99d326be2feaf5"
   integrity sha512-Jj2yu78IRfw4nlaLtKjVaGaxh/6FhofmQ/j8v3NXmAiKafbIqtAPnKYrf0sbGjKdj0hS316J8WhnGnErbJ4RCA==
-
-"@typescript-eslint/typescript-estree@4.28.5":
-  version "4.28.5"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-4.28.5.tgz#4906d343de693cf3d8dcc301383ed638e0441cd1"
-  integrity sha512-FzJUKsBX8poCCdve7iV7ShirP8V+ys2t1fvamVeD1rWpiAnIm550a+BX/fmTHrjEpQJ7ZAn+Z7ZZwJjytk9rZw==
-  dependencies:
-    "@typescript-eslint/types" "4.28.5"
-    "@typescript-eslint/visitor-keys" "4.28.5"
-    debug "^4.3.1"
-    globby "^11.0.3"
-    is-glob "^4.0.1"
-    semver "^7.3.5"
-    tsutils "^3.21.0"
 
 "@typescript-eslint/typescript-estree@4.29.1":
   version "4.29.1"
@@ -4845,14 +4819,6 @@
     is-glob "^4.0.1"
     semver "^7.3.5"
     tsutils "^3.21.0"
-
-"@typescript-eslint/visitor-keys@4.28.5":
-  version "4.28.5"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/visitor-keys/-/visitor-keys-4.28.5.tgz#ffee2c602762ed6893405ee7c1144d9cc0a29675"
-  integrity sha512-dva/7Rr+EkxNWdJWau26xU/0slnFlkh88v3TsyTgRS/IIYFi5iIfpCFM4ikw0vQTFUR9FYSSyqgK4w64gsgxhg==
-  dependencies:
-    "@typescript-eslint/types" "4.28.5"
-    eslint-visitor-keys "^2.0.0"
 
 "@typescript-eslint/visitor-keys@4.29.1":
   version "4.29.1"
@@ -6027,28 +5993,7 @@ babel-preset-gatsby-package@^0.1.2:
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
 
-babel-preset-gatsby@1.10.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-1.10.0.tgz#dc8f443f0a653f90df79dafc0d86087378420dd0"
-  integrity sha512-fyRpNl/8S738Ke+MkFreRigofSeeaQYm5aycyiAxcJrXb+lKp6aSzPpLMRq48Ypgeace0b+PJ2F5gNugx9e+LA==
-  dependencies:
-    "@babel/plugin-proposal-class-properties" "^7.14.0"
-    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.14.5"
-    "@babel/plugin-proposal-optional-chaining" "^7.14.5"
-    "@babel/plugin-syntax-dynamic-import" "^7.8.3"
-    "@babel/plugin-transform-classes" "^7.14.5"
-    "@babel/plugin-transform-runtime" "^7.14.5"
-    "@babel/plugin-transform-spread" "^7.14.6"
-    "@babel/preset-env" "^7.14.7"
-    "@babel/preset-react" "^7.14.0"
-    "@babel/runtime" "^7.14.6"
-    babel-plugin-dynamic-import-node "^2.3.3"
-    babel-plugin-macros "^2.8.0"
-    babel-plugin-transform-react-remove-prop-types "^0.4.24"
-    gatsby-core-utils "^2.10.0"
-    gatsby-legacy-polyfills "^1.10.0"
-
-babel-preset-gatsby@^1.11.0:
+babel-preset-gatsby@1.11.0, babel-preset-gatsby@^1.11.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-1.11.0.tgz#2bf2ac10f84d1bc76f32000a1a8591be4770ea9b"
   integrity sha512-qEd0bQbytain59zTFXEjoE2CEIDQMbFIALULcSVtKoUaoA4bDYvlRXUemt9z8BCa6864fh7ikU5+afOtazLm1Q==
@@ -10520,7 +10465,7 @@ gatsby-image@3.11.0:
     object-fit-images "^3.2.4"
     prop-types "^15.7.2"
 
-gatsby-legacy-polyfills@^1.10.0, gatsby-legacy-polyfills@^1.11.0:
+gatsby-legacy-polyfills@^1.11.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-legacy-polyfills/-/gatsby-legacy-polyfills-1.11.0.tgz#739747707c5e98b3bfffed42a83fb402b1ac4541"
   integrity sha512-bBqwsOwJEOTuo4eqiQX0MTPcbM+WYI6xTKbfgcJ9t8qCWoCKmRXz+xbHt9HoBbtQ8DnfQOPlM8q5NxIqq8iMEA==
