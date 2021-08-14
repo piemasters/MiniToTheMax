@@ -31,7 +31,7 @@
     "@mdx-js/react": "1.6.22",
     "disqus-react": "1.1.1",
     "gatsby": "3.11.1",
-    "gatsby-image": "3.10.0",
+    "gatsby-image": "3.11.0",
     "gatsby-plugin-catch-links": "3.11.0",
     "gatsby-plugin-emotion": "6.11.0",
     "gatsby-plugin-google-gtag": "3.10.0",
