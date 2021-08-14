@@ -273,7 +273,10 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Skabrus',
       link: '/showcase/board-games/dreadfleet/skabrus/',
     },
-    { name: 'Swordfysh' },
+    {
+      name: 'Swordfysh',
+      link: '/showcase/board-games/dreadfleet/swordfysh/',
+    },
   ];
 
   const gorechosen = [
