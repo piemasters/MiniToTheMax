@@ -561,10 +561,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.10.5", "@babel/parser@^7.12.11", "@babel/parser@^7.12.3", "@babel/parser@^7.12.7", "@babel/parser@^7.14.5", "@babel/parser@^7.14.7", "@babel/parser@^7.15.0", "@babel/parser@^7.7.2":
-  version "7.15.2"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.15.2.tgz#08d4ffcf90d211bf77e7cc7154c6f02d468d2b1d"
-  integrity sha512-bMJXql1Ss8lFnvr11TZDH4ArtwlAS5NG9qBmdiFW2UHHm6MVoR+GDc5XE2b9K938cyjc9O6/+vjjcffLDtfuDg==
+"@babel/parser@^7.1.0", "@babel/parser@^7.10.5", "@babel/parser@^7.12.11", "@babel/parser@^7.12.3", "@babel/parser@^7.12.7", "@babel/parser@^7.14.5", "@babel/parser@^7.14.7", "@babel/parser@^7.14.9", "@babel/parser@^7.15.0", "@babel/parser@^7.7.2":
+  version "7.15.3"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.15.3.tgz#3416d9bea748052cfcb63dbcc27368105b1ed862"
+  integrity sha512-O0L6v/HvqbdJawj0iBEfVQMc3/6WP+AeOsovsIgBFyJaG+W2w7eqvZB7puddATmWuARlm1SX7DwxJ/JJUnDpEA==
 
 "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining@^7.14.5":
   version "7.14.5"
@@ -1912,7 +1912,7 @@
     "@babel/parser" "^7.14.5"
     "@babel/types" "^7.14.5"
 
-"@babel/traverse@^7.1.0", "@babel/traverse@^7.1.6", "@babel/traverse@^7.10.5", "@babel/traverse@^7.12.1", "@babel/traverse@^7.12.11", "@babel/traverse@^7.12.9", "@babel/traverse@^7.13.0", "@babel/traverse@^7.13.15", "@babel/traverse@^7.14.5", "@babel/traverse@^7.14.7", "@babel/traverse@^7.14.8", "@babel/traverse@^7.15.0", "@babel/traverse@^7.4.5", "@babel/traverse@^7.7.2":
+"@babel/traverse@^7.1.0", "@babel/traverse@^7.1.6", "@babel/traverse@^7.10.5", "@babel/traverse@^7.12.1", "@babel/traverse@^7.12.11", "@babel/traverse@^7.12.9", "@babel/traverse@^7.13.0", "@babel/traverse@^7.13.15", "@babel/traverse@^7.14.5", "@babel/traverse@^7.14.7", "@babel/traverse@^7.14.8", "@babel/traverse@^7.14.9", "@babel/traverse@^7.15.0", "@babel/traverse@^7.4.5", "@babel/traverse@^7.7.2":
   version "7.15.0"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.15.0.tgz#4cca838fd1b2a03283c1f38e141f639d60b3fc98"
   integrity sha512-392d8BN0C9eVxVWd8H6x9WfipgVH5IaIoLp23334Sc1vbKKWINnvwRpb4us0xtPaCumlwbTtIYNA0Dv/32sVFw==
@@ -10466,21 +10466,21 @@ gatsby-plugin-google-gtag@3.12.0:
     "@babel/runtime" "^7.14.8"
     minimatch "^3.0.4"
 
-gatsby-plugin-image@1.11.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.11.0.tgz#c7d2ffa79c6476e1fdf305a183bc02e99f31ec12"
-  integrity sha512-hlbGHpGTgHOp0QTWE9jF0IILRbzbbDPkjktCjXR43Pt24L7/Df4HqdFrJM7hB36O4d7j3vY1GSW1L5OUEPPkhw==
+gatsby-plugin-image@1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.12.0.tgz#43b4eeab0673e4e52a359c0c45c040dc43710d9a"
+  integrity sha512-eypDaUsGbJ71XZ7j8eBA+rmErDEIR08+/A6ql0OY6xmX4ssjmIFQT4veOAzFxEbq/ee5DkNNkvgBVm8wKM1J4w==
   dependencies:
     "@babel/code-frame" "^7.14.0"
-    "@babel/parser" "^7.14.7"
-    "@babel/traverse" "^7.14.7"
+    "@babel/parser" "^7.14.9"
+    "@babel/traverse" "^7.14.9"
     babel-jsx-utils "^1.1.0"
-    babel-plugin-remove-graphql-queries "^3.11.0"
+    babel-plugin-remove-graphql-queries "^3.12.0"
     camelcase "^5.3.1"
     chokidar "^3.5.1"
     common-tags "^1.8.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^2.11.0"
+    gatsby-core-utils "^2.12.0"
     objectFitPolyfill "^2.3.0"
     prop-types "^15.7.2"
 
