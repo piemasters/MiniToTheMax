@@ -74,7 +74,7 @@
     "@types/jest": "27.0.1",
     "@types/lodash": "4.14.172",
     "@types/lodash.kebabcase": "4.1.6",
-    "@types/node": "16.6.2",
+    "@types/node": "16.7.6",
     "@types/node-sass": "4.11.2",
     "@types/react": "17.0.19",
     "@types/react-dom": "17.0.9",
