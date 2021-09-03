@@ -101,7 +101,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.25.1",
     "eslint-webpack-plugin": "^2.5.4",
-    "fork-ts-checker-webpack-plugin": "6.3.2",
+    "fork-ts-checker-webpack-plugin": "6.3.3",
     "gatsby-plugin-eslint": "4.0.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "27.1.0",
