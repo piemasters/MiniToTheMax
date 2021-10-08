@@ -193,7 +193,10 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Spearmen',
       link: '/showcase/gloomspite-gitz/spearmen/',
     },
-    { name: 'Throgg' },
+    {
+      name: 'Throgg',
+      link: '/showcase/gloomspite-gitz/throgg/',
+    },
   ];
 
   const malignSorcery = [
