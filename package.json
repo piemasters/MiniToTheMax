@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@browniebroke/gatsby-image-gallery": "6.2.2",
-    "@emotion/react": "11.4.1",
+    "@emotion/react": "11.5.0",
     "@mdx-js/mdx": "1.6.22",
     "@mdx-js/react": "1.6.22",
     "disqus-react": "1.1.2",
