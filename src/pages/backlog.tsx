@@ -188,7 +188,10 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Morglum Necksnapper',
       link: '/showcase/gloomspite-gitz/morglum-necksnapper/',
     },
-    { name: 'Skragrott' },
+    {
+      name: 'Skragrott',
+      link: '/showcase/gloomspite-gitz/skragrott-the-loonking/',
+    },
     {
       name: 'Spearmen',
       link: '/showcase/gloomspite-gitz/spearmen/',
