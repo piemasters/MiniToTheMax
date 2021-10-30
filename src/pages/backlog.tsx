@@ -77,7 +77,10 @@ const BacklogPage = (): React.ReactNode => {
       link: '/showcase/space-wolves/imperial-knight/',
     },
     { name: 'Krom Dragongaze' },
-    { name: 'Logan Grimnar' },
+    {
+      name: 'Logan Grimnar',
+      link: '/showcase/space-wolves/logan-grimnar/',
+    },
     { name: 'Njal Stormcaller' },
     { name: 'Primaris Bladeguard Ancient' },
     { name: 'Primaris Captain' },
