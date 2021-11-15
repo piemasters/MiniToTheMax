@@ -56,7 +56,10 @@ const BacklogPage = (): React.ReactNode => {
 
   const spaceWolves = [
     { name: 'Arjac Rockfist' },
-    { name: 'Blood Claws' },
+    {
+      name: 'Blood Claws',
+      link: '/showcase/space-wolves/blood-claws/',
+    },
     {
       name: 'Canis Wolfborn',
       link: '/showcase/space-wolves/canis-wolfborn/',
