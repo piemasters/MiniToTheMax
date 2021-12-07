@@ -1,5 +1,6 @@
 module.exports = {
-  parser: '@typescript-eslint/parser', // Specifies the ESLint parser
+  parser: '@typescript-eslint/parser',
+  // Specifies the ESLint parser
   globals: {
     graphql: true,
     __PATH_PREFIX__: true,
@@ -11,6 +12,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
+    'plugin:storybook/recommended',
   ],
   settings: {
     react: {
@@ -33,12 +35,12 @@ module.exports = {
   rules: {
     'react/prop-types': 'off', // Disable prop-types as we use TypeScript for type checking
     '@typescript-eslint/explicit-function-return-type': 'off',
-    "@typescript-eslint/no-empty-interface": [
-      "error",
+    '@typescript-eslint/no-empty-interface': [
+      'error',
       {
-        "allowSingleExtends": true
-      }
-    ]
+        allowSingleExtends: true,
+      },
+    ],
     //'jsx-a11y/rule-name': 1,
   },
   overrides: [
@@ -46,7 +48,7 @@ module.exports = {
     {
       files: ['*.js'],
       rules: {
-        '@typescript-eslint/no-var-requires': 'off', //
+        '@typescript-eslint/no-var-requires': 'off',
       },
     },
   ],
