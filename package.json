@@ -73,7 +73,7 @@
     "@testing-library/jest-dom": "5.16.1",
     "@testing-library/react": "12.1.2",
     "@types/jest": "27.0.3",
-    "@types/lodash": "4.14.177",
+    "@types/lodash": "4.14.178",
     "@types/lodash.kebabcase": "4.1.6",
     "@types/node": "16.11.12",
     "@types/node-sass": "4.11.2",
