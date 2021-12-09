@@ -3,7 +3,6 @@ import { Global, css, ThemeProvider } from '@emotion/react';
 import Header from '../components/stateful/header';
 import Footer from '../components/stateful/footer';
 import appTheme from '../styles/theme';
-import '../styles/index.scss';
 import { globalStyles } from '../styles/global';
 
 interface LayoutProps {

@@ -3,7 +3,6 @@ import { action } from '@storybook/addon-actions';
 import results from '../.jest-results.json';
 import { withTests } from '@storybook/addon-jest';
 import themeDecorator from './themeDecorator';
-import '../src/styles/index.scss';
 import theme from './theme';
 
 // Adding decorators here enables these plugins in every story
