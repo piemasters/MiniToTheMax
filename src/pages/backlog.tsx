@@ -219,7 +219,10 @@ const BacklogPage = (): React.ReactNode => {
     { name: 'Purple Sun of Shyish' },
     { name: 'Quicksilver Swords' },
     { name: 'Ravenak’s Gnashing Jaws' },
-    { name: 'Soulsnare Shackles' },
+    {
+      name: 'Soulsnare Shackles',
+      link: '/showcase/gloomspite-gitz/malign-sorcery/soulsnare-shackles/',
+    },
     { name: 'Suffocating Gravetide' },
     { name: 'Umbral Spellportal' },
   ];
