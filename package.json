@@ -68,7 +68,7 @@
     "@storybook/addon-links": "6.4.9",
     "@storybook/addon-storyshots": "6.4.9",
     "@storybook/react": "6.4.9",
-    "@svgr/webpack": "6.1.1",
+    "@svgr/webpack": "6.1.2",
     "@testing-library/cypress": "8.0.2",
     "@testing-library/jest-dom": "5.16.1",
     "@testing-library/react": "12.1.2",
