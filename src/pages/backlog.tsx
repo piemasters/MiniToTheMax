@@ -212,7 +212,10 @@ const BacklogPage = (): React.ReactNode => {
     { name: 'Aethervoid Pendulun' },
     { name: 'Burning Head' },
     { name: 'Chronomantic Cogs' },
-    { name: 'Emerald Lifeswarm' },
+    {
+      name: 'Emerald Lifeswarm',
+      link: '/showcase/gloomspite-gitz/malign-sorcery/emerald-lifeswarm/',
+    },
     { name: 'Geminids of Uhl-Ghysh' },
     { name: 'Malevolent Maelstrom' },
     { name: 'Prismatic Palisade' },
