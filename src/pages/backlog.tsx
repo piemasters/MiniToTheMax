@@ -211,7 +211,10 @@ const BacklogPage = (): React.ReactNode => {
   const malignSorcery = [
     { name: 'Aethervoid Pendulun' },
     { name: 'Burning Head' },
-    { name: 'Chronomantic Cogs' },
+    {
+      name: 'Chronomantic Cogs',
+      link: '/showcase/gloomspite-gitz/malign-sorcery/chronomantic-cogs/',
+    },
     {
       name: 'Emerald Lifeswarm',
       link: '/showcase/gloomspite-gitz/malign-sorcery/emerald-lifeswarm/',
