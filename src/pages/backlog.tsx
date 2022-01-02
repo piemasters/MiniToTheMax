@@ -210,7 +210,10 @@ const BacklogPage = (): React.ReactNode => {
 
   const malignSorcery = [
     { name: 'Aethervoid Pendulun' },
-    { name: 'Burning Head' },
+    {
+      name: 'Burning Head',
+      link: '/showcase/gloomspite-gitz/malign-sorcery/burning-head/',
+    },
     {
       name: 'Chronomantic Cogs',
       link: '/showcase/gloomspite-gitz/malign-sorcery/chronomantic-cogs/',
