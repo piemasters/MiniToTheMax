@@ -223,10 +223,16 @@ const BacklogPage = (): React.ReactNode => {
       link: '/showcase/gloomspite-gitz/malign-sorcery/emerald-lifeswarm/',
     },
     { name: 'Geminids of Uhl-Ghysh' },
-    { name: 'Malevolent Maelstrom' },
+    {
+      name: 'Malevolent Maelstrom',
+      link: '/showcase/gloomspite-gitz/malign-sorcery/malevolent-maelstrom/',
+    },
     { name: 'Prismatic Palisade' },
     { name: 'Purple Sun of Shyish' },
-    { name: 'Quicksilver Swords' },
+    {
+      name: 'Quicksilver Swords',
+      link: '/showcase/gloomspite-gitz/malign-sorcery/quicksilver-swords/',
+    },
     { name: 'Ravenak’s Gnashing Jaws' },
     {
       name: 'Soulsnare Shackles',
