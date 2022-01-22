@@ -90,7 +90,7 @@
     "babel-preset-gatsby": "2.5.2",
     "babel-preset-react-app": "10.0.1",
     "csstype": "3.0.10",
-    "cypress": "9.2.1",
+    "cypress": "9.3.1",
     "cypress-axe": "0.14.0",
     "dotenv": "14.2.0",
     "env-cmd": "10.1.0",
