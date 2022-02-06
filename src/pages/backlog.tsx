@@ -230,8 +230,14 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Malevolent Maelstrom',
       link: '/showcase/gloomspite-gitz/malign-sorcery/malevolent-maelstrom/',
     },
-    { name: 'Prismatic Palisade' },
-    { name: 'Purple Sun of Shyish' },
+    {
+      name: 'Prismatic Palisade',
+      link: '/showcase/gloomspite-gitz/malign-sorcery/prismatic-palisade/',
+    },
+    {
+      name: 'Purple Sun of Shyish',
+      link: '/showcase/gloomspite-gitz/malign-sorcery/purple-sun-of-shyish/',
+    },
     {
       name: 'Quicksilver Swords',
       link: '/showcase/gloomspite-gitz/malign-sorcery/quicksilver-swords/',
