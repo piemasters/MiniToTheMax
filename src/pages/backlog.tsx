@@ -187,12 +187,18 @@ const BacklogPage = (): React.ReactNode => {
 
   const gloomspiteGitz = [
     {
+      name: 'Da Red Gobbo',
+    },
+    {
       name: 'Mangler Squigs',
       link: '/showcase/gloomspite-gitz/mangler-squigs/',
     },
     {
       name: 'Morglum Necksnapper',
       link: '/showcase/gloomspite-gitz/morglum-necksnapper/',
+    },
+    {
+      name: 'Skarsnik & Gobbla',
     },
     {
       name: 'Skragrott',
@@ -242,7 +248,10 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Quicksilver Swords',
       link: '/showcase/gloomspite-gitz/malign-sorcery/quicksilver-swords/',
     },
-    { name: 'Ravenak’s Gnashing Jaws' },
+    {
+      name: 'Ravenak’s Gnashing Jaws',
+      link: '/showcase/gloomspite-gitz/malign-sorcery/ravenaks-gnashing-jaws/',
+    },
     {
       name: 'Soulsnare Shackles',
       link: '/showcase/gloomspite-gitz/malign-sorcery/soulsnare-shackles/',
