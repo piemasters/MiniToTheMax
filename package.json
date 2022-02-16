@@ -59,7 +59,7 @@
     "react-helmet": "6.1.0"
   },
   "devDependencies": {
-    "@babel/core": "7.16.12",
+    "@babel/core": "7.17.4",
     "@emotion/babel-plugin": "11.7.2",
     "@emotion/jest": "11.7.1",
     "@storybook/addon-a11y": "6.4.19",
