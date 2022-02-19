@@ -3728,13 +3728,14 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
-"@testing-library/react@12.1.2":
-  version "12.1.2"
-  resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-12.1.2.tgz#f1bc9a45943461fa2a598bb4597df1ae044cfc76"
-  integrity sha512-ihQiEOklNyHIpo2Y8FREkyD1QAea054U0MVbwH1m8N9TxeFz+KoJ9LkqoKqJlzx2JDm56DVwaJ1r36JYxZM05g==
+"@testing-library/react@12.1.3":
+  version "12.1.3"
+  resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-12.1.3.tgz#ef26c5f122661ea9b6f672b23dc6b328cadbbf26"
+  integrity sha512-oCULRXWRrBtC9m6G/WohPo1GLcLesH7T4fuKzRAKn1CWVu9BzXtqLXDDTA6KhFNNtRwLtfSMr20HFl+Qrdrvmg==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
+    "@types/react-dom" "*"
 
 "@tokenizer/token@^0.3.0":
   version "0.3.0"
@@ -4165,7 +4166,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-dom@17.0.11":
+"@types/react-dom@*", "@types/react-dom@17.0.11":
   version "17.0.11"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
   integrity sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==
@@ -8535,10 +8536,10 @@ eslint-plugin-react@7.28.0, eslint-plugin-react@^7.25.1:
     semver "^6.3.0"
     string.prototype.matchall "^4.0.6"
 
-eslint-plugin-storybook@^0.5.6:
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-storybook/-/eslint-plugin-storybook-0.5.6.tgz#10bce5933ad9ceec46cdf5ed5a81b50b33f73bf7"
-  integrity sha512-hxeydYXi0DZC80kV9wPz9pA9oG9GVdfNg9iXR/KhqnMdqZWCGQKsex05k4VlX52no7mm/sICjW/iKYtRqVkaaw==
+eslint-plugin-storybook@^0.5.7:
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-storybook/-/eslint-plugin-storybook-0.5.7.tgz#7d871efe232401de7c21680653608b1c88e83ecb"
+  integrity sha512-rko/QUHa3/hrC3W5RmPrukKawCyGeVqSuwzyLZO6aV/neyOPrgkL/LED8u6NQJSaT1qZFT+7iLQ1eE8Ce7G+aA==
   dependencies:
     "@storybook/csf" "^0.0.1"
     "@typescript-eslint/experimental-utils" "^5.3.0"
