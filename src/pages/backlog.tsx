@@ -231,7 +231,10 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Emerald Lifeswarm',
       link: '/showcase/gloomspite-gitz/malign-sorcery/emerald-lifeswarm/',
     },
-    { name: 'Geminids of Uhl-Ghysh' },
+    {
+      name: 'Geminids of Uhl-Ghysh',
+      link: '/showcase/gloomspite-gitz/malign-sorcery/geminids-of-uhl-gysh/',
+    },
     {
       name: 'Malevolent Maelstrom',
       link: '/showcase/gloomspite-gitz/malign-sorcery/malevolent-maelstrom/',
