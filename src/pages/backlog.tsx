@@ -259,8 +259,14 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Soulsnare Shackles',
       link: '/showcase/gloomspite-gitz/malign-sorcery/soulsnare-shackles/',
     },
-    { name: 'Suffocating Gravetide' },
-    { name: 'Umbral Spellportal' },
+    {
+      name: 'Suffocating Gravetide',
+      link: '/showcase/gloomspite-gitz/malign-sorcery/suffocating-gravetide/',
+    },
+    {
+      name: 'Umbral Spellportal',
+      link: '/showcase/gloomspite-gitz/malign-sorcery/umbral-spell-portals/',
+    },
   ];
 
   const objectives = [
