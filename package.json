@@ -85,7 +85,7 @@
     "@typescript-eslint/parser": "4.33.0",
     "axe-core": "4.4.1",
     "babel-jest": "27.5.1",
-    "babel-loader": "8.2.3",
+    "babel-loader": "8.2.4",
     "babel-plugin-remove-graphql-queries": "3.14.0",
     "babel-preset-gatsby": "2.10.0",
     "babel-preset-react-app": "10.0.1",
