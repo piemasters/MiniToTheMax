@@ -271,7 +271,10 @@ const BacklogPage = (): React.ReactNode => {
 
   const objectives = [
     { name: 'Ensorcelled Armoury' },
-    { name: 'Hallowed Tomb' },
+    {
+      name: 'Hallowed Tomb',
+      link: '/showcase/scenery/shattered-dominion-objectives/hallowed-tomb/',
+    },
     { name: 'Iconoclast Axe' },
     { name: 'Realmvault Key' },
     {
