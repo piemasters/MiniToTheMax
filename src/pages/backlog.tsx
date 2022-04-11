@@ -275,8 +275,14 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Hallowed Tomb',
       link: '/showcase/scenery/shattered-dominion-objectives/hallowed-tomb/',
     },
-    { name: 'Iconoclast Axe' },
-    { name: 'Realmvault Key' },
+    {
+      name: 'Iconoclast Axe',
+      link: '/showcase/scenery/shattered-dominion-objectives/iconoclast-axe/',
+    },
+    {
+      name: 'Realmvault Key',
+      link: '/showcase/scenery/shattered-dominion-objectives/realmvault-key/',
+    },
     {
       name: 'Soul Stone',
       link: '/showcase/scenery/shattered-dominion-objectives/soul-stone/',
