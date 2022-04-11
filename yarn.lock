@@ -1556,10 +1556,10 @@
   dependencies:
     "@emotion/memoize" "0.7.4"
 
-"@emotion/jest@11.8.0":
-  version "11.8.0"
-  resolved "https://registry.yarnpkg.com/@emotion/jest/-/jest-11.8.0.tgz#c7e6c6d2a58ee25b5078bf79dc738361669a9d7c"
-  integrity sha512-LfiD3cmPekVFky4L9Z9D2LpD/25JnJs1EalJGP/bmDJlqPiV8rLzUVwtfNvq7lk68o4GMxg/VRf28qPPeZKEPQ==
+"@emotion/jest@11.9.1":
+  version "11.9.1"
+  resolved "https://registry.yarnpkg.com/@emotion/jest/-/jest-11.9.1.tgz#65224814552eab6acb923504e597c6f6b67e90d6"
+  integrity sha512-JFf9yBA6a7fKrKCWMmjODGRcgBnjiQsl9AakP1y7oRJ6B147ZKPo8DgzHUZ5qQkI06GKAWwYU1vKROInc7SYVA==
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@emotion/css-prettifier" "^1.0.1"
@@ -1577,15 +1577,15 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.7.5.tgz#2c40f81449a4e554e9fc6396910ed4843ec2be50"
   integrity sha512-igX9a37DR2ZPGYtV6suZ6whr8pTFtyHL3K/oLUotxpSVO2ASaprmAe2Dkq7tBo7CRY7MMDrAa9nuQP9/YG8FxQ==
 
-"@emotion/react@11.8.2":
-  version "11.8.2"
-  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.8.2.tgz#e51f5e6372e22e82780836c9288da19af4b51e70"
-  integrity sha512-+1bcHBaNJv5nkIIgnGKVsie3otS0wF9f1T1hteF3WeVvMNQEtfZ4YyFpnphGoot3ilU/wWMgP2SgIDuHLE/wAA==
+"@emotion/react@11.9.0":
+  version "11.9.0"
+  resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.9.0.tgz#b6d42b1db3bd7511e7a7c4151dc8bc82e14593b8"
+  integrity sha512-lBVSF5d0ceKtfKCDQJveNAtkC7ayxpVlgOohLgXqRwqWr9bOf4TZAFFyIcNngnV6xK6X4x2ZeXq7vliHkoVkxQ==
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@emotion/babel-plugin" "^11.7.1"
     "@emotion/cache" "^11.7.1"
-    "@emotion/serialize" "^1.0.2"
+    "@emotion/serialize" "^1.0.3"
     "@emotion/utils" "^1.1.0"
     "@emotion/weak-memoize" "^0.2.5"
     hoist-non-react-statics "^3.3.1"
@@ -1601,10 +1601,10 @@
     "@emotion/utils" "0.11.3"
     csstype "^2.5.7"
 
-"@emotion/serialize@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@emotion/serialize/-/serialize-1.0.2.tgz#77cb21a0571c9f68eb66087754a65fa97bfcd965"
-  integrity sha512-95MgNJ9+/ajxU7QIAruiOAdYNjxZX7G2mhgrtDWswA21VviYIRP1R5QilZ/bDY42xiKsaktP4egJb3QdYQZi1A==
+"@emotion/serialize@^1.0.2", "@emotion/serialize@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@emotion/serialize/-/serialize-1.0.3.tgz#99e2060c26c6292469fb30db41f4690e1c8fea63"
+  integrity sha512-2mSSvgLfyV3q+iVh3YWgNlUc2a9ZlDU7DjuP5MjK3AXRR0dYigCrP99aeFtaB2L/hjfEZdSThn5dsZ0ufqbvsA==
   dependencies:
     "@emotion/hash" "^0.8.0"
     "@emotion/memoize" "^0.7.4"
@@ -4188,10 +4188,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-dom@*", "@types/react-dom@17.0.14":
-  version "17.0.14"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.14.tgz#c8f917156b652ddf807711f5becbd2ab018dea9f"
-  integrity sha512-H03xwEP1oXmSfl3iobtmQ/2dHF5aBHr8aUMwyGZya6OW45G+xtdzmq6HkncefiBt5JU8DVyaWl/nWZbjZCnzAQ==
+"@types/react-dom@*", "@types/react-dom@18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.0.tgz#b13f8d098e4b0c45df4f1ed123833143b0c71141"
+  integrity sha512-49897Y0UiCGmxZqpC8Blrf6meL8QUla6eb+BBhn69dTXlmuOlzkfr7HHY/O8J25e1lTUMs+YYxSlVDAaGHCOLg==
   dependencies:
     "@types/react" "*"
 
@@ -5628,10 +5628,10 @@ babel-preset-gatsby-package@^0.1.2:
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
 
-babel-preset-gatsby@2.10.1:
-  version "2.10.1"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-2.10.1.tgz#a31fe2f4b4ed64204baca5ea8267639a00dd1a6b"
-  integrity sha512-wuEP2Tsf7MnblXIqJDdg+DOUXZhWQHBQYH/6cQ+HdEFiXu0gwskj/s5sPI6KoBgGK23EIZGr94HBtCq0D3aNRQ==
+babel-preset-gatsby@2.11.1:
+  version "2.11.1"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-2.11.1.tgz#860d8d9903df38c314fa6f0cfdb197d02555c4e4"
+  integrity sha512-NGUNAIb3hzD1Mt97q5T3gSSuVuaqnYFSm7AvgByDa3Mk2ohF5Ni86sCLVPRIntIzJvgU5OWY4Qz+6rrI1SwprQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.14.0"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.14.5"
@@ -5646,8 +5646,8 @@ babel-preset-gatsby@2.10.1:
     babel-plugin-dynamic-import-node "^2.3.3"
     babel-plugin-macros "^2.8.0"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
-    gatsby-core-utils "^3.10.1"
-    gatsby-legacy-polyfills "^2.10.0"
+    gatsby-core-utils "^3.11.1"
+    gatsby-legacy-polyfills "^2.11.0"
 
 babel-preset-gatsby@^1.14.0:
   version "1.14.0"
@@ -9653,10 +9653,10 @@ gatsby-core-utils@^2.14.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^3.10.1:
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.10.1.tgz#0f5e6aeda5ef4b86218b27480a9766fe30af4393"
-  integrity sha512-WqNMm0u1CAZm6Q+UQ4dDHwIAt3l32NeIaPuSXmDX7QcMGR3FUUk8cl2Ym6gx1hfILm1aCexqfaSCLUXtaWKkbQ==
+gatsby-core-utils@^3.11.1:
+  version "3.11.1"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.11.1.tgz#ea87c1d3aa45c26c9ea32b8e8b029afe6a56f8c7"
+  integrity sha512-Op9/uihtcsDLlZDfRsGJ1ya2mFx2YH9Zmx93bawElZ0YpIzKjCkNTp+I5i5UANxvs5I+Fljl0WHQRudMWg+fWA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     ci-info "2.0.0"
@@ -9698,10 +9698,10 @@ gatsby-legacy-polyfills@^1.14.0:
     "@babel/runtime" "^7.15.4"
     core-js-compat "3.9.0"
 
-gatsby-legacy-polyfills@^2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/gatsby-legacy-polyfills/-/gatsby-legacy-polyfills-2.10.0.tgz#f2d3b85f27644f77aaa428eac1e0d1e5f96343da"
-  integrity sha512-+S6Nv2vFqtsa/waxb/dW2xpIqk/l44fFnz9bb1vuS/+mDNLd1Xb/SKdGzxWLSSNbI8CY3JoJC+AAzO6fOqIyLg==
+gatsby-legacy-polyfills@^2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-legacy-polyfills/-/gatsby-legacy-polyfills-2.11.0.tgz#8b2afc4d97f44eb5767fe9b49f55ff675055ffd2"
+  integrity sha512-ulkRNCitwFjwUM4f2ufljH0WjELm6QEIOGRryNRt9LKJEB9QGmdm+KUAWIv7xrFUqKq1Pn6is64wcfXDw21zSA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     core-js-compat "3.9.0"
@@ -10686,10 +10686,10 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
-gsap@3.9.1:
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.9.1.tgz#d4c7443540497afee9ddc0824fd0180224e33360"
-  integrity sha512-JSGVYoC6da4pIjdF/yxFU6Rz8OojOIDkbooveZlfNg0+JIoFoRruyfWAEi6R/gUeNcuOiTqUIb0gi1nCNrHf8w==
+gsap@3.10.2:
+  version "3.10.2"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.10.2.tgz#a3b0a842c398099fc7a80313bfb42253a3dc2b6b"
+  integrity sha512-exJVOda3O1NpgGjM4dzZONmSODWFP+JF/DwfiBfCPQPr15nm3M0TQczYKLZlMdBNdWxHMvRPKVqc1e1/6YD+zA==
 
 gud@^1.0.0:
   version "1.0.0"
