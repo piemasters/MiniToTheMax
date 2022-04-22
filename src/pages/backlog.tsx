@@ -270,7 +270,10 @@ const BacklogPage = (): React.ReactNode => {
   ];
 
   const objectives = [
-    { name: 'Ensorcelled Armoury' },
+    {
+      name: 'Ensorcelled Armoury',
+      link: '/showcase/scenery/shattered-dominion-objectives/enscrolled-armoury/',
+    },
     {
       name: 'Hallowed Tomb',
       link: '/showcase/scenery/shattered-dominion-objectives/hallowed-tomb/',
@@ -287,7 +290,10 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Soul Stone',
       link: '/showcase/scenery/shattered-dominion-objectives/soul-stone/',
     },
-    { name: 'The Realm’s Ransom' },
+    {
+      name: 'The Realm’s Ransom',
+      link: '/showcase/scenery/shattered-dominion-objectives/the-realms-ransom/',
+    },
     { name: 'Trove of Arcane Glory' },
   ];
 

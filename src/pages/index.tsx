@@ -44,8 +44,8 @@ const IndexPage = (): React.ReactNode => {
           <Badges />
           <h2>Latest Video</h2>
           <Video
-            src="https://www.youtube.com/embed/EL017lSPe8c"
-            title="Realmvault Key"
+            src="https://www.youtube.com/embed/8m4ojxNuPtE"
+            title="The Realms Ransom"
           />
           <h2>Latest Post</h2>
 
