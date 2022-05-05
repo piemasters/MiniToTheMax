@@ -2,7 +2,7 @@
   "name": "minitothemax",
   "private": true,
   "description": "Website for MiniToTheMax",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "build": "yarn preoptimize&& gatsby build",
