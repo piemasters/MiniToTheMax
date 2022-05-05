@@ -294,7 +294,10 @@ const BacklogPage = (): React.ReactNode => {
       name: 'The Realm’s Ransom',
       link: '/showcase/scenery/shattered-dominion-objectives/the-realms-ransom/',
     },
-    { name: 'Trove of Arcane Glory' },
+    {
+      name: 'Trove of Arcane Glory',
+      link: '/showcase/scenery/shattered-dominion-objectives/trove-of-arcane-glory/',
+    },
   ];
 
   const dreadfleet = [
