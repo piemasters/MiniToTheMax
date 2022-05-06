@@ -14,9 +14,11 @@ module.exports = {
   transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],
   globals: {
     __PATH_PREFIX__: ``,
-    __BASE_PATH__: ``
+    __BASE_PATH__: ``,
   },
-  testURL: `http://localhost`,
+  testEnvironmentOptions: {
+    url: 'http://localhost',
+  },
   setupFilesAfterEnv: [`<rootDir>/jest.setup.js`],
   setupFiles: [`<rootDir>/loadershim.js`],
 };
