@@ -44,8 +44,8 @@ const IndexPage = (): React.ReactNode => {
           <Badges />
           <h2>Latest Video</h2>
           <Video
-            src="https://www.youtube.com/embed/zaH01mCzUxQ"
-            title="Space Wolves: Centurion Devastators"
+            src="https://www.youtube.com/embed/uJRZDVe_w4M"
+            title="Space Wolves: Wolf Guard Terminators"
           />
           <h2>Latest Post</h2>
 
