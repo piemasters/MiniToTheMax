@@ -56,8 +56,8 @@ export const airCastellanGreen: PaintDetails = {
   hex: '#264715',
 };
 
-export const airDeathworldForest: PaintDetails = {
-  name: 'Deathworld Forest',
+export const airDeathWorldForest: PaintDetails = {
+  name: 'Death World Forest',
   type: 'air',
   color: 'green',
   hex: '#556229',
@@ -611,7 +611,7 @@ export const airPaints = [
   airCaledorSky,
   airCalibanGreen,
   airCastellanGreen,
-  airDeathworldForest,
+  airDeathWorldForest,
   airZandriDust,
   airMournfangBrown,
   airXV88,

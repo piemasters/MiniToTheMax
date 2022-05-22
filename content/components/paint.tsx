@@ -38,6 +38,10 @@ const Paint = ({
     (paint) => paint.name === name
   );
 
+  if (!paintMatches.length) {
+    console.error('Incorrect Paint Name: ', name);
+  }
+
   const paint: PaintDetails = type
     ? paintMatches.filter((paint) => paint.type === type)[0]
     : paintMatches[0];

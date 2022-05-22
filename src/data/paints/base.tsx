@@ -98,8 +98,8 @@ export const baseCastellanGreen: PaintDetails = {
   hex: '#264715',
 };
 
-export const baseDeathworldForest: PaintDetails = {
-  name: 'Deathworld Forest',
+export const baseDeathWorldForest: PaintDetails = {
+  name: 'Death World Forest',
   type: 'base',
   color: 'green',
   hex: '#556229',
@@ -460,7 +460,7 @@ export const basePaints = [
   baseCalibanGreen,
   baseWaaaghFlesh,
   baseCastellanGreen,
-  baseDeathworldForest,
+  baseDeathWorldForest,
   baseZandriDust,
   baseSteelLegionDrab,
   baseBugmansGlow,
