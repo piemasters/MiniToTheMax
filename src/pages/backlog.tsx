@@ -205,6 +205,7 @@ const BacklogPage = (): React.ReactNode => {
     },
     {
       name: 'Skarsnik & Gobbla',
+      link: '/showcase/gloomspite-gitz/skarsnik/',
     },
     {
       name: 'Skragrott',
