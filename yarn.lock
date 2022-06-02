@@ -2553,19 +2553,19 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@storybook/addon-a11y@6.4.22":
-  version "6.4.22"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.4.22.tgz#df75f1a82c83973c165984e8b0944ceed64c30e9"
-  integrity sha512-y125LDx5VR6JmiHB6/0RHWudwhe9QcFXqoAqGqWIj4zRv0kb9AyDPDtWvtDOSImCDXIPRmd8P05xTOnYH0ET3w==
+"@storybook/addon-a11y@6.5.6":
+  version "6.5.6"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.5.6.tgz#fb87c49f7d878f1f89cca7cfe7193614ba661c9c"
+  integrity sha512-h9HPDVWbVMzwplthYVj3JokCMxEzVVIuSOqr2sJ7OsYhPqeJCvanJG7ZHGR3fzEdPkIaJ9X+ePHKdXzi+PtEvg==
   dependencies:
-    "@storybook/addons" "6.4.22"
-    "@storybook/api" "6.4.22"
-    "@storybook/channels" "6.4.22"
-    "@storybook/client-logger" "6.4.22"
-    "@storybook/components" "6.4.22"
-    "@storybook/core-events" "6.4.22"
-    "@storybook/csf" "0.0.2--canary.87bc651.0"
-    "@storybook/theming" "6.4.22"
+    "@storybook/addons" "6.5.6"
+    "@storybook/api" "6.5.6"
+    "@storybook/channels" "6.5.6"
+    "@storybook/client-logger" "6.5.6"
+    "@storybook/components" "6.5.6"
+    "@storybook/core-events" "6.5.6"
+    "@storybook/csf" "0.0.2--canary.4566f4d.1"
+    "@storybook/theming" "6.5.6"
     axe-core "^4.2.0"
     core-js "^3.8.2"
     global "^4.4.0"
@@ -3100,6 +3100,21 @@
     react-textarea-autosize "^8.3.0"
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
+    util-deprecate "^1.0.2"
+
+"@storybook/components@6.5.6":
+  version "6.5.6"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-6.5.6.tgz#83f03967bdd1c509e5d18111b924a8cb0789718a"
+  integrity sha512-Qh40wMkqWD3ZbGqxqa0pi5JFWazIbcZWbqUakH9zARgLk+LBrpJvPuu7GmQrDUtJTA33H4tD/4ujt6AibnaQwQ==
+  dependencies:
+    "@storybook/client-logger" "6.5.6"
+    "@storybook/csf" "0.0.2--canary.4566f4d.1"
+    "@storybook/theming" "6.5.6"
+    "@types/react-syntax-highlighter" "11.0.5"
+    core-js "^3.8.2"
+    qs "^6.10.0"
+    react-syntax-highlighter "^15.4.5"
+    regenerator-runtime "^0.13.7"
     util-deprecate "^1.0.2"
 
 "@storybook/core-client@6.4.22":
@@ -13385,7 +13400,7 @@ lowercase-keys@^2.0.0:
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-2.0.0.tgz#2603e78b7b4b0006cbca2fbcc8a3202558ac9479"
   integrity sha512-tqNXrS78oMOE73NMxK4EMLQsQowWf8jKooH9g7xPavRT706R6bkQJ6DY2Te7QukaZsulxa30wQ7bk0pm4XiHmA==
 
-lowlight@^1.14.0:
+lowlight@^1.14.0, lowlight@^1.17.0:
   version "1.20.0"
   resolved "https://registry.yarnpkg.com/lowlight/-/lowlight-1.20.0.tgz#ddb197d33462ad0d93bf19d17b6c301aa3941888"
   integrity sha512-8Ktj+prEb1RoCPkEOrPMYUN/nCggB7qAWe3a7OpMjWQkh3l2RD5wKRQ+o8Q8YuI9RG/xs95waaI/E6ym/7NsTw==
@@ -15975,7 +15990,7 @@ pretty-hrtime@^1.0.3:
   resolved "https://registry.yarnpkg.com/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
 
-prismjs@^1.21.0:
+prismjs@^1.21.0, prismjs@^1.27.0:
   version "1.28.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.28.0.tgz#0d8f561fa0f7cf6ebca901747828b149147044b6"
   integrity sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw==
@@ -16542,6 +16557,17 @@ react-syntax-highlighter@^13.5.3:
     prismjs "^1.21.0"
     refractor "^3.1.0"
 
+react-syntax-highlighter@^15.4.5:
+  version "15.5.0"
+  resolved "https://registry.yarnpkg.com/react-syntax-highlighter/-/react-syntax-highlighter-15.5.0.tgz#4b3eccc2325fa2ec8eff1e2d6c18fa4a9e07ab20"
+  integrity sha512-+zq2myprEnQmH5yw6Gqc8lD55QHnpKaU8TOcFeC/Lg/MQSs8UknEA0JC4nTZGFAXC2J2Hyj/ijJ7NlabyPi2gg==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    highlight.js "^10.4.1"
+    lowlight "^1.17.0"
+    prismjs "^1.27.0"
+    refractor "^3.6.0"
+
 react-test-renderer@17.0.2, "react-test-renderer@^16.8.0 || ^17.0.0":
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-17.0.2.tgz#4cd4ae5ef1ad5670fc0ef776e8cc7e1231d9866c"
@@ -16687,7 +16713,7 @@ redux@^4.0.5:
   dependencies:
     "@babel/runtime" "^7.9.2"
 
-refractor@^3.1.0:
+refractor@^3.1.0, refractor@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/refractor/-/refractor-3.6.0.tgz#ac318f5a0715ead790fcfb0c71f4dd83d977935a"
   integrity sha512-MY9W41IOWxxk31o+YvFCNyNzdkc9M20NoZK5vq6jkv4I/uh2zkWcfudj0Q1fovjUQJrNewS9NMzeTtqPf+n5EA==
