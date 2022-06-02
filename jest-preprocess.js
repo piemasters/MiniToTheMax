@@ -1,5 +1,5 @@
 const babelOptions = {
   presets: ['babel-preset-gatsby', '@babel/preset-typescript'],
-  plugins: ['emotion'],
+  plugins: ['@emotion'],
 };
 module.exports = require('babel-jest').default.createTransformer(babelOptions);
