@@ -194,6 +194,7 @@ const BacklogPage = (): React.ReactNode => {
   const gloomspiteGitz = [
     {
       name: 'Da Red Gobbo',
+      link: '/showcase/gloomspite-gitz/da-red-gobbo/',
     },
     {
       name: 'Mangler Squigs',
