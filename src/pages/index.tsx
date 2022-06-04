@@ -45,7 +45,7 @@ const IndexPage = (): React.ReactNode => {
           <h2>Latest Video</h2>
           <Video
             src="https://www.youtube.com/embed/5u4Ja6wW4ak"
-            title="Gloomspite Gitz: Skarsnik & Gobbla"
+            title="Gloomspite Gitz: Da Red Gobbo"
           />
           <h2>Latest Post</h2>
 
