@@ -1961,18 +1961,6 @@
     "@types/yargs" "^17.0.8"
     chalk "^4.0.0"
 
-"@jest/types@^28.1.1":
-  version "28.1.1"
-  resolved "https://registry.yarnpkg.com/@jest/types/-/types-28.1.1.tgz#d059bbc80e6da6eda9f081f293299348bd78ee0b"
-  integrity sha512-vRXVqSg1VhDnB8bWcmvLzmg0Bt9CRKVgHPXqYwvWMX3TvAjeO+nRuK6+VdTKCtWOvYlmkF/HqNAL/z+N3B53Kw==
-  dependencies:
-    "@jest/schemas" "^28.0.2"
-    "@types/istanbul-lib-coverage" "^2.0.0"
-    "@types/istanbul-reports" "^3.0.0"
-    "@types/node" "*"
-    "@types/yargs" "^17.0.8"
-    chalk "^4.0.0"
-
 "@jimp/bmp@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@jimp/bmp/-/bmp-0.14.0.tgz#6df246026554f276f7b354047c6fff9f5b2b5182"
@@ -5438,10 +5426,10 @@ babel-preset-gatsby-package@^0.1.2:
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
 
-babel-preset-gatsby@2.15.0:
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-2.15.0.tgz#fb9f72224e75aa5dd2650c68f03e03307a39adde"
-  integrity sha512-NDsRwwYdtTALqgf3HahKTfkPIF4LWeSf5QrZ0zFT6D1pKOGPZxFFLc8Bo6m6VKa73Lx8gxF2DlawGqc9VS2dyw==
+babel-preset-gatsby@2.16.0:
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-2.16.0.tgz#52da43b753c9d7c4b0f52a37c15cac2fce8e3fb5"
+  integrity sha512-4rQATcv25OUVqn8ThkvRVF7BNVBnTwZVhsy73ABYt8Y4UcsMFDQ5BjHPQYIOTqqeayZH+UHImOM+CuKS1OiojQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.14.0"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.14.5"
@@ -5456,8 +5444,8 @@ babel-preset-gatsby@2.15.0:
     babel-plugin-dynamic-import-node "^2.3.3"
     babel-plugin-macros "^3.1.0"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
-    gatsby-core-utils "^3.15.0"
-    gatsby-legacy-polyfills "^2.15.0"
+    gatsby-core-utils "^3.16.0"
+    gatsby-legacy-polyfills "^2.16.0"
 
 babel-preset-gatsby@^1.14.0:
   version "1.14.0"
@@ -9510,10 +9498,10 @@ gatsby-core-utils@^2.14.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^3.15.0:
-  version "3.15.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.15.0.tgz#1fb6611765250c187dd6d36c2812a5b0c50204ae"
-  integrity sha512-aLNrH3gGUIeD9XGk3z/27N5qaVx7y3AAgs/Vu6PJm69t25kTwuOHKNzhlnHkIZypznZkkVeN7QbHBkIKam/ZIQ==
+gatsby-core-utils@^3.16.0:
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.16.0.tgz#055e250614221b77168d0ca507a56a87d2cdbf35"
+  integrity sha512-cr3aIlzfzQkXSKng0dfAkg+v+Q0WOFJ1CCpM6HFvMykYtw5vSdaLxs6gwNmtPowG1wmCHkQ+pcyqppP+IdmVsg==
   dependencies:
     "@babel/runtime" "^7.15.4"
     ci-info "2.0.0"
@@ -9555,10 +9543,10 @@ gatsby-legacy-polyfills@^1.14.0:
     "@babel/runtime" "^7.15.4"
     core-js-compat "3.9.0"
 
-gatsby-legacy-polyfills@^2.15.0:
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/gatsby-legacy-polyfills/-/gatsby-legacy-polyfills-2.15.0.tgz#bb9d838c4c57fd9a37572942cac556eca219a2bd"
-  integrity sha512-EC50uFv3rIT1oB9+WxhiEUWg1Bkxxf+FPMTkNUZKMYc9JBtUwbqWOupjDHIYEq0RNAHx2+Qxs9NzbC3nE4P6/Q==
+gatsby-legacy-polyfills@^2.16.0:
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/gatsby-legacy-polyfills/-/gatsby-legacy-polyfills-2.16.0.tgz#a80b767df6f4623e0c9e22cd1c1996e34c0f03dd"
+  integrity sha512-nx9m/qqzTcv/3ovASQFEJImzhtkMI1aFXXb863o4ghA6LULtX4cRi9+MbnOf4xuC3l9rOndIKEIqZ6yRzeFEiQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
     core-js-compat "3.9.0"
@@ -12415,18 +12403,6 @@ jest-util@^26.6.2:
     micromatch "^4.0.2"
 
 jest-util@^28.1.0, jest-util@^28.1.1:
-  version "28.1.1"
-  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-28.1.1.tgz#ff39e436a1aca397c0ab998db5a51ae2b7080d05"
-  integrity sha512-FktOu7ca1DZSyhPAxgxB6hfh2+9zMoJ7aEQA759Z6p45NuO8mWcqujH+UdHlCm/V6JTWwDztM2ITCzU1ijJAfw==
-  dependencies:
-    "@jest/types" "^28.1.1"
-    "@types/node" "*"
-    chalk "^4.0.0"
-    ci-info "^3.2.0"
-    graceful-fs "^4.2.9"
-    picomatch "^2.2.3"
-
-jest-util@^28.1.1:
   version "28.1.1"
   resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-28.1.1.tgz#ff39e436a1aca397c0ab998db5a51ae2b7080d05"
   integrity sha512-FktOu7ca1DZSyhPAxgxB6hfh2+9zMoJ7aEQA759Z6p45NuO8mWcqujH+UdHlCm/V6JTWwDztM2ITCzU1ijJAfw==
