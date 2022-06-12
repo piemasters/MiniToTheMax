@@ -494,7 +494,10 @@ const BacklogPage = (): React.ReactNode => {
   ];
 
   const lostPatrol = [
-    { name: 'Genestealers' },
+    {
+      name: 'Genestealers',
+      link: '/showcase/board-games/lost-patrol/genestealers/',
+    },
     { name: 'Infestations' },
     { name: 'Space Marine Scouts' },
   ];
