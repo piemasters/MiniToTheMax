@@ -498,8 +498,14 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Genestealers',
       link: '/showcase/board-games/lost-patrol/genestealers/',
     },
-    { name: 'Infestations' },
-    { name: 'Space Marine Scouts' },
+    {
+      name: 'Infestations',
+      link: '/showcase/board-games/lost-patrol/infestations/',
+    },
+    {
+      name: 'Space Marine Scouts',
+      link: '/showcase/board-games/lost-patrol/scouts/',
+    },
   ];
 
   const underworlds = [
