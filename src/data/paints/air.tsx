@@ -5,6 +5,7 @@ export const airAverlandSunset: PaintDetails = {
   type: 'air',
   color: 'yellow',
   hex: '#FBB81C',
+  availability: 'available',
 };
 
 export const airMephistonRed: PaintDetails = {
@@ -12,6 +13,7 @@ export const airMephistonRed: PaintDetails = {
   type: 'air',
   color: 'red',
   hex: '#960C09',
+  availability: 'available',
 };
 
 export const airKhorneRed: PaintDetails = {
@@ -19,6 +21,7 @@ export const airKhorneRed: PaintDetails = {
   type: 'air',
   color: 'red',
   hex: '#650001',
+  availability: 'available',
 };
 
 export const airKantorBlue: PaintDetails = {
@@ -26,6 +29,7 @@ export const airKantorBlue: PaintDetails = {
   type: 'air',
   color: 'blue',
   hex: '#02134E',
+  availability: 'available',
 };
 
 export const airMacraggeBlue: PaintDetails = {
@@ -33,6 +37,7 @@ export const airMacraggeBlue: PaintDetails = {
   type: 'air',
   color: 'blue',
   hex: '#0F3D7C',
+  availability: 'available',
 };
 
 export const airCaledorSky: PaintDetails = {
@@ -40,6 +45,7 @@ export const airCaledorSky: PaintDetails = {
   type: 'air',
   color: 'blue',
   hex: '#366699',
+  availability: 'discontinued',
 };
 
 export const airCalibanGreen: PaintDetails = {
@@ -47,6 +53,7 @@ export const airCalibanGreen: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#003D15',
+  availability: 'available',
 };
 
 export const airCastellanGreen: PaintDetails = {
@@ -54,6 +61,7 @@ export const airCastellanGreen: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#264715',
+  availability: 'available',
 };
 
 export const airDeathWorldForest: PaintDetails = {
@@ -61,6 +69,7 @@ export const airDeathWorldForest: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#556229',
+  availability: 'available',
 };
 
 export const airZandriDust: PaintDetails = {
@@ -68,6 +77,7 @@ export const airZandriDust: PaintDetails = {
   type: 'air',
   color: 'brown',
   hex: '#988E56',
+  availability: 'available',
 };
 
 export const airMournfangBrown: PaintDetails = {
@@ -75,6 +85,7 @@ export const airMournfangBrown: PaintDetails = {
   type: 'air',
   color: 'brown',
   hex: '#490F06',
+  availability: 'available',
 };
 
 export const airXV88: PaintDetails = {
@@ -82,6 +93,7 @@ export const airXV88: PaintDetails = {
   type: 'air',
   color: 'brown',
   hex: '#6C4811',
+  availability: 'discontinued',
 };
 
 export const airDryadBark: PaintDetails = {
@@ -89,6 +101,7 @@ export const airDryadBark: PaintDetails = {
   type: 'air',
   color: 'brown',
   hex: '#2B2A24',
+  availability: 'discontinued',
 };
 
 export const airMechanicusStandardGrey: PaintDetails = {
@@ -96,6 +109,7 @@ export const airMechanicusStandardGrey: PaintDetails = {
   type: 'air',
   color: 'grey',
   hex: '#39484A',
+  availability: 'available',
 };
 
 export const airAbaddonBlack: PaintDetails = {
@@ -103,6 +117,7 @@ export const airAbaddonBlack: PaintDetails = {
   type: 'air',
   color: 'black',
   hex: '#000000',
+  availability: 'available',
 };
 
 export const airLeadbelcher: PaintDetails = {
@@ -115,6 +130,7 @@ export const airLeadbelcher: PaintDetails = {
     { offset: 50, color: 'rgb(138, 138, 138)' },
     { offset: 100, color: 'rgb(21, 30, 36)' },
   ],
+  availability: 'available',
 };
 
 export const airBalthasarGold: PaintDetails = {
@@ -127,6 +143,7 @@ export const airBalthasarGold: PaintDetails = {
     { offset: 50, color: 'rgb(155, 104, 75)' },
     { offset: 100, color: 'rgb(29, 15, 7)' },
   ],
+  availability: 'available',
 };
 
 export const airSteelLegionDrab: PaintDetails = {
@@ -134,6 +151,7 @@ export const airSteelLegionDrab: PaintDetails = {
   type: 'air',
   color: 'brown',
   hex: '#584E2D',
+  availability: 'discontinued',
 };
 
 export const airTheFang: PaintDetails = {
@@ -141,6 +159,7 @@ export const airTheFang: PaintDetails = {
   type: 'air',
   color: 'grey',
   hex: '#405B71',
+  availability: 'available',
 };
 
 export const airFlashGitzYellow: PaintDetails = {
@@ -148,6 +167,7 @@ export const airFlashGitzYellow: PaintDetails = {
   type: 'air',
   color: 'yellow',
   hex: '#FFF300',
+  availability: 'available',
 };
 
 export const airTrollSlayerOrange: PaintDetails = {
@@ -155,6 +175,7 @@ export const airTrollSlayerOrange: PaintDetails = {
   type: 'air',
   color: 'orange',
   hex: '#F16C23',
+  availability: 'available',
 };
 
 export const airEvilSunzScarlet: PaintDetails = {
@@ -162,6 +183,7 @@ export const airEvilSunzScarlet: PaintDetails = {
   type: 'air',
   color: 'red',
   hex: '#C01411',
+  availability: 'available',
 };
 
 export const airGenestealerPurple: PaintDetails = {
@@ -169,6 +191,7 @@ export const airGenestealerPurple: PaintDetails = {
   type: 'air',
   color: 'purple',
   hex: '#7658A5',
+  availability: 'discontinued',
 };
 
 export const airCalgarBlue: PaintDetails = {
@@ -176,6 +199,7 @@ export const airCalgarBlue: PaintDetails = {
   type: 'air',
   color: 'blue',
   hex: '#2A497F',
+  availability: 'discontinued',
 };
 
 export const airLothernBlue: PaintDetails = {
@@ -183,6 +207,7 @@ export const airLothernBlue: PaintDetails = {
   type: 'air',
   color: 'blue',
   hex: '#2C9BCC',
+  availability: 'available',
 };
 
 export const airTempleGuardBlue: PaintDetails = {
@@ -190,6 +215,7 @@ export const airTempleGuardBlue: PaintDetails = {
   type: 'air',
   color: 'blue',
   hex: '#239489',
+  availability: 'available',
 };
 
 export const airSybariteGreen: PaintDetails = {
@@ -197,6 +223,7 @@ export const airSybariteGreen: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#17A166',
+  availability: 'discontinued',
 };
 
 export const airMootGreen: PaintDetails = {
@@ -204,6 +231,7 @@ export const airMootGreen: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#3DAF44',
+  availability: 'available',
 };
 
 export const airWarbossGreen: PaintDetails = {
@@ -211,6 +239,7 @@ export const airWarbossGreen: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#317E57',
+  availability: 'discontinued',
 };
 
 export const airStrakenGreen: PaintDetails = {
@@ -218,6 +247,7 @@ export const airStrakenGreen: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#597F1C',
+  availability: 'discontinued',
 };
 
 export const airElysianGreen: PaintDetails = {
@@ -225,6 +255,7 @@ export const airElysianGreen: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#6B8C37',
+  availability: 'available',
 };
 
 export const airOgrynCamo: PaintDetails = {
@@ -232,6 +263,7 @@ export const airOgrynCamo: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#96A648',
+  availability: 'available',
 };
 
 export const airUshabtiBone: PaintDetails = {
@@ -239,6 +271,7 @@ export const airUshabtiBone: PaintDetails = {
   type: 'air',
   color: 'bone',
   hex: '#ABA173',
+  availability: 'available',
 };
 
 export const airAirCasteThinner: PaintDetails = {
@@ -251,6 +284,7 @@ export const airAirCasteThinner: PaintDetails = {
     { offset: 100, color: 'rgb(218, 218, 218)' },
   ],
   stroke: '#6b6b6b',
+  availability: 'available',
 };
 
 export const airTallarnSand: PaintDetails = {
@@ -258,6 +292,7 @@ export const airTallarnSand: PaintDetails = {
   type: 'air',
   color: 'brown',
   hex: '#A07409',
+  availability: 'available',
 };
 
 export const airKarakStone: PaintDetails = {
@@ -265,6 +300,7 @@ export const airKarakStone: PaintDetails = {
   type: 'air',
   color: 'bone',
   hex: '#B7945C',
+  availability: 'discontinued',
 };
 
 export const airKislevFlesh: PaintDetails = {
@@ -272,6 +308,7 @@ export const airKislevFlesh: PaintDetails = {
   type: 'air',
   color: 'flesh',
   hex: '#D1A570',
+  availability: 'available',
 };
 
 export const airDeathclawBrown: PaintDetails = {
@@ -279,6 +316,7 @@ export const airDeathclawBrown: PaintDetails = {
   type: 'air',
   color: 'brown',
   hex: '#AF634F',
+  availability: 'discontinued',
 };
 
 export const airTauLightOchre: PaintDetails = {
@@ -286,6 +324,7 @@ export const airTauLightOchre: PaintDetails = {
   type: 'air',
   color: 'brown',
   hex: '#BC6B10',
+  availability: 'discontinued',
 };
 
 export const airBalorBrown: PaintDetails = {
@@ -293,6 +332,7 @@ export const airBalorBrown: PaintDetails = {
   type: 'air',
   color: 'brown',
   hex: '#875408',
+  availability: 'discontinued',
 };
 
 export const airTuskgorFur: PaintDetails = {
@@ -300,6 +340,7 @@ export const airTuskgorFur: PaintDetails = {
   type: 'air',
   color: 'brown',
   hex: '#863231',
+  availability: 'discontinued',
 };
 
 export const airBanebladeBrown: PaintDetails = {
@@ -307,6 +348,7 @@ export const airBanebladeBrown: PaintDetails = {
   type: 'air',
   color: 'brown',
   hex: '#8F7C68',
+  availability: 'available',
 };
 
 export const airDawnstone: PaintDetails = {
@@ -314,6 +356,7 @@ export const airDawnstone: PaintDetails = {
   type: 'air',
   color: 'grey',
   hex: '#697068',
+  availability: 'available',
 };
 
 export const airAdministratumGrey: PaintDetails = {
@@ -321,6 +364,7 @@ export const airAdministratumGrey: PaintDetails = {
   type: 'air',
   color: 'grey',
   hex: '#8F9690',
+  availability: 'available',
 };
 
 export const airUlthuanGrey: PaintDetails = {
@@ -328,6 +372,7 @@ export const airUlthuanGrey: PaintDetails = {
   type: 'air',
   color: 'grey',
   hex: '#C4DDD5',
+  availability: 'available',
 };
 
 export const airWhiteScar: PaintDetails = {
@@ -336,6 +381,7 @@ export const airWhiteScar: PaintDetails = {
   color: 'white',
   hex: '#FFFFFF',
   stroke: '#6b6b6b',
+  availability: 'available',
 };
 
 export const airIronbreaker: PaintDetails = {
@@ -348,6 +394,7 @@ export const airIronbreaker: PaintDetails = {
     { offset: 50, color: 'rgb(122, 130, 132)' },
     { offset: 100, color: 'rgb(65, 65, 65)' },
   ],
+  availability: 'discontinued',
 };
 
 export const airRunefangSteel: PaintDetails = {
@@ -360,6 +407,7 @@ export const airRunefangSteel: PaintDetails = {
     { offset: 50, color: 'rgb(187, 194, 199)' },
     { offset: 100, color: 'rgb(121, 127, 130)' },
   ],
+  availability: 'available',
 };
 
 export const airRelictorGold: PaintDetails = {
@@ -372,6 +420,7 @@ export const airRelictorGold: PaintDetails = {
     { offset: 50, color: 'rgb(231, 189, 128)' },
     { offset: 100, color: 'rgb(136, 102, 37)' },
   ],
+  availability: 'discontinued',
 };
 
 export const airRussGrey: PaintDetails = {
@@ -379,6 +428,7 @@ export const airRussGrey: PaintDetails = {
   type: 'air',
   color: 'grey',
   hex: '#507085',
+  availability: 'available',
 };
 
 export const airFenrisianGrey: PaintDetails = {
@@ -386,6 +436,7 @@ export const airFenrisianGrey: PaintDetails = {
   type: 'air',
   color: 'grey',
   hex: '#6D94B3',
+  availability: 'available',
 };
 
 export const airTerminatusStone: PaintDetails = {
@@ -393,6 +444,7 @@ export const airTerminatusStone: PaintDetails = {
   type: 'air',
   color: 'bone',
   hex: '#C8B79D',
+  availability: 'discontinued',
 };
 
 export const airAngronRedClear: PaintDetails = {
@@ -400,6 +452,7 @@ export const airAngronRedClear: PaintDetails = {
   type: 'air',
   color: 'red',
   hex: '#E21823',
+  availability: 'available',
 };
 
 export const airCalthBlueClear: PaintDetails = {
@@ -407,6 +460,7 @@ export const airCalthBlueClear: PaintDetails = {
   type: 'air',
   color: 'blue',
   hex: '#0087D1',
+  availability: 'available',
 };
 
 export const airDeathshroudClear: PaintDetails = {
@@ -414,6 +468,7 @@ export const airDeathshroudClear: PaintDetails = {
   type: 'air',
   color: 'black',
   hex: '#1C1C1B',
+  availability: 'discontinued',
 };
 
 export const airEidolonPurpleClear: PaintDetails = {
@@ -421,6 +476,7 @@ export const airEidolonPurpleClear: PaintDetails = {
   type: 'air',
   color: 'purple',
   hex: '#7D4D99',
+  availability: 'available',
 };
 
 export const airMortarionGreenClear: PaintDetails = {
@@ -428,6 +484,7 @@ export const airMortarionGreenClear: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#00832B',
+  availability: 'available',
 };
 
 export const airPhoenicianPurple: PaintDetails = {
@@ -435,6 +492,7 @@ export const airPhoenicianPurple: PaintDetails = {
   type: 'air',
   color: 'purple',
   hex: '#440052',
+  availability: 'available',
 };
 
 export const airPyroclastOrangeClear: PaintDetails = {
@@ -442,6 +500,7 @@ export const airPyroclastOrangeClear: PaintDetails = {
   type: 'air',
   color: 'orange',
   hex: '#ED8022',
+  availability: 'discontinued',
 };
 
 export const airSigismundYellowClear: PaintDetails = {
@@ -449,6 +508,7 @@ export const airSigismundYellowClear: PaintDetails = {
   type: 'air',
   color: 'yellow',
   hex: '#FFE32F',
+  availability: 'discontinued',
 };
 
 export const airNightLordsBlue: PaintDetails = {
@@ -456,6 +516,7 @@ export const airNightLordsBlue: PaintDetails = {
   type: 'air',
   color: 'blue',
   hex: '#002B5C',
+  availability: 'available',
 };
 
 export const airDeathKorpsDrab: PaintDetails = {
@@ -463,6 +524,7 @@ export const airDeathKorpsDrab: PaintDetails = {
   type: 'air',
   color: 'grey',
   hex: '#3D4539',
+  availability: 'discontinued',
 };
 
 export const airVulkanGreen: PaintDetails = {
@@ -470,6 +532,7 @@ export const airVulkanGreen: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#223C2E',
+  availability: 'discontinued',
 };
 
 export const airCorvusBlack: PaintDetails = {
@@ -477,6 +540,7 @@ export const airCorvusBlack: PaintDetails = {
   type: 'air',
   color: 'black',
   hex: '#171314',
+  availability: 'available',
 };
 
 export const airChemosPurple: PaintDetails = {
@@ -484,6 +548,7 @@ export const airChemosPurple: PaintDetails = {
   type: 'air',
   color: 'purple',
   hex: '#4F356C',
+  availability: 'discontinued',
 };
 
 export const airTyphonAsh: PaintDetails = {
@@ -491,6 +556,7 @@ export const airTyphonAsh: PaintDetails = {
   type: 'air',
   color: 'bone',
   hex: '#E4D8C1',
+  availability: 'available',
 };
 
 export const airSonsOfHorusGreen: PaintDetails = {
@@ -498,6 +564,7 @@ export const airSonsOfHorusGreen: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#00545E',
+  availability: 'discontinued',
 };
 
 export const airPhalanxYellow: PaintDetails = {
@@ -505,6 +572,7 @@ export const airPhalanxYellow: PaintDetails = {
   type: 'air',
   color: 'yellow',
   hex: '#FFE200',
+  availability: 'available',
 };
 
 export const airKakophoniPurple: PaintDetails = {
@@ -512,6 +580,7 @@ export const airKakophoniPurple: PaintDetails = {
   type: 'air',
   color: 'purple',
   hex: '#8869AE',
+  availability: 'discontinued',
 };
 
 export const airNocturneGreen: PaintDetails = {
@@ -519,6 +588,7 @@ export const airNocturneGreen: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#162A29',
+  availability: 'discontinued',
 };
 
 export const airLupercalGreen: PaintDetails = {
@@ -526,6 +596,7 @@ export const airLupercalGreen: PaintDetails = {
   type: 'air',
   color: 'green',
   hex: '#002C2B',
+  availability: 'discontinued',
 };
 
 export const airGalVorbakRed: PaintDetails = {
@@ -533,6 +604,7 @@ export const airGalVorbakRed: PaintDetails = {
   type: 'air',
   color: 'red',
   hex: '#4B213C',
+  availability: 'discontinued',
 };
 
 export const airWordBearersRed: PaintDetails = {
@@ -540,6 +612,7 @@ export const airWordBearersRed: PaintDetails = {
   type: 'air',
   color: 'red',
   hex: '#620104',
+  availability: 'discontinued',
 };
 
 export const airCastellaxBronze: PaintDetails = {
@@ -552,6 +625,7 @@ export const airCastellaxBronze: PaintDetails = {
     { offset: 50, color: 'rgb(191, 117, 63)' },
     { offset: 100, color: 'rgb(61, 7, 0)' },
   ],
+  availability: 'discontinued',
 };
 
 export const airValdorGold: PaintDetails = {
@@ -564,6 +638,7 @@ export const airValdorGold: PaintDetails = {
     { offset: 50, color: 'rgb(202, 130, 64)' },
     { offset: 100, color: 'rgb(109, 39, 17)' },
   ],
+  availability: 'available',
 };
 
 export const airIronHandsSteel: PaintDetails = {
@@ -576,6 +651,7 @@ export const airIronHandsSteel: PaintDetails = {
     { offset: 50, color: 'rgb(169, 157, 149)' },
     { offset: 100, color: 'rgb(68, 66, 63)' },
   ],
+  availability: 'discontinued',
 };
 
 export const airGreyKnightsSteel: PaintDetails = {
@@ -588,6 +664,7 @@ export const airGreyKnightsSteel: PaintDetails = {
     { offset: 50, color: 'rgb(165, 180, 190)' },
     { offset: 100, color: 'rgb(70, 88, 99)' },
   ],
+  availability: 'available',
 };
 
 export const airThallaxGold: PaintDetails = {
@@ -600,6 +677,7 @@ export const airThallaxGold: PaintDetails = {
     { offset: 50, color: 'rgb(229, 131, 60)' },
     { offset: 100, color: 'rgb(114, 42, 11)' },
   ],
+  availability: 'available',
 };
 
 export const airPaints = [

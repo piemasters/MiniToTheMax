@@ -24,6 +24,7 @@ export const technicalBloodForTheBloodGod: PaintDetails = {
     { offset: 0, color: 'rgb(0, 0, 0)' },
     { offset: 100, color: 'rgb(96, 0, 5)' },
   ],
+  availability: 'available',
 };
 
 export const technicalNihilakhOxide: PaintDetails = {
@@ -31,6 +32,7 @@ export const technicalNihilakhOxide: PaintDetails = {
   type: 'technical',
   color: 'green',
   hex: '#66B39A',
+  availability: 'available',
 };
 
 export const technicalNurglesRot: PaintDetails = {
@@ -38,6 +40,7 @@ export const technicalNurglesRot: PaintDetails = {
   type: 'technical',
   color: 'green',
   hex: '#9D8B16',
+  availability: 'available',
 };
 
 export const technicalTyphusCorrosion: PaintDetails = {
@@ -45,6 +48,7 @@ export const technicalTyphusCorrosion: PaintDetails = {
   type: 'technical',
   color: 'brown',
   hex: '#373A22',
+  availability: 'available',
 };
 
 export const technicalSpiritstoneRed: PaintDetails = {
@@ -57,6 +61,7 @@ export const technicalSpiritstoneRed: PaintDetails = {
     { offset: 0, color: 'rgb(218, 35, 8)' },
     { offset: 100, color: 'rgb(124, 17, 0)' },
   ],
+  availability: 'available',
 };
 
 export const technicalSoulstoneBlue: PaintDetails = {
@@ -69,6 +74,7 @@ export const technicalSoulstoneBlue: PaintDetails = {
     { offset: 0, color: 'rgb(1, 69, 143)' },
     { offset: 100, color: 'rgb(1, 21, 75)' },
   ],
+  availability: 'available',
 };
 
 export const technicalWaystoneGreen: PaintDetails = {
@@ -81,20 +87,7 @@ export const technicalWaystoneGreen: PaintDetails = {
     { offset: 0, color: 'rgb(0, 121, 88)' },
     { offset: 100, color: 'rgb(0, 56, 31)' },
   ],
-};
-
-export const technicalNighthauntGloom: PaintDetails = {
-  name: 'Nighthaunt Gloom',
-  type: 'technical',
-  color: 'blue',
-  hex: '#4C838A',
-};
-
-export const technicalHexwraithFlame: PaintDetails = {
-  name: 'Hexwraith Flame',
-  type: 'technical',
-  color: 'green',
-  hex: '#00A237',
+  availability: 'available',
 };
 
 export const technicalMordantEarth: PaintDetails = {
@@ -107,6 +100,7 @@ export const technicalMordantEarth: PaintDetails = {
     { offset: 0, color: 'rgb(23, 19, 20)' },
     { offset: 100, color: 'rgb(75, 72, 73)' },
   ],
+  availability: 'available',
 };
 
 export const technicalAgrellanEarth: PaintDetails = {
@@ -119,6 +113,7 @@ export const technicalAgrellanEarth: PaintDetails = {
     { offset: 0, color: 'rgb(179, 158, 128)' },
     { offset: 100, color: 'rgb(148, 129, 101)' },
   ],
+  availability: 'available',
 };
 
 export const technicalAgrellanBadland: PaintDetails = {
@@ -131,6 +126,7 @@ export const technicalAgrellanBadland: PaintDetails = {
     { offset: 0, color: 'rgb(179, 158, 128)' },
     { offset: 100, color: 'rgb(148, 129, 101)' },
   ],
+  availability: 'available',
 };
 
 export const technicalMartianIronearth: PaintDetails = {
@@ -143,6 +139,7 @@ export const technicalMartianIronearth: PaintDetails = {
     { offset: 0, color: 'rgb(207, 112, 93)' },
     { offset: 100, color: 'rgb(155, 80, 65)' },
   ],
+  availability: 'available',
 };
 
 export const technicalMartianIroncrust: PaintDetails = {
@@ -155,6 +152,7 @@ export const technicalMartianIroncrust: PaintDetails = {
     { offset: 0, color: 'rgb(207, 112, 93)' },
     { offset: 100, color: 'rgb(155, 80, 65)' },
   ],
+  availability: 'available',
 };
 
 export const technicalStirlandMud: PaintDetails = {
@@ -167,6 +165,7 @@ export const technicalStirlandMud: PaintDetails = {
     { offset: 0, color: 'rgb(112, 73, 13)' },
     { offset: 100, color: 'rgb(72, 43, 0)' },
   ],
+  availability: 'available',
 };
 
 export const technicalStirlandBattlemire: PaintDetails = {
@@ -179,6 +178,7 @@ export const technicalStirlandBattlemire: PaintDetails = {
     { offset: 0, color: 'rgb(112, 73, 13)' },
     { offset: 100, color: 'rgb(72, 43, 0)' },
   ],
+  availability: 'available',
 };
 
 export const technicalArmageddonDust: PaintDetails = {
@@ -191,6 +191,7 @@ export const technicalArmageddonDust: PaintDetails = {
     { offset: 0, color: 'rgb(232, 211, 111)' },
     { offset: 100, color: 'rgb(210, 173, 0)' },
   ],
+  availability: 'available',
 };
 
 export const technicalArmageddonDunes: PaintDetails = {
@@ -203,6 +204,7 @@ export const technicalArmageddonDunes: PaintDetails = {
     { offset: 0, color: 'rgb(232, 211, 111)' },
     { offset: 100, color: 'rgb(210, 173, 0)' },
   ],
+  availability: 'available',
 };
 
 export const technicalAstrogranite: PaintDetails = {
@@ -215,6 +217,7 @@ export const technicalAstrogranite: PaintDetails = {
     { offset: 0, color: 'rgb(157, 157, 157)' },
     { offset: 100, color: 'rgb(118, 118, 117)' },
   ],
+  availability: 'available',
 };
 
 export const technicalAstrograniteDebris: PaintDetails = {
@@ -227,6 +230,7 @@ export const technicalAstrograniteDebris: PaintDetails = {
     { offset: 0, color: 'rgb(157, 157, 157)' },
     { offset: 100, color: 'rgb(118, 118, 117)' },
   ],
+  availability: 'available',
 };
 
 export const technicalValhallanBlizzard: PaintDetails = {
@@ -239,6 +243,7 @@ export const technicalValhallanBlizzard: PaintDetails = {
     { offset: 0, color: 'rgb(225, 225, 225)' },
     { offset: 100, color: 'rgb(225, 225, 225)' },
   ],
+  availability: 'available',
 };
 
 export const technicalLahmianMedium: PaintDetails = {
@@ -251,6 +256,7 @@ export const technicalLahmianMedium: PaintDetails = {
     { offset: 0, color: 'rgb(255, 255, 255)' },
     { offset: 100, color: 'rgb(218, 218, 218)' },
   ],
+  availability: 'available',
 };
 
 export const technicalArdcoat: PaintDetails = {
@@ -263,6 +269,7 @@ export const technicalArdcoat: PaintDetails = {
     { offset: 0, color: 'rgb(255, 255, 255)' },
     { offset: 100, color: 'rgb(218, 218, 218)' },
   ],
+  availability: 'available',
 };
 
 export const technicalContrastMedium: PaintDetails = {
@@ -275,6 +282,7 @@ export const technicalContrastMedium: PaintDetails = {
     { offset: 0, color: 'rgb(255, 255, 255)' },
     { offset: 100, color: 'rgb(218, 218, 218)' },
   ],
+  availability: 'available',
 };
 
 export const technicalStormShield: PaintDetails = {
@@ -287,6 +295,7 @@ export const technicalStormShield: PaintDetails = {
     { offset: 0, color: 'rgb(255, 255, 255)' },
     { offset: 100, color: 'rgb(218, 218, 218)' },
   ],
+  availability: 'available',
 };
 
 export const technicalTesseractGlow: PaintDetails = {
@@ -294,6 +303,7 @@ export const technicalTesseractGlow: PaintDetails = {
   type: 'technical',
   color: 'green',
   hex: '#49AD33',
+  availability: 'available',
 };
 
 export const technicalPaints = [
@@ -304,8 +314,6 @@ export const technicalPaints = [
   technicalSpiritstoneRed,
   technicalSoulstoneBlue,
   technicalWaystoneGreen,
-  technicalNighthauntGloom,
-  technicalHexwraithFlame,
   technicalMordantEarth,
   technicalAgrellanEarth,
   technicalAgrellanBadland,

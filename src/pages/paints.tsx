@@ -38,7 +38,6 @@ const Paints = (): React.ReactNode => {
     ...sprayPaints.sort(sortPaints),
     ...technicalPaints.sort(sortPaints),
   ];
-  //allPaints.sort(sortPaints);
 
   const [filteredPaints, setFilteredPaints] = useState([...allPaints]);
 
@@ -76,9 +75,15 @@ const Paints = (): React.ReactNode => {
     technical: true,
   };
 
+  const availabilityFilters: PaintFilters = {
+    available: true,
+    discontinued: true,
+  };
+
   const [allFilters, setAllFilters] = useState<AllPaintFilters>({
     color: { ...colorFilters },
     type: { ...typeFilters },
+    availability: { ...availabilityFilters },
   });
 
   const togglePaints = (filters: AllPaintFilters) => {
@@ -189,7 +194,7 @@ const Paints = (): React.ReactNode => {
   return (
     <Layout>
       <Seo title={'Paints'} pathname={'/paints'} />
-      <h1>Paints</h1>
+      <h1>Paints ({filteredPaints.length})</h1>
       <hr />
       {allFilterElements()}
       <br />

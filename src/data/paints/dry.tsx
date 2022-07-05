@@ -5,6 +5,7 @@ export const dryHexosPalesun: PaintDetails = {
   type: 'dry',
   color: 'yellow',
   hex: '#FFF55A',
+  availability: 'available',
 };
 
 export const dryKindleflame: PaintDetails = {
@@ -12,6 +13,7 @@ export const dryKindleflame: PaintDetails = {
   type: 'dry',
   color: 'red',
   hex: '#F69C82',
+  availability: 'discontinued',
 };
 
 export const dryLuciusLilac: PaintDetails = {
@@ -19,6 +21,7 @@ export const dryLuciusLilac: PaintDetails = {
   type: 'dry',
   color: 'purple',
   hex: '#B598C9',
+  availability: 'available',
 };
 
 export const dryPraxetiWhite: PaintDetails = {
@@ -27,6 +30,7 @@ export const dryPraxetiWhite: PaintDetails = {
   color: 'white',
   hex: '#FFFFFF',
   stroke: '#6b6b6b',
+  availability: 'available',
 };
 
 export const dryEtheriumBlue: PaintDetails = {
@@ -34,6 +38,7 @@ export const dryEtheriumBlue: PaintDetails = {
   type: 'dry',
   color: 'blue',
   hex: '#9EB5CE',
+  availability: 'available',
 };
 
 export const drySkinkBlue: PaintDetails = {
@@ -41,6 +46,7 @@ export const drySkinkBlue: PaintDetails = {
   type: 'dry',
   color: 'blue',
   hex: '#54BDCA',
+  availability: 'available',
 };
 
 export const dryHellionGreen: PaintDetails = {
@@ -48,6 +54,7 @@ export const dryHellionGreen: PaintDetails = {
   type: 'dry',
   color: 'green',
   hex: '#7FC1A5',
+  availability: 'discontinued',
 };
 
 export const dryVerminlordHide: PaintDetails = {
@@ -55,6 +62,7 @@ export const dryVerminlordHide: PaintDetails = {
   type: 'dry',
   color: 'brown',
   hex: '#7E3331',
+  availability: 'discontinued',
 };
 
 export const dryEldarFlesh: PaintDetails = {
@@ -62,6 +70,7 @@ export const dryEldarFlesh: PaintDetails = {
   type: 'dry',
   color: 'flesh',
   hex: '#E8C07F',
+  availability: 'available',
 };
 
 export const dryUnderhiveAsh: PaintDetails = {
@@ -69,6 +78,7 @@ export const dryUnderhiveAsh: PaintDetails = {
   type: 'dry',
   color: 'bone',
   hex: '#BCBB7E',
+  availability: 'available',
 };
 
 export const dryThunderhawkBlue: PaintDetails = {
@@ -76,6 +86,7 @@ export const dryThunderhawkBlue: PaintDetails = {
   type: 'dry',
   color: 'blue',
   hex: '#396A70',
+  availability: 'discontinued',
 };
 
 export const dryLongbeardGrey: PaintDetails = {
@@ -83,6 +94,7 @@ export const dryLongbeardGrey: PaintDetails = {
   type: 'dry',
   color: 'grey',
   hex: '#DBDCC6',
+  availability: 'available',
 };
 
 export const dryNecronCompound: PaintDetails = {
@@ -95,6 +107,7 @@ export const dryNecronCompound: PaintDetails = {
     { offset: 50, color: 'rgb(214, 217, 219)' },
     { offset: 100, color: 'rgb(157, 163, 167)' },
   ],
+  availability: 'available',
 };
 
 export const dryGoldenGriffon: PaintDetails = {
@@ -107,6 +120,7 @@ export const dryGoldenGriffon: PaintDetails = {
     { offset: 50, color: 'rgb(221, 176, 109)' },
     { offset: 100, color: 'rgb(136, 102, 37)' },
   ],
+  availability: 'available',
 };
 
 export const dryChangelingPink: PaintDetails = {
@@ -114,6 +128,7 @@ export const dryChangelingPink: PaintDetails = {
   type: 'dry',
   color: 'pink',
   hex: '#F3ABCA',
+  availability: 'discontinued',
 };
 
 export const dryRyzaRust: PaintDetails = {
@@ -121,6 +136,7 @@ export const dryRyzaRust: PaintDetails = {
   type: 'dry',
   color: 'orange',
   hex: '#F16C23',
+  availability: 'available',
 };
 
 export const dryWrackWhite: PaintDetails = {
@@ -128,6 +144,7 @@ export const dryWrackWhite: PaintDetails = {
   type: 'dry',
   color: 'white',
   hex: '#D3D0CF',
+  availability: 'available',
 };
 
 export const dryAstorathRed: PaintDetails = {
@@ -135,6 +152,7 @@ export const dryAstorathRed: PaintDetails = {
   type: 'dry',
   color: 'red',
   hex: '#A9311E',
+  availability: 'available',
 };
 
 export const dryHoethBlue: PaintDetails = {
@@ -142,6 +160,7 @@ export const dryHoethBlue: PaintDetails = {
   type: 'dry',
   color: 'blue',
   hex: '#4C78AF',
+  availability: 'available',
 };
 
 export const dryChronusBlue: PaintDetails = {
@@ -149,6 +168,7 @@ export const dryChronusBlue: PaintDetails = {
   type: 'dry',
   color: 'blue',
   hex: '#4B90CF',
+  availability: 'discontinued',
 };
 
 export const dryImrikBlue: PaintDetails = {
@@ -156,6 +176,7 @@ export const dryImrikBlue: PaintDetails = {
   type: 'dry',
   color: 'blue',
   hex: '#208ABF',
+  availability: 'available',
 };
 
 export const dryStormfang: PaintDetails = {
@@ -163,6 +184,7 @@ export const dryStormfang: PaintDetails = {
   type: 'dry',
   color: 'blue',
   hex: '#5A7FA3',
+  availability: 'available',
 };
 
 export const dryNibletGreen: PaintDetails = {
@@ -170,6 +192,7 @@ export const dryNibletGreen: PaintDetails = {
   type: 'dry',
   color: 'green',
   hex: '#378C35',
+  availability: 'available',
 };
 
 export const dryNurglingGreen: PaintDetails = {
@@ -177,6 +200,7 @@ export const dryNurglingGreen: PaintDetails = {
   type: 'dry',
   color: 'green',
   hex: '#7E975E',
+  availability: 'available',
 };
 
 export const dryGolgfagBrown: PaintDetails = {
@@ -184,6 +208,7 @@ export const dryGolgfagBrown: PaintDetails = {
   type: 'dry',
   color: 'brown',
   hex: '#8F502A',
+  availability: 'available',
 };
 
 export const drySylvanethBark: PaintDetails = {
@@ -191,6 +216,7 @@ export const drySylvanethBark: PaintDetails = {
   type: 'dry',
   color: 'brown',
   hex: '#4E483B',
+  availability: 'available',
 };
 
 export const dryTerminatusStone: PaintDetails = {
@@ -198,6 +224,7 @@ export const dryTerminatusStone: PaintDetails = {
   type: 'dry',
   color: 'bone',
   hex: '#C8B79D',
+  availability: 'available',
 };
 
 export const dryDawnstone: PaintDetails = {
@@ -205,6 +232,7 @@ export const dryDawnstone: PaintDetails = {
   type: 'dry',
   color: 'grey',
   hex: '#697068',
+  availability: 'available',
 };
 
 export const drySigmarite: PaintDetails = {
@@ -217,6 +245,7 @@ export const drySigmarite: PaintDetails = {
     { offset: 50, color: 'rgb(210, 168, 83)' },
     { offset: 100, color: 'rgb(198, 134, 58)' },
   ],
+  availability: 'available',
 };
 
 export const drySlaaneshGrey: PaintDetails = {
@@ -224,6 +253,7 @@ export const drySlaaneshGrey: PaintDetails = {
   type: 'dry',
   color: 'grey',
   hex: '#8B8893',
+  availability: 'discontinued',
 };
 
 export const dryTyrantSkull: PaintDetails = {
@@ -231,6 +261,7 @@ export const dryTyrantSkull: PaintDetails = {
   type: 'dry',
   color: 'bone',
   hex: '#C8C483',
+  availability: 'available',
 };
 
 export const dryPaints = [

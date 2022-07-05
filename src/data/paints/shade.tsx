@@ -9,6 +9,7 @@ export const shadeCarroburgCrimson: PaintDetails = {
     { offset: 0, color: 'rgb(49, 8, 8)' },
     { offset: 100, color: 'rgb(255, 183, 235)' },
   ],
+  availability: 'available',
 };
 
 export const shadeNulnOil: PaintDetails = {
@@ -20,6 +21,7 @@ export const shadeNulnOil: PaintDetails = {
     { offset: 0, color: 'rgb(16, 16, 16)' },
     { offset: 100, color: 'rgb(223, 217, 214)' },
   ],
+  availability: 'available',
 };
 
 export const shadeAgraxEarthshade: PaintDetails = {
@@ -31,6 +33,7 @@ export const shadeAgraxEarthshade: PaintDetails = {
     { offset: 0, color: 'rgb(45, 25, 12)' },
     { offset: 100, color: 'rgb(226, 218, 200)' },
   ],
+  availability: 'available',
 };
 
 export const shadeDruchiiViolet: PaintDetails = {
@@ -42,6 +45,7 @@ export const shadeDruchiiViolet: PaintDetails = {
     { offset: 0, color: 'rgb(37, 11, 39)' },
     { offset: 100, color: 'rgb(191, 142, 195)' },
   ],
+  availability: 'available',
 };
 
 export const shadeDrakenhofNightshade: PaintDetails = {
@@ -53,6 +57,7 @@ export const shadeDrakenhofNightshade: PaintDetails = {
     { offset: 0, color: 'rgb(10, 19, 27)' },
     { offset: 100, color: 'rgb(230, 232, 243)' },
   ],
+  availability: 'available',
 };
 
 export const shadeCasandoraYellow: PaintDetails = {
@@ -64,6 +69,7 @@ export const shadeCasandoraYellow: PaintDetails = {
     { offset: 0, color: 'rgb(231, 128, 53)' },
     { offset: 100, color: 'rgb(252, 239, 188)' },
   ],
+  availability: 'available',
 };
 
 export const shadeBielTanGreen: PaintDetails = {
@@ -75,6 +81,7 @@ export const shadeBielTanGreen: PaintDetails = {
     { offset: 0, color: 'rgb(19, 46, 33)' },
     { offset: 100, color: 'rgb(174, 220, 162)' },
   ],
+  availability: 'available',
 };
 
 export const shadeFueganOrange: PaintDetails = {
@@ -86,6 +93,7 @@ export const shadeFueganOrange: PaintDetails = {
     { offset: 0, color: 'rgb(108, 28, 3)' },
     { offset: 100, color: 'rgb(223, 159, 104)' },
   ],
+  availability: 'available',
 };
 
 export const shadeAthonianCamoshade: PaintDetails = {
@@ -97,6 +105,7 @@ export const shadeAthonianCamoshade: PaintDetails = {
     { offset: 0, color: 'rgb(28, 28, 16)' },
     { offset: 100, color: 'rgb(253, 254, 191)' },
   ],
+  availability: 'available',
 };
 
 export const shadeCoeliaGreenshade: PaintDetails = {
@@ -108,6 +117,7 @@ export const shadeCoeliaGreenshade: PaintDetails = {
     { offset: 0, color: 'rgb(17, 52, 49)' },
     { offset: 100, color: 'rgb(32, 184, 172)' },
   ],
+  availability: 'available',
 };
 
 export const shadeSeraphimSepia: PaintDetails = {
@@ -119,6 +129,7 @@ export const shadeSeraphimSepia: PaintDetails = {
     { offset: 0, color: 'rgb(46, 31, 8)' },
     { offset: 100, color: 'rgb(233, 174, 125)' },
   ],
+  availability: 'available',
 };
 
 export const shadeReiklandFleshshade: PaintDetails = {
@@ -130,6 +141,7 @@ export const shadeReiklandFleshshade: PaintDetails = {
     { offset: 0, color: 'rgb(49, 25, 8)' },
     { offset: 100, color: 'rgb(255, 213, 183)' },
   ],
+  availability: 'available',
 };
 
 export const shadeNulnOilGloss: PaintDetails = {
@@ -142,6 +154,7 @@ export const shadeNulnOilGloss: PaintDetails = {
     { offset: 0, color: 'rgb(16, 16, 16)' },
     { offset: 100, color: 'rgb(223, 217, 214)' },
   ],
+  availability: 'discontinued',
 };
 
 export const shadeAgraxEarthshadeGloss: PaintDetails = {
@@ -154,6 +167,7 @@ export const shadeAgraxEarthshadeGloss: PaintDetails = {
     { offset: 0, color: 'rgb(45, 25, 12)' },
     { offset: 100, color: 'rgb(226, 218, 200)' },
   ],
+  availability: 'discontinued',
 };
 
 export const shadeReiklandFleshshadeGloss: PaintDetails = {
@@ -166,6 +180,7 @@ export const shadeReiklandFleshshadeGloss: PaintDetails = {
     { offset: 0, color: 'rgb(49, 25, 8)' },
     { offset: 100, color: 'rgb(255, 213, 183)' },
   ],
+  availability: 'discontinued',
 };
 
 export const shadeCryptekArmourshadeGloss: PaintDetails = {
@@ -178,6 +193,99 @@ export const shadeCryptekArmourshadeGloss: PaintDetails = {
     { offset: 0, color: 'rgb(83, 39, 36)' },
     { offset: 100, color: 'rgb(250, 238, 237)' },
   ],
+  availability: 'discontinued',
+};
+
+/* New Paints */
+export const shadeBerserkerBloodshade: PaintDetails = {
+  name: 'Berserker Bloodshade',
+  type: 'shade',
+  color: 'red',
+  hex: '#B8083E',
+  gloss: false,
+  gradient: [
+    { offset: 0, color: 'rgb(184, 8, 62)' },
+    { offset: 100, color: 'rgb(223, 218, 214)' },
+  ],
+  availability: 'available',
+};
+
+export const shadeTargorRageshade: PaintDetails = {
+  name: 'Targor Rageshade',
+  type: 'shade',
+  color: 'grey',
+  hex: '#614E66',
+  gloss: false,
+  gradient: [
+    { offset: 0, color: 'rgb(97, 78, 102)' },
+    { offset: 100, color: 'rgb(223, 218, 214)' },
+  ],
+  availability: 'available',
+};
+
+export const shadeTyranBlue: PaintDetails = {
+  name: 'Tyran Blue',
+  type: 'shade',
+  color: 'blue',
+  hex: '#0083CA',
+  gloss: false,
+  gradient: [
+    { offset: 0, color: 'rgb(0, 131, 202)' },
+    { offset: 100, color: 'rgb(223, 218, 214)' },
+  ],
+  availability: 'available',
+};
+
+export const shadeKroakGreen: PaintDetails = {
+  name: 'Kroak Green',
+  type: 'shade',
+  color: 'green',
+  hex: '#7DBF92',
+  gloss: false,
+  gradient: [
+    { offset: 0, color: 'rgb(125, 191, 146)' },
+    { offset: 100, color: 'rgb(223, 218, 214)' },
+  ],
+  availability: 'available',
+};
+
+export const shadePoxwalker: PaintDetails = {
+  name: 'Poxwalker',
+  type: 'shade',
+  color: 'green',
+  hex: '#54989C',
+  gloss: false,
+  gradient: [
+    { offset: 0, color: 'rgb(84, 152, 156)' },
+    { offset: 100, color: 'rgb(223, 218, 214)' },
+  ],
+  availability: 'available',
+};
+
+export const shadeMortarionGrime: PaintDetails = {
+  name: 'Mortarion Grime',
+  type: 'shade',
+  color: 'yellow',
+  hex: '#AFA400',
+  gloss: false,
+  gradient: [
+    { offset: 0, color: 'rgb(175, 164, 0)' },
+    { offset: 100, color: 'rgb(223, 218, 214)' },
+  ],
+  availability: 'available',
+};
+
+export const shadeSoulblightGrey: PaintDetails = {
+  name: 'Soulblight Grey',
+  type: 'shade',
+  color: 'grey',
+  hex: '#A6A1A5',
+  gloss: false,
+  gradient: [
+    { offset: 0, color: 'rgb(166, 161, 165)' },
+    { offset: 100, color: 'rgb(223, 218, 214)' },
+  ],
+  availability: 'available',
 };
 
 export const shadePaints = [
@@ -197,4 +305,11 @@ export const shadePaints = [
   shadeAgraxEarthshadeGloss,
   shadeReiklandFleshshadeGloss,
   shadeCryptekArmourshadeGloss,
+  shadeBerserkerBloodshade,
+  shadeTargorRageshade,
+  shadeTyranBlue,
+  shadeKroakGreen,
+  shadePoxwalker,
+  shadeMortarionGrime,
+  shadeSoulblightGrey,
 ];

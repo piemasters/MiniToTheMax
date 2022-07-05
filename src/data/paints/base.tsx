@@ -5,6 +5,7 @@ export const baseAverlandSunset: PaintDetails = {
   type: 'base',
   color: 'yellow',
   hex: '#FBB81C',
+  availability: 'available',
 };
 
 export const baseJokaeroOrange: PaintDetails = {
@@ -12,6 +13,7 @@ export const baseJokaeroOrange: PaintDetails = {
   type: 'base',
   color: 'orange',
   hex: '#ED3814',
+  availability: 'available',
 };
 
 export const baseMephistonRed: PaintDetails = {
@@ -19,6 +21,7 @@ export const baseMephistonRed: PaintDetails = {
   type: 'base',
   color: 'red',
   hex: '#960C09',
+  availability: 'available',
 };
 
 export const baseKhorneRed: PaintDetails = {
@@ -26,6 +29,7 @@ export const baseKhorneRed: PaintDetails = {
   type: 'base',
   color: 'red',
   hex: '#650001',
+  availability: 'available',
 };
 
 export const baseNaggarothNight: PaintDetails = {
@@ -33,6 +37,7 @@ export const baseNaggarothNight: PaintDetails = {
   type: 'base',
   color: 'purple',
   hex: '#3B2B50',
+  availability: 'available',
 };
 
 export const baseDaemonetteHide: PaintDetails = {
@@ -40,6 +45,7 @@ export const baseDaemonetteHide: PaintDetails = {
   type: 'base',
   color: 'purple',
   hex: '#655F81',
+  availability: 'available',
 };
 
 export const baseKantorBlue: PaintDetails = {
@@ -47,6 +53,7 @@ export const baseKantorBlue: PaintDetails = {
   type: 'base',
   color: 'blue',
   hex: '#02134E',
+  availability: 'available',
 };
 
 export const baseMacraggeBlue: PaintDetails = {
@@ -54,6 +61,7 @@ export const baseMacraggeBlue: PaintDetails = {
   type: 'base',
   color: 'blue',
   hex: '#0F3D7C',
+  availability: 'available',
 };
 
 export const baseCaledorSky: PaintDetails = {
@@ -61,6 +69,7 @@ export const baseCaledorSky: PaintDetails = {
   type: 'base',
   color: 'blue',
   hex: '#366699',
+  availability: 'available',
 };
 
 export const baseStegadonScaleGreen: PaintDetails = {
@@ -68,6 +77,7 @@ export const baseStegadonScaleGreen: PaintDetails = {
   type: 'base',
   color: 'green',
   hex: '#06455D',
+  availability: 'available',
 };
 
 export const baseIncubiDarkness: PaintDetails = {
@@ -75,6 +85,7 @@ export const baseIncubiDarkness: PaintDetails = {
   type: 'base',
   color: 'green',
   hex: '#082E32',
+  availability: 'available',
 };
 
 export const baseCalibanGreen: PaintDetails = {
@@ -82,6 +93,7 @@ export const baseCalibanGreen: PaintDetails = {
   type: 'base',
   color: 'green',
   hex: '#003D15',
+  availability: 'available',
 };
 
 export const baseWaaaghFlesh: PaintDetails = {
@@ -89,6 +101,7 @@ export const baseWaaaghFlesh: PaintDetails = {
   type: 'base',
   color: 'green',
   hex: '#0B3B36',
+  availability: 'available',
 };
 
 export const baseCastellanGreen: PaintDetails = {
@@ -96,6 +109,7 @@ export const baseCastellanGreen: PaintDetails = {
   type: 'base',
   color: 'green',
   hex: '#264715',
+  availability: 'available',
 };
 
 export const baseDeathWorldForest: PaintDetails = {
@@ -103,6 +117,7 @@ export const baseDeathWorldForest: PaintDetails = {
   type: 'base',
   color: 'green',
   hex: '#556229',
+  availability: 'available',
 };
 
 export const baseZandriDust: PaintDetails = {
@@ -110,6 +125,7 @@ export const baseZandriDust: PaintDetails = {
   type: 'base',
   color: 'bone',
   hex: '#988E56',
+  availability: 'available',
 };
 
 export const baseSteelLegionDrab: PaintDetails = {
@@ -117,6 +133,7 @@ export const baseSteelLegionDrab: PaintDetails = {
   type: 'base',
   color: 'brown',
   hex: '#584E2D',
+  availability: 'available',
 };
 
 export const baseBugmansGlow: PaintDetails = {
@@ -124,6 +141,7 @@ export const baseBugmansGlow: PaintDetails = {
   type: 'base',
   color: 'flesh',
   hex: '#804C43',
+  availability: 'available',
 };
 
 export const baseRatskinFlesh: PaintDetails = {
@@ -131,6 +149,7 @@ export const baseRatskinFlesh: PaintDetails = {
   type: 'base',
   color: 'flesh',
   hex: '#A86648',
+  availability: 'available',
 };
 
 export const baseMournfangBrown: PaintDetails = {
@@ -138,6 +157,7 @@ export const baseMournfangBrown: PaintDetails = {
   type: 'base',
   color: 'brown',
   hex: '#490F06',
+  availability: 'available',
 };
 
 export const baseXV88: PaintDetails = {
@@ -145,6 +165,7 @@ export const baseXV88: PaintDetails = {
   type: 'base',
   color: 'brown',
   hex: '#6C4811',
+  availability: 'available',
 };
 
 export const baseRhinoxHide: PaintDetails = {
@@ -152,6 +173,7 @@ export const baseRhinoxHide: PaintDetails = {
   type: 'base',
   color: 'brown',
   hex: '#462F30',
+  availability: 'available',
 };
 
 export const baseDryadBark: PaintDetails = {
@@ -159,6 +181,7 @@ export const baseDryadBark: PaintDetails = {
   type: 'base',
   color: 'brown',
   hex: '#2B2A24',
+  availability: 'available',
 };
 
 export const baseMechanicusStandardGrey: PaintDetails = {
@@ -166,6 +189,7 @@ export const baseMechanicusStandardGrey: PaintDetails = {
   type: 'base',
   color: 'grey',
   hex: '#39484A',
+  availability: 'available',
 };
 
 export const baseAbaddonBlack: PaintDetails = {
@@ -173,6 +197,7 @@ export const baseAbaddonBlack: PaintDetails = {
   type: 'base',
   color: 'black',
   hex: '#000000',
+  availability: 'available',
 };
 
 export const baseCelestraGrey: PaintDetails = {
@@ -180,6 +205,7 @@ export const baseCelestraGrey: PaintDetails = {
   type: 'base',
   color: 'grey',
   hex: '#8BA3A3',
+  availability: 'available',
 };
 
 export const baseRakarthFlesh: PaintDetails = {
@@ -187,6 +213,7 @@ export const baseRakarthFlesh: PaintDetails = {
   type: 'base',
   color: 'flesh',
   hex: '#9C998D',
+  availability: 'available',
 };
 
 export const baseLeadbelcher: PaintDetails = {
@@ -199,6 +226,7 @@ export const baseLeadbelcher: PaintDetails = {
     { offset: 50, color: 'rgb(138, 138, 138)' },
     { offset: 100, color: 'rgb(21, 30, 36)' },
   ],
+  availability: 'available',
 };
 
 export const baseScreamingBell: PaintDetails = {
@@ -211,6 +239,7 @@ export const baseScreamingBell: PaintDetails = {
     { offset: 50, color: 'rgb(204, 125, 81)' },
     { offset: 100, color: 'rgb(100, 47, 31)' },
   ],
+  availability: 'available',
 };
 
 export const baseWarplockBronze: PaintDetails = {
@@ -223,6 +252,7 @@ export const baseWarplockBronze: PaintDetails = {
     { offset: 50, color: 'rgb(170, 98, 67)' },
     { offset: 100, color: 'rgb(68, 8, 8)' },
   ],
+  availability: 'available',
 };
 
 export const baseTheFang: PaintDetails = {
@@ -230,6 +260,7 @@ export const baseTheFang: PaintDetails = {
   type: 'base',
   color: 'grey',
   hex: '#405B71',
+  availability: 'available',
 };
 
 export const baseScreamerPink: PaintDetails = {
@@ -237,6 +268,7 @@ export const baseScreamerPink: PaintDetails = {
   type: 'base',
   color: 'pink',
   hex: '#7A0E44',
+  availability: 'available',
 };
 
 export const baseRetributorArmour: PaintDetails = {
@@ -249,6 +281,7 @@ export const baseRetributorArmour: PaintDetails = {
     { offset: 50, color: 'rgb(235, 184, 84)' },
     { offset: 100, color: 'rgb(137, 87, 29)' },
   ],
+  availability: 'available',
 };
 
 export const baseThousandSonsBlue: PaintDetails = {
@@ -256,6 +289,7 @@ export const baseThousandSonsBlue: PaintDetails = {
   type: 'base',
   color: 'blue',
   hex: '#00506F',
+  availability: 'available',
 };
 
 export const baseIonrachSkin: PaintDetails = {
@@ -263,6 +297,7 @@ export const baseIonrachSkin: PaintDetails = {
   type: 'base',
   color: 'flesh',
   hex: '#97A384',
+  availability: 'available',
 };
 
 export const basePhoenicianPurple: PaintDetails = {
@@ -270,6 +305,7 @@ export const basePhoenicianPurple: PaintDetails = {
   type: 'base',
   color: 'purple',
   hex: '#440052',
+  availability: 'available',
 };
 
 export const baseDeathGuardGreen: PaintDetails = {
@@ -277,6 +313,7 @@ export const baseDeathGuardGreen: PaintDetails = {
   type: 'base',
   color: 'green',
   hex: '#6D774D',
+  availability: 'available',
 };
 
 export const baseDeathKorpsDrab: PaintDetails = {
@@ -284,6 +321,7 @@ export const baseDeathKorpsDrab: PaintDetails = {
   type: 'base',
   color: 'grey',
   hex: '#3D4539',
+  availability: 'available',
 };
 
 export const baseGalVorbakRed: PaintDetails = {
@@ -291,6 +329,7 @@ export const baseGalVorbakRed: PaintDetails = {
   type: 'base',
   color: 'red',
   hex: '#4B213C',
+  availability: 'available',
 };
 
 export const baseNightLordsBlue: PaintDetails = {
@@ -298,6 +337,7 @@ export const baseNightLordsBlue: PaintDetails = {
   type: 'base',
   color: 'blue',
   hex: '#002B5C',
+  availability: 'available',
 };
 
 export const baseNocturneGreen: PaintDetails = {
@@ -305,6 +345,7 @@ export const baseNocturneGreen: PaintDetails = {
   type: 'base',
   color: 'green',
   hex: '#162A29',
+  availability: 'available',
 };
 
 export const baseCorvusBlack: PaintDetails = {
@@ -312,6 +353,7 @@ export const baseCorvusBlack: PaintDetails = {
   type: 'base',
   color: 'black',
   hex: '#171314',
+  availability: 'available',
 };
 
 export const baseLupercalGreen: PaintDetails = {
@@ -319,6 +361,7 @@ export const baseLupercalGreen: PaintDetails = {
   type: 'base',
   color: 'green',
   hex: '#002C2B',
+  availability: 'available',
 };
 
 export const baseIronHandsSteel: PaintDetails = {
@@ -331,6 +374,7 @@ export const baseIronHandsSteel: PaintDetails = {
     { offset: 50, color: 'rgb(169, 157, 149)' },
     { offset: 100, color: 'rgb(68, 66, 63)' },
   ],
+  availability: 'available',
 };
 
 export const baseGreyKnightsSteel: PaintDetails = {
@@ -343,6 +387,7 @@ export const baseGreyKnightsSteel: PaintDetails = {
     { offset: 50, color: 'rgb(165, 180, 190)' },
     { offset: 100, color: 'rgb(70, 88, 99)' },
   ],
+  availability: 'available',
 };
 
 export const baseBalthasarGold: PaintDetails = {
@@ -355,6 +400,7 @@ export const baseBalthasarGold: PaintDetails = {
     { offset: 50, color: 'rgb(155, 104, 75)' },
     { offset: 100, color: 'rgb(29, 15, 7)' },
   ],
+  availability: 'available',
 };
 
 export const baseIronWarriors: PaintDetails = {
@@ -367,6 +413,7 @@ export const baseIronWarriors: PaintDetails = {
     { offset: 50, color: 'rgb(99, 96, 93)' },
     { offset: 100, color: 'rgb(41, 39, 37)' },
   ],
+  availability: 'available',
 };
 
 export const baseBarakNarBurgundy: PaintDetails = {
@@ -374,6 +421,7 @@ export const baseBarakNarBurgundy: PaintDetails = {
   type: 'base',
   color: 'purple',
   hex: '#451636',
+  availability: 'available',
 };
 
 export const baseCatachanFleshtone: PaintDetails = {
@@ -381,6 +429,7 @@ export const baseCatachanFleshtone: PaintDetails = {
   type: 'base',
   color: 'flesh',
   hex: '#442B25',
+  availability: 'available',
 };
 
 export const baseMorghastBone: PaintDetails = {
@@ -388,6 +437,7 @@ export const baseMorghastBone: PaintDetails = {
   type: 'base',
   color: 'bone',
   hex: '#C0A973',
+  availability: 'available',
 };
 
 export const baseCoraxWhite: PaintDetails = {
@@ -396,6 +446,7 @@ export const baseCoraxWhite: PaintDetails = {
   color: 'white',
   hex: '#FFFFFF',
   stroke: '#6b6b6b',
+  availability: 'available',
 };
 
 export const baseWraithBone: PaintDetails = {
@@ -403,6 +454,7 @@ export const baseWraithBone: PaintDetails = {
   type: 'base',
   color: 'bone',
   hex: '#DBD1B2',
+  availability: 'available',
 };
 
 export const baseGreySeer: PaintDetails = {
@@ -410,6 +462,7 @@ export const baseGreySeer: PaintDetails = {
   type: 'base',
   color: 'grey',
   hex: '#A2A5A7',
+  availability: 'available',
 };
 
 export const baseRunelordBrass: PaintDetails = {
@@ -422,6 +475,7 @@ export const baseRunelordBrass: PaintDetails = {
     { offset: 50, color: 'rgb(116, 98, 77)' },
     { offset: 100, color: 'rgb(25, 14, 7)' },
   ],
+  availability: 'available',
 };
 
 export const baseOrrukFlesh: PaintDetails = {
@@ -429,6 +483,7 @@ export const baseOrrukFlesh: PaintDetails = {
   type: 'base',
   color: 'green',
   hex: '#8CC276',
+  availability: 'available',
 };
 
 export const baseThondiaBrown: PaintDetails = {
@@ -436,6 +491,7 @@ export const baseThondiaBrown: PaintDetails = {
   type: 'base',
   color: 'brown',
   hex: '#54302A',
+  availability: 'available',
 };
 
 export const baseHobgrotHide: PaintDetails = {
@@ -443,6 +499,7 @@ export const baseHobgrotHide: PaintDetails = {
   type: 'base',
   color: 'brown',
   hex: '#A1812A',
+  availability: 'available',
 };
 
 export const basePaints = [

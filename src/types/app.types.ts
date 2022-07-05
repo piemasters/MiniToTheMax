@@ -1,9 +1,4 @@
-import {
-  AllMdx,
-  MdxGroupConnection,
-  MdxNode,
-  Site,
-} from './base.types';
+import { AllMdx, MdxGroupConnection, MdxNode, Site } from './base.types';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 export interface Posts {
@@ -100,4 +95,5 @@ export interface PaintDetails {
   stroke?: string;
   gloss?: boolean;
   img?: JSX.Element;
+  availability: string;
 }

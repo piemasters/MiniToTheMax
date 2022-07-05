@@ -6,6 +6,7 @@ export const sprayCoraxWhite: PaintDetails = {
   color: 'white',
   hex: '#FFFFFF',
   stroke: '#6b6b6b',
+  availability: 'discontinued',
 };
 
 export const sprayChaosBlack: PaintDetails = {
@@ -13,6 +14,7 @@ export const sprayChaosBlack: PaintDetails = {
   type: 'spray',
   color: 'black',
   hex: '#000000',
+  availability: 'available',
 };
 
 export const sprayRetributorArmour: PaintDetails = {
@@ -25,6 +27,7 @@ export const sprayRetributorArmour: PaintDetails = {
     { offset: 50, color: 'rgb(235, 184, 84)' },
     { offset: 100, color: 'rgb(137, 87, 29)' },
   ],
+  availability: 'available',
 };
 
 export const sprayMephistonRed: PaintDetails = {
@@ -32,6 +35,7 @@ export const sprayMephistonRed: PaintDetails = {
   type: 'spray',
   color: 'red',
   hex: '#960C09',
+  availability: 'available',
 };
 
 export const sprayMacraggeBlue: PaintDetails = {
@@ -39,6 +43,7 @@ export const sprayMacraggeBlue: PaintDetails = {
   type: 'spray',
   color: 'blue',
   hex: '#0F3D7C',
+  availability: 'available',
 };
 
 export const sprayZandriDust: PaintDetails = {
@@ -46,6 +51,7 @@ export const sprayZandriDust: PaintDetails = {
   type: 'spray',
   color: 'brown',
   hex: '#988E56',
+  availability: 'available',
 };
 
 export const sprayMechanicusStandardGrey: PaintDetails = {
@@ -53,6 +59,7 @@ export const sprayMechanicusStandardGrey: PaintDetails = {
   type: 'spray',
   color: 'grey',
   hex: '#39484A',
+  availability: 'available',
 };
 
 export const sprayLeadbelcher: PaintDetails = {
@@ -65,6 +72,7 @@ export const sprayLeadbelcher: PaintDetails = {
     { offset: 50, color: 'rgb(138, 138, 138)' },
     { offset: 100, color: 'rgb(21, 30, 36)' },
   ],
+  availability: 'available',
 };
 
 export const sprayDeathGuardGreen: PaintDetails = {
@@ -72,6 +80,7 @@ export const sprayDeathGuardGreen: PaintDetails = {
   type: 'spray',
   color: 'green',
   hex: '#556229',
+  availability: 'available',
 };
 
 export const sprayMunitorumVarnish: PaintDetails = {
@@ -84,6 +93,7 @@ export const sprayMunitorumVarnish: PaintDetails = {
     { offset: 100, color: 'rgb(218, 218, 218)' },
   ],
   stroke: '#6b6b6b',
+  availability: 'available',
 };
 
 export const sprayWraithBone: PaintDetails = {
@@ -91,6 +101,7 @@ export const sprayWraithBone: PaintDetails = {
   type: 'spray',
   color: 'bone',
   hex: '#DBD1B2',
+  availability: 'available',
 };
 
 export const sprayGreySeer: PaintDetails = {
@@ -98,6 +109,7 @@ export const sprayGreySeer: PaintDetails = {
   type: 'spray',
   color: 'grey',
   hex: '#A2A5A7',
+  availability: 'available',
 };
 
 export const sprayRunelordBrass: PaintDetails = {
@@ -110,6 +122,16 @@ export const sprayRunelordBrass: PaintDetails = {
     { offset: 50, color: 'rgb(116, 98, 77)' },
     { offset: 100, color: 'rgb(25, 14, 7)' },
   ],
+  availability: 'available',
+};
+
+export const sprayWhiteScar: PaintDetails = {
+  name: 'White Scar',
+  type: 'spray',
+  color: 'white',
+  hex: '#FFFFFF',
+  stroke: '#6b6b6b',
+  availability: 'available',
 };
 
 export const sprayPaints = [
@@ -126,4 +148,5 @@ export const sprayPaints = [
   sprayWraithBone,
   sprayGreySeer,
   sprayRunelordBrass,
+  sprayWhiteScar,
 ];
