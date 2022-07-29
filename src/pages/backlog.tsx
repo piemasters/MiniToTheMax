@@ -128,6 +128,7 @@ const BacklogPage = (): React.ReactNode => {
       link: '/showcase/grey-knights/castellan-crowe/',
     },
     { name: 'Chaplain', link: '/showcase/grey-knights/chaplain/' },
+    { name: 'Custodian Guard' },
     { name: 'Dreadknight', link: '/showcase/grey-knights/dreadknight/' },
     { name: 'Dreadknight II', link: '/showcase/grey-knights/dreadknight-2/' },
     { name: 'Dreadnought', link: '/showcase/grey-knights/dreadnought/' },
@@ -145,6 +146,7 @@ const BacklogPage = (): React.ReactNode => {
     },
     { name: 'Purifiers', link: '/showcase/grey-knights/purifiers/' },
     { name: 'Razorback', link: '/showcase/grey-knights/razorback/' },
+    { name: 'Sisters of Silence' },
     { name: 'Stormraven', link: '/showcase/grey-knights/stormraven/' },
     { name: 'Strike Squad', link: '/showcase/grey-knights/strike-squad/' },
     { name: 'Terminator Squad', link: '/showcase/grey-knights/terminators/' },
@@ -179,7 +181,8 @@ const BacklogPage = (): React.ReactNode => {
     { name: 'Solitaire' },
   ];
 
-  const deathGuard = [
+  const chaosSpaceMarines = [
+    { name: 'Ahzek Ahriman' },
     { name: "Chosen Draznicht's Ravagers" },
     { name: 'Cultists' },
     { name: 'Cultists II' },
@@ -472,7 +475,10 @@ const BacklogPage = (): React.ReactNode => {
 
   const executionForce = [
     { name: 'Callidus' },
-    { name: 'Chaos Cultists' },
+    {
+      name: 'Chaos Cultists',
+      link: '/showcase/board-games/assassinorum-execution-force/chaos-cultists/',
+    },
     { name: 'Chaos Space Marines' },
     { name: 'Chaos Terminator Lord' },
     { name: 'Cullexus' },
@@ -512,17 +518,6 @@ const BacklogPage = (): React.ReactNode => {
     { name: "Stormsire's Cursebreakers" },
     { name: 'Thorns of the Briar Queen' },
     { name: "Zarbag's Gitz" },
-  ];
-
-  const burningOfProspero = [
-    { name: 'Ahzek Ahriman' },
-    { name: 'Custodian Guard' },
-    { name: 'Geigor Fell-Hand' },
-    { name: 'Legion Veterans' },
-    { name: 'Legion Veterans II' },
-    { name: 'Legion Veterans III' },
-    { name: 'Sisters of Silence' },
-    { name: 'Tartaros Terminators' },
   ];
 
   const scenery = [
@@ -571,8 +566,8 @@ const BacklogPage = (): React.ReactNode => {
       <h3>Harlequins</h3>
       <ul>{generateEntries(harlequins)}</ul>
 
-      <h3>Death Guard</h3>
-      <ul>{generateEntries(deathGuard)}</ul>
+      <h3>Chaos Space Marines</h3>
+      <ul>{generateEntries(chaosSpaceMarines)}</ul>
 
       <h2>Age of Sigmar</h2>
       <hr />
@@ -602,23 +597,20 @@ const BacklogPage = (): React.ReactNode => {
       <h3>Silver Tower</h3>
       <ul>{generateEntries(silverTower)}</ul>
 
-      <h3>Space Hulk</h3>
-      <ul>{generateEntries(spaceHulk)}</ul>
+      <h3>Lost Patrol</h3>
+      <ul>{generateEntries(lostPatrol)}</ul>
 
       <h3>Execution Force</h3>
       <ul>{generateEntries(executionForce)}</ul>
 
+      <h3>Space Hulk</h3>
+      <ul>{generateEntries(spaceHulk)}</ul>
+
       <h3>Deathwatch Overkill</h3>
       <ul>{generateEntries(deathwatchOverkill)}</ul>
 
-      <h3>Lost Patrol</h3>
-      <ul>{generateEntries(lostPatrol)}</ul>
-
       <h3>Underworlds</h3>
       <ul>{generateEntries(underworlds)}</ul>
-
-      <h3>Burning of Prospero</h3>
-      <ul>{generateEntries(burningOfProspero)}</ul>
     </Layout>
   );
 };
