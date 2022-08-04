@@ -65,7 +65,7 @@
     "@storybook/addon-a11y": "6.5.9",
     "@storybook/addon-essentials": "6.5.9",
     "@storybook/addon-jest": "6.5.10",
-    "@storybook/addon-links": "6.5.9",
+    "@storybook/addon-links": "6.5.10",
     "@storybook/addon-storyshots": "6.5.9",
     "@storybook/react": "6.5.9",
     "@svgr/webpack": "6.3.0",
