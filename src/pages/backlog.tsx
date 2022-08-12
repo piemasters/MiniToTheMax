@@ -479,8 +479,14 @@ const BacklogPage = (): React.ReactNode => {
       name: 'Chaos Cultists',
       link: '/showcase/board-games/assassinorum-execution-force/chaos-cultists/',
     },
-    { name: 'Chaos Space Marines' },
-    { name: 'Chaos Terminator Lord' },
+    {
+      name: 'Chaos Space Marines',
+      link: '/showcase/board-games/assassinorum-execution-force/chaos-space-marines/',
+    },
+    {
+      name: 'Chaos Terminator Lord',
+      link: '/showcase/board-games/assassinorum-execution-force/chaos-sorcerer-lord/',
+    },
     { name: 'Cullexus' },
     { name: 'Eversor' },
     { name: 'Vindicare' },
