@@ -489,7 +489,10 @@ const BacklogPage = (): React.ReactNode => {
     },
     { name: 'Cullexus' },
     { name: 'Eversor' },
-    { name: 'Vindicare' },
+    {
+      name: 'Vindicare',
+      link: '/showcase/board-games/assassinorum-execution-force/vindicare-assassin/',
+    },
   ];
 
   const deathwatchOverkill = [
