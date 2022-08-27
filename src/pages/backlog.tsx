@@ -474,7 +474,10 @@ const BacklogPage = (): React.ReactNode => {
   ];
 
   const executionForce = [
-    { name: 'Callidus' },
+    {
+      name: 'Callidus',
+      link: '/showcase/board-games/assassinorum-execution-force/callidus-assassin/',
+    },
     {
       name: 'Chaos Cultists',
       link: '/showcase/board-games/assassinorum-execution-force/chaos-cultists/',
