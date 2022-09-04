@@ -491,7 +491,10 @@ const BacklogPage = (): React.ReactNode => {
       link: '/showcase/board-games/assassinorum-execution-force/chaos-sorcerer-lord/',
     },
     { name: 'Cullexus' },
-    { name: 'Eversor' },
+    {
+      name: 'Eversor',
+      link: '/showcase/board-games/assassinorum-execution-force/eversor-assassin/',
+    },
     {
       name: 'Vindicare',
       link: '/showcase/board-games/assassinorum-execution-force/vindicare-assassin/',
