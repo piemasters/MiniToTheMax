@@ -63,7 +63,7 @@
     "@emotion/babel-plugin": "11.10.2",
     "@emotion/jest": "11.10.0",
     "@storybook/addon-a11y": "6.5.12",
-    "@storybook/addon-essentials": "6.5.11",
+    "@storybook/addon-essentials": "6.5.12",
     "@storybook/addon-jest": "6.5.11",
     "@storybook/addon-links": "6.5.12",
     "@storybook/addon-storyshots": "6.5.12",
