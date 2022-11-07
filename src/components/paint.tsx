@@ -273,13 +273,24 @@ const Paint = ({
 
   const paintSVGWrapperStyles = css``;
 
-  const { name, type, color, hex, gradient, stroke, gloss, img } = paint;
+  const { name, type, color, hex, gradient, stroke, gloss, img, availability } =
+    paint;
 
   return (
     <div data-testid="paint" css={paintStyles}>
       <div css={paintWrapperStyles}>
         <div css={paintSVGWrapperStyles}>
-          {getSVG({ name, type, color, hex, gradient, stroke, gloss, img })}
+          {getSVG({
+            name,
+            type,
+            color,
+            hex,
+            gradient,
+            stroke,
+            gloss,
+            img,
+            availability,
+          })}
         </div>
         <div css={paintTextStyles}>{name}</div>
       </div>
