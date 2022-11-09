@@ -41,7 +41,7 @@ module.exports = {
         allowSingleExtends: true,
       },
     ],
-    //'jsx-a11y/rule-name': 1,
+    'react/no-unknown-property': ['error', { ignore: ['css'] }],
   },
   overrides: [
     // Override some TypeScript rules just for .js files
