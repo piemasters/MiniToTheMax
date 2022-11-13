@@ -1,0 +1,17 @@
+export const dungeonBowl = [
+  { name: 'Dark Elf Blitzer' },
+  { name: 'Dark Elf Lineman' },
+  { name: 'Dark Elf Runner' },
+  { name: 'Dwarf Blitzer' },
+  { name: 'Dwarf Blocker Lineman' },
+  { name: 'Dwarf Runner' },
+  { name: 'Gnoblars' },
+  { name: 'Gutter Runner' },
+  { name: 'Ogre Blocker' },
+  { name: 'Ogre Runt Punter' },
+  { name: 'Skaven Blitzer' },
+  { name: 'Skaven Clanrat Lineman' },
+  { name: 'Skaven Thrower' },
+  { name: 'Troll Slayer' },
+  { name: 'Witch Elf' },
+];
