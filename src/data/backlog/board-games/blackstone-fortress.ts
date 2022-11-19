@@ -12,7 +12,10 @@ export const blackstoneFortress = [
   { name: 'Ratling Twins' },
   { name: 'Rogue Psykers' },
   { name: 'Rogue Trader' },
-  { name: 'Spindle Drones' },
+  {
+    name: 'Spindle Drones',
+    link: '/showcase/board-games/blackstone-fortress/spindle-drones/',
+  },
   { name: 'Traitor Guardsmen' },
   {
     name: 'Ur-Ghuls',
