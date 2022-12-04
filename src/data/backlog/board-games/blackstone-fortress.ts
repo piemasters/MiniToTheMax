@@ -10,7 +10,10 @@ export const blackstoneFortress = [
   { name: 'Missionary Zealot' },
   { name: 'Negavolt Cultists' },
   { name: 'Ratling Twins' },
-  { name: 'Rogue Psykers' },
+  {
+    name: 'Rogue Psykers',
+    link: '/showcase/board-games/blackstone-fortress/rogue-psykers/',
+  },
   { name: 'Rogue Trader' },
   {
     name: 'Spindle Drones',
