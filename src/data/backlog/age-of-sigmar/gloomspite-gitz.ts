@@ -24,6 +24,9 @@ export const gloomspiteGitz = [
     link: '/showcase/gloomspite-gitz/spearmen/',
   },
   {
+    name: 'Squig Gobba',
+  },
+  {
     name: 'Throgg',
     link: '/showcase/gloomspite-gitz/throgg/',
   },
