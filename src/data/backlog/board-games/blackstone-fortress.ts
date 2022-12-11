@@ -1,6 +1,9 @@
 export const blackstoneFortress = [
   { name: 'Asuryani Ranger' },
-  { name: 'Chaos Beastmen' },
+  {
+    name: 'Chaos Beastmen',
+    link: '/showcase/board-games/blackstone-fortress/chaos-beastmen/',
+  },
   { name: 'Chaos Lord' },
   { name: 'Chaos Space Marines' },
   { name: 'Imperial Navigator' },
