@@ -11,7 +11,10 @@ export const blackstoneFortress = [
   { name: 'Kroot Tracker' },
   { name: 'Ministorum Priest' },
   { name: 'Missionary Zealot' },
-  { name: 'Negavolt Cultists' },
+  {
+    name: 'Negavolt Cultists',
+    link: '/showcase/board-games/blackstone-fortress/negavolt-cultists/',
+  },
   { name: 'Ratling Twins' },
   {
     name: 'Rogue Psykers',
