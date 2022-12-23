@@ -5,7 +5,10 @@ export const blackstoneFortress = [
     link: '/showcase/board-games/blackstone-fortress/chaos-beastmen/',
   },
   { name: 'Chaos Lord' },
-  { name: 'Chaos Space Marines' },
+  {
+    name: 'Chaos Space Marines',
+    link: '/showcase/board-games/blackstone-fortress/chaos-space-marines/',
+  },
   { name: 'Imperial Navigator' },
   { name: 'Imperial Robot' },
   { name: 'Kroot Tracker' },
