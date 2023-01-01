@@ -4,7 +4,10 @@ export const blackstoneFortress = [
     name: 'Chaos Beastmen',
     link: '/showcase/board-games/blackstone-fortress/chaos-beastmen/',
   },
-  { name: 'Chaos Lord' },
+  {
+    name: 'Chaos Lord Obsidius Mallex',
+    link: '/showcase/board-games/blackstone-fortress/obsidius-mallex/',
+  },
   {
     name: 'Chaos Space Marines',
     link: '/showcase/board-games/blackstone-fortress/chaos-space-marines/',

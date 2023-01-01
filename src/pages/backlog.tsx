@@ -43,7 +43,7 @@ const BacklogPage = (): React.ReactNode => {
       return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
     });
 
-    const domList = [];
+    const domList: React.ReactNode[] = [];
 
     for (const [index, value] of entries.entries()) {
       if (value.link) {
