@@ -13,7 +13,10 @@ export const blackstoneFortress = [
     link: '/showcase/board-games/blackstone-fortress/chaos-space-marines/',
   },
   { name: 'Imperial Navigator' },
-  { name: 'Imperial Robot' },
+  {
+    name: 'Imperial Robot - UR-025',
+    link: '/showcase/board-games/blackstone-fortress/ur-025/',
+  },
   { name: 'Kroot Tracker' },
   { name: 'Ministorum Priest' },
   { name: 'Missionary Zealot' },
