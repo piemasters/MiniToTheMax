@@ -17,7 +17,10 @@ export const blackstoneFortress = [
     name: 'Imperial Robot - UR-025',
     link: '/showcase/board-games/blackstone-fortress/ur-025/',
   },
-  { name: 'Kroot Tracker' },
+  {
+    name: 'Kroot Tracker - Dahyak Greekh',
+    link: '/showcase/board-games/blackstone-fortress/dahyak-greekh/',
+  },
   { name: 'Ministorum Priest' },
   { name: 'Missionary Zealot' },
   {
