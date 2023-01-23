@@ -32,7 +32,10 @@ export const blackstoneFortress = [
     name: 'Rogue Psykers',
     link: '/showcase/board-games/blackstone-fortress/rogue-psykers/',
   },
-  { name: 'Rogue Trader' },
+  {
+    name: 'Rogue Trader - Janus Draik',
+    link: '/showcase/board-games/blackstone-fortress/janus-draik/',
+  },
   {
     name: 'Spindle Drones',
     link: '/showcase/board-games/blackstone-fortress/spindle-drones/',
