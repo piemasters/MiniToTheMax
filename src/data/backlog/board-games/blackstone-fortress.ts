@@ -12,7 +12,10 @@ export const blackstoneFortress = [
     name: 'Chaos Space Marines',
     link: '/showcase/board-games/blackstone-fortress/chaos-space-marines/',
   },
-  { name: 'Imperial Navigator' },
+  {
+    name: 'Imperial Navigator - Espern Locarno',
+    link: '/showcase/board-games/blackstone-fortress/espern-locarno/',
+  },
   {
     name: 'Imperial Robot - UR-025',
     link: '/showcase/board-games/blackstone-fortress/ur-025/',
