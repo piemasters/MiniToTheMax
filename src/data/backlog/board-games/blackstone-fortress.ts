@@ -24,8 +24,13 @@ export const blackstoneFortress = [
     name: 'Kroot Tracker - Dahyak Greekh',
     link: '/showcase/board-games/blackstone-fortress/dahyak-greekh/',
   },
-  { name: 'Ministorum Priest' },
-  { name: 'Missionary Zealot' },
+  {
+    name: 'Ministorum Priest - Taddeus the Purifier',
+    link: '/showcase/board-games/blackstone-fortress/taddeus-the-purifier/',
+  },
+  {
+    name: 'Missionary Zealot',
+  },
   {
     name: 'Negavolt Cultists',
     link: '/showcase/board-games/blackstone-fortress/negavolt-cultists/',
