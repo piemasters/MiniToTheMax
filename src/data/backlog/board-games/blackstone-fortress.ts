@@ -12,7 +12,10 @@ export const blackstoneFortress = [
     name: 'Chaos Space Marines',
     link: '/showcase/board-games/blackstone-fortress/chaos-space-marines/',
   },
-  { name: 'Imperial Navigator' },
+  {
+    name: 'Imperial Navigator - Espern Locarno',
+    link: '/showcase/board-games/blackstone-fortress/espern-locarno/',
+  },
   {
     name: 'Imperial Robot - UR-025',
     link: '/showcase/board-games/blackstone-fortress/ur-025/',
@@ -21,8 +24,13 @@ export const blackstoneFortress = [
     name: 'Kroot Tracker - Dahyak Greekh',
     link: '/showcase/board-games/blackstone-fortress/dahyak-greekh/',
   },
-  { name: 'Ministorum Priest' },
-  { name: 'Missionary Zealot' },
+  {
+    name: 'Ministorum Priest - Taddeus the Purifier',
+    link: '/showcase/board-games/blackstone-fortress/taddeus-the-purifier/',
+  },
+  {
+    name: 'Missionary Zealot',
+  },
   {
     name: 'Negavolt Cultists',
     link: '/showcase/board-games/blackstone-fortress/negavolt-cultists/',
