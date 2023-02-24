@@ -29,7 +29,8 @@ export const blackstoneFortress = [
     link: '/showcase/board-games/blackstone-fortress/taddeus-the-purifier/',
   },
   {
-    name: 'Missionary Zealot',
+    name: 'Missionary Zealot - Pious Vorne',
+    link: '/showcase/board-games/blackstone-fortress/pious-vorne/',
   },
   {
     name: 'Negavolt Cultists',
