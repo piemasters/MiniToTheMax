@@ -1,5 +1,8 @@
 export const blackstoneFortress = [
-  { name: 'Asuryani Ranger' },
+  {
+    name: 'Asuryani Ranger - Amallyn Shadowguide',
+    link: '/showcase/board-games/blackstone-fortress/amallyn-shadowguide/',
+  },
   {
     name: 'Chaos Beastmen',
     link: '/showcase/board-games/blackstone-fortress/chaos-beastmen/',
