@@ -39,7 +39,10 @@ export const blackstoneFortress = [
     name: 'Negavolt Cultists',
     link: '/showcase/board-games/blackstone-fortress/negavolt-cultists/',
   },
-  { name: 'Ratling Twins' },
+  {
+    name: 'Ratling Twins - Rein and Raus',
+    link: '/showcase/board-games/blackstone-fortress/rein-and-raus/',
+  },
   {
     name: 'Rogue Psykers',
     link: '/showcase/board-games/blackstone-fortress/rogue-psykers/',
