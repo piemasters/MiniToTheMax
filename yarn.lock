@@ -1273,10 +1273,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@browniebroke/gatsby-image-gallery@7.2.1":
-  version "7.2.1"
-  resolved "https://registry.yarnpkg.com/@browniebroke/gatsby-image-gallery/-/gatsby-image-gallery-7.2.1.tgz#b96d412498337aa6c8a23f09f066b27d34ec04c7"
-  integrity sha512-knN5ydugL7w/u5ajid0oOijjRkmobG2441rzrH7XVCY8Jl//7ovhLnv0xuyq/7yWEYqDcQhMyqQFqv8epMWxnQ==
+"@browniebroke/gatsby-image-gallery@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@browniebroke/gatsby-image-gallery/-/gatsby-image-gallery-8.0.0.tgz#7b761735ef158804edaf269c5a1d0a680c8965ff"
+  integrity sha512-Q0hlNU6vOmVOpkw6lnrGbA0CN76xFPtrqddx2h1ycGoVN9WPU1RsJSZQ7cbJBljssN4KuQt4RoSZBBzyuZkSrg==
   dependencies:
     react-image-lightbox "github:browniebroke/react-image-lightbox"
     styled-components ">= 5.0"
