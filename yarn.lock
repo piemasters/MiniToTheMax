@@ -5317,10 +5317,10 @@ babel-preset-gatsby-package@^0.1.2:
     "@babel/preset-flow" "^7.0.0"
     "@babel/preset-react" "^7.0.0"
 
-babel-preset-gatsby@3.8.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-3.8.0.tgz#75979608b290db8172563942b5394c080f6ce129"
-  integrity sha512-mT/k0hHEVGMjiWWH+uTgCq0KEZy5lNyDzIBa/IxCFbyKJsblPBZdqrTZlUncJNjWvT38FdaquTRnaYdUaKHnKw==
+babel-preset-gatsby@3.9.0:
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-3.9.0.tgz#cdd0e81d44d31f5ebbd19a879b0cf75d72979344"
+  integrity sha512-mPWsCwz4tz6oTff6cSj8ZMDKFdsOhhRTp1VVdJDGlKSNg0x8+CamNJLsnIayJvv+PpoXEZuaNF5LOUZNGfx1oQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.18.6"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.18.6"
@@ -5335,8 +5335,8 @@ babel-preset-gatsby@3.8.0:
     babel-plugin-dynamic-import-node "^2.3.3"
     babel-plugin-macros "^3.1.0"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
-    gatsby-core-utils "^4.8.0"
-    gatsby-legacy-polyfills "^3.8.0"
+    gatsby-core-utils "^4.9.0"
+    gatsby-legacy-polyfills "^3.9.0"
 
 babel-preset-gatsby@^1.15.0:
   version "1.15.0"
@@ -8855,10 +8855,17 @@ fastest-levenshtein@^1.0.12:
   resolved "https://registry.yarnpkg.com/fastest-levenshtein/-/fastest-levenshtein-1.0.16.tgz#210e61b6ff181de91ea9b3d1b84fdedd47e034e5"
   integrity sha512-eRnCtTTtGZFpQCwhJiUOuxPQWRXVKYDn0b2PeHfXL6/Zi53SLAzAHfVhVWK2AryC/WH05kGfxhFIPvTF0SXQzg==
 
-fastq@^1.10.0, fastq@^1.11.1, fastq@^1.13.0, fastq@^1.6.0:
+fastq@^1.10.0, fastq@^1.11.1, fastq@^1.6.0:
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.14.0.tgz#107f69d7295b11e0fccc264e1fc6389f623731ce"
   integrity sha512-eR2D+V9/ExcbF9ls441yIuN6TI2ED1Y2ZcA5BmMtJsOkWOFRJQ0Jt0g1UwqXJJVAb+V+umH5Dfr8oh4EVP7VVg==
+  dependencies:
+    reusify "^1.0.4"
+
+fastq@^1.15.0:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.15.0.tgz#d04d07c6a2a68fe4599fea8d2e103a937fae6b3a"
+  integrity sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==
   dependencies:
     reusify "^1.0.4"
 
@@ -8921,7 +8928,7 @@ file-system-cache@^1.0.5:
     fs-extra "^10.1.0"
     ramda "^0.28.0"
 
-file-type@^16.5.3:
+file-type@^16.5.3, file-type@^16.5.4:
   version "16.5.4"
   resolved "https://registry.yarnpkg.com/file-type/-/file-type-16.5.4.tgz#474fb4f704bee427681f98dd390058a172a6c2fd"
   integrity sha512-/yFHK0aGjFEgDJjEKP0pWCplsPFPhwyfwevf/pVxiN0tmE4L9LmwWxWukdJSHdoCli4VgQLehjJtwQBnqmsKcw==
@@ -9226,10 +9233,10 @@ fs-extra@^10.0.0, fs-extra@^10.1.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
-fs-extra@^11.1.0:
-  version "11.1.0"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.1.0.tgz#5784b102104433bb0e090f48bfc4a30742c357ed"
-  integrity sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==
+fs-extra@^11.1.1:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.1.1.tgz#da69f7c39f3b002378b0954bb6ae7efdc0876e2d"
+  integrity sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==
   dependencies:
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"
@@ -9389,18 +9396,18 @@ gatsby-core-utils@^2.15.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
-gatsby-core-utils@^4.8.0:
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.8.0.tgz#b9baac9f9434d0c789e470e8caf8003edf91d7ac"
-  integrity sha512-C2uOZBd9j6AYIyiB+DdxRtbQgAa3kMDRsKR5eCwALp0Bkg3W5I/YiXhSF7zQxVckaqNXzXvmedJESKCJNIvO7w==
+gatsby-core-utils@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.9.0.tgz#1134d9a119f49b90d3b5107210dfdd17a4231463"
+  integrity sha512-diCAmlr42YQpSKapD374JVF+ojDXTHxnrNoS907jNGgT4J35t2az9GsEQFgrEou3Td5TLuUl/8yJM2Hpwn4gyg==
   dependencies:
     "@babel/runtime" "^7.20.13"
     ci-info "2.0.0"
     configstore "^5.0.1"
-    fastq "^1.13.0"
-    file-type "^16.5.3"
-    fs-extra "^11.1.0"
-    got "^11.8.5"
+    fastq "^1.15.0"
+    file-type "^16.5.4"
+    fs-extra "^11.1.1"
+    got "^11.8.6"
     hash-wasm "^4.9.0"
     import-from "^4.0.0"
     lmdb "2.5.3"
@@ -9435,10 +9442,10 @@ gatsby-legacy-polyfills@^1.15.0:
     "@babel/runtime" "^7.15.4"
     core-js-compat "3.9.0"
 
-gatsby-legacy-polyfills@^3.8.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/gatsby-legacy-polyfills/-/gatsby-legacy-polyfills-3.8.0.tgz#59bddeb81d0dba4ba4e71b39436d006f48337937"
-  integrity sha512-ZUfvOA27FvwcqTdYPe3SCzMk+4uC+YLp4jjZEGZeRI6fyTIfO7WKqETZ0Ey2rzEEBhwxF9P5BuuPjNnBR9NbOg==
+gatsby-legacy-polyfills@^3.9.0:
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-legacy-polyfills/-/gatsby-legacy-polyfills-3.9.0.tgz#3c93619e92d51fd16bf0a083e14992b5c7582d5a"
+  integrity sha512-gKQ8tbQ1h6nmR8xmLBox7GrzSgYhso/aMKSC0o3BQNOlutI+DHdkmsz+Jph0R2cB+yakqQfZBUYM/xg/Om515Q==
   dependencies:
     "@babel/runtime" "^7.20.13"
     core-js-compat "3.9.0"
@@ -10293,7 +10300,7 @@ gopd@^1.0.1:
   dependencies:
     get-intrinsic "^1.1.3"
 
-got@^11.8.2, got@^11.8.5:
+got@^11.8.2, got@^11.8.6:
   version "11.8.6"
   resolved "https://registry.yarnpkg.com/got/-/got-11.8.6.tgz#276e827ead8772eddbcfc97170590b841823233a"
   integrity sha512-6tfZ91bOr7bOXnK7PRDCGBLa1H4U080YHNaAQ2KsMGlLEzRbk44nsZF2E1IeRc3vtJHPVbKCYgdFbaGO2ljd8g==
