@@ -1,54 +1,54 @@
 export const malignSorcery = [
   {
     name: 'Aethervoid Pendulun',
-    link: '/showcase/gloomspite-gitz/malign-sorcery/aethervoid-pendulum/',
+    link: '/showcase/malign-sorcery/aethervoid-pendulum/',
   },
   {
     name: 'Burning Head',
-    link: '/showcase/gloomspite-gitz/malign-sorcery/burning-head/',
+    link: '/showcase/malign-sorcery/burning-head/',
   },
   {
     name: 'Chronomantic Cogs',
-    link: '/showcase/gloomspite-gitz/malign-sorcery/chronomantic-cogs/',
+    link: '/showcase/malign-sorcery/chronomantic-cogs/',
   },
   {
     name: 'Emerald Lifeswarm',
-    link: '/showcase/gloomspite-gitz/malign-sorcery/emerald-lifeswarm/',
+    link: '/showcase/malign-sorcery/emerald-lifeswarm/',
   },
   {
     name: 'Geminids of Uhl-Ghysh',
-    link: '/showcase/gloomspite-gitz/malign-sorcery/geminids-of-uhl-gysh/',
+    link: '/showcase/malign-sorcery/geminids-of-uhl-gysh/',
   },
   {
     name: 'Malevolent Maelstrom',
-    link: '/showcase/gloomspite-gitz/malign-sorcery/malevolent-maelstrom/',
+    link: '/showcase/malign-sorcery/malevolent-maelstrom/',
   },
   {
     name: 'Prismatic Palisade',
-    link: '/showcase/gloomspite-gitz/malign-sorcery/prismatic-palisade/',
+    link: '/showcase/malign-sorcery/prismatic-palisade/',
   },
   {
     name: 'Purple Sun of Shyish',
-    link: '/showcase/gloomspite-gitz/malign-sorcery/purple-sun-of-shyish/',
+    link: '/showcase/malign-sorcery/purple-sun-of-shyish/',
   },
   {
     name: 'Quicksilver Swords',
-    link: '/showcase/gloomspite-gitz/malign-sorcery/quicksilver-swords/',
+    link: '/showcase/malign-sorcery/quicksilver-swords/',
   },
   {
     name: 'Ravenak’s Gnashing Jaws',
-    link: '/showcase/gloomspite-gitz/malign-sorcery/ravenaks-gnashing-jaws/',
+    link: '/showcase/malign-sorcery/ravenaks-gnashing-jaws/',
   },
   {
     name: 'Soulsnare Shackles',
-    link: '/showcase/gloomspite-gitz/malign-sorcery/soulsnare-shackles/',
+    link: '/showcase/malign-sorcery/soulsnare-shackles/',
   },
   {
     name: 'Suffocating Gravetide',
-    link: '/showcase/gloomspite-gitz/malign-sorcery/suffocating-gravetide/',
+    link: '/showcase/malign-sorcery/suffocating-gravetide/',
   },
   {
     name: 'Umbral Spellportal',
-    link: '/showcase/gloomspite-gitz/malign-sorcery/umbral-spell-portals/',
+    link: '/showcase/malign-sorcery/umbral-spell-portals/',
   },
 ];
