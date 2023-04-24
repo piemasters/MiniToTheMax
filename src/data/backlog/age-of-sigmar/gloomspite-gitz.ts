@@ -1,13 +1,32 @@
 export const gloomspiteGitz = [
   {
-    name: 'Bazdrogg Nekk-choppa',
+    name: 'Boingrot Bounders',
+  },
+  {
+    name: 'Colossal Squig',
+    link: '/showcase/gloomspite-gitz/colossal-squig/',
   },
   {
     name: 'Da Red Gobbo',
     link: '/showcase/gloomspite-gitz/da-red-gobbo/',
   },
   {
+    name: 'Grinkraks Looncourt',
+  },
+  {
     name: 'Loonboss on Giant Cave Squig',
+  },
+  {
+    name: 'Loonboss on Giant Cave Squig II',
+  },
+  {
+    name: 'Loonboss on Mangler Squigs',
+  },
+  {
+    name: 'Loonboss with Battle Standard',
+  },
+  {
+    name: 'Madcap Shaman',
   },
   {
     name: 'Mangler Squigs',
@@ -17,8 +36,20 @@ export const gloomspiteGitz = [
     name: 'Mangler Squigs II',
   },
   {
-    name: 'Morglum Necksnapper',
-    link: '/showcase/gloomspite-gitz/morglum-necksnapper/',
+    name: 'Mollogs Mob',
+  },
+  {
+    name: 'Rockgut Troggoths',
+  },
+  {
+    name: 'Rogue Idol',
+  },
+  {
+    name: 'Spearmen',
+    link: '/showcase/gloomspite-gitz/spearmen/',
+  },
+  {
+    name: 'Squigboss with Gnasha Squig',
   },
   {
     name: 'Squig Gobba',
@@ -30,9 +61,6 @@ export const gloomspiteGitz = [
     name: 'Squig Herd II',
   },
   {
-    name: 'Squig Hoppers',
-  },
-  {
     name: 'Skarsnik & Gobbla',
     link: '/showcase/gloomspite-gitz/skarsnik/',
   },
@@ -41,14 +69,13 @@ export const gloomspiteGitz = [
     link: '/showcase/gloomspite-gitz/skragrott-the-loonking/',
   },
   {
-    name: 'Spearmen',
-    link: '/showcase/gloomspite-gitz/spearmen/',
-  },
-  {
-    name: 'Squig Gobba',
-  },
-  {
     name: 'Throgg',
     link: '/showcase/gloomspite-gitz/throgg/',
+  },
+  {
+    name: 'Troggoth Hag',
+  },
+  {
+    name: 'Zarbags Gitz',
   },
 ];

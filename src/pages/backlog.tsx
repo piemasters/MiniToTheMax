@@ -19,6 +19,7 @@ import {
   heroQuestFrozenHorror,
   heroQuestKellarsKeep,
   heroQuestReturnOfTheWitchLord,
+  ironjawz,
   lostPatrol,
   malignSorcery,
   objectives,
@@ -122,6 +123,9 @@ const BacklogPage = (): React.ReactNode => {
 
       <h3>Gloomspite Gitz</h3>
       <ul>{generateEntries(gloomspiteGitz)}</ul>
+
+      <h3>Ironjawz</h3>
+      <ul>{generateEntries(ironjawz)}</ul>
 
       <h3>Malign Sorcery</h3>
       <ul>{generateEntries(malignSorcery)}</ul>
