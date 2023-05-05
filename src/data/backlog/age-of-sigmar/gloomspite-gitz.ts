@@ -19,6 +19,7 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Loonboss on Giant Cave Squig II',
+    link: '/showcase/gloomspite-gitz/loonboss-on-giant-cave-squig-2/',
   },
   {
     name: 'Loonboss on Mangler Squigs',
