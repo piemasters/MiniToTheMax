@@ -50,6 +50,7 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Loonboss with Battle Standard',
+    link: '/showcase/gloomspite-gitz/loonboss-with-battle-standard/',
   },
   {
     name: 'Loonsmasha Fanatics',
