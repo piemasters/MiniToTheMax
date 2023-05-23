@@ -57,6 +57,7 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Madcap Shaman',
+    link: '/showcase/gloomspite-gitz/madcap-shaman/',
   },
   {
     name: 'Madcap Shaman II',
