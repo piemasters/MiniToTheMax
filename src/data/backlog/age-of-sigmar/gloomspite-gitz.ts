@@ -93,6 +93,7 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Squig Herd',
+    link: '/showcase/gloomspite-gitz/squig-herd/',
   },
   {
     name: 'Squig Herd II',
