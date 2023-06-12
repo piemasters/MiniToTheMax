@@ -1,5 +1,11 @@
 export const gloomspiteGitz = [
   {
+    name: 'Arachnarok Spider',
+  },
+  {
+    name: 'Bad Moon Loonshrine',
+  },
+  {
     name: 'Boingrot Bounders',
   },
   {
@@ -7,11 +13,29 @@ export const gloomspiteGitz = [
     link: '/showcase/gloomspite-gitz/colossal-squig/',
   },
   {
+    name: 'Dankhold Troggboss',
+  },
+  {
+    name: 'Dankhold Troggoth',
+  },
+  {
     name: 'Da Red Gobbo',
     link: '/showcase/gloomspite-gitz/da-red-gobbo/',
   },
   {
+    name: 'Endless Spells',
+  },
+  {
+    name: 'Fellwater Troggoths',
+  },
+  {
+    name: 'Gobbapalooza',
+  },
+  {
     name: 'Grinkraks Looncourt',
+  },
+  {
+    name: 'Loonboss',
   },
   {
     name: 'Loonboss on Giant Cave Squig',
@@ -26,9 +50,17 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Loonboss with Battle Standard',
+    link: '/showcase/gloomspite-gitz/loonboss-with-battle-standard/',
+  },
+  {
+    name: 'Loonsmasha Fanatics',
   },
   {
     name: 'Madcap Shaman',
+    link: '/showcase/gloomspite-gitz/madcap-shaman/',
+  },
+  {
+    name: 'Madcap Shaman II',
   },
   {
     name: 'Mangler Squigs',
@@ -51,6 +83,9 @@ export const gloomspiteGitz = [
     link: '/showcase/gloomspite-gitz/spearmen/',
   },
   {
+    name: 'Sporesplatta Fanatics',
+  },
+  {
     name: 'Squigboss with Gnasha Squig',
   },
   {
@@ -58,9 +93,11 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Squig Herd',
+    link: '/showcase/gloomspite-gitz/squig-herd/',
   },
   {
     name: 'Squig Herd II',
+    link: '/showcase/gloomspite-gitz/squig-herd-2/',
   },
   {
     name: 'Skarsnik & Gobbla',
@@ -69,6 +106,12 @@ export const gloomspiteGitz = [
   {
     name: 'Skragrott',
     link: '/showcase/gloomspite-gitz/skragrott-the-loonking/',
+  },
+  {
+    name: 'Snazzgar Stinkmullett',
+  },
+  {
+    name: 'Sneaky Snufflers',
   },
   {
     name: 'Throgg',
