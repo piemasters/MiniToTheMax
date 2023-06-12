@@ -97,6 +97,7 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Squig Herd II',
+    link: '/showcase/gloomspite-gitz/squig-herd-2/',
   },
   {
     name: 'Skarsnik & Gobbla',
