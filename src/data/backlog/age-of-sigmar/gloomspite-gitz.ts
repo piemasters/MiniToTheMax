@@ -7,6 +7,7 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Boingrot Bounders',
+    link: '/showcase/gloomspite-gitz/boingrot-bounders/',
   },
   {
     name: 'Colossal Squig',
