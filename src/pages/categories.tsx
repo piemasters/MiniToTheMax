@@ -34,16 +34,11 @@ const CategoriesPage = ({ data }: { data: Categories }): React.ReactNode => (
 
 export default CategoriesPage;
 
-export const pageQuery = graphql`
-  query {
-    categories: allMdx(
-      limit: 2000
-      filter: { frontmatter: { published: { eq: true } } }
-    ) {
-      group(field: frontmatter___categories) {
-        fieldValue
-        totalCount
-      }
+export const pageQuery = graphql`{
+  categories: allMdx(limit: 2000, filter: {frontmatter: {published: {eq: true}}}) {
+    group(field: {frontmatter: {categories: SELECT}}) {
+      fieldValue
+      totalCount
     }
   }
-`;
+}`;

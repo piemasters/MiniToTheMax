@@ -55,29 +55,22 @@ const Category = ({
 
 export default Category;
 
-export const pageQuery = graphql`
-  query($category: String) {
-    categories: allMdx(
-      limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: {
-        frontmatter: {
-          published: { eq: true }
-          categories: { in: [$category] }
+export const pageQuery = graphql`query ($category: String) {
+  categories: allMdx(
+    limit: 2000
+    sort: {frontmatter: {date: DESC}}
+    filter: {frontmatter: {published: {eq: true}, categories: {in: [$category]}}}
+  ) {
+    totalCount
+    edges {
+      node {
+        fields {
+          slug
         }
-      }
-    ) {
-      totalCount
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
+        frontmatter {
+          title
         }
       }
     }
   }
-`;
+}`;

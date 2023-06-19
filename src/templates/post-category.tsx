@@ -55,33 +55,26 @@ const PostCategory = ({
 
 export default PostCategory;
 
-export const pageQuery = graphql`
-  query($category: String!, $type: String!) {
-    categories: allMdx(
-      filter: {
-        frontmatter: {
-          categories: { in: [$type], eq: $category }
-          published: { eq: true }
+export const pageQuery = graphql`query ($category: String!, $type: String!) {
+  categories: allMdx(
+    filter: {frontmatter: {categories: {in: [$type], eq: $category}, published: {eq: true}}}
+    sort: {frontmatter: {date: DESC}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
         }
-      }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            categories
-            title
-            featuredImage {
-              childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
-              }
+        frontmatter {
+          categories
+          title
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }
       }
     }
   }
-`;
+}`;

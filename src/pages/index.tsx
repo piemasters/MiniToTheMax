@@ -10,34 +10,32 @@ import { getImage } from 'gatsby-plugin-image';
 const IndexPage = (): React.ReactNode => {
   return (
     <StaticQuery
-      query={graphql`
-        query latestPostQuery {
-          posts: allMdx(
-            sort: { fields: [frontmatter___date], order: DESC }
-            limit: 1
-            filter: { frontmatter: { published: { eq: true } } }
-          ) {
-            edges {
-              node {
-                excerpt(pruneLength: 300)
-                timeToRead
-                frontmatter {
-                  title
-                  date
-                  featuredImage {
-                    childImageSharp {
-                      gatsbyImageData(layout: CONSTRAINED)
-                    }
-                  }
-                }
-                fields {
-                  slug
-                }
-              }
+      query={graphql`query latestPostQuery {
+  posts: allMdx(
+    sort: {frontmatter: {date: DESC}}
+    limit: 1
+    filter: {frontmatter: {published: {eq: true}}}
+  ) {
+    edges {
+      node {
+        excerpt(pruneLength: 300)
+        timeToRead
+        frontmatter {
+          title
+          date
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }
-      `}
+        fields {
+          slug
+        }
+      }
+    }
+  }
+}`}
       render={(data) => (
         <Layout>
           <Seo />

@@ -30,16 +30,11 @@ const TagsPage = ({ data }: { data: Tags }): React.ReactNode => (
 
 export default TagsPage;
 
-export const pageQuery = graphql`
-  query {
-    tags: allMdx(
-      limit: 2000
-      filter: { frontmatter: { published: { eq: true } } }
-    ) {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
-      }
+export const pageQuery = graphql`{
+  tags: allMdx(limit: 2000, filter: {frontmatter: {published: {eq: true}}}) {
+    group(field: {frontmatter: {tags: SELECT}}) {
+      fieldValue
+      totalCount
     }
   }
-`;
+}`;

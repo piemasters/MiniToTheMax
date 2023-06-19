@@ -55,24 +55,22 @@ const Tag = ({
 
 export default Tag;
 
-export const pageQuery = graphql`
-  query($tag: String) {
-    tags: allMdx(
-      limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { published: { eq: true }, tags: { in: [$tag] } } }
-    ) {
-      totalCount
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
+export const pageQuery = graphql`query ($tag: String) {
+  tags: allMdx(
+    limit: 2000
+    sort: {frontmatter: {date: DESC}}
+    filter: {frontmatter: {published: {eq: true}, tags: {in: [$tag]}}}
+  ) {
+    totalCount
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
         }
       }
     }
   }
-`;
+}`;

@@ -32,37 +32,32 @@ module.exports.createPages = async ({ graphql, actions }) => {
   /**
    * Handle local markdown posts
    */
-  const result = await graphql(`
-    query {
-      posts: allMdx(
-        sort: { fields: [frontmatter___date], order: DESC }
-        limit: 1000
-      ) {
-        edges {
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              tags
-              published
-            }
-          }
+  const result = await graphql(`{
+  posts: allMdx(sort: {frontmatter: {date: DESC}}, limit: 1000) {
+    edges {
+      node {
+        fields {
+          slug
         }
-      }
-      tagsGroup: allMdx(limit: 2000) {
-        group(field: frontmatter___tags) {
-          fieldValue
-        }
-      }
-      categoriesGroup: allMdx(limit: 2000) {
-        group(field: frontmatter___categories) {
-          fieldValue
+        frontmatter {
+          title
+          tags
+          published
         }
       }
     }
-  `);
+  }
+  tagsGroup: allMdx(limit: 2000) {
+    group(field: {frontmatter: {tags: SELECT}}) {
+      fieldValue
+    }
+  }
+  categoriesGroup: allMdx(limit: 2000) {
+    group(field: {frontmatter: {categories: SELECT}}) {
+      fieldValue
+    }
+  }
+}`);
 
   if (result.errors) {
     throw result.errors;
