@@ -13,14 +13,13 @@ const IndexPage = (): React.ReactNode => {
       query={graphql`
         query latestPostQuery {
           posts: allMdx(
-            sort: { fields: [frontmatter___date], order: DESC }
+            sort: { frontmatter: { date: DESC } }
             limit: 1
             filter: { frontmatter: { published: { eq: true } } }
           ) {
             edges {
               node {
                 excerpt(pruneLength: 300)
-                timeToRead
                 frontmatter {
                   title
                   date
@@ -55,7 +54,6 @@ const IndexPage = (): React.ReactNode => {
             slug={data.posts.edges[0].node.fields.slug}
             title={data.posts.edges[0].node.frontmatter.title}
             excerpt={data.posts.edges[0].node.excerpt}
-            timeToRead={data.posts.edges[0].node.timeToRead}
           />
         </Layout>
       )}
@@ -64,3 +62,5 @@ const IndexPage = (): React.ReactNode => {
 };
 
 export default IndexPage;
+
+export const Head = () => <Seo />;

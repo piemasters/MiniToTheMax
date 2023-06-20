@@ -48,7 +48,6 @@ const Blog = ({
     date: edge.node.frontmatter.date,
     img: edge.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData,
     excerpt: edge.node.excerpt,
-    timeToRead: edge.node.timeToRead,
   }));
 
   return (
@@ -69,7 +68,6 @@ const Blog = ({
                 slug={post.slug}
                 title={post.title}
                 excerpt={post.excerpt}
-                timeToRead={post.timeToRead}
                 tall={true}
               />
             </li>
@@ -93,15 +91,14 @@ const Blog = ({
 export const postQuery = graphql`
   query blogPageQuery($skip: Int, $limit: Int) {
     posts: allMdx(
-      filter: { frontmatter: { published: { eq: true } } } #comment to show unpublished posts
-      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { published: { eq: true } } }
+      sort: { frontmatter: { date: DESC } }
       limit: $limit
       skip: $skip
     ) {
       edges {
         node {
           excerpt(pruneLength: 300)
-          timeToRead
           frontmatter {
             title
             date

@@ -56,7 +56,7 @@ const PostCategory = ({
 export default PostCategory;
 
 export const pageQuery = graphql`
-  query($category: String!, $type: String!) {
+  query ($category: String!, $type: String!) {
     categories: allMdx(
       filter: {
         frontmatter: {
@@ -64,7 +64,7 @@ export const pageQuery = graphql`
           published: { eq: true }
         }
       }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
     ) {
       edges {
         node {

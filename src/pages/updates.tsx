@@ -6,12 +6,6 @@ import PageLink from '../components/page-link';
 const UpdatesPage = (): React.ReactNode => {
   return (
     <Layout>
-      <Seo
-        title={'Updates'}
-        description={"Quick updates on what I'm currently working on"}
-        pathname={'/updates'}
-      />
-
       <h1>Updates</h1>
       <li>
         <PageLink to={`/updates/2013`} type={'cover'} direction={'up'}>
@@ -33,3 +27,11 @@ const UpdatesPage = (): React.ReactNode => {
 };
 
 export default UpdatesPage;
+
+export const Head = () => (
+  <Seo
+    title={'Updates'}
+    description={"Quick updates on what I'm currently working on"}
+    pathname={'/updates'}
+  />
+);

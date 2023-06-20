@@ -56,10 +56,10 @@ const Category = ({
 export default Category;
 
 export const pageQuery = graphql`
-  query($category: String) {
+  query ($category: String) {
     categories: allMdx(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       filter: {
         frontmatter: {
           published: { eq: true }

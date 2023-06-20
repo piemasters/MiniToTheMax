@@ -193,7 +193,6 @@ const Paints = (): React.ReactNode => {
 
   return (
     <Layout>
-      <Seo title={'Paints'} pathname={'/paints'} />
       <h1>Paints ({filteredPaints.length})</h1>
       <hr />
       {allFilterElements()}
@@ -206,3 +205,5 @@ const Paints = (): React.ReactNode => {
 };
 
 export default Paints;
+
+export const Head = () => <Seo title={'Paints'} pathname={'/paints'} />;

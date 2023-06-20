@@ -31,7 +31,6 @@ export interface MdxNode {
   html: string;
   mdxAST: JSON;
   tableOfContents: JSON;
-  timeToRead: number;
   wordCount: MdxWordCount;
   fields: MdxFields;
   id: string;

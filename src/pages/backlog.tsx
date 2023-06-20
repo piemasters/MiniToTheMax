@@ -87,11 +87,6 @@ const BacklogPage = (): React.ReactNode => {
 
   return (
     <Layout>
-      <Seo
-        title={'Backlog'}
-        description={'My backlog of miniatures still to paint'}
-        pathname={'/backlog'}
-      />
       <h1>Backlog</h1>
 
       <h2>40k</h2>
@@ -192,3 +187,11 @@ const BacklogPage = (): React.ReactNode => {
 };
 
 export default BacklogPage;
+
+export const Head = () => (
+  <Seo
+    title={'Backlog'}
+    description={'My backlog of miniatures still to paint'}
+    pathname={'/backlog'}
+  />
+);

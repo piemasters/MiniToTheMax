@@ -11,7 +11,6 @@ interface PostSummaryProps {
   date: string;
   img?: IGatsbyImageData;
   excerpt: string;
-  timeToRead: number;
   tall?: boolean;
 }
 
@@ -58,9 +57,7 @@ const PostSummary = (post: PostSummaryProps): JSX.Element => {
         <div css={postContents}>
           {' '}
           <p css={postParagraphStyle}>
-            <strong>
-              {post.date} - {post.timeToRead} min read
-            </strong>
+            <strong>{post.date}</strong>
           </p>
           <hr />
           <p css={postParagraphStyle}>{post.excerpt}</p>

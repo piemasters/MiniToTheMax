@@ -8,11 +8,6 @@ import Layout from '../layouts/layout';
 
 const CategoriesPage = ({ data }: { data: Categories }): React.ReactNode => (
   <Layout>
-    <Seo
-      title={'Categories'}
-      description={'All blog categories'}
-      pathname={'/categories'}
-    />
     <div>
       <h1>Categories</h1>
       <ul>
@@ -35,15 +30,23 @@ const CategoriesPage = ({ data }: { data: Categories }): React.ReactNode => (
 export default CategoriesPage;
 
 export const pageQuery = graphql`
-  query {
+  {
     categories: allMdx(
       limit: 2000
       filter: { frontmatter: { published: { eq: true } } }
     ) {
-      group(field: frontmatter___categories) {
+      group(field: { frontmatter: { categories: SELECT } }) {
         fieldValue
         totalCount
       }
     }
   }
 `;
+
+export const Head = () => (
+  <Seo
+    title={'Categories'}
+    description={'All blog categories'}
+    pathname={'/categories'}
+  />
+);

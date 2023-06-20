@@ -27,12 +27,6 @@ const ReviewsPage = ({ data }: { data: Reviews }): React.ReactNode => {
 
   return (
     <Layout>
-      <Seo
-        title={'Reviews'}
-        description={'Reviews of different hobby products'}
-        pathname={'/reviews'}
-      />
-
       <h1>Reviews</h1>
       {categories.map((category) => {
         return (
@@ -79,3 +73,11 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = () => (
+  <Seo
+    title={'Reviews'}
+    description={'Reviews of different hobby products'}
+    pathname={'/reviews'}
+  />
+);

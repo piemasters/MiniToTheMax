@@ -20,12 +20,6 @@ const BattleReportsPage = ({
   ];
   return (
     <Layout>
-      <Seo
-        title={'Battle Reports'}
-        description={'Reports on games of warhammer'}
-        pathname={'/battle-reports'}
-      />
-
       <h1>Battle Reports</h1>
       {categories.map((category) => {
         return (
@@ -56,3 +50,11 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = () => (
+  <Seo
+    title={'Battle Reports'}
+    description={'Reports on games of warhammer'}
+    pathname={'/battle-reports'}
+  />
+);

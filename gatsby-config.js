@@ -16,6 +16,7 @@ module.exports = {
     siteUrl: 'https://minitothemax.app',
     image: `content/assets/images/logo.png`,
   },
+  graphqlTypegen: true,
   plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,
@@ -33,7 +34,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-eslint',
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
     `gatsby-plugin-transition-link`,
     'gatsby-plugin-sass',
@@ -59,12 +59,12 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /svg/
-        }
-      }
+          include: /svg/,
+        },
+      },
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -83,7 +83,6 @@ module.exports = {
             },
           },
         ],
-        plugins: ['gatsby-remark-images'],
       },
     },
     {

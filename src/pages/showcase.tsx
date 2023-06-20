@@ -43,12 +43,6 @@ const ShowcasePage = ({ data }: { data: Showcase }): React.ReactNode => {
 
   return (
     <Layout>
-      <Seo
-        title={'Showcase'}
-        description={'Showcase of completed miniatures'}
-        pathname={'/showcase'}
-      />
-
       <h1>Showcase</h1>
 
       {categories.map((category) => {
@@ -123,3 +117,11 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = () => (
+  <Seo
+    title={'Showcase'}
+    description={'Showcase of completed miniatures'}
+    pathname={'/showcase'}
+  />
+);

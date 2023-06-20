@@ -11,7 +11,6 @@ export interface PostSummary {
   date: string;
   img: IGatsbyImageData;
   excerpt: string;
-  timeToRead: number;
 }
 
 export interface MdxPost {
