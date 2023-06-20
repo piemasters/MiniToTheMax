@@ -35,9 +35,9 @@ module.exports = {
     },
     'gatsby-plugin-eslint',
     'gatsby-plugin-typescript',
-    `gatsby-plugin-transition-link`,
-    'gatsby-plugin-sass',
-    'gatsby-plugin-emotion',
+    `gatsby-plugin-transition-link`, // TODO: look at replacing
+    'gatsby-plugin-sass', // TODO: look at replacing with tailwind
+    'gatsby-plugin-emotion', // TODO: look at replacing with tailwind
     'gatsby-plugin-catch-links',
     'gatsby-plugin-robots-txt',
     {
@@ -48,6 +48,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/blog`,
+        // path: `${__dirname}/content/blogtest`,
         name: `blog`,
       },
     },
@@ -100,11 +101,11 @@ module.exports = {
         cache_busting_mode: `query`,
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/blog`],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-offline`,
+    //   options: {
+    //     precachePages: [`/blog`],
+    //   },
+    // },
   ],
 };

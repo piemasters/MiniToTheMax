@@ -29,11 +29,6 @@ const Category = ({
 
   return (
     <Layout>
-      <Seo
-        title={pageContext.category}
-        pathname={pageContext.url}
-        description={categoryHeader}
-      />
       <h1>{categoryHeader}</h1>
       <ul>
         {categories.map((category: TagLink) => {
@@ -81,3 +76,11 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = ({ pageContext }) => (
+  <Seo
+    title={pageContext?.category}
+    pathname={pageContext?.url}
+    description={pageContext?.category}
+  />
+);

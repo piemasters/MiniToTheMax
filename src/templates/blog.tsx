@@ -52,11 +52,6 @@ const Blog = ({
 
   return (
     <Layout>
-      <Seo
-        title={'Blog'}
-        description={'Blog Posts'}
-        pathname={`/blog/${page.currentPage}`}
-      />
       <h1>Blog</h1>
       <ol css={postsStyle}>
         {posts.map((post: PostSummaryType) => {
@@ -118,3 +113,11 @@ export const postQuery = graphql`
 `;
 
 export default Blog;
+
+export const Head = ({ pageContext }) => (
+  <Seo
+    title={'Blog'}
+    description={'Blog Posts'}
+    pathname={`/blog/${pageContext?.currentPage}`}
+  />
+);

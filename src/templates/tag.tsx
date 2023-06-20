@@ -29,11 +29,6 @@ const Tag = ({
 
   return (
     <Layout>
-      <Seo
-        title={pageContext.tag}
-        pathname={pageContext.url}
-        description={tagHeader}
-      />
       <h1>{tagHeader}</h1>
       <ul>
         {tags.map((tag: TagLink) => {
@@ -76,3 +71,11 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = ({ pageContext }) => (
+  <Seo
+    title={pageContext?.tag}
+    pathname={pageContext?.url}
+    description={pageContext?.tag}
+  />
+);

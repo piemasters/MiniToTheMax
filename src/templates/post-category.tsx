@@ -29,14 +29,7 @@ const PostCategory = ({
 
   return (
     <Layout>
-      <Seo
-        title={pageContext.category}
-        description={`${pageContext.type} articles on the subject of ${pageContext.category}`}
-        pathname={pageContext.url}
-      />
-
       <h1>{pageContext.category}</h1>
-
       <ul>
         {postCategories.map((postCategory: PostLink) => {
           return (
@@ -85,3 +78,11 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = ({ pageContext }) => (
+  <Seo
+    title={pageContext?.category}
+    description={`${pageContext?.type} articles on the subject of ${pageContext?.category}`}
+    pathname={pageContext?.url}
+  />
+);

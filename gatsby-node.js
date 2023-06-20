@@ -45,6 +45,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
               tags
               published
             }
+            internal {
+              contentFilePath
+            }
           }
         }
       }
@@ -73,15 +76,13 @@ module.exports.createPages = async ({ graphql, actions }) => {
       : allPosts;
 
   posts.forEach((edge, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-    const next = index === 0 ? null : posts[index - 1].node;
     createPage({
-      component: postTemplate,
+      component: `${postTemplate}?__contentFilePath=${edge.node.internal.contentFilePath}`,
       path: edge.node.fields.slug,
       context: {
         slug: edge.node.fields.slug,
-        previous,
-        next,
+        previous: index === posts.length - 1 ? null : posts[index + 1].node,
+        next: index === 0 ? null : posts[index - 1].node,
       },
     });
   });
