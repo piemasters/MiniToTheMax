@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { css } from '@emotion/react';
 import Layout from '../layouts/layout';
 import Pagination from '../components/pagination';
 import Seo from '../components/stateful/seo';
@@ -23,11 +22,6 @@ const Blog = ({
   data: Posts;
   pageContext: PostContext;
 }): React.ReactNode => {
-  const postsStyle = css`
-    list-style-type: none;
-    margin: 0;
-  `;
-
   const page = {
     isFirst: pageContext.currentPage === 1,
     isLast: pageContext.currentPage === pageContext.numPostPages,
@@ -53,7 +47,7 @@ const Blog = ({
   return (
     <Layout>
       <h1>Blog</h1>
-      <ol css={postsStyle}>
+      <ol style={{ listStyleType: 'none', margin: '0' }}>
         {posts.map((post: PostSummaryType) => {
           return (
             <li key={post.slug}>

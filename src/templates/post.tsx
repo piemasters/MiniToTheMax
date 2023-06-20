@@ -5,10 +5,7 @@ import SimplePagination from '../components/simple-pagination';
 import Gallery from '@browniebroke/gatsby-image-gallery';
 import Seo from '../components/stateful/seo';
 import { DiscussionEmbed } from 'disqus-react';
-import { DisqusConfig, MdxPost } from '../types/app.types';
-import { MdxFrontmatterGalleryImage, MdxNode } from '../types/base.types';
 import PostTag from '../components/post-tag';
-import { css } from '@emotion/react';
 import CoverImage from '../components/cover-image';
 
 const Post = ({ pageContext, data, children }) => {
@@ -52,28 +49,16 @@ const Post = ({ pageContext, data, children }) => {
     url: `${data.site.siteMetadata.siteUrl}/${post.slug}`,
   };
 
-  const tagsStyle = css`
-    padding: 0.5rem 0;
-  `;
-
-  const dateStyle = css`
-    font-size: 0.8rem;
-    padding: 1rem 0.5rem;
-    text-align: right;
-  `;
-
-  const galleryContainerStyle = css`
-    cursor: pointer;
-    overflow: hidden;
-    margin-bottom: 2rem;
-  `;
-
   return (
     <Layout>
       {post.featuredImage && (
         <CoverImage image={post.featuredImage} title={post.title} />
       )}
-      <div css={tagsStyle}>
+      <div
+        style={{
+          padding: '0.5rem 0',
+        }}
+      >
         {post.categories.map((category) => (
           <PostTag type={'categories'} name={category} key={category} />
         ))}
@@ -81,14 +66,26 @@ const Post = ({ pageContext, data, children }) => {
           <PostTag type={'tags'} name={tag} key={tag} />
         ))}
       </div>
-      <div css={dateStyle}>
+      <div
+        style={{
+          fontSize: ' 0.8rem',
+          padding: '1rem 0.5rem',
+          textAlign: 'right',
+        }}
+      >
         <strong>Published</strong> {post.date}
       </div>
       {post.body}
       {post.gallery.length > 0 && (
         <div>
           <h2>Gallery</h2>
-          <div css={galleryContainerStyle}>
+          <div
+            style={{
+              cursor: 'pointer',
+              overflow: 'hidden',
+              marginBottom: '2rem',
+            }}
+          >
             <Gallery images={post.gallery} />
           </div>
         </div>

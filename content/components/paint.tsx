@@ -9,7 +9,6 @@ import { shadePaints } from '../../src/data/paints/shade';
 import { sprayPaints } from '../../src/data/paints/spray';
 import { technicalPaints } from '../../src/data/paints/technical';
 import { PaintDetails } from '../../src/types/app.types';
-import { css } from '@emotion/react';
 
 const allPaints = [
   ...basePaints,
@@ -29,11 +28,6 @@ const Paint = ({
   name: string;
   type?: string;
 }): React.ReactNode => {
-  const paintWrapperStyles = css`
-    display: inline-block;
-    margin-bottom: 12px;
-  `;
-
   const paintMatches: PaintDetails[] = allPaints.filter(
     (paint) => paint.name === name
   );
@@ -47,7 +41,7 @@ const Paint = ({
     : paintMatches[0];
 
   return (
-    <div css={paintWrapperStyles}>
+    <div style={{ display: 'inline-block', marginBottom: '12px' }}>
       <BasePaint paint={paint} />
     </div>
   );
