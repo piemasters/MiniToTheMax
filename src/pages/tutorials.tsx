@@ -32,12 +32,6 @@ const TutorialsPage = ({ data }: { data: Tutorials }): React.ReactNode => {
 
   return (
     <Layout>
-      <Seo
-        title={'Tutorials'}
-        description={'Tutorials for different parts of the hobby'}
-        pathname={'/tutorials'}
-      />
-
       <h1>Tutorials</h1>
 
       {categories.map((category) => {
@@ -94,3 +88,11 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = () => (
+  <Seo
+    title={'Tutorials'}
+    description={'Tutorials for different parts of the hobby'}
+    pathname={'/tutorials'}
+  />
+);

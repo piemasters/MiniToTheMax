@@ -16,6 +16,7 @@ module.exports = {
     siteUrl: 'https://minitothemax.app',
     image: `content/assets/images/logo.png`,
   },
+  graphqlTypegen: true,
   plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,
@@ -33,11 +34,10 @@ module.exports = {
       },
     },
     'gatsby-plugin-eslint',
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
-    `gatsby-plugin-transition-link`,
-    'gatsby-plugin-sass',
-    'gatsby-plugin-emotion',
+    `gatsby-plugin-transition-link`, // TODO: look at replacing
+    'gatsby-plugin-sass', // TODO: look at replacing with tailwind
+    'gatsby-plugin-emotion', // TODO: look at replacing with tailwind
     'gatsby-plugin-catch-links',
     'gatsby-plugin-robots-txt',
     {
@@ -48,6 +48,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/blog`,
+        // path: `${__dirname}/content/blogtest`,
         name: `blog`,
       },
     },
@@ -59,12 +60,12 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /svg/
-        }
-      }
+          include: /svg/,
+        },
+      },
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -83,7 +84,6 @@ module.exports = {
             },
           },
         ],
-        plugins: ['gatsby-remark-images'],
       },
     },
     {
@@ -101,11 +101,11 @@ module.exports = {
         cache_busting_mode: `query`,
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/blog`],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-offline`,
+    //   options: {
+    //     precachePages: [`/blog`],
+    //   },
+    // },
   ],
 };

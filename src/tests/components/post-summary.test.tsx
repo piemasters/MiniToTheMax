@@ -25,7 +25,6 @@ describe('PostSummary', () => {
           slug={'slug'}
           title={'Demo Post Title'}
           excerpt={'A test sentence'}
-          timeToRead={5}
         />
       </ThemeProvider>
     );

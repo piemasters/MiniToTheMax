@@ -11,8 +11,6 @@ import { sprayPaints } from '../data/paints/spray';
 import { technicalPaints } from '../data/paints/technical';
 import Paint from '../components/paint';
 import { PaintDetails } from '../types/app.types';
-import { css } from '@emotion/react';
-
 export interface PaintFilters {
   [key: string]: boolean;
 }
@@ -116,48 +114,18 @@ const Paints = (): React.ReactNode => {
     setFilteredPaints(togglePaints(allFilters));
   };
 
-  const filterWrapperStyle = css`
-    display: flex;
-    flex-flow: row wrap;
-    margin-bottom: 1rem;
-    width: 100%;
-  `;
-
-  const filterStyle = css`
-    font-size: 0.8rem;
-    width: 6rem;
-    label {
-      align-items: center;
-      display: flex;
-    }
-    input {
-      margin-right: 0.4rem;
-    }
-  `;
-
-  const toggleAllStyles = css`
-    align-items: center;
-    display: flex;
-    font-size: 0.9rem;
-    font-weight: bold;
-    margin-bottom: 0.3rem;
-
-    input {
-      margin-right: 0.4rem;
-    }
-  `;
-
   const filterElements = (filters: PaintFilters, type: string) => {
     const filtersJsx: JSX.Element[] = [];
     for (const [key, value] of Object.entries(filters)) {
       filtersJsx.push(
-        <div css={filterStyle} key={key}>
-          <label>
+        <div style={{ fontSize: '0.8rem', width: '6rem' }} key={key}>
+          <label style={{ alignItems: 'center', display: 'flex' }}>
             <input
               name={key}
               checked={value}
               type="checkbox"
               onChange={() => updateFilter(type, key)}
+              style={{ marginRight: '0.4rem' }}
             />
             {key.replace(/\b\w/g, (l) => l.toUpperCase())}
           </label>
@@ -167,17 +135,35 @@ const Paints = (): React.ReactNode => {
     return (
       <div>
         <h3>{type.replace(/\b\w/g, (l) => l.toUpperCase())}</h3>
-        <label css={toggleAllStyles}>
+        <label
+          style={{
+            alignItems: 'center',
+            display: 'flex',
+            fontSize: '0.9rem',
+            fontWeight: 'bold',
+            marginBottom: '0.3rem',
+          }}
+        >
           <input
             checked={
               !Object.keys(allFilters[type]).every((k) => !allFilters[type][k])
             }
             type="checkbox"
             onChange={() => toggleAll(allFilters[type], type)}
+            style={{ marginRight: '0.4rem' }}
           />
           Toggle All
         </label>
-        <div css={filterWrapperStyle}>{filtersJsx}</div>
+        <div
+          style={{
+            display: 'flex',
+            flexFlow: 'row wrap',
+            marginBottom: '1rem',
+            width: '100%',
+          }}
+        >
+          {filtersJsx}
+        </div>
         <hr />
       </div>
     );
@@ -193,7 +179,6 @@ const Paints = (): React.ReactNode => {
 
   return (
     <Layout>
-      <Seo title={'Paints'} pathname={'/paints'} />
       <h1>Paints ({filteredPaints.length})</h1>
       <hr />
       {allFilterElements()}
@@ -206,3 +191,5 @@ const Paints = (): React.ReactNode => {
 };
 
 export default Paints;
+
+export const Head = () => <Seo title={'Paints'} pathname={'/paints'} />;

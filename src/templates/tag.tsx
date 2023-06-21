@@ -29,11 +29,6 @@ const Tag = ({
 
   return (
     <Layout>
-      <Seo
-        title={pageContext.tag}
-        pathname={pageContext.url}
-        description={tagHeader}
-      />
       <h1>{tagHeader}</h1>
       <ul>
         {tags.map((tag: TagLink) => {
@@ -56,10 +51,10 @@ const Tag = ({
 export default Tag;
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query ($tag: String) {
     tags: allMdx(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { published: { eq: true }, tags: { in: [$tag] } } }
     ) {
       totalCount
@@ -76,3 +71,11 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = ({ pageContext }) => (
+  <Seo
+    title={pageContext?.tag}
+    pathname={pageContext?.url}
+    description={pageContext?.tag}
+  />
+);

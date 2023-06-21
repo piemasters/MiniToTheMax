@@ -6,7 +6,6 @@ import PageLink from '../components/page-link';
 const NotFound = (): React.ReactNode => {
   return (
     <Layout>
-      <Seo title={'404'} pathname={'/404'} />
       <h1>Page not found</h1>
       <p>
         <PageLink type={'paintDrip'} to="/">
@@ -18,3 +17,5 @@ const NotFound = (): React.ReactNode => {
 };
 
 export default NotFound;
+
+export const Head = () => <Seo title={'404'} pathname={'/404'} />;

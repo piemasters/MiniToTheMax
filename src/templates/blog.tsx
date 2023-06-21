@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { css } from '@emotion/react';
 import Layout from '../layouts/layout';
 import Pagination from '../components/pagination';
 import Seo from '../components/stateful/seo';
@@ -23,11 +22,6 @@ const Blog = ({
   data: Posts;
   pageContext: PostContext;
 }): React.ReactNode => {
-  const postsStyle = css`
-    list-style-type: none;
-    margin: 0;
-  `;
-
   const page = {
     isFirst: pageContext.currentPage === 1,
     isLast: pageContext.currentPage === pageContext.numPostPages,
@@ -48,18 +42,12 @@ const Blog = ({
     date: edge.node.frontmatter.date,
     img: edge.node.frontmatter.featuredImage.childImageSharp.gatsbyImageData,
     excerpt: edge.node.excerpt,
-    timeToRead: edge.node.timeToRead,
   }));
 
   return (
     <Layout>
-      <Seo
-        title={'Blog'}
-        description={'Blog Posts'}
-        pathname={`/blog/${page.currentPage}`}
-      />
       <h1>Blog</h1>
-      <ol css={postsStyle}>
+      <ol style={{ listStyleType: 'none', margin: '0' }}>
         {posts.map((post: PostSummaryType) => {
           return (
             <li key={post.slug}>
@@ -69,7 +57,6 @@ const Blog = ({
                 slug={post.slug}
                 title={post.title}
                 excerpt={post.excerpt}
-                timeToRead={post.timeToRead}
                 tall={true}
               />
             </li>
@@ -93,15 +80,14 @@ const Blog = ({
 export const postQuery = graphql`
   query blogPageQuery($skip: Int, $limit: Int) {
     posts: allMdx(
-      filter: { frontmatter: { published: { eq: true } } } #comment to show unpublished posts
-      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { published: { eq: true } } }
+      sort: { frontmatter: { date: DESC } }
       limit: $limit
       skip: $skip
     ) {
       edges {
         node {
           excerpt(pruneLength: 300)
-          timeToRead
           frontmatter {
             title
             date
@@ -121,3 +107,11 @@ export const postQuery = graphql`
 `;
 
 export default Blog;
+
+export const Head = ({ pageContext }) => (
+  <Seo
+    title={'Blog'}
+    description={'Blog Posts'}
+    pathname={`/blog/${pageContext?.currentPage}`}
+  />
+);

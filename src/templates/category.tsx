@@ -29,11 +29,6 @@ const Category = ({
 
   return (
     <Layout>
-      <Seo
-        title={pageContext.category}
-        pathname={pageContext.url}
-        description={categoryHeader}
-      />
       <h1>{categoryHeader}</h1>
       <ul>
         {categories.map((category: TagLink) => {
@@ -56,10 +51,10 @@ const Category = ({
 export default Category;
 
 export const pageQuery = graphql`
-  query($category: String) {
+  query ($category: String) {
     categories: allMdx(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       filter: {
         frontmatter: {
           published: { eq: true }
@@ -81,3 +76,11 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = ({ pageContext }) => (
+  <Seo
+    title={pageContext?.category}
+    pathname={pageContext?.url}
+    description={pageContext?.category}
+  />
+);

@@ -8,7 +8,6 @@ import Layout from '../layouts/layout';
 
 const TagsPage = ({ data }: { data: Tags }): React.ReactNode => (
   <Layout>
-    <Seo title={'Tags'} description={'All blog tags'} pathname={'/tags'} />
     <div>
       <h1>Tags</h1>
       <ul>
@@ -31,15 +30,19 @@ const TagsPage = ({ data }: { data: Tags }): React.ReactNode => (
 export default TagsPage;
 
 export const pageQuery = graphql`
-  query {
+  {
     tags: allMdx(
       limit: 2000
       filter: { frontmatter: { published: { eq: true } } }
     ) {
-      group(field: frontmatter___tags) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
       }
     }
   }
 `;
+
+export const Head = () => (
+  <Seo title={'Tags'} description={'All blog tags'} pathname={'/tags'} />
+);

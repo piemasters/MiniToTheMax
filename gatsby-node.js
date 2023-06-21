@@ -33,11 +33,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
    * Handle local markdown posts
    */
   const result = await graphql(`
-    query {
-      posts: allMdx(
-        sort: { fields: [frontmatter___date], order: DESC }
-        limit: 1000
-      ) {
+    {
+      posts: allMdx(sort: { frontmatter: { date: DESC } }, limit: 1000) {
         edges {
           node {
             fields {
@@ -48,16 +45,19 @@ module.exports.createPages = async ({ graphql, actions }) => {
               tags
               published
             }
+            internal {
+              contentFilePath
+            }
           }
         }
       }
       tagsGroup: allMdx(limit: 2000) {
-        group(field: frontmatter___tags) {
+        group(field: { frontmatter: { tags: SELECT } }) {
           fieldValue
         }
       }
       categoriesGroup: allMdx(limit: 2000) {
-        group(field: frontmatter___categories) {
+        group(field: { frontmatter: { categories: SELECT } }) {
           fieldValue
         }
       }
@@ -71,49 +71,47 @@ module.exports.createPages = async ({ graphql, actions }) => {
   // Create blog post pages
   const allPosts = result.data.posts.edges;
   const posts =
-    process.env.NODE_ENV === "production"
-      ? allPosts.filter(post => post.node.frontmatter.published === true)
+    process.env.NODE_ENV === 'production'
+      ? allPosts.filter((post) => post.node.frontmatter.published === true)
       : allPosts;
 
   posts.forEach((edge, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-    const next = index === 0 ? null : posts[index - 1].node;
     createPage({
-      component: postTemplate,
+      component: `${postTemplate}?__contentFilePath=${edge.node.internal.contentFilePath}`,
       path: edge.node.fields.slug,
       context: {
         slug: edge.node.fields.slug,
-        previous,
-        next,
+        previous: index === posts.length - 1 ? null : posts[index + 1].node,
+        next: index === 0 ? null : posts[index - 1].node,
       },
     });
   });
 
   // Function for getting a list of directories in a path
-  const getDirectories = source =>
+  const getDirectories = (source) =>
     readdirSync(source, { withFileTypes: true })
-      .filter(dirent => dirent.isDirectory())
-      .map(dirent => dirent.name);
+      .filter((dirent) => dirent.isDirectory())
+      .map((dirent) => dirent.name);
 
   // Function for converting a string into Title Case
-  const titleCase = str => {
+  const titleCase = (str) => {
     return str
       .toLowerCase()
       .split(' ')
-      .map(word => {
+      .map((word) => {
         return word.replace(word[0], word[0].toUpperCase());
       })
       .join(' ');
   };
 
   // Function for flattening array (netlify doesn't run es9)
-  const flatten = arr => arr.reduce((flat, next) => flat.concat(next), []);
+  const flatten = (arr) => arr.reduce((flat, next) => flat.concat(next), []);
 
   /* Get a list of all directories under content/blog,
    * then all categories under those and flatten */
   const postCategories = flatten(
-    getDirectories('./content/blog').map(root =>
-      getDirectories(`./content/blog/${root}`).map(dir => ({
+    getDirectories('./content/blog').map((root) =>
+      getDirectories(`./content/blog/${root}`).map((dir) => ({
         type: titleCase(root.replace(/-/, ' ')),
         url: `/${root}/${dir}`,
         name: titleCase(dir.replace(/-/, ' ')),
@@ -121,7 +119,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
     )
   );
   // Make post category pages
-  postCategories.forEach(category => {
+  postCategories.forEach((category) => {
     createPage({
       path: category.url,
       component: postCategoryTemplate,
@@ -136,7 +134,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   // Extract tag data from query
   const tags = result.data.tagsGroup.group;
   // Make tag pages
-  tags.forEach(tag => {
+  tags.forEach((tag) => {
     createPage({
       path: `/tags/${kebabCase(tag.fieldValue)}`,
       component: tagTemplate,
@@ -150,7 +148,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   // Extract category data from query
   const categories = result.data.categoriesGroup.group;
   // Make tag pages
-  categories.forEach(category => {
+  categories.forEach((category) => {
     createPage({
       path: `/categories/${kebabCase(category.fieldValue)}`,
       component: categoryTemplate,

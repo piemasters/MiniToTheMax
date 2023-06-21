@@ -29,14 +29,7 @@ const PostCategory = ({
 
   return (
     <Layout>
-      <Seo
-        title={pageContext.category}
-        description={`${pageContext.type} articles on the subject of ${pageContext.category}`}
-        pathname={pageContext.url}
-      />
-
       <h1>{pageContext.category}</h1>
-
       <ul>
         {postCategories.map((postCategory: PostLink) => {
           return (
@@ -56,7 +49,7 @@ const PostCategory = ({
 export default PostCategory;
 
 export const pageQuery = graphql`
-  query($category: String!, $type: String!) {
+  query ($category: String!, $type: String!) {
     categories: allMdx(
       filter: {
         frontmatter: {
@@ -64,7 +57,7 @@ export const pageQuery = graphql`
           published: { eq: true }
         }
       }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
     ) {
       edges {
         node {
@@ -85,3 +78,11 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = ({ pageContext }) => (
+  <Seo
+    title={pageContext?.category}
+    description={`${pageContext?.type} articles on the subject of ${pageContext?.category}`}
+    pathname={pageContext?.url}
+  />
+);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
 interface SeoProps {
   title: string;
@@ -18,22 +17,16 @@ const Seo = ({
 }: SeoProps): JSX.Element => {
   return (
     <>
-      <Helmet title={title}>
-        {/* General tags */}
-        <meta name="description" content={description} />
-        <meta name="image" content={image} />
+      {/* General tags */}
+      <meta name="description" content={description} />
+      <meta name="image" content={image} />
 
-        {/* OpenGraph tags */}
-        {siteUrl && <meta property="og:url" content={siteUrl} />}
-        {(article ? true : null) && (
-          <meta property="og:type" content="article" />
-        )}
-        {title && <meta property="og:title" content={title} />}
-        {description && (
-          <meta property="og:description" content={description} />
-        )}
-        {image && <meta property="og:image" content={image} />}
-      </Helmet>
+      {/* OpenGraph tags */}
+      {siteUrl && <meta property="og:url" content={siteUrl} />}
+      {(article ? true : null) && <meta property="og:type" content="article" />}
+      {title && <meta property="og:title" content={title} />}
+      {description && <meta property="og:description" content={description} />}
+      {image && <meta property="og:image" content={image} />}
     </>
   );
 };

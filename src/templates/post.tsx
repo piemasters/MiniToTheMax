@@ -2,28 +2,13 @@ import React from 'react';
 import Layout from '../layouts/layout';
 import { graphql } from 'gatsby';
 import SimplePagination from '../components/simple-pagination';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Gallery from '@browniebroke/gatsby-image-gallery';
 import Seo from '../components/stateful/seo';
 import { DiscussionEmbed } from 'disqus-react';
-import { DisqusConfig, MdxPost } from '../types/app.types';
-import { MdxFrontmatterGalleryImage, MdxNode } from '../types/base.types';
 import PostTag from '../components/post-tag';
-import { css } from '@emotion/react';
 import CoverImage from '../components/cover-image';
 
-interface PostContext {
-  previous: MdxNode;
-  next: MdxNode;
-}
-
-const Post = ({
-  pageContext,
-  data,
-}: {
-  pageContext: PostContext;
-  data: MdxPost;
-}): React.ReactNode => {
+const Post = ({ pageContext, data, children }) => {
   const pagination = {
     previous: pageContext.previous
       ? {
@@ -44,7 +29,7 @@ const Post = ({
     url: data.site.siteMetadata.siteUrl,
     date: data.post.frontmatter.date,
     excerpt: data.post.excerpt,
-    body: data.post.body,
+    body: children,
     slug: data.post.fields.slug,
     tags: data.post.frontmatter.tags,
     categories: data.post.frontmatter.categories,
@@ -52,69 +37,58 @@ const Post = ({
     featuredImage:
       data.post.frontmatter.featuredImage.childImageSharp.gatsbyImageData,
     gallery: data.post.frontmatter.gallery
-      ? data.post.frontmatter.gallery.map(
-          (node: MdxFrontmatterGalleryImage) => node.childImageSharp
-        )
+      ? data.post.frontmatter.gallery.map((node) => node?.childImageSharp)
       : [],
   };
 
   const disqusShortname = process.env.GATSBY_DISQUS_NAME || 'disqusShortname';
-  const disqusConfig: DisqusConfig = {
+  const disqusConfig = {
     identifier: post.slug,
     title: post.title,
     url: `${data.site.siteMetadata.siteUrl}/${post.slug}`,
   };
 
-  const tagsStyle = css`
-    padding: 0.5rem 0;
-  `;
-
-  const dateStyle = css`
-    font-size: 0.8rem;
-    padding: 1rem 0.5rem;
-    text-align: right;
-  `;
-
-  const galleryContainerStyle = css`
-    cursor: pointer;
-    overflow: hidden;
-    margin-bottom: 2rem;
-  `;
-
   return (
     <Layout>
-      <Seo
-        title={post.title}
-        description={post.excerpt}
-        pathname={post.slug}
-        image={post.imgPublicURL}
-        article={true}
-      />
       {post.featuredImage && (
         <CoverImage image={post.featuredImage} title={post.title} />
       )}
-      <div css={tagsStyle}>
-        {post.categories.map((category: string) => (
+      <div
+        style={{
+          padding: '0.5rem 0',
+        }}
+      >
+        {post.categories.map((category) => (
           <PostTag type={'categories'} name={category} key={category} />
         ))}
-        {post.tags.map((tag: string) => (
+        {post.tags.map((tag) => (
           <PostTag type={'tags'} name={tag} key={tag} />
         ))}
       </div>
-      <div css={dateStyle}>
+      <div
+        style={{
+          fontSize: ' 0.8rem',
+          padding: '1rem 0.5rem',
+          textAlign: 'right',
+        }}
+      >
         <strong>Published</strong> {post.date}
       </div>
-
-      <MDXRenderer>{post.body}</MDXRenderer>
+      {post.body}
       {post.gallery.length > 0 && (
         <div>
           <h2>Gallery</h2>
-          <div css={galleryContainerStyle}>
+          <div
+            style={{
+              cursor: 'pointer',
+              overflow: 'hidden',
+              marginBottom: '2rem',
+            }}
+          >
             <Gallery images={post.gallery} />
           </div>
         </div>
       )}
-
       <SimplePagination previous={pagination.previous} next={pagination.next} />
       <hr />
       <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
@@ -124,8 +98,8 @@ const Post = ({
 
 export default Post;
 
-export const query = graphql`
-  query($slug: String!) {
+export const pageQuery = graphql`
+  query ($slug: String!) {
     site {
       siteMetadata {
         siteUrl
@@ -159,7 +133,16 @@ export const query = graphql`
           }
         }
       }
-      body
     }
   }
 `;
+
+export const Head = ({ data }) => (
+  <Seo
+    title={data?.post?.frontmatter?.title}
+    description={data?.post?.excerpt}
+    pathname={data?.post?.fields?.slug}
+    image={data?.post?.frontmatter?.featuredImage?.publicURL}
+    article={true}
+  />
+);
