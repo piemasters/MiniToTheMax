@@ -21,6 +21,9 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          GATSBY_DISQUS_NAME: ${{ secrets.GATSBY_DISQUS_NAME }}
+          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+          OPT_CONTAINER_ID: ${{ secrets.OPT_CONTAINER_ID }}
 #      - name: Deploy to netlify
 #        uses: netlify/actions/cli@master
 #        with:
