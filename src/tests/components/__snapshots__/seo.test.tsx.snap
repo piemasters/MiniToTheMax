@@ -1,3 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Seo renders correctly 1`] = `<div />`;
+exports[`Seo renders correctly 1`] = `
+<div>
+  <meta
+    content="An Aspiring Hobby & Painting Blog"
+    name="description"
+  />
+  <meta
+    content="content/assets/images/logo.png"
+    name="image"
+  />
+  <meta
+    content="https://minitothemax.app"
+    property="og:url"
+  />
+  <meta
+    content="MiniToTheMax"
+    property="og:title"
+  />
+  <meta
+    content="An Aspiring Hobby & Painting Blog"
+    property="og:description"
+  />
+  <meta
+    content="content/assets/images/logo.png"
+    property="og:image"
+  />
+</div>
+`;
