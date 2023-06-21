@@ -9,7 +9,6 @@ import PostTag from '../components/post-tag';
 import CoverImage from '../components/cover-image';
 
 const Post = ({ pageContext, data, children }) => {
-  console.log('CHILDREN: ', children);
   const pagination = {
     previous: pageContext.previous
       ? {
