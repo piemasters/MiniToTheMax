@@ -14,7 +14,7 @@ export interface Theme {
   };
 }
 
-const appTheme: Theme = {
+export const appTheme: Theme = {
   colors: {
     text: '#000',
     textSecondary: '#666',
