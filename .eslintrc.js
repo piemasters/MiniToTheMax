@@ -13,6 +13,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier',
     'plugin:storybook/recommended',
+    'plugin:cypress/recommended',
   ],
   settings: {
     react: {

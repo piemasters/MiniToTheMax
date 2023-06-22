@@ -1,4 +1,3 @@
-/// <reference types="Cypress" />
 describe('Accessibility checks', () => {
   beforeEach(() => {
     cy.visit('/');
@@ -9,15 +8,13 @@ describe('Accessibility checks', () => {
     cy.checkA11y();
   });
   it('Navigates to Blog and checks for accessibility violations', () => {
-    cy.findByText(/Blog/i)
-      .click()
-      .checkA11y();
+    cy.findByText(/Blog/i).click().checkA11y();
   });
   it('Checks if Showcase link is focusable and has the correct attributes', () => {
     cy.findAllByText('Showcase').focus();
     cy.focused()
       .should('have.text', 'Showcase')
-      .should('have.attr', 'href', '/showcase')
+      .should('have.attr', 'href', '/showcase/')
       .should('not.have.css', 'outline-width', '1px');
   });
 });

@@ -14,5 +14,6 @@
     "allowSyntheticDefaultImports": true
   },
   "include": ["src/components", "src/data", "src/custom.d.ts"],
-  "exclude": ["node_modules", "public", ".cache"]
+  "exclude": ["node_modules", "public", ".cache"],
+  "types": ["@emotion/react/types/css-prop"]
 }
