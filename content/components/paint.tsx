@@ -1,25 +1,10 @@
 import React from 'react';
-import BasePaint from '../../src/components/paint';
-import { airPaints } from '../../src/data/paints/air';
-import { basePaints } from '../../src/data/paints/base';
-import { contrastPaints } from '../../src/data/paints/contrast';
-import { dryPaints } from '../../src/data/paints/dry';
-import { layerPaints } from '../../src/data/paints/layer';
-import { shadePaints } from '../../src/data/paints/shade';
-import { sprayPaints } from '../../src/data/paints/spray';
-import { technicalPaints } from '../../src/data/paints/technical';
-import { PaintDetails } from '../../src/types/app.types';
 
-const allPaints = [
-  ...basePaints,
-  ...layerPaints,
-  ...shadePaints,
-  ...contrastPaints,
-  ...dryPaints,
-  ...sprayPaints,
-  ...technicalPaints,
-  ...airPaints,
-];
+import { Paint as BasePaint } from '../../src/components';
+import { PaintDetails } from '../../src/types';
+import { getAllSortedPaints } from '../../src/util';
+
+const allPaints = getAllSortedPaints();
 
 const Paint = ({
   name,

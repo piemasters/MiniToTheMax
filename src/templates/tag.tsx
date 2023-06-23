@@ -1,23 +1,21 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import Seo from '../components/stateful/seo';
-import PageLink from '../components/page-link';
-import Layout from '../layouts/layout';
-import { TagLink, Tags } from '../types/app.types';
-import { MdxEdge } from '../types/base.types';
 
-interface TagContext {
+import Layout from '../layouts/layout';
+import { PageLink, StatefulSeo as Seo } from '../components';
+import { MdxEdge, TagLink, Tags } from '../types';
+
+export interface TagContext {
   tag: string;
   url: string;
 }
 
-const Tag = ({
-  pageContext,
-  data,
-}: {
+export interface TagTemplateProps {
   pageContext: TagContext;
   data: Tags;
-}): React.ReactNode => {
+}
+
+export const Tag: FC<TagTemplateProps> = ({ pageContext, data }) => {
   const tagHeader = `${data.tags.totalCount} post${
     data.tags.totalCount === 1 ? '' : 's'
   } tagged with "${pageContext.tag}"`;

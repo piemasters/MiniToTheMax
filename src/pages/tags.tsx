@@ -1,12 +1,16 @@
-import React from 'react';
-import kebabCase from 'lodash.kebabcase';
+import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import Seo from '../components/stateful/seo';
-import PageLink from '../components/page-link';
-import { Tag, Tags } from '../types/app.types';
-import Layout from '../layouts/layout';
+import kebabCase from 'lodash.kebabcase';
 
-const TagsPage = ({ data }: { data: Tags }): React.ReactNode => (
+import Layout from '../layouts/layout';
+import { PageLink, StatefulSeo as Seo } from '../components';
+import type { Tag, Tags } from '../types';
+
+export interface TagsPageProps {
+  data: Tags;
+}
+
+export const TagsPage: FC<TagsPageProps> = ({ data }) => (
   <Layout>
     <div>
       <h1>Tags</h1>

@@ -1,7 +1,7 @@
 import { create } from '@storybook/theming/create';
 import logo from '../content/assets/images/icon.png';
 
-const theme = create({
+export const theme = create({
   base: 'light',
 
   colorPrimary: '#ff5470',
@@ -36,5 +36,3 @@ const theme = create({
   brandUrl: 'https://minitothemax.app',
   brandImage: logo,
 });
-
-export default theme;

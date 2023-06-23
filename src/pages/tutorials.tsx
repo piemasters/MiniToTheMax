@@ -1,12 +1,16 @@
-import React from 'react';
-import Layout from '../layouts/layout';
-import Seo from '../components/stateful/seo';
-import CoverCategory from '../components/cover-category';
+import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import { Tutorials } from '../types/app.types';
 import { getImage } from 'gatsby-plugin-image';
 
-const TutorialsPage = ({ data }: { data: Tutorials }): React.ReactNode => {
+import Layout from '../layouts/layout';
+import { CoverCategory, StatefulSeo as Seo } from '../components';
+import { Tutorials } from '../types';
+
+export interface TutorialsPageProps {
+  data: Tutorials;
+}
+
+export const TutorialsPage: FC<TutorialsPageProps> = ({ data }) => {
   const categories = [
     {
       title: '40k',

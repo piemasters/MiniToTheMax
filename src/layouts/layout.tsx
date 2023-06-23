@@ -1,38 +1,34 @@
-import React from 'react';
-import { Global, css, ThemeProvider } from '@emotion/react';
-import Header from '../components/stateful/header';
-import Footer from '../components/stateful/footer';
-import appTheme from '../styles/theme';
+import React, { FC, ReactNode } from 'react';
+import { Global, ThemeProvider } from '@emotion/react';
+
+import { StatefulFooter, StatefulHeader } from '../components';
+import { appTheme } from '../styles/theme';
 import { globalStyles } from '../styles/global';
 
-interface LayoutProps {
-  children?: React.ReactNode;
+export interface LayoutProps {
+  children?: ReactNode;
 }
 
-const Layout = ({ children }: LayoutProps): JSX.Element => {
-  const containerStyles = css`
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  `;
-
-  const contentStyles = css`
-    flex-grow: 1;
-    margin: 0 auto;
-    max-width: 750px;
-    padding: 0 1rem;
-    width: 100%;
-  `;
-
+export const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <ThemeProvider theme={appTheme}>
       <Global styles={globalStyles(appTheme)} />
-      <div css={containerStyles}>
-        <Header />
-        <div css={contentStyles}>
+      <div
+        style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
+      >
+        <StatefulHeader />
+        <div
+          style={{
+            flexGrow: '1',
+            margin: '0 auto',
+            maxWidth: '750px',
+            padding: ' 0 1rem',
+            width: ' 100%',
+          }}
+        >
           <div>{children}</div>
         </div>
-        <Footer />
+        <StatefulFooter />
       </div>
     </ThemeProvider>
   );

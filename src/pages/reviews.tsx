@@ -1,12 +1,16 @@
-import React from 'react';
-import Layout from '../layouts/layout';
-import Seo from '../components/stateful/seo';
+import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import { Reviews } from '../types/app.types';
-import CoverCategory from '../components/cover-category';
 import { getImage } from 'gatsby-plugin-image';
 
-const ReviewsPage = ({ data }: { data: Reviews }): React.ReactNode => {
+import Layout from '../layouts/layout';
+import { CoverCategory, StatefulSeo as Seo } from '../components';
+import type { Reviews } from '../types';
+
+export interface ReviewsPageProps {
+  data: Reviews;
+}
+
+export const ReviewsPage: FC<ReviewsPageProps> = ({ data }) => {
   const categories = [
     {
       title: 'Board Games',

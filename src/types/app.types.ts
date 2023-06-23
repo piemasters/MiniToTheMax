@@ -1,5 +1,6 @@
+import type { IGatsbyImageData } from 'gatsby-plugin-image';
+
 import { AllMdx, MdxGroupConnection, MdxNode, Site } from './base.types';
-import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 export interface Posts {
   posts: AllMdx;
@@ -95,4 +96,22 @@ export interface PaintDetails {
   gloss?: boolean;
   img?: JSX.Element;
   availability: string;
+}
+
+export interface NavLink {
+  name: string;
+  url: string;
+}
+
+export interface BacklogEntry {
+  name: string;
+  link?: string;
+}
+
+export interface PaintFilters {
+  [key: string]: boolean;
+}
+
+export interface AllPaintFilters {
+  [key: string]: PaintFilters;
 }

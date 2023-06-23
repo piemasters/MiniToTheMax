@@ -1,12 +1,16 @@
-import React from 'react';
-import Layout from '../layouts/layout';
-import Seo from '../components/stateful/seo';
-import CoverCategory from '../components/cover-category';
+import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import { Showcase } from '../types/app.types';
 import { getImage } from 'gatsby-plugin-image';
 
-const ShowcasePage = ({ data }: { data: Showcase }): React.ReactNode => {
+import Layout from '../layouts/layout';
+import { CoverCategory, StatefulSeo as Seo } from '../components';
+import { Showcase } from '../types';
+
+export interface ShowcasePageProps {
+  data: Showcase;
+}
+
+export const ShowcasePage: FC<ShowcasePageProps> = ({ data }) => {
   const categories = [
     {
       title: 'Board Games',

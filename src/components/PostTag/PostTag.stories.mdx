@@ -1,0 +1,50 @@
+import {
+  Story,
+  Preview,
+  Props,
+  Source,
+  Description,
+  Meta,
+} from '@storybook/addon-docs/blocks';
+import { PostTag } from './PostTag';
+
+<Meta
+  title="Components/PostTag"
+  component={PostTag}
+  parameters={{ jest: ['post-tag'] }}
+  argTypes={{
+    name: {
+      name: 'name',
+      description: 'The text within the tag',
+      defaultValue: 'Tag',
+      control: { type: 'text' },
+    },
+    type: {
+      name: 'type',
+      description: 'Used to determine the base url',
+      defaultValue: 'tag',
+      control: { type: 'text' },
+    },
+  }}
+/>
+
+# PostTag
+
+With `MDX` we can define a story for `PostTag` right in the middle of our
+markdown documentation.
+
+<Preview>
+  <Story
+    name="default"
+    args={{
+      name: 'Tag',
+      type: 'tag',
+    }}
+  >
+    {(args) => <PostTag {...args} />}
+  </Story>
+</Preview>
+
+# Props
+
+<Props story="default" />

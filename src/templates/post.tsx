@@ -1,14 +1,17 @@
 import React from 'react';
-import Layout from '../layouts/layout';
 import { graphql } from 'gatsby';
-import SimplePagination from '../components/simple-pagination';
 import Gallery from '@browniebroke/gatsby-image-gallery';
-import Seo from '../components/stateful/seo';
 import { DiscussionEmbed } from 'disqus-react';
-import PostTag from '../components/post-tag';
-import CoverImage from '../components/cover-image';
 
-const Post = ({ pageContext, data, children }) => {
+import Layout from '../layouts/layout';
+import {
+  CoverImage,
+  PostTag,
+  SimplePagination,
+  StatefulSeo as Seo,
+} from '../components';
+
+export const Post = ({ pageContext, data, children }) => {
   const pagination = {
     previous: pageContext.previous
       ? {

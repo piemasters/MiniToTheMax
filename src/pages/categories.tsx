@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
 import kebabCase from 'lodash.kebabcase';
 import { graphql } from 'gatsby';
-import Seo from '../components/stateful/seo';
-import PageLink from '../components/page-link';
-import { Categories, Category } from '../types/app.types';
-import Layout from '../layouts/layout';
 
-const CategoriesPage = ({ data }: { data: Categories }): React.ReactNode => (
+import Layout from '../layouts/layout';
+import { PageLink, StatefulSeo as Seo } from '../components';
+import type { Categories, Category } from '../types';
+
+export interface CategoriesPageProps {
+  data: Categories;
+}
+
+export const CategoriesPage: FC<CategoriesPageProps> = ({ data }) => (
   <Layout>
     <div>
       <h1>Categories</h1>

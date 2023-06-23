@@ -9,6 +9,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
@@ -42,6 +43,7 @@ module.exports = {
         allowSingleExtends: true,
       },
     ],
+    '@typescript-eslint/no-unused-vars': 'off',
     'react/no-unknown-property': ['error', { ignore: ['css'] }],
   },
   overrides: [

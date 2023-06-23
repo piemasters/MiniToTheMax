@@ -12,8 +12,6 @@ import StirlandBattlemire from '../../../content/assets/svg/paints/technicalStir
 import StirlandMud from '../../../content/assets/svg/paints/technicalStirlandMud.svg';
 import ValhallanBlizzard from '../../../content/assets/svg/paints/technicalValhallanBlizzard.svg';
 
-import React from 'react';
-
 export const technicalBloodForTheBloodGod: PaintDetails = {
   name: 'Blood For The Blood God',
   type: 'technical',

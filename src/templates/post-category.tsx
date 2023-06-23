@@ -1,24 +1,22 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../layouts/layout';
-import Seo from '../components/stateful/seo';
-import { Categories, PostLink } from '../types/app.types';
-import { MdxEdge } from '../types/base.types';
-import CoverCategory from '../components/cover-category';
 
-interface PostCategoryContext {
+import Layout from '../layouts/layout';
+import { CoverCategory, StatefulSeo as Seo } from '../components';
+import { Categories, MdxEdge, PostLink } from '../types';
+
+export interface PostCategoryContext {
   type: string;
   category: string;
   url: string;
 }
 
-const PostCategory = ({
-  pageContext,
-  data,
-}: {
+export interface PostCategoryTemplateProps {
   pageContext: PostCategoryContext;
   data: Categories;
-}): React.ReactNode => {
+}
+
+const PostCategory: FC<PostCategoryTemplateProps> = ({ pageContext, data }) => {
   const postCategories: PostLink[] = data.categories.edges.map(
     (edge: MdxEdge) => ({
       slug: edge.node.fields.slug,

@@ -1,9 +1,9 @@
-import React from 'react';
-import Layout from '../layouts/layout';
-import Seo from '../components/stateful/seo';
-import PageLink from '../components/page-link';
+import React, { FC } from 'react';
 
-const UpdatesPage = (): React.ReactNode => {
+import Layout from '../layouts/layout';
+import { PageLink, StatefulSeo as Seo } from '../components';
+
+export const UpdatesPage: FC = () => {
   return (
     <Layout>
       <h1>Updates</h1>

@@ -1,51 +1,17 @@
-import React from 'react';
+import React, { FC, ReactNode } from 'react';
+
 import Layout from '../layouts/layout';
-import Seo from '../components/stateful/seo';
-import PageLink from '../components/page-link';
-import {
-  blackstoneFortress,
-  bloodBowl,
-  chaosSpaceMarines,
-  darkAngels,
-  deathwatchOverkill,
-  dreadfleet,
-  dungeonBowl,
-  executionForce,
-  gloomspiteGitz,
-  gorechosen,
-  greyKnights,
-  harlequins,
-  heroQuest,
-  heroQuestFrozenHorror,
-  heroQuestKellarsKeep,
-  heroQuestReturnOfTheWitchLord,
-  ironjawz,
-  kruleboyz,
-  lostPatrol,
-  malignSorcery,
-  objectives,
-  orks,
-  scenery40k,
-  sceneryAoS,
-  silverTower,
-  spaceHulk,
-  spaceWolves,
-  spaceWolvesPrimaris,
-  underworlds,
-} from '../data/backlog';
+import { PageLink, StatefulSeo as Seo } from '../components';
+import { BacklogEntry } from '../types';
+import * as backlog from '../data/backlog';
 
-export interface BacklogEntry {
-  name: string;
-  link?: string;
-}
-
-const BacklogPage = (): React.ReactNode => {
+export const BacklogPage: FC = () => {
   const generateEntries = (entries: BacklogEntry[]) => {
     entries.sort(function (a, b) {
       return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
     });
 
-    const domList: React.ReactNode[] = [];
+    const domList: ReactNode[] = [];
 
     for (const [index, value] of entries.entries()) {
       if (value.link) {
@@ -93,95 +59,95 @@ const BacklogPage = (): React.ReactNode => {
       <hr />
 
       <h3>Grey Knights</h3>
-      <ul>{generateEntries(greyKnights)}</ul>
+      <ul>{generateEntries(backlog.greyKnights)}</ul>
 
       <h3>Space Wolves</h3>
-      <ul>{generateEntries(spaceWolves)}</ul>
-      <ul>{generateEntries(spaceWolvesPrimaris)}</ul>
+      <ul>{generateEntries(backlog.spaceWolves)}</ul>
+      <ul>{generateEntries(backlog.spaceWolvesPrimaris)}</ul>
 
       <h3>Dark Angels</h3>
-      <ul>{generateEntries(darkAngels)}</ul>
+      <ul>{generateEntries(backlog.darkAngels)}</ul>
 
       <h3>Orks</h3>
-      <ul>{generateEntries(orks)}</ul>
+      <ul>{generateEntries(backlog.orks)}</ul>
 
       <h3>Harlequins</h3>
-      <ul>{generateEntries(harlequins)}</ul>
+      <ul>{generateEntries(backlog.harlequins)}</ul>
 
       <h3>Chaos Space Marines</h3>
-      <ul>{generateEntries(chaosSpaceMarines)}</ul>
+      <ul>{generateEntries(backlog.chaosSpaceMarines)}</ul>
 
       <h3>Scenery</h3>
-      <ul>{generateEntries(scenery40k)}</ul>
+      <ul>{generateEntries(backlog.scenery40k)}</ul>
 
       <h2>Age of Sigmar</h2>
       <hr />
 
       <h3>Gloomspite Gitz</h3>
-      <ul>{generateEntries(gloomspiteGitz)}</ul>
+      <ul>{generateEntries(backlog.gloomspiteGitz)}</ul>
 
       <h3>Ironjawz</h3>
-      <ul>{generateEntries(ironjawz)}</ul>
+      <ul>{generateEntries(backlog.ironjawz)}</ul>
 
       <h3>Kruleboyz</h3>
-      <ul>{generateEntries(kruleboyz)}</ul>
+      <ul>{generateEntries(backlog.kruleboyz)}</ul>
 
       <h3>Malign Sorcery</h3>
-      <ul>{generateEntries(malignSorcery)}</ul>
+      <ul>{generateEntries(backlog.malignSorcery)}</ul>
 
       <h3>Objectives</h3>
-      <ul>{generateEntries(objectives)}</ul>
+      <ul>{generateEntries(backlog.objectives)}</ul>
 
       <h3>Scenery</h3>
-      <ul>{generateEntries(sceneryAoS)}</ul>
+      <ul>{generateEntries(backlog.sceneryAoS)}</ul>
 
       <h2>Board Games 40k</h2>
       <hr />
 
       <h3>Blackstone Fortress</h3>
-      <ul>{generateEntries(blackstoneFortress)}</ul>
+      <ul>{generateEntries(backlog.blackstoneFortress)}</ul>
 
       <h3>Deathwatch Overkill</h3>
-      <ul>{generateEntries(deathwatchOverkill)}</ul>
+      <ul>{generateEntries(backlog.deathwatchOverkill)}</ul>
 
       <h3>Execution Force</h3>
-      <ul>{generateEntries(executionForce)}</ul>
+      <ul>{generateEntries(backlog.executionForce)}</ul>
 
       <h3>Lost Patrol</h3>
-      <ul>{generateEntries(lostPatrol)}</ul>
+      <ul>{generateEntries(backlog.lostPatrol)}</ul>
 
       <h3>Space Hulk</h3>
-      <ul>{generateEntries(spaceHulk)}</ul>
+      <ul>{generateEntries(backlog.spaceHulk)}</ul>
 
       <h2>Board Games Age of Sigmar</h2>
       <hr />
 
       <h3>Blood Bowl</h3>
-      <ul>{generateEntries(bloodBowl)}</ul>
+      <ul>{generateEntries(backlog.bloodBowl)}</ul>
 
       <h3>Dreadfleet</h3>
-      <ul>{generateEntries(dreadfleet)}</ul>
+      <ul>{generateEntries(backlog.dreadfleet)}</ul>
 
       <h3>Dungeon Bowl</h3>
-      <ul>{generateEntries(dungeonBowl)}</ul>
+      <ul>{generateEntries(backlog.dungeonBowl)}</ul>
 
       <h3>Gorechosen</h3>
-      <ul>{generateEntries(gorechosen)}</ul>
+      <ul>{generateEntries(backlog.gorechosen)}</ul>
 
       <h3>Silver Tower</h3>
-      <ul>{generateEntries(silverTower)}</ul>
+      <ul>{generateEntries(backlog.silverTower)}</ul>
 
       <h3>Underworlds</h3>
-      <ul>{generateEntries(underworlds)}</ul>
+      <ul>{generateEntries(backlog.underworlds)}</ul>
 
       <h2>Other</h2>
       <hr />
 
       <h3>Hero Quest</h3>
-      <ul>{generateEntries(heroQuest)}</ul>
-      <ul>{generateEntries(heroQuestReturnOfTheWitchLord)}</ul>
-      <ul>{generateEntries(heroQuestKellarsKeep)}</ul>
-      <ul>{generateEntries(heroQuestFrozenHorror)}</ul>
+      <ul>{generateEntries(backlog.heroQuest)}</ul>
+      <ul>{generateEntries(backlog.heroQuestReturnOfTheWitchLord)}</ul>
+      <ul>{generateEntries(backlog.heroQuestKellarsKeep)}</ul>
+      <ul>{generateEntries(backlog.heroQuestFrozenHorror)}</ul>
     </Layout>
   );
 };

@@ -1,9 +1,9 @@
-import React from 'react';
-import Layout from '../layouts/layout';
-import Seo from '../components/stateful/seo';
-import PageLink from '../components/page-link';
+import React, { FC } from 'react';
 
-const NotFound = (): React.ReactNode => {
+import { Layout } from '../layouts/layout';
+import { PageLink, StatefulSeo as Seo } from '../components';
+
+const NotFound: FC = () => {
   return (
     <Layout>
       <h1>Page not found</h1>

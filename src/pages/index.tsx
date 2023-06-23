@@ -1,13 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import Layout from '../layouts/layout';
-import Seo from '../components/stateful/seo';
-import Video from '../components/video';
-import PostSummary from '../components/post-summary';
-import Badges from '../components/badges';
 import { getImage } from 'gatsby-plugin-image';
 
-const IndexPage = (): React.ReactNode => {
+import Layout from '../layouts/layout';
+import { Badges, PostSummary, StatefulSeo as Seo, Video } from '../components';
+
+export const IndexPage: FC = () => {
   const data = useStaticQuery(graphql`
     query latestPostQuery {
       posts: allMdx(

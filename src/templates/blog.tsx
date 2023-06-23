@@ -1,27 +1,23 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../layouts/layout';
-import Pagination from '../components/pagination';
-import Seo from '../components/stateful/seo';
-import PostSummary from '../components/post-summary';
-import { Posts } from '../types/app.types';
-import { MdxEdge } from '../types/base.types';
-import { PostSummary as PostSummaryType } from '../types/app.types';
 
-interface PostContext {
+import Layout from '../layouts/layout';
+import { Pagination, PostSummary, StatefulSeo as Seo } from '../components';
+import type { MdxEdge, Posts, PostSummary as PostSummaryType } from '../types';
+
+export interface PostContext {
   limit: number;
   skip: number;
   numPostPages: number;
   currentPage: number;
 }
 
-const Blog = ({
-  data,
-  pageContext,
-}: {
+export interface BlogTemplateProps {
   data: Posts;
   pageContext: PostContext;
-}): React.ReactNode => {
+}
+
+export const Blog: FC<BlogTemplateProps> = ({ data, pageContext }) => {
   const page = {
     isFirst: pageContext.currentPage === 1,
     isLast: pageContext.currentPage === pageContext.numPostPages,

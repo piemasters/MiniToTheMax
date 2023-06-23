@@ -1,0 +1,68 @@
+import {
+  Story,
+  Preview,
+  Props,
+  Source,
+  Description,
+  Meta,
+} from '@storybook/addon-docs/blocks';
+import { CoverImage } from './CoverImage';
+import cover from './example-cover.jpg';
+
+<Meta
+  title="Components/CoverImage"
+  component={CoverImage}
+  parameters={{ jest: ['cover-image'] }}
+  argTypes={{
+    image: {
+      name: 'image',
+      description: 'Cover image',
+      defaultValue: {
+        aspectRatio: 1,
+        src: cover,
+        srcSet: '',
+        sizes: '(max-width: 800px) 100vw, 800px',
+      },
+      control: { type: 'object' },
+    },
+    title: {
+      name: 'title',
+      description: 'The title of the post',
+      defaultValue: 'This is the post title',
+      control: { type: 'text' },
+    },
+    tall: {
+      name: 'tall',
+      description: 'Increase the offset of the title for taller images',
+      defaultValue: false,
+      control: { type: 'boolean' },
+    },
+  }}
+/>
+
+# CoverImage
+
+With `MDX` we can define a story for `CoverImage` right in the middle of our
+markdown documentation.
+
+<Preview>
+  <Story
+    name="default"
+    args={{
+      image: {
+        aspectRatio: 2,
+        src: cover,
+        srcSet: '',
+        sizes: '(max-width: 800px) 100vw, 800px',
+      },
+      title: 'This is the post title',
+      tall: false,
+    }}
+  >
+    {(args) => <CoverImage {...args} />}
+  </Story>
+</Preview>
+
+# Props
+
+<Props story="default" />

@@ -1,23 +1,21 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import Seo from '../components/stateful/seo';
-import PageLink from '../components/page-link';
-import Layout from '../layouts/layout';
-import { Categories, TagLink } from '../types/app.types';
-import { MdxEdge } from '../types/base.types';
 
-interface CategoryContext {
+import Layout from '../layouts/layout';
+import { PageLink, StatefulSeo as Seo } from '../components';
+import { Categories, MdxEdge, TagLink } from '../types';
+
+export interface CategoryContext {
   category: string;
   url: string;
 }
 
-const Category = ({
-  pageContext,
-  data,
-}: {
+export interface CategoryTemplateProps {
   pageContext: CategoryContext;
   data: Categories;
-}): React.ReactNode => {
+}
+
+export const Category: FC<CategoryTemplateProps> = ({ pageContext, data }) => {
   const categoryHeader = `${data.categories.totalCount} post${
     data.categories.totalCount === 1 ? '' : 's'
   } tagged with "${pageContext.category}"`;

@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination renders correctly 1`] = `
+<div>
+  <ul
+    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+    data-testid="pagination"
+  >
+    <li>
+      <a
+        bg="#eb1d23"
+        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        data-testid="page-link-cover"
+        direction="right"
+        duration="1"
+        href="/"
+      >
+        &lt;&lt;
+      </a>
+    </li>
+    <li>
+      <a
+        bg="#eb1d23"
+        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        data-testid="page-link-cover"
+        direction="right"
+        duration="1"
+        href="/"
+      >
+        1
+      </a>
+    </li>
+    <li>
+      <a
+        bg="#eb1d23"
+        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        data-testid="page-link-cover"
+        direction="right"
+        duration="1"
+        href="/2"
+      >
+        2
+      </a>
+    </li>
+    <li>
+      <a
+        bg="#eb1d23"
+        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        data-testid="page-link-cover"
+        direction="right"
+        duration="1"
+        href="/3"
+      >
+        3
+      </a>
+    </li>
+    <li>
+      <a
+        bg="#eb1d23"
+        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        data-testid="page-link-cover"
+        direction="left"
+        duration="1"
+        href="/4"
+      >
+        4
+      </a>
+    </li>
+    <li>
+      <a
+        bg="#eb1d23"
+        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        data-testid="page-link-cover"
+        direction="left"
+        duration="1"
+        href="/5"
+      >
+        5
+      </a>
+    </li>
+    <li>
+      <a
+        bg="#eb1d23"
+        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        data-testid="page-link-cover"
+        direction="right"
+        duration="1"
+        href="/5"
+      >
+        &gt;&gt;
+      </a>
+    </li>
+  </ul>
+</div>
+`;

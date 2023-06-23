@@ -1,0 +1,62 @@
+import {
+  Story,
+  Preview,
+  Props,
+  Source,
+  Description,
+  Meta,
+} from '@storybook/addon-docs/blocks';
+import { Header } from './Header';
+
+<Meta
+  title="Components/Header"
+  component={Header}
+  parameters={{ jest: ['header'] }}
+  argTypes={{
+    title: {
+      name: 'title',
+      description: 'Website title',
+      defaultValue: 'MiniToTheMax',
+      control: { type: 'text' },
+    },
+    logo: {
+      name: 'logo',
+      description: 'Path to the logo image',
+      defaultValue: '',
+      control: { type: 'text' },
+    },
+    pages: {
+      name: 'pages',
+      description: 'The hyperlinks to display',
+      defaultValue: [],
+      control: { type: 'array' },
+    },
+  }}
+/>
+
+# Header
+
+With `MDX` we can define a story for `Header` right in the middle of our
+markdown documentation.
+
+<Preview>
+  <Story
+    name="default"
+    args={{
+      title: 'MiniToTheMax',
+      logo: './images/logo.png',
+      pages: [
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Showcase', url: '/showcase' },
+        { name: 'Backlog', url: '/backlog' },
+      ],
+    }}
+  >
+    {(args) => <Header {...args} />}
+  </Story>
+</Preview>
+
+# Props
+
+<Props story="default" />

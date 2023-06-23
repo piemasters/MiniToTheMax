@@ -3,7 +3,7 @@ import { ThemeProvider } from '@emotion/react';
 import { withThemeFromJSXProvider } from '@storybook/addon-styling';
 import results from '../.jest-results.json';
 import { withTests } from '@storybook/addon-jest';
-import theme from './theme';
+import { theme as storybookTheme } from './theme';
 import { appTheme } from '../src/styles/theme';
 import { globalStyles } from '../src/styles/global';
 import { Global } from '@emotion/react';
@@ -15,8 +15,8 @@ export const parameters = {
   ally: {},
   docs: {
     inlineStories: true,
-    iframeHeight: '60px',
-    theme: theme,
+    // iframeHeight: '60px',
+    theme: storybookTheme,
   },
   options: {
     storySort: (a, b) =>
