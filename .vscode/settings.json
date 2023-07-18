@@ -1,5 +1,5 @@
 {
-  "cSpell.enableFiletypes": "*",
+  "cSpell.enableFiletypes": ["*", "mdx"],
   "cSpell.words": [
     "aberrants",
     "abnett",
@@ -155,6 +155,7 @@
     "fenris",
     "Fenrisian",
     "fexgore",
+    "Finecast",
     "firehowlers",
     "Fleshshade",
     "fleshtone",
@@ -265,6 +266,7 @@
     "kroak",
     "kroot",
     "kroxigor",
+    "Kruleboyz",
     "Lahmian",
     "landspeeders",
     "lasercut",
@@ -326,6 +328,7 @@
     "orks",
     "orrible",
     "orruk",
+    "Orruks",
     "pacificus",
     "palesun",
     "pendulun",
@@ -453,6 +456,7 @@
     "torgillius",
     "traumaturge",
     "troggoth",
+    "troggoths",
     "trollslayer",
     "tuskgor",
     "typhon",
