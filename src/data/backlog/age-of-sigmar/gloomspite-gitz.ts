@@ -73,6 +73,7 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Mangler Squigs II',
+    link: '/showcase/gloomspite-gitz/mangler-squigs-2/',
   },
   {
     name: 'Mollogs Mob',
