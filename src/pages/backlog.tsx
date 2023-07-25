@@ -148,6 +148,17 @@ export const BacklogPage: FC = () => {
       <ul>{generateEntries(backlog.heroQuestReturnOfTheWitchLord)}</ul>
       <ul>{generateEntries(backlog.heroQuestKellarsKeep)}</ul>
       <ul>{generateEntries(backlog.heroQuestFrozenHorror)}</ul>
+
+      <h3>The Witcher Old World</h3>
+      <ul>{generateEntries(backlog.witcherOldWorld)}</ul>
+      <ul>{generateEntries(backlog.witcherOldWorldKickstarterExclusive)}</ul>
+      <ul>{generateEntries(backlog.witcherOldWorldWildHunt)}</ul>
+      <ul>{generateEntries(backlog.witcherOldWorldMages)}</ul>
+      <ul>{generateEntries(backlog.witcherOldWorldLegendaryHunt)}</ul>
+      <ul>{generateEntries(backlog.witcherOldWorldSkellige)}</ul>
+      <ul>{generateEntries(backlog.witcherOldWorldMonsterPack)}</ul>
+      <ul>{generateEntries(backlog.witcherOldWorldAdventurePack)}</ul>
+      <ul>{generateEntries(backlog.witcherOldWorldMonsterTrail)}</ul>
     </Layout>
   );
 };

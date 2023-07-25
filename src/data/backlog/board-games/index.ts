@@ -11,3 +11,4 @@ export * from './lost-patrol';
 export * from './silver-tower';
 export * from './space-hulk';
 export * from './underworlds';
+export * from './witcher-old-world';
