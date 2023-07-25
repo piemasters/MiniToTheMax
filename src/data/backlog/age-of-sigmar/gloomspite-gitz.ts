@@ -79,6 +79,9 @@ export const gloomspiteGitz = [
     name: 'Mollogs Mob',
   },
   {
+    name: 'Rabble Rowza',
+  },
+  {
     name: 'Rockgut Troggoths',
   },
   {
