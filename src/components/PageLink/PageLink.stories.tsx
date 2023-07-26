@@ -1,26 +1,18 @@
-import {
-  Story,
-  Preview,
-  Props,
-  Source,
-  Description,
-  Meta,
-} from '@storybook/addon-docs/blocks';
+import type { Meta, StoryObj } from '@storybook/react';
 import { css } from '@emotion/react';
+
 import { PageLink } from './PageLink';
 
-<Meta
-  title="Components/PageLink"
-  component={PageLink}
-  parameters={{ jest: ['page-link'] }}
-  argTypes={{
+const meta: Meta<typeof PageLink> = {
+  component: PageLink,
+  argTypes: {
     type: {
       name: 'type',
       description: 'The animation type',
       defaultValue: 'paintDrip',
+      options: ['paintDrip', 'fade', 'swipe', 'cover'],
       control: {
         type: 'select',
-        options: ['paintDrip', 'fade', 'swipe', 'cover'],
       },
     },
     to: {
@@ -57,14 +49,16 @@ import { PageLink } from './PageLink';
     top: {
       name: 'top',
       description: 'Whether the entering or exiting page should be on top',
-      defaultValue: 100,
-      control: { type: 'select', options: ['entry', 'exit'] },
+      defaultValue: 'exit',
+      options: ['entry', 'exit'],
+      control: { type: 'select' },
     },
     direction: {
       name: 'direction',
       description: 'Directional of transitions',
-      defaultValue: 100,
-      control: { type: 'select', options: ['left', 'right', 'up', 'down'] },
+      defaultValue: 'up',
+      options: ['left', 'right', 'up', 'down'],
+      control: { type: 'select' },
     },
     children: {
       name: 'children',
@@ -78,7 +72,7 @@ import { PageLink } from './PageLink';
       defaultValue: css`
         color: #000000;
       `,
-      control: { type: 'text' },
+      control: { type: 'object' },
     },
     linkActiveStyle: {
       name: 'linkActiveStyle',
@@ -87,41 +81,30 @@ import { PageLink } from './PageLink';
       defaultValue: css`
         color: #000000;
       `,
-      control: { type: 'text' },
+      control: { type: 'object' },
     },
-  }}
-/>
+  },
+};
 
-# PageLink
+export default meta;
+type Story = StoryObj<typeof PageLink>;
 
-With `MDX` we can define a story for `PageLink` right in the middle of our
-markdown documentation.
-
-<Preview>
-  <Story
-    name="default"
-    args={{
-      type: 'paintDrip',
-      to: '/',
-      duration: '1',
-      bg: '#eb1d23',
-      hex: '#eb1d23',
-      entryOffset: 100,
-      top: 'exit',
-      direction: 'up',
-      children: 'Test',
-      linkStyle: css`
-        color: #000000;
-      `,
-      linkActiveStyle: css`
-        color: #000000;
-      `,
-    }}
-  >
-    {(args) => <PageLink {...args}>{args.children}</PageLink>}
-  </Story>
-</Preview>
-
-# Props
-
-<Props story="default" />
+export const Primary: Story = {
+  args: {
+    type: 'paintDrip',
+    to: '/',
+    duration: 1,
+    bg: '#eb1d23',
+    hex: '#eb1d23',
+    entryOffset: 100,
+    top: 'exit',
+    direction: 'up',
+    children: 'Test',
+    linkStyle: css`
+      color: #000000;
+    `,
+    linkActiveStyle: css`
+      color: #000000;
+    `,
+  },
+};

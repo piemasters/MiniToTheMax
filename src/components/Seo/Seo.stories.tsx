@@ -1,19 +1,10 @@
-import {
-  Story,
-  Preview,
-  Props,
-  Source,
-  Description,
-  Meta,
-} from '@storybook/addon-docs/blocks';
-import { Seo } from './Seo';
-import cover from './example-cover.jpg';
+import type { Meta, StoryObj } from '@storybook/react';
 
-<Meta
-  title="Components/Seo"
-  component={Seo}
-  parameters={{ jest: ['seo'] }}
-  argTypes={{
+import { Seo } from './Seo';
+
+const meta: Meta<typeof Seo> = {
+  component: Seo,
+  argTypes: {
     title: {
       name: 'title',
       description: 'Title of the page',
@@ -28,8 +19,8 @@ import cover from './example-cover.jpg';
     },
     image: {
       name: 'image',
-      description: 'Thumbnail used when link is shared',
-      defaultValue: cover,
+      description: 'Path to thumbnail used when link is shared',
+      defaultValue: 'images/logo.png',
       control: { type: 'text' },
     },
     article: {
@@ -38,35 +29,24 @@ import cover from './example-cover.jpg';
       defaultValue: false,
       control: { type: 'boolean' },
     },
-    pathname: {
+    siteUrl: {
       name: 'pathname',
       description: 'The unique slug of the page after the base URL',
       defaultValue: '',
       control: { type: 'text' },
     },
-  }}
-/>
+  },
+};
 
-# Seo
+export default meta;
+type Story = StoryObj<typeof Seo>;
 
-With `MDX` we can define a story for `Seo` right in the middle of our
-markdown documentation.
-
-<Preview>
-  <Story
-    name="default"
-    args={{
-      title: 'SEO Title',
-      description: 'Description of the SEO',
-      image: cover,
-      article: true,
-      pathname: 'blog-post-1',
-    }}
-  >
-    {(args) => <Seo {...args} />}
-  </Story>
-</Preview>
-
-# Props
-
-<Props story="default" />
+export const Primary: Story = {
+  args: {
+    title: 'SEO Title',
+    description: 'Description of the SEO',
+    image: 'images/logo.png',
+    article: true,
+    siteUrl: 'https://minitothemax.app',
+  },
+};

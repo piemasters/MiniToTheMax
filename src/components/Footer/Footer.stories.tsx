@@ -3,16 +3,21 @@ import { Footer } from './Footer';
 
 const meta: Meta<typeof Footer> = {
   component: Footer,
+  argTypes: {
+    author: {
+      name: 'author',
+      description: 'Website author',
+      defaultValue: 'MiniToTheMax',
+      control: { type: 'text' },
+    },
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof Footer>;
 
-/*
- *👇 Render functions are a framework specific feature to allow you control on how the component renders.
- * See https://storybook.js.org/docs/react/api/csf
- * to learn how to use render functions.
- */
 export const Primary: Story = {
-  render: () => <Footer author={'MiniToTheMax'} />,
+  args: {
+    author: 'MiniToTheMax',
+  },
 };

@@ -12,7 +12,9 @@ export interface CoverCategoryProps {
   title: string;
   img?: IGatsbyImageData;
 }
-
+/**
+ * The CoverCategory component is a banner image for a category, largely used when selecting a category from a list
+ */
 export const CoverCategory: FC<CoverCategoryProps> = ({ slug, title, img }) => {
   const theme = useTheme() as Theme;
   const postStyle = css`

@@ -7,6 +7,9 @@ import { PageLink } from '../PageLink';
 import { BadgeNames } from '../../types';
 import { Theme } from '../../styles/theme';
 
+/**
+ * The Badges component is collection of badges with the most popular categories to display on the homepage.
+ */
 export const Badges: FC = () => {
   const theme = useTheme() as Theme;
 

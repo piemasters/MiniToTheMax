@@ -6,10 +6,6 @@ import { Theme } from '../../styles/theme';
 import { getPages } from '../../util';
 
 export interface PaginationProps {
-  isFirst: boolean;
-  isLast: boolean;
-  prevPage: string;
-  nextPage: string;
   numPages: number;
   currentPage: number;
   maxPages?: number;

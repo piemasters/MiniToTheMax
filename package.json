@@ -7,7 +7,7 @@
   "scripts": {
     "build": "yarn preoptimize&& gatsby build",
     "build-dev": "env-cmd gatsby build",
-    "develop": "env-cmd  gatsby develop",
+    "develop": "NODE_OPTIONS=--max-old-space-size=16888 gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,tsx,json,md}\"",
     "start": "yarn develop",
     "serve": "gatsby serve",
@@ -20,8 +20,8 @@
     "type-check": "tsc --noEmit",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "prestorybook": "yarn test:output",
-    "storybook": "set NODE_ENV=production&& storybook dev -p 6006 -s public,content/assets",
-    "build-storybook": "set NODE_ENV=production&& storybook build -s public,content/assets",
+    "storybook": "set NODE_ENV=production&& storybook dev -p 6006",
+    "build-storybook": "set NODE_ENV=production&& storybook build",
     "preoptimize": "node ./src/scripts/optimize.js"
   },
   "dependencies": {

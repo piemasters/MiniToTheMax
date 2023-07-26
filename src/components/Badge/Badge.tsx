@@ -7,7 +7,9 @@ import { allBadges } from '../../data';
 export interface BadgeProps {
   type: BadgeNames;
 }
-
+/**
+ * The Badge component is a combination of an image and text used to represent a category of posts
+ */
 export const Badge: FC<BadgeProps> = ({ type }) => {
   const badgeStyles = css`
     display: flex;

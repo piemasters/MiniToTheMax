@@ -7,8 +7,9 @@ const config: StorybookConfig = {
     name: '@storybook/react-webpack5',
     options: {},
   },
-  // stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
-  stories: ['../src/**/*.stories.@(tsx)'],
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
+  // stories: ['../src/**/*.stories.@(tsx)'],
+  staticDirs: ['../public', '../content/assets'],
   addons: [
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
@@ -19,7 +20,7 @@ const config: StorybookConfig = {
     path.resolve('./.storybook/addon-gatsby.js'),
   ],
   docs: {
-    autodocs: 'tag',
+    autodocs: true,
   },
   babel: (options) => ({
     ...options,
@@ -46,6 +47,7 @@ const config: StorybookConfig = {
       /node_modules\/(?!(gatsby|gatsby-script)\/)/,
       /core-js/,
     ];
+    config.module.rules[2].exclude = [/node_modules\/(?!(gatsby)\/)/];
     // Use correct react-dom depending on React version.
     // if (parseInt(React.version) <= 18) {
     //   config.externals = ['react-dom/client'];

@@ -1,18 +1,10 @@
-import {
-  Story,
-  Preview,
-  Props,
-  Source,
-  Description,
-  Meta,
-} from '@storybook/addon-docs/blocks';
+import type { Meta, StoryObj } from '@storybook/react';
+
 import { Video } from './Video';
 
-<Meta
-  title="Components/Video"
-  component={Video}
-  parameters={{ jest: ['video'] }}
-  argTypes={{
+const meta: Meta<typeof Video> = {
+  component: Video,
+  argTypes: {
     src: {
       name: 'src',
       description: 'Source of the video file',
@@ -37,28 +29,17 @@ import { Video } from './Video';
       defaultValue: 16 / 9,
       control: { type: 'number' },
     },
-  }}
-/>
+  },
+};
 
-# Video
+export default meta;
+type Story = StoryObj<typeof Video>;
 
-With `MDX` we can define a story for `Video` right in the middle of our
-markdown documentation.
-
-<Preview>
-  <Story
-    name="default"
-    args={{
-      src: 'https://www.youtube.com/embed/s1Ck5Xn6420',
-      title: 'Grey Knight Stormraven',
-      width: 714,
-      aspectRatio: 16 / 9,
-    }}
-  >
-    {(args) => <Video {...args} />}
-  </Story>
-</Preview>
-
-# Props
-
-<Props story="default" />
+export const Primary: Story = {
+  args: {
+    src: 'https://www.youtube.com/embed/s1Ck5Xn6420',
+    title: 'Grey Knight Librarian',
+    width: 714,
+    aspectRatio: 16 / 9,
+  },
+};

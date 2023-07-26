@@ -21,7 +21,7 @@ export interface PageLinkProps {
   entryOffset?: number;
   hex?: string;
   bg?: string;
-  duration?: string;
+  duration?: number;
   disabled?: boolean;
 }
 
