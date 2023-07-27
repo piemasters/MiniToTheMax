@@ -61,10 +61,6 @@ export const Blog: FC<BlogTemplateProps> = ({ data, pageContext }) => {
       </ol>
 
       <Pagination
-        isFirst={page.isFirst}
-        isLast={page.isLast}
-        prevPage={page.prevPage}
-        nextPage={page.nextPage}
         numPages={page.numPages}
         currentPage={page.currentPage}
         baseUrl={page.baseUrl}

@@ -10,10 +10,6 @@ describe('Pagination', () => {
     const { container } = renderWithTransitionProvider(
       <ThemeProvider theme={appTheme}>
         <Pagination
-          isFirst={false}
-          isLast={false}
-          prevPage={'previous'}
-          nextPage={'next'}
           numPages={5}
           currentPage={3}
           maxPages={10}
