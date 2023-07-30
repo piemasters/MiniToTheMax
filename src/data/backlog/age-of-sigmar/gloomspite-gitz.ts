@@ -48,6 +48,7 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Loonboss on Mangler Squigs',
+    link: '/showcase/gloomspite-gitz/loonboss-on-mangler-squigs/',
   },
   {
     name: 'Loonboss with Battle Standard',
