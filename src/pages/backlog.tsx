@@ -148,6 +148,7 @@ export const BacklogPage: FC = () => {
       <ul>{generateEntries(backlog.heroQuestReturnOfTheWitchLord)}</ul>
       <ul>{generateEntries(backlog.heroQuestKellarsKeep)}</ul>
       <ul>{generateEntries(backlog.heroQuestFrozenHorror)}</ul>
+      <ul>{generateEntries(backlog.heroQuestRiseOfTheDreadMoon)}</ul>
 
       <h3>The Witcher Old World</h3>
       <ul>{generateEntries(backlog.witcherOldWorld)}</ul>

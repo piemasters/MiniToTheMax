@@ -54,3 +54,21 @@ export const heroQuestFrozenHorror = [
   { name: 'Polar Warbears' },
   { name: 'Yetis' },
 ];
+
+export const heroQuestRiseOfTheDreadMoon = [
+  { name: 'Assassins' },
+  { name: 'Cupboard' },
+  { name: 'Doors' },
+  { name: 'Dread Cultists' },
+  { name: 'Dread Wraith' },
+  { name: 'Elven Archers' },
+  { name: 'Elven Mercenaries' },
+  { name: 'Elven Warriors' },
+  { name: 'Knight' },
+  { name: 'Magus Guards' },
+  { name: 'Rack (Arcane Prison)' },
+  { name: 'Sorcerers Table' },
+  { name: 'Specters' },
+  { name: 'Statues' },
+  { name: 'Table' },
+];
