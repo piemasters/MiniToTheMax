@@ -62,7 +62,7 @@
     "@emotion/babel-plugin": "11.11.0",
     "@emotion/jest": "11.11.0",
     "@storybook/addon-a11y": "7.1.1",
-    "@storybook/addon-essentials": "7.1.1",
+    "@storybook/addon-essentials": "7.2.3",
     "@storybook/addon-jest": "7.1.1",
     "@storybook/addon-links": "7.1.1",
     "@storybook/addon-mdx-gfm": "7.1.1",
