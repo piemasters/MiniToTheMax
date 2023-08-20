@@ -12,7 +12,7 @@ export const witcherOldWorld = [
   { name: 'Nekkers Nest' },
   { name: 'Noonwraith' },
   { name: 'Striga' },
-  { name: 'Werewolf' },
+  { name: 'Werewolf', link: '/showcase/witcher/werewolf/' },
   { name: 'Witchers' },
   { name: 'Wyvern' },
 ];
