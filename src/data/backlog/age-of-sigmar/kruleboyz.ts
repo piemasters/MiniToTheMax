@@ -1,23 +1,48 @@
 export const kruleboyz = [
   {
-    name: 'Killaboss on Great Gnashtoof',
+    name: 'Beast-skewer Killbow',
   },
   {
-    name: 'Murknob with Belcha-banna',
+    name: 'Breaka-boss on Mirebrute Troggoth',
   },
   {
-    name: 'Man-skewer Boltboyz',
+    name: 'Da Kunnin Krew',
   },
   {
-    name: 'Hobgrot Slittaz',
+    name: 'Gobsprakk The Mouth of Mork',
   },
   {
     name: 'Gutrippaz',
   },
   {
-    name: 'Swampcalla Shaman & Pot Grot',
+    name: 'Gutrippaz II',
   },
   {
-    name: 'Stab-grot',
+    name: 'Hobgrot Slittaz',
+    link: '/showcase/kruleboyz/hobgrot-slittaz/',
+  },
+  {
+    name: 'Killaboss on Great Gnashtoof',
+  },
+  {
+    name: 'Killaboss with Stab-grot',
+  },
+  {
+    name: 'Man-skewer Boltboyz',
+  },
+  {
+    name: 'Man-skewer Boltboyz II',
+  },
+  {
+    name: 'Marshcrawla Sloggoth',
+  },
+  {
+    name: 'Murknob with Belcha-banna',
+  },
+  {
+    name: 'Swampboss Skumdrekk',
+  },
+  {
+    name: 'Swampcalla Shaman & Pot Grot',
   },
 ];
