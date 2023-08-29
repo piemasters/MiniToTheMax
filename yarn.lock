@@ -9718,7 +9718,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:5.12.0":
+"babel-plugin-remove-graphql-queries@npm:5.12.0, babel-plugin-remove-graphql-queries@npm:^5.12.0":
   version: 5.12.0
   resolution: "babel-plugin-remove-graphql-queries@npm:5.12.0"
   dependencies:
@@ -9743,20 +9743,6 @@ __metadata:
     "@babel/core": ^7.0.0
     gatsby: ^5.0.0-next
   checksum: d2952dbba93b27d5edd64efe71a929ae3fab216f4b9ef02df5a98d316dc822d5b1cc3fb879ace42a0fe6089df17749fce2c15d4fb16dd85661b1e45a2d7eb073
-  languageName: node
-  linkType: hard
-
-"babel-plugin-remove-graphql-queries@npm:^5.12.0":
-  version: 5.12.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:5.12.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    "@babel/types": ^7.20.7
-    gatsby-core-utils: ^4.12.0
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^5.0.0-next
-  checksum: 6094d76d238229fe2916989e51dae197b3a454178f1f8099c03778a86b6d17a5d2f204f47ec86a573d47397432a87ae4e64af09790e2a2a34a5654ae3158cac2
   languageName: node
   linkType: hard
 
@@ -15125,13 +15111,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:6.11.0":
-  version: 6.11.0
-  resolution: "gatsby-plugin-offline@npm:6.11.0"
+"gatsby-plugin-offline@npm:6.12.0":
+  version: 6.12.0
+  resolution: "gatsby-plugin-offline@npm:6.12.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^4.11.0
+    gatsby-core-utils: ^4.12.0
     glob: ^7.2.3
     idb-keyval: ^3.2.0
     lodash: ^4.17.21
@@ -15140,7 +15126,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: b783421914f2a26e7571e0a2a344baf9c10a62da9c47e615e74c340cd87139c05ce41a1a456f7bd43957a4b209f6722c13c3bb0b88ede12a81a75475d79126fb
+  checksum: 792c225e59acc1f56aac2bffd889d122975cb4532efec225f09aaa7bc28703edc695a0c86ed6b4aafd1a0f65faa5b285ca0c9ff408f6fdbf350fa94273a1d6b9
   languageName: node
   linkType: hard
 
@@ -20678,7 +20664,7 @@ __metadata:
     gatsby-plugin-image: 3.11.0
     gatsby-plugin-manifest: 5.12.0
     gatsby-plugin-mdx: 5.12.0
-    gatsby-plugin-offline: 6.11.0
+    gatsby-plugin-offline: 6.12.0
     gatsby-plugin-react-svg: 3.3.0
     gatsby-plugin-robots-txt: 1.8.0
     gatsby-plugin-sass: 6.12.0
