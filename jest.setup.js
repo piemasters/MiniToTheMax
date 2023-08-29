@@ -1,4 +1,4 @@
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom/jest-globals';
 import { createSerializer } from '@emotion/jest';
 import * as emotion from '@emotion/react';
 
