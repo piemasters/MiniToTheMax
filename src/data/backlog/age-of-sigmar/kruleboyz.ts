@@ -18,6 +18,9 @@ export const kruleboyz = [
     name: 'Gutrippaz II',
   },
   {
+    name: 'Haggok Gutrippa Boss',
+  },
+  {
     name: 'Hobgrot Slittaz',
     link: '/showcase/kruleboyz/hobgrot-slittaz/',
   },
@@ -35,6 +38,9 @@ export const kruleboyz = [
   },
   {
     name: 'Marshcrawla Sloggoth',
+  },
+  {
+    name: 'Mugruk da Watcha',
   },
   {
     name: 'Murknob with Belcha-banna',
