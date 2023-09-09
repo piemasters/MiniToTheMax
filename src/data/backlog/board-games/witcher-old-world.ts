@@ -14,7 +14,7 @@ export const witcherOldWorld = [
   { name: 'Striga' },
   { name: 'Werewolf', link: '/showcase/witcher/werewolf/' },
   { name: 'Witchers' },
-  { name: 'Wyvern' },
+  { name: 'Wyvern', link: '/showcase/witcher/wyvern/' },
 ];
 
 export const witcherOldWorldKickstarterExclusive = [
