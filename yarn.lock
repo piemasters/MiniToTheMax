@@ -9749,7 +9749,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axe-core@npm:4.7.2, axe-core@npm:^4.2.0, axe-core@npm:^4.6.2":
+"axe-core@npm:4.8.1":
+  version: 4.8.1
+  resolution: "axe-core@npm:4.8.1"
+  checksum: 78cc7c19bd98d9fc859e9f08923d12c0023f93c9f807b2eebc2ef7b415d7c7cd0dcda914848fa5443ec4b58a9db879366186528a86e08b1c1b336ee38a029c7e
+  languageName: node
+  linkType: hard
+
+"axe-core@npm:^4.2.0, axe-core@npm:^4.6.2":
   version: 4.7.2
   resolution: "axe-core@npm:4.7.2"
   checksum: 5d86fa0f45213b0e54cbb5d713ce885c4a8fe3a72b92dd915a47aa396d6fd149c4a87fec53aa978511f6d941402256cfeb26f2db35129e370f25a453c688655a
@@ -20797,7 +20804,7 @@ __metadata:
     "@types/react-test-renderer": 18.0.1
     "@typescript-eslint/eslint-plugin": 6.5.0
     "@typescript-eslint/parser": 6.5.0
-    axe-core: 4.7.2
+    axe-core: 4.8.1
     babel-jest: 29.6.4
     babel-loader: 9.1.3
     babel-plugin-remove-graphql-queries: 5.12.0
