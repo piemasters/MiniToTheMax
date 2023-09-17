@@ -2825,17 +2825,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@browniebroke/gatsby-image-gallery@npm:8.1.0":
-  version: 8.1.0
-  resolution: "@browniebroke/gatsby-image-gallery@npm:8.1.0"
+"@browniebroke/gatsby-image-gallery@npm:8.2.0":
+  version: 8.2.0
+  resolution: "@browniebroke/gatsby-image-gallery@npm:8.2.0"
   dependencies:
     react-image-lightbox: "github:browniebroke/react-image-lightbox"
     styled-components: ">= 5.0"
   peerDependencies:
-    gatsby-plugin-image: ^2.0 || ^3.0.0
+    gatsby-plugin-image: ^3.0.0
     react: ">=16"
     styled-components: ">= 5.0"
-  checksum: b59d7cac8651d77fdb8d651e807bf9b0887d695a665707c9f1ac4fa9f935d342e5383b972c69aaf90fe2d5de45065a561affd1d085c0055a3d1d59d1b4701988
+  checksum: 6a7abfdbd09368adfdc0846e47e9daba56941063cf4b80e9419df9c8caa5de4da18c92fd3b9aeec0d4efc71ba569c1f49e6151a3b604e124c025818cbe0a587e
   languageName: node
   linkType: hard
 
@@ -20823,7 +20823,7 @@ __metadata:
     "@babel/preset-env": ^7.22.15
     "@babel/preset-react": ^7.22.5
     "@babel/preset-typescript": ^7.22.15
-    "@browniebroke/gatsby-image-gallery": 8.1.0
+    "@browniebroke/gatsby-image-gallery": 8.2.0
     "@emotion/babel-plugin": 11.11.0
     "@emotion/jest": 11.11.0
     "@emotion/react": 11.11.1
