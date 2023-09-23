@@ -1,6 +1,6 @@
 export const witcherOldWorld = [
   { name: 'Arachas', link: '/showcase/witcher/arachas/' },
-  { name: 'Archespore' },
+  { name: 'Archespore', link: '/showcase/witcher/archespore/' },
   { name: 'Barghest', link: '/showcase/witcher/barghest/' },
   { name: 'Bruxa', link: '/showcase/witcher/bruxa/' },
   { name: 'Fiend' },
