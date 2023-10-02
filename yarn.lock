@@ -5919,20 +5919,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:7.4.2":
-  version: 7.4.2
-  resolution: "@storybook/addon-a11y@npm:7.4.2"
+"@storybook/addon-a11y@npm:7.4.5":
+  version: 7.4.5
+  resolution: "@storybook/addon-a11y@npm:7.4.5"
   dependencies:
-    "@storybook/addon-highlight": 7.4.2
-    "@storybook/channels": 7.4.2
-    "@storybook/client-logger": 7.4.2
-    "@storybook/components": 7.4.2
-    "@storybook/core-events": 7.4.2
+    "@storybook/addon-highlight": 7.4.5
+    "@storybook/channels": 7.4.5
+    "@storybook/client-logger": 7.4.5
+    "@storybook/components": 7.4.5
+    "@storybook/core-events": 7.4.5
     "@storybook/global": ^5.0.0
-    "@storybook/manager-api": 7.4.2
-    "@storybook/preview-api": 7.4.2
-    "@storybook/theming": 7.4.2
-    "@storybook/types": 7.4.2
+    "@storybook/manager-api": 7.4.5
+    "@storybook/preview-api": 7.4.5
+    "@storybook/theming": 7.4.5
+    "@storybook/types": 7.4.5
     axe-core: ^4.2.0
     lodash: ^4.17.21
     react-resize-detector: ^7.1.2
@@ -5944,7 +5944,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 949fed6ab5d2b2c468a8c4d40ad83acb98d736e86e757c47c57038b75ea8e90491610599e8da9db22e3e21d7b3770973fd149c3ea0aec9da600a7b0612d531bc
+  checksum: 4c4013d3221b62d4870f3ab7e91e278d464f2ef267253e56a9099eaccd7f90393f6c794e3b616bdfcf06ad27ae51d13b3b29ca9dd0c060d84c214e3706835652
   languageName: node
   linkType: hard
 
@@ -6086,17 +6086,6 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 3e09e0d9a583363ae7a8281cb9bc0a7e32b083d680ba58b47a594a94727513ffb0a92841dd0c0e1462c4645e3679d63a27f408ed496b143610ae36afe658f16d
-  languageName: node
-  linkType: hard
-
-"@storybook/addon-highlight@npm:7.4.2":
-  version: 7.4.2
-  resolution: "@storybook/addon-highlight@npm:7.4.2"
-  dependencies:
-    "@storybook/core-events": 7.4.2
-    "@storybook/global": ^5.0.0
-    "@storybook/preview-api": 7.4.2
-  checksum: 1b1805643c3bca6d3d1ba86978d3a3ec769c4b9e7884398d00ebeecac2be618b73eae38f34a900f2c22318d0cdeb95bad9559d35a3b3bf4f1b371dbf43f6e615
   languageName: node
   linkType: hard
 
@@ -21039,7 +21028,7 @@ __metadata:
     "@emotion/react": 11.11.1
     "@mdx-js/react": ^2.3.0
     "@reach/router": 1.3.4
-    "@storybook/addon-a11y": 7.4.2
+    "@storybook/addon-a11y": 7.4.5
     "@storybook/addon-essentials": 7.4.5
     "@storybook/addon-jest": 7.4.2
     "@storybook/addon-links": 7.4.2
