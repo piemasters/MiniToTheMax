@@ -8150,10 +8150,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.6.3":
-  version: 20.6.3
-  resolution: "@types/node@npm:20.6.3"
-  checksum: 444a6f1f41cfa8d3e20ce0108e6e43960fb2ae0e481f233bb1c14d6252aa63a92e021de561cd317d9fdb411688f871065f40175a1f18763282dee2613a08f8a3
+"@types/node@npm:20.8.0":
+  version: 20.8.0
+  resolution: "@types/node@npm:20.8.0"
+  checksum: ebad6342d54238a24bf980d7750117a5d67749c9b72cbb7a974a1e932c39034aa3a810d669e007e8a5071782a253aa069a187b614407a382403c9826e837c849
   languageName: node
   linkType: hard
 
@@ -20822,7 +20822,7 @@ __metadata:
     "@types/jest": 29.5.5
     "@types/lodash": 4.14.199
     "@types/lodash.kebabcase": 4.1.7
-    "@types/node": 20.6.3
+    "@types/node": 20.8.0
     "@types/node-sass": 4.11.5
     "@types/react": 18.2.22
     "@types/react-dom": 18.2.7
