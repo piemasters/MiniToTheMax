@@ -50,7 +50,6 @@ export const Post = ({ pageContext, data, children }) => {
     title: post.title,
     url: `${data.site.siteMetadata.siteUrl}/${post.slug}`,
   };
-
   return (
     <Layout>
       {post.featuredImage && (
@@ -124,7 +123,7 @@ export const pageQuery = graphql`
               height: 169
               placeholder: BLURRED
             )
-            full: gatsbyImageData(layout: FULL_WIDTH)
+            full: gatsbyImageData(layout: CONSTRAINED)
           }
         }
       }

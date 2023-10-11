@@ -17,32 +17,16 @@ export interface GalleryProps {
  * The Badge component is a combination of an image and text used to represent a category of posts
  */
 export const Gallery: FC<GalleryProps> = ({ gallery }) => {
-  console.log(gallery);
-  // originalSrcset={photo.full.images.fallback?.srcSet}
-
   return (
-    <div
-      style={{
-        cursor: 'pointer',
-        display: 'flex',
-        overflow: 'hidden',
-        marginBottom: '2rem',
-      }}
-    >
-      <Photoswipe withCaption options={{}}>
+    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <Photoswipe options={{}}>
         {gallery.map((photo: GatsbyGalleryImage) => (
           <Item
-            originalSrcset={
-              photo.thumb.images?.sources
-                ? photo.thumb.images.sources[0].srcSet
-                : ''
-            }
+            original={photo.full.images.fallback?.src}
             thumbnail={photo.thumb.images.fallback?.src}
             key={photo.thumb.images.fallback?.src}
-            width={2000}
-            height={900}
-            caption={photo.title}
-            alt={photo.alt}
+            height={photo.full.height}
+            width={photo.full.width}
           >
             {({ ref, open }) => (
               <div
@@ -54,7 +38,7 @@ export const Gallery: FC<GalleryProps> = ({ gallery }) => {
                   onClick={open}
                   image={photo.thumb}
                   alt="Gallery Image"
-                  style={{ margin: '0.25rem' }}
+                  style={{ margin: '0.25rem', cursor: 'pointer' }}
                 />
               </div>
             )}
