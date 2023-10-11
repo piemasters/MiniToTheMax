@@ -20879,11 +20879,13 @@ __metadata:
     jest-emotion: 11.0.0
     jest-environment-jsdom: ^29.7.0
     lodash.kebabcase: 4.1.1
+    photoswipe: ^5.4.2
     prettier: 3.0.3
     prop-types: 15.8.1
     react: 18.2.0
     react-docgen-typescript-loader: 3.7.2
     react-dom: 18.2.0
+    react-photoswipe-gallery: ^2.2.7
     react-test-renderer: 18.2.0
     sharp: ^0.32.6
     start-server-and-test: 2.0.1
@@ -22150,6 +22152,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"photoswipe@npm:^5.4.2":
+  version: 5.4.2
+  resolution: "photoswipe@npm:5.4.2"
+  checksum: 4d74b189ede377d17868cc3ebf066fb549642387b387dd922d7714d8cc0ede7e74f8313ded15def42c6ad3b15c6800e2ce92b4034cfc815655fa2bb6433037b4
+  languageName: node
+  linkType: hard
+
 "physical-cpu-count@npm:^2.0.0":
   version: 2.0.0
   resolution: "physical-cpu-count@npm:2.0.0"
@@ -23396,6 +23405,17 @@ __metadata:
     react: ^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18
     react-dom: ^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18
   checksum: 978936e9320fad839c039b9ee4de55d40888156cb40e093615d6fbc2ff07139d5db06f14782cb7767f780bd5fb57956778669426c535ebc0068a7a03882c7e75
+  languageName: node
+  linkType: hard
+
+"react-photoswipe-gallery@npm:^2.2.7":
+  version: 2.2.7
+  resolution: "react-photoswipe-gallery@npm:2.2.7"
+  peerDependencies:
+    photoswipe: ">= 5.2.2"
+    prop-types: ">= 15.7.0"
+    react: ">= 16.8.0"
+  checksum: fa14f923f3c663d961c1406918580dbfc968c474fdb6544c10f35b7baa0d7e3c5233001fbf6024519eceae5ff76723b0dc5de9057dba4e2cbf8bd9ebae8f8558
   languageName: node
   linkType: hard
 
