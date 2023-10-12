@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gallery renders correctly 1`] = `
+<div>
+  <div
+    data-testid="gallery"
+    style="display: flex; flex-wrap: wrap;"
+  />
+</div>
+`;
+
+exports[`Gallery renders the correct number of images 1`] = `
+<div>
+  <div
+    data-testid="gallery"
+    style="display: flex; flex-wrap: wrap;"
+  >
+    <div
+      aria-hidden="true"
+    >
+      <div
+        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+        data-gatsby-image-wrapper=""
+        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top; margin: 0.25rem; cursor: pointer;"
+      >
+        <div
+          style="max-width: 169px; display: block;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+            src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='169'%20width='169'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+            style="max-width: 100%; display: block; position: static;"
+          />
+        </div>
+        <img
+          alt=""
+          aria-hidden="true"
+          data-placeholder-image=""
+          decoding="async"
+          src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQFA//EABgBAAMBAQAAAAAAAAAAAAAAAAIDBAAB/9oADAMBAAIQAxAAAAHnXnUC/RcnW4tBpLQN/wD/xAAbEAACAgMBAAAAAAAAAAAAAAAAAgESAxETIv/aAAgBAQABBQJJ9QbOjKYWtB0YR2sp/8QAGREAAgMBAAAAAAAAAAAAAAAAAAIBEBIh/9oACAEDAQE/AUbTGSJ7X//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABoQAAICAwAAAAAAAAAAAAAAABAhAAMRMVH/2gAIAQEABj8CZVeZw7H/xAAcEAEAAgIDAQAAAAAAAAAAAAABACERMUFRcZH/2gAIAQEAAT8hHA05ZVhSVcAwRWU8dQZds+RQHZuoKbdz/9oADAMBAAIAAwAAABC0GH//xAAaEQACAgMAAAAAAAAAAAAAAAAAARARITFB/9oACAEDAQE/EG0PsHUyPZ//xAAXEQEAAwAAAAAAAAAAAAAAAAAAAREx/9oACAECAQE/EMWqEY//xAAeEAEAAgICAwEAAAAAAAAAAAABABEhMUFhEFFxof/aAAgBAQABPxCy+6A417+xYESnnxKeVBUavdG8RjoEO7muphhWoL3F2EDQX+Rcr5bZ/9k="
+          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+        />
+        <picture>
+          <source
+            data-srcset="/static/92311c9ddf3344f4032bed1374d2ba1d/544ae/blacksmith-step-07-01.webp 42w,/static/92311c9ddf3344f4032bed1374d2ba1d/8f0cc/blacksmith-step-07-01.webp 85w,/static/92311c9ddf3344f4032bed1374d2ba1d/17578/blacksmith-step-07-01.webp 169w,/static/92311c9ddf3344f4032bed1374d2ba1d/424c4/blacksmith-step-07-01.webp 338w"
+            sizes="(min-width: 169px) 169px, 100vw"
+            type="image/webp"
+          />
+          <img
+            alt="Gallery Image"
+            data-gatsby-image-ssr=""
+            data-main-image=""
+            data-src="/static/92311c9ddf3344f4032bed1374d2ba1d/b9c41/blacksmith-step-07-01.jpg"
+            data-srcset="/static/92311c9ddf3344f4032bed1374d2ba1d/fec1e/blacksmith-step-07-01.jpg 42w,/static/92311c9ddf3344f4032bed1374d2ba1d/ec058/blacksmith-step-07-01.jpg 85w,/static/92311c9ddf3344f4032bed1374d2ba1d/b9c41/blacksmith-step-07-01.jpg 169w,/static/92311c9ddf3344f4032bed1374d2ba1d/232c3/blacksmith-step-07-01.jpg 338w"
+            decoding="async"
+            loading="lazy"
+            sizes="(min-width: 169px) 169px, 100vw"
+            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+          />
+        </picture>
+        <noscript />
+        <script
+          type="module"
+        >
+          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+        </script>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+    >
+      <div
+        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+        data-gatsby-image-wrapper=""
+        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top; margin: 0.25rem; cursor: pointer;"
+      >
+        <div
+          style="max-width: 169px; display: block;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+            src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='169'%20width='169'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+            style="max-width: 100%; display: block; position: static;"
+          />
+        </div>
+        <img
+          alt=""
+          aria-hidden="true"
+          data-placeholder-image=""
+          decoding="async"
+          src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAQBAgMF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgED/9oADAMBAAIQAxAAAAGeiOgabPJIdbCXAi//xAAbEAEAAgIDAAAAAAAAAAAAAAABAAIDEQQSIv/aAAgBAQABBQIssHS8hGlRplfXRmN3Lmqk/8QAGREAAQUAAAAAAAAAAAAAAAAAAAECEBEh/9oACAEDAQE/AXLpc//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EAB4QAAEDBAMAAAAAAAAAAAAAAAABAhEQISIxQVFh/9oACAEBAAY/ArbLmLRXTohOqRwN9p//xAAcEAEAAgIDAQAAAAAAAAAAAAABABEhQTFRYbH/2gAIAQEAAT8hwhvQj9CtyiAhuXHjxPYRhV9zxYyvGBdrgA4n/9oADAMBAAIAAwAAABCY9wL/xAAYEQEAAwEAAAAAAAAAAAAAAAABABARQf/aAAgBAwEBPxBXRNzpX//EABkRAAIDAQAAAAAAAAAAAAAAAAARARAhUf/aAAgBAgEBPxBqUadr/8QAHBABAQADAAMBAAAAAAAAAAAAAREAITFBUXFh/9oACAEBAAE/ENYoNHrmqUg+E/MeahVWuTyGw7imUw020WX7hEgaxAnlT3MC+7dOwyAA/S5//9k="
+          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+        />
+        <picture>
+          <source
+            data-srcset="/static/07b2938c09192a3fcf2e66855a032344/544ae/blacksmith-step-07-02.webp 42w,/static/07b2938c09192a3fcf2e66855a032344/8f0cc/blacksmith-step-07-02.webp 85w,/static/07b2938c09192a3fcf2e66855a032344/17578/blacksmith-step-07-02.webp 169w,/static/07b2938c09192a3fcf2e66855a032344/424c4/blacksmith-step-07-02.webp 338w"
+            sizes="(min-width: 169px) 169px, 100vw"
+            type="image/webp"
+          />
+          <img
+            alt="Gallery Image"
+            data-gatsby-image-ssr=""
+            data-main-image=""
+            data-src="/static/07b2938c09192a3fcf2e66855a032344/b9c41/blacksmith-step-07-02.jpg"
+            data-srcset="/static/07b2938c09192a3fcf2e66855a032344/fec1e/blacksmith-step-07-02.jpg 42w,/static/07b2938c09192a3fcf2e66855a032344/ec058/blacksmith-step-07-02.jpg 85w,/static/07b2938c09192a3fcf2e66855a032344/b9c41/blacksmith-step-07-02.jpg 169w,/static/07b2938c09192a3fcf2e66855a032344/232c3/blacksmith-step-07-02.jpg 338w"
+            decoding="async"
+            loading="lazy"
+            sizes="(min-width: 169px) 169px, 100vw"
+            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+          />
+        </picture>
+        <noscript />
+        <script
+          type="module"
+        >
+          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+        </script>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+    >
+      <div
+        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+        data-gatsby-image-wrapper=""
+        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top; margin: 0.25rem; cursor: pointer;"
+      >
+        <div
+          style="max-width: 169px; display: block;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+            src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='169'%20width='169'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+            style="max-width: 100%; display: block; position: static;"
+          />
+        </div>
+        <img
+          alt=""
+          aria-hidden="true"
+          data-placeholder-image=""
+          decoding="async"
+          src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIEA//EABUBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAHJfLWLUspYewHIU//EABsQAAICAwEAAAAAAAAAAAAAAAECABEDEiEi/9oACAEBAAEFAl7NqidXB6YLZx8RFEstAdR//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECEBH/2gAIAQMBAT8Bc2a7/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAGRAAAgMBAAAAAAAAAAAAAAAAABEBECFB/9oACAEBAAY/AqYhYKpc8Ef/xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhMUGx/9oACAEBAAE/IQrJU23EHrYVz1PWIlqeK4xVU5f2ALO8juu6jCFn/9oADAMBAAIAAwAAABCvL73/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEx/9oACAEDAQE/EDOE6dkm/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPxAWX//EABsQAQADAQEBAQAAAAAAAAAAAAEAESExUUHB/9oACAEBAAE/EERui2CQY8+xx4ulry4Ag3BoKOyhJiw2vBr7teymMoFN8R+QMCLSPTxgwWEAqkDDkSeA6u9uf//Z"
+          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+        />
+        <picture>
+          <source
+            data-srcset="/static/d2ff3d1729470edaaec20f72a77e0df2/544ae/blacksmith-step-07-03.webp 42w,/static/d2ff3d1729470edaaec20f72a77e0df2/8f0cc/blacksmith-step-07-03.webp 85w,/static/d2ff3d1729470edaaec20f72a77e0df2/17578/blacksmith-step-07-03.webp 169w,/static/d2ff3d1729470edaaec20f72a77e0df2/424c4/blacksmith-step-07-03.webp 338w"
+            sizes="(min-width: 169px) 169px, 100vw"
+            type="image/webp"
+          />
+          <img
+            alt="Gallery Image"
+            data-gatsby-image-ssr=""
+            data-main-image=""
+            data-src="/static/d2ff3d1729470edaaec20f72a77e0df2/b9c41/blacksmith-step-07-03.jpg"
+            data-srcset="/static/d2ff3d1729470edaaec20f72a77e0df2/fec1e/blacksmith-step-07-03.jpg 42w,/static/d2ff3d1729470edaaec20f72a77e0df2/ec058/blacksmith-step-07-03.jpg 85w,/static/d2ff3d1729470edaaec20f72a77e0df2/b9c41/blacksmith-step-07-03.jpg 169w,/static/d2ff3d1729470edaaec20f72a77e0df2/232c3/blacksmith-step-07-03.jpg 338w"
+            decoding="async"
+            loading="lazy"
+            sizes="(min-width: 169px) 169px, 100vw"
+            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+          />
+        </picture>
+        <noscript />
+        <script
+          type="module"
+        >
+          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+        </script>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+    >
+      <div
+        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+        data-gatsby-image-wrapper=""
+        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top; margin: 0.25rem; cursor: pointer;"
+      >
+        <div
+          style="max-width: 169px; display: block;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+            src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='169'%20width='169'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+            style="max-width: 100%; display: block; position: static;"
+          />
+        </div>
+        <img
+          alt=""
+          aria-hidden="true"
+          data-placeholder-image=""
+          decoding="async"
+          src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQDBf/EABkBAAIDAQAAAAAAAAAAAAAAAAIDAAEEBf/aAAwDAQACEAMQAAABnpjqB9rJbuVQTJuB6H//xAAbEAEAAgIDAAAAAAAAAAAAAAABAAIQERITMf/aAAgBAQABBQIZVIM5HZSusDCV8//EABkRAAEFAAAAAAAAAAAAAAAAAAEAAhAREv/aAAgBAwEBPwEPsrM//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAGBAAAwEBAAAAAAAAAAAAAAAAARAxACH/2gAIAQEABj8C1QHHA//EABsQAAMBAAMBAAAAAAAAAAAAAAABESExUXGh/9oACAEBAAE/IZc56POJGzATZ1d00/bz0JkndO4XLdNVWf/aAAwDAQACAAMAAAAQbAdA/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAwEBPxCIs0R//8QAFxEAAwEAAAAAAAAAAAAAAAAAABARMf/aAAgBAgEBPxDCv//EABwQAQADAAMBAQAAAAAAAAAAAAEAESExQWFRgf/aAAgBAQABPxAuWhzwqeeAGAGOrHqlrNYRqqjfW0H5MZZiw32D9jWz1L2rFuf/2Q=="
+          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+        />
+        <picture>
+          <source
+            data-srcset="/static/9e33175edcd1a1a2cfa8e5142e8da5dc/544ae/blacksmith-step-07-04.webp 42w,/static/9e33175edcd1a1a2cfa8e5142e8da5dc/8f0cc/blacksmith-step-07-04.webp 85w,/static/9e33175edcd1a1a2cfa8e5142e8da5dc/17578/blacksmith-step-07-04.webp 169w,/static/9e33175edcd1a1a2cfa8e5142e8da5dc/424c4/blacksmith-step-07-04.webp 338w"
+            sizes="(min-width: 169px) 169px, 100vw"
+            type="image/webp"
+          />
+          <img
+            alt="Gallery Image"
+            data-gatsby-image-ssr=""
+            data-main-image=""
+            data-src="/static/9e33175edcd1a1a2cfa8e5142e8da5dc/b9c41/blacksmith-step-07-04.jpg"
+            data-srcset="/static/9e33175edcd1a1a2cfa8e5142e8da5dc/fec1e/blacksmith-step-07-04.jpg 42w,/static/9e33175edcd1a1a2cfa8e5142e8da5dc/ec058/blacksmith-step-07-04.jpg 85w,/static/9e33175edcd1a1a2cfa8e5142e8da5dc/b9c41/blacksmith-step-07-04.jpg 169w,/static/9e33175edcd1a1a2cfa8e5142e8da5dc/232c3/blacksmith-step-07-04.jpg 338w"
+            decoding="async"
+            loading="lazy"
+            sizes="(min-width: 169px) 169px, 100vw"
+            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+          />
+        </picture>
+        <noscript />
+        <script
+          type="module"
+        >
+          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+        </script>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+    >
+      <div
+        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+        data-gatsby-image-wrapper=""
+        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top; margin: 0.25rem; cursor: pointer;"
+      >
+        <div
+          style="max-width: 169px; display: block;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+            src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='169'%20width='169'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E"
+            style="max-width: 100%; display: block; position: static;"
+          />
+        </div>
+        <img
+          alt=""
+          aria-hidden="true"
+          data-placeholder-image=""
+          decoding="async"
+          src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAEDBAL/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAct+LdncKxT2JAs//8QAGxAAAgMBAQEAAAAAAAAAAAAAAQIAAxEiEiH/2gAIAQEAAQUCr6maPkrMrGhiuhBo5T00/8QAGREAAQUAAAAAAAAAAAAAAAAAAgABEBIh/9oACAEDAQE/ASfVYp//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAdEAACAgEFAAAAAAAAAAAAAAAAARExIQIQMlGR/9oACAEBAAY/AniY2seTU7krwaIXZyZ//8QAHBAAAgMAAwEAAAAAAAAAAAAAAREAITEQQVFh/9oACAEBAAE/IQTID+zsoXvkpgxD0q45PDdyUhMKo0dEQb0gcA//2gAMAwEAAgADAAAAEPTvff/EABoRAAICAwAAAAAAAAAAAAAAAAABEBEhQWH/2gAIAQMBAT8QasDsauP/xAAYEQACAwAAAAAAAAAAAAAAAAAAARARQf/aAAgBAgEBPxBIpGx//8QAIBABAAIDAAAHAAAAAAAAAAAAAQARITFRQWFxgZGhsf/aAAgBAQABPxA8DYD4YgbaVcThseR0UfOKQpBQUx2AnKHYlFN93A2ENAD9Qdl1XPvGawCeKWZ/Ccg9Gf/Z"
+          style="height: 100%; left: 0px; position: absolute; top: 0px; width: 100%;"
+        />
+        <picture>
+          <source
+            data-srcset="/static/95bf63e682fa82c55519b4788717ee7a/544ae/blacksmith-step-07-05.webp 42w,/static/95bf63e682fa82c55519b4788717ee7a/8f0cc/blacksmith-step-07-05.webp 85w,/static/95bf63e682fa82c55519b4788717ee7a/17578/blacksmith-step-07-05.webp 169w,/static/95bf63e682fa82c55519b4788717ee7a/424c4/blacksmith-step-07-05.webp 338w"
+            sizes="(min-width: 169px) 169px, 100vw"
+            type="image/webp"
+          />
+          <img
+            alt="Gallery Image"
+            data-gatsby-image-ssr=""
+            data-main-image=""
+            data-src="/static/95bf63e682fa82c55519b4788717ee7a/b9c41/blacksmith-step-07-05.jpg"
+            data-srcset="/static/95bf63e682fa82c55519b4788717ee7a/fec1e/blacksmith-step-07-05.jpg 42w,/static/95bf63e682fa82c55519b4788717ee7a/ec058/blacksmith-step-07-05.jpg 85w,/static/95bf63e682fa82c55519b4788717ee7a/b9c41/blacksmith-step-07-05.jpg 169w,/static/95bf63e682fa82c55519b4788717ee7a/232c3/blacksmith-step-07-05.jpg 338w"
+            decoding="async"
+            loading="lazy"
+            sizes="(min-width: 169px) 169px, 100vw"
+            style="height: 100%; left: 0px; position: absolute; top: 0px; transform: translateZ(0); transition: opacity 250ms linear; width: 100%; will-change: opacity; opacity: 0;"
+          />
+        </picture>
+        <noscript />
+        <script
+          type="module"
+        >
+          const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+`;

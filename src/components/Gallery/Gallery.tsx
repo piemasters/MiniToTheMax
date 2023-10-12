@@ -18,7 +18,7 @@ export interface GalleryProps {
  */
 export const Gallery: FC<GalleryProps> = ({ gallery }) => {
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap' }} data-testid="gallery">
       <Photoswipe options={{}}>
         {gallery.map((photo: GatsbyGalleryImage) => (
           <Item

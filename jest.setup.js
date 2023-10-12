@@ -1,4 +1,5 @@
-import '@testing-library/jest-dom/jest-globals';
+import '@testing-library/jest-dom';
+import '@testing-library/react';
 import { createSerializer } from '@emotion/jest';
 import * as emotion from '@emotion/react';
 
