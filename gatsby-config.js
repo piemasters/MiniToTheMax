@@ -37,7 +37,12 @@ module.exports = {
     'gatsby-plugin-typescript',
     `gatsby-plugin-transition-link`, // TODO: look at replacing
     'gatsby-plugin-sass', // TODO: look at replacing with tailwind
-    'gatsby-plugin-emotion', // TODO: look at replacing with tailwind
+    {
+      resolve: `gatsby-plugin-emotion`, // TODO: look at replacing with tailwind
+      options: {
+        sourceMap: false,
+      },
+    },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-robots-txt',
     {

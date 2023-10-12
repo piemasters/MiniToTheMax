@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Gallery from '@browniebroke/gatsby-image-gallery';
 import { DiscussionEmbed } from 'disqus-react';
 
 import Layout from '../layouts/layout';
@@ -9,6 +8,7 @@ import {
   PostTag,
   SimplePagination,
   StatefulSeo as Seo,
+  Gallery,
 } from '../components';
 
 export const Post = ({ pageContext, data, children }) => {
@@ -50,7 +50,6 @@ export const Post = ({ pageContext, data, children }) => {
     title: post.title,
     url: `${data.site.siteMetadata.siteUrl}/${post.slug}`,
   };
-
   return (
     <Layout>
       {post.featuredImage && (
@@ -81,15 +80,7 @@ export const Post = ({ pageContext, data, children }) => {
       {post.gallery.length > 0 && (
         <div>
           <h2>Gallery</h2>
-          <div
-            style={{
-              cursor: 'pointer',
-              overflow: 'hidden',
-              marginBottom: '2rem',
-            }}
-          >
-            <Gallery images={post.gallery} />
-          </div>
+          <Gallery gallery={post.gallery} />
         </div>
       )}
       <SimplePagination previous={pagination.previous} next={pagination.next} />
@@ -128,11 +119,11 @@ export const pageQuery = graphql`
           publicURL
           childImageSharp {
             thumb: gatsbyImageData(
-              width: 270
-              height: 270
+              width: 169
+              height: 169
               placeholder: BLURRED
             )
-            full: gatsbyImageData(layout: FULL_WIDTH)
+            full: gatsbyImageData(layout: CONSTRAINED)
           }
         }
       }

@@ -3,6 +3,7 @@ export * from './Badges';
 export * from './CoverCategory';
 export * from './CoverImage';
 export * from './Footer';
+export * from './Gallery';
 export * from './Header';
 export * from './PageLink';
 export * from './Pagination';
