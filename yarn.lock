@@ -8112,10 +8112,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.6.3":
-  version: 20.6.3
-  resolution: "@types/node@npm:20.6.3"
-  checksum: 444a6f1f41cfa8d3e20ce0108e6e43960fb2ae0e481f233bb1c14d6252aa63a92e021de561cd317d9fdb411688f871065f40175a1f18763282dee2613a08f8a3
+"@types/node@npm:20.8.5":
+  version: 20.8.5
+  resolution: "@types/node@npm:20.8.5"
+  dependencies:
+    undici-types: ~5.25.1
+  checksum: 4bca4e4f6307a6f5dc78812015eca9c5a998b35fcf3ba4058c9851d3dde2b22c914fa25a85b804eab5af2ab95375d15943dce8e9ba5e01d15f4bf516ca0d2816
   languageName: node
   linkType: hard
 
@@ -20729,7 +20731,7 @@ __metadata:
     "@types/jest": 29.5.5
     "@types/lodash": 4.14.199
     "@types/lodash.kebabcase": 4.1.7
-    "@types/node": 20.6.3
+    "@types/node": 20.8.5
     "@types/node-sass": 4.11.5
     "@types/react": 18.2.22
     "@types/react-dom": 18.2.7
@@ -26394,6 +26396,13 @@ __metadata:
   version: 0.1.2
   resolution: "unc-path-regex@npm:0.1.2"
   checksum: a05fa2006bf4606051c10fc7968f08ce7b28fa646befafa282813aeb1ac1a56f65cb1b577ca7851af2726198d59475bb49b11776036257b843eaacee2860a4ec
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~5.25.1":
+  version: 5.25.3
+  resolution: "undici-types@npm:5.25.3"
+  checksum: ec9d2cc36520cbd9fbe3b3b6c682a87fe5be214699e1f57d1e3d9a2cb5be422e62735f06e0067dc325fd3dd7404c697e4d479f9147dc8a804e049e29f357f2ff
   languageName: node
   linkType: hard
 
