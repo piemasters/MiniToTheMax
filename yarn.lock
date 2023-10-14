@@ -11688,14 +11688,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-gatsby@npm:^3.12.0":
-  version: 3.12.0
-  resolution: "create-gatsby@npm:3.12.0"
+"create-gatsby@npm:^3.12.1":
+  version: 3.12.1
+  resolution: "create-gatsby@npm:3.12.1"
   dependencies:
     "@babel/runtime": ^7.20.13
   bin:
     create-gatsby: cli.js
-  checksum: 97aa5c94a95f3c5e4411615fd82c1374fd6c4845b6b9d4d1f1a32bdc85c636014f5866f9fe27d434a0f706b6f14e9146c07e9f5022c978f0bf091069b37f1b43
+  checksum: b3da9e31470efedf1db7a6c913ec2819e28580316addd14ae6cb4e4c1899d04174ad43dbd3df5a39dd94f82e6aaca1ed2b08a52531b869bb8eb1492ec1c7a0a4
   languageName: node
   linkType: hard
 
@@ -15151,9 +15151,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-cli@npm:^5.12.1":
-  version: 5.12.1
-  resolution: "gatsby-cli@npm:5.12.1"
+"gatsby-cli@npm:^5.12.2":
+  version: 5.12.2
+  resolution: "gatsby-cli@npm:5.12.2"
   dependencies:
     "@babel/code-frame": ^7.18.6
     "@babel/core": ^7.20.12
@@ -15171,7 +15171,7 @@ __metadata:
     clipboardy: ^2.3.0
     common-tags: ^1.8.2
     convert-hrtime: ^3.0.0
-    create-gatsby: ^3.12.0
+    create-gatsby: ^3.12.1
     envinfo: ^7.10.0
     execa: ^5.1.1
     fs-exists-cached: ^1.0.0
@@ -15198,7 +15198,7 @@ __metadata:
     yurnalist: ^2.1.0
   bin:
     gatsby: cli.js
-  checksum: 0171035815a99f9d0006f96635edac530ff397d2d58ce622fda081bd045cca5513ab7227f2d309374aaea6859d7b6fd1f4040fbf9cbeb4bf43c26d32af2ccc49
+  checksum: f1d9abbe0228e34187f624a39119c9854a0ddec2882ce7fd258fd0734ed9cecb73ab1fd33c87f94432e0bb2fedfb6c7c73f5b0a5e358aa6dbced14f1df45bde3
   languageName: node
   linkType: hard
 
@@ -15226,10 +15226,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-graphiql-explorer@npm:^3.12.0":
-  version: 3.12.0
-  resolution: "gatsby-graphiql-explorer@npm:3.12.0"
-  checksum: 7fc71c8a493ebaf1a085db504706114db159f3fc04e02ff55d7ff0176265c0a6fa01af7ef5132ed404e26df764ea1ce1c8859b738198a10459cd5f3702abb9de
+"gatsby-graphiql-explorer@npm:^3.12.1":
+  version: 3.12.1
+  resolution: "gatsby-graphiql-explorer@npm:3.12.1"
+  checksum: 66ebc08680f87d0210df0e6fa75ba927c978caf246efd3adf905bf892795123014b549440af9f5f7c437be36d574d043130538a24770d37a62655999ade4b547
   languageName: node
   linkType: hard
 
@@ -15450,9 +15450,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-page-creator@npm:^5.12.0":
-  version: 5.12.0
-  resolution: "gatsby-plugin-page-creator@npm:5.12.0"
+"gatsby-plugin-page-creator@npm:^5.12.1":
+  version: 5.12.1
+  resolution: "gatsby-plugin-page-creator@npm:5.12.1"
   dependencies:
     "@babel/runtime": ^7.20.13
     "@babel/traverse": ^7.20.13
@@ -15462,13 +15462,13 @@ __metadata:
     fs-extra: ^11.1.1
     gatsby-core-utils: ^4.12.0
     gatsby-page-utils: ^3.12.0
-    gatsby-plugin-utils: ^4.12.0
+    gatsby-plugin-utils: ^4.12.1
     gatsby-telemetry: ^4.12.0
     globby: ^11.1.0
     lodash: ^4.17.21
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 4f89c4acd4607461796a5c84beadc70176a4186a03da6e85ef132a81cea62fd769071ba8bc8cbd711c3541af5457da198272e94e3216337d1555938010ead4cc
+  checksum: dbed9dd504ec6d03462552a14d72873037e971cd3f704a322db8e19711ea6c36041583c55d8a44d4f0f7c3401ffbb49f220e515c729c75d011871b88539023a0
   languageName: node
   linkType: hard
 
@@ -15756,9 +15756,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:5.12.4":
-  version: 5.12.4
-  resolution: "gatsby@npm:5.12.4"
+"gatsby@npm:5.12.6":
+  version: 5.12.6
+  resolution: "gatsby@npm:5.12.6"
   dependencies:
     "@babel/code-frame": ^7.18.6
     "@babel/core": ^7.20.12
@@ -15841,19 +15841,19 @@ __metadata:
     find-cache-dir: ^3.3.2
     fs-exists-cached: 1.0.0
     fs-extra: ^11.1.1
-    gatsby-cli: ^5.12.1
+    gatsby-cli: ^5.12.2
     gatsby-core-utils: ^4.12.0
-    gatsby-graphiql-explorer: ^3.12.0
+    gatsby-graphiql-explorer: ^3.12.1
     gatsby-legacy-polyfills: ^3.12.0
     gatsby-link: ^5.12.0
     gatsby-page-utils: ^3.12.0
     gatsby-parcel-config: 1.12.0
-    gatsby-plugin-page-creator: ^5.12.0
+    gatsby-plugin-page-creator: ^5.12.1
     gatsby-plugin-typescript: ^5.12.0
-    gatsby-plugin-utils: ^4.12.0
+    gatsby-plugin-utils: ^4.12.1
     gatsby-react-router-scroll: ^6.12.0
     gatsby-script: ^2.12.0
-    gatsby-sharp: ^1.12.0
+    gatsby-sharp: ^1.12.1
     gatsby-telemetry: ^4.12.0
     gatsby-worker: ^2.12.0
     glob: ^7.2.3
@@ -15935,7 +15935,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 7c4b27b6c1f4306854c85f62d7f9af4ee81ec98fa2a4063cd6bb1fc3cb8be7547277cf1fb06dc09c14ab3ccb247233bc42aa2a43a5848b89b8840445115d8407
+  checksum: 270b66c11dfa2d18a577df4456de384ec2d98649ecfb722a4321c39d1758e0939e14a8a2c009cec43a367a7f13d61c4a7f9d7950eb693613cae3693c3420b118
   languageName: node
   linkType: hard
 
@@ -20910,7 +20910,7 @@ __metadata:
     eslint-webpack-plugin: 4.0.1
     fork-ts-checker-webpack-plugin: 9.0.0
     fs-extra: ^11.1.1
-    gatsby: 5.12.4
+    gatsby: 5.12.6
     gatsby-plugin-catch-links: 5.12.0
     gatsby-plugin-emotion: 8.12.0
     gatsby-plugin-eslint: 4.0.4
