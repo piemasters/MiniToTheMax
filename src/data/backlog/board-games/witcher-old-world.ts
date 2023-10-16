@@ -8,7 +8,7 @@ export const witcherOldWorld = [
   { name: 'Ghoul Nest' },
   { name: 'Griffin' },
   { name: 'Harpy' },
-  { name: 'Leshen' },
+  { name: 'Leshen', link: '/showcase/witcher/leshen/' },
   { name: 'Nekkers Nest' },
   { name: 'Noonwraith' },
   { name: 'Striga' },
