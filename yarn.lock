@@ -15353,9 +15353,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-mdx@npm:5.12.1":
-  version: 5.12.1
-  resolution: "gatsby-plugin-mdx@npm:5.12.1"
+"gatsby-plugin-mdx@npm:5.12.2":
+  version: 5.12.2
+  resolution: "gatsby-plugin-mdx@npm:5.12.2"
   dependencies:
     "@mdx-js/mdx": ^2.3.0
     acorn: ^8.8.2
@@ -15365,7 +15365,7 @@ __metadata:
     estree-util-build-jsx: ^2.2.2
     fs-extra: ^11.1.1
     gatsby-core-utils: ^4.12.0
-    gatsby-plugin-utils: ^4.12.1
+    gatsby-plugin-utils: ^4.12.2
     gray-matter: ^4.0.3
     mdast-util-mdx: ^2.0.1
     mdast-util-to-hast: ^10.2.0
@@ -15382,7 +15382,7 @@ __metadata:
     gatsby-source-filesystem: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 1f1533bf07d9f791cc19d8ccc3b47071e6e3bf7c1ce206898c9002aa9837a1f167bf0cc22d6115ccf246269976558714aed8caa3947e4cd441ae421e1fa5b838
+  checksum: 550ee763fde016d94fb51bcfd7e7bd5791be17eaa3c72de28b54d6d9552a14b81c3b18c896d7ab6a234d122ba6cdd95d5a2ccad7c98569e742726357b77b18ab
   languageName: node
   linkType: hard
 
@@ -15554,6 +15554,26 @@ __metadata:
     gatsby: ^5.0.0-next
     graphql: ^16.0.0
   checksum: dccddc61929d23189bc6b29c168745bb65e08318a551a97127593746d1507f39aa84580eb0f025bbfda10d0d2f2358489a3181039eba4c68dcc3a68f6cf3595b
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-utils@npm:^4.12.2":
+  version: 4.12.2
+  resolution: "gatsby-plugin-utils@npm:4.12.2"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    fastq: ^1.15.0
+    fs-extra: ^11.1.1
+    gatsby-core-utils: ^4.12.0
+    gatsby-sharp: ^1.12.1
+    graphql-compose: ^9.0.10
+    import-from: ^4.0.0
+    joi: ^17.9.2
+    mime: ^3.0.0
+  peerDependencies:
+    gatsby: ^5.0.0-next
+    graphql: ^16.0.0
+  checksum: 8eb4a9d081898a04d9c920a65d263fbac38de0e571329de05e37610df8cc3a97ad90fc3da3158b72f57106120d3667a8fdf265bc806ab6a830b5b9e011369f31
   languageName: node
   linkType: hard
 
@@ -20843,7 +20863,7 @@ __metadata:
     gatsby-plugin-google-gtag: 5.12.1
     gatsby-plugin-image: 3.12.1
     gatsby-plugin-manifest: 5.12.1
-    gatsby-plugin-mdx: 5.12.1
+    gatsby-plugin-mdx: 5.12.2
     gatsby-plugin-offline: 6.12.1
     gatsby-plugin-react-svg: 3.3.0
     gatsby-plugin-robots-txt: 1.8.0
