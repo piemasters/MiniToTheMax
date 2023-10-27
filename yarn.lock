@@ -15181,6 +15181,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^4.12.1":
+  version: 4.12.1
+  resolution: "gatsby-core-utils@npm:4.12.1"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.15.0
+    file-type: ^16.5.4
+    fs-extra: ^11.1.1
+    got: ^11.8.6
+    hash-wasm: ^4.9.0
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 97caf27b9ab0f5fe249b45c7c039474b220a2cc2a004cf21883b311be35d1600f4c633e443af99ac2becd2efe75c91b7e38c2595f7147cf696971e9bcb20ce14
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^3.12.1":
   version: 3.12.1
   resolution: "gatsby-graphiql-explorer@npm:3.12.1"
@@ -15386,13 +15410,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:6.12.1":
-  version: 6.12.1
-  resolution: "gatsby-plugin-offline@npm:6.12.1"
+"gatsby-plugin-offline@npm:6.12.3":
+  version: 6.12.3
+  resolution: "gatsby-plugin-offline@npm:6.12.3"
   dependencies:
     "@babel/runtime": ^7.20.13
     cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^4.12.0
+    gatsby-core-utils: ^4.12.1
     glob: ^7.2.3
     idb-keyval: ^3.2.0
     lodash: ^4.17.21
@@ -15401,7 +15425,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 7933c25eed702a3f984ed475728f309869596ce55bbf6a1741eea00e2aaf52b41d51bad725cc28d4f339e993d8c9678a476b49f02d0021f93efa9a971520e271
+  checksum: 84beb29cc091eeeb48ab7f84a999d24fb2f2b74ed7cce056b5583981decfc894329db02bef761a5f560ed0ab2a1ecbf6538d13651c9dc46f80f7b2d9f060915d
   languageName: node
   linkType: hard
 
@@ -20844,7 +20868,7 @@ __metadata:
     gatsby-plugin-image: 3.12.1
     gatsby-plugin-manifest: 5.12.1
     gatsby-plugin-mdx: 5.12.1
-    gatsby-plugin-offline: 6.12.1
+    gatsby-plugin-offline: 6.12.3
     gatsby-plugin-react-svg: 3.3.0
     gatsby-plugin-robots-txt: 1.8.0
     gatsby-plugin-sass: 6.12.1
