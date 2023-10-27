@@ -10010,20 +10010,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:^5.12.0":
-  version: 5.12.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:5.12.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    "@babel/types": ^7.20.7
-    gatsby-core-utils: ^4.12.0
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^5.0.0-next
-  checksum: 6094d76d238229fe2916989e51dae197b3a454178f1f8099c03778a86b6d17a5d2f204f47ec86a573d47397432a87ae4e64af09790e2a2a34a5654ae3158cac2
-  languageName: node
-  linkType: hard
-
 "babel-plugin-root-import@npm:^6.5.0":
   version: 6.6.0
   resolution: "babel-plugin-root-import@npm:6.6.0"
@@ -15520,9 +15506,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sitemap@npm:6.12.1":
-  version: 6.12.1
-  resolution: "gatsby-plugin-sitemap@npm:6.12.1"
+"gatsby-plugin-sitemap@npm:6.12.3":
+  version: 6.12.3
+  resolution: "gatsby-plugin-sitemap@npm:6.12.3"
   dependencies:
     "@babel/runtime": ^7.20.13
     common-tags: ^1.8.2
@@ -15532,7 +15518,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: f2b1c235c195011774209e50a1e496960c496167e918ac42bdaa7f34fecaa1039c0d37616f249a5004544b9cba579e64299c04a8ca6b3037d508b57a7763788c
+  checksum: 4c226d1cff3516e3608414450366fe50f16160e20b840329d7e20e2c0e2eca8bb4a8419fa2328962cfc4503d3ebb09f6a40854b9e3659ddce307b8f53465140b
   languageName: node
   linkType: hard
 
@@ -15568,26 +15554,6 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
   checksum: d6e7d80375622b138e592a571ca040807eb4c730fecbd5dfb03d52e2d64a7fb2a4bfb0f3e63121f1c043a6dcab34dabe6149d044697bbfefbcf9dec50c1cbac0
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-utils@npm:^4.12.1":
-  version: 4.12.1
-  resolution: "gatsby-plugin-utils@npm:4.12.1"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    fastq: ^1.15.0
-    fs-extra: ^11.1.1
-    gatsby-core-utils: ^4.12.0
-    gatsby-sharp: ^1.12.1
-    graphql-compose: ^9.0.10
-    import-from: ^4.0.0
-    joi: ^17.9.2
-    mime: ^3.0.0
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    graphql: ^16.0.0
-  checksum: dccddc61929d23189bc6b29c168745bb65e08318a551a97127593746d1507f39aa84580eb0f025bbfda10d0d2f2358489a3181039eba4c68dcc3a68f6cf3595b
   languageName: node
   linkType: hard
 
@@ -20903,7 +20869,7 @@ __metadata:
     gatsby-plugin-robots-txt: 1.8.0
     gatsby-plugin-sass: 6.12.3
     gatsby-plugin-sharp: 5.12.3
-    gatsby-plugin-sitemap: 6.12.1
+    gatsby-plugin-sitemap: 6.12.3
     gatsby-plugin-transition-link: 1.20.5
     gatsby-plugin-typescript: 5.12.1
     gatsby-remark-images: 7.12.3
