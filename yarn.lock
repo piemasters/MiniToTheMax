@@ -15181,6 +15181,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^4.12.1":
+  version: 4.12.1
+  resolution: "gatsby-core-utils@npm:4.12.1"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.15.0
+    file-type: ^16.5.4
+    fs-extra: ^11.1.1
+    got: ^11.8.6
+    hash-wasm: ^4.9.0
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 97caf27b9ab0f5fe249b45c7c039474b220a2cc2a004cf21883b311be35d1600f4c633e443af99ac2becd2efe75c91b7e38c2595f7147cf696971e9bcb20ce14
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^3.12.1":
   version: 3.12.1
   resolution: "gatsby-graphiql-explorer@npm:3.12.1"
@@ -15571,14 +15595,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:7.12.1":
-  version: 7.12.1
-  resolution: "gatsby-remark-images@npm:7.12.1"
+"gatsby-remark-images@npm:7.12.3":
+  version: 7.12.3
+  resolution: "gatsby-remark-images@npm:7.12.3"
   dependencies:
     "@babel/runtime": ^7.20.13
     chalk: ^4.1.2
     cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^4.12.0
+    gatsby-core-utils: ^4.12.1
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
     mdast-util-definitions: ^4.0.0
@@ -15588,7 +15612,7 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
     gatsby-plugin-sharp: ^5.0.0-next
-  checksum: 0dcb0537f6c3b87a8a41208e1c6961be4b513046235a96ffdd878638344570f341a48ec6464ae40c985ed2b200f4b2fffd9b46cb2f2c6e482eca6be113777fb2
+  checksum: f17d3433b831887042eddf2dfc283dca839ec382874fabc1542ff0e56f9437a7944230959ecd912eb2e57aaf70d6297873c639b1815b73e66369f1a5a356d764
   languageName: node
   linkType: hard
 
@@ -20852,7 +20876,7 @@ __metadata:
     gatsby-plugin-sitemap: 6.12.1
     gatsby-plugin-transition-link: 1.20.5
     gatsby-plugin-typescript: 5.12.0
-    gatsby-remark-images: 7.12.1
+    gatsby-remark-images: 7.12.3
     gatsby-source-filesystem: 5.12.0
     gatsby-transformer-sharp: 5.12.1
     glob: ^10.3.10
