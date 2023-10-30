@@ -14789,14 +14789,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fork-ts-checker-webpack-plugin@npm:9.0.0":
-  version: 9.0.0
-  resolution: "fork-ts-checker-webpack-plugin@npm:9.0.0"
+"fork-ts-checker-webpack-plugin@npm:9.0.2":
+  version: 9.0.2
+  resolution: "fork-ts-checker-webpack-plugin@npm:9.0.2"
   dependencies:
     "@babel/code-frame": ^7.16.7
     chalk: ^4.1.2
     chokidar: ^3.5.3
-    cosmiconfig: ^7.0.1
+    cosmiconfig: ^8.2.0
     deepmerge: ^4.2.2
     fs-extra: ^10.0.0
     memfs: ^3.4.1
@@ -14808,7 +14808,7 @@ __metadata:
   peerDependencies:
     typescript: ">3.6.0"
     webpack: ^5.11.0
-  checksum: 268494ac57dfd766f775397f53fb63966331218933d899a23a135755d35ea21cc526ae70284cdac1602d587ffb2168bccc9adf06e7c905a5320d421bd6b1c477
+  checksum: 136a87bfa36cb6ca27d2ae0feb3c6cabe0de734c1c1ed38f95b71ddb3eb4b6c461829a2dbb04f18f0f717fc6341f544327598255758c269cec9774ccee035afc
   languageName: node
   linkType: hard
 
@@ -20816,7 +20816,7 @@ __metadata:
     eslint-plugin-react: 7.33.2
     eslint-plugin-storybook: 0.6.15
     eslint-webpack-plugin: 4.0.1
-    fork-ts-checker-webpack-plugin: 9.0.0
+    fork-ts-checker-webpack-plugin: 9.0.2
     fs-extra: ^11.1.1
     gatsby: 5.12.9
     gatsby-plugin-catch-links: 5.12.0
