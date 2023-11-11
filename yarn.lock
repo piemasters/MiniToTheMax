@@ -8539,12 +8539,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-sass@npm:4.11.6":
-  version: 4.11.6
-  resolution: "@types/node-sass@npm:4.11.6"
+"@types/node-sass@npm:4.11.7":
+  version: 4.11.7
+  resolution: "@types/node-sass@npm:4.11.7"
   dependencies:
     "@types/node": "*"
-  checksum: d3d7f5a8ea909998bdc340ed774e16e58ed394c82ff4d75661584a4ca4cb586d820ec09cf91921c7cbb029835f728195a4368db38b5043d03e5937bbc10c6e2e
+  checksum: ca4fb378c29c2f61be153692b68ab8b4146618554717a9a74eedb6f41228abdc70896aca181739a9a3d424c0d63739a74ad9da0f19da1679c13ac38f756f6970
   languageName: node
   linkType: hard
 
@@ -21563,7 +21563,7 @@ __metadata:
     "@types/lodash": 4.14.201
     "@types/lodash.kebabcase": 4.1.9
     "@types/node": 20.9.0
-    "@types/node-sass": 4.11.6
+    "@types/node-sass": 4.11.7
     "@types/react": 18.2.37
     "@types/react-dom": 18.2.15
     "@types/react-test-renderer": 18.0.5
