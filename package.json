@@ -120,6 +120,6 @@
     "start-server-and-test": "2.0.2",
     "storybook": "7.5.3",
     "ts-loader": "9.5.0",
-    "typescript": "5.2.2"
+    "typescript": "5.3.2"
   }
 }
