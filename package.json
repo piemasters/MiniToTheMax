@@ -49,7 +49,7 @@
     "gatsby-transformer-sharp": "5.12.3",
     "gsap": "3.12.4",
     "lodash.kebabcase": "4.1.1",
-    "photoswipe": "^5.4.2",
+    "photoswipe": "^5.4.3",
     "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
