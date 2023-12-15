@@ -21925,7 +21925,7 @@ __metadata:
     react: 18.2.0
     react-docgen-typescript-loader: 3.7.2
     react-dom: 18.2.0
-    react-photoswipe-gallery: ^2.2.7
+    react-photoswipe-gallery: ^3.0.0
     react-test-renderer: 18.2.0
     sharp: ^0.33.0
     start-server-and-test: 2.0.3
@@ -24456,14 +24456,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-photoswipe-gallery@npm:^2.2.7":
-  version: 2.2.7
-  resolution: "react-photoswipe-gallery@npm:2.2.7"
+"react-photoswipe-gallery@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "react-photoswipe-gallery@npm:3.0.0"
   peerDependencies:
     photoswipe: ">= 5.2.2"
     prop-types: ">= 15.7.0"
     react: ">= 16.8.0"
-  checksum: fa14f923f3c663d961c1406918580dbfc968c474fdb6544c10f35b7baa0d7e3c5233001fbf6024519eceae5ff76723b0dc5de9057dba4e2cbf8bd9ebae8f8558
+  checksum: 3927cd2882ed18814ecae01798cbe7dfd581bf0ad52f226c448bafa140227f49281d576bd30fe59af02f94d968dbe5d9f5d4fe31ce3f1f698aacca78d26169e7
   languageName: node
   linkType: hard
 
