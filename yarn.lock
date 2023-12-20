@@ -6799,29 +6799,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-jest@npm:7.5.3":
-  version: 7.5.3
-  resolution: "@storybook/addon-jest@npm:7.5.3"
+"@storybook/addon-jest@npm:7.6.6":
+  version: 7.6.6
+  resolution: "@storybook/addon-jest@npm:7.6.6"
   dependencies:
-    "@storybook/client-logger": 7.5.3
-    "@storybook/components": 7.5.3
-    "@storybook/core-events": 7.5.3
     "@storybook/global": ^5.0.0
-    "@storybook/manager-api": 7.5.3
-    "@storybook/preview-api": 7.5.3
-    "@storybook/theming": 7.5.3
-    react-resize-detector: ^7.1.2
     tiny-invariant: ^1.3.1
+    ts-dedent: ^2.0.0
     upath: ^2.0.1
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 853fed793425b183e19aa4efb5d9bf62fe65973444a3d7a28f01dcdc9807b087bd70c1d95bd68946e0549b4f4124df1dea9302d236404c36871b8aa57bb2f8d7
+  checksum: 59f42ef12b1b15d92725c6a76d10a34c689866d453cfe30222a8ae8f74bf6667984f26e801863686a7f5dd4c45af8c273d30da432f755aea08c2e9f984f93ee9
   languageName: node
   linkType: hard
 
@@ -21870,7 +21856,7 @@ __metadata:
     "@reach/router": 1.3.4
     "@storybook/addon-a11y": 7.5.3
     "@storybook/addon-essentials": 7.5.3
-    "@storybook/addon-jest": 7.5.3
+    "@storybook/addon-jest": 7.6.6
     "@storybook/addon-links": 7.5.3
     "@storybook/addon-mdx-gfm": 7.5.3
     "@storybook/addon-styling": ^1.3.7
