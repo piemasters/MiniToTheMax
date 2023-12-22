@@ -4,7 +4,7 @@ export const witcherOldWorld = [
   { name: 'Barghest', link: '/showcase/witcher/barghest/' },
   { name: 'Bruxa', link: '/showcase/witcher/bruxa/' },
   { name: 'Fiend', link: '/showcase/witcher/fiend/' },
-  { name: 'Foglet' },
+  { name: 'Foglet', link: '/showcase/witcher/foglet/' },
   { name: 'Ghoul Nest' },
   { name: 'Griffin', link: '/showcase/witcher/griffin/' },
   { name: 'Harpy', link: '/showcase/witcher/harpy/' },
