@@ -25,7 +25,7 @@
     "preoptimize": "node ./src/scripts/optimize.js"
   },
   "dependencies": {
-    "@emotion/react": "11.11.1",
+    "@emotion/react": "11.11.3",
     "@mdx-js/react": "^3.0.0",
     "@reach/router": "1.3.4",
     "disqus-react": "1.1.5",
