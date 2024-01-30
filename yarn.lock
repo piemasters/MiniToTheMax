@@ -15998,15 +15998,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-catch-links@npm:5.13.0":
-  version: 5.13.0
-  resolution: "gatsby-plugin-catch-links@npm:5.13.0"
+"gatsby-plugin-catch-links@npm:5.13.1":
+  version: 5.13.1
+  resolution: "gatsby-plugin-catch-links@npm:5.13.1"
   dependencies:
     "@babel/runtime": ^7.20.13
     escape-string-regexp: ^1.0.5
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 082fd60f68422ec0b109354208d22ac4e93f0ee6f0654f7ff6f8dd821c7d2b90731d2000d5986d5a0ff681624e1310ccd35ff7428a94fd66c4abbc1cee6a7b05
+  checksum: d8df7e46eeee47907295def18f369a2772af5eb150bddbaec5194f72e59e52f022ed6e15506fbe99dc582642140608f248ff4b9bc3816305fdc700f3cfd3c2c0
   languageName: node
   linkType: hard
 
@@ -21684,7 +21684,7 @@ __metadata:
     fork-ts-checker-webpack-plugin: 9.0.2
     fs-extra: ^11.2.0
     gatsby: 5.13.1
-    gatsby-plugin-catch-links: 5.13.0
+    gatsby-plugin-catch-links: 5.13.1
     gatsby-plugin-emotion: 8.13.0
     gatsby-plugin-eslint: 4.0.4
     gatsby-plugin-google-gtag: 5.13.0
