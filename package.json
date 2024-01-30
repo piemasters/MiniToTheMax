@@ -47,7 +47,7 @@
     "gatsby-remark-images": "7.13.0",
     "gatsby-source-filesystem": "5.13.0",
     "gatsby-transformer-sharp": "5.13.0",
-    "gsap": "3.12.4",
+    "gsap": "3.12.5",
     "lodash.kebabcase": "4.1.1",
     "photoswipe": "^5.4.3",
     "prop-types": "15.8.1",
