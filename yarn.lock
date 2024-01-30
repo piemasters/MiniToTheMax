@@ -10678,6 +10678,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-remove-graphql-queries@npm:^5.13.1":
+  version: 5.13.1
+  resolution: "babel-plugin-remove-graphql-queries@npm:5.13.1"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    "@babel/types": ^7.20.7
+    gatsby-core-utils: ^4.13.1
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    gatsby: ^5.0.0-next
+  checksum: 778a13ea256f58e7e80364b27ea871d9412871a8ae4260c2eea9382065b12ae5f3ae13c35539196de95e33ae47b5ec8393c3240085d99ca81dfd2b07cf415b87
+  languageName: node
+  linkType: hard
+
 "babel-plugin-root-import@npm:^6.5.0":
   version: 6.6.0
   resolution: "babel-plugin-root-import@npm:6.6.0"
@@ -15936,6 +15950,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^4.13.1":
+  version: 4.13.1
+  resolution: "gatsby-core-utils@npm:4.13.1"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.15.0
+    file-type: ^16.5.4
+    fs-extra: ^11.1.1
+    got: ^11.8.6
+    hash-wasm: ^4.9.0
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 18024206ae31a89ec0533b2d31c1d12f0f1cea09451e73daa49276bd1f1d84b47dc94602d97bc4d37fa203ffd66de33afaeffbe7ccc96569c8ef42251ddb1151
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^3.13.0":
   version: 3.13.0
   resolution: "gatsby-graphiql-explorer@npm:3.13.0"
@@ -16275,7 +16313,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-typescript@npm:5.13.0, gatsby-plugin-typescript@npm:^5.13.0":
+"gatsby-plugin-typescript@npm:5.13.1":
+  version: 5.13.1
+  resolution: "gatsby-plugin-typescript@npm:5.13.1"
+  dependencies:
+    "@babel/core": ^7.20.12
+    "@babel/plugin-proposal-nullish-coalescing-operator": ^7.18.6
+    "@babel/plugin-proposal-numeric-separator": ^7.18.6
+    "@babel/plugin-proposal-optional-chaining": ^7.20.7
+    "@babel/preset-typescript": ^7.18.6
+    "@babel/runtime": ^7.20.13
+    babel-plugin-remove-graphql-queries: ^5.13.1
+  peerDependencies:
+    gatsby: ^5.0.0-next
+  checksum: ce7089389a1f7fb6ff58f16ed8f57c209a99d81fabdde95ea95a911290b07f782f1ea9ba8fa873108442d63a587d9e75239664e582ce25cac5dd8b54d04e75ab
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-typescript@npm:^5.13.0":
   version: 5.13.0
   resolution: "gatsby-plugin-typescript@npm:5.13.0"
   dependencies:
@@ -21706,7 +21761,7 @@ __metadata:
     gatsby-plugin-sharp: 5.13.0
     gatsby-plugin-sitemap: 6.13.0
     gatsby-plugin-transition-link: 1.20.5
-    gatsby-plugin-typescript: 5.13.0
+    gatsby-plugin-typescript: 5.13.1
     gatsby-remark-images: 7.13.0
     gatsby-source-filesystem: 5.13.0
     gatsby-transformer-sharp: 5.13.0
