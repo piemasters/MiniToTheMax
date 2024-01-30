@@ -10786,7 +10786,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:5.13.1":
+"babel-plugin-remove-graphql-queries@npm:5.13.1, babel-plugin-remove-graphql-queries@npm:^5.13.1":
   version: 5.13.1
   resolution: "babel-plugin-remove-graphql-queries@npm:5.13.1"
   dependencies:
@@ -10811,20 +10811,6 @@ __metadata:
     "@babel/core": ^7.0.0
     gatsby: ^5.0.0-next
   checksum: e6fa18c3a4109b59bc5be04599f00dc1c17adc0cbde7e89089b6557f794625103c8b6a17c47bff5161123969553f21e3aa65b99bf2e2e1616983d21cf816c26f
-  languageName: node
-  linkType: hard
-
-"babel-plugin-remove-graphql-queries@npm:^5.13.1":
-  version: 5.13.1
-  resolution: "babel-plugin-remove-graphql-queries@npm:5.13.1"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    "@babel/types": ^7.20.7
-    gatsby-core-utils: ^4.13.1
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^5.0.0-next
-  checksum: 778a13ea256f58e7e80364b27ea871d9412871a8ae4260c2eea9382065b12ae5f3ae13c35539196de95e33ae47b5ec8393c3240085d99ca81dfd2b07cf415b87
   languageName: node
   linkType: hard
 
@@ -16181,9 +16167,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-emotion@npm:8.13.0":
-  version: 8.13.0
-  resolution: "gatsby-plugin-emotion@npm:8.13.0"
+"gatsby-plugin-emotion@npm:8.13.1":
+  version: 8.13.1
+  resolution: "gatsby-plugin-emotion@npm:8.13.1"
   dependencies:
     "@babel/runtime": ^7.20.13
     "@emotion/babel-preset-css-prop": ^11.11.0
@@ -16191,7 +16177,7 @@ __metadata:
     "@babel/core": ^7.11.6
     "@emotion/react": ^11.0.0
     gatsby: ^5.0.0-next
-  checksum: e3e7cd20090b436c29408f2273becf5fcc6a606665bb7a69bb8d90313e62e323aa5811b461c32c348d78df82f73fcd4c6a1bff7a4955edc8b365dda253829e68
+  checksum: d7117c934858c642ff20466f3385c3f0de52956bfd26511284523cf03c72061a84c630cadd6a9dada9bd3f4515ab36e1881c659c4dc8fa4f1a3e32dbc786cd4b
   languageName: node
   linkType: hard
 
@@ -21902,7 +21888,7 @@ __metadata:
     fs-extra: ^11.2.0
     gatsby: 5.13.1
     gatsby-plugin-catch-links: 5.13.1
-    gatsby-plugin-emotion: 8.13.0
+    gatsby-plugin-emotion: 8.13.1
     gatsby-plugin-eslint: 4.0.4
     gatsby-plugin-google-gtag: 5.13.1
     gatsby-plugin-image: 3.13.0
