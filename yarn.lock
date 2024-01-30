@@ -16404,9 +16404,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sitemap@npm:6.13.0":
-  version: 6.13.0
-  resolution: "gatsby-plugin-sitemap@npm:6.13.0"
+"gatsby-plugin-sitemap@npm:6.13.1":
+  version: 6.13.1
+  resolution: "gatsby-plugin-sitemap@npm:6.13.1"
   dependencies:
     "@babel/runtime": ^7.20.13
     common-tags: ^1.8.2
@@ -16416,7 +16416,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 65eb82436de737f0a61f35e8a3ec7e2973e24742a91e27edc04ba7cf6c2b483796f64a14a6258fcf990fc7eb6f4837ec60060a2efaeb2a53deb87d1bf619f4ff
+  checksum: 5c86e64ce4ff150e207d5aef6e7050320f69f0c345339796082a89301fec460bf8cdb36df86243f655bddf5188d7185437fabdb39f7a8171e6f7161c51e32487
   languageName: node
   linkType: hard
 
@@ -21913,7 +21913,7 @@ __metadata:
     gatsby-plugin-robots-txt: 1.8.0
     gatsby-plugin-sass: 6.13.1
     gatsby-plugin-sharp: 5.13.0
-    gatsby-plugin-sitemap: 6.13.0
+    gatsby-plugin-sitemap: 6.13.1
     gatsby-plugin-transition-link: 1.20.5
     gatsby-plugin-typescript: 5.13.1
     gatsby-remark-images: 7.13.0
