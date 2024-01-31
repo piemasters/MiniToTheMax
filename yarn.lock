@@ -16193,9 +16193,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-emotion@npm:8.13.0":
-  version: 8.13.0
-  resolution: "gatsby-plugin-emotion@npm:8.13.0"
+"gatsby-plugin-emotion@npm:8.13.1":
+  version: 8.13.1
+  resolution: "gatsby-plugin-emotion@npm:8.13.1"
   dependencies:
     "@babel/runtime": ^7.20.13
     "@emotion/babel-preset-css-prop": ^11.11.0
@@ -16203,7 +16203,7 @@ __metadata:
     "@babel/core": ^7.11.6
     "@emotion/react": ^11.0.0
     gatsby: ^5.0.0-next
-  checksum: e3e7cd20090b436c29408f2273becf5fcc6a606665bb7a69bb8d90313e62e323aa5811b461c32c348d78df82f73fcd4c6a1bff7a4955edc8b365dda253829e68
+  checksum: d7117c934858c642ff20466f3385c3f0de52956bfd26511284523cf03c72061a84c630cadd6a9dada9bd3f4515ab36e1881c659c4dc8fa4f1a3e32dbc786cd4b
   languageName: node
   linkType: hard
 
@@ -21914,7 +21914,7 @@ __metadata:
     fs-extra: ^11.2.0
     gatsby: 5.13.1
     gatsby-plugin-catch-links: 5.13.1
-    gatsby-plugin-emotion: 8.13.0
+    gatsby-plugin-emotion: 8.13.1
     gatsby-plugin-eslint: 4.0.4
     gatsby-plugin-google-gtag: 5.13.1
     gatsby-plugin-image: 3.13.1
