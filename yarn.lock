@@ -12735,9 +12735,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:13.6.3":
-  version: 13.6.3
-  resolution: "cypress@npm:13.6.3"
+"cypress@npm:13.6.4":
+  version: 13.6.4
+  resolution: "cypress@npm:13.6.4"
   dependencies:
     "@cypress/request": ^3.0.0
     "@cypress/xvfb": ^1.2.4
@@ -12783,7 +12783,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: 1c8a23f56cf26b3273379046240f3c0739fb6ca5f297c84ffa13c3911475ff77d107a3bca3790b854dc2d2b24a892fd522c5724cbf0d9eded9f3de45f5b9846b
+  checksum: 39daef291ccd18d7d724d7f8c1f5a2ed2b3d24c5c1eab1e00642c5db232fcc4dbd3fd30db3a2dce4e8b737d510355d135eb43034d800198d2867ecde4cdd696a
   languageName: node
   linkType: hard
 
@@ -15985,30 +15985,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-core-utils@npm:^4.13.0":
-  version: 4.13.0
-  resolution: "gatsby-core-utils@npm:4.13.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    ci-info: 2.0.0
-    configstore: ^5.0.1
-    fastq: ^1.15.0
-    file-type: ^16.5.4
-    fs-extra: ^11.1.1
-    got: ^11.8.6
-    hash-wasm: ^4.9.0
-    import-from: ^4.0.0
-    lmdb: 2.5.3
-    lock: ^1.1.0
-    node-object-hash: ^2.3.10
-    proper-lockfile: ^4.1.2
-    resolve-from: ^5.0.0
-    tmp: ^0.2.1
-    xdg-basedir: ^4.0.0
-  checksum: 066aaac3d3acb52c7b6bee52d6b9b2ca3ef3c2f52b5a8b2bebfc1b9ef52286008f7b200c02da9df25beeb4c92c9861252f3330e5d68d3de7e02bf7c09cebf144
-  languageName: node
-  linkType: hard
-
 "gatsby-core-utils@npm:^4.13.1":
   version: 4.13.1
   resolution: "gatsby-core-utils@npm:4.13.1"
@@ -16386,26 +16362,6 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
   checksum: ce7089389a1f7fb6ff58f16ed8f57c209a99d81fabdde95ea95a911290b07f782f1ea9ba8fa873108442d63a587d9e75239664e582ce25cac5dd8b54d04e75ab
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-utils@npm:^4.13.0":
-  version: 4.13.0
-  resolution: "gatsby-plugin-utils@npm:4.13.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    fastq: ^1.15.0
-    fs-extra: ^11.1.1
-    gatsby-core-utils: ^4.13.0
-    gatsby-sharp: ^1.13.0
-    graphql-compose: ^9.0.10
-    import-from: ^4.0.0
-    joi: ^17.9.2
-    mime: ^3.0.0
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    graphql: ^16.0.0
-  checksum: fc10f6e2db1a7a275c35663099856830ff0e14ea97a64ef4e46864890fc49b1422e9f062f64faf76e791bc8ae57b2d6d972ec0db10813351ea78ea08220e2e74
   languageName: node
   linkType: hard
 
@@ -21800,7 +21756,7 @@ __metadata:
     babel-preset-gatsby: 3.13.1
     babel-preset-react-app: 10.0.1
     csstype: 3.1.3
-    cypress: 13.6.3
+    cypress: 13.6.4
     cypress-axe: 1.5.0
     disqus-react: 1.1.5
     dotenv: 16.4.1
