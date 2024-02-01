@@ -8899,14 +8899,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.48":
-  version: 18.2.48
-  resolution: "@types/react@npm:18.2.48"
+"@types/react@npm:18.2.51":
+  version: 18.2.51
+  resolution: "@types/react@npm:18.2.51"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: c9ca43ed2995389b7e09492c24e6f911a8439bb8276dd17cc66a2fbebbf0b42daf7b2ad177043256533607c2ca644d7d928fdfce37a67af1f8646d2bac988900
+  checksum: 1ab49e51e6314cefb9a162e9ac3a15a0474c82a0737f12f3a9628ccba555ab6645d2449152e7a5fc3ff650a7139a4718715af2c5ae9bc46b0533e98036706f84
   languageName: node
   linkType: hard
 
@@ -15985,30 +15985,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-core-utils@npm:^4.13.0":
-  version: 4.13.0
-  resolution: "gatsby-core-utils@npm:4.13.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    ci-info: 2.0.0
-    configstore: ^5.0.1
-    fastq: ^1.15.0
-    file-type: ^16.5.4
-    fs-extra: ^11.1.1
-    got: ^11.8.6
-    hash-wasm: ^4.9.0
-    import-from: ^4.0.0
-    lmdb: 2.5.3
-    lock: ^1.1.0
-    node-object-hash: ^2.3.10
-    proper-lockfile: ^4.1.2
-    resolve-from: ^5.0.0
-    tmp: ^0.2.1
-    xdg-basedir: ^4.0.0
-  checksum: 066aaac3d3acb52c7b6bee52d6b9b2ca3ef3c2f52b5a8b2bebfc1b9ef52286008f7b200c02da9df25beeb4c92c9861252f3330e5d68d3de7e02bf7c09cebf144
-  languageName: node
-  linkType: hard
-
 "gatsby-core-utils@npm:^4.13.1":
   version: 4.13.1
   resolution: "gatsby-core-utils@npm:4.13.1"
@@ -16386,26 +16362,6 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
   checksum: ce7089389a1f7fb6ff58f16ed8f57c209a99d81fabdde95ea95a911290b07f782f1ea9ba8fa873108442d63a587d9e75239664e582ce25cac5dd8b54d04e75ab
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-utils@npm:^4.13.0":
-  version: 4.13.0
-  resolution: "gatsby-plugin-utils@npm:4.13.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    fastq: ^1.15.0
-    fs-extra: ^11.1.1
-    gatsby-core-utils: ^4.13.0
-    gatsby-sharp: ^1.13.0
-    graphql-compose: ^9.0.10
-    import-from: ^4.0.0
-    joi: ^17.9.2
-    mime: ^3.0.0
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    graphql: ^16.0.0
-  checksum: fc10f6e2db1a7a275c35663099856830ff0e14ea97a64ef4e46864890fc49b1422e9f062f64faf76e791bc8ae57b2d6d972ec0db10813351ea78ea08220e2e74
   languageName: node
   linkType: hard
 
@@ -21788,7 +21744,7 @@ __metadata:
     "@types/lodash.kebabcase": 4.1.9
     "@types/node": 20.11.10
     "@types/node-sass": 4.11.7
-    "@types/react": 18.2.48
+    "@types/react": 18.2.51
     "@types/react-dom": 18.2.18
     "@types/react-test-renderer": 18.0.7
     "@typescript-eslint/eslint-plugin": 6.20.0
