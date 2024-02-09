@@ -8248,9 +8248,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:6.4.0":
-  version: 6.4.0
-  resolution: "@testing-library/jest-dom@npm:6.4.0"
+"@testing-library/jest-dom@npm:6.4.2":
+  version: 6.4.2
+  resolution: "@testing-library/jest-dom@npm:6.4.2"
   dependencies:
     "@adobe/css-tools": ^4.3.2
     "@babel/runtime": ^7.9.2
@@ -8277,7 +8277,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: e1c314cf1c74f26b1dea632fd1e2168afb62ef8b0320e294fa0dbfa58356021dcefe453d6165c102c5105dfca7502b18109cbcb061cbcb91b97826f59a1bbf9d
+  checksum: 631aeadbf4e738080ae095242cf1a29a0b4ee2f09c8bdd0d3f00a923707da64c1617e088ba9a961d098481afabdc1d19149fb7ef98edf15132348eb222f345ae
   languageName: node
   linkType: hard
 
@@ -21904,7 +21904,7 @@ __metadata:
     "@storybook/react-webpack5": ^7.6.10
     "@svgr/webpack": 8.1.0
     "@testing-library/cypress": 10.0.1
-    "@testing-library/jest-dom": 6.4.0
+    "@testing-library/jest-dom": 6.4.2
     "@testing-library/react": 14.2.1
     "@types/jest": 29.5.11
     "@types/lodash": 4.14.202
