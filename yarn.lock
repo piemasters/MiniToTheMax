@@ -6826,14 +6826,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-mdx-gfm@npm:^7.6.10":
-  version: 7.6.10
-  resolution: "@storybook/addon-mdx-gfm@npm:7.6.10"
+"@storybook/addon-mdx-gfm@npm:^7.6.13":
+  version: 7.6.13
+  resolution: "@storybook/addon-mdx-gfm@npm:7.6.13"
   dependencies:
-    "@storybook/node-logger": 7.6.10
+    "@storybook/node-logger": 7.6.13
     remark-gfm: ^3.0.1
     ts-dedent: ^2.0.0
-  checksum: 1f4e9356c16371a1da2f772cae09f467c626feee10f92359fc1ebfb3efc3323732948374b2009b1ddc6c8cf3b6134d7851a2d726cf038d70fdb5199f9a1513cb
+  checksum: 40b5bebff13c0d079736393acc53e3b4fbe96532832c9b63d9b373811fa0331d78036c26645ac69af6e4e6d64f959c9ffcc029200cf2d9ac43ee2f9d455c7071
   languageName: node
   linkType: hard
 
@@ -21915,7 +21915,7 @@ __metadata:
     "@storybook/addon-essentials": ^7.6.13
     "@storybook/addon-jest": ^7.6.10
     "@storybook/addon-links": ^7.6.13
-    "@storybook/addon-mdx-gfm": ^7.6.10
+    "@storybook/addon-mdx-gfm": ^7.6.13
     "@storybook/addon-styling": ^1.3.7
     "@storybook/react": ^7.6.13
     "@storybook/react-webpack5": ^7.6.10
