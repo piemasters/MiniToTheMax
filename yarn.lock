@@ -6801,9 +6801,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:^7.6.13":
-  version: 7.6.13
-  resolution: "@storybook/addon-links@npm:7.6.13"
+"@storybook/addon-links@npm:^7.6.14":
+  version: 7.6.14
+  resolution: "@storybook/addon-links@npm:7.6.14"
   dependencies:
     "@storybook/csf": ^0.1.2
     "@storybook/global": ^5.0.0
@@ -6813,7 +6813,7 @@ __metadata:
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: 8f15704c7052afb9366339971163461ea5e9ddcd23e24b9ce936867e51d4dda47afd0115e8c97fee6030eef8410e50d73d990f400dd5f95a7df03fd25b18f75a
+  checksum: d86ab703ae61a58c8bcb21f7688ba5adb4ff43de382c222d446df5964ec340b421fffaf2519be5b21959bbe1d8ab41ac5bee5095ac48392fa010cd922bae758a
   languageName: node
   linkType: hard
 
@@ -7502,13 +7502,6 @@ __metadata:
     npmlog: ^5.0.1
     pretty-hrtime: ^1.0.3
   checksum: 93ca73db32d0d3acf81c27c0509a20957f0481a7e11fe1f46afc74a68aea9282ee99a29069e712ecf4a470df25ad829928cf51700e155d43a198748da46009dd
-  languageName: node
-  linkType: hard
-
-"@storybook/node-logger@npm:7.6.10":
-  version: 7.6.10
-  resolution: "@storybook/node-logger@npm:7.6.10"
-  checksum: 775851222b59da95d72d4ed9158445c28f361836fb6693309d8128ba67f2b025087c824f3de30d4ea73e94c7e635be29226837e187e78cc038fd4ebc23ebef46
   languageName: node
   linkType: hard
 
@@ -21737,7 +21730,7 @@ __metadata:
     "@storybook/addon-a11y": ^7.6.13
     "@storybook/addon-essentials": ^7.6.13
     "@storybook/addon-jest": ^7.6.13
-    "@storybook/addon-links": ^7.6.13
+    "@storybook/addon-links": ^7.6.14
     "@storybook/addon-mdx-gfm": ^7.6.13
     "@storybook/addon-styling": ^1.3.7
     "@storybook/react": ^7.6.13
