@@ -6817,14 +6817,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-mdx-gfm@npm:^7.6.13":
-  version: 7.6.13
-  resolution: "@storybook/addon-mdx-gfm@npm:7.6.13"
+"@storybook/addon-mdx-gfm@npm:^7.6.14":
+  version: 7.6.14
+  resolution: "@storybook/addon-mdx-gfm@npm:7.6.14"
   dependencies:
-    "@storybook/node-logger": 7.6.13
+    "@storybook/node-logger": 7.6.14
     remark-gfm: ^3.0.1
     ts-dedent: ^2.0.0
-  checksum: 40b5bebff13c0d079736393acc53e3b4fbe96532832c9b63d9b373811fa0331d78036c26645ac69af6e4e6d64f959c9ffcc029200cf2d9ac43ee2f9d455c7071
+  checksum: 7254c699ece1a0c6c27d7ac8a35099be31fdc651f94b8c303f643f4b212d677d801232b093579b3e551a63a350a85e28530846de8b12f9c280b7a361025d6a1a
   languageName: node
   linkType: hard
 
@@ -7505,17 +7505,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/node-logger@npm:7.6.10":
-  version: 7.6.10
-  resolution: "@storybook/node-logger@npm:7.6.10"
-  checksum: 775851222b59da95d72d4ed9158445c28f361836fb6693309d8128ba67f2b025087c824f3de30d4ea73e94c7e635be29226837e187e78cc038fd4ebc23ebef46
-  languageName: node
-  linkType: hard
-
 "@storybook/node-logger@npm:7.6.13":
   version: 7.6.13
   resolution: "@storybook/node-logger@npm:7.6.13"
   checksum: 27d45899ddabd078e693dc90be8d63f5506f7a97004fbf810af14dac1fbfa30a697b11b76e9c05d5440f4aa0da9ea93dedc9f1167d910c5f28e13a53306c8caa
+  languageName: node
+  linkType: hard
+
+"@storybook/node-logger@npm:7.6.14":
+  version: 7.6.14
+  resolution: "@storybook/node-logger@npm:7.6.14"
+  checksum: 906292eb33622f9f97d55e6d9c67450aa77c605749ab6d63ec0f8781e49beb06433ea07a24f87c105949badd40ee818ee8ed317d8b2dbc02e2d97f27ca7d2b79
   languageName: node
   linkType: hard
 
@@ -21738,7 +21738,7 @@ __metadata:
     "@storybook/addon-essentials": ^7.6.13
     "@storybook/addon-jest": ^7.6.13
     "@storybook/addon-links": ^7.6.13
-    "@storybook/addon-mdx-gfm": ^7.6.13
+    "@storybook/addon-mdx-gfm": ^7.6.14
     "@storybook/addon-styling": ^1.3.7
     "@storybook/react": ^7.6.13
     "@storybook/react-webpack5": ^7.6.13
