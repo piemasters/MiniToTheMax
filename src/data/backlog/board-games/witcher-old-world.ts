@@ -11,7 +11,7 @@ export const witcherOldWorld = [
   { name: 'Leshen', link: '/showcase/witcher/leshen/' },
   { name: 'Nekkers Nest', link: '/showcase/witcher/nekker/' },
   { name: 'Noonwraith', link: '/showcase/witcher/noonwraith/' },
-  { name: 'Striga' },
+  { name: 'Striga', link: '/showcase/witcher/striga/' },
   { name: 'Werewolf', link: '/showcase/witcher/werewolf/' },
   { name: 'Witchers' },
   { name: 'Wyvern', link: '/showcase/witcher/wyvern/' },
