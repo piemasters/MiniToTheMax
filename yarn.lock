@@ -6679,13 +6679,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:^7.6.13":
-  version: 7.6.13
-  resolution: "@storybook/addon-a11y@npm:7.6.13"
+"@storybook/addon-a11y@npm:^7.6.14":
+  version: 7.6.14
+  resolution: "@storybook/addon-a11y@npm:7.6.14"
   dependencies:
-    "@storybook/addon-highlight": 7.6.13
+    "@storybook/addon-highlight": 7.6.14
     axe-core: ^4.2.0
-  checksum: e6fa76e6449711004038ac3d8d08f37651ffb382a7da17251a66bddbf1096cf607a006fc15a8c3ff4dc2659cdeb4e7ad40dd21f9aa005bd6a21f28bd944f00c4
+  checksum: 118156af9c3834af257f419a7895877438057c4f59610adcb47194ef7fec6734b4d927556b56b4ee67174f6ec30fb90cd3c7bf17fe2d5b713ac119d6d05ddd3f
   languageName: node
   linkType: hard
 
@@ -6786,6 +6786,15 @@ __metadata:
   dependencies:
     "@storybook/global": ^5.0.0
   checksum: 6d391a62c7a2774ff01ef1c7571a6019dba01ac78a5a4899777f249e3d30c38728424955d07f4d653c11193745db639c2a15d78af2f40a0d478950e3d6fdd63b
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-highlight@npm:7.6.14":
+  version: 7.6.14
+  resolution: "@storybook/addon-highlight@npm:7.6.14"
+  dependencies:
+    "@storybook/global": ^5.0.0
+  checksum: 8f2fbaf45270242034a5533d1badae40f8f8054f9ba511a7a362270849456130196e856f442247e163e6c2a68c0a3e3a9f9fd67f4e8059dc25e02b73fa3112fb
   languageName: node
   linkType: hard
 
@@ -7502,13 +7511,6 @@ __metadata:
     npmlog: ^5.0.1
     pretty-hrtime: ^1.0.3
   checksum: 93ca73db32d0d3acf81c27c0509a20957f0481a7e11fe1f46afc74a68aea9282ee99a29069e712ecf4a470df25ad829928cf51700e155d43a198748da46009dd
-  languageName: node
-  linkType: hard
-
-"@storybook/node-logger@npm:7.6.10":
-  version: 7.6.10
-  resolution: "@storybook/node-logger@npm:7.6.10"
-  checksum: 775851222b59da95d72d4ed9158445c28f361836fb6693309d8128ba67f2b025087c824f3de30d4ea73e94c7e635be29226837e187e78cc038fd4ebc23ebef46
   languageName: node
   linkType: hard
 
@@ -21734,7 +21736,7 @@ __metadata:
     "@emotion/react": 11.11.3
     "@mdx-js/react": ^3.0.0
     "@reach/router": 1.3.4
-    "@storybook/addon-a11y": ^7.6.13
+    "@storybook/addon-a11y": ^7.6.14
     "@storybook/addon-essentials": ^7.6.13
     "@storybook/addon-jest": ^7.6.13
     "@storybook/addon-links": ^7.6.13
