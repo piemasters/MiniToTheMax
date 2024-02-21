@@ -6801,9 +6801,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:^7.6.16":
-  version: 7.6.16
-  resolution: "@storybook/addon-links@npm:7.6.16"
+"@storybook/addon-links@npm:^7.6.17":
+  version: 7.6.17
+  resolution: "@storybook/addon-links@npm:7.6.17"
   dependencies:
     "@storybook/csf": ^0.1.2
     "@storybook/global": ^5.0.0
@@ -6813,7 +6813,7 @@ __metadata:
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: 32fd74088bb6fb3187e46b268d01879a99aa3d9f2150197fbd4b218d33fb13e0f02ea028fcfe823b26e363969c8884f1168ddce04d7fdbbd421f3991eed2867e
+  checksum: 7738870c04e65213140bca680158fde866351d09ac8bd7415423a1ad29054aecb21ff7971fa13a945a44d969c8d5b5e27599ecad8dbe22aa95f23ed59be33945
   languageName: node
   linkType: hard
 
@@ -21730,7 +21730,7 @@ __metadata:
     "@storybook/addon-a11y": ^7.6.16
     "@storybook/addon-essentials": ^7.6.16
     "@storybook/addon-jest": ^7.6.16
-    "@storybook/addon-links": ^7.6.16
+    "@storybook/addon-links": ^7.6.17
     "@storybook/addon-mdx-gfm": ^7.6.16
     "@storybook/addon-styling": ^1.3.7
     "@storybook/react": ^7.6.16
