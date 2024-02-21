@@ -6789,15 +6789,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-jest@npm:^7.6.16":
-  version: 7.6.16
-  resolution: "@storybook/addon-jest@npm:7.6.16"
+"@storybook/addon-jest@npm:^7.6.17":
+  version: 7.6.17
+  resolution: "@storybook/addon-jest@npm:7.6.17"
   dependencies:
     "@storybook/global": ^5.0.0
     tiny-invariant: ^1.3.1
     ts-dedent: ^2.0.0
     upath: ^2.0.1
-  checksum: 6b888703b41e534b1faa0149c3109608331c6a33470050663eff81330ba59c9be2f7bc88d5d377e96fa65d47ce316baa49b8fbd9e236cd12ccb5a11794bd155c
+  checksum: 53ee051ece9bb94a18613461e6931d8d66f008095954e828781bead1acbd1bc260627db9321edccbd8378ff6014d6a7040cd023ce64219b946d2d7af14688f10
   languageName: node
   linkType: hard
 
@@ -21729,7 +21729,7 @@ __metadata:
     "@reach/router": 1.3.4
     "@storybook/addon-a11y": ^7.6.16
     "@storybook/addon-essentials": ^7.6.16
-    "@storybook/addon-jest": ^7.6.16
+    "@storybook/addon-jest": ^7.6.17
     "@storybook/addon-links": ^7.6.16
     "@storybook/addon-mdx-gfm": ^7.6.16
     "@storybook/addon-styling": ^1.3.7
