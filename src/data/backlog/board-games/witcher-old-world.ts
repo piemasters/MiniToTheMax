@@ -36,7 +36,10 @@ export const witcherOldWorldKickstarterExclusive = [
 export const witcherOldWorldWildHunt = [
   { name: 'Caranthir' },
   { name: 'Eredin' },
-  { name: 'Hounds of the Wild Hunt' },
+  {
+    name: 'Hounds of the Wild Hunt',
+    link: '/showcase/witcher/hounds-of-the-wild-hunt/',
+  },
   { name: 'Imlerith' },
   { name: 'Mounted Eredin' },
   { name: 'Nithral' },
