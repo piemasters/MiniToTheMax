@@ -13,6 +13,7 @@ export const kruleboyz = [
   },
   {
     name: 'Gutrippaz',
+    link: '/showcase/kruleboyz/gutrippaz/',
   },
   {
     name: 'Gutrippaz II',
