@@ -17,6 +17,7 @@ export const kruleboyz = [
   },
   {
     name: 'Gutrippaz II',
+    link: '/showcase/kruleboyz/gutrippaz-2/',
   },
   {
     name: 'Haggok Gutrippa Boss',
