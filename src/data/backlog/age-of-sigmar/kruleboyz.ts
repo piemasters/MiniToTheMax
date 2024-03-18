@@ -46,6 +46,7 @@ export const kruleboyz = [
   },
   {
     name: 'Murknob with Belcha-banna',
+    link: '/showcase/kruleboyz/murknob-with-belcha-banna/',
   },
   {
     name: 'Swampboss Skumdrekk',
