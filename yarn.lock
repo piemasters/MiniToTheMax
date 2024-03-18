@@ -6679,13 +6679,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:^7.6.16":
-  version: 7.6.16
-  resolution: "@storybook/addon-a11y@npm:7.6.16"
+"@storybook/addon-a11y@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "@storybook/addon-a11y@npm:8.0.0"
   dependencies:
-    "@storybook/addon-highlight": 7.6.16
+    "@storybook/addon-highlight": 8.0.0
     axe-core: ^4.2.0
-  checksum: 407b827a579116d4e17856be1faa84a2cf4ebc59fb8b33341fc12f48d7142b636d67727deb705c7e0ad729ead8ffb3a1f2892b6634582515e3f57790f260df39
+  checksum: 36ae0890c6b757d7e2976d34e0bcbb6018dce23ddaa28ed184cbba825f530beb53df72e38cb2ac970b7eb2ce2340babe6fea10d850213ec7cadd3ab1fb61f459
   languageName: node
   linkType: hard
 
@@ -6786,6 +6786,15 @@ __metadata:
   dependencies:
     "@storybook/global": ^5.0.0
   checksum: d5493f260b0b90e8d75c6327adc2fb77905f7938b37fb051d6046511a4145b5291b102369d3a687da4543603e4aed2353951d25c7c77e272c5faa1c901e17b7d
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-highlight@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@storybook/addon-highlight@npm:8.0.0"
+  dependencies:
+    "@storybook/global": ^5.0.0
+  checksum: ea0fcf9cb44f66a3b8981f1bab7ce62b91295a8560af39ace3e560da82972067e4952b7403cf85915a254c06ed02dff2c6d1f9bac7e6ecf275ee755bede70e67
   languageName: node
   linkType: hard
 
@@ -21677,7 +21686,7 @@ __metadata:
     "@emotion/react": 11.11.4
     "@mdx-js/react": ^3.0.1
     "@reach/router": 1.3.4
-    "@storybook/addon-a11y": ^7.6.16
+    "@storybook/addon-a11y": ^8.0.0
     "@storybook/addon-essentials": ^7.6.16
     "@storybook/addon-jest": ^7.6.16
     "@storybook/addon-links": ^7.6.16
