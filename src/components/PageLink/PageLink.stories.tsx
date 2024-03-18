@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { css } from '@emotion/react';
 
 import { PageLink } from './PageLink';
 
@@ -69,18 +68,18 @@ const meta: Meta<typeof PageLink> = {
     linkStyle: {
       name: 'linkStyle',
       description: 'The styling to apply to the link and its contents',
-      defaultValue: css`
-        color: #000000;
-      `,
+      // defaultValue: css`
+      //   color: #000000;
+      // `,
       control: { type: 'object' },
     },
     linkActiveStyle: {
       name: 'linkActiveStyle',
       description:
         'The styling to apply to the link and its contents when active',
-      defaultValue: css`
-        color: #000000;
-      `,
+      // defaultValue: css`
+      //   color: #000000;
+      // `,
       control: { type: 'object' },
     },
   },
@@ -100,11 +99,11 @@ export const Primary: Story = {
     top: 'exit',
     direction: 'up',
     children: 'Test',
-    linkStyle: css`
-      color: #000000;
-    `,
-    linkActiveStyle: css`
-      color: #000000;
-    `,
+    // linkStyle: css`
+    //   color: #000000;
+    // `,
+    // linkActiveStyle: css`
+    //   color: #000000;
+    // `,
   },
 };

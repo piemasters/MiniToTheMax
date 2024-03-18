@@ -3,19 +3,16 @@
 exports[`PostSummary renders correctly 1`] = `
 <div>
   <div
-    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+    class="my-4"
     data-testid="post-summary"
   >
     <a
-      bg="#eb1d23"
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-      data-testid="page-link-cover"
-      direction="up"
-      duration="1"
-      href="slug"
+      class="block no-underline bg-gray-200 duration-300 hover:shadow-3xl"
+      data-testid="page-link"
+      href="/slug"
     >
       <div
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="relative"
         data-testid="cover-image"
       >
         <div
@@ -41,7 +38,6 @@ exports[`PostSummary renders correctly 1`] = `
           />
           <img
             alt="Demo Post Title"
-            css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
             data-gatsby-image-ssr=""
             data-main-image=""
             data-src="cover.jpeg"
@@ -57,24 +53,22 @@ exports[`PostSummary renders correctly 1`] = `
           </script>
         </div>
         <h2
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="px-4 py-1 absolute right-4 text-lg bg-black/70 text-gray-200 bottom-0"
         >
           Demo Post Title
         </h2>
       </div>
       <div
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="p-4 text-gray-600"
       >
         <p
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="text-xs font-bold mb-2"
         >
-          <strong>
-            11/01/2019
-          </strong>
+          11/01/2019
         </p>
         <hr />
         <p
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="italic m-0 text-xs/loose text-gray-600"
         >
           A test sentence
         </p>

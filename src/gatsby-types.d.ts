@@ -1743,6 +1743,7 @@ type Query_siteArgs = {
   host: InputMaybe<StringQueryOperatorInput>;
   id: InputMaybe<StringQueryOperatorInput>;
   internal: InputMaybe<InternalFilterInput>;
+  jsxImportSource: InputMaybe<StringQueryOperatorInput>;
   jsxRuntime: InputMaybe<StringQueryOperatorInput>;
   parent: InputMaybe<NodeFilterInput>;
   pathPrefix: InputMaybe<StringQueryOperatorInput>;
@@ -1815,6 +1816,7 @@ type Site = Node & {
   readonly host: Maybe<Scalars['String']>;
   readonly id: Scalars['ID'];
   readonly internal: Internal;
+  readonly jsxImportSource: Maybe<Scalars['String']>;
   readonly jsxRuntime: Maybe<Scalars['String']>;
   readonly parent: Maybe<Node>;
   readonly pathPrefix: Maybe<Scalars['String']>;
@@ -2010,6 +2012,7 @@ type SiteFieldSelector = {
   readonly host: InputMaybe<FieldSelectorEnum>;
   readonly id: InputMaybe<FieldSelectorEnum>;
   readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly jsxImportSource: InputMaybe<FieldSelectorEnum>;
   readonly jsxRuntime: InputMaybe<FieldSelectorEnum>;
   readonly parent: InputMaybe<NodeFieldSelector>;
   readonly pathPrefix: InputMaybe<FieldSelectorEnum>;
@@ -2026,6 +2029,7 @@ type SiteFilterInput = {
   readonly host: InputMaybe<StringQueryOperatorInput>;
   readonly id: InputMaybe<StringQueryOperatorInput>;
   readonly internal: InputMaybe<InternalFilterInput>;
+  readonly jsxImportSource: InputMaybe<StringQueryOperatorInput>;
   readonly jsxRuntime: InputMaybe<StringQueryOperatorInput>;
   readonly parent: InputMaybe<NodeFilterInput>;
   readonly pathPrefix: InputMaybe<StringQueryOperatorInput>;
@@ -2573,6 +2577,7 @@ type SiteSortInput = {
   readonly host: InputMaybe<SortOrderEnum>;
   readonly id: InputMaybe<SortOrderEnum>;
   readonly internal: InputMaybe<InternalSortInput>;
+  readonly jsxImportSource: InputMaybe<SortOrderEnum>;
   readonly jsxRuntime: InputMaybe<SortOrderEnum>;
   readonly parent: InputMaybe<NodeSortInput>;
   readonly pathPrefix: InputMaybe<SortOrderEnum>;

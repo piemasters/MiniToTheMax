@@ -1,17 +1,10 @@
-import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from '@emotion/react';
+import { getByTestId, render } from '@testing-library/react';
 
 import { PostTag } from './PostTag';
-import { appTheme } from '../../styles/theme';
-import { renderWithTransitionProvider } from '../../util';
 
 describe('PostTag', () => {
   test('renders correctly', () => {
-    const { container } = renderWithTransitionProvider(
-      <ThemeProvider theme={appTheme}>
-        <PostTag name={'Tag'} type={'tag'} />
-      </ThemeProvider>
-    );
+    const { container } = render(<PostTag name={'Tag'} type={'tag'} />);
 
     expect(getByTestId(container as HTMLElement, 'post-tag')).toHaveTextContent(
       'Tag'

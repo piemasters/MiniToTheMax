@@ -3,30 +3,27 @@
 exports[`SimplePagination renders correctly 1`] = `
 <div>
   <div
-    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+    class="flex flex-wrap justify-between list-none p-0 no-underline"
     data-testid="simple-pagination"
   >
     <div
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+      class="flex-1 py-8 pr-8"
     >
       <a
-        bg="#eb1d23"
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-        data-testid="page-link-cover"
-        direction="left"
-        duration="1"
-        href="next"
+        class="text-blue-500 visited:text-blue-500 hover:text-blue-700 no-underline"
+        data-testid="page-link"
+        href="/next"
       >
         <div
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="flex text-right"
         >
           <div
-            css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+            class="pr-2"
           >
             ← 
           </div>
           <div
-            css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+            class="flex-1"
           >
             The Next Page
           </div>
@@ -34,26 +31,23 @@ exports[`SimplePagination renders correctly 1`] = `
       </a>
     </div>
     <div
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+      class="flex-1 py-8 pl-8"
     >
       <a
-        bg="#eb1d23"
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-        data-testid="page-link-cover"
-        direction="right"
-        duration="1"
-        href="previous"
+        class="text-blue-500 visited:text-blue-500 hover:text-blue-700 no-underline"
+        data-testid="page-link"
+        href="/previous"
       >
         <div
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="flex"
         >
           <div
-            css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+            class="flex-1"
           >
             The Previous Page
           </div>
           <div
-            css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+            class="pl-2"
           >
             →
           </div>

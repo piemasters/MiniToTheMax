@@ -1,7 +1,4 @@
-import type { FC } from 'react';
-import { css, useTheme } from '@emotion/react';
-
-import { Theme } from '../styles/theme';
+import React, { FC } from 'react';
 
 export interface VideoProps {
   src: string;
@@ -16,17 +13,8 @@ export const Video: FC<VideoProps> = ({
   width = 714,
   aspectRatio = 16 / 9,
 }) => {
-  const theme = useTheme() as Theme;
-
-  const videoStyle = css`
-    iframe {
-      &:hover {
-        box-shadow: 6px 6px 60px 5px ${theme.colors.backgroundTransparent};
-      }
-    }
-  `;
   return (
-    <div css={videoStyle} data-testid="video">
+    <div className="hover:shadow-3xl" data-testid="video">
       <iframe
         src={src}
         title={title}

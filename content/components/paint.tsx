@@ -26,7 +26,7 @@ const Paint = ({
     : paintMatches[0];
 
   return (
-    <div style={{ display: 'inline-block', marginBottom: '12px' }}>
+    <div className="inline-block mb-3">
       <BasePaint paint={paint} />
     </div>
   );

@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import React, { FC } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
 import { Seo as PureSeo } from '../../Seo';

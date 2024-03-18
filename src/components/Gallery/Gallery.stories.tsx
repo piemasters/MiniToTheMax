@@ -8,8 +8,6 @@ const meta: Meta<typeof Gallery> = {
     gallery: {
       name: 'gallery',
       description: 'Gallery of images',
-      // defaultValue: [],
-      // control: { type: 'text' },
     },
   },
 };
@@ -20,15 +18,7 @@ type Story = StoryObj<typeof Gallery>;
 export const Primary: Story = {
   decorators: [
     (Story) => (
-      <div
-        style={{
-          flexGrow: '1',
-          margin: '0 auto',
-          maxWidth: '750px',
-          padding: ' 0 1rem',
-          width: ' 100%',
-        }}
-      >
+      <div className="flex-grow mx-auto max-w-3xl px-4 w-full">
         <div>
           <h2>Gallery</h2>
           <Story />

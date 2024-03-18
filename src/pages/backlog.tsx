@@ -16,7 +16,7 @@ export const BacklogPage: FC = () => {
     for (const [index, value] of entries.entries()) {
       if (value.link) {
         domList.push(
-          <li key={index} style={{ listStyleType: 'none' }}>
+          <li key={index} className="list-none">
             <label>
               <input
                 type="checkbox"
@@ -33,7 +33,7 @@ export const BacklogPage: FC = () => {
         );
       } else {
         domList.push(
-          <li key={index} style={{ listStyleType: 'none' }}>
+          <li key={index} className="list-none">
             <label>
               <input
                 type="checkbox"

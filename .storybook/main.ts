@@ -1,23 +1,25 @@
 // @ts-nocheck
 import type { StorybookConfig } from '@storybook/react-webpack5';
-import path from 'path';
 
 const config: StorybookConfig = {
   framework: {
     name: '@storybook/react-webpack5',
     options: {},
   },
-  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
-  // stories: ['../src/**/*.stories.@(tsx)'],
+  stories: ['../src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],
   staticDirs: ['../public', '../content/assets'],
   addons: [
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
     '@storybook/addon-jest',
     '@storybook/addon-links',
-    '@storybook/addon-styling',
     '@storybook/addon-mdx-gfm',
-    path.resolve('./.storybook/addon-gatsby.js'),
+    '@storybook/addon-webpack5-compiler-babel',
+    '@storybook/addon-styling-webpack',
+    {
+      name: '@storybook/addon-postcss',
+      options: { postcssLoaderOptions: { implementation: require('postcss') } },
+    },
   ],
   docs: {
     autodocs: true,
@@ -25,17 +27,15 @@ const config: StorybookConfig = {
   babel: (options) => ({
     ...options,
     presets: [
-      [
-        '@babel/preset-env',
-        {
-          targets: {
-            chrome: 100,
-          },
-        },
-      ],
+      '@babel/preset-env',
       '@babel/preset-typescript',
-      '@babel/preset-react',
-      '@emotion/babel-preset-css-prop',
+      [
+        '@babel/preset-react',
+        {
+          runtime: 'automatic',
+        },
+        'preset-react-jsx-transform',
+      ],
     ],
     plugins: ['babel-plugin-remove-graphql-queries'],
   }),

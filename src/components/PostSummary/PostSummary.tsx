@@ -1,10 +1,8 @@
-import type { FC } from 'react';
-import { css, useTheme } from '@emotion/react';
+import React, { FC } from 'react';
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
 import { CoverImage } from '../CoverImage';
 import { PageLink } from '../PageLink';
-import { Theme } from '../../styles/theme';
 
 export interface PostSummaryProps {
   slug: string;
@@ -23,49 +21,19 @@ export const PostSummary: FC<PostSummaryProps> = ({
   excerpt,
   tall,
 }) => {
-  const theme = useTheme() as Theme;
-
-  const postStyle = css`
-    margin: 1rem 0;
-  `;
-
-  const postParagraphStyle = css`
-    color: ${theme.colors.textSecondary};
-    font-size: 0.8rem;
-    font-style: italic;
-    margin: 0;
-  `;
-
-  const postLinkStyle = css`
-    background-color: ${theme.colors.lightgrey};
-    display: block;
-    text-decoration: none;
-    transition: 0.3s;
-    &:hover {
-      background-color: ${theme.colors.lightgreyHover};
-      box-shadow: 6px 6px 60px 5px ${theme.colors.backgroundTransparent};
-    }
-  `;
-
-  const postContents = css`
-    padding: 1rem;
-  `;
-
   return (
-    <div css={postStyle} data-testid="post-summary">
+    <div className="my-4" data-testid="post-summary">
       <PageLink
-        linkStyle={postLinkStyle}
+        className="block no-underline bg-gray-200 duration-300 hover:shadow-3xl"
         to={slug}
         type={'cover'}
         direction={'up'}
       >
         {img && <CoverImage image={img} title={title} tall={tall} />}
-        <div css={postContents}>
-          <p css={postParagraphStyle}>
-            <strong>{date}</strong>
-          </p>
+        <div className="p-4 text-gray-600">
+          <p className="text-xs font-bold mb-2">{date}</p>
           <hr />
-          <p css={postParagraphStyle}>{excerpt}</p>
+          <p className="italic m-0 text-xs/loose text-gray-600">{excerpt}</p>
         </div>
       </PageLink>
     </div>

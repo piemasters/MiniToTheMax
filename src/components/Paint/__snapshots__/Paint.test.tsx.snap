@@ -3,14 +3,14 @@
 exports[`Paint renders correctly 1`] = `
 <div>
   <div
-    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+    class="inline-block m-1 w-[60px]"
     data-testid="paint"
   >
     <div
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+      class="flex flex-col justify-center"
     >
       <div
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="mb-2"
       >
         <svg
           viewBox="-1 0 52 62"
@@ -49,7 +49,7 @@ exports[`Paint renders correctly 1`] = `
         </svg>
       </div>
       <div
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="flex-1 text-[0.6rem] leading-4 text-center max-w-full"
       >
         Retributor Armour
       </div>

@@ -1,8 +1,6 @@
-import type { FC } from 'react';
-import { css, useTheme } from '@emotion/react';
+import React, { FC } from 'react';
 
 import { PageLink } from '../PageLink';
-import { Theme } from '../../styles/theme';
 import type { NavLink } from '../../types';
 
 export interface HeaderProps {
@@ -12,66 +10,26 @@ export interface HeaderProps {
 }
 
 export const Header: FC<HeaderProps> = ({ title, logo, pages }) => {
-  const theme = useTheme() as Theme;
-
-  const NavHeader = css`
-    background-color: ${theme.colors.lightgrey};
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-  `;
-
-  const navContainerStyles = css`
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 750px;
-  `;
-
-  const titleLinkStyle = css`
-    align-items: center;
-    color: ${theme.colors.text};
-    display: flex;
-    padding-bottom: 1rem;
-    text-decoration: none;
-  `;
-
-  const titleStyle = css`
-    margin: 0 0 0 1rem;
-  `;
-
-  const navListStyle = css`
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-  `;
-
-  const navItemStyle = css`
-    color: ${theme.colors.textSecondary};
-    font-size: 0.9rem;
-    font-weight: bold;
-    margin-right: 1.3rem;
-    text-decoration: none;
-    &:hover {
-      color: ${theme.colors.primary};
-    }
-  `;
-
   return (
-    <div css={NavHeader} data-testid="nav-header">
-      <nav css={navContainerStyles}>
-        <PageLink type={'paintDrip'} to={'/'} linkStyle={titleLinkStyle}>
+    <div className="bg-gray-100 px-4 py-8 mb-8" data-testid="nav-header">
+      <nav className="flex flex-col mx-auto max-w-3xl">
+        <PageLink
+          type={'paintDrip'}
+          to={'/'}
+          className="flex items-center text-gray-900 pb-4 no-underline"
+        >
           <img src={logo} alt="Logo" width={60 + 'px'} />
-          <h1 css={titleStyle}>{title}</h1>
+          <h1 className="ml-4 mb-0">{title}</h1>
         </PageLink>
-        <div css={navListStyle}>
+        <div className="flex list-none m-0">
           {pages.map((link: NavLink) => {
             return (
               <PageLink
-                type={'cover'}
-                linkActiveStyle={{ color: theme.colors.primary }}
                 to={link.url}
-                linkStyle={navItemStyle}
+                className="text-gray-500 text-sm font-bold mr-5 no-underline hover:text-red-500"
                 key={link.name}
+                linkActiveStyle="!text-red-500"
+                type={'cover'}
               >
                 {link.name}
               </PageLink>

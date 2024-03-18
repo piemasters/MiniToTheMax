@@ -3,100 +3,88 @@
 exports[`Badges renders correctly 1`] = `
 <div>
   <div
-    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+    class="flex flex-row flex-wrap justify-center"
     data-testid="badges"
   >
     <a
-      bg="#eb1d23"
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-      data-testid="page-link-cover"
-      direction="up"
-      duration="1"
-      href="showcase"
+      class="flex flex-col no-underline opacity-90 hover:opacity-100"
+      data-testid="page-link"
+      href="/showcase"
     >
       <div
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="flex flex-col justify-end w-36"
         data-testid="badge"
       >
         <img
           alt=""
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="w-9/12 opacity-90 mx-auto mb-2 hover:opacity-100"
           src="test-file-stub"
         />
         <p
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="text-center capitalize"
         >
           showcase
         </p>
       </div>
     </a>
     <a
-      bg="#eb1d23"
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-      data-testid="page-link-cover"
-      direction="up"
-      duration="1"
-      href="tutorials"
+      class="flex flex-col no-underline opacity-90 hover:opacity-100"
+      data-testid="page-link"
+      href="/tutorials"
     >
       <div
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="flex flex-col justify-end w-36"
         data-testid="badge"
       >
         <img
           alt=""
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="w-9/12 opacity-90 mx-auto mb-2 hover:opacity-100"
           src="test-file-stub"
         />
         <p
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="text-center capitalize"
         >
           tutorials
         </p>
       </div>
     </a>
     <a
-      bg="#eb1d23"
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-      data-testid="page-link-cover"
-      direction="up"
-      duration="1"
-      href="reviews"
+      class="flex flex-col no-underline opacity-90 hover:opacity-100"
+      data-testid="page-link"
+      href="/reviews"
     >
       <div
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="flex flex-col justify-end w-36"
         data-testid="badge"
       >
         <img
           alt=""
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="w-9/12 opacity-90 mx-auto mb-2 hover:opacity-100"
           src="test-file-stub"
         />
         <p
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="text-center capitalize"
         >
           reviews
         </p>
       </div>
     </a>
     <a
-      bg="#eb1d23"
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-      data-testid="page-link-cover"
-      direction="up"
-      duration="1"
-      href="battle-reports"
+      class="flex flex-col no-underline opacity-90 hover:opacity-100"
+      data-testid="page-link"
+      href="/battle-reports"
     >
       <div
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="flex flex-col justify-end w-36"
         data-testid="badge"
       >
         <img
           alt=""
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="w-9/12 opacity-90 mx-auto mb-2 hover:opacity-100"
           src="test-file-stub"
         />
         <p
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="text-center capitalize"
         >
           battle Reports
         </p>

@@ -1,19 +1,14 @@
-import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from '@emotion/react';
+import { getByTestId, render } from '@testing-library/react';
 
 import { Video } from './Video';
-import { appTheme } from '../../styles/theme';
-import { renderWithTransitionProvider } from '../../util';
 
 describe('Video', () => {
   test('renders correctly', () => {
-    const { container } = renderWithTransitionProvider(
-      <ThemeProvider theme={appTheme}>
-        <Video
-          src="https://www.youtube.com/embed/qcWaykRRDfM"
-          title="Grey Knight Stormraven"
-        />{' '}
-      </ThemeProvider>
+    const { container } = render(
+      <Video
+        src="https://www.youtube.com/embed/qcWaykRRDfM"
+        title="Grey Knight Stormraven"
+      />
     );
     expect(getByTestId(container as HTMLElement, 'video')).toBeTruthy();
     expect(container).toMatchSnapshot();

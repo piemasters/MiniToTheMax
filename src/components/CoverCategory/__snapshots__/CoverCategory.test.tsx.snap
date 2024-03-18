@@ -3,19 +3,16 @@
 exports[`CoverCategory renders correctly 1`] = `
 <div>
   <div
-    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+    class="my-4 duration-300 hover:shadow-3xl"
     data-testid="cover-category"
   >
     <a
-      bg="#eb1d23"
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-      data-testid="page-link-cover"
-      direction="up"
-      duration="1"
+      class="text-blue-500 visited:text-blue-500 hover:text-blue-700 no-underline"
+      data-testid="page-link"
       href="/showcase/board-games"
     >
       <div
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="relative"
         data-testid="cover-image"
       >
         <div
@@ -41,7 +38,6 @@ exports[`CoverCategory renders correctly 1`] = `
           />
           <img
             alt="Board Games"
-            css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
             data-gatsby-image-ssr=""
             data-main-image=""
             data-src="cover.jpeg"
@@ -57,7 +53,7 @@ exports[`CoverCategory renders correctly 1`] = `
           </script>
         </div>
         <h2
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="px-4 py-1 absolute right-4 text-lg bg-black/70 text-gray-200 bottom-0"
         >
           Board Games
         </h2>

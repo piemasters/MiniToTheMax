@@ -1,16 +1,19 @@
 import { PaintDetails } from '../../types/app.types';
-import AgrellanBadland from '../../../content/assets/svg/paints/technicalAgrellanBadland.svg';
-import AgrellanEarth from '../../../content/assets/svg/paints/technicalAgrellanEarth.svg';
-import ArmageddonDunes from '../../../content/assets/svg/paints/technicalArmageddonDunes.svg';
-import ArmageddonDust from '../../../content/assets/svg/paints/technicalArmageddonDust.svg';
-import Astrogranite from '../../../content/assets/svg/paints/technicalAstrogranite.svg';
-import AstrograniteDebris from '../../../content/assets/svg/paints/technicalAstrograniteDebris.svg';
-import MartianIroncrust from '../../../content/assets/svg/paints/technicalMartianIroncrust.svg';
-import MartianIronearth from '../../../content/assets/svg/paints/technicalMartianIronearth.svg';
-import MordantEarth from '../../../content/assets/svg/paints/technicalMordantEarth.svg';
-import StirlandBattlemire from '../../../content/assets/svg/paints/technicalStirlandBattlemire.svg';
-import StirlandMud from '../../../content/assets/svg/paints/technicalStirlandMud.svg';
-import ValhallanBlizzard from '../../../content/assets/svg/paints/technicalValhallanBlizzard.svg';
+
+export enum TechnicalPaintImages {
+  AgrellanBadland = 'AgrellanBadland',
+  AgrellanEarth = 'AgrellanEarth',
+  ArmageddonDunes = 'ArmageddonDunes',
+  ArmageddonDust = 'ArmageddonDust',
+  Astrogranite = 'Astrogranite',
+  AstrograniteDebris = 'AstrograniteDebris',
+  MartianIroncrust = 'MartianIroncrust',
+  MartianIronearth = 'MartianIronearth',
+  MordantEarth = 'MordantEarth',
+  StirlandBattlemire = 'StirlandBattlemire',
+  StirlandMud = 'StirlandMud',
+  ValhallanBlizzard = 'ValhallanBlizzard',
+}
 
 export const technicalBloodForTheBloodGod: PaintDetails = {
   name: 'Blood For The Blood God',
@@ -93,7 +96,7 @@ export const technicalMordantEarth: PaintDetails = {
   type: 'technical',
   color: 'black',
   hex: '#4B4849',
-  img: <MordantEarth />,
+  img: TechnicalPaintImages.MordantEarth,
   gradient: [
     { offset: 0, color: 'rgb(23, 19, 20)' },
     { offset: 100, color: 'rgb(75, 72, 73)' },
@@ -106,7 +109,7 @@ export const technicalAgrellanEarth: PaintDetails = {
   type: 'technical',
   color: 'brown',
   hex: '#948165',
-  img: <AgrellanEarth />,
+  img: TechnicalPaintImages.AgrellanEarth,
   gradient: [
     { offset: 0, color: 'rgb(179, 158, 128)' },
     { offset: 100, color: 'rgb(148, 129, 101)' },
@@ -119,7 +122,7 @@ export const technicalAgrellanBadland: PaintDetails = {
   type: 'technical',
   color: 'brown',
   hex: '#948165',
-  img: <AgrellanBadland />,
+  img: TechnicalPaintImages.AgrellanBadland,
   gradient: [
     { offset: 0, color: 'rgb(179, 158, 128)' },
     { offset: 100, color: 'rgb(148, 129, 101)' },
@@ -132,7 +135,7 @@ export const technicalMartianIronearth: PaintDetails = {
   type: 'technical',
   color: 'red',
   hex: '#9B5041',
-  img: <MartianIronearth />,
+  img: TechnicalPaintImages.MartianIronearth,
   gradient: [
     { offset: 0, color: 'rgb(207, 112, 93)' },
     { offset: 100, color: 'rgb(155, 80, 65)' },
@@ -145,7 +148,7 @@ export const technicalMartianIroncrust: PaintDetails = {
   type: 'technical',
   color: 'red',
   hex: '#9B5041',
-  img: <MartianIroncrust />,
+  img: TechnicalPaintImages.MartianIroncrust,
   gradient: [
     { offset: 0, color: 'rgb(207, 112, 93)' },
     { offset: 100, color: 'rgb(155, 80, 65)' },
@@ -158,7 +161,7 @@ export const technicalStirlandMud: PaintDetails = {
   type: 'technical',
   color: 'brown',
   hex: '#482B00',
-  img: <StirlandMud />,
+  img: TechnicalPaintImages.StirlandMud,
   gradient: [
     { offset: 0, color: 'rgb(112, 73, 13)' },
     { offset: 100, color: 'rgb(72, 43, 0)' },
@@ -171,7 +174,7 @@ export const technicalStirlandBattlemire: PaintDetails = {
   type: 'technical',
   color: 'brown',
   hex: '#482B00',
-  img: <StirlandBattlemire />,
+  img: TechnicalPaintImages.StirlandBattlemire,
   gradient: [
     { offset: 0, color: 'rgb(112, 73, 13)' },
     { offset: 100, color: 'rgb(72, 43, 0)' },
@@ -184,7 +187,7 @@ export const technicalArmageddonDust: PaintDetails = {
   type: 'technical',
   color: 'brown',
   hex: '#D2AD00',
-  img: <ArmageddonDust />,
+  img: TechnicalPaintImages.ArmageddonDust,
   gradient: [
     { offset: 0, color: 'rgb(232, 211, 111)' },
     { offset: 100, color: 'rgb(210, 173, 0)' },
@@ -197,7 +200,7 @@ export const technicalArmageddonDunes: PaintDetails = {
   type: 'technical',
   color: 'brown',
   hex: '#E8D36F',
-  img: <ArmageddonDunes />,
+  img: TechnicalPaintImages.ArmageddonDunes,
   gradient: [
     { offset: 0, color: 'rgb(232, 211, 111)' },
     { offset: 100, color: 'rgb(210, 173, 0)' },
@@ -210,7 +213,7 @@ export const technicalAstrogranite: PaintDetails = {
   type: 'technical',
   color: 'grey',
   hex: '#9D9D9D',
-  img: <Astrogranite />,
+  img: TechnicalPaintImages.Astrogranite,
   gradient: [
     { offset: 0, color: 'rgb(157, 157, 157)' },
     { offset: 100, color: 'rgb(118, 118, 117)' },
@@ -223,7 +226,7 @@ export const technicalAstrograniteDebris: PaintDetails = {
   type: 'technical',
   color: 'grey',
   hex: '#9D9D9D',
-  img: <AstrograniteDebris />,
+  img: TechnicalPaintImages.AstrograniteDebris,
   gradient: [
     { offset: 0, color: 'rgb(157, 157, 157)' },
     { offset: 100, color: 'rgb(118, 118, 117)' },
@@ -236,7 +239,7 @@ export const technicalValhallanBlizzard: PaintDetails = {
   type: 'technical',
   color: 'white',
   hex: '#E1E1E1',
-  img: <ValhallanBlizzard />,
+  img: TechnicalPaintImages.ValhallanBlizzard,
   gradient: [
     { offset: 0, color: 'rgb(225, 225, 225)' },
     { offset: 100, color: 'rgb(225, 225, 225)' },

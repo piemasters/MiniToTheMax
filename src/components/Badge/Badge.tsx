@@ -1,5 +1,4 @@
-import type { FC } from 'react';
-import { css } from '@emotion/react';
+import React, { FC } from 'react';
 
 import { BadgeNames } from '../../types';
 import { allBadges } from '../../data';
@@ -11,31 +10,16 @@ export interface BadgeProps {
  * The Badge component is a combination of an image and text used to represent a category of posts
  */
 export const Badge: FC<BadgeProps> = ({ type }) => {
-  const badgeStyles = css`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 9rem; // 7rem for 5
-  `;
-
-  const badgeImageStyles = css`
-    margin: 0 auto 0.4rem;
-    width: 75%;
-    opacity: 0.9;
-    &:hover {
-      opacity: 1;
-    }
-  `;
-
-  const badgeTextStyles = css`
-    text-align: center;
-    text-transform: capitalize;
-  `;
-
   return (
-    <div css={badgeStyles} data-testid="badge">
-      <img src={allBadges[type]} alt="" css={badgeImageStyles} />
-      <p css={badgeTextStyles}>{type.replace(/([A-Z])/g, ' $1').trim()}</p>
+    <div className="flex flex-col justify-end w-36" data-testid="badge">
+      <img
+        src={allBadges[type]}
+        alt=""
+        className="w-9/12 opacity-90 mx-auto mb-2 hover:opacity-100"
+      />
+      <p className="text-center capitalize">
+        {type.replace(/([A-Z])/g, ' $1').trim()}
+      </p>
     </div>
   );
 };

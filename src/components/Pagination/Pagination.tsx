@@ -1,8 +1,6 @@
-import type { FC } from 'react';
-import { css, useTheme } from '@emotion/react';
+import React, { FC } from 'react';
 
 import { PageLink } from '../PageLink';
-import { Theme } from '../../styles/theme';
 import { getPages } from '../../util';
 
 export interface PaginationProps {
@@ -18,38 +16,14 @@ export const Pagination: FC<PaginationProps> = ({
   maxPages = 8,
   baseUrl,
 }) => {
-  const theme = useTheme() as Theme;
-
-  const containerStyle = css`
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0;
-  `;
-
-  const linkStyle = (i: number) => {
-    return css`
-      background: ${i === currentPage ? theme.colors.hyperlinkActive : ''};
-      color: ${i === currentPage ? '#ffffff' : theme.colors.hyperlink};
-      padding: 0.5rem;
-      text-decoration: none;
-      &:visited {
-        color: ${i === currentPage ? '#ffffff' : theme.colors.hyperlink};
-      }
-      &:hover {
-        color: ${i === currentPage ? '#ffffff' : theme.colors.hyperlinkActive};
-      }
-    `;
-  };
-
   // Return an array of pages to repeat
   const pages = getPages({ numPages, maxPages, currentPage });
 
   return (
-    <ul css={containerStyle} data-testid="pagination">
+    <ul
+      className="flex flex-wrap justify-between items-center p-0 my-8 list-none"
+      data-testid="pagination"
+    >
       <li>
         <PageLink
           to={`${baseUrl}`}
@@ -76,7 +50,8 @@ export const Pagination: FC<PaginationProps> = ({
             to={`${baseUrl}${page === 1 ? '' : page}`}
             type={'cover'}
             direction={page > currentPage ? 'left' : 'right'}
-            linkStyle={linkStyle(page)}
+            className={`p-2 no-underline text-blue-500 hover:bg-blue-500 hover:text-white ${page === currentPage ? 'bg-blue-500 text-white' : ''}`}
+            // linkStyle={linkStyle(page)}
           >
             {page}
           </PageLink>

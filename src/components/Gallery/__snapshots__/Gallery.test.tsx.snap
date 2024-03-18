@@ -3,8 +3,8 @@
 exports[`Gallery renders correctly 1`] = `
 <div>
   <div
+    class="flex flex-wrap"
     data-testid="gallery"
-    style="display: flex; flex-wrap: wrap;"
   />
 </div>
 `;
@@ -12,16 +12,16 @@ exports[`Gallery renders correctly 1`] = `
 exports[`Gallery renders the correct number of images 1`] = `
 <div>
   <div
+    class="flex flex-wrap"
     data-testid="gallery"
-    style="display: flex; flex-wrap: wrap;"
   >
     <div
       aria-hidden="true"
     >
       <div
-        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+        class="gatsby-image-wrapper gatsby-image-wrapper-constrained m-1 cursor-pointer"
         data-gatsby-image-wrapper=""
-        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top; margin: 0.25rem; cursor: pointer;"
+        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
       >
         <div
           style="max-width: 169px; display: block;"
@@ -72,9 +72,9 @@ exports[`Gallery renders the correct number of images 1`] = `
       aria-hidden="true"
     >
       <div
-        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+        class="gatsby-image-wrapper gatsby-image-wrapper-constrained m-1 cursor-pointer"
         data-gatsby-image-wrapper=""
-        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top; margin: 0.25rem; cursor: pointer;"
+        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
       >
         <div
           style="max-width: 169px; display: block;"
@@ -125,9 +125,9 @@ exports[`Gallery renders the correct number of images 1`] = `
       aria-hidden="true"
     >
       <div
-        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+        class="gatsby-image-wrapper gatsby-image-wrapper-constrained m-1 cursor-pointer"
         data-gatsby-image-wrapper=""
-        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top; margin: 0.25rem; cursor: pointer;"
+        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
       >
         <div
           style="max-width: 169px; display: block;"
@@ -178,9 +178,9 @@ exports[`Gallery renders the correct number of images 1`] = `
       aria-hidden="true"
     >
       <div
-        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+        class="gatsby-image-wrapper gatsby-image-wrapper-constrained m-1 cursor-pointer"
         data-gatsby-image-wrapper=""
-        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top; margin: 0.25rem; cursor: pointer;"
+        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
       >
         <div
           style="max-width: 169px; display: block;"
@@ -231,9 +231,9 @@ exports[`Gallery renders the correct number of images 1`] = `
       aria-hidden="true"
     >
       <div
-        class="gatsby-image-wrapper gatsby-image-wrapper-constrained"
+        class="gatsby-image-wrapper gatsby-image-wrapper-constrained m-1 cursor-pointer"
         data-gatsby-image-wrapper=""
-        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top; margin: 0.25rem; cursor: pointer;"
+        style="position: relative; overflow: hidden; display: inline-block; vertical-align: top;"
       >
         <div
           style="max-width: 169px; display: block;"

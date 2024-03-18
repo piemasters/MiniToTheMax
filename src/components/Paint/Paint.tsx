@@ -1,5 +1,4 @@
-import type { FC } from 'react';
-import { css } from '@emotion/react';
+import React, { FC } from 'react';
 
 import { PaintDetails } from '../../types';
 import { getSVG } from './helpers';
@@ -10,34 +9,13 @@ export interface PaintProps {
 }
 
 export const Paint: FC<PaintProps> = ({ paint, size = 60 }) => {
-  const paintStyles = css`
-    display: inline-block;
-    margin: 0.2rem;
-    width: ${size}px;
-  `;
-
-  const paintWrapperStyles = css`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  `;
-  const paintTextStyles = css`
-    flex: 1;
-    font-size: 0.6rem;
-    line-height: 1rem;
-    text-align: center;
-    max-width: 100%;
-  `;
-
-  const paintSVGWrapperStyles = css``;
-
   const { name, type, color, hex, gradient, stroke, gloss, img, availability } =
     paint;
 
   return (
-    <div data-testid="paint" css={paintStyles}>
-      <div css={paintWrapperStyles}>
-        <div css={paintSVGWrapperStyles}>
+    <div data-testid="paint" className="inline-block m-1 w-[60px]">
+      <div className="flex flex-col justify-center">
+        <div className="mb-2">
           {getSVG({
             name,
             type,
@@ -50,7 +28,9 @@ export const Paint: FC<PaintProps> = ({ paint, size = 60 }) => {
             availability,
           })}
         </div>
-        <div css={paintTextStyles}>{name}</div>
+        <div className="flex-1 text-[0.6rem] leading-4 text-center max-w-full">
+          {name}
+        </div>
       </div>
     </div>
   );

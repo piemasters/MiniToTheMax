@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { PaintGradient } from '../../../types';
 import { getColorByBgColor } from './getColorByBgColor';
 

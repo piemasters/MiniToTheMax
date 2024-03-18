@@ -1,21 +1,11 @@
-import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from '@emotion/react';
+import { getByTestId, render } from '@testing-library/react';
 
 import { Pagination } from './Pagination';
-import { appTheme } from '../../styles/theme';
-import { renderWithTransitionProvider } from '../../util';
 
 describe('Pagination', () => {
   test('renders correctly', () => {
-    const { container } = renderWithTransitionProvider(
-      <ThemeProvider theme={appTheme}>
-        <Pagination
-          numPages={5}
-          currentPage={3}
-          maxPages={10}
-          baseUrl={'/'}
-        />
-      </ThemeProvider>
+    const { container } = render(
+      <Pagination numPages={5} currentPage={3} maxPages={10} baseUrl={'/'} />
     );
 
     expect(

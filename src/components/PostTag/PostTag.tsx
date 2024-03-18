@@ -1,9 +1,7 @@
-import type { FC } from 'react';
-import { css, useTheme } from '@emotion/react';
+import React, { FC } from 'react';
 import kebabCase from 'lodash.kebabcase';
 
 import { PageLink } from '../PageLink';
-import { Theme } from '../../styles/theme';
 
 export interface PostTagProps {
   name: string;
@@ -11,37 +9,14 @@ export interface PostTagProps {
 }
 
 export const PostTag: FC<PostTagProps> = ({ name, type }) => {
-  const theme = useTheme() as Theme;
-
-  const tagStyles = css`
-    display: inline-block;
-  `;
-
-  const tagLinkStyles = css`
-    background-color: ${theme.colors.lightgrey};
-    border-radius: 5px;
-    color: ${theme.colors.textSecondary};
-    cursor: pointer;
-    display: inline-block;
-    font-size: 0.7rem;
-    margin: 0.2rem;
-    padding: 0.1rem 0.6rem;
-    text-decoration: none;
-    transition: all 300ms ease-in-out;
-    &:hover {
-      color: ${theme.colors.textLight};
-      background-color: ${theme.colors.primary};
-    }
-  `;
-
   return (
-    <div data-testid="post-tag" css={tagStyles}>
+    <div data-testid="post-tag" className="inline-block">
       <PageLink
         key={name}
         to={`/${type}/${kebabCase(name)}/`}
+        className="bg-gray-200 rounded-md text-gray-800 cursor-pointer inline-block text-xs m-1 px-2 py-1 no-underline hover:bg-red-500 hover:text-white"
         type={'cover'}
         direction={'up'}
-        linkStyle={tagLinkStyles}
       >
         {name}
       </PageLink>

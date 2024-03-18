@@ -10,10 +10,9 @@
     "esModuleInterop": true,
     "noUnusedLocals": false,
     "allowJs": true,
-    "jsxImportSource": "@emotion/react",
     "allowSyntheticDefaultImports": true
   },
   "include": ["src/components", "src/data", "src/custom.d.ts"],
   "exclude": ["node_modules", "public", ".cache"],
-  "types": ["@emotion/react/types/css-prop", "@testing-library/jest-dom"]
+  "types": ["@testing-library/jest-dom"]
 }

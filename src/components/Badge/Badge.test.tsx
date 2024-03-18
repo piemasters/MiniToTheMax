@@ -1,18 +1,11 @@
-import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from '@emotion/react';
+import { getByTestId, render } from '@testing-library/react';
 
 import { Badge } from './Badge';
-import { appTheme } from '../../styles/theme';
 import { BadgeNames } from '../../types';
-import { renderWithTransitionProvider } from '../../util';
 
 describe('Badge', () => {
   test('renders correctly', () => {
-    const { container } = renderWithTransitionProvider(
-      <ThemeProvider theme={appTheme}>
-        <Badge type={BadgeNames.showcase} />
-      </ThemeProvider>
-    );
+    const { container } = render(<Badge type={BadgeNames.showcase} />);
 
     expect(getByTestId(container, 'badge')).toBeTruthy();
     expect(container).toMatchSnapshot();

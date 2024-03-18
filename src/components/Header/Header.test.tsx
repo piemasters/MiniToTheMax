@@ -1,9 +1,6 @@
-import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from '@emotion/react';
+import { getByTestId, render } from '@testing-library/react';
 
 import { Header } from './Header';
-import { appTheme } from '../../styles/theme';
-import { renderWithTransitionProvider } from '../../util';
 
 describe('Header', () => {
   test('renders correctly', () => {
@@ -25,14 +22,12 @@ describe('Header', () => {
       { name: 'Backlog', url: '/backlog' },
     ];
 
-    const { container } = renderWithTransitionProvider(
-      <ThemeProvider theme={appTheme}>
-        <Header
-          title={data.site.siteMetadata.title}
-          logo={data.file.publicURL}
-          pages={pages}
-        />
-      </ThemeProvider>
+    const { container } = render(
+      <Header
+        title={data.site.siteMetadata.title}
+        logo={data.file.publicURL}
+        pages={pages}
+      />
     );
 
     expect(

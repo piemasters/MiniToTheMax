@@ -43,14 +43,14 @@ export const Paints = (): React.ReactNode => {
     const filtersJsx: JSX.Element[] = [];
     for (const [key, value] of Object.entries(filters)) {
       filtersJsx.push(
-        <div style={{ fontSize: '0.8rem', width: '6rem' }} key={key}>
-          <label style={{ alignItems: 'center', display: 'flex' }}>
+        <div className="text-sm w-24" key={key}>
+          <label className="flex items-center">
             <input
               name={key}
               checked={value}
               type="checkbox"
               onChange={() => updateFilter(type, key)}
-              style={{ marginRight: '0.4rem' }}
+              className="mr-2"
             />
             {key.replace(/\b\w/g, (l) => l.toUpperCase())}
           </label>
@@ -60,35 +60,18 @@ export const Paints = (): React.ReactNode => {
     return (
       <div>
         <h3>{type.replace(/\b\w/g, (l) => l.toUpperCase())}</h3>
-        <label
-          style={{
-            alignItems: 'center',
-            display: 'flex',
-            fontSize: '0.9rem',
-            fontWeight: 'bold',
-            marginBottom: '0.3rem',
-          }}
-        >
+        <label className="flex items-center font-bold text-xs mb-2">
           <input
             checked={
               !Object.keys(allFilters[type]).every((k) => !allFilters[type][k])
             }
             type="checkbox"
             onChange={() => toggleAll(allFilters[type], type)}
-            style={{ marginRight: '0.4rem' }}
+            className="mr-2"
           />
           Toggle All
         </label>
-        <div
-          style={{
-            display: 'flex',
-            flexFlow: 'row wrap',
-            marginBottom: '1rem',
-            width: '100%',
-          }}
-        >
-          {filtersJsx}
-        </div>
+        <div className="flex flex-row flex-wrap mb-4 w-full">{filtersJsx}</div>
         <hr />
       </div>
     );

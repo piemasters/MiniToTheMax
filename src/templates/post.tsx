@@ -55,11 +55,7 @@ export const Post = ({ pageContext, data, children }) => {
       {post.featuredImage && (
         <CoverImage image={post.featuredImage} title={post.title} />
       )}
-      <div
-        style={{
-          padding: '0.5rem 0',
-        }}
-      >
+      <div className="py-2">
         {post.categories.map((category) => (
           <PostTag type={'categories'} name={category} key={category} />
         ))}
@@ -67,16 +63,10 @@ export const Post = ({ pageContext, data, children }) => {
           <PostTag type={'tags'} name={tag} key={tag} />
         ))}
       </div>
-      <div
-        style={{
-          fontSize: ' 0.8rem',
-          padding: '1rem 0.5rem',
-          textAlign: 'right',
-        }}
-      >
+      <div className="text-sm px-2 py-4 text-right">
         <strong>Published</strong> {post.date}
       </div>
-      {post.body}
+      <div className="post-body">{post.body}</div>
       {post.gallery.length > 0 && (
         <div>
           <h2>Gallery</h2>

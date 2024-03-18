@@ -1,8 +1,6 @@
 import { render } from '@testing-library/react';
-import { ThemeProvider } from '@emotion/react';
 
 import { Seo } from './Seo';
-import { appTheme } from '../../styles/theme';
 
 describe('Seo', () => {
   test('renders correctly', () => {
@@ -18,14 +16,12 @@ describe('Seo', () => {
     };
 
     const { container } = render(
-      <ThemeProvider theme={appTheme}>
-        <Seo
-          title={data.site.siteMetadata.title}
-          description={data.site.siteMetadata.description}
-          image={data.site.siteMetadata.image}
-          siteUrl={data.site.siteMetadata.siteUrl}
-        />
-      </ThemeProvider>
+      <Seo
+        title={data.site.siteMetadata.title}
+        description={data.site.siteMetadata.description}
+        image={data.site.siteMetadata.image}
+        siteUrl={data.site.siteMetadata.siteUrl}
+      />
     );
 
     expect(container).toMatchSnapshot();

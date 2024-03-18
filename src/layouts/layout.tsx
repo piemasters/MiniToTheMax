@@ -1,9 +1,6 @@
 import React, { FC, ReactNode } from 'react';
-import { Global, ThemeProvider } from '@emotion/react';
 
 import { StatefulFooter, StatefulHeader } from '../components';
-import { appTheme } from '../styles/theme';
-import { globalStyles } from '../styles/global';
 
 export interface LayoutProps {
   children?: ReactNode;
@@ -11,26 +8,13 @@ export interface LayoutProps {
 
 export const Layout: FC<LayoutProps> = ({ children }) => {
   return (
-    <ThemeProvider theme={appTheme}>
-      <Global styles={globalStyles(appTheme)} />
-      <div
-        style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
-      >
-        <StatefulHeader />
-        <div
-          style={{
-            flexGrow: '1',
-            margin: '0 auto',
-            maxWidth: '750px',
-            padding: ' 0 1rem',
-            width: ' 100%',
-          }}
-        >
-          <div>{children}</div>
-        </div>
-        <StatefulFooter />
+    <div className="flex flex-col min-h-screen">
+      <StatefulHeader />
+      <div className="max-w-3xl px-4 mx-auto w-full flex-grow">
+        <div>{children}</div>
       </div>
-    </ThemeProvider>
+      <StatefulFooter />
+    </div>
   );
 };
 

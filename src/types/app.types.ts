@@ -1,6 +1,7 @@
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
 import { AllMdx, MdxGroupConnection, MdxNode, Site } from './base.types';
+import { TechnicalPaintImages } from '../data/paints/technical';
 
 export interface Posts {
   posts: AllMdx;
@@ -94,8 +95,11 @@ export interface PaintDetails {
   gradient?: PaintGradient[];
   stroke?: string;
   gloss?: boolean;
-  img?: JSX.Element;
+  img?: TechnicalPaintImages;
   availability: string;
+}
+export interface PaintDetailsComponent extends Omit<PaintDetails, 'img'> {
+  img?: JSX.Element;
 }
 
 export interface NavLink {

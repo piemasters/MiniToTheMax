@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import React, { FC } from 'react';
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import { Gallery as Photoswipe, Item } from 'react-photoswipe-gallery';
 import 'photoswipe/dist/photoswipe.css';
@@ -18,7 +18,7 @@ export interface GalleryProps {
  */
 export const Gallery: FC<GalleryProps> = ({ gallery }) => {
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap' }} data-testid="gallery">
+    <div className="flex flex-wrap" data-testid="gallery">
       <Photoswipe options={{}}>
         {gallery.map((photo: GatsbyGalleryImage) => (
           <Item
@@ -29,16 +29,12 @@ export const Gallery: FC<GalleryProps> = ({ gallery }) => {
             width={photo.full.width}
           >
             {({ ref, open }) => (
-              <div
-                ref={ref as React.MutableRefObject<HTMLImageElement>}
-                onClick={open}
-                aria-hidden="true"
-              >
+              <div ref={ref} onClick={open} aria-hidden="true">
                 <GatsbyImage
                   onClick={open}
                   image={photo.thumb}
                   alt="Gallery Image"
-                  style={{ margin: '0.25rem', cursor: 'pointer' }}
+                  className="m-1 cursor-pointer"
                 />
               </div>
             )}

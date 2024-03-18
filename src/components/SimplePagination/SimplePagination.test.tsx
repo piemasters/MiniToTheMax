@@ -1,9 +1,6 @@
-import { getByTestId } from '@testing-library/react';
-import { ThemeProvider } from '@emotion/react';
+import { getByTestId, render } from '@testing-library/react';
 
 import { SimplePagination } from './SimplePagination';
-import { appTheme } from '../../styles/theme';
-import { renderWithTransitionProvider } from '../../util';
 
 describe('SimplePagination', () => {
   test('renders correctly', () => {
@@ -17,10 +14,8 @@ describe('SimplePagination', () => {
       title: 'The Next Page',
     };
 
-    const { container } = renderWithTransitionProvider(
-      <ThemeProvider theme={appTheme}>
-        <SimplePagination previous={previous} next={next} />
-      </ThemeProvider>
+    const { container } = render(
+      <SimplePagination previous={previous} next={next} />
     );
 
     expect(

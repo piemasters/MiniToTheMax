@@ -9,6 +9,8 @@ require('dotenv').config({
 });
 
 module.exports = {
+  jsxRuntime: 'automatic',
+  jsxImportSource: 'react',
   siteMetadata: {
     title: 'MiniToTheMax',
     author: 'MiniToTheMax',
@@ -35,14 +37,7 @@ module.exports = {
     },
     'gatsby-plugin-eslint',
     'gatsby-plugin-typescript',
-    `gatsby-plugin-transition-link`, // TODO: look at replacing
-    'gatsby-plugin-sass', // TODO: look at replacing with tailwind
-    {
-      resolve: `gatsby-plugin-emotion`, // TODO: look at replacing with tailwind
-      options: {
-        sourceMap: false,
-      },
-    },
+    'gatsby-plugin-postcss',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-robots-txt',
     {

@@ -3,16 +3,16 @@
 exports[`Header renders correctly 1`] = `
 <div>
   <div
-    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+    class="bg-gray-100 px-4 py-8 mb-8"
     data-testid="nav-header"
   >
     <nav
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+      class="flex flex-col mx-auto max-w-3xl"
     >
       <a
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-        data-testid="page-link-paint"
-        hex="#eb1d23"
+        aria-current="page"
+        class="flex items-center text-gray-900 pb-4 no-underline"
+        data-testid="page-link"
         href="/"
       >
         <img
@@ -21,50 +21,39 @@ exports[`Header renders correctly 1`] = `
           width="60px"
         />
         <h1
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="ml-4 mb-0"
         >
           MiniToTheMax
         </h1>
       </a>
       <div
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="flex list-none m-0"
       >
         <a
-          bg="#eb1d23"
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-          data-testid="page-link-cover"
-          direction="up"
-          duration="1"
+          aria-current="page"
+          class="text-gray-500 text-sm font-bold mr-5 no-underline hover:text-red-500 !text-red-500"
+          data-testid="page-link"
           href="/"
         >
           Home
         </a>
         <a
-          bg="#eb1d23"
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-          data-testid="page-link-cover"
-          direction="up"
-          duration="1"
+          class="text-gray-500 text-sm font-bold mr-5 no-underline hover:text-red-500"
+          data-testid="page-link"
           href="/blog"
         >
           Blog
         </a>
         <a
-          bg="#eb1d23"
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-          data-testid="page-link-cover"
-          direction="up"
-          duration="1"
+          class="text-gray-500 text-sm font-bold mr-5 no-underline hover:text-red-500"
+          data-testid="page-link"
           href="/showcase"
         >
           Showcase
         </a>
         <a
-          bg="#eb1d23"
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
-          data-testid="page-link-cover"
-          direction="up"
-          duration="1"
+          class="text-gray-500 text-sm font-bold mr-5 no-underline hover:text-red-500"
+          data-testid="page-link"
           href="/backlog"
         >
           Backlog

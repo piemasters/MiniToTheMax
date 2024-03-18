@@ -3,13 +3,14 @@
 exports[`Footer renders correctly 1`] = `
 <div>
   <footer
-    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+    class="mt-12 bg-gray-100 py-8"
     data-testid="footer"
   >
     <div
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+      class="flex items-center justify-end text-sm mx-auto max-w-3xl px-4 no-underline"
     >
       <a
+        class="text-blue-500 hover:text-blue-700"
         href="https://davidnorton.app/"
         rel="noreferrer"
         target="_blank"
@@ -21,7 +22,7 @@ exports[`Footer renders correctly 1`] = `
       </a>
        | All Rights Reserved
       <div
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="mt-1 ml-3 flex mb-2"
       >
         <a
           href="https://www.facebook.com/minitothemax"
@@ -29,7 +30,7 @@ exports[`Footer renders correctly 1`] = `
           target="_blank"
         >
           <test-file-stub
-            css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+            classname="fill-red-500 mx-1 opacity-60 hover:opacity-100 w-7"
           />
         </a>
         <a
@@ -38,7 +39,7 @@ exports[`Footer renders correctly 1`] = `
           target="_blank"
         >
           <test-file-stub
-            css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+            classname="fill-red-500 mx-1 opacity-60 hover:opacity-100 w-7"
           />
         </a>
         <a
@@ -47,7 +48,7 @@ exports[`Footer renders correctly 1`] = `
           target="_blank"
         >
           <test-file-stub
-            css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+            classname="fill-red-500 mx-1 opacity-60 hover:opacity-100 w-7"
           />
         </a>
       </div>

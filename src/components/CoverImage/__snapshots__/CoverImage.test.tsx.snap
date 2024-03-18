@@ -3,7 +3,7 @@
 exports[`CoverImage renders correctly 1`] = `
 <div>
   <div
-    css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+    class="relative"
     data-testid="cover-image"
   >
     <div
@@ -29,7 +29,6 @@ exports[`CoverImage renders correctly 1`] = `
       />
       <img
         alt="Demo Post Title"
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
         data-gatsby-image-ssr=""
         data-main-image=""
         data-src="cover.jpeg"
@@ -45,7 +44,7 @@ exports[`CoverImage renders correctly 1`] = `
       </script>
     </div>
     <h2
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+      class="px-4 py-1 absolute right-4 text-lg bg-black/70 text-gray-200 bottom-0"
     >
       Demo Post Title
     </h2>
