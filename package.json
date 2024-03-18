@@ -118,7 +118,7 @@
     "react-test-renderer": "18.2.0",
     "sharp": "^0.33.2",
     "start-server-and-test": "2.0.3",
-    "storybook": "^7.6.16",
+    "storybook": "^8.0.0",
     "ts-loader": "9.5.1",
     "typescript": "5.4.2"
   }
