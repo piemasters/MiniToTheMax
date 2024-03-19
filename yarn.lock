@@ -7103,7 +7103,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:*, @types/eslint@npm:^8.37.0":
+"@types/eslint@npm:*":
   version: 8.40.2
   resolution: "@types/eslint@npm:8.40.2"
   dependencies:
@@ -7120,6 +7120,16 @@ __metadata:
     "@types/estree": "*"
     "@types/json-schema": "*"
   checksum: df13991c554954353ce8f3bb03e19da6cc71916889443d68d178d4f858b561ba4cc4a4f291c6eb9eebb7f864b12b9b9313051b3a8dfea3e513dadf3188a77bdf
+  languageName: node
+  linkType: hard
+
+"@types/eslint@npm:^8.56.5":
+  version: 8.56.5
+  resolution: "@types/eslint@npm:8.56.5"
+  dependencies:
+    "@types/estree": "*"
+    "@types/json-schema": "*"
+  checksum: 95a7a23ca38c78e5c27a2ed36ef60f094d5e6589e3473c320b6ff69eb3ca6333d5b7f0d5053416369f5ab2fb86874df19562d4d67a98237c17def6e30abff540
   languageName: node
   linkType: hard
 
@@ -13210,19 +13220,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-webpack-plugin@npm:4.0.1":
-  version: 4.0.1
-  resolution: "eslint-webpack-plugin@npm:4.0.1"
+"eslint-webpack-plugin@npm:4.1.0":
+  version: 4.1.0
+  resolution: "eslint-webpack-plugin@npm:4.1.0"
   dependencies:
-    "@types/eslint": ^8.37.0
-    jest-worker: ^29.5.0
+    "@types/eslint": ^8.56.5
+    jest-worker: ^29.7.0
     micromatch: ^4.0.5
     normalize-path: ^3.0.0
-    schema-utils: ^4.0.0
+    schema-utils: ^4.2.0
   peerDependencies:
     eslint: ^8.0.0
     webpack: ^5.0.0
-  checksum: 94fe0817fc580729dc6edc4a31c9f7dbeb97ad134c6c4192feab66aae711ed5afe35c5bc8d5e99b39626b469300196df72e631f5e53c55723adbf850765924e5
+  checksum: 1676ff08b0424e4656aa638a0c2a7b2f3f6a504651689a2d86b237c9a52ad65e17aeb5abbe13663e25353d8a706dcf45f49dbe4795dad27b6b0650db8aa21b16
   languageName: node
   linkType: hard
 
@@ -20517,7 +20527,7 @@ __metadata:
     eslint-plugin-prettier: 5.1.3
     eslint-plugin-react: 7.33.2
     eslint-plugin-storybook: 0.8.0
-    eslint-webpack-plugin: 4.0.1
+    eslint-webpack-plugin: 4.1.0
     fork-ts-checker-webpack-plugin: 9.0.2
     fs-extra: ^11.2.0
     gatsby: 5.13.3
@@ -24206,7 +24216,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"schema-utils@npm:^4.0.0":
+"schema-utils@npm:^4.0.0, schema-utils@npm:^4.2.0":
   version: 4.2.0
   resolution: "schema-utils@npm:4.2.0"
   dependencies:
