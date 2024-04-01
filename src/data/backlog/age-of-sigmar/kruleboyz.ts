@@ -9,6 +9,9 @@ export const kruleboyz = [
     name: 'Da Kunnin Krew',
   },
   {
+    name: 'Daggoks Stab-Ladz',
+  },
+  {
     name: 'Gobsprakk The Mouth of Mork',
   },
   {
@@ -21,6 +24,7 @@ export const kruleboyz = [
   },
   {
     name: 'Haggok Gutrippa Boss',
+    link: '/showcase/kruleboyz/haggok-gutrippa-boss/',
   },
   {
     name: 'Hobgrot Slittaz',
@@ -40,6 +44,9 @@ export const kruleboyz = [
   },
   {
     name: 'Marshcrawla Sloggoth',
+  },
+  {
+    name: 'Monsta-killaz',
   },
   {
     name: 'Mugruk da Watcha',

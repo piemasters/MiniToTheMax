@@ -4,6 +4,7 @@ export const heroQuest = [
   { name: 'Barbarian' },
   { name: 'Bard' },
   { name: 'Bookcase' },
+  { name: 'Chests' },
   { name: 'Cupboard' },
   { name: 'Doors' },
   { name: 'Dragon' },
@@ -15,6 +16,7 @@ export const heroQuest = [
   { name: 'Fireplace' },
   { name: 'Gargoyle' },
   { name: 'Goblins' },
+  { name: 'Mentor' },
   { name: 'Mummies' },
   { name: 'Orcs' },
   { name: 'Rack' },
@@ -24,9 +26,9 @@ export const heroQuest = [
   { name: 'Table' },
   { name: 'Throne' },
   { name: 'Tomb' },
-  { name: 'Treasure Chests' },
   { name: 'Warlock' },
   { name: 'Weapons Rack' },
+  { name: 'Witch Lord' },
   { name: 'Wizard' },
   { name: 'Zombies' },
 ];
@@ -55,6 +57,23 @@ export const heroQuestFrozenHorror = [
   { name: 'Yetis' },
 ];
 
+export const heroQuestTheMageOfTheMirror = [
+  { name: 'Alchemy Table' },
+  { name: 'Bookshelf' },
+  { name: 'Chests' },
+  { name: 'Doors' },
+  { name: 'Elven Archers' },
+  { name: 'Elven Hero' },
+  { name: 'Elven Swordsmen' },
+  { name: 'Evil Archmage' },
+  { name: 'Fireplace' },
+  { name: 'Giant Wolves' },
+  { name: 'Ogres' },
+  { name: 'Throne' },
+  { name: 'Tomb' },
+  { name: 'Weapon Rack' },
+];
+
 export const heroQuestRiseOfTheDreadMoon = [
   { name: 'Assassins' },
   { name: 'Cupboard' },
@@ -71,4 +90,47 @@ export const heroQuestRiseOfTheDreadMoon = [
   { name: 'Specters' },
   { name: 'Statues' },
   { name: 'Table' },
+];
+
+export const heroQuestSpiritQueensTorment = [
+  { name: 'Abominations' },
+  { name: 'Bard' },
+  { name: 'Dread Sorcerer' },
+  { name: 'Dread Warriors' },
+  { name: 'Goblins' },
+  { name: 'Mummies' },
+  { name: 'Orcs' },
+  { name: 'Skeletons' },
+  { name: 'Zombies' },
+];
+
+export const heroQuestProphecyOfTelor = [
+  { name: 'Abominations' },
+  { name: 'Dread Warriors' },
+  { name: 'Gargoyles' },
+  { name: 'Goblins' },
+  { name: 'Mummies' },
+  { name: 'Orcs' },
+  { name: 'Skeletons' },
+  { name: 'Warlock' },
+  { name: 'Zombies' },
+];
+
+export const heroQuestTheRogueHeirOfElethorn = [{ name: 'Rogue' }];
+
+export const heroQuestPathOfTheWanderingMonk = [{ name: 'Monk' }];
+
+export const heroQuestAgainstTheOgreHorde = [
+  { name: 'Double Door' },
+  { name: 'Druid' },
+  { name: 'Goblin Archers' },
+  { name: 'Ogre Champion' },
+  { name: 'Ogre Commander' },
+  { name: 'Ogre Lord' },
+  { name: 'Ogre Warriors' },
+  { name: 'Orc Archers' },
+  { name: 'Skeleton Archers' },
+  { name: 'Stone Doorway' },
+  { name: 'Throne' },
+  { name: 'Wolf' },
 ];

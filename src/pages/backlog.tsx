@@ -140,6 +140,9 @@ export const BacklogPage: FC = () => {
       <h3>Underworlds</h3>
       <ul>{generateEntries(backlog.underworlds)}</ul>
 
+      <h2>Board Games Lord oof the Rings</h2>
+      <ul>{generateEntries(backlog.battleForBalinsTomb)}</ul>
+
       <h2>Other</h2>
       <hr />
 
@@ -148,7 +151,13 @@ export const BacklogPage: FC = () => {
       <ul>{generateEntries(backlog.heroQuestReturnOfTheWitchLord)}</ul>
       <ul>{generateEntries(backlog.heroQuestKellarsKeep)}</ul>
       <ul>{generateEntries(backlog.heroQuestFrozenHorror)}</ul>
+      <ul>{generateEntries(backlog.heroQuestTheMageOfTheMirror)}</ul>
       <ul>{generateEntries(backlog.heroQuestRiseOfTheDreadMoon)}</ul>
+      <ul>{generateEntries(backlog.heroQuestSpiritQueensTorment)}</ul>
+      <ul>{generateEntries(backlog.heroQuestProphecyOfTelor)}</ul>
+      <ul>{generateEntries(backlog.heroQuestTheRogueHeirOfElethorn)}</ul>
+      <ul>{generateEntries(backlog.heroQuestPathOfTheWanderingMonk)}</ul>
+      <ul>{generateEntries(backlog.heroQuestAgainstTheOgreHorde)}</ul>
 
       <h3>The Witcher Old World</h3>
       <ul>{generateEntries(backlog.witcherOldWorld)}</ul>
@@ -160,6 +169,12 @@ export const BacklogPage: FC = () => {
       <ul>{generateEntries(backlog.witcherOldWorldMonsterPack)}</ul>
       <ul>{generateEntries(backlog.witcherOldWorldAdventurePack)}</ul>
       <ul>{generateEntries(backlog.witcherOldWorldMonsterTrail)}</ul>
+
+      <h3>Star Wars Shatterpoint</h3>
+      <ul>{generateEntries(backlog.starWarsShatterpoint)}</ul>
+
+      <h3>Star Wars Imperial Assault</h3>
+      <ul>{generateEntries(backlog.starWarsImperialAssault)}</ul>
     </Layout>
   );
 };

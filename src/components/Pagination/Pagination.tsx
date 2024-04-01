@@ -51,7 +51,6 @@ export const Pagination: FC<PaginationProps> = ({
             type={'cover'}
             direction={page > currentPage ? 'left' : 'right'}
             className={`p-2 no-underline text-blue-500 hover:bg-blue-500 hover:text-white ${page === currentPage ? 'bg-blue-500 text-white' : ''}`}
-            // linkStyle={linkStyle(page)}
           >
             {page}
           </PageLink>

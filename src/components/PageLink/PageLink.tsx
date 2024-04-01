@@ -7,14 +7,8 @@ export interface PageLinkProps {
   children: React.ReactNode;
   type?: AnimationTypes;
   to: string;
-  linkStyle?: string;
   linkActiveStyle?: string;
   direction?: string;
-  top?: string;
-  entryOffset?: number;
-  hex?: string;
-  bg?: string;
-  duration?: number;
   disabled?: boolean;
   className?: string;
 }
@@ -23,14 +17,8 @@ export const PageLink: FC<PageLinkProps> = ({
   children,
   type,
   to,
-  linkStyle,
   linkActiveStyle,
   direction,
-  top,
-  entryOffset,
-  hex,
-  bg,
-  duration,
   disabled,
   className,
 }) => {

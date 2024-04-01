@@ -1,3 +1,4 @@
+export * from './balinsTomb';
 export * from './blackstone-fortress';
 export * from './blood-bowl';
 export * from './cursed-city';
@@ -6,9 +7,7 @@ export * from './dreadfleet';
 export * from './dungeon-bowl';
 export * from './execution-force';
 export * from './gorechosen';
-export * from './hero-quest';
 export * from './lost-patrol';
 export * from './silver-tower';
 export * from './space-hulk';
 export * from './underworlds';
-export * from './witcher-old-world';
