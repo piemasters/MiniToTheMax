@@ -7293,7 +7293,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:8.0.5":
+"@storybook/react@npm:8.0.5, @storybook/react@npm:^8.0.5":
   version: 8.0.5
   resolution: "@storybook/react@npm:8.0.5"
   dependencies:
@@ -7326,42 +7326,6 @@ __metadata:
     typescript:
       optional: true
   checksum: 81664d6bd62e9ec2b41fe94f8b24823e5984c2064aa7562f3da39a36a6cd6c0ef54a070d92bc58213ee8dba005c7d22f6a03a8afb8f2d4534ba9024bf43383d0
-  languageName: node
-  linkType: hard
-
-"@storybook/react@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@storybook/react@npm:8.0.0"
-  dependencies:
-    "@storybook/client-logger": 8.0.0
-    "@storybook/docs-tools": 8.0.0
-    "@storybook/global": ^5.0.0
-    "@storybook/preview-api": 8.0.0
-    "@storybook/react-dom-shim": 8.0.0
-    "@storybook/types": 8.0.0
-    "@types/escodegen": ^0.0.6
-    "@types/estree": ^0.0.51
-    "@types/node": ^18.0.0
-    acorn: ^7.4.1
-    acorn-jsx: ^5.3.1
-    acorn-walk: ^7.2.0
-    escodegen: ^2.1.0
-    html-tags: ^3.1.0
-    lodash: ^4.17.21
-    prop-types: ^15.7.2
-    react-element-to-jsx-string: ^15.0.0
-    semver: ^7.3.7
-    ts-dedent: ^2.0.0
-    type-fest: ~2.19
-    util-deprecate: ^1.0.2
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-    typescript: ">= 4.2.x"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: f5fa86b7978b2b7140210d876a72004f8c9d80fe591f66952efa696f90dfe78e323b4c703107334316356e5c342b58ba8c2a25c7b13d1ca127b6b43e101d533d
   languageName: node
   linkType: hard
 
@@ -21623,7 +21587,7 @@ __metadata:
     "@storybook/addon-postcss": ^2.0.0
     "@storybook/addon-styling-webpack": 1.0.0
     "@storybook/addon-webpack5-compiler-babel": 3.0.3
-    "@storybook/react": ^8.0.0
+    "@storybook/react": ^8.0.5
     "@storybook/react-webpack5": ^8.0.5
     "@svgr/webpack": 8.1.0
     "@testing-library/cypress": 10.0.1
