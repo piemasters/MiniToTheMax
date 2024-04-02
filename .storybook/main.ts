@@ -15,10 +15,28 @@ const config: StorybookConfig = {
     '@storybook/addon-links',
     '@storybook/addon-mdx-gfm',
     '@storybook/addon-webpack5-compiler-babel',
-    '@storybook/addon-styling-webpack',
     {
-      name: '@storybook/addon-postcss',
-      options: { postcssLoaderOptions: { implementation: require('postcss') } },
+      name: '@storybook/addon-styling-webpack',
+      options: {
+        rules: [
+          // Replaces existing CSS rules to support PostCSS
+          {
+            test: /\.css$/,
+            use: [
+              'style-loader',
+              {
+                loader: 'css-loader',
+                options: { importLoaders: 1 },
+              },
+              {
+                // Gets options from `postcss.config.js` in your project root
+                loader: 'postcss-loader',
+                options: { implementation: require.resolve('postcss') },
+              },
+            ],
+          },
+        ],
+      },
     },
   ],
   docs: {
