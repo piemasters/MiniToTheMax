@@ -39,6 +39,7 @@ export const kruleboyz = [
   },
   {
     name: 'Man-skewer Boltboyz',
+    link: '/showcase/kruleboyz/man-skewer-boltboyz/',
   },
   {
     name: 'Man-skewer Boltboyz II',
