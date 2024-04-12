@@ -6607,9 +6607,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:^8.0.5":
-  version: 8.0.5
-  resolution: "@storybook/addon-links@npm:8.0.5"
+"@storybook/addon-links@npm:^8.0.8":
+  version: 8.0.8
+  resolution: "@storybook/addon-links@npm:8.0.8"
   dependencies:
     "@storybook/csf": ^0.1.2
     "@storybook/global": ^5.0.0
@@ -6619,7 +6619,7 @@ __metadata:
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: fd4ec56f8034f2e3cb6e770a015614bcff9d66256a8027a94accf7197e44a0fd518eb0d07d5b89a06d7e5405cc2c1575a3c0d17bc0377e8124ef0f417a2ea3ee
+  checksum: 3e85402bb3e913df4a4a14fbfb7f71ce9d7dee3f8526c5ccc82d9bce1bfa0b2b87531aee341b2a0644b307bdb828f2982e4e593d4f558fdcd1025e5704e87e4a
   languageName: node
   linkType: hard
 
@@ -21395,7 +21395,7 @@ __metadata:
     "@storybook/addon-a11y": ^8.0.5
     "@storybook/addon-essentials": ^8.0.5
     "@storybook/addon-jest": ^8.0.5
-    "@storybook/addon-links": ^8.0.5
+    "@storybook/addon-links": ^8.0.8
     "@storybook/addon-mdx-gfm": ^8.0.5
     "@storybook/addon-styling-webpack": 1.0.0
     "@storybook/addon-webpack5-compiler-babel": 3.0.3
