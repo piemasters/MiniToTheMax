@@ -38,6 +38,7 @@ const config: StorybookConfig = {
         ],
       },
     },
+    '@chromatic-com/storybook'
   ],
   docs: {
     autodocs: true,
