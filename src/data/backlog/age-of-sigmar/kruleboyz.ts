@@ -62,5 +62,6 @@ export const kruleboyz = [
   },
   {
     name: 'Swampcalla Shaman & Pot Grot',
+    link: '/showcase/kruleboyz/swampcalla-shaman-with-pot-grot/',
   },
 ];
