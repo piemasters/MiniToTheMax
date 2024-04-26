@@ -7679,9 +7679,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:15.0.2":
-  version: 15.0.2
-  resolution: "@testing-library/react@npm:15.0.2"
+"@testing-library/react@npm:15.0.4":
+  version: 15.0.4
+  resolution: "@testing-library/react@npm:15.0.4"
   dependencies:
     "@babel/runtime": ^7.12.5
     "@testing-library/dom": ^10.0.0
@@ -7689,7 +7689,7 @@ __metadata:
   peerDependencies:
     react: ^18.0.0
     react-dom: ^18.0.0
-  checksum: 32be030a5540164403f3cd8d6f46ad907119b2bc0a0df43ce6b925cdd520d5003298d06af1ee94d7bd764f294d74e802b6509caf2cf10afc77e67407baa9c1fb
+  checksum: 37f30f0fc009429e5a54fef48c2c354840fbaf1c96f7f29c9c0ec71815fe25978e8bde881018d1122186f150902de45aa9706c9e7b77d3e7ac4649e3a82e0454
   languageName: node
   linkType: hard
 
@@ -21543,7 +21543,7 @@ __metadata:
     "@svgr/webpack": 8.1.0
     "@testing-library/cypress": 10.0.1
     "@testing-library/jest-dom": 6.4.2
-    "@testing-library/react": 15.0.2
+    "@testing-library/react": 15.0.4
     "@types/jest": 29.5.12
     "@types/lodash": 4.17.0
     "@types/lodash.kebabcase": 4.1.9
