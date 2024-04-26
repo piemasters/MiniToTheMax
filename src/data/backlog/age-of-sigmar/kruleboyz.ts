@@ -43,6 +43,7 @@ export const kruleboyz = [
   },
   {
     name: 'Man-skewer Boltboyz II',
+    link: '/showcase/kruleboyz/man-skewer-boltboyz-2/',
   },
   {
     name: 'Marshcrawla Sloggoth',
