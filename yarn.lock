@@ -7285,7 +7285,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:8.0.8, @storybook/manager-api@npm:^8.0.8":
+"@storybook/manager-api@npm:8.0.8":
   version: 8.0.8
   resolution: "@storybook/manager-api@npm:8.0.8"
   dependencies:
@@ -7305,6 +7305,29 @@ __metadata:
     telejson: ^7.2.0
     ts-dedent: ^2.0.0
   checksum: 1d441178aa11e8553ddfd757697d6ed485cbc262c0556ff61507f54ceec3f809137adecaf038221ee89a7fcaae12ea724ade8973aa81f9a871b6f4a9f2ac48a1
+  languageName: node
+  linkType: hard
+
+"@storybook/manager-api@npm:^8.0.9":
+  version: 8.0.9
+  resolution: "@storybook/manager-api@npm:8.0.9"
+  dependencies:
+    "@storybook/channels": 8.0.9
+    "@storybook/client-logger": 8.0.9
+    "@storybook/core-events": 8.0.9
+    "@storybook/csf": ^0.1.4
+    "@storybook/global": ^5.0.0
+    "@storybook/icons": ^1.2.5
+    "@storybook/router": 8.0.9
+    "@storybook/theming": 8.0.9
+    "@storybook/types": 8.0.9
+    dequal: ^2.0.2
+    lodash: ^4.17.21
+    memoizerific: ^1.11.3
+    store2: ^2.14.2
+    telejson: ^7.2.0
+    ts-dedent: ^2.0.0
+  checksum: c36bc4ec171de94617f77b3f927c2db7c27fcfeb31b53b1037f5222a5b0677c3a6b6d31ae38930a37b66bf2851c684cce308d62167455d03790e3f4b0fc5327f
   languageName: node
   linkType: hard
 
@@ -7556,6 +7579,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/router@npm:8.0.9":
+  version: 8.0.9
+  resolution: "@storybook/router@npm:8.0.9"
+  dependencies:
+    "@storybook/client-logger": 8.0.9
+    memoizerific: ^1.11.3
+    qs: ^6.10.0
+  checksum: 995fe1c871658f456c1706a4d0741d2611cda730ef7825c887e241d1546ed4ce79ec5eeadb047d8b68c3ca8338853e608914a9daff15e1a848aad9d4f66ad10f
+  languageName: node
+  linkType: hard
+
 "@storybook/telemetry@npm:8.0.8":
   version: 8.0.8
   resolution: "@storybook/telemetry@npm:8.0.8"
@@ -7592,7 +7626,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:^8.0.9":
+"@storybook/theming@npm:8.0.9, @storybook/theming@npm:^8.0.9":
   version: 8.0.9
   resolution: "@storybook/theming@npm:8.0.9"
   dependencies:
@@ -21797,7 +21831,7 @@ __metadata:
     "@storybook/addon-mdx-gfm": ^8.0.8
     "@storybook/addon-styling-webpack": 1.0.0
     "@storybook/addon-webpack5-compiler-babel": 3.0.3
-    "@storybook/manager-api": ^8.0.8
+    "@storybook/manager-api": ^8.0.9
     "@storybook/react": ^8.0.9
     "@storybook/react-webpack5": ^8.0.8
     "@storybook/theming": ^8.0.9
