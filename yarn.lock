@@ -14293,14 +14293,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-cypress@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "eslint-plugin-cypress@npm:3.0.2"
+"eslint-plugin-cypress@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "eslint-plugin-cypress@npm:3.0.3"
   dependencies:
     globals: ^13.20.0
   peerDependencies:
     eslint: ">=7 <9"
-  checksum: 1a1ddfed495e30e5c53e21084b773459644a6e19c6d65c16c067795c5bdf18354d9ad4475e301946340bb62fd4a498de0be39ca7f41c9cab1ffcddff1953072b
+  checksum: f948a374d894838856f1c50488d2d3efec940ce686210272bc6cee49098db9947acb4c51ef810d18595b4c40bd13bd0648a6343e06dc9e9e1e2f5b82ca7e95de
   languageName: node
   linkType: hard
 
@@ -21913,7 +21913,7 @@ __metadata:
     eslint: 8.57.0
     eslint-config-prettier: 9.1.0
     eslint-loader: 4.0.2
-    eslint-plugin-cypress: ^3.0.2
+    eslint-plugin-cypress: ^3.0.3
     eslint-plugin-graphql: 4.0.0
     eslint-plugin-jsx-a11y: ^6.8.0
     eslint-plugin-prettier: 5.1.3
