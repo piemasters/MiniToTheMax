@@ -8772,13 +8772,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.3.0":
-  version: 18.3.0
-  resolution: "@types/react@npm:18.3.0"
+"@types/react@npm:18.3.1":
+  version: 18.3.1
+  resolution: "@types/react@npm:18.3.1"
   dependencies:
     "@types/prop-types": "*"
     csstype: ^3.0.2
-  checksum: 6addfffcf6220157217fd1487d831b41e725e170887a83bd4379e00b67c553dbb7b283c5f4555102f56536539f1f712635d27e27f377d17c2c0f171b66bc2f2d
+  checksum: 9224ef319a0c2b7f66e7e7f06012aa5eb638a6c76c9742843eab1a5d243f2bed5ff829ddbb41efd60d33a266420528adfcb84cb93f238b00e905f98c3a355768
   languageName: node
   linkType: hard
 
@@ -21942,7 +21942,7 @@ __metadata:
     "@types/lodash.kebabcase": 4.1.9
     "@types/node": 20.12.8
     "@types/node-sass": 4.11.7
-    "@types/react": 18.3.0
+    "@types/react": 18.3.1
     "@types/react-dom": 18.2.25
     "@types/react-test-renderer": 18.3.0
     "@typescript-eslint/eslint-plugin": 7.8.0
@@ -21997,7 +21997,7 @@ __metadata:
     photoswipe: ^5.4.3
     postcss: ^8.4.38
     prettier: 3.2.5
-    react: 18.3.0
+    react: 18.3.1
     react-docgen-typescript-loader: 3.7.2
     react-dom: 18.2.0
     react-photoswipe-gallery: ^3.0.1
@@ -24636,12 +24636,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.3.0":
-  version: 18.3.0
-  resolution: "react@npm:18.3.0"
+"react@npm:18.3.1":
+  version: 18.3.1
+  resolution: "react@npm:18.3.1"
   dependencies:
     loose-envify: ^1.1.0
-  checksum: f1389bf7f9cc9295fded895635e54c4bf73626a8ea51afaa2da4988f89e71b68f249c1782f832d5912ba7d437da9292fc44ecf7c3dff072879253df93d703a10
+  checksum: a27bcfa8ff7c15a1e50244ad0d0c1cb2ad4375eeffefd266a64889beea6f6b64c4966c9b37d14ee32d6c9fcd5aa6ba183b6988167ab4d127d13e7cb5b386a376
   languageName: node
   linkType: hard
 
