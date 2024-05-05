@@ -1,6 +1,7 @@
 export const kruleboyz = [
   {
     name: 'Beast-skewer Killbow',
+    link: '/showcase/kruleboyz/beast-skewer-killbow/',
   },
   {
     name: 'Breaka-boss on Mirebrute Troggoth',
