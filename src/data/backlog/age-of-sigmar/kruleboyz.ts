@@ -5,6 +5,7 @@ export const kruleboyz = [
   },
   {
     name: 'Breaka-boss on Mirebrute Troggoth',
+    link: '/showcase/kruleboyz/breaka-boss-on-mirebrute-troggoth/',
   },
   {
     name: 'Da Kunnin Krew',

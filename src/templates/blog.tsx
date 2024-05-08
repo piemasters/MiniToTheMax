@@ -43,7 +43,7 @@ export const Blog: FC<BlogTemplateProps> = ({ data, pageContext }) => {
   return (
     <Layout>
       <h1>Blog</h1>
-      <ol className="list-none m-0">
+      <ol className="m-0 list-none">
         {posts.map((post: PostSummaryType) => {
           return (
             <li key={post.slug}>
@@ -72,7 +72,7 @@ export const Blog: FC<BlogTemplateProps> = ({ data, pageContext }) => {
 export const postQuery = graphql`
   query blogPageQuery($skip: Int, $limit: Int) {
     posts: allMdx(
-      filter: { frontmatter: { published: { eq: false } } }
+      filter: { frontmatter: { published: { eq: true } } }
       sort: { frontmatter: { date: DESC } }
       limit: $limit
       skip: $skip
