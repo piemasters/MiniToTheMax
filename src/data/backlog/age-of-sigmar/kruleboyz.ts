@@ -15,6 +15,7 @@ export const kruleboyz = [
   },
   {
     name: 'Gobsprakk The Mouth of Mork',
+    link: '/showcase/kruleboyz/gobsprakk-the-mouth-of-mork/',
   },
   {
     name: 'Gutrippaz',
