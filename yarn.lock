@@ -7025,6 +7025,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/client-logger@npm:8.1.0":
+  version: 8.1.0
+  resolution: "@storybook/client-logger@npm:8.1.0"
+  dependencies:
+    "@storybook/global": ^5.0.0
+  checksum: 271c0a9c58ed953c1b06dfbfe261ed3e0cbcf772328513f5257863a3ff2e13405e31a31ed28d876b3919758bb2b9d398a465911ccb4f546253698eb865f78e25
+  languageName: node
+  linkType: hard
+
 "@storybook/codemod@npm:8.0.10":
   version: 8.0.10
   resolution: "@storybook/codemod@npm:8.0.10"
@@ -7474,7 +7483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:8.0.10, @storybook/theming@npm:^8.0.10":
+"@storybook/theming@npm:8.0.10":
   version: 8.0.10
   resolution: "@storybook/theming@npm:8.0.10"
   dependencies:
@@ -7491,6 +7500,26 @@ __metadata:
     react-dom:
       optional: true
   checksum: 8b4b2504a4e8dcd56165bba08a7f3d86bf420f32dff3d5ae5b30f8504dd4f3f5a52365efde388391b62880acab0de01ab8c13b480ddc254c35ec76947e5d9d62
+  languageName: node
+  linkType: hard
+
+"@storybook/theming@npm:^8.1.0":
+  version: 8.1.0
+  resolution: "@storybook/theming@npm:8.1.0"
+  dependencies:
+    "@emotion/use-insertion-effect-with-fallbacks": ^1.0.1
+    "@storybook/client-logger": 8.1.0
+    "@storybook/global": ^5.0.0
+    memoizerific: ^1.11.3
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 68891fbce72451996ca2eb39ad61e16d0fe6ad5b0a988f45776a82757a400eb6f657f7a89cf871e87e99cb6e2b201104740e5f2fe6091d7cd52b725bc328deff
   languageName: node
   linkType: hard
 
@@ -21675,7 +21704,7 @@ __metadata:
     "@storybook/manager-api": ^8.0.10
     "@storybook/react": ^8.0.10
     "@storybook/react-webpack5": ^8.0.10
-    "@storybook/theming": ^8.0.10
+    "@storybook/theming": ^8.1.0
     "@svgr/webpack": 8.1.0
     "@testing-library/cypress": 10.0.1
     "@testing-library/jest-dom": 6.4.5
