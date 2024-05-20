@@ -8485,7 +8485,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/webpack-asset-relocator-loader@npm:^1.7.3":
+"@vercel/webpack-asset-relocator-loader@npm:1.7.3":
   version: 1.7.3
   resolution: "@vercel/webpack-asset-relocator-loader@npm:1.7.3"
   dependencies:
@@ -15599,9 +15599,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:5.13.4":
-  version: 5.13.4
-  resolution: "gatsby@npm:5.13.4"
+"gatsby@npm:5.13.5":
+  version: 5.13.5
+  resolution: "gatsby@npm:5.13.5"
   dependencies:
     "@babel/code-frame": ^7.18.6
     "@babel/core": ^7.20.12
@@ -15630,7 +15630,7 @@ __metadata:
     "@types/http-proxy": ^1.17.11
     "@typescript-eslint/eslint-plugin": ^5.60.1
     "@typescript-eslint/parser": ^5.60.1
-    "@vercel/webpack-asset-relocator-loader": ^1.7.3
+    "@vercel/webpack-asset-relocator-loader": 1.7.3
     acorn-loose: ^8.3.0
     acorn-walk: ^8.2.0
     address: 1.2.2
@@ -15779,7 +15779,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 17fcdd9f940631cdc8ebe65c7931d3d2e1cb944c68bf624de40561d1afb0cab6e9394b8458ab2a4c66aa035d7d4bb52eb5ed99f7a655f9d1b60e7179370857ab
+  checksum: 524f13a91891c9eb870a23c963a889481964660c83b49c16826568b81ff107e74238300731274b5712d1517b7655d169adfcd0b1acc7b2f67df77f16de40c094
   languageName: node
   linkType: hard
 
@@ -21171,7 +21171,7 @@ __metadata:
     eslint-plugin-storybook: 0.8.0
     eslint-webpack-plugin: 4.1.0
     fs-extra: ^11.2.0
-    gatsby: 5.13.4
+    gatsby: 5.13.5
     gatsby-plugin-catch-links: 5.13.1
     gatsby-plugin-eslint: 4.0.4
     gatsby-plugin-google-gtag: 5.13.1
