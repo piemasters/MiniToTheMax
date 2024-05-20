@@ -8021,12 +8021,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.25":
-  version: 18.2.25
-  resolution: "@types/react-dom@npm:18.2.25"
+"@types/react-dom@npm:18.3.0":
+  version: 18.3.0
+  resolution: "@types/react-dom@npm:18.3.0"
   dependencies:
     "@types/react": "*"
-  checksum: 85f9278d6456c6cdc76da6806a33b472588cdd029b08dde32e8b5636b25a3eae529b4ac2e08c848a3d7ca44e4e97ee9a3df406c96fa0768de935c8eed6e07590
+  checksum: a0cd9b1b815a6abd2a367a9eabdd8df8dd8f13f95897b2f9e1359ea3ac6619f957c1432ece004af7d95e2a7caddbba19faa045f831f32d6263483fc5404a7596
   languageName: node
   linkType: hard
 
@@ -21208,7 +21208,7 @@ __metadata:
     "@types/node": 20.12.12
     "@types/node-sass": 4.11.7
     "@types/react": 18.3.2
-    "@types/react-dom": 18.2.25
+    "@types/react-dom": 18.3.0
     "@types/react-test-renderer": 18.3.0
     "@typescript-eslint/eslint-plugin": 7.8.0
     "@typescript-eslint/parser": 7.7.1
@@ -21264,7 +21264,7 @@ __metadata:
     prettier: 3.2.5
     react: 18.3.1
     react-docgen-typescript-loader: 3.7.2
-    react-dom: 18.2.0
+    react-dom: 18.3.1
     react-photoswipe-gallery: ^3.0.1
     react-test-renderer: 18.3.1
     sharp: ^0.33.4
@@ -23776,7 +23776,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.2.0, react-dom@npm:^16.8.0 || ^17.0.0 || ^18.0.0":
+"react-dom@npm:18.3.1":
+  version: 18.3.1
+  resolution: "react-dom@npm:18.3.1"
+  dependencies:
+    loose-envify: ^1.1.0
+    scheduler: ^0.23.2
+  peerDependencies:
+    react: ^18.3.1
+  checksum: 298954ecd8f78288dcaece05e88b570014d8f6dce5db6f66e6ee91448debeb59dcd31561dddb354eee47e6c1bb234669459060deb238ed0213497146e555a0b9
+  languageName: node
+  linkType: hard
+
+"react-dom@npm:^16.8.0 || ^17.0.0 || ^18.0.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
