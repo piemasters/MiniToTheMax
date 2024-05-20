@@ -38,11 +38,8 @@ const config: StorybookConfig = {
         ],
       },
     },
-    '@chromatic-com/storybook'
+    '@chromatic-com/storybook',
   ],
-  docs: {
-    autodocs: true,
-  },
   babel: (options) => ({
     ...options,
     presets: [
@@ -76,8 +73,10 @@ const config: StorybookConfig = {
       enforce: 'pre',
       loader: require.resolve('@svgr/webpack'),
     });
-
     return config;
+  },
+  typescript: {
+    reactDocgen: 'react-docgen-typescript',
   },
 };
 

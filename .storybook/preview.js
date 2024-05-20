@@ -42,3 +42,4 @@ global.__BASE_PATH__ = '/';
 window.___navigate = (pathname) => {
   action('NavigateTo:')(pathname);
 };
+export const tags = ['autodocs'];
