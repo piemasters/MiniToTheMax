@@ -35,6 +35,7 @@ export const kruleboyz = [
   },
   {
     name: 'Killaboss on Great Gnashtoof',
+    link: '/showcase/kruleboyz/killaboss-on-great-gnashtoof/',
   },
   {
     name: 'Killaboss with Stab-grot',
