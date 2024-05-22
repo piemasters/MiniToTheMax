@@ -6898,7 +6898,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:8.1.1, @storybook/manager-api@npm:^8.1.1":
+"@storybook/manager-api@npm:8.1.1":
   version: 8.1.1
   resolution: "@storybook/manager-api@npm:8.1.1"
   dependencies:
@@ -6921,7 +6921,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:8.1.2":
+"@storybook/manager-api@npm:8.1.2, @storybook/manager-api@npm:^8.1.2":
   version: 8.1.2
   resolution: "@storybook/manager-api@npm:8.1.2"
   dependencies:
@@ -21336,7 +21336,7 @@ __metadata:
     "@storybook/addon-mdx-gfm": ^8.1.2
     "@storybook/addon-styling-webpack": 1.0.0
     "@storybook/addon-webpack5-compiler-babel": 3.0.3
-    "@storybook/manager-api": ^8.1.1
+    "@storybook/manager-api": ^8.1.2
     "@storybook/react": ^8.1.2
     "@storybook/react-webpack5": ^8.1.2
     "@storybook/theming": ^8.1.2
