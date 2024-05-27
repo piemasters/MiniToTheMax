@@ -1792,14 +1792,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-jsx@npm:^7.24.1":
-  version: 7.24.1
-  resolution: "@babel/plugin-syntax-jsx@npm:7.24.1"
+"@babel/plugin-syntax-jsx@npm:^7.24.6":
+  version: 7.24.6
+  resolution: "@babel/plugin-syntax-jsx@npm:7.24.6"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.24.0
+    "@babel/helper-plugin-utils": ^7.24.6
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 712f7e7918cb679f106769f57cfab0bc99b311032665c428b98f4c3e2e6d567601d45386a4f246df6a80d741e1f94192b3f008800d66c4f1daae3ad825c243f0
+  checksum: e288681cab57d059b0b2e132040eb5e21a158c40229c600e77cb0289ba5d32a2102af94e43390d270e0ddd968685e9de8d10dab0291c53b84e2219a7bc4cdb54
   languageName: node
   linkType: hard
 
@@ -1913,14 +1913,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-syntax-typescript@npm:^7.24.1":
-  version: 7.24.1
-  resolution: "@babel/plugin-syntax-typescript@npm:7.24.1"
+"@babel/plugin-syntax-typescript@npm:^7.24.6":
+  version: 7.24.6
+  resolution: "@babel/plugin-syntax-typescript@npm:7.24.6"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.24.0
+    "@babel/helper-plugin-utils": ^7.24.6
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: bf4bd70788d5456b5f75572e47a2e31435c7c4e43609bd4dffd2cc0c7a6cf90aabcf6cd389e351854de9a64412a07d30effef5373251fe8f6a4c9db0c0163bda
+  checksum: 2fb15b246f7a2334ae5ebbc4c263dc2a66464e65074cbe82204acb42c097601c5ae5933d4c4716cad0a64b41aa999080eeabddbabadd163232d9e2631749f596
   languageName: node
   linkType: hard
 
@@ -3738,17 +3738,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-typescript@npm:^7.24.1":
-  version: 7.24.1
-  resolution: "@babel/plugin-transform-typescript@npm:7.24.1"
+"@babel/plugin-transform-typescript@npm:^7.24.6":
+  version: 7.24.6
+  resolution: "@babel/plugin-transform-typescript@npm:7.24.6"
   dependencies:
-    "@babel/helper-annotate-as-pure": ^7.22.5
-    "@babel/helper-create-class-features-plugin": ^7.24.1
-    "@babel/helper-plugin-utils": ^7.24.0
-    "@babel/plugin-syntax-typescript": ^7.24.1
+    "@babel/helper-annotate-as-pure": ^7.24.6
+    "@babel/helper-create-class-features-plugin": ^7.24.6
+    "@babel/helper-plugin-utils": ^7.24.6
+    "@babel/plugin-syntax-typescript": ^7.24.6
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 1a37fa55ab176b11c3763da4295651b3db38f0a7f3d47b5cd5ab1e33cbcbbf2b471c4bdb7b24f39392d4660409209621c8d11c521de2deffddc3d876a1b60482
+  checksum: 1af9c27612956b6d65195f484c545490dec01094fc07990c7266732cf104fde09f623df71d2ac7bea3509129735c12fb4d73085d257514fbe4b133963c8895b7
   languageName: node
   linkType: hard
 
@@ -4268,18 +4268,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-typescript@npm:^7.24.1":
-  version: 7.24.1
-  resolution: "@babel/preset-typescript@npm:7.24.1"
+"@babel/preset-typescript@npm:^7.24.6":
+  version: 7.24.6
+  resolution: "@babel/preset-typescript@npm:7.24.6"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.24.0
-    "@babel/helper-validator-option": ^7.23.5
-    "@babel/plugin-syntax-jsx": ^7.24.1
-    "@babel/plugin-transform-modules-commonjs": ^7.24.1
-    "@babel/plugin-transform-typescript": ^7.24.1
+    "@babel/helper-plugin-utils": ^7.24.6
+    "@babel/helper-validator-option": ^7.24.6
+    "@babel/plugin-syntax-jsx": ^7.24.6
+    "@babel/plugin-transform-modules-commonjs": ^7.24.6
+    "@babel/plugin-transform-typescript": ^7.24.6
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: f3e0ff8c20dd5abc82614df2d7953f1549a98282b60809478f7dfb41c29be63720f2d1d7a51ef1f0d939b65e8666cb7d36e32bc4f8ac2b74c20664efd41e8bdd
+  checksum: f78a424bc19339b287da40fb3016f8390f5cb1c956d46ea46fb898e25f7a5448c2c5267cd7734f7665c743e416dd11da447d450b6012d061dfb6ae5f824abbd6
   languageName: node
   linkType: hard
 
@@ -22155,7 +22155,7 @@ __metadata:
     "@babel/core": 7.24.5
     "@babel/preset-env": ^7.24.6
     "@babel/preset-react": ^7.24.1
-    "@babel/preset-typescript": ^7.24.1
+    "@babel/preset-typescript": ^7.24.6
     "@chromatic-com/storybook": ^1.4.0
     "@mdx-js/react": ^3.0.1
     "@storybook/addon-a11y": ^8.1.3
