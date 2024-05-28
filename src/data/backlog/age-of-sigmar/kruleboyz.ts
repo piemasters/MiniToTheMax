@@ -51,6 +51,7 @@ export const kruleboyz = [
   },
   {
     name: 'Marshcrawla Sloggoth',
+    link: '/showcase/kruleboyz/marshcrawla-sloggoth/',
   },
   {
     name: 'Monsta-killaz',
