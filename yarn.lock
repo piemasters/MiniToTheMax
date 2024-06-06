@@ -8563,7 +8563,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:8.1.5, @storybook/theming@npm:^8.1.5":
+"@storybook/theming@npm:8.1.5":
   version: 8.1.5
   resolution: "@storybook/theming@npm:8.1.5"
   dependencies:
@@ -8583,7 +8583,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:8.1.6":
+"@storybook/theming@npm:8.1.6, @storybook/theming@npm:^8.1.6":
   version: 8.1.6
   resolution: "@storybook/theming@npm:8.1.6"
   dependencies:
@@ -22766,7 +22766,7 @@ __metadata:
     "@storybook/manager-api": ^8.1.5
     "@storybook/react": ^8.1.6
     "@storybook/react-webpack5": ^8.1.6
-    "@storybook/theming": ^8.1.5
+    "@storybook/theming": ^8.1.6
     "@svgr/webpack": 8.1.0
     "@testing-library/cypress": 10.0.2
     "@testing-library/jest-dom": 6.4.5
