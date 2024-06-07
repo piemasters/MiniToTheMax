@@ -65,6 +65,7 @@ export const kruleboyz = [
   },
   {
     name: 'Swampboss Skumdrekk',
+    link: '/showcase/kruleboyz/swampboss-skumdrekk/',
   },
   {
     name: 'Swampcalla Shaman & Pot Grot',
