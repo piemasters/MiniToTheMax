@@ -56,7 +56,7 @@
     "@babel/preset-typescript": "^7.24.7",
     "@chromatic-com/storybook": "^1.5.0",
     "@storybook/addon-a11y": "^8.1.9",
-    "@storybook/addon-essentials": "^8.1.8",
+    "@storybook/addon-essentials": "^8.1.9",
     "@storybook/addon-jest": "^8.1.9",
     "@storybook/addon-links": "^8.1.8",
     "@storybook/addon-mdx-gfm": "^8.1.9",
