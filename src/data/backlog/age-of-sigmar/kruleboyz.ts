@@ -58,6 +58,7 @@ export const kruleboyz = [
   },
   {
     name: 'Mugruk da Watcha',
+    link: '/showcase/kruleboyz/mugruk-da-watcha/',
   },
   {
     name: 'Murknob with Belcha-banna',
