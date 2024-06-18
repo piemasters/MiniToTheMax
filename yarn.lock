@@ -8452,7 +8452,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:8.1.9, @storybook/theming@npm:^8.1.9":
+"@storybook/theming@npm:8.1.9":
   version: 8.1.9
   resolution: "@storybook/theming@npm:8.1.9"
   dependencies:
@@ -8469,6 +8469,26 @@ __metadata:
     react-dom:
       optional: true
   checksum: deba104d1409dfde7065cbdddcd291b756e6be572794b7bb52925453691cb016c8b8c8af26f4825227e36d614ff8f26f4219eecfc8acb7a3953924b226894ccb
+  languageName: node
+  linkType: hard
+
+"@storybook/theming@npm:^8.1.10":
+  version: 8.1.10
+  resolution: "@storybook/theming@npm:8.1.10"
+  dependencies:
+    "@emotion/use-insertion-effect-with-fallbacks": ^1.0.1
+    "@storybook/client-logger": 8.1.10
+    "@storybook/global": ^5.0.0
+    memoizerific: ^1.11.3
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: e64a136a6762ea52b529d1d3e69963fea30fb98b96508c5fc03e8192aeeefb4e54a655d2a6cb20a321c9714e6adee202fed9224269b444618f989105461b90f2
   languageName: node
   linkType: hard
 
@@ -22600,7 +22620,7 @@ __metadata:
     "@storybook/manager-api": ^8.1.9
     "@storybook/react": ^8.1.10
     "@storybook/react-webpack5": ^8.1.8
-    "@storybook/theming": ^8.1.9
+    "@storybook/theming": ^8.1.10
     "@svgr/webpack": 8.1.0
     "@testing-library/cypress": 10.0.2
     "@testing-library/jest-dom": 6.4.6
