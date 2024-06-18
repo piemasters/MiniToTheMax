@@ -8018,7 +8018,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:8.1.9, @storybook/manager-api@npm:^8.1.9":
+"@storybook/manager-api@npm:8.1.9":
   version: 8.1.9
   resolution: "@storybook/manager-api@npm:8.1.9"
   dependencies:
@@ -8038,6 +8038,29 @@ __metadata:
     telejson: ^7.2.0
     ts-dedent: ^2.0.0
   checksum: 7645aa411d3bdfab5e585fbf7ca15521471ef7ee13c26986e5c20c4b12811a3e31df24285dd5bff740e3a21d1a2f3c53d52e1c6e16520edd87e85c27e6245494
+  languageName: node
+  linkType: hard
+
+"@storybook/manager-api@npm:^8.1.10":
+  version: 8.1.10
+  resolution: "@storybook/manager-api@npm:8.1.10"
+  dependencies:
+    "@storybook/channels": 8.1.10
+    "@storybook/client-logger": 8.1.10
+    "@storybook/core-events": 8.1.10
+    "@storybook/csf": ^0.1.7
+    "@storybook/global": ^5.0.0
+    "@storybook/icons": ^1.2.5
+    "@storybook/router": 8.1.10
+    "@storybook/theming": 8.1.10
+    "@storybook/types": 8.1.10
+    dequal: ^2.0.2
+    lodash: ^4.17.21
+    memoizerific: ^1.11.3
+    store2: ^2.14.2
+    telejson: ^7.2.0
+    ts-dedent: ^2.0.0
+  checksum: 700a76bcb00368321a3c4e897cf06cb41055cfddb4b174e9d3650523ba1bb8fd360f4d7cfbab5d4963b2af554de0fb78d25e7cef22cdff9c26b0c8502822db38
   languageName: node
   linkType: hard
 
@@ -8243,6 +8266,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/router@npm:8.1.10":
+  version: 8.1.10
+  resolution: "@storybook/router@npm:8.1.10"
+  dependencies:
+    "@storybook/client-logger": 8.1.10
+    memoizerific: ^1.11.3
+    qs: ^6.10.0
+  checksum: 89730d7f035a4c5c8db37c64f024c0c6e509e95b405b5d3158caea39012ab02d142a1bcbbefc93e5926ba096117a10da4f33b5a2368202c8da3b5c1814dbbe0a
+  languageName: node
+  linkType: hard
+
 "@storybook/router@npm:8.1.9":
   version: 8.1.9
   resolution: "@storybook/router@npm:8.1.9"
@@ -8270,6 +8304,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/theming@npm:8.1.10, @storybook/theming@npm:^8.1.10":
+  version: 8.1.10
+  resolution: "@storybook/theming@npm:8.1.10"
+  dependencies:
+    "@emotion/use-insertion-effect-with-fallbacks": ^1.0.1
+    "@storybook/client-logger": 8.1.10
+    "@storybook/global": ^5.0.0
+    memoizerific: ^1.11.3
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: e64a136a6762ea52b529d1d3e69963fea30fb98b96508c5fc03e8192aeeefb4e54a655d2a6cb20a321c9714e6adee202fed9224269b444618f989105461b90f2
+  languageName: node
+  linkType: hard
+
 "@storybook/theming@npm:8.1.9":
   version: 8.1.9
   resolution: "@storybook/theming@npm:8.1.9"
@@ -8287,26 +8341,6 @@ __metadata:
     react-dom:
       optional: true
   checksum: deba104d1409dfde7065cbdddcd291b756e6be572794b7bb52925453691cb016c8b8c8af26f4825227e36d614ff8f26f4219eecfc8acb7a3953924b226894ccb
-  languageName: node
-  linkType: hard
-
-"@storybook/theming@npm:^8.1.10":
-  version: 8.1.10
-  resolution: "@storybook/theming@npm:8.1.10"
-  dependencies:
-    "@emotion/use-insertion-effect-with-fallbacks": ^1.0.1
-    "@storybook/client-logger": 8.1.10
-    "@storybook/global": ^5.0.0
-    memoizerific: ^1.11.3
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: e64a136a6762ea52b529d1d3e69963fea30fb98b96508c5fc03e8192aeeefb4e54a655d2a6cb20a321c9714e6adee202fed9224269b444618f989105461b90f2
   languageName: node
   linkType: hard
 
@@ -22424,7 +22458,7 @@ __metadata:
     "@storybook/addon-mdx-gfm": ^8.1.10
     "@storybook/addon-styling-webpack": 1.0.0
     "@storybook/addon-webpack5-compiler-babel": 3.0.3
-    "@storybook/manager-api": ^8.1.9
+    "@storybook/manager-api": ^8.1.10
     "@storybook/react": ^8.1.10
     "@storybook/react-webpack5": ^8.1.10
     "@storybook/theming": ^8.1.10
