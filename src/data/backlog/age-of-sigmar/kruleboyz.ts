@@ -9,6 +9,7 @@ export const kruleboyz = [
   },
   {
     name: 'Da Kunnin Krew',
+    link: '/showcase/board-games/underworlds/da-kunnin-krew/',
   },
   {
     name: 'Daggoks Stab-Ladz',
