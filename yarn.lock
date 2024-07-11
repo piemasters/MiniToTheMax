@@ -8106,7 +8106,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:8.1.11, @storybook/theming@npm:^8.1.11":
+"@storybook/theming@npm:8.1.11":
   version: 8.1.11
   resolution: "@storybook/theming@npm:8.1.11"
   dependencies:
@@ -8123,6 +8123,15 @@ __metadata:
     react-dom:
       optional: true
   checksum: 11430fba26d987b4ebcaf18b86b354c149add7e06f0108ae31befd56397399b7e3721864e61db5bcee5f087b6a5d25f06e6d25f0effeb1b6504e7f78409478df
+  languageName: node
+  linkType: hard
+
+"@storybook/theming@npm:^8.2.1":
+  version: 8.2.1
+  resolution: "@storybook/theming@npm:8.2.1"
+  peerDependencies:
+    storybook: ^8.2.1
+  checksum: ba970f72636c75204244b29eda7971933747b136b902d92f4235f392de0c582a464f58dcaef6c6658a541fa18b0421d4304ef56b3bc954c25d1100d0d0ae67c9
   languageName: node
   linkType: hard
 
@@ -22303,7 +22312,7 @@ __metadata:
     "@storybook/manager-api": ^8.1.11
     "@storybook/react": ^8.1.11
     "@storybook/react-webpack5": ^8.1.11
-    "@storybook/theming": ^8.1.11
+    "@storybook/theming": ^8.2.1
     "@svgr/webpack": 8.1.0
     "@testing-library/cypress": 10.0.2
     "@testing-library/jest-dom": 6.4.6
