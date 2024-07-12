@@ -7893,7 +7893,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/manager-api@npm:8.1.11, @storybook/manager-api@npm:^8.1.11":
+"@storybook/manager-api@npm:8.1.11":
   version: 8.1.11
   resolution: "@storybook/manager-api@npm:8.1.11"
   dependencies:
@@ -7913,6 +7913,15 @@ __metadata:
     telejson: ^7.2.0
     ts-dedent: ^2.0.0
   checksum: 71875933b282ab63078349a820624cc6e45691ed9b0ca5db02c2ce86b8db66376ed6c612cd6d9cf84415edd159c645c6cc26501fb2cbe8fdb755580521dd3ee9
+  languageName: node
+  linkType: hard
+
+"@storybook/manager-api@npm:^8.2.2":
+  version: 8.2.2
+  resolution: "@storybook/manager-api@npm:8.2.2"
+  peerDependencies:
+    storybook: ^8.2.2
+  checksum: ce246313724153e0b371a96549035916ff47606abf1d6be9c034ce9c7c44e5b842773e0934e898499672a0094be24094169cbb71ffa97b7a2975fb6bc066fb70
   languageName: node
   linkType: hard
 
@@ -22300,7 +22309,7 @@ __metadata:
     "@storybook/addon-mdx-gfm": ^8.1.11
     "@storybook/addon-styling-webpack": 1.0.0
     "@storybook/addon-webpack5-compiler-babel": 3.0.3
-    "@storybook/manager-api": ^8.1.11
+    "@storybook/manager-api": ^8.2.2
     "@storybook/react": ^8.1.11
     "@storybook/react-webpack5": ^8.1.11
     "@storybook/theming": ^8.1.11
