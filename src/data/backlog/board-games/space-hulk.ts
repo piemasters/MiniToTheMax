@@ -11,7 +11,7 @@ export const spaceHulk = [
   { name: 'Brother Valencio' },
   { name: 'Brother Zael' },
   { name: 'Genestealers' },
-  { name: 'Objectives' },
+  { name: 'Objectives', link: '/showcase/board-games/space-hulk/objectives/' },
   { name: 'Sergeant Gideon' },
   { name: 'Sergeant Lorenzo' },
 ];
