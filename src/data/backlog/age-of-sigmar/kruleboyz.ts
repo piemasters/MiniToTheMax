@@ -13,6 +13,7 @@ export const kruleboyz = [
   },
   {
     name: 'Daggoks Stab-Ladz',
+    link: '/showcase/board-games/underworlds/daggoks-stab-ladz/',
   },
   {
     name: 'Gobsprakk The Mouth of Mork',

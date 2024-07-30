@@ -39,8 +39,8 @@ export const IndexPage: FC = () => {
       <Badges />
       <h2>Latest Video</h2>
       <Video
-        src="https://www.youtube.com/embed/lC8jatUYpoU"
-        title="Kruleboyz: Da Kunnin Krew"
+        src="https://www.youtube.com/embed/z0YE8VfE85Q"
+        title="Kruleboyz: Daggok's Stab Ladz"
       />
       <h2>Latest Post</h2>
 
