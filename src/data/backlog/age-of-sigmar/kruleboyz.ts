@@ -57,6 +57,7 @@ export const kruleboyz = [
   },
   {
     name: 'Monsta-killaz',
+    link: '/showcase/kruleboyz/monsta-killaz/',
   },
   {
     name: 'Mugruk da Watcha',
