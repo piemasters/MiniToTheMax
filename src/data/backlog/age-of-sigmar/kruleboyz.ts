@@ -44,6 +44,10 @@ export const kruleboyz = [
     link: '/showcase/kruleboyz/killaboss-with-stab-grot/',
   },
   {
+    name: 'Killaboss Zagnog',
+    link: '/showcase/kruleboyz/killaboss-zagnog/',
+  },
+  {
     name: 'Man-skewer Boltboyz',
     link: '/showcase/kruleboyz/man-skewer-boltboyz/',
   },
