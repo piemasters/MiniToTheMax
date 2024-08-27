@@ -116,7 +116,7 @@
     "sharp": "^0.33.4",
     "start-server-and-test": "2.0.4",
     "storybook": "^8.2.5",
-    "tailwindcss": "^3.4.6",
+    "tailwindcss": "^3.4.10",
     "ts-loader": "9.5.1",
     "typescript": "5.5.4"
   }
