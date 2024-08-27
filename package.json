@@ -39,7 +39,7 @@
     "gatsby-plugin-sharp": "5.13.1",
     "gatsby-plugin-sitemap": "6.13.1",
     "gatsby-plugin-typescript": "5.13.1",
-    "gatsby-remark-images": "7.13.1",
+    "gatsby-remark-images": "7.13.2",
     "gatsby-source-filesystem": "5.13.1",
     "gatsby-transformer-sharp": "5.13.1",
     "gsap": "3.12.5",
