@@ -7234,15 +7234,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-mdx-gfm@npm:^8.2.5":
-  version: 8.2.5
-  resolution: "@storybook/addon-mdx-gfm@npm:8.2.5"
+"@storybook/addon-mdx-gfm@npm:^8.2.9":
+  version: 8.2.9
+  resolution: "@storybook/addon-mdx-gfm@npm:8.2.9"
   dependencies:
     remark-gfm: ^4.0.0
     ts-dedent: ^2.0.0
   peerDependencies:
-    storybook: ^8.2.5
-  checksum: 91c1a5f1f8699d0f66766d722b325b785e36dccc72c459689ff84cb8ce147f53dfeffc55169d55912c46241dd0123f86bc1820e4efb130fc056a2506fe5a9e30
+    storybook: ^8.2.9
+  checksum: ec08e60e5cb75acbafa8f0bb65efff91dd2513c9062d9e2964e62152be9a09e1faf553dc9b7e6c678b9e89bbfa476134087786935020beefb9e57794531c3dcc
   languageName: node
   linkType: hard
 
@@ -11206,7 +11206,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cheerio@npm:1.0.0-rc.12, cheerio@npm:^1.0.0-rc.10":
+"cheerio@npm:1.0.0-rc.12":
   version: 1.0.0-rc.12
   resolution: "cheerio@npm:1.0.0-rc.12"
   dependencies:
@@ -21478,7 +21478,7 @@ __metadata:
     "@storybook/addon-essentials": ^8.2.5
     "@storybook/addon-jest": ^8.2.5
     "@storybook/addon-links": ^8.2.9
-    "@storybook/addon-mdx-gfm": ^8.2.5
+    "@storybook/addon-mdx-gfm": ^8.2.9
     "@storybook/addon-styling-webpack": 1.0.0
     "@storybook/addon-webpack5-compiler-babel": 3.0.3
     "@storybook/manager-api": ^8.2.5
