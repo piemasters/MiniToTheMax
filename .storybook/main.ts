@@ -6,8 +6,10 @@ const config: StorybookConfig = {
     name: '@storybook/react-webpack5',
     options: {},
   },
+
   stories: ['../src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],
   staticDirs: ['../public', '../content/assets'],
+
   addons: [
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
@@ -40,6 +42,7 @@ const config: StorybookConfig = {
     },
     '@chromatic-com/storybook',
   ],
+
   babel: (options) => ({
     ...options,
     presets: [
@@ -55,6 +58,7 @@ const config: StorybookConfig = {
     ],
     plugins: ['babel-plugin-remove-graphql-queries'],
   }),
+
   webpackFinal: async (config) => {
     config.resolve.mainFields = ['browser', 'module', 'main'];
 
@@ -75,9 +79,12 @@ const config: StorybookConfig = {
     });
     return config;
   },
+
   typescript: {
     reactDocgen: 'react-docgen-typescript',
   },
+
+  docs: {}
 };
 
 export default config;
