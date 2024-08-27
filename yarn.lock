@@ -7096,15 +7096,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:^8.2.5":
-  version: 8.2.5
-  resolution: "@storybook/addon-a11y@npm:8.2.5"
+"@storybook/addon-a11y@npm:^8.2.9":
+  version: 8.2.9
+  resolution: "@storybook/addon-a11y@npm:8.2.9"
   dependencies:
-    "@storybook/addon-highlight": 8.2.5
+    "@storybook/addon-highlight": 8.2.9
     axe-core: ^4.2.0
   peerDependencies:
-    storybook: ^8.2.5
-  checksum: 697b19f2c6eb35fb92b3948180b47411cf47d1b8a93f897281fcaa4a68ec34b0890cfcb0c4754b5493631f3ad17561ef254d1ffec12a62952f3062080ae7e79d
+    storybook: ^8.2.9
+  checksum: ccef3d51f276df8ebf7982df45090d0af1f976550ff85d69df271df6d5bb10dece230e60b7c944306fef0ec935423359adccdd2a09891d853aa6b0deefc7726c
   languageName: node
   linkType: hard
 
@@ -7200,6 +7200,17 @@ __metadata:
   peerDependencies:
     storybook: ^8.2.5
   checksum: 78f7f8dff47bc5e73fdabd8676e2392017b4b4259f6da23c9fa8d3baf6e25e77a07eafd389ff8a09e5ccd5ee3dee1f084e3819c4ba118ef57d68ba0a7a26bc5c
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-highlight@npm:8.2.9":
+  version: 8.2.9
+  resolution: "@storybook/addon-highlight@npm:8.2.9"
+  dependencies:
+    "@storybook/global": ^5.0.0
+  peerDependencies:
+    storybook: ^8.2.9
+  checksum: 119623ff7396473ea052691c8a8924065347bc1bd6b43d75491b0751f6ebaec4f129b764765079c03a9b5105a44bab5d08f65a0a8d6b9c527667f7273cb0881b
   languageName: node
   linkType: hard
 
@@ -11206,7 +11217,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cheerio@npm:1.0.0-rc.12, cheerio@npm:^1.0.0-rc.10":
+"cheerio@npm:1.0.0-rc.12":
   version: 1.0.0-rc.12
   resolution: "cheerio@npm:1.0.0-rc.12"
   dependencies:
@@ -21474,7 +21485,7 @@ __metadata:
     "@babel/preset-typescript": ^7.24.7
     "@chromatic-com/storybook": ^1.6.1
     "@mdx-js/react": ^3.0.1
-    "@storybook/addon-a11y": ^8.2.5
+    "@storybook/addon-a11y": ^8.2.9
     "@storybook/addon-essentials": ^8.2.5
     "@storybook/addon-jest": ^8.2.5
     "@storybook/addon-links": ^8.2.9
