@@ -11206,7 +11206,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cheerio@npm:^1.0.0-rc.10":
+"cheerio@npm:1.0.0-rc.12, cheerio@npm:^1.0.0-rc.10":
   version: 1.0.0-rc.12
   resolution: "cheerio@npm:1.0.0-rc.12"
   dependencies:
@@ -15755,12 +15755,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:6.13.2":
-  version: 6.13.2
-  resolution: "gatsby-plugin-offline@npm:6.13.2"
+"gatsby-plugin-offline@npm:6.13.3":
+  version: 6.13.3
+  resolution: "gatsby-plugin-offline@npm:6.13.3"
   dependencies:
     "@babel/runtime": ^7.20.13
-    cheerio: ^1.0.0-rc.10
+    cheerio: 1.0.0-rc.12
     gatsby-core-utils: ^4.13.1
     glob: ^7.2.3
     idb-keyval: ^3.2.0
@@ -15770,7 +15770,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 5296842d099e7091af4d0325f7328ca2076ab073ad1cdc455c8904d233bdb61d2ecacfa3c354e4b1155999788b236def9a53422774e7b4be2683374ed19c6ea5
+  checksum: d556f7fd06462ebae17946af91ad27320799d63698f24c7c0409d33c5fe89241f0c5a742818eecf45c04de8005b1832acffdbe328b038aa7bf837ccd5aa971a8
   languageName: node
   linkType: hard
 
@@ -21530,7 +21530,7 @@ __metadata:
     gatsby-plugin-image: 3.13.1
     gatsby-plugin-manifest: 5.13.1
     gatsby-plugin-mdx: 5.13.1
-    gatsby-plugin-offline: 6.13.2
+    gatsby-plugin-offline: 6.13.3
     gatsby-plugin-postcss: ^6.13.1
     gatsby-plugin-react-svg: 3.3.0
     gatsby-plugin-robots-txt: 1.8.0
