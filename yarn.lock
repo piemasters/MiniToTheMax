@@ -11206,7 +11206,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cheerio@npm:^1.0.0-rc.10":
+"cheerio@npm:1.0.0-rc.12, cheerio@npm:^1.0.0-rc.10":
   version: 1.0.0-rc.12
   resolution: "cheerio@npm:1.0.0-rc.12"
   dependencies:
@@ -15921,13 +15921,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:7.13.1":
-  version: 7.13.1
-  resolution: "gatsby-remark-images@npm:7.13.1"
+"gatsby-remark-images@npm:7.13.2":
+  version: 7.13.2
+  resolution: "gatsby-remark-images@npm:7.13.2"
   dependencies:
     "@babel/runtime": ^7.20.13
     chalk: ^4.1.2
-    cheerio: ^1.0.0-rc.10
+    cheerio: 1.0.0-rc.12
     gatsby-core-utils: ^4.13.1
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
@@ -15938,7 +15938,7 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
     gatsby-plugin-sharp: ^5.0.0-next
-  checksum: d6f6f86ea3071c98f299344e47d437e0f38bdc18e4698ff928fdbd94d864d8d3def78b6a730561a82d454801e90c6be4715bf5433eca9a0650d00997435a552c
+  checksum: c6e1e19d2fd7b6b238f0393cbca54d0cd327bad4b7a40b1678251e976b1621f3d69acfe3f86b4ff829e726a68a6f4cb576ec5964e2e46c2510bf25cc3382128c
   languageName: node
   linkType: hard
 
@@ -21537,7 +21537,7 @@ __metadata:
     gatsby-plugin-sharp: 5.13.1
     gatsby-plugin-sitemap: 6.13.1
     gatsby-plugin-typescript: 5.13.1
-    gatsby-remark-images: 7.13.1
+    gatsby-remark-images: 7.13.2
     gatsby-source-filesystem: 5.13.1
     gatsby-transformer-sharp: 5.13.1
     glob: ^11.0.0
