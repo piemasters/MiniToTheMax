@@ -4903,16 +4903,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chromatic-com/storybook@npm:^1.8.0":
-  version: 1.8.0
-  resolution: "@chromatic-com/storybook@npm:1.8.0"
+"@chromatic-com/storybook@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@chromatic-com/storybook@npm:2.0.0"
   dependencies:
     chromatic: ^11.4.0
     filesize: ^10.0.12
     jsonfile: ^6.1.0
     react-confetti: ^6.1.0
     strip-ansi: ^7.1.0
-  checksum: 08fa2dbb7215eac69129639ab56833f36c703b21d2744c6c593559e868f163d38ba9f6f3cf26fbc40600d11fe08c1fb0ec5e01ed0a762c7429cab32e2f6ec6d9
+  peerDependencies:
+    storybook: ^8.2.0
+  checksum: cbb95c793d40b731d564ab25d8736e771e4c9401bcd59fb2cda6f808e32a757378522b3c338259134ba5a5c6b8ddb4b2470232b335105195ca066dba1530a7ef
   languageName: node
   linkType: hard
 
@@ -21610,7 +21612,7 @@ __metadata:
     "@babel/preset-env": ^7.25.4
     "@babel/preset-react": ^7.24.7
     "@babel/preset-typescript": ^7.24.7
-    "@chromatic-com/storybook": ^1.8.0
+    "@chromatic-com/storybook": ^2.0.0
     "@mdx-js/react": ^3.0.1
     "@storybook/addon-a11y": ^8.2.9
     "@storybook/addon-essentials": ^8.2.9
