@@ -7364,15 +7364,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-mdx-gfm@npm:^8.2.9":
-  version: 8.2.9
-  resolution: "@storybook/addon-mdx-gfm@npm:8.2.9"
+"@storybook/addon-mdx-gfm@npm:^8.3.0":
+  version: 8.3.0
+  resolution: "@storybook/addon-mdx-gfm@npm:8.3.0"
   dependencies:
     remark-gfm: ^4.0.0
     ts-dedent: ^2.0.0
   peerDependencies:
-    storybook: ^8.2.9
-  checksum: ec08e60e5cb75acbafa8f0bb65efff91dd2513c9062d9e2964e62152be9a09e1faf553dc9b7e6c678b9e89bbfa476134087786935020beefb9e57794531c3dcc
+    storybook: ^8.3.0
+  checksum: 82a9a0b6ee6e75902d62bab9e10f5789a148815c792f47995873d43c7ec5c0802b919e3464ae0eb7bc02f5fd73241b9f3426497e5a0aa0ae3f465d284a914b6b
   languageName: node
   linkType: hard
 
@@ -21635,7 +21635,7 @@ __metadata:
     "@storybook/addon-essentials": ^8.2.9
     "@storybook/addon-jest": ^8.2.9
     "@storybook/addon-links": ^8.2.9
-    "@storybook/addon-mdx-gfm": ^8.2.9
+    "@storybook/addon-mdx-gfm": ^8.3.0
     "@storybook/addon-styling-webpack": 1.0.0
     "@storybook/addon-webpack5-compiler-babel": 3.0.3
     "@storybook/manager-api": ^8.2.9
