@@ -20225,7 +20225,7 @@ __metadata:
     "@storybook/manager-api": ^8.3.1
     "@storybook/react": ^8.3.2
     "@storybook/react-webpack5": ^8.3.1
-    "@storybook/theming": ^8.3.1
+    "@storybook/theming": ^8.3.2
     "@svgr/webpack": 8.1.0
     "@testing-library/cypress": 10.0.2
     "@testing-library/jest-dom": 6.5.0
