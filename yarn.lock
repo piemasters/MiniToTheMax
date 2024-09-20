@@ -6296,9 +6296,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core@npm:8.3.1":
-  version: 8.3.1
-  resolution: "@storybook/core@npm:8.3.1"
+"@storybook/core@npm:8.3.2":
+  version: 8.3.2
+  resolution: "@storybook/core@npm:8.3.2"
   dependencies:
     "@storybook/csf": ^0.1.11
     "@types/express": ^4.17.21
@@ -6313,7 +6313,7 @@ __metadata:
     semver: ^7.6.2
     util: ^0.12.5
     ws: ^8.2.3
-  checksum: b885d970469260c5fd2fc095e64247b00e27f11e38e9dabaec7d52218adc40f729306491ce1e6ff59923745d952836276a63e440818f5dc0d86254a4adbd2ce9
+  checksum: 85a63eadf5cd898552393eac553df107fdd176aa7a1564f88bdc3d43842720b12f9bbbdb019f8a671c4ebe2f67d276c6c7c6b26f199f5bd0f47dcd670270b3e9
   languageName: node
   linkType: hard
 
@@ -20297,7 +20297,7 @@ __metadata:
     react-test-renderer: 18.3.1
     sharp: ^0.33.5
     start-server-and-test: 2.0.8
-    storybook: ^8.3.1
+    storybook: ^8.3.2
     tailwindcss: ^3.4.12
     ts-loader: 9.5.1
     typescript: 5.6.2
@@ -24593,16 +24593,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:^8.3.1":
-  version: 8.3.1
-  resolution: "storybook@npm:8.3.1"
+"storybook@npm:^8.3.2":
+  version: 8.3.2
+  resolution: "storybook@npm:8.3.2"
   dependencies:
-    "@storybook/core": 8.3.1
+    "@storybook/core": 8.3.2
   bin:
     getstorybook: ./bin/index.cjs
     sb: ./bin/index.cjs
     storybook: ./bin/index.cjs
-  checksum: 7c538465cdb6ec2daa026e4507a88de4d2cababb37de607320ad0fa0e85c52a74ca2e9aff9419f1351412db3d74206d952b91c8cdfa46cac5dd5ccc5c4e90b7a
+  checksum: ec9bb1bf8b0daa65ab602853f31ab205179ee8ccf6815f38207e17b87bda1dab6844d8729fcb85c78fa6d4b716a0a9d9542609b39f00ab1b31223a7140168b1d
   languageName: node
   linkType: hard
 
