@@ -6264,6 +6264,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/components@npm:^8.3.4":
+  version: 8.3.4
+  resolution: "@storybook/components@npm:8.3.4"
+  peerDependencies:
+    storybook: ^8.3.4
+  checksum: 1a41be2e320f7fb7317ea79652478316559b557b79091778c1bd0c377a5931e486fefbb3e34f87945aec203b2a6cb46a49d1766bf72485a573702dafda3fee10
+  languageName: node
+  linkType: hard
+
 "@storybook/core-webpack@npm:8.3.3":
   version: 8.3.3
   resolution: "@storybook/core-webpack@npm:8.3.3"
@@ -6405,6 +6414,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/preview-api@npm:^8.3.4":
+  version: 8.3.4
+  resolution: "@storybook/preview-api@npm:8.3.4"
+  peerDependencies:
+    storybook: ^8.3.4
+  checksum: 0cf6bb9e63b07baa0f48f75d91d8344dc94e25b5207193ea471b90969bef00690a2ac89db4d7a6bb2ecde883d4133ce3fbb7280e40b12d47816fe19ae0aee13f
+  languageName: node
+  linkType: hard
+
 "@storybook/react-docgen-typescript-plugin@npm:1.0.6--canary.9.0c3f3b7.0":
   version: 1.0.6--canary.9.0c3f3b7.0
   resolution: "@storybook/react-docgen-typescript-plugin@npm:1.0.6--canary.9.0c3f3b7.0"
@@ -6465,7 +6483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:8.3.3, @storybook/react@npm:^8.3.3":
+"@storybook/react@npm:8.3.3":
   version: 8.3.3
   resolution: "@storybook/react@npm:8.3.3"
   dependencies:
@@ -6501,6 +6519,45 @@ __metadata:
     typescript:
       optional: true
   checksum: 7ad0f513be12f63172f142ad96fcbdea0b7d4d40092d1b1d79f3993a14a13bdb24f4501e51f2c38042b72f8cfdc85c85251db39e37f8cd72c095d6b4e5091220
+  languageName: node
+  linkType: hard
+
+"@storybook/react@npm:^8.3.4":
+  version: 8.3.4
+  resolution: "@storybook/react@npm:8.3.4"
+  dependencies:
+    "@storybook/components": ^8.3.4
+    "@storybook/global": ^5.0.0
+    "@storybook/manager-api": ^8.3.4
+    "@storybook/preview-api": ^8.3.4
+    "@storybook/react-dom-shim": 8.3.4
+    "@storybook/theming": ^8.3.4
+    "@types/escodegen": ^0.0.6
+    "@types/estree": ^0.0.51
+    "@types/node": ^22.0.0
+    acorn: ^7.4.1
+    acorn-jsx: ^5.3.1
+    acorn-walk: ^7.2.0
+    escodegen: ^2.1.0
+    html-tags: ^3.1.0
+    prop-types: ^15.7.2
+    react-element-to-jsx-string: ^15.0.0
+    semver: ^7.3.7
+    ts-dedent: ^2.0.0
+    type-fest: ~2.19
+    util-deprecate: ^1.0.2
+  peerDependencies:
+    "@storybook/test": 8.3.4
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^8.3.4
+    typescript: ">= 4.2.x"
+  peerDependenciesMeta:
+    "@storybook/test":
+      optional: true
+    typescript:
+      optional: true
+  checksum: 7ca64919f1c0e11fe93cf47ae8fd2646b7bb4c306444d8c062b9dab756e54d8bfb869205d680d8deeb9a41dcba5d631d98f84d88e1ba58051a99459316daf4ef
   languageName: node
   linkType: hard
 
@@ -20153,7 +20210,7 @@ __metadata:
     "@storybook/addon-styling-webpack": 1.0.0
     "@storybook/addon-webpack5-compiler-babel": 3.0.3
     "@storybook/manager-api": ^8.3.4
-    "@storybook/react": ^8.3.3
+    "@storybook/react": ^8.3.4
     "@storybook/react-webpack5": ^8.3.3
     "@storybook/theming": ^8.3.4
     "@svgr/webpack": 8.1.0
