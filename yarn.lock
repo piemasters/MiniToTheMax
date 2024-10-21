@@ -20181,7 +20181,7 @@ __metadata:
     "@storybook/addon-mdx-gfm": ^8.3.5
     "@storybook/addon-styling-webpack": 1.0.0
     "@storybook/addon-webpack5-compiler-babel": 3.0.3
-    "@storybook/manager-api": ^8.3.5
+    "@storybook/manager-api": ^8.3.6
     "@storybook/react": ^8.3.5
     "@storybook/react-webpack5": ^8.3.6
     "@storybook/theming": ^8.3.5
