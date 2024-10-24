@@ -53,7 +53,7 @@
     "@babel/core": "7.25.9",
     "@babel/preset-env": "^7.25.9",
     "@babel/preset-react": "^7.24.7",
-    "@babel/preset-typescript": "^7.24.7",
+    "@babel/preset-typescript": "^7.25.9",
     "@chromatic-com/storybook": "^2.0.2",
     "@storybook/addon-a11y": "^8.3.6",
     "@storybook/addon-essentials": "^8.3.6",
