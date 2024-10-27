@@ -87,6 +87,7 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Rogue Idol',
+    link: '/showcase/gloomspite-gitz/rogue-idol/',
   },
   {
     name: 'Spearmen',
