@@ -6086,14 +6086,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-styling-webpack@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@storybook/addon-styling-webpack@npm:1.0.0"
+"@storybook/addon-styling-webpack@npm:1.0.1":
+  version: 1.0.1
+  resolution: "@storybook/addon-styling-webpack@npm:1.0.1"
   dependencies:
     "@storybook/node-logger": ^8.0.0-alpha.10
   peerDependencies:
     webpack: ^5.0.0
-  checksum: fa907064a42b255fad274ae898b48cb1ce53d969cf79b48e8e0d761ae05500ab9e486d54b2aac625f57c78347daa51828a864497955cd4b0b650e67e8196a341
+  checksum: 3a507f9e944d1b23f97c201a59169c62e5d3fe7a750226a1fd13a2941d96a92543b87b1bcda3deb780831505fa75956b1ebd1838a7445495831c9a63f9b192b9
   languageName: node
   linkType: hard
 
@@ -19991,7 +19991,7 @@ __metadata:
     "@storybook/addon-jest": ^8.3.6
     "@storybook/addon-links": ^8.3.6
     "@storybook/addon-mdx-gfm": ^8.3.6
-    "@storybook/addon-styling-webpack": 1.0.0
+    "@storybook/addon-styling-webpack": 1.0.1
     "@storybook/addon-webpack5-compiler-babel": 3.0.3
     "@storybook/manager-api": ^8.3.6
     "@storybook/react": ^8.3.6
