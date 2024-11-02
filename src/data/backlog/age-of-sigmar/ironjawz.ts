@@ -1,9 +1,10 @@
 export const ironjawz = [
   {
     name: 'Bazdrogg Nekk-choppa',
+    link: '/showcase/ironjawz/bazdrogg-nekk-choppa/',
   },
   {
     name: 'Morglum Necksnapper',
-    link: '/showcase/gloomspite-gitz/morglum-necksnapper/',
+    link: '/showcase/ironjawz/morglum-necksnapper/',
   },
 ];
