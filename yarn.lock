@@ -14174,6 +14174,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^4.14.0":
+  version: 4.14.0
+  resolution: "gatsby-core-utils@npm:4.14.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.15.0
+    file-type: ^16.5.4
+    fs-extra: ^11.2.0
+    got: ^11.8.6
+    hash-wasm: ^4.11.0
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 78e006fcdaad656aba1df3965fc71f3d948085589c93971b960e92dcc5d3c1ca12afb6fe6989f7100e332f7c5d716b58b79fc60aea135a08e8b8f7c5714efdbb
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^3.13.1":
   version: 3.13.1
   resolution: "gatsby-graphiql-explorer@npm:3.13.1"
@@ -14365,13 +14389,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:6.13.3":
-  version: 6.13.3
-  resolution: "gatsby-plugin-offline@npm:6.13.3"
+"gatsby-plugin-offline@npm:6.14.0":
+  version: 6.14.0
+  resolution: "gatsby-plugin-offline@npm:6.14.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     cheerio: 1.0.0-rc.12
-    gatsby-core-utils: ^4.13.1
+    gatsby-core-utils: ^4.14.0
     glob: ^7.2.3
     idb-keyval: ^3.2.0
     lodash: ^4.17.21
@@ -14380,7 +14404,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: d556f7fd06462ebae17946af91ad27320799d63698f24c7c0409d33c5fe89241f0c5a742818eecf45c04de8005b1832acffdbe328b038aa7bf837ccd5aa971a8
+  checksum: 4be494daf001b47a55447a4e14b4f47dbe2b7c2100c83f348661043066af578fe3d777c6e5fc032861380f00e8bf9bf0124467c1659e263008c6fb70e8152c7c
   languageName: node
   linkType: hard
 
@@ -15466,6 +15490,13 @@ __metadata:
   dependencies:
     function-bind: ^1.1.1
   checksum: b9ad53d53be4af90ce5d1c38331e712522417d017d5ef1ebd0507e07c2fbad8686fffb8e12ddecd4c39ca9b9b47431afbb975b8abf7f3c3b82c98e9aad052792
+  languageName: node
+  linkType: hard
+
+"hash-wasm@npm:^4.11.0":
+  version: 4.11.0
+  resolution: "hash-wasm@npm:4.11.0"
+  checksum: c0c12f36f6fb689fd97f6f24756ec1aa08d132b456bc4f0526fa7dbefdb07a25aa1d58bfb29fac69ff16f842717b38af36b6875dc98e9b01def43cde8c1f3154
   languageName: node
   linkType: hard
 
@@ -20038,7 +20069,7 @@ __metadata:
     gatsby-plugin-image: 3.13.1
     gatsby-plugin-manifest: 5.13.1
     gatsby-plugin-mdx: 5.13.1
-    gatsby-plugin-offline: 6.13.3
+    gatsby-plugin-offline: 6.14.0
     gatsby-plugin-postcss: ^6.13.1
     gatsby-plugin-react-svg: 3.3.0
     gatsby-plugin-robots-txt: 1.8.0
