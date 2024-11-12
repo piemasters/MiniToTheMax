@@ -14439,13 +14439,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:6.13.3":
-  version: 6.13.3
-  resolution: "gatsby-plugin-offline@npm:6.13.3"
+"gatsby-plugin-offline@npm:6.14.0":
+  version: 6.14.0
+  resolution: "gatsby-plugin-offline@npm:6.14.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     cheerio: 1.0.0-rc.12
-    gatsby-core-utils: ^4.13.1
+    gatsby-core-utils: ^4.14.0
     glob: ^7.2.3
     idb-keyval: ^3.2.0
     lodash: ^4.17.21
@@ -14454,7 +14454,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: d556f7fd06462ebae17946af91ad27320799d63698f24c7c0409d33c5fe89241f0c5a742818eecf45c04de8005b1832acffdbe328b038aa7bf837ccd5aa971a8
+  checksum: 4be494daf001b47a55447a4e14b4f47dbe2b7c2100c83f348661043066af578fe3d777c6e5fc032861380f00e8bf9bf0124467c1659e263008c6fb70e8152c7c
   languageName: node
   linkType: hard
 
@@ -20119,7 +20119,7 @@ __metadata:
     gatsby-plugin-image: 3.13.1
     gatsby-plugin-manifest: 5.13.1
     gatsby-plugin-mdx: 5.13.1
-    gatsby-plugin-offline: 6.13.3
+    gatsby-plugin-offline: 6.14.0
     gatsby-plugin-postcss: ^6.13.1
     gatsby-plugin-react-svg: 3.3.0
     gatsby-plugin-robots-txt: 1.8.0
