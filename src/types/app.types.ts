@@ -50,13 +50,13 @@ export interface BattleReports {
   fortyThousand: IGatsbyImageData;
 }
 
-export interface Category extends MdxGroupConnection {}
+export type Category = MdxGroupConnection;
 
 export interface Tags {
   tags: AllMdx;
 }
 
-export interface Tag extends MdxGroupConnection {}
+export type Tag = MdxGroupConnection;
 
 export interface TagLink {
   slug: string;
