@@ -14704,22 +14704,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:5.13.1":
-  version: 5.13.1
-  resolution: "gatsby-transformer-sharp@npm:5.13.1"
+"gatsby-transformer-sharp@npm:5.14.0":
+  version: 5.14.0
+  resolution: "gatsby-transformer-sharp@npm:5.14.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     bluebird: ^3.7.2
     common-tags: ^1.8.2
-    fs-extra: ^11.1.1
-    gatsby-plugin-utils: ^4.13.1
+    fs-extra: ^11.2.0
+    gatsby-plugin-utils: ^4.14.0
     probe-image-size: ^7.2.3
     semver: ^7.5.3
     sharp: ^0.32.6
   peerDependencies:
     gatsby: ^5.0.0-next
     gatsby-plugin-sharp: ^5.0.0-next
-  checksum: b680b10e54bde69acf1aacf0ef30adcb74279935fbbe13e861caa522cd330bd02dfd69e06a3762630cb7d308e5e9b335d22e3690c0a4a7a8b54ef0f0b1e9393f
+  checksum: e3ab1ffee8531a8eaac5c98f7669d95e15bdff87a282596d8cfb0c04bf341ccc99966efa51e5d42b8abdccabc89d59d61e86777267f3ea02542076c2de55937b
   languageName: node
   linkType: hard
 
@@ -20100,7 +20100,7 @@ __metadata:
     gatsby-plugin-typescript: 5.14.0
     gatsby-remark-images: 7.14.0
     gatsby-source-filesystem: 5.14.0
-    gatsby-transformer-sharp: 5.13.1
+    gatsby-transformer-sharp: 5.14.0
     glob: ^11.0.0
     gsap: 3.12.5
     identity-obj-proxy: 3.0.0
