@@ -25,7 +25,7 @@
     "preoptimize": "node ./src/scripts/optimize.js"
   },
   "dependencies": {
-    "@mdx-js/react": "^3.0.1",
+    "@mdx-js/react": "^3.1.0",
     "disqus-react": "1.1.5",
     "gatsby": "5.13.7",
     "gatsby-plugin-catch-links": "5.14.0",
