@@ -5864,15 +5864,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-mdx-gfm@npm:^8.4.2":
-  version: 8.4.2
-  resolution: "@storybook/addon-mdx-gfm@npm:8.4.2"
+"@storybook/addon-mdx-gfm@npm:^8.4.3":
+  version: 8.4.3
+  resolution: "@storybook/addon-mdx-gfm@npm:8.4.3"
   dependencies:
     remark-gfm: ^4.0.0
     ts-dedent: ^2.0.0
   peerDependencies:
-    storybook: ^8.4.2
-  checksum: 637e826933eac80af2edaf97725b2e837e5a3cd725e6d67013ee8f4d229d6434a5ff95f9d96342934adf0bb257401a692085d1c4b664273f4c01a59779621850
+    storybook: ^8.4.3
+  checksum: c670958977abf6a0ebdd29ba06c9e9afebed0d96a49b19e4d682a479c70201428c46e447fb73b7a21ba330a83a32e0aacf4b9f4eb4386f42faeff294672e1a79
   languageName: node
   linkType: hard
 
@@ -13537,17 +13537,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^11.1.1":
-  version: 11.1.1
-  resolution: "fs-extra@npm:11.1.1"
-  dependencies:
-    graceful-fs: ^4.2.0
-    jsonfile: ^6.0.1
-    universalify: ^2.0.0
-  checksum: fb883c68245b2d777fbc1f2082c9efb084eaa2bbf9fddaa366130d196c03608eebef7fb490541276429ee1ca99f317e2d73e96f5ca0999eefedf5a624ae1edfd
-  languageName: node
-  linkType: hard
-
 "fs-extra@npm:^11.2.0":
   version: 11.2.0
   resolution: "fs-extra@npm:11.2.0"
@@ -13743,30 +13732,6 @@ __metadata:
   bin:
     gatsby: cli.js
   checksum: 7c1944121d0df050a69f8c226f824e49a3a6c47bd2b2fcf5b244ab358e5bec09d4c5003b3353aa55a24483b8702264b612125a373f267631a2f619cd88675845
-  languageName: node
-  linkType: hard
-
-"gatsby-core-utils@npm:^4.13.1":
-  version: 4.13.1
-  resolution: "gatsby-core-utils@npm:4.13.1"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    ci-info: 2.0.0
-    configstore: ^5.0.1
-    fastq: ^1.15.0
-    file-type: ^16.5.4
-    fs-extra: ^11.1.1
-    got: ^11.8.6
-    hash-wasm: ^4.9.0
-    import-from: ^4.0.0
-    lmdb: 2.5.3
-    lock: ^1.1.0
-    node-object-hash: ^2.3.10
-    proper-lockfile: ^4.1.2
-    resolve-from: ^5.0.0
-    tmp: ^0.2.1
-    xdg-basedir: ^4.0.0
-  checksum: 18024206ae31a89ec0533b2d31c1d12f0f1cea09451e73daa49276bd1f1d84b47dc94602d97bc4d37fa203ffd66de33afaeffbe7ccc96569c8ef42251ddb1151
   languageName: node
   linkType: hard
 
@@ -14116,26 +14081,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-utils@npm:^4.13.1":
-  version: 4.13.1
-  resolution: "gatsby-plugin-utils@npm:4.13.1"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    fastq: ^1.15.0
-    fs-extra: ^11.1.1
-    gatsby-core-utils: ^4.13.1
-    gatsby-sharp: ^1.13.0
-    graphql-compose: ^9.0.10
-    import-from: ^4.0.0
-    joi: ^17.9.2
-    mime: ^3.0.0
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    graphql: ^16.0.0
-  checksum: 4d8c573aa945c46fbe08e1c8d9cde1b3db9f28c279180d22c4052c22b1425afdb2626d2626a36a75223d5c06b93c139ec476b68ae534d5706799b71a8f841cb1
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-utils@npm:^4.14.0":
   version: 4.14.0
   resolution: "gatsby-plugin-utils@npm:4.14.0"
@@ -14199,15 +14144,6 @@ __metadata:
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
   checksum: 762350ce40542f615b6c3afcba0de541c35631d2e2cd95220b44449fd26b9c92f3dbbb107344c985c5be1adc2f3ed04e84e520c3c15930cafca22d7334e120de
-  languageName: node
-  linkType: hard
-
-"gatsby-sharp@npm:^1.13.0":
-  version: 1.13.0
-  resolution: "gatsby-sharp@npm:1.13.0"
-  dependencies:
-    sharp: ^0.32.6
-  checksum: 1e7edc6c6db4b07dfae18b7583e8488c2775f08679504ba66f217304361ca6bf86437d86ce42cc17cccc6fb1c02a281cc79490d5131414e8f30ae551323af22c
   languageName: node
   linkType: hard
 
@@ -15100,13 +15036,6 @@ __metadata:
   version: 4.11.0
   resolution: "hash-wasm@npm:4.11.0"
   checksum: c0c12f36f6fb689fd97f6f24756ec1aa08d132b456bc4f0526fa7dbefdb07a25aa1d58bfb29fac69ff16f842717b38af36b6875dc98e9b01def43cde8c1f3154
-  languageName: node
-  linkType: hard
-
-"hash-wasm@npm:^4.9.0":
-  version: 4.9.0
-  resolution: "hash-wasm@npm:4.9.0"
-  checksum: b8734247fb7f69941f6564179dd891b7de21aa5877b9e32a5c6d777c2ab45cf5a6b021ade2b0156ec780ac41188486d571d9d526ef8206dda1ad306c81112a8a
   languageName: node
   linkType: hard
 
@@ -19519,7 +19448,7 @@ __metadata:
     "@storybook/addon-essentials": ^8.4.2
     "@storybook/addon-jest": ^8.4.2
     "@storybook/addon-links": ^8.4.2
-    "@storybook/addon-mdx-gfm": ^8.4.2
+    "@storybook/addon-mdx-gfm": ^8.4.3
     "@storybook/addon-styling-webpack": 1.0.1
     "@storybook/addon-webpack5-compiler-babel": 3.0.3
     "@storybook/manager-api": ^8.4.2
