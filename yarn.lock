@@ -5844,17 +5844,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-jest@npm:^8.4.3":
-  version: 8.4.3
-  resolution: "@storybook/addon-jest@npm:8.4.3"
+"@storybook/addon-jest@npm:^8.4.4":
+  version: 8.4.4
+  resolution: "@storybook/addon-jest@npm:8.4.4"
   dependencies:
     "@storybook/global": ^5.0.0
     tiny-invariant: ^1.3.1
     ts-dedent: ^2.0.0
     upath: ^2.0.1
   peerDependencies:
-    storybook: ^8.4.3
-  checksum: a1053470cea827366db64609aab35da06746724a11e5167928245897788d56a9cf9e669f0e0e21f31ce1e3eda36ef39a4d733a3365bfecc61cc6e955c6147946
+    storybook: ^8.4.4
+  checksum: 2ee77b34958866db9089fb965ff00f00f592bbc0ca52cecc6c30aae17c6d842257e27cc3c4df3e3e6f162b810518c32df262887cab28e2eccb9b856279829deb
   languageName: node
   linkType: hard
 
@@ -19557,7 +19557,7 @@ __metadata:
     "@mdx-js/react": ^3.1.0
     "@storybook/addon-a11y": ^8.4.4
     "@storybook/addon-essentials": ^8.4.3
-    "@storybook/addon-jest": ^8.4.3
+    "@storybook/addon-jest": ^8.4.4
     "@storybook/addon-links": ^8.4.3
     "@storybook/addon-mdx-gfm": ^8.4.4
     "@storybook/addon-styling-webpack": 1.0.1
