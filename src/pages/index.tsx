@@ -39,8 +39,8 @@ export const IndexPage: FC = () => {
       <Badges />
       <h2>Latest Video</h2>
       <Video
-        src="https://www.youtube.com/embed/hQSNlBYMjEs"
-        title="Bazdrogg Nekk choppa"
+        src="https://www.youtube.com/embed/t9RK4WGRZ74"
+        title="Underworlds: Stormsires Cursebreakers"
       />
       <h2>Latest Post</h2>
 

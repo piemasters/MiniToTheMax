@@ -9,7 +9,10 @@ export const underworlds = [
   },
   { name: "Grinkrak's Looncourt" },
   { name: "Mollog's Mob" },
-  { name: "Stormsire's Cursebreakers" },
+  {
+    name: "Stormsire's Cursebreakers",
+    link: '/showcase/board-games/underworlds/stormsires-cursebreakers/',
+  },
   { name: 'Thorns of the Briar Queen' },
   { name: "Zarbag's Gitz" },
 ];
