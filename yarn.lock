@@ -6999,13 +6999,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.3.12":
-  version: 18.3.12
-  resolution: "@types/react@npm:18.3.12"
+"@types/react@npm:18.3.13":
+  version: 18.3.13
+  resolution: "@types/react@npm:18.3.13"
   dependencies:
     "@types/prop-types": "*"
     csstype: ^3.0.2
-  checksum: 4ab1577a8c2105a5e316536f724117c90eee5f4bd5c137fc82a2253d8c1fd299dedaa07e8dfc95d6e2f04a4be3cb8b0e1b06098c6233ebd55c508d88099395b7
+  checksum: 5ccf75e8e52e30fd619046ce985d17152fdf92da3b27777cdcbe972c4557bb0f0d7cfda6b379c29e409f4c3293ad1277394eea6c865211c07bd92cab8dcb277f
   languageName: node
   linkType: hard
 
@@ -19499,7 +19499,7 @@ __metadata:
     "@types/lodash.kebabcase": 4.1.9
     "@types/node": 22.9.3
     "@types/node-sass": 4.11.8
-    "@types/react": 18.3.12
+    "@types/react": 18.3.13
     "@types/react-dom": 18.3.1
     "@types/react-test-renderer": 18.3.0
     "@typescript-eslint/eslint-plugin": 8.14.0
