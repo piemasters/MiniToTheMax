@@ -6029,9 +6029,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core@npm:8.4.6":
-  version: 8.4.6
-  resolution: "@storybook/core@npm:8.4.6"
+"@storybook/core@npm:8.4.7":
+  version: 8.4.7
+  resolution: "@storybook/core@npm:8.4.7"
   dependencies:
     "@storybook/csf": ^0.1.11
     better-opn: ^3.0.2
@@ -6049,7 +6049,7 @@ __metadata:
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: c9c4b5aa1f49ee8e3b51c2e179cbafd6826415e6a788a0b11a04bf0dedbbb56b81dd187719086cdeb695fa31c46709dc6184027e2938eb5fc9ab41c4ed2b15d7
+  checksum: 969cde2203c9c2c744f2a1d2858b2adeb7d57fc75e703f64187fcf0056eb7da48d0507d919718c0866952dda084eb51d79e65a90abec8bb0dcb404b542a6872f
   languageName: node
   linkType: hard
 
@@ -19633,7 +19633,7 @@ __metadata:
     react-test-renderer: 18.3.1
     sharp: ^0.33.5
     start-server-and-test: 2.0.8
-    storybook: ^8.4.6
+    storybook: ^8.4.7
     tailwindcss: ^3.4.16
     ts-loader: 9.5.1
     typescript: 5.6.3
@@ -23799,11 +23799,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:^8.4.6":
-  version: 8.4.6
-  resolution: "storybook@npm:8.4.6"
+"storybook@npm:^8.4.7":
+  version: 8.4.7
+  resolution: "storybook@npm:8.4.7"
   dependencies:
-    "@storybook/core": 8.4.6
+    "@storybook/core": 8.4.7
   peerDependencies:
     prettier: ^2 || ^3
   peerDependenciesMeta:
@@ -23813,7 +23813,7 @@ __metadata:
     getstorybook: ./bin/index.cjs
     sb: ./bin/index.cjs
     storybook: ./bin/index.cjs
-  checksum: af1295778a99d504f6200d9594a517a58e0e8ccf2d5f2706e9716eb2e60ac4475bb558d811d4b51bc7feb0c21701a3801e09a4d52b453e1f94ce28b13be1a50f
+  checksum: 6cd44f8d51b68f2c2363d5e996bc8bf1e47a5acc2050da351d0fb49acd3d99ed093eef1b148145a1af9c08ead8592a87ee569c4456941a37dc374f9f21ea45c3
   languageName: node
   linkType: hard
 
