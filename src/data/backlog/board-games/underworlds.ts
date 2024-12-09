@@ -13,6 +13,9 @@ export const underworlds = [
     name: "Stormsire's Cursebreakers",
     link: '/showcase/board-games/underworlds/stormsires-cursebreakers/',
   },
-  { name: 'Thorns of the Briar Queen' },
+  {
+    name: 'Thorns of the Briar Queen',
+    link: '/showcase/board-games/underworlds/thorns-of-the-briar-queen/',
+  },
   { name: "Zarbag's Gitz" },
 ];

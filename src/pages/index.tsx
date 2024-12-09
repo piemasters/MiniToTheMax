@@ -39,8 +39,8 @@ export const IndexPage: FC = () => {
       <Badges />
       <h2>Latest Video</h2>
       <Video
-        src="https://www.youtube.com/embed/t9RK4WGRZ74"
-        title="Underworlds: Stormsires Cursebreakers"
+        src="https://www.youtube.com/embed/pi1dVti6kz8"
+        title="Underworlds: Thorns of the Briar Queen"
       />
       <h2>Latest Post</h2>
 
