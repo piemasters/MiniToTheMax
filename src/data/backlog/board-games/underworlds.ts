@@ -8,7 +8,10 @@ export const underworlds = [
     link: '/showcase/board-games/underworlds/daggoks-stab-ladz/',
   },
   { name: "Grinkrak's Looncourt" },
-  { name: "Mollog's Mob" },
+  {
+    name: "Mollog's Mob",
+    link: '/showcase/board-games/underworlds/mollogs-mob/',
+  },
   {
     name: "Stormsire's Cursebreakers",
     link: '/showcase/board-games/underworlds/stormsires-cursebreakers/',
