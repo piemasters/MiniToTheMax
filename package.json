@@ -67,7 +67,7 @@
     "@storybook/react-webpack5": "^8.4.7",
     "@storybook/theming": "^8.4.7",
     "@svgr/webpack": "8.1.0",
-    "@testing-library/cypress": "10.0.2",
+    "@testing-library/cypress": "10.0.3",
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.1.0",
     "@types/jest": "29.5.14",
