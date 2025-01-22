@@ -6365,15 +6365,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/cypress@npm:10.0.2":
-  version: 10.0.2
-  resolution: "@testing-library/cypress@npm:10.0.2"
+"@testing-library/cypress@npm:10.0.3":
+  version: 10.0.3
+  resolution: "@testing-library/cypress@npm:10.0.3"
   dependencies:
     "@babel/runtime": ^7.14.6
     "@testing-library/dom": ^10.1.0
   peerDependencies:
-    cypress: ^12.0.0 || ^13.0.0
-  checksum: 90145ad5a544a3d725ec8d0bae386b81c12d14b28bb7d8de9936561e61325cb16c34c39ad709e2221d7ded1b75a160dcf7b8a4fa339a86bf59922a760d6a1e31
+    cypress: ^12.0.0 || ^13.0.0 || ^14.0.0
+  checksum: fb1c1fa35a4fb41f2da719a040b5e20e2841474fe015be2382307c0f9fc352ec251e778118b935e95b5fca96ac6211282478c9bd7077769d774bbaa974e5a0e1
   languageName: node
   linkType: hard
 
@@ -19937,7 +19937,7 @@ __metadata:
     "@storybook/react-webpack5": ^8.4.7
     "@storybook/theming": ^8.4.7
     "@svgr/webpack": 8.1.0
-    "@testing-library/cypress": 10.0.2
+    "@testing-library/cypress": 10.0.3
     "@testing-library/jest-dom": 6.6.3
     "@testing-library/react": 16.1.0
     "@types/jest": 29.5.14
