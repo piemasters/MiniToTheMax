@@ -39,8 +39,8 @@ export const IndexPage: FC = () => {
       <Badges />
       <h2>Latest Video</h2>
       <Video
-        src="https://www.youtube.com/embed/gsAuO5i5cX0"
-        title="Squidmar Fantasy Paint Set Miniature"
+        src="https://www.youtube.com/embed/ooWveBlaznU"
+        title="Squidmar Dark Fantasy Paint Set Miniature"
       />
       <h2>Latest Post</h2>
 

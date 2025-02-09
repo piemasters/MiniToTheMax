@@ -65,9 +65,6 @@ export const BacklogPage: FC = () => {
       <ul>{generateEntries(backlog.spaceWolves)}</ul>
       <ul>{generateEntries(backlog.spaceWolvesPrimaris)}</ul>
 
-      <h3>Dark Angels</h3>
-      <ul>{generateEntries(backlog.darkAngels)}</ul>
-
       <h3>Orks</h3>
       <ul>{generateEntries(backlog.orks)}</ul>
 
@@ -140,7 +137,10 @@ export const BacklogPage: FC = () => {
       <h3>Underworlds</h3>
       <ul>{generateEntries(backlog.underworlds)}</ul>
 
-      <h2>Board Games Lord oof the Rings</h2>
+      <h2>Lord of the Rings</h2>
+      <hr />
+
+      <h3>Battle for Balin's Tomb</h3>
       <ul>{generateEntries(backlog.battleForBalinsTomb)}</ul>
 
       <h2>Other</h2>
@@ -175,6 +175,9 @@ export const BacklogPage: FC = () => {
 
       <h3>Star Wars Imperial Assault</h3>
       <ul>{generateEntries(backlog.starWarsImperialAssault)}</ul>
+
+      <h3>Squidmar Miniatures</h3>
+      <ul>{generateEntries(backlog.squidmar)}</ul>
     </Layout>
   );
 };
