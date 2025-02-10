@@ -30,7 +30,7 @@ exports[`Footer renders correctly 1`] = `
           target="_blank"
         >
           <test-file-stub
-            classname="fill-red-500 mx-1 opacity-60 hover:opacity-100 w-7"
+            class="fill-red-500 mx-1 opacity-60 hover:opacity-100 w-7"
           />
         </a>
         <a
@@ -39,7 +39,7 @@ exports[`Footer renders correctly 1`] = `
           target="_blank"
         >
           <test-file-stub
-            classname="fill-red-500 mx-1 opacity-60 hover:opacity-100 w-7"
+            class="fill-red-500 mx-1 opacity-60 hover:opacity-100 w-7"
           />
         </a>
         <a
@@ -48,7 +48,7 @@ exports[`Footer renders correctly 1`] = `
           target="_blank"
         >
           <test-file-stub
-            classname="fill-red-500 mx-1 opacity-60 hover:opacity-100 w-7"
+            class="fill-red-500 mx-1 opacity-60 hover:opacity-100 w-7"
           />
         </a>
       </div>
