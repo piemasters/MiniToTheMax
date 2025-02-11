@@ -6543,7 +6543,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/node@npm:^4.0.0":
+"@tailwindcss/node@npm:^4.0.6":
   version: 4.0.6
   resolution: "@tailwindcss/node@npm:4.0.6"
   dependencies:
@@ -6631,7 +6631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/oxide@npm:^4.0.0":
+"@tailwindcss/oxide@npm:^4.0.6":
   version: 4.0.6
   resolution: "@tailwindcss/oxide@npm:4.0.6"
   dependencies:
@@ -6673,17 +6673,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/postcss@npm:4.0.0":
-  version: 4.0.0
-  resolution: "@tailwindcss/postcss@npm:4.0.0"
+"@tailwindcss/postcss@npm:4.0.6":
+  version: 4.0.6
+  resolution: "@tailwindcss/postcss@npm:4.0.6"
   dependencies:
     "@alloc/quick-lru": ^5.2.0
-    "@tailwindcss/node": ^4.0.0
-    "@tailwindcss/oxide": ^4.0.0
+    "@tailwindcss/node": ^4.0.6
+    "@tailwindcss/oxide": ^4.0.6
     lightningcss: ^1.29.1
     postcss: ^8.4.41
-    tailwindcss: 4.0.0
-  checksum: f588cf047893b2f176d1d3e3dad49bfb1d5f3105369bac1b1dd38655a3a6a07d42edf57653dfaed20c07822f020a72e9723d159d6bf34ede7e1b3a775b30ee50
+    tailwindcss: 4.0.6
+  checksum: 18a30f000dba31c111383fa10007650d973905086bf5abda54c86e2b70fc73c18c793e1a175a00ccc418f41d6421832a53cbaf769bfce51d76c29080ea2b4b90
   languageName: node
   linkType: hard
 
@@ -20434,7 +20434,7 @@ __metadata:
     "@storybook/react-webpack5": 8.5.3
     "@storybook/theming": 8.5.3
     "@svgr/webpack": 8.1.0
-    "@tailwindcss/postcss": 4.0.0
+    "@tailwindcss/postcss": 4.0.6
     "@testing-library/cypress": 10.0.3
     "@testing-library/jest-dom": 6.6.3
     "@testing-library/react": 16.1.0
@@ -25384,13 +25384,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: 08249c7046125d9d0a944a6e96cfe9ec66908d6b8a9db125531be6eb05fa0de047fd5542e9d43b4f987057f00a093b276b8d3e19af162a9c40db2681058fd306
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.0.0":
-  version: 4.0.0
-  resolution: "tailwindcss@npm:4.0.0"
-  checksum: 429ea7ce35febb36a4078550683e51b9c0a35bd82dc84fbf7f5704e21c982b710dbd1676585c791b4f1986335ca42f2c8755f4e3530dca3ef59f6ebe9323b11f
   languageName: node
   linkType: hard
 
