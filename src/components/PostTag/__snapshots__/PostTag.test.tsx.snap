@@ -6,13 +6,17 @@ exports[`PostTag renders correctly 1`] = `
     class="inline-block"
     data-testid="post-tag"
   >
-    <a
-      class="bg-gray-200 rounded-md text-gray-800 cursor-pointer inline-block text-xs m-1 px-2 py-1 no-underline hover:bg-red-500 hover:text-white"
-      data-testid="page-link"
-      href="/tag/tag/"
+    <div
+      class="inline-block px-2 py-1 m-1 bg-gray-200 rounded-md cursor-pointer hover:bg-red-500 text-gray-800 hover:text-white! text-xs"
     >
-      Tag
-    </a>
+      <a
+        class="no-underline"
+        data-testid="page-link"
+        href="/tag/tag/"
+      >
+        Tag
+      </a>
+    </div>
   </div>
 </div>
 `;

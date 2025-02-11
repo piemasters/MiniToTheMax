@@ -140,7 +140,7 @@ export const BacklogPage: FC = () => {
       <h2>Lord of the Rings</h2>
       <hr />
 
-      <h3>Battle for Balin's Tomb</h3>
+      <h3>Battle for Balins Tomb</h3>
       <ul>{generateEntries(backlog.battleForBalinsTomb)}</ul>
 
       <h2>Other</h2>

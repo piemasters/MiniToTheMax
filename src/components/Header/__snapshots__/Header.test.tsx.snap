@@ -3,15 +3,15 @@
 exports[`Header renders correctly 1`] = `
 <div>
   <div
-    class="bg-gray-100 px-4 py-8 mb-8"
+    class="px-4 py-8 mb-8 bg-gray-100"
     data-testid="nav-header"
   >
     <nav
-      class="flex flex-col mx-auto max-w-3xl"
+      class="flex flex-col max-w-3xl mx-auto"
     >
       <a
         aria-current="page"
-        class="flex items-center text-gray-900 pb-4 no-underline"
+        class="flex items-center pb-4 text-gray-900 no-underline"
         data-testid="page-link"
         href="/"
       >
@@ -21,38 +21,38 @@ exports[`Header renders correctly 1`] = `
           width="60px"
         />
         <h1
-          class="ml-4 mb-0"
+          class="mb-0! pl-4!"
         >
           MiniToTheMax
         </h1>
       </a>
       <div
-        class="flex list-none m-0"
+        class="flex m-0 list-none"
       >
         <a
           aria-current="page"
-          class="text-gray-500 text-sm font-bold mr-5 no-underline hover:text-red-500 !text-red-500"
+          class="mr-5 text-sm font-bold text-gray-500 no-underline hover:text-red-500 text-red-500!"
           data-testid="page-link"
           href="/"
         >
           Home
         </a>
         <a
-          class="text-gray-500 text-sm font-bold mr-5 no-underline hover:text-red-500"
+          class="mr-5 text-sm font-bold text-gray-500 no-underline hover:text-red-500"
           data-testid="page-link"
           href="/blog"
         >
           Blog
         </a>
         <a
-          class="text-gray-500 text-sm font-bold mr-5 no-underline hover:text-red-500"
+          class="mr-5 text-sm font-bold text-gray-500 no-underline hover:text-red-500"
           data-testid="page-link"
           href="/showcase"
         >
           Showcase
         </a>
         <a
-          class="text-gray-500 text-sm font-bold mr-5 no-underline hover:text-red-500"
+          class="mr-5 text-sm font-bold text-gray-500 no-underline hover:text-red-500"
           data-testid="page-link"
           href="/backlog"
         >

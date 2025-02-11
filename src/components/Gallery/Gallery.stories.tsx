@@ -18,7 +18,7 @@ type Story = StoryObj<typeof Gallery>;
 export const Primary: Story = {
   decorators: [
     (Story) => (
-      <div className="flex-grow mx-auto max-w-3xl px-4 w-full">
+      <div className="grow mx-auto max-w-3xl px-4 w-full">
         <div>
           <h2>Gallery</h2>
           <Story />

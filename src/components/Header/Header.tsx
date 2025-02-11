@@ -11,24 +11,24 @@ export interface HeaderProps {
 
 export const Header: FC<HeaderProps> = ({ title, logo, pages }) => {
   return (
-    <div className="bg-gray-100 px-4 py-8 mb-8" data-testid="nav-header">
-      <nav className="flex flex-col mx-auto max-w-3xl">
+    <div className="px-4 py-8 mb-8 bg-gray-100" data-testid="nav-header">
+      <nav className="flex flex-col max-w-3xl mx-auto">
         <PageLink
           type={'paintDrip'}
           to={'/'}
-          className="flex items-center text-gray-900 pb-4 no-underline"
+          className="flex items-center pb-4 text-gray-900 no-underline"
         >
           <img src={logo} alt="Logo" width={60 + 'px'} />
-          <h1 className="ml-4 mb-0">{title}</h1>
+          <h1 className="mb-0! pl-4!">{title}</h1>
         </PageLink>
-        <div className="flex list-none m-0">
+        <div className="flex m-0 list-none">
           {pages.map((link: NavLink) => {
             return (
               <PageLink
                 to={link.url}
-                className="text-gray-500 text-sm font-bold mr-5 no-underline hover:text-red-500"
+                className="mr-5 text-sm font-bold text-gray-500 no-underline hover:text-red-500"
                 key={link.name}
-                linkActiveStyle="!text-red-500"
+                linkActiveStyle="text-red-500!"
                 type={'cover'}
               >
                 {link.name}

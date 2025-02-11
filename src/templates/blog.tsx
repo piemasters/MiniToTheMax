@@ -43,7 +43,7 @@ export const Blog: FC<BlogTemplateProps> = ({ data, pageContext }) => {
   return (
     <Layout>
       <h1>Blog</h1>
-      <ol className="m-0 list-none">
+      <ol className="m-0! list-none">
         {posts.map((post: PostSummaryType) => {
           return (
             <li key={post.slug}>

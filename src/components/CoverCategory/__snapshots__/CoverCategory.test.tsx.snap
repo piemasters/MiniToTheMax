@@ -53,7 +53,7 @@ exports[`CoverCategory renders correctly 1`] = `
           </script>
         </div>
         <h2
-          class="px-4 py-1 absolute right-4 text-lg bg-black/70 text-gray-200 bottom-0"
+          class="px-4! py-1! absolute right-4 text-lg! bg-black/70 text-gray-200! bottom-0"
         >
           Board Games
         </h2>

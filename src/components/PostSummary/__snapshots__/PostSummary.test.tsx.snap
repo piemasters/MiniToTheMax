@@ -3,11 +3,11 @@
 exports[`PostSummary renders correctly 1`] = `
 <div>
   <div
-    class="my-4"
+    class="my-4 duration-300 bg-gray-100 hover:bg-gray-200 hover:shadow-3xl"
     data-testid="post-summary"
   >
     <a
-      class="block no-underline bg-gray-200 duration-300 hover:shadow-3xl"
+      class="block no-underline"
       data-testid="page-link"
       href="/slug"
     >
@@ -53,7 +53,7 @@ exports[`PostSummary renders correctly 1`] = `
           </script>
         </div>
         <h2
-          class="px-4 py-1 absolute right-4 text-lg bg-black/70 text-gray-200 bottom-0"
+          class="px-4! py-1! absolute right-4 text-lg! bg-black/70 text-gray-200! bottom-0"
         >
           Demo Post Title
         </h2>
@@ -62,13 +62,13 @@ exports[`PostSummary renders correctly 1`] = `
         class="p-4 text-gray-600"
       >
         <p
-          class="text-xs font-bold mb-2"
+          class="mb-2! text-xs font-bold"
         >
           11/01/2019
         </p>
         <hr />
         <p
-          class="italic m-0 text-xs/loose text-gray-600"
+          class="m-0 italic text-gray-600 text-xs/loose"
         >
           A test sentence
         </p>

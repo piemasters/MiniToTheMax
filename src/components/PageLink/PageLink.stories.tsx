@@ -54,6 +54,6 @@ export const Primary: Story = {
     to: '/',
     direction: 'up',
     children: 'Test',
-    linkActiveStyle: '!text-red-500',
+    linkActiveStyle: 'text-red-500!',
   },
 };

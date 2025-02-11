@@ -43,14 +43,13 @@ export const Paints = (): React.ReactNode => {
     const filtersJsx: JSX.Element[] = [];
     for (const [key, value] of Object.entries(filters)) {
       filtersJsx.push(
-        <div className="text-sm w-24" key={key}>
-          <label className="flex items-center">
+        <div className="w-24 text-sm" key={key}>
+          <label className="flex items-center gap-2">
             <input
               name={key}
               checked={value}
               type="checkbox"
               onChange={() => updateFilter(type, key)}
-              className="mr-2"
             />
             {key.replace(/\b\w/g, (l) => l.toUpperCase())}
           </label>
@@ -60,18 +59,17 @@ export const Paints = (): React.ReactNode => {
     return (
       <div>
         <h3>{type.replace(/\b\w/g, (l) => l.toUpperCase())}</h3>
-        <label className="flex items-center font-bold text-xs mb-2">
+        <label className="flex items-center gap-2 mb-2 text-xs font-bold">
           <input
             checked={
               !Object.keys(allFilters[type]).every((k) => !allFilters[type][k])
             }
             type="checkbox"
             onChange={() => toggleAll(allFilters[type], type)}
-            className="mr-2"
           />
           Toggle All
         </label>
-        <div className="flex flex-row flex-wrap mb-4 w-full">{filtersJsx}</div>
+        <div className="flex flex-row flex-wrap w-full mb-4">{filtersJsx}</div>
         <hr />
       </div>
     );

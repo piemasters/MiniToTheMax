@@ -11,15 +11,17 @@ export interface PostTagProps {
 export const PostTag: FC<PostTagProps> = ({ name, type }) => {
   return (
     <div data-testid="post-tag" className="inline-block">
-      <PageLink
-        key={name}
-        to={`/${type}/${kebabCase(name)}/`}
-        className="bg-gray-200 rounded-md text-gray-800 cursor-pointer inline-block text-xs m-1 px-2 py-1 no-underline hover:bg-red-500 hover:text-white"
-        type={'cover'}
-        direction={'up'}
-      >
-        {name}
-      </PageLink>
+      <div className="inline-block px-2 py-1 m-1 bg-gray-200 rounded-md cursor-pointer hover:bg-red-500 text-gray-800 hover:text-white! text-xs">
+        <PageLink
+          key={name}
+          to={`/${type}/${kebabCase(name)}/`}
+          type={'cover'}
+          direction={'up'}
+          className="no-underline"
+        >
+          {name}
+        </PageLink>
+      </div>
     </div>
   );
 };

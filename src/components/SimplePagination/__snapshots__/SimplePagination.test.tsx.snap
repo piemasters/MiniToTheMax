@@ -3,11 +3,11 @@
 exports[`SimplePagination renders correctly 1`] = `
 <div>
   <div
-    class="flex flex-wrap justify-between list-none p-0 no-underline"
+    class="flex flex-wrap justify-between p-0 no-underline list-none"
     data-testid="simple-pagination"
   >
     <div
-      class="flex-1 py-8 pr-8"
+      class="flex-1 text-right"
     >
       <a
         class="text-blue-500 visited:text-blue-500 hover:text-blue-700 no-underline"
@@ -15,7 +15,7 @@ exports[`SimplePagination renders correctly 1`] = `
         href="/next"
       >
         <div
-          class="flex text-right"
+          class="flex items-center flex-1 p-8 m-2 bg-neutral-50 hover:bg-neutral-100"
         >
           <div
             class="pr-2"
@@ -23,7 +23,7 @@ exports[`SimplePagination renders correctly 1`] = `
             ← 
           </div>
           <div
-            class="flex-1"
+            class="flex flex-1 text-nowrap"
           >
             The Next Page
           </div>
@@ -31,7 +31,7 @@ exports[`SimplePagination renders correctly 1`] = `
       </a>
     </div>
     <div
-      class="flex-1 py-8 pl-8"
+      class="flex-1"
     >
       <a
         class="text-blue-500 visited:text-blue-500 hover:text-blue-700 no-underline"
@@ -39,10 +39,10 @@ exports[`SimplePagination renders correctly 1`] = `
         href="/previous"
       >
         <div
-          class="flex"
+          class="flex flex-1 p-8 m-2 bg-neutral-50 hover:bg-neutral-100"
         >
           <div
-            class="flex-1"
+            class="flex flex-1 text-nowrap"
           >
             The Previous Page
           </div>
