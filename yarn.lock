@@ -6299,17 +6299,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react-dom-shim@npm:8.5.3":
-  version: 8.5.3
-  resolution: "@storybook/react-dom-shim@npm:8.5.3"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^8.5.3
-  checksum: 9892eb56ab50c9ec6a5ae30d66aca80f1cbcc7f3a1f4b7be1ccde3d4142d6c7c3878d2fae7e21b47cb93895ffd98981332e2ab97e96bb664d6f5337e5e7ba7b4
-  languageName: node
-  linkType: hard
-
 "@storybook/react-dom-shim@npm:8.5.4":
   version: 8.5.4
   resolution: "@storybook/react-dom-shim@npm:8.5.4"
@@ -6380,15 +6369,6 @@ __metadata:
   peerDependencies:
     storybook: ^8.5.3
   checksum: 4dd74bc1afa8c63208f106099be7b3b27de27e3ff49dfbd4f3c535d094db045e9936d53513e00afeecc5c96017eda7321efd362cc12f393be6dce71056a6df12
-  languageName: node
-  linkType: hard
-
-"@storybook/theming@npm:8.5.3":
-  version: 8.5.3
-  resolution: "@storybook/theming@npm:8.5.3"
-  peerDependencies:
-    storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
-  checksum: 9ed121f6a5c0a013decb3d973664d07cf412a607c787537ab56fc339334c42cad6494cf67865e03be9406c9dd6cc0c1ae7fa78102a11fe5e198d398c073f461e
   languageName: node
   linkType: hard
 
@@ -20491,7 +20471,7 @@ __metadata:
     "@storybook/manager-api": 8.5.3
     "@storybook/react": 8.5.4
     "@storybook/react-webpack5": 8.5.4
-    "@storybook/theming": 8.5.3
+    "@storybook/theming": 8.5.4
     "@svgr/webpack": 8.1.0
     "@tailwindcss/postcss": 4.0.6
     "@testing-library/cypress": 10.0.3
