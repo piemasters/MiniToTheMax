@@ -20607,7 +20607,7 @@ __metadata:
     "@storybook/manager-api": 8.5.5
     "@storybook/react": 8.5.6
     "@storybook/react-webpack5": 8.5.5
-    "@storybook/theming": 8.5.5
+    "@storybook/theming": 8.5.6
     "@svgr/webpack": 8.1.0
     "@tailwindcss/postcss": 4.0.6
     "@testing-library/cypress": 10.0.3
