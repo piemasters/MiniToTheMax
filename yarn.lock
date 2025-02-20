@@ -20551,7 +20551,7 @@ __metadata:
     "@storybook/manager-api": 8.5.8
     "@storybook/react": 8.5.6
     "@storybook/react-webpack5": 8.5.8
-    "@storybook/theming": 8.5.6
+    "@storybook/theming": 8.5.8
     "@svgr/webpack": 8.1.0
     "@tailwindcss/postcss": 4.0.7
     "@testing-library/cypress": 10.0.3
@@ -25500,13 +25500,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: 08249c7046125d9d0a944a6e96cfe9ec66908d6b8a9db125531be6eb05fa0de047fd5542e9d43b4f987057f00a093b276b8d3e19af162a9c40db2681058fd306
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.0.6":
-  version: 4.0.6
-  resolution: "tailwindcss@npm:4.0.6"
-  checksum: 67c857a34f8265a88f1a2787f1e69127a3d6c122b75b0d99060188facb3d4d81397726aec596d7c0ac2966a6ba924761d19c46a2f65c3abe45dbc0cb5beff76f
   languageName: node
   linkType: hard
 
