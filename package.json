@@ -79,7 +79,7 @@
     "@types/react": "18.3.13",
     "@types/react-dom": "18.3.1",
     "@types/react-test-renderer": "19.0.0",
-    "@typescript-eslint/eslint-plugin": "8.24.1",
+    "@typescript-eslint/eslint-plugin": "8.25.0",
     "@typescript-eslint/parser": "8.24.1",
     "axe-core": "4.10.2",
     "babel-jest": "29.7.0",
