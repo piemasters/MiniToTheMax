@@ -6416,6 +6416,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/theming@npm:8.6.2":
+  version: 8.6.2
+  resolution: "@storybook/theming@npm:8.6.2"
+  peerDependencies:
+    storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+  checksum: 81ff1f740edaa000d6abaab5a47b038b46cfc54ddad308335b8d26d7a6f1ee100f617f52d51cd6596f424a534dbda0d9801e3928b4b6f758d9a3e8da6f9d40f5
+  languageName: node
+  linkType: hard
+
 "@svgr/babel-plugin-add-jsx-attribute@npm:8.0.0":
   version: 8.0.0
   resolution: "@svgr/babel-plugin-add-jsx-attribute@npm:8.0.0"
@@ -20489,7 +20498,7 @@ __metadata:
     "@storybook/manager-api": 8.5.8
     "@storybook/react": 8.5.8
     "@storybook/react-webpack5": 8.5.8
-    "@storybook/theming": 8.5.8
+    "@storybook/theming": 8.6.2
     "@svgr/webpack": 8.1.0
     "@tailwindcss/postcss": 4.0.9
     "@testing-library/cypress": 10.0.3
