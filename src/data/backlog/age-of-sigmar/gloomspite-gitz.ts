@@ -94,6 +94,9 @@ export const gloomspiteGitz = [
     link: '/showcase/gloomspite-gitz/spearmen/',
   },
   {
+    name: 'Snotling Pump Wagon',
+  },
+  {
     name: 'Sporesplatta Fanatics',
   },
   {
