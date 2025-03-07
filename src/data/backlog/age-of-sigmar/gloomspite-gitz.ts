@@ -95,6 +95,7 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Snotling Pump Wagon',
+    link: '/showcase/gloomspite-gitz/snotling-pump-wagon/',
   },
   {
     name: 'Sporesplatta Fanatics',
