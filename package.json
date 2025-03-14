@@ -65,7 +65,7 @@
     "@storybook/manager-api": "8.5.8",
     "@storybook/react": "8.5.8",
     "@storybook/react-webpack5": "8.5.8",
-    "@storybook/theming": "8.5.8",
+    "@storybook/theming": "8.6.4",
     "@svgr/webpack": "8.1.0",
     "@tailwindcss/postcss": "4.0.14",
     "@testing-library/cypress": "10.0.3",
