@@ -6029,15 +6029,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-mdx-gfm@npm:8.5.8":
-  version: 8.5.8
-  resolution: "@storybook/addon-mdx-gfm@npm:8.5.8"
+"@storybook/addon-mdx-gfm@npm:8.6.8":
+  version: 8.6.8
+  resolution: "@storybook/addon-mdx-gfm@npm:8.6.8"
   dependencies:
     remark-gfm: ^4.0.0
     ts-dedent: ^2.0.0
   peerDependencies:
-    storybook: ^8.5.8
-  checksum: 2ca1b52fe6e7dc0b543db730da9a3dd815af2229120eeb76e5c8f07afc476a34655958b9336de563d684f7e75f847f11394fdf0b6acb2199ef30d14f16042ad7
+    storybook: ^8.6.8
+  checksum: b8f01adbb8adcec27dc77154cc04dab7d8b7e53e73b7b14b3079d4f9dd5037a2983c8d703204956d18dc6a061d780498289852a8fb3d634989ee331c0047e8cf
   languageName: node
   linkType: hard
 
@@ -20482,7 +20482,7 @@ __metadata:
     "@storybook/addon-essentials": 8.5.8
     "@storybook/addon-jest": 8.5.8
     "@storybook/addon-links": 8.5.8
-    "@storybook/addon-mdx-gfm": 8.5.8
+    "@storybook/addon-mdx-gfm": 8.6.8
     "@storybook/addon-styling-webpack": 1.0.1
     "@storybook/addon-webpack5-compiler-babel": 3.0.5
     "@storybook/manager-api": 8.5.8
@@ -25446,13 +25446,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: 08249c7046125d9d0a944a6e96cfe9ec66908d6b8a9db125531be6eb05fa0de047fd5542e9d43b4f987057f00a093b276b8d3e19af162a9c40db2681058fd306
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.0.14":
-  version: 4.0.14
-  resolution: "tailwindcss@npm:4.0.14"
-  checksum: 164d1169710958c64939cd2b08f880fe141e24e2ecf9f11b8c9e7f4fb87c3c5c3878be4c45cee5218d9fb23ed55dea2c41ad97e3ff13b943ee240f45eb3c5bb4
   languageName: node
   linkType: hard
 
