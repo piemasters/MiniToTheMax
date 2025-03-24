@@ -6416,6 +6416,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/theming@npm:8.6.8":
+  version: 8.6.8
+  resolution: "@storybook/theming@npm:8.6.8"
+  peerDependencies:
+    storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+  checksum: 1be0dea23178af562133f1047165e170f7e90bec4c3cedbdcb59df22685f314273a06a4677835ab84e6dbc682b803590adad6963217971c8136b076ce69800aa
+  languageName: node
+  linkType: hard
+
 "@svgr/babel-plugin-add-jsx-attribute@npm:8.0.0":
   version: 8.0.0
   resolution: "@svgr/babel-plugin-add-jsx-attribute@npm:8.0.0"
@@ -20488,7 +20497,7 @@ __metadata:
     "@storybook/manager-api": 8.5.8
     "@storybook/react": 8.5.8
     "@storybook/react-webpack5": 8.5.8
-    "@storybook/theming": 8.5.8
+    "@storybook/theming": 8.6.8
     "@svgr/webpack": 8.1.0
     "@tailwindcss/postcss": 4.0.15
     "@testing-library/cypress": 10.0.3
@@ -25446,13 +25455,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: 08249c7046125d9d0a944a6e96cfe9ec66908d6b8a9db125531be6eb05fa0de047fd5542e9d43b4f987057f00a093b276b8d3e19af162a9c40db2681058fd306
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.0.14":
-  version: 4.0.14
-  resolution: "tailwindcss@npm:4.0.14"
-  checksum: 164d1169710958c64939cd2b08f880fe141e24e2ecf9f11b8c9e7f4fb87c3c5c3878be4c45cee5218d9fb23ed55dea2c41ad97e3ff13b943ee240f45eb3c5bb4
   languageName: node
   linkType: hard
 
