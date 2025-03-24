@@ -5896,16 +5896,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:8.5.8":
-  version: 8.5.8
-  resolution: "@storybook/addon-a11y@npm:8.5.8"
+"@storybook/addon-a11y@npm:8.6.8":
+  version: 8.6.8
+  resolution: "@storybook/addon-a11y@npm:8.6.8"
   dependencies:
-    "@storybook/addon-highlight": 8.5.8
-    "@storybook/test": 8.5.8
+    "@storybook/addon-highlight": 8.6.8
+    "@storybook/global": ^5.0.0
+    "@storybook/test": 8.6.8
     axe-core: ^4.2.0
   peerDependencies:
-    storybook: ^8.5.8
-  checksum: 9dfab394492d70029d57cfab1b7ef4586f4f9b6eebf3681450399aeda45e2a777e80ef4e9c64893f39261497c7dbdae20917c3e2bdfcaf4be82e407b5f756f39
+    storybook: ^8.6.8
+  checksum: 4a47b8a8c0e7213e2bed994fdcea7560a78af24f2e399a9fcbe5bf5fe8536a3ded37125d18cf607c3422ee959b183d3d842a9dd2ae6ad391512f3effd613e8f0
   languageName: node
   linkType: hard
 
@@ -5995,6 +5996,17 @@ __metadata:
   peerDependencies:
     storybook: ^8.5.8
   checksum: 76604b8a6a5f63645869e7f9450175b8ec89fc4703ab43166c375da80cb28b63db513416ee74acbda21be270189fae3357639e9393f1f2ae0f585eadaf2f0b38
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-highlight@npm:8.6.8":
+  version: 8.6.8
+  resolution: "@storybook/addon-highlight@npm:8.6.8"
+  dependencies:
+    "@storybook/global": ^5.0.0
+  peerDependencies:
+    storybook: ^8.6.8
+  checksum: 85eeb8d549b6b3358d31c8204a58164a2c6a7728d0d6e53799e65b4d3ab4cb29743bffc7f861b36d50eb2213f569668840a15c54c44beaefe7b707f2dc7966a5
   languageName: node
   linkType: hard
 
@@ -6253,15 +6265,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/instrumenter@npm:8.5.8":
-  version: 8.5.8
-  resolution: "@storybook/instrumenter@npm:8.5.8"
+"@storybook/instrumenter@npm:8.6.8":
+  version: 8.6.8
+  resolution: "@storybook/instrumenter@npm:8.6.8"
   dependencies:
     "@storybook/global": ^5.0.0
     "@vitest/utils": ^2.1.1
   peerDependencies:
-    storybook: ^8.5.8
-  checksum: 5713def7c543b69bab95073192099c98141cd2281be30a84c672e5ae2fed53fce6134997439244b02aa123d2ff8aab710e6d240eed5fa59bfe5ea01a6743d7c3
+    storybook: ^8.6.8
+  checksum: 111508d96d3cacb04388a58a7977b2766616348a33f0d461f53786a73286e58e73dde637d26f6395f0841d323da30b4985707a801d43236394c8303c847351db
   languageName: node
   linkType: hard
 
@@ -6389,21 +6401,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/test@npm:8.5.8":
-  version: 8.5.8
-  resolution: "@storybook/test@npm:8.5.8"
+"@storybook/test@npm:8.6.8":
+  version: 8.6.8
+  resolution: "@storybook/test@npm:8.6.8"
   dependencies:
-    "@storybook/csf": 0.1.12
     "@storybook/global": ^5.0.0
-    "@storybook/instrumenter": 8.5.8
+    "@storybook/instrumenter": 8.6.8
     "@testing-library/dom": 10.4.0
     "@testing-library/jest-dom": 6.5.0
     "@testing-library/user-event": 14.5.2
     "@vitest/expect": 2.0.5
     "@vitest/spy": 2.0.5
   peerDependencies:
-    storybook: ^8.5.8
-  checksum: bad79af9fd81ded3505a5440058a748ce5e4d1409de221015f411c5ae23e1084ee477d8d89e76f2bb9e5b88376f7f502e7c918dfcb7c0f0f395b0b5b85c53162
+    storybook: ^8.6.8
+  checksum: 7787760fe34cc004a556dbdc6bf6ed8f64970c16d1afb985dc57ca269cffea2203538d3756440108cc4acd8430325162d5481d90e8835787ae9ac1bf55d2f387
   languageName: node
   linkType: hard
 
@@ -20478,7 +20489,7 @@ __metadata:
     "@babel/preset-typescript": 7.26.0
     "@chromatic-com/storybook": 3.2.6
     "@mdx-js/react": 3.1.0
-    "@storybook/addon-a11y": 8.5.8
+    "@storybook/addon-a11y": 8.6.8
     "@storybook/addon-essentials": 8.5.8
     "@storybook/addon-jest": 8.5.8
     "@storybook/addon-links": 8.5.8
@@ -25446,13 +25457,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: 08249c7046125d9d0a944a6e96cfe9ec66908d6b8a9db125531be6eb05fa0de047fd5542e9d43b4f987057f00a093b276b8d3e19af162a9c40db2681058fd306
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.0.14":
-  version: 4.0.14
-  resolution: "tailwindcss@npm:4.0.14"
-  checksum: 164d1169710958c64939cd2b08f880fe141e24e2ecf9f11b8c9e7f4fb87c3c5c3878be4c45cee5218d9fb23ed55dea2c41ad97e3ff13b943ee240f45eb3c5bb4
   languageName: node
   linkType: hard
 
