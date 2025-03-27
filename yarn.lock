@@ -6043,19 +6043,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:8.6.9":
-  version: 8.6.9
-  resolution: "@storybook/addon-links@npm:8.6.9"
+"@storybook/addon-links@npm:8.6.10":
+  version: 8.6.10
+  resolution: "@storybook/addon-links@npm:8.6.10"
   dependencies:
     "@storybook/global": ^5.0.0
     ts-dedent: ^2.0.0
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^8.6.9
+    storybook: ^8.6.10
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: aa7e0a8c41c1fea2ba6ec9c18da4476f9008e2765d42d78430c1ddabc8b41c03315f8cad4c4480530f4c24e515fe81de16dc12e5e4388b519ee91b534d3281a5
+  checksum: b26fb2aa59a575f7a46f6862a760aa728484db8c7b435d7f280462ff1c688f9abd87f53892dc28f6b4abf70fa967b72e82f8cdfd06950f6330b047432e28f12e
   languageName: node
   linkType: hard
 
@@ -20575,7 +20575,7 @@ __metadata:
     "@storybook/addon-a11y": 8.6.9
     "@storybook/addon-essentials": 8.6.10
     "@storybook/addon-jest": 8.6.10
-    "@storybook/addon-links": 8.6.9
+    "@storybook/addon-links": 8.6.10
     "@storybook/addon-mdx-gfm": 8.6.9
     "@storybook/addon-styling-webpack": 1.0.1
     "@storybook/addon-webpack5-compiler-babel": 3.0.5
