@@ -112,7 +112,7 @@
     "postcss": "8.5.3",
     "prettier": "3.5.3",
     "react-docgen-typescript-loader": "3.7.2",
-    "react-test-renderer": "19.0.0",
+    "react-test-renderer": "19.1.0",
     "sharp": "0.33.5",
     "start-server-and-test": "2.0.11",
     "storybook": "8.6.11",
