@@ -6126,13 +6126,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-webpack5-compiler-babel@npm:3.0.5":
-  version: 3.0.5
-  resolution: "@storybook/addon-webpack5-compiler-babel@npm:3.0.5"
+"@storybook/addon-webpack5-compiler-babel@npm:3.0.6":
+  version: 3.0.6
+  resolution: "@storybook/addon-webpack5-compiler-babel@npm:3.0.6"
   dependencies:
     "@babel/core": ^7.26.0
     babel-loader: ^9.2.1
-  checksum: be222ae5c7cba1a66f22a7321f04be286cb33fe0eb4bb362ac7a3288dc82b2fe00613c18288922a9391ef3d0c7d0f752649860f57fc45591fd6a0bac2f535548
+  checksum: 5e5bf0c5c9369bd307aa32902225822bffb62dad83fc1a7ae0de2a5ed5be8ca46ca48a7c961c17693cb77c97a88b882178ddaaa0578f44693e325d78045a610d
   languageName: node
   linkType: hard
 
@@ -20506,7 +20506,7 @@ __metadata:
     "@storybook/addon-links": 8.6.11
     "@storybook/addon-mdx-gfm": 8.6.11
     "@storybook/addon-styling-webpack": 1.0.1
-    "@storybook/addon-webpack5-compiler-babel": 3.0.5
+    "@storybook/addon-webpack5-compiler-babel": 3.0.6
     "@storybook/manager-api": 8.6.11
     "@storybook/react": 8.6.11
     "@storybook/react-webpack5": 8.6.11
