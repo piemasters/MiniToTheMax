@@ -14699,9 +14699,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-mdx@npm:5.14.0":
-  version: 5.14.0
-  resolution: "gatsby-plugin-mdx@npm:5.14.0"
+"gatsby-plugin-mdx@npm:5.14.1":
+  version: 5.14.1
+  resolution: "gatsby-plugin-mdx@npm:5.14.1"
   dependencies:
     "@mdx-js/mdx": ^2.3.0
     acorn: ^8.8.2
@@ -14728,7 +14728,7 @@ __metadata:
     gatsby-source-filesystem: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 0baccf9ae9470bec8eeb9da23b4dedbca657de9544ec0efb027e68f80b8064eecd66dfffd35d50f6f542d6377d3c91754721eb06a98b641b60fd465d04480ff0
+  checksum: 5638b5b013668d32238f54aa26f8c6610823a0bebc3b9c9aa6820e6f83b1c2fa171028ee7476a33fb8e6aebd924dd830cc7b18a118c3a5145de19002e011791a
   languageName: node
   linkType: hard
 
@@ -20601,7 +20601,7 @@ __metadata:
     gatsby-plugin-google-gtag: 5.14.0
     gatsby-plugin-image: 3.14.0
     gatsby-plugin-manifest: 5.14.0
-    gatsby-plugin-mdx: 5.14.0
+    gatsby-plugin-mdx: 5.14.1
     gatsby-plugin-offline: 6.14.0
     gatsby-plugin-postcss: 6.14.0
     gatsby-plugin-react-svg: 3.3.0
