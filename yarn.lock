@@ -15149,9 +15149,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:5.14.2":
-  version: 5.14.2
-  resolution: "gatsby@npm:5.14.2"
+"gatsby@npm:5.14.3":
+  version: 5.14.3
+  resolution: "gatsby@npm:5.14.3"
   dependencies:
     "@babel/code-frame": ^7.18.6
     "@babel/core": ^7.20.12
@@ -15328,7 +15328,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: f6578ee96589aa85230e54b4a781e0e49abb5addababa0130b5b7a8c2a363a990b8f0d70b7d306eb32f8645c5ff9664d644505aaac9143f4a683976f41859124
+  checksum: 86559805e334ef04ec12e330cd4969ab07b25305a01e517578ce06f539930e0777f62841aeeae3406a838dc80ac3af313ea164efe469160d30cc2eb7ff6152f6
   languageName: node
   linkType: hard
 
@@ -20756,7 +20756,7 @@ __metadata:
     eslint-plugin-storybook: 0.12.0
     eslint-webpack-plugin: 5.0.0
     fs-extra: 11.3.0
-    gatsby: 5.14.2
+    gatsby: 5.14.3
     gatsby-plugin-catch-links: 5.14.0
     gatsby-plugin-eslint: 4.0.4
     gatsby-plugin-google-gtag: 5.14.0
