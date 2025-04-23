@@ -11389,9 +11389,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:14.2.1":
-  version: 14.2.1
-  resolution: "cypress@npm:14.2.1"
+"cypress@npm:14.3.2":
+  version: 14.3.2
+  resolution: "cypress@npm:14.3.2"
   dependencies:
     "@cypress/request": ^3.0.8
     "@cypress/xvfb": ^1.2.4
@@ -11438,7 +11438,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: 744f5658710c4c1dbda6012a38b3a0b1f5061a5634e05d7408effa689792844a959d1e65e24aa6168e422998d1a254efc17a1458baab0cb1ad348d194541cf10
+  checksum: 8c008519a929fb9d1ebdee190682fd86b12b46e14443e71fabf801e6bc503720854a934bb36b9cad2267c690b5ab0a0e8329ff13d8189bbc5d6affdea9e3fd8c
   languageName: node
   linkType: hard
 
@@ -20740,7 +20740,7 @@ __metadata:
     babel-preset-gatsby: 3.14.0
     babel-preset-react-app: 10.1.0
     csstype: 3.1.3
-    cypress: 14.2.1
+    cypress: 14.3.2
     cypress-axe: 1.6.0
     disqus-react: 1.1.6
     dotenv: 16.4.7
