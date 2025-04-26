@@ -1,5 +1,8 @@
 export const underworlds = [
   {
+    name: "Borgit's Beastgrabbaz",
+  },
+  {
     name: "Da Kunnin' Krew",
     link: '/showcase/board-games/underworlds/da-kunnin-krew/',
   },
@@ -20,5 +23,8 @@ export const underworlds = [
     name: 'Thorns of the Briar Queen',
     link: '/showcase/board-games/underworlds/thorns-of-the-briar-queen/',
   },
-  { name: "Zarbag's Gitz" },
+  {
+    name: "Zarbag's Gitz",
+    link: '/showcase/board-games/underworlds/zarbags-gitz/',
+  },
 ];
