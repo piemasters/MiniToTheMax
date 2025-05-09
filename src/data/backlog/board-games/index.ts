@@ -4,7 +4,6 @@ export * from './blood-bowl';
 export * from './cursed-city';
 export * from './deathwatch-overkill';
 export * from './dreadfleet';
-export * from './dungeon-bowl';
 export * from './execution-force';
 export * from './gorechosen';
 export * from './lost-patrol';

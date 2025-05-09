@@ -11,3 +11,32 @@ export const bloodBowl = [
   { name: 'Trained Troll' },
   { name: 'Varag Ghoul-Chewer' },
 ];
+
+export const dungeonBowl = [
+  { name: 'Dark Elf Blitzer' },
+  { name: 'Dark Elf Lineman' },
+  { name: 'Dark Elf Runner' },
+  { name: 'Dwarf Blitzer' },
+  { name: 'Dwarf Blocker Lineman' },
+  { name: 'Dwarf Runner' },
+  { name: 'Gnoblars' },
+  { name: 'Gutter Runner' },
+  { name: 'Ogre Blocker' },
+  { name: 'Ogre Runt Punter' },
+  { name: 'Skaven Blitzer' },
+  { name: 'Skaven Clanrat Lineman' },
+  { name: 'Skaven Thrower' },
+  { name: 'Troll Slayer' },
+  { name: 'Witch Elf' },
+];
+
+export const bloodBowlGnomes = [
+  { name: 'Beastmaster' },
+  { name: 'Illusionist' },
+  { name: 'Lineman' },
+  { name: 'Rodney Roachbait' },
+  { name: 'Rowana Forestfoot' },
+  { name: 'Tokens' },
+  { name: 'Treeman' },
+  { name: 'Woodland Fox' },
+];

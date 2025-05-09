@@ -153,19 +153,22 @@ export const BacklogPage: FC = () => {
         <AccordionItem value={1} trigger="Blood Bowl">
           <ul>{generateEntries(backlog.bloodBowl)}</ul>
         </AccordionItem>
-        <AccordionItem value={2} trigger="Dreadfleet">
-          <ul>{generateEntries(backlog.dreadfleet)}</ul>
-        </AccordionItem>
-        <AccordionItem value={3} trigger="Dungeon Bowl">
+        <AccordionItem value={2} trigger="Dungeon Bowl">
           <ul>{generateEntries(backlog.dungeonBowl)}</ul>
         </AccordionItem>
-        <AccordionItem value={4} trigger="Gorechosen">
+        <AccordionItem value={3} trigger="Blood Bowl Gnomes">
+          <ul>{generateEntries(backlog.bloodBowlGnomes)}</ul>
+        </AccordionItem>
+        <AccordionItem value={4} trigger="Dreadfleet">
+          <ul>{generateEntries(backlog.dreadfleet)}</ul>
+        </AccordionItem>
+        <AccordionItem value={5} trigger="Gorechosen">
           <ul>{generateEntries(backlog.gorechosen)}</ul>
         </AccordionItem>
-        <AccordionItem value={5} trigger="Silver Tower">
+        <AccordionItem value={6} trigger="Silver Tower">
           <ul>{generateEntries(backlog.silverTower)}</ul>
         </AccordionItem>
-        <AccordionItem value={6} trigger="Underworlds">
+        <AccordionItem value={7} trigger="Underworlds">
           <ul>{generateEntries(backlog.underworlds)}</ul>
         </AccordionItem>
       </Accordion>
