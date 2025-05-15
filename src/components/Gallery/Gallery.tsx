@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import { Gallery as Photoswipe, Item } from 'react-photoswipe-gallery';
-import 'photoswipe/dist/photoswipe.css';
 
 export interface GatsbyGalleryImage {
   full: IGatsbyImageData;

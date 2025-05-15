@@ -59,11 +59,24 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: 'gatsby-plugin-svgr-svgo',
       options: {
-        rule: {
-          include: /svg/,
-        },
+        inlineSvgOptions: [
+          {
+            test: /\.svg$/,
+            svgoConfig: {
+              plugins: [
+                'prefixIds',
+                {
+                  name: 'preset-default',
+                  params: {
+                    overrides: [{ name: 'removeViewBox', active: false }],
+                  },
+                },
+              ],
+            },
+          },
+        ],
       },
     },
     `gatsby-plugin-image`,
