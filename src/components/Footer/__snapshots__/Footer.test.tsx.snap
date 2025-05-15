@@ -3,11 +3,11 @@
 exports[`Footer renders correctly 1`] = `
 <div>
   <footer
-    class="mt-12 bg-gray-100 py-8"
+    class="py-8 mt-12 bg-gray-100"
     data-testid="footer"
   >
     <div
-      class="flex items-center justify-end text-sm mx-auto max-w-3xl px-4 no-underline"
+      class="flex items-center justify-end max-w-3xl px-4 mx-auto text-sm no-underline"
     >
       <a
         class="text-blue-500 hover:text-blue-700"
@@ -22,7 +22,7 @@ exports[`Footer renders correctly 1`] = `
       </a>
        | All Rights Reserved
       <div
-        class="mt-1 ml-3 flex mb-2"
+        class="flex mt-1 mb-2 ml-3"
       >
         <a
           href="https://www.facebook.com/minitothemax"
@@ -30,7 +30,7 @@ exports[`Footer renders correctly 1`] = `
           target="_blank"
         >
           <test-file-stub
-            classname="fill-red-500 mx-1 opacity-60 hover:opacity-100 w-7"
+            classname="mx-1 fill-red-500 opacity-60 hover:opacity-100 w-7"
           />
         </a>
         <a
@@ -39,7 +39,7 @@ exports[`Footer renders correctly 1`] = `
           target="_blank"
         >
           <test-file-stub
-            classname="fill-red-500 mx-1 opacity-60 hover:opacity-100 w-7"
+            classname="mx-1 fill-red-500 opacity-60 hover:opacity-100 w-7"
           />
         </a>
         <a
@@ -48,7 +48,7 @@ exports[`Footer renders correctly 1`] = `
           target="_blank"
         >
           <test-file-stub
-            classname="fill-red-500 mx-1 opacity-60 hover:opacity-100 w-7"
+            classname="mx-1 fill-red-500 opacity-60 hover:opacity-100 w-7"
           />
         </a>
       </div>
