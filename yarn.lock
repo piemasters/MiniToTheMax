@@ -5933,17 +5933,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:8.6.13":
-  version: 8.6.13
-  resolution: "@storybook/addon-a11y@npm:8.6.13"
+"@storybook/addon-a11y@npm:8.6.14":
+  version: 8.6.14
+  resolution: "@storybook/addon-a11y@npm:8.6.14"
   dependencies:
-    "@storybook/addon-highlight": 8.6.13
+    "@storybook/addon-highlight": 8.6.14
     "@storybook/global": ^5.0.0
-    "@storybook/test": 8.6.13
+    "@storybook/test": 8.6.14
     axe-core: ^4.2.0
   peerDependencies:
-    storybook: ^8.6.13
-  checksum: aed66f7721b7adde1e182ddfad049be4248a6520a2ed8e3474e87c74b1b047d5f0c83bb0054485f718bf08d816b907caf004ad85b5d54b4b1de91f5072bc5788
+    storybook: ^8.6.14
+  checksum: d966330e75b42e20aba229eea985b764705ab860b6625335f71b3e33b4a9ed3b473eecc6afd921a7dc17bb48155ac4b052ebee7c867a5973d21e2df89eb2ddc6
   languageName: node
   linkType: hard
 
@@ -6033,6 +6033,17 @@ __metadata:
   peerDependencies:
     storybook: ^8.6.13
   checksum: 650091bbaca22654988f46fc2e51237503cd82647ba1d205c74ca0f1a36d056a7aaf4bec83e5574131900b04401a6675465384bfef54f6b0b00d988845b167ab
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-highlight@npm:8.6.14":
+  version: 8.6.14
+  resolution: "@storybook/addon-highlight@npm:8.6.14"
+  dependencies:
+    "@storybook/global": ^5.0.0
+  peerDependencies:
+    storybook: ^8.6.14
+  checksum: 31c625deebb285350e5b79685843d19c6aecab4a2004990067877997c4bfd822252cc12838280c20b04658f8abe57b4b0932348d3b2f88134afa1313d2169125
   languageName: node
   linkType: hard
 
@@ -6280,15 +6291,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/instrumenter@npm:8.6.13":
-  version: 8.6.13
-  resolution: "@storybook/instrumenter@npm:8.6.13"
+"@storybook/instrumenter@npm:8.6.14":
+  version: 8.6.14
+  resolution: "@storybook/instrumenter@npm:8.6.14"
   dependencies:
     "@storybook/global": ^5.0.0
     "@vitest/utils": ^2.1.1
   peerDependencies:
-    storybook: ^8.6.13
-  checksum: 0b6fbc5114d5d829072841c49af6dca9872a07abb15e58dc8cd62c067559df2e7741d4aa93c55ed157e45b01207ea570b63f8e0d6a1bc1786c4e25cdf7dddbb2
+    storybook: ^8.6.14
+  checksum: d94ae151671673d1a392e124b6e4003ce76b7a13e68de0283656f9c9725cc5b46d2b59b118063a3ceb8a006a6090ffb9547b6a7a04cb451a50a562b7cca9d0ac
   languageName: node
   linkType: hard
 
@@ -6425,20 +6436,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/test@npm:8.6.13":
-  version: 8.6.13
-  resolution: "@storybook/test@npm:8.6.13"
+"@storybook/test@npm:8.6.14":
+  version: 8.6.14
+  resolution: "@storybook/test@npm:8.6.14"
   dependencies:
     "@storybook/global": ^5.0.0
-    "@storybook/instrumenter": 8.6.13
+    "@storybook/instrumenter": 8.6.14
     "@testing-library/dom": 10.4.0
     "@testing-library/jest-dom": 6.5.0
     "@testing-library/user-event": 14.5.2
     "@vitest/expect": 2.0.5
     "@vitest/spy": 2.0.5
   peerDependencies:
-    storybook: ^8.6.13
-  checksum: 7f5e0618bc24b8621985f67f986475edd34540ff903bbea48218d090797c9e1e3ccd176fa4fbce208a8d64218b77e74725eafa38a2792c04c18e52acb3900cf3
+    storybook: ^8.6.14
+  checksum: 996c7d623017f924f61cd44ba84df1844d2b72bddff76cbb3b0f9e76e1de02f4e63e56598ecfea557ba873359b0c5c5a0e1bc7f1811887dc647f83143233a88b
   languageName: node
   linkType: hard
 
@@ -20924,7 +20935,7 @@ __metadata:
     "@babel/preset-typescript": 7.27.1
     "@chromatic-com/storybook": 3.2.6
     "@mdx-js/react": 3.1.0
-    "@storybook/addon-a11y": 8.6.13
+    "@storybook/addon-a11y": 8.6.14
     "@storybook/addon-essentials": 8.6.13
     "@storybook/addon-jest": 8.6.14
     "@storybook/addon-links": 8.6.13
