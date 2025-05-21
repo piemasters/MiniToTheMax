@@ -114,7 +114,7 @@
     "prettier": "3.5.3",
     "react-docgen-typescript-loader": "3.7.2",
     "react-test-renderer": "19.1.0",
-    "sharp": "0.34.1",
+    "sharp": "0.34.2",
     "start-server-and-test": "2.0.12",
     "storybook": "8.6.14",
     "tailwindcss": "4.1.7",
