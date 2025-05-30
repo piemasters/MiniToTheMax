@@ -36,6 +36,10 @@ export const kruleboyz = [
     link: '/showcase/kruleboyz/hobgrot-slittaz/',
   },
   {
+    name: 'Hobgrot Slittaboss',
+    link: '/showcase/kruleboyz/hobgrot-slittaboss/',
+  },
+  {
     name: 'Killaboss on Great Gnashtoof',
     link: '/showcase/kruleboyz/killaboss-on-great-gnashtoof/',
   },

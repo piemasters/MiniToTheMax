@@ -1,7 +1,7 @@
 import { getByTestId, render } from '@testing-library/react';
 
 import { Paint } from './Paint';
-import { baseRetributorArmour } from '../../data/paints/base';
+import { baseRetributorArmour } from '../../data/paints/citadel/base';
 
 describe('Paint', () => {
   test('renders correctly', () => {

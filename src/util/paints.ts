@@ -8,15 +8,17 @@ import {
   shadePaints,
   sprayPaints,
   technicalPaints,
-} from '../data/paints';
+} from '../data/paints/citadel';
+import { gameColorPaints } from '../data/paints';
 
 export const sortPaints = (a: PaintDetails, b: PaintDetails) => {
-  if (a.name < b.name) return -1;
-  if (a.name > b.name) return 1;
+  if (`${a.company}${a.name}` < `${b.company}${b.name}`) return -1;
+  if (`${a.company}${a.name}` > `${a.company}${a.name}`) return 1;
   return 0;
 };
 
 export const getAllSortedPaints = () => [
+  // citadel
   ...airPaints.sort(sortPaints),
   ...basePaints.sort(sortPaints),
   ...contrastPaints.sort(sortPaints),
@@ -25,7 +27,14 @@ export const getAllSortedPaints = () => [
   ...shadePaints.sort(sortPaints),
   ...sprayPaints.sort(sortPaints),
   ...technicalPaints.sort(sortPaints),
+  // vallejo
+  ...gameColorPaints.sort(sortPaints),
 ];
+
+export const companyFilters: PaintFilters = {
+  Citadel: true,
+  Vallejo: true,
+};
 
 export const colorFilters: PaintFilters = {
   black: true,
@@ -53,12 +62,14 @@ export const colorFilters: PaintFilters = {
 export const typeFilters: PaintFilters = {
   air: true,
   base: true,
-  contrast: true,
+  contrast: true, // vallejo xpress
   dry: true,
-  layer: true,
-  shade: true,
+  layer: true, // vallejo default
+  shade: true, // vallejo wash
   spray: true,
-  technical: true,
+  technical: true, // vallejo special fx
+  fluo: true,
+  ink: true,
 };
 
 export const availabilityFilters: PaintFilters = {
@@ -72,7 +83,7 @@ export const togglePaints = (filters: AllPaintFilters) => {
     for (const [key, value] of Object.entries(filter)) {
       if (!value) {
         filteredPaints = filteredPaints.filter(
-          (paint: PaintDetails) => paint[type] !== key
+          (paint: PaintDetails) => paint[type as keyof PaintDetails] !== key
         );
       }
     }

@@ -6,6 +6,7 @@ import { Paint, StatefulSeo as Seo } from '../components';
 import type { AllPaintFilters, PaintDetails, PaintFilters } from '../types';
 import {
   availabilityFilters,
+  companyFilters,
   colorFilters,
   getAllSortedPaints,
   togglePaints,
@@ -17,6 +18,7 @@ export const Paints = (): React.ReactNode => {
   const [filteredPaints, setFilteredPaints] = useState([...allPaints]);
 
   const [allFilters, setAllFilters] = useState<AllPaintFilters>({
+    company: { ...companyFilters },
     color: { ...colorFilters },
     type: { ...typeFilters },
     availability: { ...availabilityFilters },

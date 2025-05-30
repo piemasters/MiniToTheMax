@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Paint } from './Paint';
-import { baseRetributorArmour } from '../../data/paints/base';
+import { gameColorSkin } from '../../data/paints/vallejo/game';
+import { baseRetributorArmour } from '../../data/paints/citadel/base';
 
 const meta: Meta<typeof Paint> = {
   component: Paint,
@@ -9,14 +10,8 @@ const meta: Meta<typeof Paint> = {
     paint: {
       paint: 'paint',
       description: 'The paint color and other properties',
-      defaultValue: baseRetributorArmour,
+      defaultValue: gameColorSkin,
       control: { type: 'object' },
-    },
-    size: {
-      name: 'size',
-      description: 'The size of the paint in px',
-      defaultValue: 60,
-      control: { type: 'number' },
     },
   },
 };
@@ -24,9 +19,25 @@ const meta: Meta<typeof Paint> = {
 export default meta;
 type Story = StoryObj<typeof Paint>;
 
-export const Primary: Story = {
+export const Citadel: Story = {
   args: {
     paint: baseRetributorArmour,
-    size: 60,
+  },
+};
+
+export const Vallejo: Story = {
+  args: {
+    paint: gameColorSkin,
+  },
+};
+
+export const All: Story = {
+  render: () => {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <Paint paint={baseRetributorArmour} />
+        <Paint paint={gameColorSkin} />
+      </div>
+    );
   },
 };
