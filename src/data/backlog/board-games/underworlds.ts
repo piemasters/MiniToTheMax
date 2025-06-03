@@ -1,6 +1,7 @@
 export const underworlds = [
   {
     name: "Borgit's Beastgrabbaz",
+    link: '/showcase/board-games/underworlds/borgits-beastgrabbaz/',
   },
   {
     name: "Da Kunnin' Krew",

@@ -10,6 +10,10 @@ export const gloomspiteGitz = [
     link: '/showcase/gloomspite-gitz/boingrot-bounders/',
   },
   {
+    name: "Borgit's Beastgrabbaz",
+    link: '/showcase/board-games/underworlds/borgits-beastgrabbaz/',
+  },
+  {
     name: 'Colossal Squig',
     link: '/showcase/gloomspite-gitz/colossal-squig/',
   },
@@ -33,7 +37,8 @@ export const gloomspiteGitz = [
     name: 'Gobbapalooza',
   },
   {
-    name: 'Grinkraks Looncourt',
+    name: "Grinkrak's Looncourt",
+    link: '/showcase/board-games/underworlds/grinkraks-looncourt/',
   },
   {
     name: 'Loonboss',
@@ -77,7 +82,8 @@ export const gloomspiteGitz = [
     link: '/showcase/gloomspite-gitz/mangler-squigs-2/',
   },
   {
-    name: 'Mollogs Mob',
+    name: "Mollog's Mob",
+    link: '/showcase/board-games/underworlds/mollogs-mob/',
   },
   {
     name: 'Rabble Rowza',
@@ -137,6 +143,7 @@ export const gloomspiteGitz = [
     name: 'Troggoth Hag',
   },
   {
-    name: 'Zarbags Gitz',
+    name: "Zarbag's Gitz",
+    link: '/showcase/board-games/underworlds/zarbags-gitz/',
   },
 ];
