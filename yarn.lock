@@ -6296,30 +6296,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/core@npm:8.6.14":
-  version: 8.6.14
-  resolution: "@storybook/core@npm:8.6.14"
-  dependencies:
-    "@storybook/theming": 8.6.14
-    better-opn: ^3.0.2
-    browser-assert: ^1.2.1
-    esbuild: ^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0
-    esbuild-register: ^3.5.0
-    jsdoc-type-pratt-parser: ^4.0.0
-    process: ^0.11.10
-    recast: ^0.23.5
-    semver: ^7.6.2
-    util: ^0.12.5
-    ws: ^8.2.3
-  peerDependencies:
-    prettier: ^2 || ^3
-  peerDependenciesMeta:
-    prettier:
-      optional: true
-  checksum: b155279bd6d0ee6108c0db9b4a3af20d44ff9e8d57a26f6fef131fa00fb00afee6fae03af26ee7ddbade0e0ea978bf5732e5f9543dba406f2432d17df8d543db
-  languageName: node
-  linkType: hard
-
 "@storybook/csf-plugin@npm:8.6.14":
   version: 8.6.14
   resolution: "@storybook/csf-plugin@npm:8.6.14"
@@ -6927,7 +6903,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:6.6.3":
+"@testing-library/jest-dom@npm:6.6.3, @testing-library/jest-dom@npm:^6.6.3":
   version: 6.6.3
   resolution: "@testing-library/jest-dom@npm:6.6.3"
   dependencies:
@@ -6968,6 +6944,15 @@ __metadata:
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
   checksum: d76937dffcf0082fbf3bb89eb2b81a31bf5448048dd61c33928c5f10e33a58e035321d39145cefd469bb5a499c68a5b4086b22f1a44e3e7c7e817dc5f6782867
+  languageName: node
+  linkType: hard
+
+"@testing-library/user-event@npm:^14.6.1":
+  version: 14.6.1
+  resolution: "@testing-library/user-event@npm:14.6.1"
+  peerDependencies:
+    "@testing-library/dom": ">=7.21.4"
+  checksum: 4cb8a81fea1fea83a42619e9545137b51636bb7a3182c596bb468e5664f1e4699a275c2d0fb8b6dcc3fe2684f9d87b0637ab7cb4f566051539146872c9141fcb
   languageName: node
   linkType: hard
 
@@ -8002,6 +7987,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vitest/expect@npm:3.0.9":
+  version: 3.0.9
+  resolution: "@vitest/expect@npm:3.0.9"
+  dependencies:
+    "@vitest/spy": 3.0.9
+    "@vitest/utils": 3.0.9
+    chai: ^5.2.0
+    tinyrainbow: ^2.0.0
+  checksum: 6df325d45e0ad4b6ad73a55e5328f615f92171fc4dbf3875972c08013727cfa435b9916636c7f3902a45f1874db10805d449311b70125edf1422dceb325ac982
+  languageName: node
+  linkType: hard
+
 "@vitest/pretty-format@npm:2.0.5":
   version: 2.0.5
   resolution: "@vitest/pretty-format@npm:2.0.5"
@@ -8020,12 +8017,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vitest/pretty-format@npm:3.0.9":
+  version: 3.0.9
+  resolution: "@vitest/pretty-format@npm:3.0.9"
+  dependencies:
+    tinyrainbow: ^2.0.0
+  checksum: 447b53bd962bc5978cf3e8c67f0600e38470ea63ab6ae24fb048dca79305828f37d9d854a7db1abc97ebde66a65187f87a99ca7969e43c750998c944e3ec48c6
+  languageName: node
+  linkType: hard
+
 "@vitest/spy@npm:2.0.5":
   version: 2.0.5
   resolution: "@vitest/spy@npm:2.0.5"
   dependencies:
     tinyspy: ^3.0.0
   checksum: a010dec99146832a2586c639fccf533b194482f6f25ffb2d64367598a4e77d094aedd3d82cdb55fc1a3971649577a039513ccf8dc1571492e5982482c530c7b9
+  languageName: node
+  linkType: hard
+
+"@vitest/spy@npm:3.0.9":
+  version: 3.0.9
+  resolution: "@vitest/spy@npm:3.0.9"
+  dependencies:
+    tinyspy: ^3.0.2
+  checksum: 1b90f40c4ac34529e7d098c745396a51e9b2f187d31d50a664ac7374db56edb3792862a35d1b8049e421705db6445761d687f9f8c5e298a9ca6cfa47d55625d7
   languageName: node
   linkType: hard
 
@@ -8038,6 +8053,17 @@ __metadata:
     loupe: ^3.1.1
     tinyrainbow: ^1.2.0
   checksum: 6867556dd7e376437e454b96c7e596ec16e141fb00b002b6ce435611ab3d9d1e3f38ebf48b1fc49f4c97f9754ed37abb602de8bf122f4ac0de621a4dbe0a314e
+  languageName: node
+  linkType: hard
+
+"@vitest/utils@npm:3.0.9":
+  version: 3.0.9
+  resolution: "@vitest/utils@npm:3.0.9"
+  dependencies:
+    "@vitest/pretty-format": 3.0.9
+    loupe: ^3.1.3
+    tinyrainbow: ^2.0.0
+  checksum: d31797594598817670cc49dfcd4ded2953d707c62e5dc7807737e8108073e97499cf7ef2eb3295f1fb52446a8a85ba50aacef21126689251092bc8566bff4bb6
   languageName: node
   linkType: hard
 
@@ -10255,6 +10281,19 @@ __metadata:
     loupe: ^3.1.0
     pathval: ^2.0.0
   checksum: f2341967ab5632612548d372c27b46219adad3af35021d8cba2ae3c262f588de2c60cb3f004e6ad40e363a9cad6d20d0de51f00e7e9ac31cce17fb05d4efa316
+  languageName: node
+  linkType: hard
+
+"chai@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "chai@npm:5.2.0"
+  dependencies:
+    assertion-error: ^2.0.1
+    check-error: ^2.1.1
+    deep-eql: ^5.0.1
+    loupe: ^3.1.0
+    pathval: ^2.0.0
+  checksum: 15e4ba12d02df3620fd59b4a6e8efe43b47872ce61f1c0ca77ac1205a2a5898f3b6f1f52408fd1a708b8d07fdfb5e65b97af40bad9fd94a69ed8d4264c7a69f1
   languageName: node
   linkType: hard
 
@@ -18385,13 +18424,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsdoc-type-pratt-parser@npm:^4.0.0":
-  version: 4.1.0
-  resolution: "jsdoc-type-pratt-parser@npm:4.1.0"
-  checksum: e7642a508b090b1bdf17775383000ed71013c38e1231c1e576e5374636e8baf7c3fae8bf0252f5e1d3397d95efd56e8c8a5dd1a0de76d05d1499cbcb3c325bc3
-  languageName: node
-  linkType: hard
-
 "jsdom@npm:^20.0.0":
   version: 20.0.3
   resolution: "jsdom@npm:20.0.3"
@@ -19197,7 +19229,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loupe@npm:^3.1.0, loupe@npm:^3.1.1, loupe@npm:^3.1.2":
+"loupe@npm:^3.1.0, loupe@npm:^3.1.1, loupe@npm:^3.1.2, loupe@npm:^3.1.3":
   version: 3.1.3
   resolution: "loupe@npm:3.1.3"
   checksum: 9b2530b1d5a44d2c9fc5241f97ea00296dca257173c535b4832bc31f9516e10387991feb5b3fff23df116c8fcf907ce3980f82b215dcc5d19cde17ce9b9ec3e1
@@ -20894,7 +20926,7 @@ __metadata:
     react-test-renderer: 19.1.0
     sharp: 0.34.2
     start-server-and-test: 2.0.12
-    storybook: 8.6.14
+    storybook: 9.0.8
     tailwindcss: 4.1.10
     ts-loader: 9.5.2
     typescript: 5.8.3
@@ -25099,21 +25131,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:8.6.14":
-  version: 8.6.14
-  resolution: "storybook@npm:8.6.14"
+"storybook@npm:9.0.8":
+  version: 9.0.8
+  resolution: "storybook@npm:9.0.8"
   dependencies:
-    "@storybook/core": 8.6.14
+    "@storybook/global": ^5.0.0
+    "@testing-library/jest-dom": ^6.6.3
+    "@testing-library/user-event": ^14.6.1
+    "@vitest/expect": 3.0.9
+    "@vitest/spy": 3.0.9
+    better-opn: ^3.0.2
+    esbuild: ^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0
+    esbuild-register: ^3.5.0
+    recast: ^0.23.5
+    semver: ^7.6.2
+    ws: ^8.18.0
   peerDependencies:
     prettier: ^2 || ^3
   peerDependenciesMeta:
     prettier:
       optional: true
   bin:
-    getstorybook: ./bin/index.cjs
-    sb: ./bin/index.cjs
     storybook: ./bin/index.cjs
-  checksum: 314de784009952642d16b6896b5a6cc2b8a68e85ff5dbc8fbd00f90aeba6e2a3af70b3f02be5c3dbe603b11e158fe0333165558e2f05da14759454e639cda1ec
+  checksum: c8ef9306449aaf16a03829a8f2e88537690f69d3e5b8a86db09447b30558849ec465ea42b96b19f95e12567cc0883a15415d59facf5b3598a318d8b429d853d2
   languageName: node
   linkType: hard
 
@@ -26051,7 +26091,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyspy@npm:^3.0.0":
+"tinyrainbow@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "tinyrainbow@npm:2.0.0"
+  checksum: 26360631d97e43955a07cfb70fe40a154ce4e2bcd14fa3d37ce8e2ed8f4fa9e5ba00783e4906bbfefe6dcabef5d3510f5bee207cb693bee4e4e7553f5454bef1
+  languageName: node
+  linkType: hard
+
+"tinyspy@npm:^3.0.0, tinyspy@npm:^3.0.2":
   version: 3.0.2
   resolution: "tinyspy@npm:3.0.2"
   checksum: 5db671b2ff5cd309de650c8c4761ca945459d7204afb1776db9a04fb4efa28a75f08517a8620c01ee32a577748802231ad92f7d5b194dc003ee7f987a2a06337
@@ -27207,7 +27254,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"util@npm:^0.12.4, util@npm:^0.12.5":
+"util@npm:^0.12.4":
   version: 0.12.5
   resolution: "util@npm:0.12.5"
   dependencies:
@@ -28112,9 +28159,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ws@npm:^8.2.3":
-  version: 8.13.0
-  resolution: "ws@npm:8.13.0"
+"ws@npm:^8.18.0":
+  version: 8.18.2
+  resolution: "ws@npm:8.18.2"
   peerDependencies:
     bufferutil: ^4.0.1
     utf-8-validate: ">=5.0.2"
@@ -28123,7 +28170,7 @@ __metadata:
       optional: true
     utf-8-validate:
       optional: true
-  checksum: 53e991bbf928faf5dc6efac9b8eb9ab6497c69feeb94f963d648b7a3530a720b19ec2e0ec037344257e05a4f35bd9ad04d9de6f289615ffb133282031b18c61c
+  checksum: e38beae19ba4d68577ec24eb34fbfab376333fedd10f99b07511a8e842e22dbc102de39adac333a18e4c58868d0703cd5f239b04b345e22402d0ed8c34ea0aa0
   languageName: node
   linkType: hard
 
