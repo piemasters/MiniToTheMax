@@ -11,7 +11,7 @@ export const spaceWolves = [
   { name: 'Captain Lord Executioner' },
   {
     name: 'Centurions',
-    link: '/showcase/gloomspite-gitz/skarsnik/',
+    link: '/showcase/space-wolves/centurions/',
   },
   { name: 'Chaplain Terminator' },
   {
