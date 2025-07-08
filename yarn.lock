@@ -12260,10 +12260,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:16.5.0":
-  version: 16.5.0
-  resolution: "dotenv@npm:16.5.0"
-  checksum: 6543fe87b5ddf2d60dd42df6616eec99148a5fc150cb4530fef5bda655db5204a3afa0e6f25f7cd64b20657ace4d79c0ef974bec32fdb462cad18754191e7a90
+"dotenv@npm:17.1.0":
+  version: 17.1.0
+  resolution: "dotenv@npm:17.1.0"
+  checksum: f52fa5a52b7f4a8d663b32b91896b87045f3040c33e021208ce9ae2b53e5a85a382914c4b6dea206aecfc16e74c06672c389831c883b66c41605d8f80880e17d
   languageName: node
   linkType: hard
 
@@ -20892,7 +20892,7 @@ __metadata:
     cypress: 14.4.1
     cypress-axe: 1.6.0
     disqus-react: 1.1.7
-    dotenv: 16.5.0
+    dotenv: 17.1.0
     env-cmd: 10.1.0
     eslint: 9.27.0
     eslint-config-prettier: 10.1.5
