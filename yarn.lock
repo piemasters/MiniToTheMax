@@ -12105,13 +12105,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"disqus-react@npm:1.1.6":
-  version: 1.1.6
-  resolution: "disqus-react@npm:1.1.6"
+"disqus-react@npm:1.1.7":
+  version: 1.1.7
+  resolution: "disqus-react@npm:1.1.7"
   peerDependencies:
     react: ^15.6.1 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^15.6.1 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 7524942c14f4672f55d2b97b52b58847bbcf144a13c69477c0ce224ab725b7aeee1c2745cee310780b7ec596b72753ef19bcf273f31cfac387f5671d27f7a58e
+  checksum: ad72dc9f2328b33d92768e479faa0d0da502e91810e0918e17893cf4ff6daef18339c5454fd409bd64afb2bdf56d0524edf7766cdd204d50a2561a51440912b8
   languageName: node
   linkType: hard
 
@@ -20891,7 +20891,7 @@ __metadata:
     csstype: 3.1.3
     cypress: 14.4.1
     cypress-axe: 1.6.0
-    disqus-react: 1.1.6
+    disqus-react: 1.1.7
     dotenv: 16.5.0
     env-cmd: 10.1.0
     eslint: 9.27.0
