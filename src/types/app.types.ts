@@ -36,6 +36,7 @@ export interface Showcase {
 export interface Tutorials {
   fortyThousand: IGatsbyImageData;
   bases: IGatsbyImageData;
+  general: IGatsbyImageData;
   scenery: IGatsbyImageData;
   tools: IGatsbyImageData;
 }

@@ -23,6 +23,11 @@ export const TutorialsPage: FC<TutorialsPageProps> = ({ data }) => {
       img: getImage(data.bases),
     },
     {
+      title: 'General',
+      slug: '/tutorials/general',
+      img: getImage(data.general),
+    },
+    {
       title: 'Scenery',
       slug: '/tutorials/scenery',
       img: getImage(data.scenery),
@@ -67,6 +72,13 @@ export const pageQuery = graphql`
     }
     bases: file(
       relativePath: { eq: "tutorials/bases/snow-bases/snow-bases-cover.jpg" }
+    ) {
+      childImageSharp {
+        gatsbyImageData(layout: CONSTRAINED)
+      }
+    }
+    general: file(
+      relativePath: { eq: "tutorials/general/weathering/weathering-cover.jpg" }
     ) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
