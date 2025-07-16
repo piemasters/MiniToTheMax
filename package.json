@@ -100,7 +100,7 @@
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-prettier": "5.4.1",
     "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-storybook": "0.12.0",
+    "eslint-plugin-storybook": "9.0.17",
     "eslint-webpack-plugin": "5.0.2",
     "fs-extra": "11.3.0",
     "gatsby-plugin-eslint": "4.0.4",
