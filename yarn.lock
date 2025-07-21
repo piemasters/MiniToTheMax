@@ -11554,9 +11554,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:14.4.1":
-  version: 14.4.1
-  resolution: "cypress@npm:14.4.1"
+"cypress@npm:14.5.2":
+  version: 14.5.2
+  resolution: "cypress@npm:14.5.2"
   dependencies:
     "@cypress/request": ^3.0.8
     "@cypress/xvfb": ^1.2.4
@@ -11584,6 +11584,7 @@ __metadata:
     figures: ^3.2.0
     fs-extra: ^9.1.0
     getos: ^3.2.1
+    hasha: 5.2.2
     is-installed-globally: ~0.4.0
     lazy-ass: ^1.6.0
     listr2: ^3.8.3
@@ -11603,7 +11604,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: ed3390efb4db01519e1ef57b1c359cf99a6445fe34e30340e660d7f07056b330a962004a29e6977efbcae4bad99b7890fbef44acc89a9b3db393b6d406b8de81
+  checksum: 1a5cab5f685cc3cf10f762accb6d2ab4c85d4e637427301e5cec0784c0737d1119d075d2bb6a38bf66c0b675b0d9c6677482c4edea5210b932a9b3c14f693ff0
   languageName: node
   linkType: hard
 
@@ -16253,7 +16254,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hasha@npm:^5.2.2":
+"hasha@npm:5.2.2, hasha@npm:^5.2.2":
   version: 5.2.2
   resolution: "hasha@npm:5.2.2"
   dependencies:
@@ -20910,7 +20911,7 @@ __metadata:
     babel-preset-gatsby: 3.14.0
     babel-preset-react-app: 10.1.0
     csstype: 3.1.3
-    cypress: 14.4.1
+    cypress: 14.5.2
     cypress-axe: 1.6.0
     disqus-react: 1.1.7
     dotenv: 16.5.0
