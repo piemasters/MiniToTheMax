@@ -13181,14 +13181,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-cypress@npm:4.3.0":
-  version: 4.3.0
-  resolution: "eslint-plugin-cypress@npm:4.3.0"
+"eslint-plugin-cypress@npm:5.1.1":
+  version: 5.1.1
+  resolution: "eslint-plugin-cypress@npm:5.1.1"
   dependencies:
-    globals: ^15.15.0
+    globals: ^16.2.0
   peerDependencies:
     eslint: ">=9"
-  checksum: 6e385e0111bce47b81defe04bf07bb81646e7a96266564e4b3835a9c7e768fd30871461ce2dfdcacdcded09b5e03cce9e47dea392557dfaa96dd5bf1138f1de8
+  checksum: a7eeca92e12469de1e262f30ae4b97cf038e0f79ca9f9b9a76044f80a168915ee404522f678696c7aa5d4df467303e84cd301b4285a126e4bc1c32c4e8737ae0
   languageName: node
   linkType: hard
 
@@ -15800,10 +15800,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^15.15.0":
-  version: 15.15.0
-  resolution: "globals@npm:15.15.0"
-  checksum: a2a92199a112db00562a2f85eeef2a7e3943e171f7f7d9b17dfa9231e35fd612588f3c199d1509ab1757273467e413b08c80424cf6e399e96acdaf93deb3ee88
+"globals@npm:^16.2.0":
+  version: 16.3.0
+  resolution: "globals@npm:16.3.0"
+  checksum: 2f3467f27bd84dca7778b0f7b528718b697274f3ed0d12721b9af0a14a9b6eb20240cb221817c264a27bfc5b9fac3ae28f6168b39808f27c74142942fb953c73
   languageName: node
   linkType: hard
 
@@ -20839,7 +20839,7 @@ __metadata:
     eslint: 9.27.0
     eslint-config-prettier: 10.1.8
     eslint-loader: 4.0.2
-    eslint-plugin-cypress: 4.3.0
+    eslint-plugin-cypress: 5.1.1
     eslint-plugin-graphql: 4.0.0
     eslint-plugin-jsx-a11y: 6.10.2
     eslint-plugin-prettier: 5.4.1
