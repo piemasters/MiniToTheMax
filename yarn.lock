@@ -7574,13 +7574,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.3.13":
-  version: 18.3.13
-  resolution: "@types/react@npm:18.3.13"
+"@types/react@npm:19.1.10":
+  version: 19.1.10
+  resolution: "@types/react@npm:19.1.10"
   dependencies:
-    "@types/prop-types": "*"
     csstype: ^3.0.2
-  checksum: 5ccf75e8e52e30fd619046ce985d17152fdf92da3b27777cdcbe972c4557bb0f0d7cfda6b379c29e409f4c3293ad1277394eea6c865211c07bd92cab8dcb277f
+  checksum: 1d9c5edb5957e797ad59dc71f92f6faa1f8033007c037f9aeb01161366c92fa257a6ddb267ff33f7787c072c5d568b5f8593868d58f2858f7face6978cd18e00
   languageName: node
   linkType: hard
 
@@ -20847,7 +20846,7 @@ __metadata:
     "@types/lodash.kebabcase": 4.1.9
     "@types/node": 22.15.30
     "@types/node-sass": 4.11.8
-    "@types/react": 18.3.13
+    "@types/react": 19.1.10
     "@types/react-dom": 18.3.1
     "@types/react-test-renderer": 19.1.0
     "@typescript-eslint/eslint-plugin": 8.32.1
@@ -20902,7 +20901,7 @@ __metadata:
     photoswipe: 5.4.4
     postcss: 8.5.6
     prettier: 3.5.3
-    react: 18.3.1
+    react: 19.1.1
     react-docgen-typescript-loader: 3.7.2
     react-dom: 18.3.1
     react-photoswipe-gallery: 3.1.1
@@ -23284,12 +23283,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.3.1":
-  version: 18.3.1
-  resolution: "react@npm:18.3.1"
-  dependencies:
-    loose-envify: ^1.1.0
-  checksum: a27bcfa8ff7c15a1e50244ad0d0c1cb2ad4375eeffefd266a64889beea6f6b64c4966c9b37d14ee32d6c9fcd5aa6ba183b6988167ab4d127d13e7cb5b386a376
+"react@npm:19.1.1":
+  version: 19.1.1
+  resolution: "react@npm:19.1.1"
+  checksum: f2f18fea5deac87b1167365bd5160bcba64d383c26a37afa905b714ca424f423ef97d8daf53f041ab9ac25a06357fafcf0b5d3b6b84c9d1eace0e621bfeae629
   languageName: node
   linkType: hard
 
@@ -25751,13 +25748,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: 08249c7046125d9d0a944a6e96cfe9ec66908d6b8a9db125531be6eb05fa0de047fd5542e9d43b4f987057f00a093b276b8d3e19af162a9c40db2681058fd306
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.1.11":
-  version: 4.1.11
-  resolution: "tailwindcss@npm:4.1.11"
-  checksum: db5883219aa7b4192aa13a028547867c5d6c18b3438b99c25ac7af64c3f9475d1b96970cb27f52f6f53789bb91d8fc4ed8e7f181c73ba7dda721cf5a44983804
   languageName: node
   linkType: hard
 
