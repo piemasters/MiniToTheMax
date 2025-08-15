@@ -472,8 +472,8 @@ export const baseBarakNarBurgundy: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseCatachanFleshtone: PaintDetails = {
-  name: 'Catachan Fleshtone',
+export const baseCatachanFlesh: PaintDetails = {
+  name: 'Catachan Flesh',
   type: 'base',
   color: 'flesh',
   hex: '#442B25',
@@ -608,7 +608,7 @@ export const basePaints = [
   baseBalthasarGold,
   baseIronWarriors,
   baseBarakNarBurgundy,
-  baseCatachanFleshtone,
+  baseCatachanFlesh,
   baseMorghastBone,
   baseCoraxWhite,
   baseWraithBone,

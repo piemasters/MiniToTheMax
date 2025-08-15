@@ -45,6 +45,10 @@ export const spaceWolves = [
   { name: 'Techmarine' },
   { name: 'Ulrik the Slayer' },
   {
+    name: 'Wolf Guard',
+    link: '/showcase/space-wolves/wolf-guard/',
+  },
+  {
     name: 'Wolf Guard Swiftclaws',
     link: '/showcase/space-wolves/swiftclaws/',
   },

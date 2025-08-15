@@ -39,8 +39,8 @@ export const IndexPage: FC = () => {
       <Badges />
       <h2>Latest Video</h2>
       <Video
-        src="https://www.youtube.com/embed/jksCYtxqr2E"
-        title="Gloomspite Gitz: Borgit's Beastgrabbaz"
+        src="https://www.youtube.com/embed/ITQCOeYpJvk"
+        title="Space Wolves: Wolf Guard"
       />
       <h2>Latest Post</h2>
 
