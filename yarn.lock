@@ -6555,6 +6555,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/react-dom-shim@npm:9.1.2":
+  version: 9.1.2
+  resolution: "@storybook/react-dom-shim@npm:9.1.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^9.1.2
+  checksum: a1e658435981dad3a8765fbcc87d4e34a1e8fca11738e47878a1920e59e625ed6224f3aa43e2003f0b44f196c07999892c2e5b484214e19ff3174c11c5cc556e
+  languageName: node
+  linkType: hard
+
 "@storybook/react-webpack5@npm:8.6.14":
   version: 8.6.14
   resolution: "@storybook/react-webpack5@npm:8.6.14"
@@ -6596,6 +6607,24 @@ __metadata:
     typescript:
       optional: true
   checksum: f05cc63a690c0320f59df2c84837be51291eabab3f8b3eee64a28ff9bf2e1d36a4f46e99b174db01a71859d6b415b4528590fb01f1ebb6f0e4877b226b4271f8
+  languageName: node
+  linkType: hard
+
+"@storybook/react@npm:9.1.2":
+  version: 9.1.2
+  resolution: "@storybook/react@npm:9.1.2"
+  dependencies:
+    "@storybook/global": ^5.0.0
+    "@storybook/react-dom-shim": 9.1.2
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^9.1.2
+    typescript: ">= 4.9.x"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 79c5de82f96f32392a6d9fb20b13ed81387770a161d9b9d8920f89489c1a1d81429cfce78a745d5e9ea41f537b4a9d0a74056f4e265419c237b8ff5d936e008a
   languageName: node
   linkType: hard
 
@@ -20834,7 +20863,7 @@ __metadata:
     "@storybook/addon-styling-webpack": 1.0.1
     "@storybook/addon-webpack5-compiler-babel": 3.0.6
     "@storybook/manager-api": 8.6.14
-    "@storybook/react": 8.6.14
+    "@storybook/react": 9.1.2
     "@storybook/react-webpack5": 8.6.14
     "@storybook/theming": 8.6.14
     "@svgr/webpack": 8.1.0
@@ -25751,13 +25780,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: 08249c7046125d9d0a944a6e96cfe9ec66908d6b8a9db125531be6eb05fa0de047fd5542e9d43b4f987057f00a093b276b8d3e19af162a9c40db2681058fd306
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.1.11":
-  version: 4.1.11
-  resolution: "tailwindcss@npm:4.1.11"
-  checksum: db5883219aa7b4192aa13a028547867c5d6c18b3438b99c25ac7af64c3f9475d1b96970cb27f52f6f53789bb91d8fc4ed8e7f181c73ba7dda721cf5a44983804
   languageName: node
   linkType: hard
 
