@@ -118,7 +118,7 @@
     "start-server-and-test": "2.0.13",
     "storybook": "8.6.14",
     "tailwindcss": "4.1.12",
-    "ts-loader": "9.5.2",
+    "ts-loader": "9.5.4",
     "typescript": "5.8.3"
   }
 }
