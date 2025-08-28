@@ -9478,7 +9478,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:5.14.0, babel-plugin-remove-graphql-queries@npm:^5.14.0":
+"babel-plugin-remove-graphql-queries@npm:5.15.0":
+  version: 5.15.0
+  resolution: "babel-plugin-remove-graphql-queries@npm:5.15.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    "@babel/types": ^7.20.7
+    gatsby-core-utils: ^4.15.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    gatsby: ^5.0.0-next
+  checksum: 33bddde146752eebe0352e24eab087383e52da70f6300684fe7f246c600b88f604e82783fd0d3303dc3c5748811e2be19d7b7361923b2f922bdd14d2b8d96250
+  languageName: node
+  linkType: hard
+
+"babel-plugin-remove-graphql-queries@npm:^5.14.0":
   version: 5.14.0
   resolution: "babel-plugin-remove-graphql-queries@npm:5.14.0"
   dependencies:
@@ -14811,6 +14825,30 @@ __metadata:
     tmp: ^0.2.1
     xdg-basedir: ^4.0.0
   checksum: 78e006fcdaad656aba1df3965fc71f3d948085589c93971b960e92dcc5d3c1ca12afb6fe6989f7100e332f7c5d716b58b79fc60aea135a08e8b8f7c5714efdbb
+  languageName: node
+  linkType: hard
+
+"gatsby-core-utils@npm:^4.15.0":
+  version: 4.15.0
+  resolution: "gatsby-core-utils@npm:4.15.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.15.0
+    file-type: ^16.5.4
+    fs-extra: ^11.2.0
+    got: ^11.8.6
+    hash-wasm: ^4.11.0
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 6d7bd51f444a857f297baad43b6f3bf54e4f66bebfd0d108e28cdb0816f4ee9102fa04a74404bb5a18b4092d278df88d5705fef1d0622874d5b3c1d80333f811
   languageName: node
   linkType: hard
 
@@ -20855,7 +20893,7 @@ __metadata:
     axe-core: 4.10.3
     babel-jest: 29.7.0
     babel-loader: 10.0.0
-    babel-plugin-remove-graphql-queries: 5.14.0
+    babel-plugin-remove-graphql-queries: 5.15.0
     babel-preset-gatsby: 3.14.0
     babel-preset-react-app: 10.1.0
     csstype: 3.1.3
