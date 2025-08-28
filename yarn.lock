@@ -10471,6 +10471,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chokidar@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "chokidar@npm:3.6.0"
+  dependencies:
+    anymatch: ~3.1.2
+    braces: ~3.0.2
+    fsevents: ~2.3.2
+    glob-parent: ~5.1.2
+    is-binary-path: ~2.1.0
+    is-glob: ~4.0.1
+    normalize-path: ~3.0.0
+    readdirp: ~3.6.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  checksum: d2f29f499705dcd4f6f3bbed79a9ce2388cf530460122eed3b9c48efeab7a4e28739c6551fd15bec9245c6b9eeca7a32baa64694d64d9b6faeb74ddb8c4a413d
+  languageName: node
+  linkType: hard
+
 "chownr@npm:^1.1.1":
   version: 1.1.4
   resolution: "chownr@npm:1.1.4"
@@ -14814,6 +14833,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^4.15.0":
+  version: 4.15.0
+  resolution: "gatsby-core-utils@npm:4.15.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.15.0
+    file-type: ^16.5.4
+    fs-extra: ^11.2.0
+    got: ^11.8.6
+    hash-wasm: ^4.11.0
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 6d7bd51f444a857f297baad43b6f3bf54e4f66bebfd0d108e28cdb0816f4ee9102fa04a74404bb5a18b4092d278df88d5705fef1d0622874d5b3c1d80333f811
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^3.14.1":
   version: 3.14.1
   resolution: "gatsby-graphiql-explorer@npm:3.14.1"
@@ -15213,22 +15256,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:5.14.0":
-  version: 5.14.0
-  resolution: "gatsby-source-filesystem@npm:5.14.0"
+"gatsby-source-filesystem@npm:5.15.0":
+  version: 5.15.0
+  resolution: "gatsby-source-filesystem@npm:5.15.0"
   dependencies:
     "@babel/runtime": ^7.20.13
-    chokidar: ^3.5.3
+    chokidar: ^3.6.0
     file-type: ^16.5.4
     fs-extra: ^11.2.0
-    gatsby-core-utils: ^4.14.0
+    gatsby-core-utils: ^4.15.0
     mime: ^3.0.0
     pretty-bytes: ^5.6.0
     valid-url: ^1.0.9
     xstate: ^4.38.0
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: d781851e7bb7f8d6b973d9c09194071b9fffa26ae6abfe95155c8279c065e1c4ad03856dbc76426ddb578226279655865c7bc0203f0e0526bf1c8b767df9e3a0
+  checksum: 01276b343c5ef9a65488f45996559a1ef170022ffac605a0337c9bf73e942b8caa3f7e2cd293812fa35bb1bc0811269b85381ad59a048126f49fa2d00b887489
   languageName: node
   linkType: hard
 
@@ -20890,7 +20933,7 @@ __metadata:
     gatsby-plugin-svgr-svgo: 2.0.0
     gatsby-plugin-typescript: 5.14.0
     gatsby-remark-images: 7.14.0
-    gatsby-source-filesystem: 5.14.0
+    gatsby-source-filesystem: 5.15.0
     gatsby-transformer-sharp: 5.14.0
     glob: 11.0.3
     globals: 16.2.0
