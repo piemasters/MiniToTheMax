@@ -14814,6 +14814,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^4.15.0":
+  version: 4.15.0
+  resolution: "gatsby-core-utils@npm:4.15.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.15.0
+    file-type: ^16.5.4
+    fs-extra: ^11.2.0
+    got: ^11.8.6
+    hash-wasm: ^4.11.0
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 6d7bd51f444a857f297baad43b6f3bf54e4f66bebfd0d108e28cdb0816f4ee9102fa04a74404bb5a18b4092d278df88d5705fef1d0622874d5b3c1d80333f811
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^3.14.1":
   version: 3.14.1
   resolution: "gatsby-graphiql-explorer@npm:3.14.1"
@@ -14972,9 +14996,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-mdx@npm:5.14.1":
-  version: 5.14.1
-  resolution: "gatsby-plugin-mdx@npm:5.14.1"
+"gatsby-plugin-mdx@npm:5.15.0":
+  version: 5.15.0
+  resolution: "gatsby-plugin-mdx@npm:5.15.0"
   dependencies:
     "@mdx-js/mdx": ^2.3.0
     acorn: ^8.8.2
@@ -14983,8 +15007,8 @@ __metadata:
     deepmerge: ^4.3.1
     estree-util-build-jsx: ^2.2.2
     fs-extra: ^11.2.0
-    gatsby-core-utils: ^4.14.0
-    gatsby-plugin-utils: ^4.14.0
+    gatsby-core-utils: ^4.15.0
+    gatsby-plugin-utils: ^4.15.0
     gray-matter: ^4.0.3
     mdast-util-mdx: ^2.0.1
     mdast-util-to-hast: ^10.2.0
@@ -15001,7 +15025,7 @@ __metadata:
     gatsby-source-filesystem: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 5638b5b013668d32238f54aa26f8c6610823a0bebc3b9c9aa6820e6f83b1c2fa171028ee7476a33fb8e6aebd924dd830cc7b18a118c3a5145de19002e011791a
+  checksum: a32236b86ff6ff6f7506bf3ab1542aa96ce36edaf3a6ea27a2a8016677575a62a87f3ae69d4ce72b277fa69958a48e2ef2f7c1bfeb357f6d6695c8651a3c8a6b
   languageName: node
   linkType: hard
 
@@ -15158,6 +15182,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-utils@npm:^4.15.0":
+  version: 4.15.0
+  resolution: "gatsby-plugin-utils@npm:4.15.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    fastq: ^1.16.0
+    fs-extra: ^11.2.0
+    gatsby-core-utils: ^4.15.0
+    gatsby-sharp: ^1.15.0
+    graphql-compose: ^9.0.10
+    import-from: ^4.0.0
+    joi: ^17.11.0
+    mime: ^3.0.0
+  peerDependencies:
+    gatsby: ^5.0.0-next
+    graphql: ^16.0.0
+  checksum: 0e9d98c0dd5139d57b79149b7dc39882625f1d9e030e96aa049d99ea74f7aab75b23cb637f1b7eff2f4e0da09a0d5c8fb47c9ed255f005fd6d821c10e1b90543
+  languageName: node
+  linkType: hard
+
 "gatsby-react-router-scroll@npm:^6.14.0":
   version: 6.14.0
   resolution: "gatsby-react-router-scroll@npm:6.14.0"
@@ -15210,6 +15254,15 @@ __metadata:
   dependencies:
     sharp: ^0.32.6
   checksum: af5f04d89b37c89e00fe95a17dbc5b9ac62a5fd696675b3530fef35c04a6ef802b41cd8104126f812189b3805c6f51d6e87bd24ddec3db540619023b72547883
+  languageName: node
+  linkType: hard
+
+"gatsby-sharp@npm:^1.15.0":
+  version: 1.15.0
+  resolution: "gatsby-sharp@npm:1.15.0"
+  dependencies:
+    sharp: ^0.32.6
+  checksum: e091a5e70560bf4b21bd4dfcbf575e2b6ceaec5d27f142c8f31d6d52a81bed7092477330334083a658e72ee703b24325db52e17d2a49a1dad5980e38c1949fad
   languageName: node
   linkType: hard
 
@@ -20881,7 +20934,7 @@ __metadata:
     gatsby-plugin-google-gtag: 5.14.0
     gatsby-plugin-image: 3.14.0
     gatsby-plugin-manifest: 5.14.0
-    gatsby-plugin-mdx: 5.14.1
+    gatsby-plugin-mdx: 5.15.0
     gatsby-plugin-offline: 6.14.0
     gatsby-plugin-postcss: 6.14.0
     gatsby-plugin-robots-txt: 1.8.0
