@@ -1,6 +1,9 @@
 export const scenery40k = [
   { name: 'Aquila Strongpoint' },
-  { name: 'Boarding Actions' },
+  {
+    name: 'Boarding Actions',
+    link: '/showcase/scenery/boarding-actions/display/',
+  },
   { name: 'Boarding Actions Pieces' },
   { name: 'Firestorm Redoubt' },
   { name: 'Firestorm Redoubt II' },
