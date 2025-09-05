@@ -13296,9 +13296,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:5.4.1":
-  version: 5.4.1
-  resolution: "eslint-plugin-prettier@npm:5.4.1"
+"eslint-plugin-prettier@npm:5.5.4":
+  version: 5.5.4
+  resolution: "eslint-plugin-prettier@npm:5.5.4"
   dependencies:
     prettier-linter-helpers: ^1.0.0
     synckit: ^0.11.7
@@ -13312,7 +13312,7 @@ __metadata:
       optional: true
     eslint-config-prettier:
       optional: true
-  checksum: ddbfc60e478dd78602b1f1594db539bfc686161eba4531e4c59580c9cf5746919878beabfe31b559d783ad3ed753af158bfa16bd35bd05382c7d2d86c894c81b
+  checksum: 0dd05ed85018ab0e98da80325b7bd4c4ab6dd684398f1270a7c8cf4261df714dd4502ba4c7f85f651aade9989da0a7d2adda03af8873b73b52014141abf385de
   languageName: node
   linkType: hard
 
@@ -20870,7 +20870,7 @@ __metadata:
     eslint-plugin-cypress: 4.3.0
     eslint-plugin-graphql: 4.0.0
     eslint-plugin-jsx-a11y: 6.10.2
-    eslint-plugin-prettier: 5.4.1
+    eslint-plugin-prettier: 5.5.4
     eslint-plugin-react: 7.37.5
     eslint-plugin-storybook: 0.12.0
     eslint-webpack-plugin: 5.0.2
