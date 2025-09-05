@@ -4,7 +4,10 @@ export const scenery40k = [
     name: 'Boarding Actions',
     link: '/showcase/scenery/boarding-actions/display/',
   },
-  { name: 'Boarding Actions Pieces' },
+  {
+    name: 'Boarding Actions Pieces',
+    link: '/showcase/scenery/boarding-actions/pieces/',
+  },
   { name: 'Firestorm Redoubt' },
   { name: 'Firestorm Redoubt II' },
   { name: 'Imperial Bunker' },
