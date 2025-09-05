@@ -67,7 +67,7 @@
     "@storybook/react-webpack5": "8.6.14",
     "@storybook/theming": "8.6.14",
     "@svgr/webpack": "8.1.0",
-    "@tailwindcss/postcss": "4.1.12",
+    "@tailwindcss/postcss": "4.1.13",
     "@testing-library/cypress": "10.0.3",
     "@testing-library/jest-dom": "6.6.4",
     "@testing-library/react": "16.3.0",
