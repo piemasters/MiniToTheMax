@@ -20910,7 +20910,7 @@ __metadata:
     sharp: 0.34.3
     start-server-and-test: 2.0.13
     storybook: 8.6.14
-    tailwindcss: 4.1.12
+    tailwindcss: 4.1.13
     ts-loader: 9.5.4
     typescript: 5.8.3
   languageName: unknown
@@ -25758,6 +25758,13 @@ __metadata:
   version: 4.1.12
   resolution: "tailwindcss@npm:4.1.12"
   checksum: 0e41513f117a5be5126ef7afad3167581e2564631376ea6221711f3f33c0ffec46bd1b4b7dd13b6c8f52cda2cd12b48666efbd2a451152ffe09609690392fe4c
+  languageName: node
+  linkType: hard
+
+"tailwindcss@npm:4.1.13":
+  version: 4.1.13
+  resolution: "tailwindcss@npm:4.1.13"
+  checksum: 25e2883c69190c6474a6c44caed8f82511a4025a2285e34bca4b79671a73acd79e74844a4908313098218de81a5aba62df727bb6ee26f69eeca3386b4941de4b
   languageName: node
   linkType: hard
 
