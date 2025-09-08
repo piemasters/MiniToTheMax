@@ -9044,21 +9044,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:5.14.0, babel-plugin-remove-graphql-queries@npm:^5.14.0":
-  version: 5.14.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:5.14.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    "@babel/types": ^7.20.7
-    gatsby-core-utils: ^4.14.0
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^5.0.0-next
-  checksum: e71284190122938a935bb3dd353b01bb70021e0387d5925c68067e455d77e353ce929f6cc4e1b5e82e52cead0eb56503962c1b9a9aa60f287fadcc8ee6040141
-  languageName: node
-  linkType: hard
-
-"babel-plugin-remove-graphql-queries@npm:^5.15.0":
+"babel-plugin-remove-graphql-queries@npm:5.15.0, babel-plugin-remove-graphql-queries@npm:^5.15.0":
   version: 5.15.0
   resolution: "babel-plugin-remove-graphql-queries@npm:5.15.0"
   dependencies:
@@ -9069,6 +9055,20 @@ __metadata:
     "@babel/core": ^7.0.0
     gatsby: ^5.0.0-next
   checksum: 33bddde146752eebe0352e24eab087383e52da70f6300684fe7f246c600b88f604e82783fd0d3303dc3c5748811e2be19d7b7361923b2f922bdd14d2b8d96250
+  languageName: node
+  linkType: hard
+
+"babel-plugin-remove-graphql-queries@npm:^5.14.0":
+  version: 5.14.0
+  resolution: "babel-plugin-remove-graphql-queries@npm:5.14.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    "@babel/types": ^7.20.7
+    gatsby-core-utils: ^4.14.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    gatsby: ^5.0.0-next
+  checksum: e71284190122938a935bb3dd353b01bb70021e0387d5925c68067e455d77e353ce929f6cc4e1b5e82e52cead0eb56503962c1b9a9aa60f287fadcc8ee6040141
   languageName: node
   linkType: hard
 
@@ -19887,7 +19887,7 @@ __metadata:
     axe-core: 4.10.3
     babel-jest: 29.7.0
     babel-loader: 10.0.0
-    babel-plugin-remove-graphql-queries: 5.14.0
+    babel-plugin-remove-graphql-queries: 5.15.0
     babel-preset-gatsby: 3.15.0
     babel-preset-react-app: 10.1.0
     csstype: 3.1.3
