@@ -14447,15 +14447,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-catch-links@npm:5.14.0":
-  version: 5.14.0
-  resolution: "gatsby-plugin-catch-links@npm:5.14.0"
+"gatsby-plugin-catch-links@npm:5.15.0":
+  version: 5.15.0
+  resolution: "gatsby-plugin-catch-links@npm:5.15.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     escape-string-regexp: ^1.0.5
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 32e1a094fb82495d790db609874eab028b640e6721327cb3ad37d6485e06811d7f75d5e7951e4542c3dba9e90277a38846cfbca33265bb43bb3ad5254647128e
+  checksum: f4369e5ac723401f65611cefbaadb79c041c9453c377c5a7698d40b5f4df5f55a8d35d101cc23a56e6f528e277326bcd75bc6ea5766e9895dba146a5f0721f9a
   languageName: node
   linkType: hard
 
@@ -19908,7 +19908,7 @@ __metadata:
     eslint-webpack-plugin: 5.0.2
     fs-extra: 11.3.1
     gatsby: 5.15.0
-    gatsby-plugin-catch-links: 5.14.0
+    gatsby-plugin-catch-links: 5.15.0
     gatsby-plugin-eslint: 4.0.4
     gatsby-plugin-google-gtag: 5.14.0
     gatsby-plugin-image: 3.14.0
