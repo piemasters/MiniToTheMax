@@ -5229,7 +5229,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jridgewell/sourcemap-codec@npm:^1.5.5":
+"@jridgewell/sourcemap-codec@npm:^1.5.0, @jridgewell/sourcemap-codec@npm:^1.5.5":
   version: 1.5.5
   resolution: "@jridgewell/sourcemap-codec@npm:1.5.5"
   checksum: c2e36e67971f719a8a3a85ef5a5f580622437cc723c35d03ebd0c9c0b06418700ef006f58af742791f71f6a4fc68fcfaf1f6a74ec2f9a3332860e9373459dae7
@@ -6220,19 +6220,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:8.6.14":
-  version: 8.6.14
-  resolution: "@storybook/addon-links@npm:8.6.14"
+"@storybook/addon-links@npm:9.1.5":
+  version: 9.1.5
+  resolution: "@storybook/addon-links@npm:9.1.5"
   dependencies:
     "@storybook/global": ^5.0.0
-    ts-dedent: ^2.0.0
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
-    storybook: ^8.6.14
+    storybook: ^9.1.5
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: d807623e9578f8793a71dc9a3d6988fc22784e4bfebfdd3dc1293cece3e6020caf711cf8fe5171b5ef4340856b50abcddb3a4b89adba0d16582b5f910dbdf884
+  checksum: c33630c61a4bbbc74ddfa5f2c9dc5abe310d0de39064df739f4b441208b4df0900edd800ecd8b275f3613a9a8412f8f250dc322ec7fc5aa7aad8c6cf94efae3f
   languageName: node
   linkType: hard
 
@@ -20948,7 +20947,7 @@ __metadata:
     "@storybook/addon-a11y": 8.6.14
     "@storybook/addon-essentials": 8.6.14
     "@storybook/addon-jest": 8.6.14
-    "@storybook/addon-links": 8.6.14
+    "@storybook/addon-links": 9.1.5
     "@storybook/addon-mdx-gfm": 8.6.14
     "@storybook/addon-styling-webpack": 1.0.1
     "@storybook/addon-webpack5-compiler-babel": 3.0.6
