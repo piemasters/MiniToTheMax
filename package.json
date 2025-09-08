@@ -39,7 +39,7 @@
     "gatsby-plugin-typescript": "5.15.0",
     "gatsby-remark-images": "7.14.0",
     "gatsby-source-filesystem": "5.14.0",
-    "gatsby-transformer-sharp": "5.14.0",
+    "gatsby-transformer-sharp": "5.15.0",
     "gsap": "3.13.0",
     "lodash.kebabcase": "4.1.1",
     "photoswipe": "5.4.4",
