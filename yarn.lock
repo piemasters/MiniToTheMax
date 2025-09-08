@@ -5229,7 +5229,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jridgewell/sourcemap-codec@npm:^1.5.5":
+"@jridgewell/sourcemap-codec@npm:^1.5.0, @jridgewell/sourcemap-codec@npm:^1.5.5":
   version: 1.5.5
   resolution: "@jridgewell/sourcemap-codec@npm:1.5.5"
   checksum: c2e36e67971f719a8a3a85ef5a5f580622437cc723c35d03ebd0c9c0b06418700ef006f58af742791f71f6a4fc68fcfaf1f6a74ec2f9a3332860e9373459dae7
@@ -15194,24 +15194,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-typescript@npm:5.14.0":
-  version: 5.14.0
-  resolution: "gatsby-plugin-typescript@npm:5.14.0"
-  dependencies:
-    "@babel/core": ^7.20.12
-    "@babel/plugin-proposal-nullish-coalescing-operator": ^7.18.6
-    "@babel/plugin-proposal-numeric-separator": ^7.18.6
-    "@babel/plugin-proposal-optional-chaining": ^7.20.7
-    "@babel/preset-typescript": ^7.18.6
-    "@babel/runtime": ^7.20.13
-    babel-plugin-remove-graphql-queries: ^5.14.0
-  peerDependencies:
-    gatsby: ^5.0.0-next
-  checksum: 635ce59858906fcfeea1c2e9debbb4dd1588a4ff260dca1ebfdf33a5778ca487078336d039eaac6699228671ec1be1c79765cb73ebd124079b149bcdfeb477db
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-typescript@npm:^5.15.0":
+"gatsby-plugin-typescript@npm:5.15.0, gatsby-plugin-typescript@npm:^5.15.0":
   version: 5.15.0
   resolution: "gatsby-plugin-typescript@npm:5.15.0"
   dependencies:
@@ -21007,7 +20990,7 @@ __metadata:
     gatsby-plugin-sharp: 5.14.0
     gatsby-plugin-sitemap: 6.14.0
     gatsby-plugin-svgr-svgo: 2.0.0
-    gatsby-plugin-typescript: 5.14.0
+    gatsby-plugin-typescript: 5.15.0
     gatsby-remark-images: 7.14.0
     gatsby-source-filesystem: 5.14.0
     gatsby-transformer-sharp: 5.14.0
