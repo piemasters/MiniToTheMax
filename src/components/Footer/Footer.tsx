@@ -1,7 +1,5 @@
 import { FC } from 'react';
-
-import { Facebook, Instagram, Youtube } from '../../data/icons';
-
+import { Facebook, Instagram, Youtube } from './Icons';
 export interface FooterProps {
   author: string;
 }

@@ -21,7 +21,7 @@ export const Pagination: FC<PaginationProps> = ({
 
   return (
     <ul
-      className="flex flex-wrap justify-between items-center p-0 my-8 list-none"
+      className="flex flex-wrap items-center justify-between p-0 my-8 list-none"
       data-testid="pagination"
     >
       <li>
@@ -34,38 +34,38 @@ export const Pagination: FC<PaginationProps> = ({
           &lt;&lt;
         </PageLink>
       </li>
-      {/*<li>*/}
-      {/*  <PageLink*/}
-      {/*    to={`${baseUrl}${currentPage - 1 === 1 ? '' : currentPage - 1}`}*/}
-      {/*    type={'cover'}*/}
-      {/*    direction={'right'}*/}
-      {/*    disabled={currentPage === 1}*/}
-      {/*  >*/}
-      {/*    &lt;*/}
-      {/*  </PageLink>*/}
-      {/*</li>*/}
+      {/* <li>
+        <PageLink
+          to={`${baseUrl}${currentPage - 1 === 1 ? '' : currentPage - 1}`}
+          type={'cover'}
+          direction={'right'}
+          disabled={currentPage === 1}
+        >
+          &lt;
+        </PageLink>
+      </li> */}
       {pages.map((page: number, index: number) => (
         <li key={index}>
           <PageLink
             to={`${baseUrl}${page === 1 ? '' : page}`}
             type={'cover'}
             direction={page > currentPage ? 'left' : 'right'}
-            className={`p-2 no-underline text-blue-500 hover:bg-blue-500 hover:text-white ${page === currentPage ? 'bg-blue-500 text-white' : ''}`}
+            className={`p-2 rounded no-underline text-blue-500 hover:!bg-blue-500 hover:text-white ${page === currentPage ? '!bg-blue-500 text-white' : ''}`}
           >
             {page}
           </PageLink>
         </li>
       ))}
-      {/*<li>*/}
-      {/*  <PageLink*/}
-      {/*    to={`${baseUrl}${currentPage + 1}`}*/}
-      {/*    type={'cover'}*/}
-      {/*    direction={'right'}*/}
-      {/*    disabled={currentPage === numPages}*/}
-      {/*  >*/}
-      {/*    &gt;*/}
-      {/*  </PageLink>*/}
-      {/*</li>*/}
+      {/* <li>
+        <PageLink
+          to={`${baseUrl}${currentPage + 1}`}
+          type={'cover'}
+          direction={'right'}
+          disabled={currentPage === numPages}
+        >
+          &gt;
+        </PageLink>
+      </li> */}
       <li>
         <PageLink
           to={`${baseUrl}${numPages}`}
