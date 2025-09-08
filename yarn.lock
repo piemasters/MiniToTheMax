@@ -14505,16 +14505,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-postcss@npm:6.14.0":
-  version: 6.14.0
-  resolution: "gatsby-plugin-postcss@npm:6.14.0"
+"gatsby-plugin-postcss@npm:6.15.0":
+  version: 6.15.0
+  resolution: "gatsby-plugin-postcss@npm:6.15.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     postcss-loader: ^7.3.4
   peerDependencies:
     gatsby: ^5.0.0-next
     postcss: ^8.0.5
-  checksum: 2e211c3e776da4672d428499a8d8242c213824911be0184790b7c2fb2f7a8e68878119f0964ad84753d875389be48e29874e50ca90e89ee11a0cc647580eaaf6
+  checksum: a864c36784f42b0355d4a7b09108bdf4ffea2ea7fee7f4b0d3ca227ab209593434728aea955068d4052cf57368eddd52b10504bcace346b5f9227028d1fecd46
   languageName: node
   linkType: hard
 
@@ -19827,7 +19827,7 @@ __metadata:
     gatsby-plugin-manifest: 5.14.0
     gatsby-plugin-mdx: 5.14.1
     gatsby-plugin-offline: 6.14.0
-    gatsby-plugin-postcss: 6.14.0
+    gatsby-plugin-postcss: 6.15.0
     gatsby-plugin-robots-txt: 1.8.0
     gatsby-plugin-sharp: 5.14.0
     gatsby-plugin-sitemap: 6.14.0
