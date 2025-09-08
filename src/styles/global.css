@@ -603,3 +603,8 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/* Hide discus ads */
+iframe[sandbox]:not([sandbox='']) {
+  display: none !important;
+}
