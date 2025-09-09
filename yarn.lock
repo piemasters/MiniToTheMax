@@ -9256,20 +9256,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:^5.14.0":
-  version: 5.14.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:5.14.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    "@babel/types": ^7.20.7
-    gatsby-core-utils: ^4.14.0
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^5.0.0-next
-  checksum: e71284190122938a935bb3dd353b01bb70021e0387d5925c68067e455d77e353ce929f6cc4e1b5e82e52cead0eb56503962c1b9a9aa60f287fadcc8ee6040141
-  languageName: node
-  linkType: hard
-
 "babel-plugin-syntax-object-rest-spread@npm:^6.8.0":
   version: 6.13.0
   resolution: "babel-plugin-syntax-object-rest-spread@npm:6.13.0"
@@ -20256,7 +20242,7 @@ __metadata:
     react-photoswipe-gallery: 3.1.1
     react-test-renderer: 19.1.1
     sharp: 0.34.3
-    start-server-and-test: 2.0.13
+    start-server-and-test: 2.1.0
     storybook: 9.1.5
     tailwindcss: 4.1.13
     ts-loader: 9.5.4
@@ -24403,9 +24389,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"start-server-and-test@npm:2.0.13":
-  version: 2.0.13
-  resolution: "start-server-and-test@npm:2.0.13"
+"start-server-and-test@npm:2.1.0":
+  version: 2.1.0
+  resolution: "start-server-and-test@npm:2.1.0"
   dependencies:
     arg: ^5.0.2
     bluebird: 3.7.2
@@ -24419,7 +24405,7 @@ __metadata:
     server-test: src/bin/start.js
     start-server-and-test: src/bin/start.js
     start-test: src/bin/start.js
-  checksum: d8f1a73b907d9258fab1319d52adc8573afc681bda870605543b97e8fb2239c79a84deb4d4d950b824c2cdff145303adad4d1f2059539210c2a6ff7b61b7a2b6
+  checksum: 2b521df343d8e5858406ede25bd1ebd596faa7886b5741734b3ca1816dbc9fc0105a5f48e9f8edf297f52f450362e4de10beb9cc07f1a038126a9f489bd91481
   languageName: node
   linkType: hard
 
