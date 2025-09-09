@@ -9256,20 +9256,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:^5.14.0":
-  version: 5.14.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:5.14.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    "@babel/types": ^7.20.7
-    gatsby-core-utils: ^4.14.0
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^5.0.0-next
-  checksum: e71284190122938a935bb3dd353b01bb70021e0387d5925c68067e455d77e353ce929f6cc4e1b5e82e52cead0eb56503962c1b9a9aa60f287fadcc8ee6040141
-  languageName: node
-  linkType: hard
-
 "babel-plugin-syntax-object-rest-spread@npm:^6.8.0":
   version: 6.13.0
   resolution: "babel-plugin-syntax-object-rest-spread@npm:6.13.0"
@@ -14776,13 +14762,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:6.14.0":
-  version: 6.14.0
-  resolution: "gatsby-plugin-offline@npm:6.14.0"
+"gatsby-plugin-offline@npm:6.15.0":
+  version: 6.15.0
+  resolution: "gatsby-plugin-offline@npm:6.15.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     cheerio: 1.0.0-rc.12
-    gatsby-core-utils: ^4.14.0
+    gatsby-core-utils: ^4.15.0
     glob: ^7.2.3
     idb-keyval: ^3.2.0
     lodash: ^4.17.21
@@ -14791,7 +14777,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 4be494daf001b47a55447a4e14b4f47dbe2b7c2100c83f348661043066af578fe3d777c6e5fc032861380f00e8bf9bf0124467c1659e263008c6fb70e8152c7c
+  checksum: 2a78c9baeaff85927ea14e5d2ff02b90e968076980a6fbab3c1c7e82755890d25385aeb394902d83563f41076cbfc95807553ff0d0a489177330404e5733ca43
   languageName: node
   linkType: hard
 
@@ -20230,7 +20216,7 @@ __metadata:
     gatsby-plugin-image: 3.15.0
     gatsby-plugin-manifest: 5.14.0
     gatsby-plugin-mdx: 5.15.0
-    gatsby-plugin-offline: 6.14.0
+    gatsby-plugin-offline: 6.15.0
     gatsby-plugin-postcss: 6.15.0
     gatsby-plugin-robots-txt: 1.8.0
     gatsby-plugin-sharp: 5.15.0
