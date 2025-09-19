@@ -6402,15 +6402,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-jest@npm:9.1.6":
-  version: 9.1.6
-  resolution: "@storybook/addon-jest@npm:9.1.6"
+"@storybook/addon-jest@npm:9.1.7":
+  version: 9.1.7
+  resolution: "@storybook/addon-jest@npm:9.1.7"
   dependencies:
     tiny-invariant: ^1.3.1
     upath: ^2.0.1
   peerDependencies:
-    storybook: ^9.1.6
-  checksum: 6faedf78d80fc855c4aa11d7068cdb4280ee96e9779fdcff24e7d35f683093be3e40ee3e0bd64d9c3ead6c59ad245f16474132c01152f695b42f080fb19c840a
+    storybook: ^9.1.7
+  checksum: 099897563374cec1c95f42f38b2575ffc5deb94136b61029588faf7321b8523a0c7835f160544d7e18acdeed74efe20490f09cf53932e68cfb1e3c4cc6dd0fd8
   languageName: node
   linkType: hard
 
@@ -19988,7 +19988,7 @@ __metadata:
     "@mdx-js/react": 3.1.1
     "@storybook/addon-a11y": 9.1.6
     "@storybook/addon-docs": 9.1.6
-    "@storybook/addon-jest": 9.1.6
+    "@storybook/addon-jest": 9.1.7
     "@storybook/addon-links": 9.1.7
     "@storybook/react-vite": 9.1.6
     "@svgr/webpack": 8.1.0
