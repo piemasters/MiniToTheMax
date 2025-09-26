@@ -11,6 +11,7 @@ import {
   getAllSortedPaints,
   togglePaints,
   typeFilters,
+  categoryFilters,
 } from '../util';
 
 export const Paints = (): React.ReactNode => {
@@ -19,6 +20,7 @@ export const Paints = (): React.ReactNode => {
 
   const [allFilters, setAllFilters] = useState<AllPaintFilters>({
     company: { ...companyFilters },
+    category: { ...categoryFilters },
     color: { ...colorFilters },
     type: { ...typeFilters },
     availability: { ...availabilityFilters },
@@ -43,20 +45,68 @@ export const Paints = (): React.ReactNode => {
 
   const filterElements = (filters: PaintFilters, type: string) => {
     const filtersJsx: JSX.Element[] = [];
-    for (const [key, value] of Object.entries(filters)) {
+    if (type === 'category') {
+      const citadelCategories: Record<string, boolean> = {};
+      const vallejoCategories: Record<string, boolean> = {};
+      Object.entries(filters).forEach(([key, value]) => {
+        if (key.includes('Citadel')) {
+          citadelCategories[key] = value;
+        } else if (key.includes('Vallejo')) {
+          vallejoCategories[key] = value;
+        }
+      });
       filtersJsx.push(
-        <div className="w-24 text-sm" key={key}>
-          <label className="flex items-center gap-2">
-            <input
-              name={key}
-              checked={value}
-              type="checkbox"
-              onChange={() => updateFilter(type, key)}
-            />
-            {key.replace(/\b\w/g, (l) => l.toUpperCase())}
-          </label>
-        </div>
+        <div className="w-full py-1 text-sm font-bold">Citadel</div>
       );
+      for (const [key, value] of Object.entries(citadelCategories)) {
+        filtersJsx.push(
+          <div className="w-32 text-sm" key={key}>
+            <label className="flex items-center gap-2">
+              <input
+                name={key}
+                checked={value}
+                type="checkbox"
+                onChange={() => updateFilter(type, key)}
+              />
+              {key.replace(/\b\w/g, (l) => l.toUpperCase()).slice(8)}
+            </label>
+          </div>
+        );
+      }
+      filtersJsx.push(
+        <div className="w-full py-1 text-sm font-bold">Vallejo</div>
+      );
+      for (const [key, value] of Object.entries(vallejoCategories)) {
+        filtersJsx.push(
+          <div className="w-32 text-sm" key={key}>
+            <label className="flex items-center gap-2">
+              <input
+                name={key}
+                checked={value}
+                type="checkbox"
+                onChange={() => updateFilter(type, key)}
+              />
+              {key.replace(/\b\w/g, (l) => l.toUpperCase()).slice(8)}
+            </label>
+          </div>
+        );
+      }
+    } else {
+      for (const [key, value] of Object.entries(filters)) {
+        filtersJsx.push(
+          <div className="w-24 text-sm" key={key}>
+            <label className="flex items-center gap-2">
+              <input
+                name={key}
+                checked={value}
+                type="checkbox"
+                onChange={() => updateFilter(type, key)}
+              />
+              {key.replace(/\b\w/g, (l) => l.toUpperCase())}
+            </label>
+          </div>
+        );
+      }
     }
     return (
       <div>
@@ -92,7 +142,13 @@ export const Paints = (): React.ReactNode => {
       {allFilterElements()}
       <br />
       {filteredPaints.map((paint: PaintDetails) => {
-        return <Paint paint={paint} key={`${paint.name}_${paint.type}`} />;
+        return (
+          <Paint
+            paint={paint}
+            key={`${paint.name}_${paint.type}`}
+            data-testid={`${paint.name}_${paint.type}`}
+          />
+        );
       })}
     </Layout>
   );

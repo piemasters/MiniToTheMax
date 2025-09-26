@@ -85,6 +85,7 @@ export enum BadgeNames {
 export interface PaintGradient {
   offset: number;
   color: string;
+  opacity?: number;
 }
 export type PaintCompany = 'Citadel' | 'Vallejo';
 export type PaintColors =
@@ -109,47 +110,61 @@ export type PaintColors =
   | 'white'
   | 'yellow';
 
-export interface PaintDetailsCitadel {
+export interface PaintDetails {
   name: string;
-  type:
-    | 'air'
-    | 'base'
-    | 'contrast'
-    | 'dry'
-    | 'layer'
-    | 'shade'
-    | 'spray'
-    | 'technical';
+  type: string | string[];
   color: PaintColors;
   hex: string;
   gradient?: PaintGradient[];
+  availability: string;
+  company: string;
+  number?: string;
+  category?: string;
   stroke?: string;
   gloss?: boolean;
-  img?: TechnicalPaintImages;
-  availability: string;
-  company: 'Citadel';
-}
-export interface PaintDetailsVallejo {
-  name: string;
-  // type: 'default' | 'wash' | 'fluo' | 'ink' | 'metallic' | 'special fx' | ;
-  type: 'layer' | 'shade' | 'contrast' | 'ink' | 'fluo';
-  color: PaintColors;
-  hex: string;
-  availability: string;
-  company: 'Vallejo';
-  number: string;
-  category?:
-    | 'Game Color'
-    | 'Model Color'
-    | 'Liquid Metal'
-    | 'Model Air'
-    | 'Metal Color'
-    | 'Game Air'
-    | 'Xpress Color';
-  stroke?: string;
+  img?: string;
 }
 
-export type PaintDetails = PaintDetailsCitadel | PaintDetailsVallejo;
+type CitadelPaintType =
+  | 'air'
+  | 'base'
+  | 'contrast'
+  | 'dry'
+  | 'layer'
+  | 'metallic'
+  | 'shade'
+  | 'spray'
+  | 'technical';
+export interface PaintDetailsCitadel extends PaintDetails {
+  type: CitadelPaintType | CitadelPaintType[];
+  img?: TechnicalPaintImages;
+  company: 'Citadel';
+  category: 'Citadel All';
+}
+
+type VallejoPaintType =
+  | 'layer' // default
+  | 'shade' // wash
+  | 'technical' // special fx
+  | 'contrast'
+  | 'ink'
+  | 'fluo'
+  | 'metallic';
+export interface PaintDetailsVallejo extends PaintDetails {
+  type: VallejoPaintType | VallejoPaintType[];
+  company: 'Vallejo';
+  number: string;
+  category:
+    | 'Vallejo Game Color'
+    | 'Vallejo Model Color'
+    | 'Vallejo Liquid Metal'
+    | 'VallejoModel Air'
+    | 'Vallejo Metal Color'
+    | 'Vallejo Game Air'
+    | 'Vallejo Xpress Color';
+}
+
+// export type PaintDetails = PaintDetailsCitadel | PaintDetailsVallejo;
 
 export interface PaintDetailsComponent extends Omit<PaintDetails, 'img'> {
   img?: JSX.Element;

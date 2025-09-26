@@ -1,4 +1,4 @@
-import { PaintDetails } from '../../../types';
+import { PaintDetailsCitadel } from '../../../types';
 
 export enum TechnicalPaintImages {
   AgrellanBadland = 'AgrellanBadland',
@@ -15,8 +15,9 @@ export enum TechnicalPaintImages {
   ValhallanBlizzard = 'ValhallanBlizzard',
 }
 
-export const technicalBloodForTheBloodGod: PaintDetails = {
+export const technicalBloodForTheBloodGod: PaintDetailsCitadel = {
   name: 'Blood For The Blood God',
+  category: 'Citadel All',
   type: 'technical',
   color: 'red',
   hex: '#600005',
@@ -29,8 +30,9 @@ export const technicalBloodForTheBloodGod: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalNihilakhOxide: PaintDetails = {
+export const technicalNihilakhOxide: PaintDetailsCitadel = {
   name: 'Nihilakh Oxide',
+  category: 'Citadel All',
   type: 'technical',
   color: 'green',
   hex: '#66B39A',
@@ -38,8 +40,9 @@ export const technicalNihilakhOxide: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalNurglesRot: PaintDetails = {
+export const technicalNurglesRot: PaintDetailsCitadel = {
   name: 'Nurgles Rot',
+  category: 'Citadel All',
   type: 'technical',
   color: 'green',
   hex: '#9D8B16',
@@ -47,8 +50,9 @@ export const technicalNurglesRot: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalTyphusCorrosion: PaintDetails = {
+export const technicalTyphusCorrosion: PaintDetailsCitadel = {
   name: 'Typhus Corrosion',
+  category: 'Citadel All',
   type: 'technical',
   color: 'brown',
   hex: '#373A22',
@@ -56,8 +60,9 @@ export const technicalTyphusCorrosion: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalSpiritstoneRed: PaintDetails = {
+export const technicalSpiritstoneRed: PaintDetailsCitadel = {
   name: 'Spiritstone Red',
+  category: 'Citadel All',
   type: 'technical',
   color: 'red',
   hex: '#7C1100',
@@ -70,8 +75,9 @@ export const technicalSpiritstoneRed: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalSoulstoneBlue: PaintDetails = {
+export const technicalSoulstoneBlue: PaintDetailsCitadel = {
   name: 'Soulstone Blue',
+  category: 'Citadel All',
   type: 'technical',
   color: 'blue',
   hex: '#01458F',
@@ -84,8 +90,9 @@ export const technicalSoulstoneBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalWaystoneGreen: PaintDetails = {
+export const technicalWaystoneGreen: PaintDetailsCitadel = {
   name: 'Waystone Green',
+  category: 'Citadel All',
   type: 'technical',
   color: 'green',
   hex: '#007958',
@@ -98,8 +105,9 @@ export const technicalWaystoneGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalMordantEarth: PaintDetails = {
+export const technicalMordantEarth: PaintDetailsCitadel = {
   name: 'Mordant Earth',
+  category: 'Citadel All',
   type: 'technical',
   color: 'black',
   hex: '#4B4849',
@@ -112,8 +120,9 @@ export const technicalMordantEarth: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalAgrellanEarth: PaintDetails = {
+export const technicalAgrellanEarth: PaintDetailsCitadel = {
   name: 'Agrellan Earth',
+  category: 'Citadel All',
   type: 'technical',
   color: 'brown',
   hex: '#948165',
@@ -126,8 +135,9 @@ export const technicalAgrellanEarth: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalAgrellanBadland: PaintDetails = {
+export const technicalAgrellanBadland: PaintDetailsCitadel = {
   name: 'Agrellan Badland',
+  category: 'Citadel All',
   type: 'technical',
   color: 'brown',
   hex: '#948165',
@@ -140,8 +150,9 @@ export const technicalAgrellanBadland: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalMartianIronearth: PaintDetails = {
+export const technicalMartianIronearth: PaintDetailsCitadel = {
   name: 'Martian Ironearth',
+  category: 'Citadel All',
   type: 'technical',
   color: 'red',
   hex: '#9B5041',
@@ -154,8 +165,9 @@ export const technicalMartianIronearth: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalMartianIroncrust: PaintDetails = {
+export const technicalMartianIroncrust: PaintDetailsCitadel = {
   name: 'Martian Ironcrust',
+  category: 'Citadel All',
   type: 'technical',
   color: 'red',
   hex: '#9B5041',
@@ -168,8 +180,9 @@ export const technicalMartianIroncrust: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalStirlandMud: PaintDetails = {
+export const technicalStirlandMud: PaintDetailsCitadel = {
   name: 'Stirland Mud',
+  category: 'Citadel All',
   type: 'technical',
   color: 'brown',
   hex: '#482B00',
@@ -182,8 +195,9 @@ export const technicalStirlandMud: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalStirlandBattlemire: PaintDetails = {
+export const technicalStirlandBattlemire: PaintDetailsCitadel = {
   name: 'Stirland Battlemire',
+  category: 'Citadel All',
   type: 'technical',
   color: 'brown',
   hex: '#482B00',
@@ -196,8 +210,9 @@ export const technicalStirlandBattlemire: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalArmageddonDust: PaintDetails = {
+export const technicalArmageddonDust: PaintDetailsCitadel = {
   name: 'Armageddon Dust',
+  category: 'Citadel All',
   type: 'technical',
   color: 'brown',
   hex: '#D2AD00',
@@ -210,8 +225,9 @@ export const technicalArmageddonDust: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalArmageddonDunes: PaintDetails = {
+export const technicalArmageddonDunes: PaintDetailsCitadel = {
   name: 'Armageddon Dunes',
+  category: 'Citadel All',
   type: 'technical',
   color: 'brown',
   hex: '#E8D36F',
@@ -224,8 +240,9 @@ export const technicalArmageddonDunes: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalAstrogranite: PaintDetails = {
+export const technicalAstrogranite: PaintDetailsCitadel = {
   name: 'Astrogranite',
+  category: 'Citadel All',
   type: 'technical',
   color: 'grey',
   hex: '#9D9D9D',
@@ -238,8 +255,9 @@ export const technicalAstrogranite: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalAstrograniteDebris: PaintDetails = {
+export const technicalAstrograniteDebris: PaintDetailsCitadel = {
   name: 'Astrogranite Debris',
+  category: 'Citadel All',
   type: 'technical',
   color: 'grey',
   hex: '#9D9D9D',
@@ -252,8 +270,9 @@ export const technicalAstrograniteDebris: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalValhallanBlizzard: PaintDetails = {
+export const technicalValhallanBlizzard: PaintDetailsCitadel = {
   name: 'Valhallan Blizzard',
+  category: 'Citadel All',
   type: 'technical',
   color: 'white',
   hex: '#E1E1E1',
@@ -266,8 +285,9 @@ export const technicalValhallanBlizzard: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalLahmianMedium: PaintDetails = {
+export const technicalLahmianMedium: PaintDetailsCitadel = {
   name: 'Lahmian Medium',
+  category: 'Citadel All',
   type: 'technical',
   color: 'clear',
   hex: '#E1E1E1',
@@ -280,8 +300,9 @@ export const technicalLahmianMedium: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalArdcoat: PaintDetails = {
+export const technicalArdcoat: PaintDetailsCitadel = {
   name: 'Ardcoat',
+  category: 'Citadel All',
   type: 'technical',
   color: 'clear',
   hex: '#E1E1E1',
@@ -294,8 +315,9 @@ export const technicalArdcoat: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalContrastMedium: PaintDetails = {
+export const technicalContrastMedium: PaintDetailsCitadel = {
   name: 'Contrast Medium',
+  category: 'Citadel All',
   type: 'technical',
   color: 'clear',
   hex: '#E1E1E1',
@@ -308,8 +330,9 @@ export const technicalContrastMedium: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalStormShield: PaintDetails = {
+export const technicalStormShield: PaintDetailsCitadel = {
   name: 'StormShield',
+  category: 'Citadel All',
   type: 'technical',
   color: 'clear',
   hex: '#E1E1E1',
@@ -322,8 +345,9 @@ export const technicalStormShield: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalTesseractGlow: PaintDetails = {
+export const technicalTesseractGlow: PaintDetailsCitadel = {
   name: 'Tesseract Glow',
+  category: 'Citadel All',
   type: 'technical',
   color: 'green',
   hex: '#49AD33',

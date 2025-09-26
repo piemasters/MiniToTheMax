@@ -1,7 +1,8 @@
-import { PaintDetails } from '../../../types';
+import { PaintDetailsCitadel } from '../../../types';
 
-export const dryHexosPalesun: PaintDetails = {
+export const dryHexosPalesun: PaintDetailsCitadel = {
   name: 'Hexos Palesun',
+  category: 'Citadel All',
   type: 'dry',
   color: 'yellow',
   hex: '#FFF55A',
@@ -9,8 +10,9 @@ export const dryHexosPalesun: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryKindleflame: PaintDetails = {
+export const dryKindleflame: PaintDetailsCitadel = {
   name: 'Kindleflame',
+  category: 'Citadel All',
   type: 'dry',
   color: 'red',
   hex: '#F69C82',
@@ -18,8 +20,9 @@ export const dryKindleflame: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryLuciusLilac: PaintDetails = {
+export const dryLuciusLilac: PaintDetailsCitadel = {
   name: 'Lucius Lilac',
+  category: 'Citadel All',
   type: 'dry',
   color: 'purple',
   hex: '#B598C9',
@@ -27,8 +30,9 @@ export const dryLuciusLilac: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryPraxetiWhite: PaintDetails = {
+export const dryPraxetiWhite: PaintDetailsCitadel = {
   name: 'Praxeti White',
+  category: 'Citadel All',
   type: 'dry',
   color: 'white',
   hex: '#FFFFFF',
@@ -37,8 +41,9 @@ export const dryPraxetiWhite: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryEtheriumBlue: PaintDetails = {
+export const dryEtheriumBlue: PaintDetailsCitadel = {
   name: 'Etherium Blue',
+  category: 'Citadel All',
   type: 'dry',
   color: 'blue',
   hex: '#9EB5CE',
@@ -46,8 +51,9 @@ export const dryEtheriumBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const drySkinkBlue: PaintDetails = {
+export const drySkinkBlue: PaintDetailsCitadel = {
   name: 'Skink Blue',
+  category: 'Citadel All',
   type: 'dry',
   color: 'blue',
   hex: '#54BDCA',
@@ -55,8 +61,9 @@ export const drySkinkBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryHellionGreen: PaintDetails = {
+export const dryHellionGreen: PaintDetailsCitadel = {
   name: 'Hellion Green',
+  category: 'Citadel All',
   type: 'dry',
   color: 'green',
   hex: '#7FC1A5',
@@ -64,8 +71,9 @@ export const dryHellionGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryVerminlordHide: PaintDetails = {
+export const dryVerminlordHide: PaintDetailsCitadel = {
   name: 'Verminlord Hide',
+  category: 'Citadel All',
   type: 'dry',
   color: 'brown',
   hex: '#7E3331',
@@ -73,8 +81,9 @@ export const dryVerminlordHide: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryEldarFlesh: PaintDetails = {
+export const dryEldarFlesh: PaintDetailsCitadel = {
   name: 'Eldar Flesh',
+  category: 'Citadel All',
   type: 'dry',
   color: 'flesh',
   hex: '#E8C07F',
@@ -82,8 +91,9 @@ export const dryEldarFlesh: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryUnderhiveAsh: PaintDetails = {
+export const dryUnderhiveAsh: PaintDetailsCitadel = {
   name: 'Underhive Ash',
+  category: 'Citadel All',
   type: 'dry',
   color: 'bone',
   hex: '#BCBB7E',
@@ -91,8 +101,9 @@ export const dryUnderhiveAsh: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryThunderhawkBlue: PaintDetails = {
+export const dryThunderhawkBlue: PaintDetailsCitadel = {
   name: 'Thunderhawk Blue',
+  category: 'Citadel All',
   type: 'dry',
   color: 'blue',
   hex: '#396A70',
@@ -100,8 +111,9 @@ export const dryThunderhawkBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryLongbeardGrey: PaintDetails = {
+export const dryLongbeardGrey: PaintDetailsCitadel = {
   name: 'Longbeard Grey',
+  category: 'Citadel All',
   type: 'dry',
   color: 'grey',
   hex: '#DBDCC6',
@@ -109,9 +121,10 @@ export const dryLongbeardGrey: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryNecronCompound: PaintDetails = {
+export const dryNecronCompound: PaintDetailsCitadel = {
   name: 'Necron Compound',
-  type: 'dry',
+  category: 'Citadel All',
+  type: ['dry', 'metallic'],
   color: 'silver',
   hex: '#9DA3A7',
   gradient: [
@@ -123,9 +136,10 @@ export const dryNecronCompound: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryGoldenGriffon: PaintDetails = {
+export const dryGoldenGriffon: PaintDetailsCitadel = {
   name: 'Golden Griffon',
-  type: 'dry',
+  category: 'Citadel All',
+  type: ['dry', 'metallic'],
   color: 'gold',
   hex: '#886625',
   gradient: [
@@ -137,8 +151,9 @@ export const dryGoldenGriffon: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryChangelingPink: PaintDetails = {
+export const dryChangelingPink: PaintDetailsCitadel = {
   name: 'Changeling Pink',
+  category: 'Citadel All',
   type: 'dry',
   color: 'pink',
   hex: '#F3ABCA',
@@ -146,8 +161,9 @@ export const dryChangelingPink: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryRyzaRust: PaintDetails = {
+export const dryRyzaRust: PaintDetailsCitadel = {
   name: 'Ryza Rust',
+  category: 'Citadel All',
   type: 'dry',
   color: 'orange',
   hex: '#F16C23',
@@ -155,8 +171,9 @@ export const dryRyzaRust: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryWrackWhite: PaintDetails = {
+export const dryWrackWhite: PaintDetailsCitadel = {
   name: 'Wrack White',
+  category: 'Citadel All',
   type: 'dry',
   color: 'white',
   hex: '#D3D0CF',
@@ -164,8 +181,9 @@ export const dryWrackWhite: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryAstorathRed: PaintDetails = {
+export const dryAstorathRed: PaintDetailsCitadel = {
   name: 'Astorath Red',
+  category: 'Citadel All',
   type: 'dry',
   color: 'red',
   hex: '#A9311E',
@@ -173,8 +191,9 @@ export const dryAstorathRed: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryHoethBlue: PaintDetails = {
+export const dryHoethBlue: PaintDetailsCitadel = {
   name: 'Hoeth Blue',
+  category: 'Citadel All',
   type: 'dry',
   color: 'blue',
   hex: '#4C78AF',
@@ -182,8 +201,9 @@ export const dryHoethBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryChronusBlue: PaintDetails = {
+export const dryChronusBlue: PaintDetailsCitadel = {
   name: 'Chronus Blue',
+  category: 'Citadel All',
   type: 'dry',
   color: 'blue',
   hex: '#4B90CF',
@@ -191,8 +211,9 @@ export const dryChronusBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryImrikBlue: PaintDetails = {
+export const dryImrikBlue: PaintDetailsCitadel = {
   name: 'Imrik Blue',
+  category: 'Citadel All',
   type: 'dry',
   color: 'blue',
   hex: '#208ABF',
@@ -200,8 +221,9 @@ export const dryImrikBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryStormfang: PaintDetails = {
+export const dryStormfang: PaintDetailsCitadel = {
   name: 'Stormfang',
+  category: 'Citadel All',
   type: 'dry',
   color: 'blue',
   hex: '#5A7FA3',
@@ -209,8 +231,9 @@ export const dryStormfang: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryNibletGreen: PaintDetails = {
+export const dryNibletGreen: PaintDetailsCitadel = {
   name: 'Niblet Green',
+  category: 'Citadel All',
   type: 'dry',
   color: 'green',
   hex: '#378C35',
@@ -218,8 +241,9 @@ export const dryNibletGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryNurglingGreen: PaintDetails = {
+export const dryNurglingGreen: PaintDetailsCitadel = {
   name: 'Nurgling Green',
+  category: 'Citadel All',
   type: 'dry',
   color: 'green',
   hex: '#7E975E',
@@ -227,8 +251,9 @@ export const dryNurglingGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryGolgfagBrown: PaintDetails = {
+export const dryGolgfagBrown: PaintDetailsCitadel = {
   name: 'Golgfag Brown',
+  category: 'Citadel All',
   type: 'dry',
   color: 'brown',
   hex: '#8F502A',
@@ -236,8 +261,9 @@ export const dryGolgfagBrown: PaintDetails = {
   company: 'Citadel',
 };
 
-export const drySylvanethBark: PaintDetails = {
+export const drySylvanethBark: PaintDetailsCitadel = {
   name: 'Sylvaneth Bark',
+  category: 'Citadel All',
   type: 'dry',
   color: 'brown',
   hex: '#4E483B',
@@ -245,8 +271,9 @@ export const drySylvanethBark: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryTerminatusStone: PaintDetails = {
+export const dryTerminatusStone: PaintDetailsCitadel = {
   name: 'Terminatus Stone',
+  category: 'Citadel All',
   type: 'dry',
   color: 'bone',
   hex: '#C8B79D',
@@ -254,8 +281,9 @@ export const dryTerminatusStone: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryDawnstone: PaintDetails = {
+export const dryDawnstone: PaintDetailsCitadel = {
   name: 'Dawnstone',
+  category: 'Citadel All',
   type: 'dry',
   color: 'grey',
   hex: '#697068',
@@ -263,9 +291,10 @@ export const dryDawnstone: PaintDetails = {
   company: 'Citadel',
 };
 
-export const drySigmarite: PaintDetails = {
+export const drySigmarite: PaintDetailsCitadel = {
   name: 'Sigmarite',
-  type: 'dry',
+  category: 'Citadel All',
+  type: ['dry', 'metallic'],
   color: 'gold',
   hex: '#C6863A',
   gradient: [
@@ -277,8 +306,9 @@ export const drySigmarite: PaintDetails = {
   company: 'Citadel',
 };
 
-export const drySlaaneshGrey: PaintDetails = {
+export const drySlaaneshGrey: PaintDetailsCitadel = {
   name: 'Slaanesh Grey',
+  category: 'Citadel All',
   type: 'dry',
   color: 'grey',
   hex: '#8B8893',
@@ -286,8 +316,9 @@ export const drySlaaneshGrey: PaintDetails = {
   company: 'Citadel',
 };
 
-export const dryTyrantSkull: PaintDetails = {
+export const dryTyrantSkull: PaintDetailsCitadel = {
   name: 'Tyrant Skull',
+  category: 'Citadel All',
   type: 'dry',
   color: 'bone',
   hex: '#C8C483',
