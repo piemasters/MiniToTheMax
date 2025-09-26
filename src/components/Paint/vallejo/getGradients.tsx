@@ -19,11 +19,11 @@ export const getGradients = ({
   const paintType = Array.isArray(type) ? type[0] : type;
   if (gradient) {
     const gradients: JSX.Element[] = [];
-    if (paintType === 'contrast') {
+    if (paintType === 'shade') {
       gradients.push(
         <linearGradient
-          y1="0%"
-          x1="100%"
+          y1="100%"
+          x1="0%"
           x2="0%"
           y2="0%"
           id={`${paintType}_gradient_${hex.substring(1, 7)}`}
@@ -32,13 +32,13 @@ export const getGradients = ({
           {getStopGradients(gradient)}
         </linearGradient>
       );
-    } else if (paintType === 'shade' || paintType === 'technical') {
+    } else if (paintType === 'technical') {
       gradients.push(
         <linearGradient
-          y1="100%"
           x1="0%"
-          x2="0%"
-          y2="0%"
+          y1="0%"
+          x2="100%"
+          y2="100%"
           id={`${paintType}_gradient_${hex.substring(1, 7)}`}
           key={`${name}_${paintType}`}
         >
@@ -52,7 +52,7 @@ export const getGradients = ({
           cy="0"
           r="1"
           gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(25 32) scale(39)"
+          gradientTransform="translate(18 45) scale(30)"
           id={`${paintType}_gradient_${hex.substring(1, 7)}`}
           key={`${name}_${paintType}`}
         >
@@ -61,20 +61,7 @@ export const getGradients = ({
       );
     }
     if (gloss) {
-      gradients.push(
-        <radialGradient
-          id={`${paintType}_gloss_gradient_${hex.substring(1, 7)}`}
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(14.5226 43.0942) rotate(25.9038) scale(62.7474 27.1872)"
-          key={`${name}_${paintType}_gloss`}
-        >
-          <stop stopColor="white" stopOpacity="0.35" />
-          <stop offset="1" stopColor="white" stopOpacity="0" />
-        </radialGradient>
-      );
+      // Add gloss effect
     }
     return <defs>{gradients}</defs>;
   } else {

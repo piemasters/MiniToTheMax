@@ -1,21 +1,18 @@
 import React, { FC } from 'react';
 
-import { PaintDetails } from '../../types';
+import {
+  PaintDetails,
+  PaintDetailsVallejo,
+  PaintDetailsCitadel,
+} from '../../types';
 import VallejoPaint from './vallejo/VallejoPaint';
 import CitadelPaint from './citadel/CitadelPaint';
 
-export interface PaintProps {
-  paint: PaintDetails;
-}
-
-export const Paint: FC<PaintProps> = ({ paint }) => {
-  if (paint.company === 'Citadel') {
-    return <CitadelPaint paint={paint} />;
-  }
-
+export const Paint: FC<{ paint: PaintDetails }> = ({ paint }) => {
   if (paint.company === 'Vallejo') {
-    return <VallejoPaint paint={paint} />;
+    return <VallejoPaint paint={paint as PaintDetailsVallejo} />;
   }
+  return <CitadelPaint paint={paint as PaintDetailsCitadel} />;
 };
 
 export default Paint;

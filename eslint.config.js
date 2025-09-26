@@ -42,8 +42,8 @@ module.exports = defineConfig([
       'plugin:jsx-a11y/recommended',
       'plugin:@typescript-eslint/recommended',
       'prettier',
-      'plugin:storybook/recommended',
-      'plugin:cypress/recommended'
+      'plugin:storybook/recommended'
+      // 'plugin:cypress/recommended'
     ),
     settings: {
       react: {

@@ -1,7 +1,8 @@
-import { PaintDetails } from '../../../types';
+import { PaintDetailsCitadel } from '../../../types';
 
-export const baseAverlandSunset: PaintDetails = {
+export const baseAverlandSunset: PaintDetailsCitadel = {
   name: 'Averland Sunset',
+  category: 'Citadel All',
   type: 'base',
   color: 'yellow',
   hex: '#FBB81C',
@@ -9,8 +10,9 @@ export const baseAverlandSunset: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseJokaeroOrange: PaintDetails = {
+export const baseJokaeroOrange: PaintDetailsCitadel = {
   name: 'Jokaero Orange',
+  category: 'Citadel All',
   type: 'base',
   color: 'orange',
   hex: '#ED3814',
@@ -18,8 +20,9 @@ export const baseJokaeroOrange: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseMephistonRed: PaintDetails = {
+export const baseMephistonRed: PaintDetailsCitadel = {
   name: 'Mephiston Red',
+  category: 'Citadel All',
   type: 'base',
   color: 'red',
   hex: '#960C09',
@@ -27,8 +30,9 @@ export const baseMephistonRed: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseKhorneRed: PaintDetails = {
+export const baseKhorneRed: PaintDetailsCitadel = {
   name: 'Khorne Red',
+  category: 'Citadel All',
   type: 'base',
   color: 'red',
   hex: '#650001',
@@ -36,8 +40,9 @@ export const baseKhorneRed: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseNaggarothNight: PaintDetails = {
+export const baseNaggarothNight: PaintDetailsCitadel = {
   name: 'Naggaroth Night',
+  category: 'Citadel All',
   type: 'base',
   color: 'purple',
   hex: '#3B2B50',
@@ -45,8 +50,9 @@ export const baseNaggarothNight: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseDaemonetteHide: PaintDetails = {
+export const baseDaemonetteHide: PaintDetailsCitadel = {
   name: 'Daemonette Hide',
+  category: 'Citadel All',
   type: 'base',
   color: 'purple',
   hex: '#655F81',
@@ -54,8 +60,9 @@ export const baseDaemonetteHide: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseKantorBlue: PaintDetails = {
+export const baseKantorBlue: PaintDetailsCitadel = {
   name: 'Kantor Blue',
+  category: 'Citadel All',
   type: 'base',
   color: 'blue',
   hex: '#02134E',
@@ -63,8 +70,9 @@ export const baseKantorBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseMacraggeBlue: PaintDetails = {
+export const baseMacraggeBlue: PaintDetailsCitadel = {
   name: 'Macragge Blue',
+  category: 'Citadel All',
   type: 'base',
   color: 'blue',
   hex: '#0F3D7C',
@@ -72,8 +80,9 @@ export const baseMacraggeBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseCaledorSky: PaintDetails = {
+export const baseCaledorSky: PaintDetailsCitadel = {
   name: 'Caledor Sky',
+  category: 'Citadel All',
   type: 'base',
   color: 'blue',
   hex: '#366699',
@@ -81,8 +90,9 @@ export const baseCaledorSky: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseStegadonScaleGreen: PaintDetails = {
+export const baseStegadonScaleGreen: PaintDetailsCitadel = {
   name: 'Stegadon Scale Green',
+  category: 'Citadel All',
   type: 'base',
   color: 'green',
   hex: '#06455D',
@@ -90,8 +100,9 @@ export const baseStegadonScaleGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseIncubiDarkness: PaintDetails = {
+export const baseIncubiDarkness: PaintDetailsCitadel = {
   name: 'Incubi Darkness',
+  category: 'Citadel All',
   type: 'base',
   color: 'green',
   hex: '#082E32',
@@ -99,8 +110,9 @@ export const baseIncubiDarkness: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseCalibanGreen: PaintDetails = {
+export const baseCalibanGreen: PaintDetailsCitadel = {
   name: 'Caliban Green',
+  category: 'Citadel All',
   type: 'base',
   color: 'green',
   hex: '#003D15',
@@ -108,8 +120,9 @@ export const baseCalibanGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseWaaaghFlesh: PaintDetails = {
+export const baseWaaaghFlesh: PaintDetailsCitadel = {
   name: 'Waaagh Flesh',
+  category: 'Citadel All',
   type: 'base',
   color: 'green',
   hex: '#0B3B36',
@@ -117,8 +130,9 @@ export const baseWaaaghFlesh: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseCastellanGreen: PaintDetails = {
+export const baseCastellanGreen: PaintDetailsCitadel = {
   name: 'Castellan Green',
+  category: 'Citadel All',
   type: 'base',
   color: 'green',
   hex: '#264715',
@@ -126,8 +140,9 @@ export const baseCastellanGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseDeathWorldForest: PaintDetails = {
+export const baseDeathWorldForest: PaintDetailsCitadel = {
   name: 'Death World Forest',
+  category: 'Citadel All',
   type: 'base',
   color: 'green',
   hex: '#556229',
@@ -135,8 +150,9 @@ export const baseDeathWorldForest: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseZandriDust: PaintDetails = {
+export const baseZandriDust: PaintDetailsCitadel = {
   name: 'Zandri Dust',
+  category: 'Citadel All',
   type: 'base',
   color: 'bone',
   hex: '#988E56',
@@ -144,8 +160,9 @@ export const baseZandriDust: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseSteelLegionDrab: PaintDetails = {
+export const baseSteelLegionDrab: PaintDetailsCitadel = {
   name: 'Steel Legion Drab',
+  category: 'Citadel All',
   type: 'base',
   color: 'brown',
   hex: '#584E2D',
@@ -153,8 +170,9 @@ export const baseSteelLegionDrab: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseBugmansGlow: PaintDetails = {
+export const baseBugmansGlow: PaintDetailsCitadel = {
   name: 'Bugmans Glow',
+  category: 'Citadel All',
   type: 'base',
   color: 'flesh',
   hex: '#804C43',
@@ -162,8 +180,9 @@ export const baseBugmansGlow: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseRatskinFlesh: PaintDetails = {
+export const baseRatskinFlesh: PaintDetailsCitadel = {
   name: 'Ratskin Flesh',
+  category: 'Citadel All',
   type: 'base',
   color: 'flesh',
   hex: '#A86648',
@@ -171,8 +190,9 @@ export const baseRatskinFlesh: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseMournfangBrown: PaintDetails = {
+export const baseMournfangBrown: PaintDetailsCitadel = {
   name: 'Mournfang Brown',
+  category: 'Citadel All',
   type: 'base',
   color: 'brown',
   hex: '#490F06',
@@ -180,8 +200,9 @@ export const baseMournfangBrown: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseXV88: PaintDetails = {
+export const baseXV88: PaintDetailsCitadel = {
   name: 'XV88',
+  category: 'Citadel All',
   type: 'base',
   color: 'brown',
   hex: '#6C4811',
@@ -189,8 +210,9 @@ export const baseXV88: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseRhinoxHide: PaintDetails = {
+export const baseRhinoxHide: PaintDetailsCitadel = {
   name: 'Rhinox Hide',
+  category: 'Citadel All',
   type: 'base',
   color: 'brown',
   hex: '#462F30',
@@ -198,8 +220,9 @@ export const baseRhinoxHide: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseDryadBark: PaintDetails = {
+export const baseDryadBark: PaintDetailsCitadel = {
   name: 'Dryad Bark',
+  category: 'Citadel All',
   type: 'base',
   color: 'brown',
   hex: '#2B2A24',
@@ -207,8 +230,9 @@ export const baseDryadBark: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseMechanicusStandardGrey: PaintDetails = {
+export const baseMechanicusStandardGrey: PaintDetailsCitadel = {
   name: 'Mechanicus Standard Grey',
+  category: 'Citadel All',
   type: 'base',
   color: 'grey',
   hex: '#39484A',
@@ -216,8 +240,9 @@ export const baseMechanicusStandardGrey: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseAbaddonBlack: PaintDetails = {
+export const baseAbaddonBlack: PaintDetailsCitadel = {
   name: 'Abaddon Black',
+  category: 'Citadel All',
   type: 'base',
   color: 'black',
   hex: '#000000',
@@ -225,8 +250,9 @@ export const baseAbaddonBlack: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseCelestraGrey: PaintDetails = {
+export const baseCelestraGrey: PaintDetailsCitadel = {
   name: 'Celestra Grey',
+  category: 'Citadel All',
   type: 'base',
   color: 'grey',
   hex: '#8BA3A3',
@@ -234,8 +260,9 @@ export const baseCelestraGrey: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseRakarthFlesh: PaintDetails = {
+export const baseRakarthFlesh: PaintDetailsCitadel = {
   name: 'Rakarth Flesh',
+  category: 'Citadel All',
   type: 'base',
   color: 'flesh',
   hex: '#9C998D',
@@ -243,9 +270,10 @@ export const baseRakarthFlesh: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseLeadbelcher: PaintDetails = {
+export const baseLeadbelcher: PaintDetailsCitadel = {
   name: 'Leadbelcher',
-  type: 'base',
+  category: 'Citadel All',
+  type: ['base', 'metallic'],
   color: 'silver',
   hex: '#8A8A8A',
   gradient: [
@@ -257,9 +285,10 @@ export const baseLeadbelcher: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseScreamingBell: PaintDetails = {
+export const baseScreamingBell: PaintDetailsCitadel = {
   name: 'Screaming Bell',
-  type: 'base',
+  category: 'Citadel All',
+  type: ['base', 'metallic'],
   color: 'brass',
   hex: '#642F1F',
   gradient: [
@@ -271,9 +300,10 @@ export const baseScreamingBell: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseWarplockBronze: PaintDetails = {
+export const baseWarplockBronze: PaintDetailsCitadel = {
   name: 'Warplock Bronze',
-  type: 'base',
+  category: 'Citadel All',
+  type: ['base', 'metallic'],
   color: 'bronze',
   hex: '#440808',
   gradient: [
@@ -285,8 +315,9 @@ export const baseWarplockBronze: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseTheFang: PaintDetails = {
+export const baseTheFang: PaintDetailsCitadel = {
   name: 'The Fang',
+  category: 'Citadel All',
   type: 'base',
   color: 'grey',
   hex: '#405B71',
@@ -294,8 +325,9 @@ export const baseTheFang: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseScreamerPink: PaintDetails = {
+export const baseScreamerPink: PaintDetailsCitadel = {
   name: 'Screamer Pink',
+  category: 'Citadel All',
   type: 'base',
   color: 'pink',
   hex: '#7A0E44',
@@ -303,9 +335,10 @@ export const baseScreamerPink: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseRetributorArmour: PaintDetails = {
+export const baseRetributorArmour: PaintDetailsCitadel = {
   name: 'Retributor Armour',
-  type: 'base',
+  category: 'Citadel All',
+  type: ['base', 'metallic'],
   color: 'gold',
   hex: '#89571D',
   gradient: [
@@ -317,8 +350,9 @@ export const baseRetributorArmour: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseThousandSonsBlue: PaintDetails = {
+export const baseThousandSonsBlue: PaintDetailsCitadel = {
   name: 'Thousand Sons Blue',
+  category: 'Citadel All',
   type: 'base',
   color: 'blue',
   hex: '#00506F',
@@ -326,8 +360,9 @@ export const baseThousandSonsBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseIonrachSkin: PaintDetails = {
+export const baseIonrachSkin: PaintDetailsCitadel = {
   name: 'Ionrach Skin',
+  category: 'Citadel All',
   type: 'base',
   color: 'flesh',
   hex: '#97A384',
@@ -335,8 +370,9 @@ export const baseIonrachSkin: PaintDetails = {
   company: 'Citadel',
 };
 
-export const basePhoenicianPurple: PaintDetails = {
+export const basePhoenicianPurple: PaintDetailsCitadel = {
   name: 'Phoenician Purple',
+  category: 'Citadel All',
   type: 'base',
   color: 'purple',
   hex: '#440052',
@@ -344,8 +380,9 @@ export const basePhoenicianPurple: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseDeathGuardGreen: PaintDetails = {
+export const baseDeathGuardGreen: PaintDetailsCitadel = {
   name: 'Death Guard Green',
+  category: 'Citadel All',
   type: 'base',
   color: 'green',
   hex: '#6D774D',
@@ -353,8 +390,9 @@ export const baseDeathGuardGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseDeathKorpsDrab: PaintDetails = {
+export const baseDeathKorpsDrab: PaintDetailsCitadel = {
   name: 'Death Korps Drab',
+  category: 'Citadel All',
   type: 'base',
   color: 'grey',
   hex: '#3D4539',
@@ -362,8 +400,9 @@ export const baseDeathKorpsDrab: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseGalVorbakRed: PaintDetails = {
+export const baseGalVorbakRed: PaintDetailsCitadel = {
   name: 'Gal Vorbak Red',
+  category: 'Citadel All',
   type: 'base',
   color: 'red',
   hex: '#4B213C',
@@ -371,8 +410,9 @@ export const baseGalVorbakRed: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseNightLordsBlue: PaintDetails = {
+export const baseNightLordsBlue: PaintDetailsCitadel = {
   name: 'Night Lords Blue',
+  category: 'Citadel All',
   type: 'base',
   color: 'blue',
   hex: '#002B5C',
@@ -380,8 +420,9 @@ export const baseNightLordsBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseNocturneGreen: PaintDetails = {
+export const baseNocturneGreen: PaintDetailsCitadel = {
   name: 'Nocturne Green',
+  category: 'Citadel All',
   type: 'base',
   color: 'green',
   hex: '#162A29',
@@ -389,8 +430,9 @@ export const baseNocturneGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseCorvusBlack: PaintDetails = {
+export const baseCorvusBlack: PaintDetailsCitadel = {
   name: 'Corvus Black',
+  category: 'Citadel All',
   type: 'base',
   color: 'black',
   hex: '#171314',
@@ -398,8 +440,9 @@ export const baseCorvusBlack: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseLupercalGreen: PaintDetails = {
+export const baseLupercalGreen: PaintDetailsCitadel = {
   name: 'Lupercal Green',
+  category: 'Citadel All',
   type: 'base',
   color: 'green',
   hex: '#002C2B',
@@ -407,9 +450,10 @@ export const baseLupercalGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseIronHandsSteel: PaintDetails = {
+export const baseIronHandsSteel: PaintDetailsCitadel = {
   name: 'Iron Hands Steel',
-  type: 'base',
+  category: 'Citadel All',
+  type: ['base', 'metallic'],
   color: 'silver',
   hex: '#44423F',
   gradient: [
@@ -421,9 +465,10 @@ export const baseIronHandsSteel: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseGreyKnightsSteel: PaintDetails = {
+export const baseGreyKnightsSteel: PaintDetailsCitadel = {
   name: 'Grey Knights Steel',
-  type: 'base',
+  category: 'Citadel All',
+  type: ['base', 'metallic'],
   color: 'silver',
   hex: '#465863',
   gradient: [
@@ -435,9 +480,10 @@ export const baseGreyKnightsSteel: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseBalthasarGold: PaintDetails = {
+export const baseBalthasarGold: PaintDetailsCitadel = {
   name: 'Balthasar Gold',
-  type: 'base',
+  category: 'Citadel All',
+  type: ['base', 'metallic'],
   color: 'gold',
   hex: '#FFC28A',
   gradient: [
@@ -449,9 +495,10 @@ export const baseBalthasarGold: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseIronWarriors: PaintDetails = {
+export const baseIronWarriors: PaintDetailsCitadel = {
   name: 'Iron Warriors',
-  type: 'base',
+  category: 'Citadel All',
+  type: ['base', 'metallic'],
   color: 'silver',
   hex: '#D2D2D2',
   gradient: [
@@ -463,8 +510,9 @@ export const baseIronWarriors: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseBarakNarBurgundy: PaintDetails = {
+export const baseBarakNarBurgundy: PaintDetailsCitadel = {
   name: 'Barak Nar Burgundy',
+  category: 'Citadel All',
   type: 'base',
   color: 'purple',
   hex: '#451636',
@@ -472,8 +520,9 @@ export const baseBarakNarBurgundy: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseCatachanFlesh: PaintDetails = {
+export const baseCatachanFlesh: PaintDetailsCitadel = {
   name: 'Catachan Flesh',
+  category: 'Citadel All',
   type: 'base',
   color: 'flesh',
   hex: '#442B25',
@@ -481,8 +530,9 @@ export const baseCatachanFlesh: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseMorghastBone: PaintDetails = {
+export const baseMorghastBone: PaintDetailsCitadel = {
   name: 'Morghast Bone',
+  category: 'Citadel All',
   type: 'base',
   color: 'bone',
   hex: '#C0A973',
@@ -490,8 +540,9 @@ export const baseMorghastBone: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseCoraxWhite: PaintDetails = {
+export const baseCoraxWhite: PaintDetailsCitadel = {
   name: 'Corax White',
+  category: 'Citadel All',
   type: 'base',
   color: 'white',
   hex: '#FFFFFF',
@@ -500,8 +551,9 @@ export const baseCoraxWhite: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseWraithBone: PaintDetails = {
+export const baseWraithBone: PaintDetailsCitadel = {
   name: 'Wraithbone',
+  category: 'Citadel All',
   type: 'base',
   color: 'bone',
   hex: '#DBD1B2',
@@ -509,8 +561,9 @@ export const baseWraithBone: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseGreySeer: PaintDetails = {
+export const baseGreySeer: PaintDetailsCitadel = {
   name: 'Grey Seer',
+  category: 'Citadel All',
   type: 'base',
   color: 'grey',
   hex: '#A2A5A7',
@@ -518,9 +571,10 @@ export const baseGreySeer: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseRunelordBrass: PaintDetails = {
+export const baseRunelordBrass: PaintDetailsCitadel = {
   name: 'Runelord Brass',
-  type: 'base',
+  category: 'Citadel All',
+  type: ['base', 'metallic'],
   color: 'brass',
   hex: '#74624D',
   gradient: [
@@ -532,8 +586,9 @@ export const baseRunelordBrass: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseOrrukFlesh: PaintDetails = {
+export const baseOrrukFlesh: PaintDetailsCitadel = {
   name: 'Orruk Flesh',
+  category: 'Citadel All',
   type: 'base',
   color: 'green',
   hex: '#8CC276',
@@ -541,8 +596,9 @@ export const baseOrrukFlesh: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseThondiaBrown: PaintDetails = {
+export const baseThondiaBrown: PaintDetailsCitadel = {
   name: 'Thondia Brown',
+  category: 'Citadel All',
   type: 'base',
   color: 'brown',
   hex: '#54302A',
@@ -550,8 +606,9 @@ export const baseThondiaBrown: PaintDetails = {
   company: 'Citadel',
 };
 
-export const baseHobgrotHide: PaintDetails = {
+export const baseHobgrotHide: PaintDetailsCitadel = {
   name: 'Hobgrot Hide',
+  category: 'Citadel All',
   type: 'base',
   color: 'brown',
   hex: '#A1812A',

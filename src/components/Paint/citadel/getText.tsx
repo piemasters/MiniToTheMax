@@ -8,11 +8,12 @@ export const getText = ({
   hex,
   gradient,
 }: {
-  type: string;
+  type: string | string[];
   hex: string;
   gradient?: PaintGradient[];
 }) => {
-  if (type === 'dry') {
+  const paintType = Array.isArray(type) ? type[0] : type;
+  if (paintType === 'dry') {
     return (
       <g
         transform="translate(16 48), scale(.5 .5)"
@@ -28,7 +29,7 @@ export const getText = ({
         </defs>
       </g>
     );
-  } else if (type === 'air') {
+  } else if (paintType === 'air') {
     return (
       <g
         transform="translate(16 48), scale(.5 .5)"

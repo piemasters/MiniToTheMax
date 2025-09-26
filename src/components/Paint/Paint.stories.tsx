@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Paint } from './Paint';
-import { gameColorSkin } from '../../data/paints/vallejo/game';
+import { gameColorPolishedGold } from '../../data/paints/vallejo/game';
 import { baseRetributorArmour } from '../../data/paints/citadel/base';
 
 const meta: Meta<typeof Paint> = {
@@ -10,7 +10,7 @@ const meta: Meta<typeof Paint> = {
     paint: {
       paint: 'paint',
       description: 'The paint color and other properties',
-      defaultValue: gameColorSkin,
+      defaultValue: gameColorPolishedGold,
       control: { type: 'object' },
     },
   },
@@ -27,7 +27,7 @@ export const Citadel: Story = {
 
 export const Vallejo: Story = {
   args: {
-    paint: gameColorSkin,
+    paint: gameColorPolishedGold,
   },
 };
 
@@ -36,7 +36,7 @@ export const All: Story = {
     return (
       <div className="flex items-center justify-center min-h-screen">
         <Paint paint={baseRetributorArmour} />
-        <Paint paint={gameColorSkin} />
+        <Paint paint={gameColorPolishedGold} />
       </div>
     );
   },

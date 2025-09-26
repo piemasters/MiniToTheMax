@@ -17,23 +17,46 @@ export const sortPaints = (a: PaintDetails, b: PaintDetails) => {
   return 0;
 };
 
-export const getAllSortedPaints = () => [
-  // citadel
-  ...airPaints.sort(sortPaints),
-  ...basePaints.sort(sortPaints),
-  ...contrastPaints.sort(sortPaints),
-  ...dryPaints.sort(sortPaints),
-  ...layerPaints.sort(sortPaints),
-  ...shadePaints.sort(sortPaints),
-  ...sprayPaints.sort(sortPaints),
-  ...technicalPaints.sort(sortPaints),
-  // vallejo
-  ...gameColorPaints.sort(sortPaints),
-];
+export const getAllSortedPaints = () => {
+  const allPaints = [
+    // citadel
+    ...airPaints,
+    ...basePaints,
+    ...contrastPaints,
+    ...dryPaints,
+    ...layerPaints,
+    ...shadePaints,
+    ...sprayPaints,
+    ...technicalPaints,
+    // vallejo
+    ...gameColorPaints,
+  ];
+
+  // Use a Map to remove duplicates based on a unique key
+  const uniquePaints = new Map<string, PaintDetails>();
+  allPaints.forEach((paint) => {
+    const uniqueKey = `${paint.company}-${paint.name}-${paint.type.toString()}`;
+    uniquePaints.set(uniqueKey, paint);
+  });
+
+  // Convert the Map back to an array and sort it
+  return Array.from(uniquePaints.values()).sort(sortPaints);
+};
 
 export const companyFilters: PaintFilters = {
   Citadel: true,
   Vallejo: true,
+};
+
+export const categoryFilters: PaintFilters = {
+  'Citadel All': true,
+  'Vallejo Game Color': true,
+  'Vallejo Model Color': true,
+  'Vallejo Liquid Metal': true,
+  'Vallejo Model Air': true,
+  'Vallejo Metal Color': true,
+  'Vallejo Game Air': true,
+  'Vallejo Xpress Color': true,
 };
 
 export const colorFilters: PaintFilters = {
@@ -65,6 +88,7 @@ export const typeFilters: PaintFilters = {
   contrast: true, // vallejo xpress
   dry: true,
   layer: true, // vallejo default
+  metallic: true,
   shade: true, // vallejo wash
   spray: true,
   technical: true, // vallejo special fx
@@ -78,16 +102,45 @@ export const availabilityFilters: PaintFilters = {
 };
 
 export const togglePaints = (filters: AllPaintFilters) => {
-  let filteredPaints = getAllSortedPaints();
-  for (const [type, filter] of Object.entries(filters)) {
-    for (const [key, value] of Object.entries(filter)) {
-      if (!value) {
-        filteredPaints = filteredPaints.filter(
-          (paint: PaintDetails) => paint[type as keyof PaintDetails] !== key
-        );
+  const activeFilters = Object.entries(filters).reduce(
+    (acc, [type, filter]) => {
+      acc[type] = new Set(
+        Object.entries(filter)
+          .filter(([, value]) => !value) // Only include inactive filters
+          .map(([key]) => key)
+      );
+      return acc;
+    },
+    {} as Record<string, Set<string>>
+  );
+
+  const isPaintFiltered = (paint: PaintDetails): boolean => {
+    for (const [type, inactiveKeys] of Object.entries(activeFilters)) {
+      const paintValue = paint[type as keyof PaintDetails];
+      if (inactiveKeys.size > 0) {
+        if (Array.isArray(paintValue)) {
+          // Check if all values in the array are inactive
+          const hasActiveValue = paintValue.some(
+            (value) => typeof value === 'string' && !inactiveKeys.has(value)
+          );
+          if (!hasActiveValue) {
+            return false;
+          }
+        } else {
+          // Check if the single value matches an inactive filter
+          if (
+            paintValue &&
+            typeof paintValue === 'string' &&
+            inactiveKeys.has(paintValue)
+          ) {
+            return false;
+          }
+        }
       }
     }
-  }
-  filteredPaints.sort(sortPaints);
-  return filteredPaints;
+    return true;
+  };
+
+  const filteredPaints = getAllSortedPaints().filter(isPaintFiltered);
+  return filteredPaints.sort(sortPaints);
 };
