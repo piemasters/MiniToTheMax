@@ -1,3 +1,5 @@
+import { link } from 'fs';
+
 export const bloodBowl = [
   { name: 'Biased Refs' },
   { name: 'Black Orcs' },
@@ -38,5 +40,8 @@ export const bloodBowlGnomes = [
   { name: 'Rowana Forestfoot' },
   { name: 'Tokens' },
   { name: 'Treeman' },
-  { name: 'Woodland Fox' },
+  {
+    name: 'Woodland Fox',
+    link: '/showcase/board-games/blood-bowl/gnomes/woodland-fox',
+  },
 ];

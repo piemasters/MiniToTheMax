@@ -39,8 +39,8 @@ export const IndexPage: FC = () => {
       <Badges />
       <h2>Latest Video</h2>
       <Video
-        src="https://www.youtube.com/embed/ITQCOeYpJvk"
-        title="Space Wolves: Wolf Guard"
+        src="https://www.youtube.com/embed/2_nGRDO6948"
+        title="The Glimdwarrow Groundhogs Woodland Foxes"
       />
       <h2>Latest Post</h2>
 
