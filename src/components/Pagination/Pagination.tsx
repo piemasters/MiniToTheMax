@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
 import { PageLink } from '../PageLink';
-import { getPages } from '../../util';
+import { getPages } from '../../util/pagination';
 
 export interface PaginationProps {
   numPages: number;

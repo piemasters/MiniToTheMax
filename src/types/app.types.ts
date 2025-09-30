@@ -1,8 +1,6 @@
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
 import { AllMdx, MdxGroupConnection, MdxNode, Site } from './base.types';
-import { TechnicalPaintImages } from '../data/paints/citadel/technical';
-
 export interface Posts {
   posts: AllMdx;
 }
@@ -80,79 +78,6 @@ export enum BadgeNames {
   build = 'build',
   battleReports = 'battleReports',
   reviews = 'reviews',
-}
-
-export interface PaintGradient {
-  offset: number;
-  color: string;
-}
-export type PaintCompany = 'Citadel' | 'Vallejo';
-export type PaintColors =
-  | 'black'
-  | 'blue'
-  | 'bone'
-  | 'brass'
-  | 'bronze'
-  | 'brown'
-  | 'clear'
-  | 'copper'
-  | 'flesh'
-  | 'gold'
-  | 'green'
-  | 'grey'
-  | 'orange'
-  | 'pink'
-  | 'purple'
-  | 'red'
-  | 'silver'
-  | 'turquoise'
-  | 'white'
-  | 'yellow';
-
-export interface PaintDetailsCitadel {
-  name: string;
-  type:
-    | 'air'
-    | 'base'
-    | 'contrast'
-    | 'dry'
-    | 'layer'
-    | 'shade'
-    | 'spray'
-    | 'technical';
-  color: PaintColors;
-  hex: string;
-  gradient?: PaintGradient[];
-  stroke?: string;
-  gloss?: boolean;
-  img?: TechnicalPaintImages;
-  availability: string;
-  company: 'Citadel';
-}
-export interface PaintDetailsVallejo {
-  name: string;
-  // type: 'default' | 'wash' | 'fluo' | 'ink' | 'metallic' | 'special fx' | ;
-  type: 'layer' | 'shade' | 'contrast' | 'ink' | 'fluo';
-  color: PaintColors;
-  hex: string;
-  availability: string;
-  company: 'Vallejo';
-  number: string;
-  category?:
-    | 'Game Color'
-    | 'Model Color'
-    | 'Liquid Metal'
-    | 'Model Air'
-    | 'Metal Color'
-    | 'Game Air'
-    | 'Xpress Color';
-  stroke?: string;
-}
-
-export type PaintDetails = PaintDetailsCitadel | PaintDetailsVallejo;
-
-export interface PaintDetailsComponent extends Omit<PaintDetails, 'img'> {
-  img?: JSX.Element;
 }
 
 export interface NavLink {

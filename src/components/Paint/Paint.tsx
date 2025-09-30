@@ -1,21 +1,48 @@
 import React, { FC } from 'react';
 
-import { PaintDetails } from '../../types';
+import type {
+  PaintDetails,
+  CitadelPaintCategory,
+  CitadelTechnicalPaintImages,
+  VallejoPaintCategory,
+} from '../../types';
 import VallejoPaint from './vallejo/VallejoPaint';
 import CitadelPaint from './citadel/CitadelPaint';
 
-export interface PaintProps {
-  paint: PaintDetails;
-}
-
-export const Paint: FC<PaintProps> = ({ paint }) => {
-  if (paint.company === 'Citadel') {
-    return <CitadelPaint paint={paint} />;
-  }
-
+export const Paint: FC<{ paint: PaintDetails }> = ({ paint }) => {
   if (paint.company === 'Vallejo') {
-    return <VallejoPaint paint={paint} />;
+    return (
+      <VallejoPaint
+        name={paint.name}
+        type={paint.type}
+        color={paint.color}
+        hex={paint.hex}
+        gradient={paint.gradient}
+        availability={paint.availability}
+        company={paint.company}
+        category={paint.category as VallejoPaintCategory}
+        stroke={paint.stroke}
+        gloss={paint.gloss}
+        img={paint.img}
+        number={paint.number || ''}
+      />
+    );
   }
+  return (
+    <CitadelPaint
+      name={paint.name}
+      type={paint.type}
+      color={paint.color}
+      hex={paint.hex}
+      gradient={paint.gradient}
+      availability={paint.availability}
+      company={paint.company as 'Citadel'}
+      category={paint.category as CitadelPaintCategory}
+      stroke={paint.stroke}
+      gloss={paint.gloss}
+      img={paint.img as CitadelTechnicalPaintImages | undefined}
+    />
+  );
 };
 
 export default Paint;

@@ -1,8 +1,9 @@
-import { PaintDetails } from '../../../types';
+import { PaintDetailsCitadel } from '../../../types';
 
-export const sprayCoraxWhite: PaintDetails = {
+export const sprayCoraxWhite: PaintDetailsCitadel = {
   name: 'Corax White',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray'],
   color: 'white',
   hex: '#FFFFFF',
   stroke: '#6b6b6b',
@@ -10,18 +11,20 @@ export const sprayCoraxWhite: PaintDetails = {
   company: 'Citadel',
 };
 
-export const sprayChaosBlack: PaintDetails = {
+export const sprayChaosBlack: PaintDetailsCitadel = {
   name: 'Chaos Black',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray'],
   color: 'black',
   hex: '#000000',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const sprayRetributorArmour: PaintDetails = {
+export const sprayRetributorArmour: PaintDetailsCitadel = {
   name: 'Retributor Armour',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray', 'metallic'],
   color: 'gold',
   hex: '#89571D',
   gradient: [
@@ -33,45 +36,50 @@ export const sprayRetributorArmour: PaintDetails = {
   company: 'Citadel',
 };
 
-export const sprayMephistonRed: PaintDetails = {
+export const sprayMephistonRed: PaintDetailsCitadel = {
   name: 'Mephiston Red',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray'],
   color: 'red',
   hex: '#960C09',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const sprayMacraggeBlue: PaintDetails = {
+export const sprayMacraggeBlue: PaintDetailsCitadel = {
   name: 'Macragge Blue',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray'],
   color: 'blue',
   hex: '#0F3D7C',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const sprayZandriDust: PaintDetails = {
+export const sprayZandriDust: PaintDetailsCitadel = {
   name: 'Zandri Dust',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray'],
   color: 'brown',
   hex: '#988E56',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const sprayMechanicusStandardGrey: PaintDetails = {
+export const sprayMechanicusStandardGrey: PaintDetailsCitadel = {
   name: 'Mechanicus Standard Grey',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray'],
   color: 'grey',
   hex: '#39484A',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const sprayLeadbelcher: PaintDetails = {
+export const sprayLeadbelcher: PaintDetailsCitadel = {
   name: 'Leadbelcher',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray', 'metallic'],
   color: 'silver',
   hex: '#151E24',
   gradient: [
@@ -83,18 +91,20 @@ export const sprayLeadbelcher: PaintDetails = {
   company: 'Citadel',
 };
 
-export const sprayDeathGuardGreen: PaintDetails = {
+export const sprayDeathGuardGreen: PaintDetailsCitadel = {
   name: 'Death Guard Green',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray'],
   color: 'green',
   hex: '#556229',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const sprayMunitorumVarnish: PaintDetails = {
+export const sprayMunitorumVarnish: PaintDetailsCitadel = {
   name: 'Munitorum Varnish',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray'],
   color: 'clear',
   hex: '#CCCCCC',
   gradient: [
@@ -106,27 +116,30 @@ export const sprayMunitorumVarnish: PaintDetails = {
   company: 'Citadel',
 };
 
-export const sprayWraithBone: PaintDetails = {
+export const sprayWraithBone: PaintDetailsCitadel = {
   name: 'Wraithbone',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray'],
   color: 'bone',
   hex: '#DBD1B2',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const sprayGreySeer: PaintDetails = {
+export const sprayGreySeer: PaintDetailsCitadel = {
   name: 'Grey Seer',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray'],
   color: 'grey',
   hex: '#A2A5A7',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const sprayRunelordBrass: PaintDetails = {
+export const sprayRunelordBrass: PaintDetailsCitadel = {
   name: 'Runelord Brass',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray', 'metallic'],
   color: 'brass',
   hex: '#74624D',
   gradient: [
@@ -138,9 +151,10 @@ export const sprayRunelordBrass: PaintDetails = {
   company: 'Citadel',
 };
 
-export const sprayWhiteScar: PaintDetails = {
+export const sprayWhiteScar: PaintDetailsCitadel = {
   name: 'White Scar',
-  type: 'spray',
+  category: 'Citadel Spray',
+  type: ['spray'],
   color: 'white',
   hex: '#FFFFFF',
   stroke: '#6b6b6b',

@@ -1,143 +1,159 @@
-import { PaintDetails } from '../../../types';
+import { PaintDetailsCitadel } from '../../../types';
 
-export const airAverlandSunset: PaintDetails = {
+export const airAverlandSunset: PaintDetailsCitadel = {
   name: 'Averland Sunset',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'yellow',
   hex: '#FBB81C',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airMephistonRed: PaintDetails = {
+export const airMephistonRed: PaintDetailsCitadel = {
   name: 'Mephiston Red',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'red',
   hex: '#960C09',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airKhorneRed: PaintDetails = {
+export const airKhorneRed: PaintDetailsCitadel = {
   name: 'Khorne Red',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'red',
   hex: '#650001',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airKantorBlue: PaintDetails = {
+export const airKantorBlue: PaintDetailsCitadel = {
   name: 'Kantor Blue',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'blue',
   hex: '#02134E',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airMacraggeBlue: PaintDetails = {
+export const airMacraggeBlue: PaintDetailsCitadel = {
   name: 'Macragge Blue',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'blue',
   hex: '#0F3D7C',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airCaledorSky: PaintDetails = {
+export const airCaledorSky: PaintDetailsCitadel = {
   name: 'Caledor Sky',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'blue',
   hex: '#366699',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airCalibanGreen: PaintDetails = {
+export const airCalibanGreen: PaintDetailsCitadel = {
   name: 'Caliban Green',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#003D15',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airCastellanGreen: PaintDetails = {
+export const airCastellanGreen: PaintDetailsCitadel = {
   name: 'Castellan Green',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#264715',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airDeathWorldForest: PaintDetails = {
+export const airDeathWorldForest: PaintDetailsCitadel = {
   name: 'Death World Forest',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#556229',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airZandriDust: PaintDetails = {
+export const airZandriDust: PaintDetailsCitadel = {
   name: 'Zandri Dust',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'brown',
   hex: '#988E56',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airMournfangBrown: PaintDetails = {
+export const airMournfangBrown: PaintDetailsCitadel = {
   name: 'Mournfang Brown',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'brown',
   hex: '#490F06',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airXV88: PaintDetails = {
+export const airXV88: PaintDetailsCitadel = {
   name: 'XV88',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'brown',
   hex: '#6C4811',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airDryadBark: PaintDetails = {
+export const airDryadBark: PaintDetailsCitadel = {
   name: 'Dryad Bark',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'brown',
   hex: '#2B2A24',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airMechanicusStandardGrey: PaintDetails = {
+export const airMechanicusStandardGrey: PaintDetailsCitadel = {
   name: 'Mechanicus Standard Grey',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'grey',
   hex: '#39484A',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airAbaddonBlack: PaintDetails = {
+export const airAbaddonBlack: PaintDetailsCitadel = {
   name: 'Abaddon Black',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'black',
   hex: '#000000',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airLeadbelcher: PaintDetails = {
+export const airLeadbelcher: PaintDetailsCitadel = {
   name: 'Leadbelcher',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air', 'metallic'],
   color: 'silver',
   hex: '#8A8A8A',
   gradient: [
@@ -149,9 +165,10 @@ export const airLeadbelcher: PaintDetails = {
   company: 'Citadel',
 };
 
-export const airBalthasarGold: PaintDetails = {
+export const airBalthasarGold: PaintDetailsCitadel = {
   name: 'Balthasar Gold',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air', 'metallic'],
   color: 'gold',
   hex: '#FFC28A',
   gradient: [
@@ -163,153 +180,170 @@ export const airBalthasarGold: PaintDetails = {
   company: 'Citadel',
 };
 
-export const airSteelLegionDrab: PaintDetails = {
+export const airSteelLegionDrab: PaintDetailsCitadel = {
   name: 'Steel Legion Drab',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'brown',
   hex: '#584E2D',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airTheFang: PaintDetails = {
+export const airTheFang: PaintDetailsCitadel = {
   name: 'The Fang',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'grey',
   hex: '#405B71',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airFlashGitzYellow: PaintDetails = {
+export const airFlashGitzYellow: PaintDetailsCitadel = {
   name: 'Flash Gitz Yellow',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'yellow',
   hex: '#FFF300',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airTrollSlayerOrange: PaintDetails = {
+export const airTrollSlayerOrange: PaintDetailsCitadel = {
   name: 'Troll Slayer Orange',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'orange',
   hex: '#F16C23',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airEvilSunzScarlet: PaintDetails = {
+export const airEvilSunzScarlet: PaintDetailsCitadel = {
   name: 'Evil Sunz Scarlet',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'red',
   hex: '#C01411',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airGenestealerPurple: PaintDetails = {
+export const airGenestealerPurple: PaintDetailsCitadel = {
   name: 'Genestealer Purple',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'purple',
   hex: '#7658A5',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airCalgarBlue: PaintDetails = {
+export const airCalgarBlue: PaintDetailsCitadel = {
   name: 'Calgar Blue',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'blue',
   hex: '#2A497F',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airLothernBlue: PaintDetails = {
+export const airLothernBlue: PaintDetailsCitadel = {
   name: 'Lothern Blue',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'blue',
   hex: '#2C9BCC',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airTempleGuardBlue: PaintDetails = {
+export const airTempleGuardBlue: PaintDetailsCitadel = {
   name: 'Temple Guard Blue',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'blue',
   hex: '#239489',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airSybariteGreen: PaintDetails = {
+export const airSybariteGreen: PaintDetailsCitadel = {
   name: 'Sybarite Green',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#17A166',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airMootGreen: PaintDetails = {
+export const airMootGreen: PaintDetailsCitadel = {
   name: 'Moot Green',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#3DAF44',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airWarbossGreen: PaintDetails = {
+export const airWarbossGreen: PaintDetailsCitadel = {
   name: 'Warboss Green',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#317E57',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airStrakenGreen: PaintDetails = {
+export const airStrakenGreen: PaintDetailsCitadel = {
   name: 'Straken Green',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#597F1C',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airElysianGreen: PaintDetails = {
+export const airElysianGreen: PaintDetailsCitadel = {
   name: 'Elysian Green',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#6B8C37',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airOgrynCamo: PaintDetails = {
+export const airOgrynCamo: PaintDetailsCitadel = {
   name: 'Ogryn Camo',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#96A648',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airUshabtiBone: PaintDetails = {
+export const airUshabtiBone: PaintDetailsCitadel = {
   name: 'Ushabti Bone',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'bone',
   hex: '#ABA173',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airAirCasteThinner: PaintDetails = {
+export const airAirCasteThinner: PaintDetailsCitadel = {
   name: 'Air Caste Thinner',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'clear',
   hex: '#CCCCCC',
   gradient: [
@@ -321,108 +355,120 @@ export const airAirCasteThinner: PaintDetails = {
   company: 'Citadel',
 };
 
-export const airTallarnSand: PaintDetails = {
+export const airTallarnSand: PaintDetailsCitadel = {
   name: 'Tallarn Sand',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'brown',
   hex: '#A07409',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airKarakStone: PaintDetails = {
+export const airKarakStone: PaintDetailsCitadel = {
   name: 'Karak Stone',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'bone',
   hex: '#B7945C',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airKislevFlesh: PaintDetails = {
+export const airKislevFlesh: PaintDetailsCitadel = {
   name: 'Kislev Flesh',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'flesh',
   hex: '#D1A570',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airDeathclawBrown: PaintDetails = {
+export const airDeathclawBrown: PaintDetailsCitadel = {
   name: 'Deathclaw Brown',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'brown',
   hex: '#AF634F',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airTauLightOchre: PaintDetails = {
+export const airTauLightOchre: PaintDetailsCitadel = {
   name: 'TauLight Ochre',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'brown',
   hex: '#BC6B10',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airBalorBrown: PaintDetails = {
+export const airBalorBrown: PaintDetailsCitadel = {
   name: 'Balor Brown',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'brown',
   hex: '#875408',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airTuskgorFur: PaintDetails = {
+export const airTuskgorFur: PaintDetailsCitadel = {
   name: 'Tuskgor Fur',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'brown',
   hex: '#863231',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airBanebladeBrown: PaintDetails = {
+export const airBanebladeBrown: PaintDetailsCitadel = {
   name: 'Baneblade Brown',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'brown',
   hex: '#8F7C68',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airDawnstone: PaintDetails = {
+export const airDawnstone: PaintDetailsCitadel = {
   name: 'Dawnstone',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'grey',
   hex: '#697068',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airAdministratumGrey: PaintDetails = {
+export const airAdministratumGrey: PaintDetailsCitadel = {
   name: 'Administratum Grey',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'grey',
   hex: '#8F9690',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airUlthuanGrey: PaintDetails = {
+export const airUlthuanGrey: PaintDetailsCitadel = {
   name: 'Ulthuan Grey',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'grey',
   hex: '#C4DDD5',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airWhiteScar: PaintDetails = {
+export const airWhiteScar: PaintDetailsCitadel = {
   name: 'White Scar',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'white',
   hex: '#FFFFFF',
   stroke: '#6b6b6b',
@@ -430,9 +476,10 @@ export const airWhiteScar: PaintDetails = {
   company: 'Citadel',
 };
 
-export const airIronbreaker: PaintDetails = {
+export const airIronbreaker: PaintDetailsCitadel = {
   name: 'Ironbreaker',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air', 'metallic'],
   color: 'silver',
   hex: '#414141',
   gradient: [
@@ -444,9 +491,10 @@ export const airIronbreaker: PaintDetails = {
   company: 'Citadel',
 };
 
-export const airRunefangSteel: PaintDetails = {
+export const airRunefangSteel: PaintDetailsCitadel = {
   name: 'Runefang Steel',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air', 'metallic'],
   color: 'silver',
   hex: '#797F82',
   gradient: [
@@ -458,9 +506,10 @@ export const airRunefangSteel: PaintDetails = {
   company: 'Citadel',
 };
 
-export const airRelictorGold: PaintDetails = {
+export const airRelictorGold: PaintDetailsCitadel = {
   name: 'Relictor Gold',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air', 'metallic'],
   color: 'gold',
   hex: '#886625',
   gradient: [
@@ -472,225 +521,250 @@ export const airRelictorGold: PaintDetails = {
   company: 'Citadel',
 };
 
-export const airRussGrey: PaintDetails = {
+export const airRussGrey: PaintDetailsCitadel = {
   name: 'Russ Grey',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'grey',
   hex: '#507085',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airFenrisianGrey: PaintDetails = {
+export const airFenrisianGrey: PaintDetailsCitadel = {
   name: 'Fenrisian Grey',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'grey',
   hex: '#6D94B3',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airTerminatusStone: PaintDetails = {
+export const airTerminatusStone: PaintDetailsCitadel = {
   name: 'Terminatus Stone',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'bone',
   hex: '#C8B79D',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airAngronRedClear: PaintDetails = {
+export const airAngronRedClear: PaintDetailsCitadel = {
   name: 'Angron Red Clear',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'red',
   hex: '#E21823',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airCalthBlueClear: PaintDetails = {
+export const airCalthBlueClear: PaintDetailsCitadel = {
   name: 'Calth Blue Clear',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'blue',
   hex: '#0087D1',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airDeathshroudClear: PaintDetails = {
+export const airDeathshroudClear: PaintDetailsCitadel = {
   name: 'Deathshroud Clear',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'black',
   hex: '#1C1C1B',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airEidolonPurpleClear: PaintDetails = {
+export const airEidolonPurpleClear: PaintDetailsCitadel = {
   name: 'Eidolon Purple Clear',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'purple',
   hex: '#7D4D99',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airMortarionGreenClear: PaintDetails = {
+export const airMortarionGreenClear: PaintDetailsCitadel = {
   name: 'Mortarion Green Clear',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#00832B',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airPhoenicianPurple: PaintDetails = {
+export const airPhoenicianPurple: PaintDetailsCitadel = {
   name: 'Phoenician Purple',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'purple',
   hex: '#440052',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airPyroclastOrangeClear: PaintDetails = {
+export const airPyroclastOrangeClear: PaintDetailsCitadel = {
   name: 'Pyroclast Orange Clear',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'orange',
   hex: '#ED8022',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airSigismundYellowClear: PaintDetails = {
+export const airSigismundYellowClear: PaintDetailsCitadel = {
   name: 'Sigismund Yellow Clear',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'yellow',
   hex: '#FFE32F',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airNightLordsBlue: PaintDetails = {
+export const airNightLordsBlue: PaintDetailsCitadel = {
   name: 'Night Lords Blue',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'blue',
   hex: '#002B5C',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airDeathKorpsDrab: PaintDetails = {
+export const airDeathKorpsDrab: PaintDetailsCitadel = {
   name: 'Death Korps Drab',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'grey',
   hex: '#3D4539',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airVulkanGreen: PaintDetails = {
+export const airVulkanGreen: PaintDetailsCitadel = {
   name: 'Vulkan Green',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#223C2E',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airCorvusBlack: PaintDetails = {
+export const airCorvusBlack: PaintDetailsCitadel = {
   name: 'Corvus Black',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'black',
   hex: '#171314',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airChemosPurple: PaintDetails = {
+export const airChemosPurple: PaintDetailsCitadel = {
   name: 'Chemos Purple',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'purple',
   hex: '#4F356C',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airTyphonAsh: PaintDetails = {
+export const airTyphonAsh: PaintDetailsCitadel = {
   name: 'Typhon Ash',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'bone',
   hex: '#E4D8C1',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airSonsOfHorusGreen: PaintDetails = {
+export const airSonsOfHorusGreen: PaintDetailsCitadel = {
   name: 'Sons Of Horus Green',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#00545E',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airPhalanxYellow: PaintDetails = {
+export const airPhalanxYellow: PaintDetailsCitadel = {
   name: 'Phalanx Yellow',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'yellow',
   hex: '#FFE200',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const airKakophoniPurple: PaintDetails = {
+export const airKakophoniPurple: PaintDetailsCitadel = {
   name: 'Kakophoni Purple',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'purple',
   hex: '#8869AE',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airNocturneGreen: PaintDetails = {
+export const airNocturneGreen: PaintDetailsCitadel = {
   name: 'Nocturne Green',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#162A29',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airLupercalGreen: PaintDetails = {
+export const airLupercalGreen: PaintDetailsCitadel = {
   name: 'Lupercal Green',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'green',
   hex: '#002C2B',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airGalVorbakRed: PaintDetails = {
+export const airGalVorbakRed: PaintDetailsCitadel = {
   name: 'Gal Vorbak Red',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'red',
   hex: '#4B213C',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airWordBearersRed: PaintDetails = {
+export const airWordBearersRed: PaintDetailsCitadel = {
   name: 'Word Bearers Red',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air'],
   color: 'red',
   hex: '#620104',
   availability: 'discontinued',
   company: 'Citadel',
 };
 
-export const airCastellaxBronze: PaintDetails = {
+export const airCastellaxBronze: PaintDetailsCitadel = {
   name: 'Castellax Bronze',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air', 'metallic'],
   color: 'bronze',
   hex: '#3D0700',
   gradient: [
@@ -702,9 +776,10 @@ export const airCastellaxBronze: PaintDetails = {
   company: 'Citadel',
 };
 
-export const airValdorGold: PaintDetails = {
+export const airValdorGold: PaintDetailsCitadel = {
   name: 'Valdor Gold',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air', 'metallic'],
   color: 'gold',
   hex: '#6D2711',
   gradient: [
@@ -716,9 +791,10 @@ export const airValdorGold: PaintDetails = {
   company: 'Citadel',
 };
 
-export const airIronHandsSteel: PaintDetails = {
+export const airIronHandsSteel: PaintDetailsCitadel = {
   name: 'Iron Hands Steel',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air', 'metallic'],
   color: 'silver',
   hex: '#44423F"',
   gradient: [
@@ -730,9 +806,10 @@ export const airIronHandsSteel: PaintDetails = {
   company: 'Citadel',
 };
 
-export const airGreyKnightsSteel: PaintDetails = {
+export const airGreyKnightsSteel: PaintDetailsCitadel = {
   name: 'Grey Knights Steel',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air', 'metallic'],
   color: 'silver',
   hex: '#465863',
   gradient: [
@@ -744,9 +821,10 @@ export const airGreyKnightsSteel: PaintDetails = {
   company: 'Citadel',
 };
 
-export const airThallaxGold: PaintDetails = {
+export const airThallaxGold: PaintDetailsCitadel = {
   name: 'Thallax Gold',
-  type: 'air',
+  category: 'Citadel Air',
+  type: ['air', 'metallic'],
   color: 'gold',
   hex: '#722A0B',
   gradient: [

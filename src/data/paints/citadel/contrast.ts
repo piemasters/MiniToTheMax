@@ -1,8 +1,9 @@
-import { PaintDetails } from '../../../types';
+import { PaintDetailsCitadel } from '../../../types';
 
-export const contrastIyandenYellow: PaintDetails = {
+export const contrastIyandenYellow: PaintDetailsCitadel = {
   name: 'Iyanden Yellow',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'yellow',
   hex: '#FBC827',
   gradient: [
@@ -13,9 +14,10 @@ export const contrastIyandenYellow: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastGryphHoundOrange: PaintDetails = {
+export const contrastGryphHoundOrange: PaintDetailsCitadel = {
   name: 'Gryph Hound Orange',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'orange',
   hex: '#E96134',
   gradient: [
@@ -26,9 +28,10 @@ export const contrastGryphHoundOrange: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastBloodAngelsRed: PaintDetails = {
+export const contrastBloodAngelsRed: PaintDetailsCitadel = {
   name: 'Blood Angels Red',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'red',
   hex: '#C11519',
   gradient: [
@@ -39,9 +42,10 @@ export const contrastBloodAngelsRed: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastFleshTearersRed: PaintDetails = {
+export const contrastFleshTearersRed: PaintDetailsCitadel = {
   name: 'Flesh Tearers Red',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'red',
   hex: '#880E0B',
   gradient: [
@@ -52,9 +56,10 @@ export const contrastFleshTearersRed: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastVolupusPink: PaintDetails = {
+export const contrastVolupusPink: PaintDetailsCitadel = {
   name: 'Volupus Pink',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'pink',
   hex: '#8F0243',
   gradient: [
@@ -65,9 +70,10 @@ export const contrastVolupusPink: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastShyishPurple: PaintDetails = {
+export const contrastShyishPurple: PaintDetailsCitadel = {
   name: 'Shyish Purple',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'purple',
   hex: '#573F6A',
   gradient: [
@@ -78,9 +84,10 @@ export const contrastShyishPurple: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastMagosPurple: PaintDetails = {
+export const contrastMagosPurple: PaintDetailsCitadel = {
   name: 'Magos Purple',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'purple',
   hex: '#C2A7C3',
   gradient: [
@@ -91,9 +98,10 @@ export const contrastMagosPurple: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastLeviadonBlue: PaintDetails = {
+export const contrastLeviadonBlue: PaintDetailsCitadel = {
   name: 'Leviadon Blue',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'blue',
   hex: '#002D59',
   gradient: [
@@ -104,9 +112,10 @@ export const contrastLeviadonBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastUltramarineBlue: PaintDetails = {
+export const contrastUltramarineBlue: PaintDetailsCitadel = {
   name: 'Ultramarine Blue',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'blue',
   hex: '#294F86',
   gradient: [
@@ -117,9 +126,10 @@ export const contrastUltramarineBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastAkhelianGreen: PaintDetails = {
+export const contrastAkhelianGreen: PaintDetailsCitadel = {
   name: 'Akhelian Green',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'green',
   hex: '#007B9B',
   gradient: [
@@ -130,9 +140,10 @@ export const contrastAkhelianGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastDarkAngelsGreen: PaintDetails = {
+export const contrastDarkAngelsGreen: PaintDetailsCitadel = {
   name: 'Dark Angels Green',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'green',
   hex: '#004E45',
   gradient: [
@@ -143,9 +154,10 @@ export const contrastDarkAngelsGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastNazdregYellow: PaintDetails = {
+export const contrastNazdregYellow: PaintDetailsCitadel = {
   name: 'Nazdreg Yellow',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'yellow',
   hex: '#D99A00',
   gradient: [
@@ -156,9 +168,10 @@ export const contrastNazdregYellow: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastOrkFlesh: PaintDetails = {
+export const contrastOrkFlesh: PaintDetailsCitadel = {
   name: 'Ork Flesh',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'flesh',
   hex: '#00832B',
   gradient: [
@@ -169,9 +182,10 @@ export const contrastOrkFlesh: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastCreedCamo: PaintDetails = {
+export const contrastCreedCamo: PaintDetailsCitadel = {
   name: 'Creed Camo',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'green',
   hex: '#5D9272',
   gradient: [
@@ -182,9 +196,10 @@ export const contrastCreedCamo: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastMilitarumGreen: PaintDetails = {
+export const contrastMilitarumGreen: PaintDetailsCitadel = {
   name: 'Militarum Green',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'green',
   hex: '#989C4D',
   gradient: [
@@ -195,9 +210,10 @@ export const contrastMilitarumGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastAggarosDunes: PaintDetails = {
+export const contrastAggarosDunes: PaintDetailsCitadel = {
   name: 'Aggaros Dunes',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'brown',
   hex: '#D0BF6D',
   gradient: [
@@ -208,9 +224,10 @@ export const contrastAggarosDunes: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastSkeletonHorde: PaintDetails = {
+export const contrastSkeletonHorde: PaintDetailsCitadel = {
   name: 'Skeleton Horde',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'bone',
   hex: '#EBE2C2',
   gradient: [
@@ -221,9 +238,10 @@ export const contrastSkeletonHorde: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastSnakebiteLeather: PaintDetails = {
+export const contrastSnakebiteLeather: PaintDetailsCitadel = {
   name: 'Snakebite Leather',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'brown',
   hex: '#B26B0C',
   gradient: [
@@ -234,9 +252,10 @@ export const contrastSnakebiteLeather: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastGoreGruntaFur: PaintDetails = {
+export const contrastGoreGruntaFur: PaintDetailsCitadel = {
   name: 'Gore Grunta Fur',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'brown',
   hex: '#8F4001',
   gradient: [
@@ -247,9 +266,10 @@ export const contrastGoreGruntaFur: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastWyldwood: PaintDetails = {
+export const contrastWyldwood: PaintDetailsCitadel = {
   name: 'Wyldwood',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'brown',
   hex: '#6A504B',
   gradient: [
@@ -260,9 +280,10 @@ export const contrastWyldwood: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastFyreslayerFlesh: PaintDetails = {
+export const contrastFyreslayerFlesh: PaintDetailsCitadel = {
   name: 'Fyreslayer Flesh',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'flesh',
   hex: '#BD7866',
   gradient: [
@@ -273,9 +294,10 @@ export const contrastFyreslayerFlesh: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastGuillimanFlesh: PaintDetails = {
+export const contrastGuillimanFlesh: PaintDetailsCitadel = {
   name: 'Guilliman Flesh',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'flesh',
   hex: '#D1A194',
   gradient: [
@@ -286,9 +308,10 @@ export const contrastGuillimanFlesh: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastDarkoathFlesh: PaintDetails = {
+export const contrastDarkoathFlesh: PaintDetailsCitadel = {
   name: 'Darkoath Flesh',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'flesh',
   hex: '#D89987',
   gradient: [
@@ -299,9 +322,10 @@ export const contrastDarkoathFlesh: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastApothecaryWhite: PaintDetails = {
+export const contrastApothecaryWhite: PaintDetailsCitadel = {
   name: 'Apothecary White',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'white',
   hex: '#F6FBFF',
   gradient: [
@@ -312,9 +336,10 @@ export const contrastApothecaryWhite: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastGryphChargerGrey: PaintDetails = {
+export const contrastGryphChargerGrey: PaintDetailsCitadel = {
   name: 'Gryph Charger Grey',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'grey',
   hex: '#AAC9DA',
   gradient: [
@@ -325,9 +350,10 @@ export const contrastGryphChargerGrey: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastSpaceWolvesGrey: PaintDetails = {
+export const contrastSpaceWolvesGrey: PaintDetailsCitadel = {
   name: 'Space Wolves Grey',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'grey',
   hex: '#8FADC8',
   gradient: [
@@ -338,9 +364,10 @@ export const contrastSpaceWolvesGrey: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastBasilicanumGrey: PaintDetails = {
+export const contrastBasilicanumGrey: PaintDetailsCitadel = {
   name: 'Basilicanum Grey',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'grey',
   hex: '#989897',
   gradient: [
@@ -351,9 +378,10 @@ export const contrastBasilicanumGrey: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastBlackTemplar: PaintDetails = {
+export const contrastBlackTemplar: PaintDetailsCitadel = {
   name: 'Black Templar',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'black',
   hex: '#6A6A69',
   gradient: [
@@ -364,9 +392,10 @@ export const contrastBlackTemplar: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastTalassarBlue: PaintDetails = {
+export const contrastTalassarBlue: PaintDetailsCitadel = {
   name: 'Talassar Blue',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'blue',
   hex: '#0073C2',
   gradient: [
@@ -377,9 +406,10 @@ export const contrastTalassarBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastWarpLightning: PaintDetails = {
+export const contrastWarpLightning: PaintDetailsCitadel = {
   name: 'Warp Lightning',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'green',
   hex: '#00964E',
   gradient: [
@@ -390,9 +420,10 @@ export const contrastWarpLightning: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastAethermaticBlue: PaintDetails = {
+export const contrastAethermaticBlue: PaintDetailsCitadel = {
   name: 'Aethermatic Blue',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'blue',
   hex: '#82BCC8',
   gradient: [
@@ -403,9 +434,10 @@ export const contrastAethermaticBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastPlaguebearerFlesh: PaintDetails = {
+export const contrastPlaguebearerFlesh: PaintDetailsCitadel = {
   name: 'Plaguebearer Flesh',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'flesh',
   hex: '#C8CEA3',
   gradient: [
@@ -416,9 +448,10 @@ export const contrastPlaguebearerFlesh: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastTerradonTurquoise: PaintDetails = {
+export const contrastTerradonTurquoise: PaintDetailsCitadel = {
   name: 'Terradon Turquoise',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'turquoise',
   hex: '#008DA5',
   gradient: [
@@ -429,9 +462,10 @@ export const contrastTerradonTurquoise: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastCygorBrown: PaintDetails = {
+export const contrastCygorBrown: PaintDetailsCitadel = {
   name: 'Cygor Brown',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'brown',
   hex: '#754A47',
   gradient: [
@@ -443,9 +477,10 @@ export const contrastCygorBrown: PaintDetails = {
 };
 
 /* New Paints */
-export const contrastBadMoonYellow: PaintDetails = {
+export const contrastBadMoonYellow: PaintDetailsCitadel = {
   name: 'Bad Moon Yellow',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'yellow',
   hex: '#FFE100',
   gradient: [
@@ -456,9 +491,10 @@ export const contrastBadMoonYellow: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastImperialFist: PaintDetails = {
+export const contrastImperialFist: PaintDetailsCitadel = {
   name: 'Imperial Fist',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'yellow',
   hex: '#FDBA12',
   gradient: [
@@ -469,9 +505,10 @@ export const contrastImperialFist: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastIronjawzYellow: PaintDetails = {
+export const contrastIronjawzYellow: PaintDetailsCitadel = {
   name: 'Ironjawz Yellow',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'yellow',
   hex: '#FFCF62',
   gradient: [
@@ -482,9 +519,10 @@ export const contrastIronjawzYellow: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastMagmadrothFlame: PaintDetails = {
+export const contrastMagmadrothFlame: PaintDetailsCitadel = {
   name: 'Magmadroth Flame',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'orange',
   hex: '#F26524',
   gradient: [
@@ -495,9 +533,10 @@ export const contrastMagmadrothFlame: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastBaalRed: PaintDetails = {
+export const contrastBaalRed: PaintDetailsCitadel = {
   name: 'Baal Red',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'red',
   hex: '#D51C29',
   gradient: [
@@ -508,9 +547,10 @@ export const contrastBaalRed: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastDoomfireMagenta: PaintDetails = {
+export const contrastDoomfireMagenta: PaintDetailsCitadel = {
   name: 'Doomfire Magenta',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'pink',
   hex: '#EC008C',
   gradient: [
@@ -521,9 +561,10 @@ export const contrastDoomfireMagenta: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastSigvaldBurgundy: PaintDetails = {
+export const contrastSigvaldBurgundy: PaintDetailsCitadel = {
   name: 'Sigvald Burgundy',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'purple',
   hex: '#810054',
   gradient: [
@@ -534,9 +575,10 @@ export const contrastSigvaldBurgundy: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastLuxionPurple: PaintDetails = {
+export const contrastLuxionPurple: PaintDetailsCitadel = {
   name: 'Luxion Purple',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'purple',
   hex: '#431E75',
   gradient: [
@@ -547,9 +589,10 @@ export const contrastLuxionPurple: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastLeviathanPurple: PaintDetails = {
+export const contrastLeviathanPurple: PaintDetailsCitadel = {
   name: 'Leviathan Purple',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'purple',
   hex: '#27004B',
   gradient: [
@@ -560,9 +603,10 @@ export const contrastLeviathanPurple: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastPylarGlacier: PaintDetails = {
+export const contrastPylarGlacier: PaintDetailsCitadel = {
   name: 'Pylar Glacier',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'blue',
   hex: '#74C0EB',
   gradient: [
@@ -573,9 +617,10 @@ export const contrastPylarGlacier: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastFrostheart: PaintDetails = {
+export const contrastFrostheart: PaintDetailsCitadel = {
   name: 'Frostheart',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'blue',
   hex: '#003B54',
   gradient: [
@@ -586,9 +631,10 @@ export const contrastFrostheart: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastAsurmenBlue: PaintDetails = {
+export const contrastAsurmenBlue: PaintDetailsCitadel = {
   name: 'Asurmen Blue',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'blue',
   hex: '#0083CA',
   gradient: [
@@ -599,9 +645,10 @@ export const contrastAsurmenBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastCelestiumBlue: PaintDetails = {
+export const contrastCelestiumBlue: PaintDetailsCitadel = {
   name: 'Celestium Blue',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'blue',
   hex: '#275996',
   gradient: [
@@ -612,9 +659,10 @@ export const contrastCelestiumBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastStormfiend: PaintDetails = {
+export const contrastStormfiend: PaintDetailsCitadel = {
   name: 'Stormfiend',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'blue',
   hex: '#00628F',
   gradient: [
@@ -625,9 +673,10 @@ export const contrastStormfiend: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastKarandrasGreen: PaintDetails = {
+export const contrastKarandrasGreen: PaintDetailsCitadel = {
   name: 'Karandras Green',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'green',
   hex: '#00A850',
   gradient: [
@@ -638,9 +687,10 @@ export const contrastKarandrasGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastStrikingScorpionGreen: PaintDetails = {
+export const contrastStrikingScorpionGreen: PaintDetailsCitadel = {
   name: 'Striking Scorpion Green',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'green',
   hex: '#12B259',
   gradient: [
@@ -651,9 +701,10 @@ export const contrastStrikingScorpionGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastMantisWarriorsGreen: PaintDetails = {
+export const contrastMantisWarriorsGreen: PaintDetailsCitadel = {
   name: 'Mantis Warriors Green',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'green',
   hex: '#8FB15D',
   gradient: [
@@ -664,9 +715,10 @@ export const contrastMantisWarriorsGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastGutrippaFlesh: PaintDetails = {
+export const contrastGutrippaFlesh: PaintDetailsCitadel = {
   name: 'Gutrippa Flesh',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'green',
   hex: '#94B18E',
   gradient: [
@@ -677,9 +729,10 @@ export const contrastGutrippaFlesh: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastHexwraithFlame: PaintDetails = {
+export const contrastHexwraithFlame: PaintDetailsCitadel = {
   name: 'Hexwraith Flame',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'green',
   hex: '#1BB24B',
   gradient: [
@@ -690,9 +743,10 @@ export const contrastHexwraithFlame: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastBriarQueenChill: PaintDetails = {
+export const contrastBriarQueenChill: PaintDetailsCitadel = {
   name: 'Briar Queen Chill',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'blue',
   hex: '#91BDCA',
   gradient: [
@@ -703,9 +757,10 @@ export const contrastBriarQueenChill: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastNighthauntGloom: PaintDetails = {
+export const contrastNighthauntGloom: PaintDetailsCitadel = {
   name: 'Nighthaunt Gloom',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'blue',
   hex: '#4B8289',
   gradient: [
@@ -716,9 +771,10 @@ export const contrastNighthauntGloom: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastGaraghaksSewer: PaintDetails = {
+export const contrastGaraghaksSewer: PaintDetailsCitadel = {
   name: 'Garaghaks Sewer',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'brown',
   hex: '#8D6019',
   gradient: [
@@ -729,9 +785,10 @@ export const contrastGaraghaksSewer: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastKroxigorScales: PaintDetails = {
+export const contrastKroxigorScales: PaintDetailsCitadel = {
   name: 'Kroxigor Scales',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'blue',
   hex: '#09A09A',
   gradient: [
@@ -742,9 +799,10 @@ export const contrastKroxigorScales: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastAeldariEmerald: PaintDetails = {
+export const contrastAeldariEmerald: PaintDetailsCitadel = {
   name: 'Aeldari Emerald',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'green',
   hex: '#008973',
   gradient: [
@@ -755,9 +813,10 @@ export const contrastAeldariEmerald: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastRatlingGrime: PaintDetails = {
+export const contrastRatlingGrime: PaintDetailsCitadel = {
   name: 'Ratling Grime',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'brown',
   hex: '#8E8684',
   gradient: [
@@ -768,9 +827,10 @@ export const contrastRatlingGrime: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastDreadfulVisage: PaintDetails = {
+export const contrastDreadfulVisage: PaintDetailsCitadel = {
   name: 'Dreadful Visage',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'purple',
   hex: '#E4D3DF',
   gradient: [
@@ -781,9 +841,10 @@ export const contrastDreadfulVisage: PaintDetails = {
   company: 'Citadel',
 };
 
-export const contrastBlackLegion: PaintDetails = {
+export const contrastBlackLegion: PaintDetailsCitadel = {
   name: 'Black Legion',
-  type: 'contrast',
+  category: 'Citadel Contrast',
+  type: ['one-coat'],
   color: 'black',
   hex: '#434345',
   gradient: [

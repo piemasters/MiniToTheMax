@@ -1,23 +1,9 @@
-import { PaintDetails } from '../../../types';
+import { PaintDetailsCitadel } from '../../../types';
 
-export enum TechnicalPaintImages {
-  AgrellanBadland = 'AgrellanBadland',
-  AgrellanEarth = 'AgrellanEarth',
-  ArmageddonDunes = 'ArmageddonDunes',
-  ArmageddonDust = 'ArmageddonDust',
-  Astrogranite = 'Astrogranite',
-  AstrograniteDebris = 'AstrograniteDebris',
-  MartianIroncrust = 'MartianIroncrust',
-  MartianIronearth = 'MartianIronearth',
-  MordantEarth = 'MordantEarth',
-  StirlandBattlemire = 'StirlandBattlemire',
-  StirlandMud = 'StirlandMud',
-  ValhallanBlizzard = 'ValhallanBlizzard',
-}
-
-export const technicalBloodForTheBloodGod: PaintDetails = {
+export const technicalBloodForTheBloodGod: PaintDetailsCitadel = {
   name: 'Blood For The Blood God',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'red',
   hex: '#600005',
   gloss: true,
@@ -29,36 +15,40 @@ export const technicalBloodForTheBloodGod: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalNihilakhOxide: PaintDetails = {
+export const technicalNihilakhOxide: PaintDetailsCitadel = {
   name: 'Nihilakh Oxide',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'green',
   hex: '#66B39A',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const technicalNurglesRot: PaintDetails = {
+export const technicalNurglesRot: PaintDetailsCitadel = {
   name: 'Nurgles Rot',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'green',
   hex: '#9D8B16',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const technicalTyphusCorrosion: PaintDetails = {
+export const technicalTyphusCorrosion: PaintDetailsCitadel = {
   name: 'Typhus Corrosion',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'brown',
   hex: '#373A22',
   availability: 'available',
   company: 'Citadel',
 };
 
-export const technicalSpiritstoneRed: PaintDetails = {
+export const technicalSpiritstoneRed: PaintDetailsCitadel = {
   name: 'Spiritstone Red',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'red',
   hex: '#7C1100',
   gloss: true,
@@ -70,9 +60,10 @@ export const technicalSpiritstoneRed: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalSoulstoneBlue: PaintDetails = {
+export const technicalSoulstoneBlue: PaintDetailsCitadel = {
   name: 'Soulstone Blue',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'blue',
   hex: '#01458F',
   gloss: true,
@@ -84,9 +75,10 @@ export const technicalSoulstoneBlue: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalWaystoneGreen: PaintDetails = {
+export const technicalWaystoneGreen: PaintDetailsCitadel = {
   name: 'Waystone Green',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'green',
   hex: '#007958',
   gloss: true,
@@ -98,12 +90,13 @@ export const technicalWaystoneGreen: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalMordantEarth: PaintDetails = {
+export const technicalMordantEarth: PaintDetailsCitadel = {
   name: 'Mordant Earth',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'black',
   hex: '#4B4849',
-  img: TechnicalPaintImages.MordantEarth,
+  img: 'MordantEarth',
   gradient: [
     { offset: 0, color: 'rgb(23, 19, 20)' },
     { offset: 100, color: 'rgb(75, 72, 73)' },
@@ -112,12 +105,13 @@ export const technicalMordantEarth: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalAgrellanEarth: PaintDetails = {
+export const technicalAgrellanEarth: PaintDetailsCitadel = {
   name: 'Agrellan Earth',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'brown',
   hex: '#948165',
-  img: TechnicalPaintImages.AgrellanEarth,
+  img: 'AgrellanEarth',
   gradient: [
     { offset: 0, color: 'rgb(179, 158, 128)' },
     { offset: 100, color: 'rgb(148, 129, 101)' },
@@ -126,12 +120,13 @@ export const technicalAgrellanEarth: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalAgrellanBadland: PaintDetails = {
+export const technicalAgrellanBadland: PaintDetailsCitadel = {
   name: 'Agrellan Badland',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'brown',
   hex: '#948165',
-  img: TechnicalPaintImages.AgrellanBadland,
+  img: 'AgrellanBadland',
   gradient: [
     { offset: 0, color: 'rgb(179, 158, 128)' },
     { offset: 100, color: 'rgb(148, 129, 101)' },
@@ -140,12 +135,13 @@ export const technicalAgrellanBadland: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalMartianIronearth: PaintDetails = {
+export const technicalMartianIronearth: PaintDetailsCitadel = {
   name: 'Martian Ironearth',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'red',
   hex: '#9B5041',
-  img: TechnicalPaintImages.MartianIronearth,
+  img: 'MartianIronearth',
   gradient: [
     { offset: 0, color: 'rgb(207, 112, 93)' },
     { offset: 100, color: 'rgb(155, 80, 65)' },
@@ -154,12 +150,13 @@ export const technicalMartianIronearth: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalMartianIroncrust: PaintDetails = {
+export const technicalMartianIroncrust: PaintDetailsCitadel = {
   name: 'Martian Ironcrust',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'red',
   hex: '#9B5041',
-  img: TechnicalPaintImages.MartianIroncrust,
+  img: 'MartianIroncrust',
   gradient: [
     { offset: 0, color: 'rgb(207, 112, 93)' },
     { offset: 100, color: 'rgb(155, 80, 65)' },
@@ -168,12 +165,13 @@ export const technicalMartianIroncrust: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalStirlandMud: PaintDetails = {
+export const technicalStirlandMud: PaintDetailsCitadel = {
   name: 'Stirland Mud',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'brown',
   hex: '#482B00',
-  img: TechnicalPaintImages.StirlandMud,
+  img: 'StirlandMud',
   gradient: [
     { offset: 0, color: 'rgb(112, 73, 13)' },
     { offset: 100, color: 'rgb(72, 43, 0)' },
@@ -182,12 +180,13 @@ export const technicalStirlandMud: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalStirlandBattlemire: PaintDetails = {
+export const technicalStirlandBattlemire: PaintDetailsCitadel = {
   name: 'Stirland Battlemire',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'brown',
   hex: '#482B00',
-  img: TechnicalPaintImages.StirlandBattlemire,
+  img: 'StirlandBattlemire',
   gradient: [
     { offset: 0, color: 'rgb(112, 73, 13)' },
     { offset: 100, color: 'rgb(72, 43, 0)' },
@@ -196,12 +195,13 @@ export const technicalStirlandBattlemire: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalArmageddonDust: PaintDetails = {
+export const technicalArmageddonDust: PaintDetailsCitadel = {
   name: 'Armageddon Dust',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'brown',
   hex: '#D2AD00',
-  img: TechnicalPaintImages.ArmageddonDust,
+  img: 'ArmageddonDust',
   gradient: [
     { offset: 0, color: 'rgb(232, 211, 111)' },
     { offset: 100, color: 'rgb(210, 173, 0)' },
@@ -210,12 +210,13 @@ export const technicalArmageddonDust: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalArmageddonDunes: PaintDetails = {
+export const technicalArmageddonDunes: PaintDetailsCitadel = {
   name: 'Armageddon Dunes',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'brown',
   hex: '#E8D36F',
-  img: TechnicalPaintImages.ArmageddonDunes,
+  img: 'ArmageddonDunes',
   gradient: [
     { offset: 0, color: 'rgb(232, 211, 111)' },
     { offset: 100, color: 'rgb(210, 173, 0)' },
@@ -224,12 +225,13 @@ export const technicalArmageddonDunes: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalAstrogranite: PaintDetails = {
+export const technicalAstrogranite: PaintDetailsCitadel = {
   name: 'Astrogranite',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'grey',
   hex: '#9D9D9D',
-  img: TechnicalPaintImages.Astrogranite,
+  img: 'Astrogranite',
   gradient: [
     { offset: 0, color: 'rgb(157, 157, 157)' },
     { offset: 100, color: 'rgb(118, 118, 117)' },
@@ -238,12 +240,13 @@ export const technicalAstrogranite: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalAstrograniteDebris: PaintDetails = {
+export const technicalAstrograniteDebris: PaintDetailsCitadel = {
   name: 'Astrogranite Debris',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'grey',
   hex: '#9D9D9D',
-  img: TechnicalPaintImages.AstrograniteDebris,
+  img: 'AstrograniteDebris',
   gradient: [
     { offset: 0, color: 'rgb(157, 157, 157)' },
     { offset: 100, color: 'rgb(118, 118, 117)' },
@@ -252,12 +255,13 @@ export const technicalAstrograniteDebris: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalValhallanBlizzard: PaintDetails = {
+export const technicalValhallanBlizzard: PaintDetailsCitadel = {
   name: 'Valhallan Blizzard',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'white',
   hex: '#E1E1E1',
-  img: TechnicalPaintImages.ValhallanBlizzard,
+  img: 'ValhallanBlizzard',
   gradient: [
     { offset: 0, color: 'rgb(225, 225, 225)' },
     { offset: 100, color: 'rgb(225, 225, 225)' },
@@ -266,9 +270,10 @@ export const technicalValhallanBlizzard: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalLahmianMedium: PaintDetails = {
+export const technicalLahmianMedium: PaintDetailsCitadel = {
   name: 'Lahmian Medium',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'clear',
   hex: '#E1E1E1',
   stroke: '#6b6b6b',
@@ -280,9 +285,10 @@ export const technicalLahmianMedium: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalArdcoat: PaintDetails = {
+export const technicalArdcoat: PaintDetailsCitadel = {
   name: 'Ardcoat',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'clear',
   hex: '#E1E1E1',
   stroke: '#6b6b6b',
@@ -294,9 +300,10 @@ export const technicalArdcoat: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalContrastMedium: PaintDetails = {
+export const technicalContrastMedium: PaintDetailsCitadel = {
   name: 'Contrast Medium',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'clear',
   hex: '#E1E1E1',
   stroke: '#6b6b6b',
@@ -308,9 +315,10 @@ export const technicalContrastMedium: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalStormShield: PaintDetails = {
+export const technicalStormShield: PaintDetailsCitadel = {
   name: 'StormShield',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'clear',
   hex: '#E1E1E1',
   stroke: '#6b6b6b',
@@ -322,9 +330,10 @@ export const technicalStormShield: PaintDetails = {
   company: 'Citadel',
 };
 
-export const technicalTesseractGlow: PaintDetails = {
+export const technicalTesseractGlow: PaintDetailsCitadel = {
   name: 'Tesseract Glow',
-  type: 'technical',
+  category: 'Citadel Technical',
+  type: ['technical'],
   color: 'green',
   hex: '#49AD33',
   availability: 'available',
