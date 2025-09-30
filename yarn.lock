@@ -4956,36 +4956,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/environment-jsdom-abstract@npm:30.1.2":
-  version: 30.1.2
-  resolution: "@jest/environment-jsdom-abstract@npm:30.1.2"
+"@jest/environment-jsdom-abstract@npm:30.2.0":
+  version: 30.2.0
+  resolution: "@jest/environment-jsdom-abstract@npm:30.2.0"
   dependencies:
-    "@jest/environment": 30.1.2
-    "@jest/fake-timers": 30.1.2
-    "@jest/types": 30.0.5
+    "@jest/environment": 30.2.0
+    "@jest/fake-timers": 30.2.0
+    "@jest/types": 30.2.0
     "@types/jsdom": ^21.1.7
     "@types/node": "*"
-    jest-mock: 30.0.5
-    jest-util: 30.0.5
+    jest-mock: 30.2.0
+    jest-util: 30.2.0
   peerDependencies:
     canvas: ^3.0.0
     jsdom: "*"
   peerDependenciesMeta:
     canvas:
       optional: true
-  checksum: 872f4d79b9aa473c4e161714a9fb09abb7458c82e4ff7494af0fd74dc1ae8c78e6c5a81fe3d666f806d683affc89f77b083bf127c26edc5790c3143e7a5898d2
-  languageName: node
-  linkType: hard
-
-"@jest/environment@npm:30.1.2":
-  version: 30.1.2
-  resolution: "@jest/environment@npm:30.1.2"
-  dependencies:
-    "@jest/fake-timers": 30.1.2
-    "@jest/types": 30.0.5
-    "@types/node": "*"
-    jest-mock: 30.0.5
-  checksum: cc14648ec0ec7fd1b2a0f0e261bb70c4fd320cdf00962a27eb2bff5158b1302665e58aa91c0fcda7d465e952df6b4e55eb6be87e5325253ba0379d076ed88e89
+  checksum: f91f3ee1aa2faab194a7ad97ca0d7f41ff6708af5674c4513bc8fe69daa7a77cdd143e8a7200137e7cd232b3704f6f923afbd71f73c19a25b23219944f3c085b
   languageName: node
   linkType: hard
 
@@ -5026,20 +5014,6 @@ __metadata:
     expect: 30.2.0
     jest-snapshot: 30.2.0
   checksum: f75e6753abd9aeef56ff01025a79d9ca7faf07c9e68da0b89b2317b8c552589316dd07cd61722d148d73d741f3d84121ea031737971cdac36559b1805fc50748
-  languageName: node
-  linkType: hard
-
-"@jest/fake-timers@npm:30.1.2":
-  version: 30.1.2
-  resolution: "@jest/fake-timers@npm:30.1.2"
-  dependencies:
-    "@jest/types": 30.0.5
-    "@sinonjs/fake-timers": ^13.0.0
-    "@types/node": "*"
-    jest-message-util: 30.1.0
-    jest-mock: 30.0.5
-    jest-util: 30.0.5
-  checksum: 12077a48c2ae11519be1d9e0366ff23501d3119057b560deab3139af47c0234c927cf14ec1ba686f6c624c4c39454dc7b30fd7e8c40ae1a6275538281fb603c0
   languageName: node
   linkType: hard
 
@@ -17813,12 +17787,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-environment-jsdom@npm:30.1.2":
-  version: 30.1.2
-  resolution: "jest-environment-jsdom@npm:30.1.2"
+"jest-environment-jsdom@npm:30.2.0":
+  version: 30.2.0
+  resolution: "jest-environment-jsdom@npm:30.2.0"
   dependencies:
-    "@jest/environment": 30.1.2
-    "@jest/environment-jsdom-abstract": 30.1.2
+    "@jest/environment": 30.2.0
+    "@jest/environment-jsdom-abstract": 30.2.0
     "@types/jsdom": ^21.1.7
     "@types/node": "*"
     jsdom: ^26.1.0
@@ -17827,7 +17801,7 @@ __metadata:
   peerDependenciesMeta:
     canvas:
       optional: true
-  checksum: 8a3e1674228452ba1746418fbc25d4f3c06546811e2f9d9cbc4586e0af8be8a45137ba2fc4d6b946ebe2a903109540ba7c009b1ea937a434b3a915dff4c2d3a3
+  checksum: bb3768b7efc2eefb81b9deb1e23898cc74e4813d6d54872ed40d830eefc08c619eb0b2817f0af5d52061e0beb16681e8384d660a2aee4919e91349195ecb2904
   languageName: node
   linkType: hard
 
@@ -20348,7 +20322,7 @@ __metadata:
     gsap: 3.13.0
     identity-obj-proxy: 3.0.0
     jest: 30.2.0
-    jest-environment-jsdom: 30.1.2
+    jest-environment-jsdom: 30.2.0
     lodash.kebabcase: 4.1.1
     photoswipe: 5.4.4
     postcss: 8.5.6
