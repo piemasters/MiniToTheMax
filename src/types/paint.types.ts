@@ -18,7 +18,7 @@ export const VallejoPaintCategories = [
   'Vallejo Game Color',
   'Vallejo Model Color',
   'Vallejo Liquid Metal',
-  'VallejoModel Air',
+  'Vallejo Model Air',
   'Vallejo Metal Color',
   'Vallejo Game Air',
   'Vallejo Xpress Color',

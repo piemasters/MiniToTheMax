@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { ReactNode, StrictMode, useMemo, useState } from 'react';
 
 import Layout from '../layouts/layout';
 import { Paint, StatefulSeo as Seo } from '../components';
@@ -24,26 +24,6 @@ import { textToId } from '../util/textToId';
 export const Paints = (): React.ReactNode => {
   const allPaints = useMemo(() => getAllSortedPaints(), []);
   const [filteredPaints, setFilteredPaints] = useState([...allPaints]);
-
-  const names = allPaints.map(
-    (paint) =>
-      `${textToId(paint.company)}_${textToId(paint.name)}_${textToId(paint.category)}`
-  );
-
-  const uniq = names
-    .map((name) => {
-      return {
-        count: 1,
-        name: name,
-      };
-    })
-    .reduce((result, b) => {
-      result[b.name] = (result[b.name] || 0) + b.count;
-
-      return result;
-    }, {});
-  const duplicates = Object.keys(uniq).filter((a) => uniq[a] > 1);
-  console.log('duplicates', duplicates);
 
   const [allFilters, setAllFilters] = useState<AllPaintFilters>(
     useMemo(
@@ -82,130 +62,180 @@ export const Paints = (): React.ReactNode => {
     setFilteredPaints(togglePaints(updatedFilters));
   };
 
-  const filterElements = (filters: PaintFilters, type: keyof PaintDetails) => {
-    const groupedCategories = useMemo(() => {
-      if (type === 'category') {
-        const citadelCategories: Record<string, boolean> = {};
-        const vallejoCategories: Record<string, boolean> = {};
-        Object.entries(filters).forEach(([key, value]) => {
-          if (key.includes('Citadel')) {
-            citadelCategories[key] = value;
-          } else if (key.includes('Vallejo')) {
-            vallejoCategories[key] = value;
-          }
-        });
-        return { citadelCategories, vallejoCategories };
-      }
-      return null;
-    }, [filters, type]);
-
-    const getMatchCount = (filterKey: string): number => {
-      return filteredPaints.filter((paint) => {
-        const paintValue = paint[type];
-        if (Array.isArray(paintValue)) {
-          return paintValue.includes(filterKey as PaintType & PaintGradient);
-        }
-        return paintValue === filterKey;
-      }).length;
-    };
-
-    const renderFilters = (
-      filterGroup: Record<string, boolean>,
-      label: string
-    ) => (
-      <>
-        <div className="w-full py-1 text-sm font-bold">{label}</div>
-        {Object.entries(filterGroup).map(([key, value]) => (
-          <div
-            className="flex items-center justify-between w-40 px-2 text-sm"
-            key={key}
-          >
-            <label className="flex items-center gap-2">
-              <input
-                name={key}
-                checked={value}
-                type="checkbox"
-                onChange={() => updateFilter(type, key)}
-              />
-              {key.replace(/\b\w/g, (l) => l.toUpperCase()).slice(label.length)}
-            </label>
-            <span className="text-xs text-gray-400">
-              ({getMatchCount(key)})
-            </span>
-          </div>
-        ))}
-      </>
-    );
-
-    const filtersJsx = groupedCategories
-      ? [
-          renderFilters(groupedCategories.citadelCategories, 'Citadel'),
-          renderFilters(groupedCategories.vallejoCategories, 'Vallejo'),
-        ]
-      : Object.entries(filters).map(([key, value]) => (
-          <div
-            className="flex items-center justify-between px-2 text-sm w-36"
-            key={key}
-          >
-            <label className="flex items-center gap-2">
-              <input
-                name={key}
-                checked={value}
-                type="checkbox"
-                onChange={() => updateFilter(type, key)}
-              />
-              {key.replace(/\b\w/g, (l) => l.toUpperCase())}
-            </label>
-            <span className="text-xs text-gray-400">
-              ({getMatchCount(key)})
-            </span>
-          </div>
-        ));
-
-    return (
-      <div>
-        <h3>{type.replace(/\b\w/g, (l) => l.toUpperCase())}</h3>
-        <label className="flex items-center gap-2 mb-2 text-xs font-bold">
-          <input
-            checked={
-              !Object.keys(allFilters[type]).every((k) => !allFilters[type][k])
-            }
-            type="checkbox"
-            onChange={() => toggleAll(allFilters[type], type)}
-          />
-          Toggle All
-        </label>
-        <div className="flex flex-row flex-wrap w-full mb-4">{filtersJsx}</div>
-        <hr />
-      </div>
-    );
-  };
-
-  const allFilterElements = () => (
-    <div>
-      {Object.entries(allFilters).map(([key, value]) => (
-        <div key={key}>{filterElements(value, key as keyof PaintDetails)}</div>
-      ))}
-    </div>
-  );
-
   return (
-    <Layout>
-      <h1>Paints ({filteredPaints.length})</h1>
-      <hr />
-      {allFilterElements()}
-      <br />
-      {filteredPaints.map((paint: PaintDetails) => (
-        <Paint
-          paint={paint}
-          key={`${textToId(paint.company)}_${textToId(paint.name)}_${textToId(paint.category)}`}
-          data-testid={`${textToId(paint.company)}_${textToId(paint.name)}_${textToId(paint.category)}`}
-        />
-      ))}
-    </Layout>
+    <StrictMode>
+      <Layout>
+        <h1>Paints ({filteredPaints.length})</h1>
+        <hr />
+        {Object.entries(allFilters).map(([key, value]) => (
+          <FilterGroup
+            key={key}
+            filters={value}
+            filteredPaints={filteredPaints}
+            type={key as keyof PaintDetails}
+            checked={
+              !Object.keys(allFilters[key]).every((k) => !allFilters[key][k])
+            }
+            updateFilter={updateFilter}
+            toggleAll={() => toggleAll(allFilters[key], key)}
+          />
+        ))}
+        <br />
+        {filteredPaints.map((paint: PaintDetails) => (
+          <Paint
+            paint={paint}
+            key={`${textToId(paint.company)}_${textToId(paint.name)}_${textToId(paint.category)}`}
+            data-testid={`${textToId(paint.company)}_${textToId(paint.name)}_${textToId(paint.category)}`}
+          />
+        ))}
+      </Layout>
+    </StrictMode>
   );
 };
 
 export default Paints;
+
+const FilterGroup = ({
+  filters,
+  filteredPaints,
+  type,
+  checked,
+  updateFilter,
+  toggleAll,
+}: {
+  filters: PaintFilters;
+  filteredPaints: PaintDetails[];
+  type: keyof PaintDetails;
+  checked?: boolean;
+  updateFilter: (type: string, field: string) => void;
+  toggleAll: () => void;
+}) => {
+  const groupedCategories = useMemo(() => {
+    if (type === 'category') {
+      return Object.entries(filters).reduce(
+        (groups, [key, value]) => {
+          if (key.includes('Citadel')) {
+            groups.citadel[key] = value;
+          } else if (key.includes('Vallejo')) {
+            groups.vallejo[key] = value;
+          }
+          return groups;
+        },
+        { citadel: {}, vallejo: {} } as Record<
+          'citadel' | 'vallejo',
+          Record<string, boolean>
+        >
+      );
+    }
+    return null;
+  }, [filters, type]);
+
+  return (
+    <div
+      data-testid={`filter-group-${textToId(type.replace(/\b\w/g, (l) => l.toUpperCase()))}`}
+      className=""
+    >
+      <h3>{type.replace(/\b\w/g, (l) => l.toUpperCase())}</h3>
+      <label className="flex items-center gap-2 mb-2 text-xs font-bold">
+        <input checked={checked} type="checkbox" onChange={toggleAll} />
+        Toggle All
+      </label>
+      <div className="flex flex-row flex-wrap w-full mb-4">
+        {groupedCategories ? (
+          <>
+            <FilterSubGroup
+              filterGroup={groupedCategories.citadel}
+              label="Citadel"
+              type={type}
+              filteredPaints={filteredPaints}
+              updateFilter={updateFilter}
+            />
+            <FilterSubGroup
+              filterGroup={groupedCategories.vallejo}
+              label="Vallejo"
+              type={type}
+              filteredPaints={filteredPaints}
+              updateFilter={updateFilter}
+            />
+          </>
+        ) : (
+          <FilterSubGroup
+            filterGroup={filters}
+            type={type}
+            updateFilter={updateFilter}
+            filteredPaints={filteredPaints}
+          />
+        )}
+      </div>
+      <hr />
+    </div>
+  );
+};
+
+const FilterSubGroup = ({
+  filterGroup,
+  label,
+  type,
+  filteredPaints,
+  updateFilter,
+}: {
+  filterGroup: Record<string, boolean>;
+  label?: string;
+  type: keyof PaintDetails;
+  filteredPaints: PaintDetails[];
+  updateFilter: (type: string, field: string) => void;
+}) => {
+  return (
+    <>
+      {label && <div className="w-full py-1 text-sm font-bold">{label}</div>}
+      {Object.entries(filterGroup).map(([key, value]) => {
+        return (
+          <Filter
+            key={`filter_${textToId(key)}`}
+            name={label ? key.replace(label, '').trimStart() : key}
+            value={value}
+            type={type}
+            toggle={() => updateFilter(type, key)}
+            count={
+              filteredPaints.filter((paint) => {
+                const paintValue = paint[type];
+                return Array.isArray(paintValue)
+                  ? paintValue.includes(key as PaintType & PaintGradient)
+                  : paintValue === key;
+              }).length
+            }
+          />
+        );
+      })}
+    </>
+  );
+};
+
+const Filter = ({
+  name,
+  value,
+  type,
+  toggle,
+  count,
+}: {
+  name: string;
+  value: boolean;
+  type: keyof PaintDetails;
+  toggle: () => void;
+  count: number;
+}) => {
+  return (
+    <div
+      data-testid={`filter_${textToId(name)}`}
+      className="flex items-center justify-between px-2 text-sm border-r w-36"
+    >
+      <label className="flex items-center gap-2">
+        <input name={name} checked={value} type="checkbox" onChange={toggle} />
+        {name.replace(/\b\w/g, (l) => l.toUpperCase())}
+      </label>
+      <span className="text-xs text-gray-400">({count})</span>
+    </div>
+  );
+};
 
 export const Head = () => <Seo title={'Paints'} pathname={'/paints'} />;
