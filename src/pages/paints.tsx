@@ -1,14 +1,15 @@
-import React, { ReactNode, StrictMode, useMemo, useState } from 'react';
+import React, { StrictMode, useMemo, useState } from 'react';
 
 import Layout from '../layouts/layout';
 import { Paint, StatefulSeo as Seo } from '../components';
 
-import type {
-  AllPaintFilters,
-  PaintDetails,
-  PaintFilters,
-  PaintGradient,
-  PaintType,
+import {
+  PaintCompanies,
+  type AllPaintFilters,
+  type PaintDetails,
+  type PaintFilters,
+  type PaintGradient,
+  type PaintType,
 } from '../types';
 import {
   availabilityFilters,
@@ -20,6 +21,7 @@ import {
 import { getAllSortedPaints } from '../util/getAllSortedPaints';
 import { togglePaints } from '../util/togglePaints';
 import { textToId } from '../util/textToId';
+import { clsx } from '../util/clsx';
 
 export const Paints = (): React.ReactNode => {
   const allPaints = useMemo(() => getAllSortedPaints(), []);
@@ -81,13 +83,15 @@ export const Paints = (): React.ReactNode => {
           />
         ))}
         <br />
-        {filteredPaints.map((paint: PaintDetails) => (
-          <Paint
-            paint={paint}
-            key={`${textToId(paint.company)}_${textToId(paint.name)}_${textToId(paint.category)}`}
-            data-testid={`${textToId(paint.company)}_${textToId(paint.name)}_${textToId(paint.category)}`}
-          />
-        ))}
+        <div className="grid justify-center w-full grid-cols-6 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12">
+          {filteredPaints.map((paint: PaintDetails) => (
+            <Paint
+              paint={paint}
+              key={`${textToId(paint.company)}_${textToId(paint.name)}_${textToId(paint.category)}`}
+              data-testid={`${textToId(paint.company)}_${textToId(paint.name)}_${textToId(paint.category)}`}
+            />
+          ))}
+        </div>
       </Layout>
     </StrictMode>
   );
@@ -110,21 +114,24 @@ const FilterGroup = ({
   updateFilter: (type: string, field: string) => void;
   toggleAll: () => void;
 }) => {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
   const groupedCategories = useMemo(() => {
     if (type === 'category') {
       return Object.entries(filters).reduce(
         (groups, [key, value]) => {
-          if (key.includes('Citadel')) {
-            groups.citadel[key] = value;
-          } else if (key.includes('Vallejo')) {
-            groups.vallejo[key] = value;
+          const companyName = PaintCompanies.find((company) =>
+            key.startsWith(company)
+          );
+          if (companyName) {
+            if (!groups[companyName]) {
+              groups[companyName] = {};
+            }
+            groups[companyName][key] = value;
           }
           return groups;
         },
-        { citadel: {}, vallejo: {} } as Record<
-          'citadel' | 'vallejo',
-          Record<string, boolean>
-        >
+        {} as Record<string, Record<string, boolean>>
       );
     }
     return null;
@@ -133,101 +140,120 @@ const FilterGroup = ({
   return (
     <div
       data-testid={`filter-group-${textToId(type.replace(/\b\w/g, (l) => l.toUpperCase()))}`}
-      className=""
+      className="py-2 border-b"
     >
-      <h3>{type.replace(/\b\w/g, (l) => l.toUpperCase())}</h3>
-      <label className="flex items-center gap-2 mb-2 text-xs font-bold">
-        <input checked={checked} type="checkbox" onChange={toggleAll} />
-        Toggle All
-      </label>
-      <div className="flex flex-row flex-wrap w-full mb-4">
-        {groupedCategories ? (
-          <>
-            <FilterSubGroup
-              filterGroup={groupedCategories.citadel}
-              label="Citadel"
-              type={type}
-              filteredPaints={filteredPaints}
-              updateFilter={updateFilter}
-            />
-            <FilterSubGroup
-              filterGroup={groupedCategories.vallejo}
-              label="Vallejo"
-              type={type}
-              filteredPaints={filteredPaints}
-              updateFilter={updateFilter}
-            />
-          </>
-        ) : (
-          <FilterSubGroup
-            filterGroup={filters}
-            type={type}
-            updateFilter={updateFilter}
-            filteredPaints={filteredPaints}
-          />
-        )}
+      <div
+        className="flex items-center content-center justify-between px-2 py-3 cursor-pointer hover:bg-gray-50"
+        role="button"
+        tabIndex={0}
+        onClick={() => setIsCollapsed(!isCollapsed)}
+        onKeyDown={(e) =>
+          (e.key === 'Enter' || e.key === ' ') &&
+          setIsCollapsed((prev) => !prev)
+        }
+        aria-pressed={isCollapsed}
+      >
+        <h3 className="!m-0">
+          {type.replace(/\b\w/g, (l) => l.toUpperCase())}
+        </h3>
+        <div
+          className={clsx(
+            isCollapsed ? 'border-b-2 border-r-2' : 'border-t-2 border-l-2',
+            'w-2 h-2 transform rotate-45 border-gray-600'
+          )}
+        />
       </div>
-      <hr />
+      {!isCollapsed && (
+        <div className="p-2">
+          <label className="flex items-center gap-2 mb-2 text-xs font-bold">
+            <input checked={checked} type="checkbox" onChange={toggleAll} />
+            Toggle All
+          </label>
+          <div className="w-full">
+            {groupedCategories ? (
+              Object.entries(groupedCategories).map(
+                ([company, filterGroup]) => (
+                  <div key={`filter_group_${textToId(company)}`}>
+                    {company && (
+                      <div className="w-full py-1 text-sm font-bold">
+                        {company}
+                      </div>
+                    )}
+                    <div className="grid w-full grid-cols-2 mb-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
+                      {Object.entries(filterGroup).map(([key, value]) => {
+                        return (
+                          <Filter
+                            key={`filter_${textToId(key)}`}
+                            name={
+                              company
+                                ? key.replace(company, '').trimStart()
+                                : key
+                            }
+                            value={value}
+                            toggle={() => updateFilter(type, key)}
+                            count={
+                              filteredPaints.filter((paint) => {
+                                const paintValue = paint[type];
+                                return Array.isArray(paintValue)
+                                  ? paintValue.includes(
+                                      key as PaintType & PaintGradient
+                                    )
+                                  : paintValue === key;
+                              }).length
+                            }
+                          />
+                        );
+                      })}
+                    </div>
+                  </div>
+                )
+              )
+            ) : (
+              <div className="grid w-full grid-cols-2 mb-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
+                {Object.entries(filters).map(([key, value]) => {
+                  return (
+                    <Filter
+                      key={`filter_${textToId(key)}`}
+                      name={key}
+                      value={value}
+                      toggle={() => updateFilter(type, key)}
+                      count={
+                        filteredPaints.filter((paint) => {
+                          const paintValue = paint[type];
+                          return Array.isArray(paintValue)
+                            ? paintValue.includes(
+                                key as PaintType & PaintGradient
+                              )
+                            : paintValue === key;
+                        }).length
+                      }
+                    />
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
-  );
-};
-
-const FilterSubGroup = ({
-  filterGroup,
-  label,
-  type,
-  filteredPaints,
-  updateFilter,
-}: {
-  filterGroup: Record<string, boolean>;
-  label?: string;
-  type: keyof PaintDetails;
-  filteredPaints: PaintDetails[];
-  updateFilter: (type: string, field: string) => void;
-}) => {
-  return (
-    <>
-      {label && <div className="w-full py-1 text-sm font-bold">{label}</div>}
-      {Object.entries(filterGroup).map(([key, value]) => {
-        return (
-          <Filter
-            key={`filter_${textToId(key)}`}
-            name={label ? key.replace(label, '').trimStart() : key}
-            value={value}
-            type={type}
-            toggle={() => updateFilter(type, key)}
-            count={
-              filteredPaints.filter((paint) => {
-                const paintValue = paint[type];
-                return Array.isArray(paintValue)
-                  ? paintValue.includes(key as PaintType & PaintGradient)
-                  : paintValue === key;
-              }).length
-            }
-          />
-        );
-      })}
-    </>
   );
 };
 
 const Filter = ({
   name,
   value,
-  type,
   toggle,
   count,
 }: {
   name: string;
   value: boolean;
-  type: keyof PaintDetails;
   toggle: () => void;
   count: number;
 }) => {
   return (
     <div
       data-testid={`filter_${textToId(name)}`}
-      className="flex items-center justify-between px-2 text-sm border-r w-36"
+      className="flex items-center justify-between w-full px-2 text-sm border-r"
     >
       <label className="flex items-center gap-2">
         <input name={name} checked={value} type="checkbox" onChange={toggle} />
