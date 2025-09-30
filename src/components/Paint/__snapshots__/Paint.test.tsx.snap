@@ -4,7 +4,7 @@ exports[`Paint renders correctly 1`] = `
 <div>
   <div
     class="inline-block m-1 w-[60px]"
-    data-testid="paint"
+    data-testid="paint_citadel_retributor_armour_citadel_base"
   >
     <div
       class="flex flex-col justify-center"
@@ -20,7 +20,7 @@ exports[`Paint renders correctly 1`] = `
         >
           <path
             d="M34.9927 3.31021C34.0377 1.87791 29.0583 0.923096 24.4199 0.923096C19.7814 0.923096 16.0844 2.00071 14.3927 3.31021C8.73112 4.94709 5.1841 8.56187 4.63841 11.5628C4.09271 14.5638 0 46.0055 0 48.7337C0 51.4618 4.50198 61.6923 25.3066 61.6923C46.1112 61.6923 49.9311 51.3254 49.9993 48.7337C50.0675 46.142 45.0198 10.7444 45.0198 10.7444C44.2695 5.76553 35.6748 3.37842 34.9927 3.31021Z"
-            fill="url(#base_gradient_89571D)"
+            fill="url(#citadel_base_gradient_89571D)"
           />
           <defs>
             <radialgradient
@@ -28,7 +28,7 @@ exports[`Paint renders correctly 1`] = `
               cy="0"
               gradientTransform="translate(25 32) scale(39)"
               gradientUnits="userSpaceOnUse"
-              id="base_gradient_89571D"
+              id="citadel_base_gradient_89571D"
               r="1"
             >
               <stop

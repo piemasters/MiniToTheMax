@@ -3,7 +3,7 @@ import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
 import { PageLink } from '../PageLink';
 import { CoverImage } from '../CoverImage';
-import { removeCategoryName } from '../../util';
+import { removeCategoryName } from '../../util/removeCategoryName';
 
 export interface CoverCategoryProps {
   slug: string;

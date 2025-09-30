@@ -1,8 +1,6 @@
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
 import { AllMdx, MdxGroupConnection, MdxNode, Site } from './base.types';
-import { TechnicalPaintImages } from '../data/paints/citadel/technical';
-
 export interface Posts {
   posts: AllMdx;
 }
@@ -80,94 +78,6 @@ export enum BadgeNames {
   build = 'build',
   battleReports = 'battleReports',
   reviews = 'reviews',
-}
-
-export interface PaintGradient {
-  offset: number;
-  color: string;
-  opacity?: number;
-}
-export type PaintCompany = 'Citadel' | 'Vallejo';
-export type PaintColors =
-  | 'black'
-  | 'blue'
-  | 'bone'
-  | 'brass'
-  | 'bronze'
-  | 'brown'
-  | 'clear'
-  | 'copper'
-  | 'flesh'
-  | 'gold'
-  | 'green'
-  | 'grey'
-  | 'orange'
-  | 'pink'
-  | 'purple'
-  | 'red'
-  | 'silver'
-  | 'turquoise'
-  | 'white'
-  | 'yellow';
-
-export interface PaintDetails {
-  name: string;
-  type: string | string[];
-  color: PaintColors;
-  hex: string;
-  gradient?: PaintGradient[];
-  availability: string;
-  company: string;
-  number?: string;
-  category?: string;
-  stroke?: string;
-  gloss?: boolean;
-  img?: string;
-}
-
-type CitadelPaintType =
-  | 'air'
-  | 'base'
-  | 'contrast'
-  | 'dry'
-  | 'layer'
-  | 'metallic'
-  | 'shade'
-  | 'spray'
-  | 'technical';
-export interface PaintDetailsCitadel extends PaintDetails {
-  type: CitadelPaintType | CitadelPaintType[];
-  img?: TechnicalPaintImages;
-  company: 'Citadel';
-  category: 'Citadel All';
-}
-
-type VallejoPaintType =
-  | 'layer' // default
-  | 'shade' // wash
-  | 'technical' // special fx
-  | 'contrast'
-  | 'ink'
-  | 'fluo'
-  | 'metallic';
-export interface PaintDetailsVallejo extends PaintDetails {
-  type: VallejoPaintType | VallejoPaintType[];
-  company: 'Vallejo';
-  number: string;
-  category:
-    | 'Vallejo Game Color'
-    | 'Vallejo Model Color'
-    | 'Vallejo Liquid Metal'
-    | 'VallejoModel Air'
-    | 'Vallejo Metal Color'
-    | 'Vallejo Game Air'
-    | 'Vallejo Xpress Color';
-}
-
-// export type PaintDetails = PaintDetailsCitadel | PaintDetailsVallejo;
-
-export interface PaintDetailsComponent extends Omit<PaintDetails, 'img'> {
-  img?: JSX.Element;
 }
 
 export interface NavLink {

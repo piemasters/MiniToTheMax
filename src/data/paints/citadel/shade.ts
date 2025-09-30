@@ -2,8 +2,8 @@ import { PaintDetailsCitadel } from '../../../types';
 
 export const shadeCarroburgCrimson: PaintDetailsCitadel = {
   name: 'Carroburg Crimson',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'red',
   hex: '#310808',
   gradient: [
@@ -16,8 +16,8 @@ export const shadeCarroburgCrimson: PaintDetailsCitadel = {
 
 export const shadeNulnOil: PaintDetailsCitadel = {
   name: 'Nuln Oil',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'black',
   hex: '#101010',
   gradient: [
@@ -30,8 +30,8 @@ export const shadeNulnOil: PaintDetailsCitadel = {
 
 export const shadeAgraxEarthshade: PaintDetailsCitadel = {
   name: 'Agrax Earthshade',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'brown',
   hex: '#2D190C',
   gradient: [
@@ -44,8 +44,8 @@ export const shadeAgraxEarthshade: PaintDetailsCitadel = {
 
 export const shadeDruchiiViolet: PaintDetailsCitadel = {
   name: 'Druchii Violet',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'purple',
   hex: '#250B27',
   gradient: [
@@ -58,8 +58,8 @@ export const shadeDruchiiViolet: PaintDetailsCitadel = {
 
 export const shadeDrakenhofNightshade: PaintDetailsCitadel = {
   name: 'Drakenhof Nightshade',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'blue',
   hex: '#0A131B',
   gradient: [
@@ -72,8 +72,8 @@ export const shadeDrakenhofNightshade: PaintDetailsCitadel = {
 
 export const shadeCasandoraYellow: PaintDetailsCitadel = {
   name: 'Casandora Yellow',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'yellow',
   hex: '#E78035',
   gradient: [
@@ -86,8 +86,8 @@ export const shadeCasandoraYellow: PaintDetailsCitadel = {
 
 export const shadeBielTanGreen: PaintDetailsCitadel = {
   name: 'Biel Tan Green',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'green',
   hex: '#132E21',
   gradient: [
@@ -100,8 +100,8 @@ export const shadeBielTanGreen: PaintDetailsCitadel = {
 
 export const shadeFueganOrange: PaintDetailsCitadel = {
   name: 'Fuegan Orange',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'orange',
   hex: '#6C1C03',
   gradient: [
@@ -114,8 +114,8 @@ export const shadeFueganOrange: PaintDetailsCitadel = {
 
 export const shadeAthonianCamoshade: PaintDetailsCitadel = {
   name: 'Athonian Camoshade',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'green',
   hex: '#1C1C10',
   gradient: [
@@ -128,8 +128,8 @@ export const shadeAthonianCamoshade: PaintDetailsCitadel = {
 
 export const shadeCoeliaGreenshade: PaintDetailsCitadel = {
   name: 'Coelia Greenshade',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'green',
   hex: '#113431',
   gradient: [
@@ -142,8 +142,8 @@ export const shadeCoeliaGreenshade: PaintDetailsCitadel = {
 
 export const shadeSeraphimSepia: PaintDetailsCitadel = {
   name: 'Seraphim Sepia',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'brown',
   hex: '#2E1F08',
   gradient: [
@@ -156,8 +156,8 @@ export const shadeSeraphimSepia: PaintDetailsCitadel = {
 
 export const shadeReiklandFleshshade: PaintDetailsCitadel = {
   name: 'Reikland Fleshshade',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'flesh',
   hex: '#311908',
   gradient: [
@@ -170,8 +170,8 @@ export const shadeReiklandFleshshade: PaintDetailsCitadel = {
 
 export const shadeNulnOilGloss: PaintDetailsCitadel = {
   name: 'Nuln Oil Gloss',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'black',
   hex: '#101010',
   gloss: true,
@@ -185,8 +185,8 @@ export const shadeNulnOilGloss: PaintDetailsCitadel = {
 
 export const shadeAgraxEarthshadeGloss: PaintDetailsCitadel = {
   name: 'Agrax Earthshade Gloss',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'brown',
   hex: '#2D190C',
   gloss: true,
@@ -200,8 +200,8 @@ export const shadeAgraxEarthshadeGloss: PaintDetailsCitadel = {
 
 export const shadeReiklandFleshshadeGloss: PaintDetailsCitadel = {
   name: 'Reikland Fleshshade Gloss',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'flesh',
   hex: '#311908',
   gloss: true,
@@ -215,8 +215,8 @@ export const shadeReiklandFleshshadeGloss: PaintDetailsCitadel = {
 
 export const shadeCryptekArmourshadeGloss: PaintDetailsCitadel = {
   name: 'Cryptek Armourshade Gloss',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'brown',
   hex: '#311908',
   gloss: true,
@@ -231,8 +231,8 @@ export const shadeCryptekArmourshadeGloss: PaintDetailsCitadel = {
 /* New Paints */
 export const shadeBerserkerBloodshade: PaintDetailsCitadel = {
   name: 'Berserker Bloodshade',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'red',
   hex: '#B8083E',
   gloss: false,
@@ -246,8 +246,8 @@ export const shadeBerserkerBloodshade: PaintDetailsCitadel = {
 
 export const shadeTargorRageshade: PaintDetailsCitadel = {
   name: 'Targor Rageshade',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'grey',
   hex: '#614E66',
   gloss: false,
@@ -261,8 +261,8 @@ export const shadeTargorRageshade: PaintDetailsCitadel = {
 
 export const shadeTyranBlue: PaintDetailsCitadel = {
   name: 'Tyran Blue',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'blue',
   hex: '#0083CA',
   gloss: false,
@@ -276,8 +276,8 @@ export const shadeTyranBlue: PaintDetailsCitadel = {
 
 export const shadeKroakGreen: PaintDetailsCitadel = {
   name: 'Kroak Green',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'green',
   hex: '#7DBF92',
   gloss: false,
@@ -291,8 +291,8 @@ export const shadeKroakGreen: PaintDetailsCitadel = {
 
 export const shadePoxwalker: PaintDetailsCitadel = {
   name: 'Poxwalker',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'green',
   hex: '#54989C',
   gloss: false,
@@ -306,8 +306,8 @@ export const shadePoxwalker: PaintDetailsCitadel = {
 
 export const shadeMortarionGrime: PaintDetailsCitadel = {
   name: 'Mortarion Grime',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'yellow',
   hex: '#AFA400',
   gloss: false,
@@ -321,8 +321,8 @@ export const shadeMortarionGrime: PaintDetailsCitadel = {
 
 export const shadeSoulblightGrey: PaintDetailsCitadel = {
   name: 'Soulblight Grey',
-  category: 'Citadel All',
-  type: 'shade',
+  category: 'Citadel Shade',
+  type: ['wash'],
   color: 'grey',
   hex: '#A6A1A5',
   gloss: false,

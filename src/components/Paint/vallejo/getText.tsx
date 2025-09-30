@@ -1,16 +1,13 @@
 import React from 'react';
 
-import { PaintGradient } from '../../../types';
-import { getColorByBgColor } from './getColorByBgColor';
+import { getColorByBgColor } from '../../../util/getColorByBgColor';
 
 export const getText = ({
   category,
   hex,
-  gradient,
 }: {
   category: string;
   hex: string;
-  gradient?: PaintGradient[];
 }) => {
   if (category === 'Vallejo Game Color') {
     return (

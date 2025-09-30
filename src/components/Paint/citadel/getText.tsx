@@ -1,19 +1,18 @@
 import React from 'react';
 
-import { PaintGradient } from '../../../types';
-import { getColorByBgColor } from './getColorByBgColor';
+import type { CitadelPaintCategory, PaintGradient } from '../../../types';
+import { getColorByBgColor } from '../../../util/getColorByBgColor';
 
 export const getText = ({
-  type,
+  category,
   hex,
   gradient,
 }: {
-  type: string | string[];
+  category: CitadelPaintCategory;
   hex: string;
   gradient?: PaintGradient[];
 }) => {
-  const paintType = Array.isArray(type) ? type[0] : type;
-  if (paintType === 'dry') {
+  if (category === 'Citadel Dry') {
     return (
       <g
         transform="translate(16 48), scale(.5 .5)"
@@ -29,7 +28,7 @@ export const getText = ({
         </defs>
       </g>
     );
-  } else if (paintType === 'air') {
+  } else if (category === 'Citadel Air') {
     return (
       <g
         transform="translate(16 48), scale(.5 .5)"

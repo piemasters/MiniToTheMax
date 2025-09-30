@@ -1,11 +1,4 @@
-import React, { FC } from 'react';
-
-import { PaintDetailsCitadel } from '../../../types';
-import { getGloss } from './getGloss';
-import { getGradients } from './getGradients';
-import { getShape } from './getShape';
-import { getText } from './getText';
-
+import { CitadelTechnicalPaintImages } from '../../../types';
 import AgrellanBadland from '../../../../content/assets/svg/paints/technicalAgrellanBadland.svg';
 import AgrellanEarth from '../../../../content/assets/svg/paints/technicalAgrellanEarth.svg';
 import ArmageddonDunes from '../../../../content/assets/svg/paints/technicalArmageddonDunes.svg';
@@ -19,7 +12,7 @@ import StirlandBattlemire from '../../../../content/assets/svg/paints/technicalS
 import StirlandMud from '../../../../content/assets/svg/paints/technicalStirlandMud.svg';
 import ValhallanBlizzard from '../../../../content/assets/svg/paints/technicalValhallanBlizzard.svg';
 
-const paintTypes = {
+const paintImages = {
   AgrellanBadland: <AgrellanBadland />,
   AgrellanEarth: <AgrellanEarth />,
   ArmageddonDunes: <ArmageddonDunes />,
@@ -34,30 +27,6 @@ const paintTypes = {
   ValhallanBlizzard: <ValhallanBlizzard />,
 };
 
-export const getSVG: FC<PaintDetailsCitadel> = ({
-  name,
-  type,
-  hex,
-  gradient,
-  stroke,
-  gloss,
-  img,
-}) => {
-  if (img) {
-    return paintTypes[img];
-  } else {
-    return (
-      <svg
-        viewBox="-1 0 52 62"
-        xmlns="http://www.w3.org/2000/svg"
-        height={71}
-        width={57}
-      >
-        {getShape({ gradient, type, hex, stroke })}
-        {getGradients({ gradient, type, hex, name, gloss })}
-        {getGloss({ type, hex, gloss })}
-        {getText({ type, hex, gradient })}
-      </svg>
-    );
-  }
+export const getImage = (name: CitadelTechnicalPaintImages) => {
+  return paintImages[name];
 };
