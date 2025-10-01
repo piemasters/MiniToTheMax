@@ -8,9 +8,11 @@ exports[`Badge renders correctly 1`] = `
   >
     <img
       alt=""
-      class="w-9/12 mx-auto mb-2 opacity-90 hover:opacity-100"
+      class="mx-auto mb-2 opacity-90 hover:opacity-100"
       fetchpriority="high"
+      height="120px"
       src="test-file-stub"
+      width="120px"
     />
     <p
       class="text-center capitalize"

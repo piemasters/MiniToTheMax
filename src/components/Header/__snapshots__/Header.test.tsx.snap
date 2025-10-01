@@ -3,7 +3,7 @@
 exports[`Header renders correctly 1`] = `
 <div>
   <nav
-    class="p-4 mb-8 bg-gray-100"
+    class="p-2 mb-8 bg-gray-100 md:p-4"
     data-testid="nav-header"
   >
     <div
@@ -17,42 +17,43 @@ exports[`Header renders correctly 1`] = `
       >
         <img
           alt="Logo"
+          height="60px"
           src="/static/logo-37f736b45fa7360612c71ff66ce83af8.png"
           width="60px"
         />
         <h1
-          class="mb-0! pl-4!"
+          class="mb-0! pl-4! text-2xl! md:text-3xl! lg:text-4xl! "
         >
           MiniToTheMax
         </h1>
       </a>
       <div
-        class="flex gap-4 pl-12 m-0 list-none"
+        class="flex gap-2 m-0 list-none md:gap-4 md:pl-12"
       >
         <a
           aria-current="page"
-          class="p-2 font-bold text-gray-600 no-underline text-md hover:text-red-700 text-red-700!"
+          class="p-0.5 lg:p-2 font-bold text-gray-600 no-underline text-xs sm:text-sm md:text-md hover:text-red-700 text-red-700!"
           data-testid="page-link"
           href="/"
         >
           Home
         </a>
         <a
-          class="p-2 font-bold text-gray-600 no-underline text-md hover:text-red-700"
+          class="p-0.5 lg:p-2 font-bold text-gray-600 no-underline text-xs sm:text-sm md:text-md hover:text-red-700"
           data-testid="page-link"
           href="/blog"
         >
           Blog
         </a>
         <a
-          class="p-2 font-bold text-gray-600 no-underline text-md hover:text-red-700"
+          class="p-0.5 lg:p-2 font-bold text-gray-600 no-underline text-xs sm:text-sm md:text-md hover:text-red-700"
           data-testid="page-link"
           href="/showcase"
         >
           Showcase
         </a>
         <a
-          class="p-2 font-bold text-gray-600 no-underline text-md hover:text-red-700"
+          class="p-0.5 lg:p-2 font-bold text-gray-600 no-underline text-xs sm:text-sm md:text-md hover:text-red-700"
           data-testid="page-link"
           href="/backlog"
         >

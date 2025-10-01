@@ -1,16 +1,16 @@
 import { CitadelTechnicalPaintImages } from '../../../types';
-import AgrellanBadland from '../../../../content/assets/svg/paints/technicalAgrellanBadland.svg';
-import AgrellanEarth from '../../../../content/assets/svg/paints/technicalAgrellanEarth.svg';
-import ArmageddonDunes from '../../../../content/assets/svg/paints/technicalArmageddonDunes.svg';
-import ArmageddonDust from '../../../../content/assets/svg/paints/technicalArmageddonDust.svg';
-import Astrogranite from '../../../../content/assets/svg/paints/technicalAstrogranite.svg';
-import AstrograniteDebris from '../../../../content/assets/svg/paints/technicalAstrograniteDebris.svg';
-import MartianIroncrust from '../../../../content/assets/svg/paints/technicalMartianIroncrust.svg';
-import MartianIronearth from '../../../../content/assets/svg/paints/technicalMartianIronearth.svg';
-import MordantEarth from '../../../../content/assets/svg/paints/technicalMordantEarth.svg';
-import StirlandBattlemire from '../../../../content/assets/svg/paints/technicalStirlandBattlemire.svg';
-import StirlandMud from '../../../../content/assets/svg/paints/technicalStirlandMud.svg';
-import ValhallanBlizzard from '../../../../content/assets/svg/paints/technicalValhallanBlizzard.svg';
+import AgrellanBadland from '../../../../content/assets/svg/paints/technicalAgrellanBadland.webp';
+import AgrellanEarth from '../../../../content/assets/svg/paints/technicalAgrellanEarth.webp';
+import ArmageddonDunes from '../../../../content/assets/svg/paints/technicalArmageddonDunes.webp';
+import ArmageddonDust from '../../../../content/assets/svg/paints/technicalArmageddonDust.webp';
+import Astrogranite from '../../../../content/assets/svg/paints/technicalAstrogranite.webp';
+import AstrograniteDebris from '../../../../content/assets/svg/paints/technicalAstrograniteDebris.webp';
+import MartianIroncrust from '../../../../content/assets/svg/paints/technicalMartianIroncrust.webp';
+import MartianIronearth from '../../../../content/assets/svg/paints/technicalMartianIronearth.webp';
+import MordantEarth from '../../../../content/assets/svg/paints/technicalMordantEarth.webp';
+import StirlandBattlemire from '../../../../content/assets/svg/paints/technicalStirlandBattlemire.webp';
+import StirlandMud from '../../../../content/assets/svg/paints/technicalStirlandMud.webp';
+import ValhallanBlizzard from '../../../../content/assets/svg/paints/technicalValhallanBlizzard.webp';
 
 const paintImages = {
   AgrellanBadland: <AgrellanBadland />,

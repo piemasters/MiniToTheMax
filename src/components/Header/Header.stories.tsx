@@ -20,7 +20,7 @@ const meta: Meta<typeof Header> = {
       name: 'pages',
       description: 'The hyperlinks to display',
       defaultValue: [],
-      control: { type: 'array' },
+      control: { type: 'object' },
     },
   },
 };
@@ -37,6 +37,7 @@ export const Primary: Story = {
       { name: 'Blog', url: '/blog' },
       { name: 'Showcase', url: '/showcase' },
       { name: 'Backlog', url: '/backlog' },
+      { name: 'Paints', url: '/plaints' },
     ],
   },
 };

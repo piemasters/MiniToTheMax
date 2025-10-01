@@ -14,8 +14,10 @@ export const Badge: FC<BadgeProps> = ({ type }) => {
     <div className="flex flex-col justify-end w-36" data-testid="badge">
       <img
         src={allBadges[type]}
+        height="120px"
+        width="120px"
         alt=""
-        className="w-9/12 mx-auto mb-2 opacity-90 hover:opacity-100"
+        className="mx-auto mb-2 opacity-90 hover:opacity-100"
         fetchPriority="high"
       />
       <p className="text-center capitalize">
