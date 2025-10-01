@@ -1,4 +1,5 @@
 import { CitadelTechnicalPaintImages } from '../../../types';
+
 import AgrellanBadland from '../../../../content/assets/svg/paints/technicalAgrellanBadland.webp';
 import AgrellanEarth from '../../../../content/assets/svg/paints/technicalAgrellanEarth.webp';
 import ArmageddonDunes from '../../../../content/assets/svg/paints/technicalArmageddonDunes.webp';
@@ -9,24 +10,24 @@ import MartianIroncrust from '../../../../content/assets/svg/paints/technicalMar
 import MartianIronearth from '../../../../content/assets/svg/paints/technicalMartianIronearth.webp';
 import MordantEarth from '../../../../content/assets/svg/paints/technicalMordantEarth.webp';
 import StirlandBattlemire from '../../../../content/assets/svg/paints/technicalStirlandBattlemire.webp';
-import StirlandMud from '../../../../content/assets/svg/paints/technicalStirlandMud.webp';
+import StirlandMud from '../../../../content/assets/svg/paints/technicalStirlandMud.svg';
 import ValhallanBlizzard from '../../../../content/assets/svg/paints/technicalValhallanBlizzard.webp';
 
 const paintImages = {
-  AgrellanBadland: <AgrellanBadland />,
-  AgrellanEarth: <AgrellanEarth />,
-  ArmageddonDunes: <ArmageddonDunes />,
-  ArmageddonDust: <ArmageddonDust />,
-  Astrogranite: <Astrogranite />,
-  AstrograniteDebris: <AstrograniteDebris />,
-  MartianIroncrust: <MartianIroncrust />,
-  MartianIronearth: <MartianIronearth />,
-  MordantEarth: <MordantEarth />,
-  StirlandBattlemire: <StirlandBattlemire />,
-  StirlandMud: <StirlandMud />,
-  ValhallanBlizzard: <ValhallanBlizzard />,
+  AgrellanBadland: AgrellanBadland,
+  AgrellanEarth: AgrellanEarth,
+  ArmageddonDunes: ArmageddonDunes,
+  ArmageddonDust: ArmageddonDust,
+  Astrogranite: Astrogranite,
+  AstrograniteDebris: AstrograniteDebris,
+  MartianIroncrust: MartianIroncrust,
+  MartianIronearth: MartianIronearth,
+  MordantEarth: MordantEarth,
+  StirlandBattlemire: StirlandBattlemire,
+  StirlandMud: StirlandMud,
+  ValhallanBlizzard: ValhallanBlizzard,
 };
 
 export const getImage = (name: CitadelTechnicalPaintImages) => {
-  return paintImages[name];
+  return <img src={paintImages[name]} alt={name} height="62px" width="52px" />;
 };
