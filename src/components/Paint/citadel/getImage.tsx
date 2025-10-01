@@ -10,7 +10,7 @@ import MartianIroncrust from '../../../../content/assets/svg/paints/technicalMar
 import MartianIronearth from '../../../../content/assets/svg/paints/technicalMartianIronearth.webp';
 import MordantEarth from '../../../../content/assets/svg/paints/technicalMordantEarth.webp';
 import StirlandBattlemire from '../../../../content/assets/svg/paints/technicalStirlandBattlemire.webp';
-import StirlandMud from '../../../../content/assets/svg/paints/technicalStirlandMud.svg';
+import StirlandMud from '../../../../content/assets/svg/paints/technicalStirlandMud.webp';
 import ValhallanBlizzard from '../../../../content/assets/svg/paints/technicalValhallanBlizzard.webp';
 
 const paintImages = {
