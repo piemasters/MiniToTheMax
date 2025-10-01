@@ -29,5 +29,5 @@ const paintImages = {
 };
 
 export const getImage = (name: CitadelTechnicalPaintImages) => {
-  return <img src={paintImages[name]} alt={name} height="62px" width="52px" />;
+  return <img src={paintImages[name]} alt={name} height="71px" width="57px" />;
 };
