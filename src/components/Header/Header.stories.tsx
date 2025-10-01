@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Header } from './Header';
 
 const meta: Meta<typeof Header> = {
@@ -31,7 +31,7 @@ type Story = StoryObj<typeof Header>;
 export const Primary: Story = {
   args: {
     title: 'MiniToTheMax',
-    logo: '/images/logo.png',
+    logo: '/images/logo.webp',
     pages: [
       { name: 'Home', url: '/' },
       { name: 'Blog', url: '/blog' },

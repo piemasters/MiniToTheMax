@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Video } from './Video';
 
 const meta: Meta<typeof Video> = {
   component: Video,
   argTypes: {
-    src: {
-      name: 'src',
-      description: 'Source of the video file',
+    videoId: {
+      name: 'videoId',
+      description: 'The id part of the source for the video file',
       defaultValue: '',
       control: { type: 'text' },
     },
@@ -17,16 +17,16 @@ const meta: Meta<typeof Video> = {
       defaultValue: 'Video Title',
       control: { type: 'text' },
     },
-    width: {
-      name: 'image',
-      description: 'The width the video should be on the page',
-      defaultValue: 714,
+    aspectWidth: {
+      name: 'aspectWidth',
+      description: 'The aspect ratio width of the video',
+      defaultValue: 16,
       control: { type: 'number' },
     },
-    aspectRatio: {
-      name: 'aspectRatio',
-      description: 'The aspect ratio of the image to determine the height',
-      defaultValue: 16 / 9,
+    aspectHeight: {
+      name: 'aspectHeight',
+      description: 'The aspect ratio height of the video',
+      defaultValue: 9,
       control: { type: 'number' },
     },
   },
@@ -37,9 +37,9 @@ type Story = StoryObj<typeof Video>;
 
 export const Primary: Story = {
   args: {
-    src: 'https://www.youtube.com/embed/s1Ck5Xn6420',
+    videoId: 's1Ck5Xn6420',
     title: 'Grey Knight Librarian',
-    width: 714,
-    aspectRatio: 16 / 9,
+    aspectWidth: 16,
+    aspectHeight: 9,
   },
 };

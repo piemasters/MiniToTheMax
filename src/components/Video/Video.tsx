@@ -1,29 +1,38 @@
 import React, { FC } from 'react';
+import LiteYouTubeEmbed from './LiteYoutubeEmbbed';
 
 export interface VideoProps {
-  src: string;
+  videoId: string;
   title: string;
   width?: number;
-  aspectRatio?: number;
+  height?: number;
+  aspectHeight?: number;
+  aspectWidth?: number;
 }
 
 export const Video: FC<VideoProps> = ({
-  src,
+  videoId,
   title,
-  width = 714,
-  aspectRatio = 16 / 9,
+  aspectWidth = 16,
+  aspectHeight = 9,
 }) => {
   return (
-    <div className="hover:shadow-3xl" data-testid="video">
-      <iframe
-        src={src}
+    <div className="w-full max-w-3xl hover:shadow-3xl" data-testid="video">
+      <LiteYouTubeEmbed
+        id={videoId}
+        title={title}
+        aspectHeight={aspectHeight}
+        aspectWidth={aspectWidth}
+      />
+      {/* Default method replaced with LiteYouTubeEmbed to improve performance */}
+      {/* <iframe
+        src={`https://www.youtube.com/embed/${videoId}`}
         title={title}
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        frameBorder="0"
         allowFullScreen
         width={'100%'}
-        height={width / aspectRatio}
-      />
+        height={714 / (aspectWidth / aspectHeight)}
+      /> */}
     </div>
   );
 };

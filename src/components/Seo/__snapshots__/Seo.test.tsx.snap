@@ -7,7 +7,7 @@ exports[`Seo renders correctly 1`] = `
     name="description"
   />
   <meta
-    content="content/assets/images/logo.png"
+    content="content/assets/images/logo.webp"
     name="image"
   />
   <meta
@@ -23,8 +23,14 @@ exports[`Seo renders correctly 1`] = `
     property="og:description"
   />
   <meta
-    content="content/assets/images/logo.png"
+    content="content/assets/images/logo.webp"
     property="og:image"
   />
+  <html
+    lang="en"
+  />
+  <title>
+    MiniToTheMax
+  </title>
 </div>
 `;

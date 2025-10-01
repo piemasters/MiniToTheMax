@@ -10,7 +10,7 @@ exports[`Footer renders correctly 1`] = `
       class="flex items-center justify-end max-w-3xl px-4 mx-auto text-sm no-underline"
     >
       <a
-        class="text-blue-500 hover:text-blue-700"
+        class="py-2 text-blue-600 hover:text-blue-800"
         href="https://davidnorton.app/"
         rel="noreferrer"
         target="_blank"
@@ -25,6 +25,7 @@ exports[`Footer renders correctly 1`] = `
         class="flex mt-1 mb-2 ml-3"
       >
         <a
+          aria-label="Facebook"
           href="https://www.facebook.com/minitothemax"
           rel="noreferrer"
           target="_blank"
@@ -45,6 +46,7 @@ exports[`Footer renders correctly 1`] = `
           </svg>
         </a>
         <a
+          aria-label="Instagram"
           href="https://www.instagram.com/minitothemax/"
           rel="noreferrer"
           target="_blank"
@@ -65,6 +67,7 @@ exports[`Footer renders correctly 1`] = `
           </svg>
         </a>
         <a
+          aria-label="YouTube"
           href="https://www.youtube.com/user/piemasters29"
           rel="noreferrer"
           target="_blank"

@@ -15,7 +15,8 @@ export const Badge: FC<BadgeProps> = ({ type }) => {
       <img
         src={allBadges[type]}
         alt=""
-        className="w-9/12 opacity-90 mx-auto mb-2 hover:opacity-100"
+        className="w-9/12 mx-auto mb-2 opacity-90 hover:opacity-100"
+        fetchPriority="high"
       />
       <p className="text-center capitalize">
         {type.replace(/([A-Z])/g, ' $1').trim()}

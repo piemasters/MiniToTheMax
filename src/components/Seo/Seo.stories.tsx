@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Seo } from './Seo';
 
@@ -20,7 +20,7 @@ const meta: Meta<typeof Seo> = {
     image: {
       name: 'image',
       description: 'Path to thumbnail used when link is shared',
-      defaultValue: 'images/logo.png',
+      defaultValue: 'images/logo.webp',
       control: { type: 'text' },
     },
     article: {
@@ -45,7 +45,7 @@ export const Primary: Story = {
   args: {
     title: 'SEO Title',
     description: 'Description of the SEO',
-    image: 'images/logo.png',
+    image: 'images/logo.webp',
     article: true,
     siteUrl: 'https://minitothemax.app',
   },

@@ -16,7 +16,7 @@ module.exports = {
     author: 'MiniToTheMax',
     description: `An Aspiring Hobby & Painting Blog`,
     siteUrl: 'https://minitothemax.app',
-    image: `content/assets/images/logo.png`,
+    image: `content/assets/images/logo.webp`,
   },
   graphqlTypegen: true,
   plugins: [
