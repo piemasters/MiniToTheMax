@@ -3,7 +3,7 @@
 exports[`Video renders correctly 1`] = `
 <div>
   <div
-    class="w-full max-w-3xl hover:shadow-3xl"
+    class="w-full max-w-3xl mb-2 hover:shadow-3xl"
     data-testid="video"
   >
     <link

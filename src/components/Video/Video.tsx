@@ -17,7 +17,7 @@ export const Video: FC<VideoProps> = ({
   aspectHeight = 9,
 }) => {
   return (
-    <div className="w-full max-w-3xl hover:shadow-3xl" data-testid="video">
+    <div className="w-full max-w-3xl mb-2 hover:shadow-3xl" data-testid="video">
       <LiteYouTubeEmbed
         id={videoId}
         title={title}
