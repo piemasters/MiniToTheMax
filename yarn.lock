@@ -20191,7 +20191,7 @@ __metadata:
     tailwindcss: 4.1.14
     ts-loader: 9.5.4
     typescript: 5.9.3
-    vite: 7.1.7
+    vite: 7.1.8
   languageName: unknown
   linkType: soft
 
@@ -25025,13 +25025,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:4.1.13":
-  version: 4.1.13
-  resolution: "tailwindcss@npm:4.1.13"
-  checksum: 25e2883c69190c6474a6c44caed8f82511a4025a2285e34bca4b79671a73acd79e74844a4908313098218de81a5aba62df727bb6ee26f69eeca3386b4941de4b
-  languageName: node
-  linkType: hard
-
 "tailwindcss@npm:4.1.14":
   version: 4.1.14
   resolution: "tailwindcss@npm:4.1.14"
@@ -26532,9 +26525,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:7.1.7":
-  version: 7.1.7
-  resolution: "vite@npm:7.1.7"
+"vite@npm:7.1.8":
+  version: 7.1.8
+  resolution: "vite@npm:7.1.8"
   dependencies:
     esbuild: ^0.25.0
     fdir: ^6.5.0
@@ -26583,7 +26576,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 2c19531d491336491573f8164e04be15dfbd445e3c60833659d31ce847be08d3690ac55656d4afff6aa59fa3fb70d6d330c9de7f73855d91c509263e719c5bcf
+  checksum: 698c286a0ee5b4acabb71e0e5d85475fc9de6fbeb10b7a9b0d6c701c7b52aad4408dedc9073a75001557d39c04a17f92266c515aa683eadbcc4c1772558afc31
   languageName: node
   linkType: hard
 
