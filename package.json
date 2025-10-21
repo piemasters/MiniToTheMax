@@ -59,7 +59,7 @@
     "@storybook/addon-links": "9.1.12",
     "@storybook/react-vite": "9.1.12",
     "@svgr/webpack": "8.1.0",
-    "@tailwindcss/postcss": "4.1.14",
+    "@tailwindcss/postcss": "4.1.15",
     "@testing-library/cypress": "10.1.0",
     "@testing-library/jest-dom": "6.8.0",
     "@testing-library/react": "16.3.0",
