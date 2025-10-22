@@ -21,7 +21,7 @@ export const BacklogPage: FC = () => {
     for (const [index, value] of entries.entries()) {
       if (value.link) {
         domList.push(
-          <li key={index} className="list-none">
+          <li key={index} className="list-none!">
             <label>
               <input
                 type="checkbox"
@@ -38,7 +38,7 @@ export const BacklogPage: FC = () => {
         );
       } else {
         domList.push(
-          <li key={index} className="list-none">
+          <li key={index} className="list-none!">
             <label>
               <input
                 type="checkbox"
@@ -53,53 +53,37 @@ export const BacklogPage: FC = () => {
         );
       }
     }
-    return domList;
+    return <ul className="m-0!">{domList}</ul>;
   };
 
   return (
     <Layout>
       <h1>Backlog</h1>
 
-      {/* <Accordion className="max-w-lg">
-        <AccordionItem value="1" trigger="👋 Hello There">
-          A demo Accordion item
-        </AccordionItem>
-        <AccordionItem value="2" trigger="🌟 It's Animated">
-          It transitions between the open and close states
-        </AccordionItem>
-        <AccordionItem value="3" trigger={<div>🧶Its customisable</div>}>
-          It is entirely customizable. You can put any HTML element and style it
-          however you want.
-        </AccordionItem>
-        <AccordionItem value="4" trigger={<div>🦕 React & Tailwind</div>}>
-          Nothing but React and Tailwind CSS
-        </AccordionItem>
-      </Accordion> */}
-
       <h2>Warhammer 40,000</h2>
       <hr />
 
       <Accordion>
         <AccordionItem value={1} trigger="Grey Knights">
-          <ul>{generateEntries(backlog.greyKnights)}</ul>
+          {generateEntries(backlog.greyKnights)}
         </AccordionItem>
         <AccordionItem value={2} trigger="Space Wolves">
           <>
-            <ul>{generateEntries(backlog.spaceWolves)}</ul>
-            <ul>{generateEntries(backlog.spaceWolvesPrimaris)}</ul>
+            {generateEntries(backlog.spaceWolves)}
+            {generateEntries(backlog.spaceWolvesPrimaris)}
           </>
         </AccordionItem>
         <AccordionItem value={3} trigger="Orks">
-          <ul>{generateEntries(backlog.orks)}</ul>
+          {generateEntries(backlog.orks)}
         </AccordionItem>
         <AccordionItem value={4} trigger="Harlequins">
-          <ul>{generateEntries(backlog.harlequins)}</ul>
+          {generateEntries(backlog.harlequins)}
         </AccordionItem>
         <AccordionItem value={5} trigger="Chaos Space Marines">
-          <ul>{generateEntries(backlog.chaosSpaceMarines)}</ul>
+          {generateEntries(backlog.chaosSpaceMarines)}
         </AccordionItem>
         <AccordionItem value={6} trigger="Scenery">
-          <ul>{generateEntries(backlog.scenery40k)}</ul>
+          {generateEntries(backlog.scenery40k)}
         </AccordionItem>
       </Accordion>
 
@@ -107,19 +91,19 @@ export const BacklogPage: FC = () => {
 
       <Accordion>
         <AccordionItem value={1} trigger="Blackstone Fortress">
-          <ul>{generateEntries(backlog.blackstoneFortress)}</ul>
+          {generateEntries(backlog.blackstoneFortress)}
         </AccordionItem>
         <AccordionItem value={2} trigger="Deathwatch Overkill">
-          <ul>{generateEntries(backlog.deathwatchOverkill)}</ul>
+          {generateEntries(backlog.deathwatchOverkill)}
         </AccordionItem>
         <AccordionItem value={3} trigger="Execution Force">
-          <ul>{generateEntries(backlog.executionForce)}</ul>
+          {generateEntries(backlog.executionForce)}
         </AccordionItem>
         <AccordionItem value={4} trigger="Lost Patrol">
-          <ul>{generateEntries(backlog.lostPatrol)}</ul>
+          {generateEntries(backlog.lostPatrol)}
         </AccordionItem>
         <AccordionItem value={5} trigger="Space Hulk">
-          <ul>{generateEntries(backlog.spaceHulk)}</ul>
+          {generateEntries(backlog.spaceHulk)}
         </AccordionItem>
       </Accordion>
 
@@ -128,22 +112,22 @@ export const BacklogPage: FC = () => {
 
       <Accordion>
         <AccordionItem value={1} trigger="Gloomspite Gitz">
-          <ul>{generateEntries(backlog.gloomspiteGitz)}</ul>
+          {generateEntries(backlog.gloomspiteGitz)}
         </AccordionItem>
         <AccordionItem value={2} trigger="Ironjawz">
-          <ul>{generateEntries(backlog.ironjawz)}</ul>
+          {generateEntries(backlog.ironjawz)}
         </AccordionItem>
         <AccordionItem value={3} trigger="Kruleboyz">
-          <ul>{generateEntries(backlog.kruleboyz)}</ul>
+          {generateEntries(backlog.kruleboyz)}
         </AccordionItem>
         <AccordionItem value={4} trigger="Malign Sorcery">
-          <ul>{generateEntries(backlog.malignSorcery)}</ul>
+          {generateEntries(backlog.malignSorcery)}
         </AccordionItem>
         <AccordionItem value={5} trigger="Objectives">
-          <ul>{generateEntries(backlog.objectives)}</ul>
+          {generateEntries(backlog.objectives)}
         </AccordionItem>
         <AccordionItem value={6} trigger="Scenery">
-          <ul>{generateEntries(backlog.sceneryAoS)}</ul>
+          {generateEntries(backlog.sceneryAoS)}
         </AccordionItem>
       </Accordion>
 
@@ -151,25 +135,25 @@ export const BacklogPage: FC = () => {
 
       <Accordion>
         <AccordionItem value={1} trigger="Blood Bowl">
-          <ul>{generateEntries(backlog.bloodBowl)}</ul>
+          {generateEntries(backlog.bloodBowl)}
         </AccordionItem>
         <AccordionItem value={2} trigger="Dungeon Bowl">
-          <ul>{generateEntries(backlog.dungeonBowl)}</ul>
+          {generateEntries(backlog.dungeonBowl)}
         </AccordionItem>
         <AccordionItem value={3} trigger="Blood Bowl Gnomes">
-          <ul>{generateEntries(backlog.bloodBowlGnomes)}</ul>
+          {generateEntries(backlog.bloodBowlGnomes)}
         </AccordionItem>
         <AccordionItem value={4} trigger="Dreadfleet">
-          <ul>{generateEntries(backlog.dreadfleet)}</ul>
+          {generateEntries(backlog.dreadfleet)}
         </AccordionItem>
         <AccordionItem value={5} trigger="Gorechosen">
-          <ul>{generateEntries(backlog.gorechosen)}</ul>
+          {generateEntries(backlog.gorechosen)}
         </AccordionItem>
         <AccordionItem value={6} trigger="Silver Tower">
-          <ul>{generateEntries(backlog.silverTower)}</ul>
+          {generateEntries(backlog.silverTower)}
         </AccordionItem>
         <AccordionItem value={7} trigger="Underworlds">
-          <ul>{generateEntries(backlog.underworlds)}</ul>
+          {generateEntries(backlog.underworlds)}
         </AccordionItem>
       </Accordion>
 
@@ -178,7 +162,7 @@ export const BacklogPage: FC = () => {
 
       <Accordion>
         <AccordionItem value={1} trigger="Battle for Balin&#39;s Tomb">
-          <ul>{generateEntries(backlog.battleForBalinsTomb)}</ul>
+          {generateEntries(backlog.battleForBalinsTomb)}
         </AccordionItem>
       </Accordion>
 
@@ -187,43 +171,43 @@ export const BacklogPage: FC = () => {
 
       <Accordion>
         <AccordionItem value={1} trigger="Core Game">
-          <ul>{generateEntries(backlog.heroQuest)}</ul>
+          {generateEntries(backlog.heroQuest)}
         </AccordionItem>
         <AccordionItem value={2} trigger="Mythic Tier">
-          <ul>{generateEntries(backlog.heroQuestMythic)}</ul>
+          {generateEntries(backlog.heroQuestMythic)}
         </AccordionItem>
         <AccordionItem value={3} trigger="Return of the Witch Lord">
-          <ul>{generateEntries(backlog.heroQuestReturnOfTheWitchLord)}</ul>
+          {generateEntries(backlog.heroQuestReturnOfTheWitchLord)}
         </AccordionItem>
         <AccordionItem value={4} trigger="Kellar&#39;s Keep">
-          <ul>{generateEntries(backlog.heroQuestKellarsKeep)}</ul>
+          {generateEntries(backlog.heroQuestKellarsKeep)}
         </AccordionItem>
         <AccordionItem value={5} trigger="Frozen Horror">
-          <ul>{generateEntries(backlog.heroQuestFrozenHorror)}</ul>
+          {generateEntries(backlog.heroQuestFrozenHorror)}
         </AccordionItem>
         <AccordionItem value={6} trigger="The Mage of the Mirror">
-          <ul>{generateEntries(backlog.heroQuestTheMageOfTheMirror)}</ul>
+          {generateEntries(backlog.heroQuestTheMageOfTheMirror)}
         </AccordionItem>
         <AccordionItem value={7} trigger="Rise of the Dread Moon">
-          <ul>{generateEntries(backlog.heroQuestRiseOfTheDreadMoon)}</ul>
+          {generateEntries(backlog.heroQuestRiseOfTheDreadMoon)}
         </AccordionItem>
         <AccordionItem value={8} trigger="Spirit Queen&#39;s Torment">
-          <ul>{generateEntries(backlog.heroQuestSpiritQueensTorment)}</ul>
+          {generateEntries(backlog.heroQuestSpiritQueensTorment)}
         </AccordionItem>
         <AccordionItem value={9} trigger="Prophecy of Telor">
-          <ul>{generateEntries(backlog.heroQuestProphecyOfTelor)}</ul>
+          {generateEntries(backlog.heroQuestProphecyOfTelor)}
         </AccordionItem>
         <AccordionItem value={10} trigger="The Rogue Heir of Elethorn">
-          <ul>{generateEntries(backlog.heroQuestTheRogueHeirOfElethorn)}</ul>
+          {generateEntries(backlog.heroQuestTheRogueHeirOfElethorn)}
         </AccordionItem>
         <AccordionItem value={11} trigger="Path of the Wandering Monk">
-          <ul>{generateEntries(backlog.heroQuestPathOfTheWanderingMonk)}</ul>
+          {generateEntries(backlog.heroQuestPathOfTheWanderingMonk)}
         </AccordionItem>
         <AccordionItem value={12} trigger="Against the Ogre Horde">
-          <ul>{generateEntries(backlog.heroQuestAgainstTheOgreHorde)}</ul>
+          {generateEntries(backlog.heroQuestAgainstTheOgreHorde)}
         </AccordionItem>
         <AccordionItem value={13} trigger="The Jungles of Delthrak">
-          <ul>{generateEntries(backlog.heroQuestTheJunglesOfDelthrak)}</ul>
+          {generateEntries(backlog.heroQuestTheJunglesOfDelthrak)}
         </AccordionItem>
       </Accordion>
 
@@ -232,7 +216,7 @@ export const BacklogPage: FC = () => {
 
       <Accordion>
         <AccordionItem value={1} trigger="Core Game">
-          <ul>{generateEntries(backlog.witcherOldWorld)}</ul>
+          {generateEntries(backlog.witcherOldWorld)}
         </AccordionItem>
         <AccordionItem value={2} trigger="Kickstarter Exclusive">
           <ul>
@@ -240,25 +224,46 @@ export const BacklogPage: FC = () => {
           </ul>
         </AccordionItem>
         <AccordionItem value={3} trigger="Wild Hunt">
-          <ul>{generateEntries(backlog.witcherOldWorldWildHunt)}</ul>
+          {generateEntries(backlog.witcherOldWorldWildHunt)}
         </AccordionItem>
         <AccordionItem value={4} trigger="Mages">
-          <ul>{generateEntries(backlog.witcherOldWorldMages)}</ul>
+          {generateEntries(backlog.witcherOldWorldMages)}
         </AccordionItem>
         <AccordionItem value={5} trigger="Legendary Hunt">
-          <ul>{generateEntries(backlog.witcherOldWorldLegendaryHunt)}</ul>
+          {generateEntries(backlog.witcherOldWorldLegendaryHunt)}
         </AccordionItem>
         <AccordionItem value={6} trigger="Skellige">
-          <ul>{generateEntries(backlog.witcherOldWorldSkellige)}</ul>
+          {generateEntries(backlog.witcherOldWorldSkellige)}
         </AccordionItem>
         <AccordionItem value={7} trigger="Monster Pack">
-          <ul>{generateEntries(backlog.witcherOldWorldMonsterPack)}</ul>
+          {generateEntries(backlog.witcherOldWorldMonsterPack)}
         </AccordionItem>
         <AccordionItem value={8} trigger="Adventure Pack">
-          <ul>{generateEntries(backlog.witcherOldWorldAdventurePack)}</ul>
+          {generateEntries(backlog.witcherOldWorldAdventurePack)}
         </AccordionItem>
         <AccordionItem value={9} trigger="Monster Trail">
-          <ul>{generateEntries(backlog.witcherOldWorldMonsterTrail)}</ul>
+          {generateEntries(backlog.witcherOldWorldMonsterTrail)}
+        </AccordionItem>
+      </Accordion>
+
+      <h2>Assassin&#39;s Creed</h2>
+      <hr />
+
+      <Accordion>
+        <AccordionItem value={1} trigger="Brotherhood">
+          {generateEntries(backlog.assassinsCreedBrotherhood)}
+        </AccordionItem>
+        <AccordionItem value={2} trigger="Apocalypse">
+          {generateEntries(backlog.assassinsCreedApocalypse)}
+        </AccordionItem>
+        <AccordionItem value={3} trigger="Roma">
+          {generateEntries(backlog.assassinsCreedRoma)}
+        </AccordionItem>
+        <AccordionItem value={4} trigger="Creed vs Crows">
+          {generateEntries(backlog.assassinsCreedCreedVsCrows)}
+        </AccordionItem>
+        <AccordionItem value={5} trigger="Tokyo XXI">
+          {generateEntries(backlog.assassinsCreedTokyoXXI)}
         </AccordionItem>
       </Accordion>
 
@@ -267,19 +272,22 @@ export const BacklogPage: FC = () => {
 
       <Accordion>
         <AccordionItem value={1} trigger="Shatterpoint">
-          <ul>{generateEntries(backlog.starWarsShatterpoint)}</ul>
+          {generateEntries(backlog.starWarsShatterpoint)}
         </AccordionItem>
         <AccordionItem value={2} trigger="Imperial Assault">
-          <ul>{generateEntries(backlog.starWarsImperialAssault)}</ul>
+          {generateEntries(backlog.starWarsImperialAssault)}
         </AccordionItem>
       </Accordion>
 
-      <h2>Squidmar Miniatures</h2>
+      <h2>Other</h2>
       <hr />
 
       <Accordion>
-        <AccordionItem value={1} trigger="Paint Set Miniatures">
-          <ul>{generateEntries(backlog.squidmar)}</ul>
+        <AccordionItem value={1} trigger="Squidmar Miniatures">
+          {generateEntries(backlog.squidmar)}
+        </AccordionItem>
+        <AccordionItem value={1} trigger="Jordan Sorcery Miniatures">
+          {generateEntries(backlog.jordanSorcery)}
         </AccordionItem>
       </Accordion>
     </Layout>

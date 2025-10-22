@@ -1,0 +1,76 @@
+export const assassinsCreedBrotherhood = [
+  { name: 'Agiles' },
+  { name: 'Alessandra' },
+  { name: 'Assassin Apprentices' },
+  { name: 'Bastiano' },
+  { name: 'Bear Tamer & Bear' },
+  { name: 'Brutes' },
+  { name: 'Chests' },
+  { name: 'Claudio' },
+  { name: 'Courtesans' },
+  { name: 'Crossbowmen' },
+  { name: "Crow's Nest" },
+  { name: 'Daria' },
+  { name: 'Dottori' },
+  { name: 'Ezio Auditore' },
+  { name: 'Fast Travel Stations' },
+  { name: 'Horesemen' },
+  { name: 'Horseman of the Apocalypse' },
+  { name: 'Juhani Osto Berg' },
+  { name: 'Kronos' },
+  { name: 'Ladders' },
+  { name: "L'Artiglio" },
+  { name: 'Leonardo da Vinci' },
+  { name: "Leonardo da Vinci's Tank" },
+  { name: 'Lion of Venice' },
+  { name: 'Lucrezia Borgia' },
+  { name: 'Mercenaries' },
+  { name: 'Modern Guards' },
+  { name: 'Naval Cannon' },
+  { name: 'Niccolo di Pitigliano' },
+  { name: 'Niccolo Machiavelli' },
+  { name: 'Rooftop Gardens' },
+  { name: 'Salai' },
+  { name: 'Seekers' },
+  { name: 'Shaun Hastings' },
+  { name: 'Thieves' },
+  { name: 'Tower' },
+  { name: 'Traitors' },
+];
+
+export const assassinsCreedApocalypse = [
+  { name: 'Colubra' },
+  { name: 'Furies' },
+  { name: 'Sesha' },
+  { name: 'Shao Jun' },
+  { name: 'Stalkers' },
+  { name: 'Vipers' },
+];
+
+export const assassinsCreedRoma = [
+  { name: 'Alif' },
+  { name: 'Beatrice' },
+  { name: 'Clara' },
+  { name: 'Domenico' },
+  { name: 'Followers of Romulus' },
+  { name: 'Papal Guards' },
+];
+
+export const assassinsCreedCreedVsCrows = [
+  { name: 'Automatons' },
+  { name: 'Carestia' },
+  { name: 'Cesare Borgia' },
+  { name: 'Guerra' },
+  { name: 'Morte' },
+  { name: 'Pestilenza' },
+];
+
+export const assassinsCreedTokyoXXI = [
+  { name: 'Abstergo Guards' },
+  { name: 'Dogs' },
+  { name: 'Kiyoshi Takakura' },
+  { name: 'Layla Hassan' },
+  { name: 'Rebecca Crane' },
+  { name: 'Shaun Hastings' },
+  { name: 'Spectres' },
+];

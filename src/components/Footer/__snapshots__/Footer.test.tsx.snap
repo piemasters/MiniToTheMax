@@ -7,20 +7,28 @@ exports[`Footer renders correctly 1`] = `
     data-testid="footer"
   >
     <div
-      class="flex items-center justify-end max-w-3xl px-4 mx-auto text-sm no-underline"
+      class="flex items-center justify-between max-w-3xl px-4 mx-auto text-xs no-underline md:text-sm"
     >
-      <a
-        class="py-2 text-blue-600 hover:text-blue-800"
-        href="https://davidnorton.app/"
-        rel="noreferrer"
-        target="_blank"
+      <div
+        class="flex items-center"
       >
-        © 
-        2025
-         
-        David Norton
-      </a>
-       | All Rights Reserved
+        <a
+          class="py-2 text-blue-600 hover:text-blue-800"
+          href="https://davidnorton.app/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          © 
+          2025
+           
+          David Norton
+        </a>
+        <span
+          class="hidden sm:block"
+        >
+           | All Rights Reserved
+        </span>
+      </div>
       <div
         class="flex mt-1 mb-2 ml-3"
       >

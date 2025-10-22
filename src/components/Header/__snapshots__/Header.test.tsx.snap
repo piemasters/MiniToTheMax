@@ -32,28 +32,28 @@ exports[`Header renders correctly 1`] = `
       >
         <a
           aria-current="page"
-          class="p-0.5 lg:p-2 font-bold text-gray-600 no-underline text-xs sm:text-sm md:text-md hover:text-red-700 text-red-700!"
+          class="p-1 text-sm font-bold text-gray-600 no-underline md:p-2 lg:p-2 md:text-md hover:text-red-700 text-red-700!"
           data-testid="page-link"
           href="/"
         >
           Home
         </a>
         <a
-          class="p-0.5 lg:p-2 font-bold text-gray-600 no-underline text-xs sm:text-sm md:text-md hover:text-red-700"
+          class="p-1 text-sm font-bold text-gray-600 no-underline md:p-2 lg:p-2 md:text-md hover:text-red-700"
           data-testid="page-link"
           href="/blog"
         >
           Blog
         </a>
         <a
-          class="p-0.5 lg:p-2 font-bold text-gray-600 no-underline text-xs sm:text-sm md:text-md hover:text-red-700"
+          class="p-1 text-sm font-bold text-gray-600 no-underline md:p-2 lg:p-2 md:text-md hover:text-red-700"
           data-testid="page-link"
           href="/showcase"
         >
           Showcase
         </a>
         <a
-          class="p-0.5 lg:p-2 font-bold text-gray-600 no-underline text-xs sm:text-sm md:text-md hover:text-red-700"
+          class="p-1 text-sm font-bold text-gray-600 no-underline md:p-2 lg:p-2 md:text-md hover:text-red-700"
           data-testid="page-link"
           href="/backlog"
         >

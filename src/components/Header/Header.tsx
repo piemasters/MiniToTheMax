@@ -30,7 +30,7 @@ export const Header: FC<HeaderProps> = ({ title, logo, pages }) => {
               <PageLink
                 key={link.name}
                 to={link.url}
-                className="p-0.5 lg:p-2 font-bold text-gray-600 no-underline text-xs sm:text-sm md:text-md hover:text-red-700"
+                className="p-1 text-sm font-bold text-gray-600 no-underline md:p-2 lg:p-2 md:text-md hover:text-red-700"
                 linkActiveStyle="text-red-700!"
                 type="cover"
               >

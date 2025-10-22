@@ -3,11 +3,11 @@
 exports[`Accordion renders correctly 1`] = `
 <div>
   <ul
-    class="max-w-lg"
+    class="m-0!"
     data-testid="accordion"
   >
     <li
-      class="bg-white border-b"
+      class="list-none! bg-white border-b"
       data-testid="accordion-item"
     >
       <header
@@ -42,14 +42,14 @@ exports[`Accordion renders correctly 1`] = `
         style="height: 0px;"
       >
         <div
-          class="p-4 pt-2"
+          class="p-4"
         >
           A demo Accordion item
         </div>
       </div>
     </li>
     <li
-      class="bg-white border-b"
+      class="list-none! bg-white border-b"
       data-testid="accordion-item"
     >
       <header
@@ -84,14 +84,14 @@ exports[`Accordion renders correctly 1`] = `
         style="height: 0px;"
       >
         <div
-          class="p-4 pt-2"
+          class="p-4"
         >
           It transitions between the open and close states
         </div>
       </div>
     </li>
     <li
-      class="bg-white border-b"
+      class="list-none! bg-white border-b"
       data-testid="accordion-item"
     >
       <header
@@ -128,14 +128,14 @@ exports[`Accordion renders correctly 1`] = `
         style="height: 0px;"
       >
         <div
-          class="p-4 pt-2"
+          class="p-4"
         >
           It is entirely customizable. You can put any HTML element and style it however you want.
         </div>
       </div>
     </li>
     <li
-      class="bg-white border-b"
+      class="list-none! bg-white border-b"
       data-testid="accordion-item"
     >
       <header
@@ -172,7 +172,7 @@ exports[`Accordion renders correctly 1`] = `
         style="height: 0px;"
       >
         <div
-          class="p-4 pt-2"
+          class="p-4"
         >
           Nothing but React and Tailwind CSS
         </div>

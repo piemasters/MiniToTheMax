@@ -36,7 +36,7 @@ export const Accordion = ({
   }, [selected]);
 
   return (
-    <ul data-testid="accordion" {...props}>
+    <ul data-testid="accordion" {...props} className="m-0!">
       <AccordionContext.Provider value={{ selected, setSelected }}>
         {children}
       </AccordionContext.Provider>
@@ -64,7 +64,11 @@ export const AccordionItem = ({
   const ref = useRef<HTMLDivElement>(null);
 
   return (
-    <li data-testid="accordion-item" className="bg-white border-b" {...props}>
+    <li
+      data-testid="accordion-item"
+      className="list-none! bg-white border-b"
+      {...props}
+    >
       <header
         role="button"
         tabIndex={!isNaN(Number(value)) ? Number(value) : 0}
@@ -88,7 +92,7 @@ export const AccordionItem = ({
         className={`overflow-y-hidden transition-all ${open ? 'open' : 'closed'}`}
         style={{ height: open ? ref.current?.offsetHeight || 0 : 0 }}
       >
-        <div className="p-4 pt-2" ref={ref}>
+        <div className="p-4" ref={ref}>
           {children}
         </div>
       </div>

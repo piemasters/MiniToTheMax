@@ -19,28 +19,34 @@ export const SimplePagination: FC<SimplePaginationProps> = ({
   return (
     <div
       data-testid="simple-pagination"
-      className="flex flex-wrap justify-between p-0 no-underline list-none"
+      className="grid grid-cols-1 gap-4 py-4 no-underline list-none md:grid-cols-2 auto-rows-fr"
     >
-      <div className="flex-1 text-right">
-        {next && (
-          <PageLink to={next.slug} type={'cover'} direction={'left'}>
-            <div className="flex items-center flex-1 p-8 m-2 bg-neutral-50 hover:bg-neutral-100">
-              <div className="pr-2">← </div>
-              <div className="flex flex-1 text-nowrap">{next.title}</div>
-            </div>
-          </PageLink>
-        )}
-      </div>
-      <div className="flex-1">
-        {previous && (
-          <PageLink to={previous.slug} type={'cover'} direction={'right'}>
-            <div className="flex flex-1 p-8 m-2 bg-neutral-50 hover:bg-neutral-100">
-              <div className="flex flex-1 text-nowrap">{previous.title}</div>
-              <div className="pl-2">→</div>
-            </div>
-          </PageLink>
-        )}
-      </div>
+      {next && (
+        <PageLink
+          to={next.slug}
+          type={'cover'}
+          direction={'left'}
+          className="h-full text-blue-500 visited:text-blue-500 hover:text-blue-700"
+        >
+          <div className="flex items-center justify-start h-full max-w-full px-4 py-8 bg-neutral-50 hover:bg-neutral-100">
+            <div className="pr-4">←</div>
+            <div className="">{next.title}</div>
+          </div>
+        </PageLink>
+      )}
+      {previous && (
+        <PageLink
+          to={previous.slug}
+          type={'cover'}
+          direction={'right'}
+          className="h-full text-blue-500 visited:text-blue-500 hover:text-blue-700"
+        >
+          <div className="flex items-center justify-end h-full max-w-full px-4 py-8 bg-neutral-50 hover:bg-neutral-100">
+            <div className="">{previous.title}</div>
+            <div className="pl-4">→</div>
+          </div>
+        </PageLink>
+      )}
     </div>
   );
 };
