@@ -7023,7 +7023,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:6.8.0, @testing-library/jest-dom@npm:^6.6.3":
+"@testing-library/jest-dom@npm:6.9.1":
+  version: 6.9.1
+  resolution: "@testing-library/jest-dom@npm:6.9.1"
+  dependencies:
+    "@adobe/css-tools": ^4.4.0
+    aria-query: ^5.0.0
+    css.escape: ^1.5.1
+    dom-accessibility-api: ^0.6.3
+    picocolors: ^1.1.1
+    redent: ^3.0.0
+  checksum: 5c77126a59a1c0df5935d29569652364c56e5026982f0357f0daaeb21b75fcd9a6aeff8365bdcba719687a4359b3f8bf74bba81ccbae7635cf18ad9789e1e323
+  languageName: node
+  linkType: hard
+
+"@testing-library/jest-dom@npm:^6.6.3":
   version: 6.8.0
   resolution: "@testing-library/jest-dom@npm:6.8.0"
   dependencies:
@@ -20213,7 +20227,7 @@ __metadata:
     "@svgr/webpack": 8.1.0
     "@tailwindcss/postcss": 4.1.16
     "@testing-library/cypress": 10.1.0
-    "@testing-library/jest-dom": 6.8.0
+    "@testing-library/jest-dom": 6.9.1
     "@testing-library/react": 16.3.0
     "@types/jest": 30.0.0
     "@types/lodash": 4.17.20
