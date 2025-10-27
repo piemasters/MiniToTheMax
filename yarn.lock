@@ -20282,7 +20282,7 @@ __metadata:
     react-test-renderer: 19.1.1
     sharp: 0.34.4
     start-server-and-test: 2.1.2
-    storybook: 9.1.13
+    storybook: 9.1.15
     tailwindcss: 4.1.15
     ts-loader: 9.5.4
     typescript: 5.9.3
@@ -24414,9 +24414,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:9.1.13":
-  version: 9.1.13
-  resolution: "storybook@npm:9.1.13"
+"storybook@npm:9.1.15":
+  version: 9.1.15
+  resolution: "storybook@npm:9.1.15"
   dependencies:
     "@storybook/global": ^5.0.0
     "@testing-library/jest-dom": ^6.6.3
@@ -24437,7 +24437,7 @@ __metadata:
       optional: true
   bin:
     storybook: ./bin/index.cjs
-  checksum: 0ec353ffe0f9897ca405622bd52111b4a6b9bf7b2dd59e25d084c8aa0cfbeb665eab3dedb88b8fb9aa7f2190b5a7e9a8bd4e3c29d9dd0883e17a014d923bab8d
+  checksum: b191b6d6f2ef0c7a2d7f32a9bf1ae4d0f4e02da129db9979fc50d3e5f8fb4207066622c4954475065d1e6f7772f2e180f1de50577b4af443b5aefb20a006640f
   languageName: node
   linkType: hard
 
