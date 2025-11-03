@@ -39,8 +39,8 @@ export const IndexPage: FC = () => {
       <Badges />
       <h2>Latest Video</h2>
       <Video
-        videoId="Rn8JsPA9eOA"
-        title="The Glimdwarrow Groundhogs Beastmasters"
+        videoId="KE6nKXiynXs"
+        title="The Glimdwarrow Groundhogs Illusionists"
       />
       <h2>Latest Post</h2>
 

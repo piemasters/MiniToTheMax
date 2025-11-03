@@ -37,7 +37,10 @@ export const bloodBowlGnomes = [
     name: 'Beastmaster',
     link: '/showcase/board-games/blood-bowl/gnomes/beastmaster',
   },
-  { name: 'Illusionist' },
+  {
+    name: 'Illusionist',
+    link: '/showcase/board-games/blood-bowl/gnomes/illusionist',
+  },
   {
     name: 'Lineman',
     link: '/showcase/board-games/blood-bowl/gnomes/lineman',
