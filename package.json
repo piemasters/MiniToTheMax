@@ -108,7 +108,7 @@
     "react-test-renderer": "19.1.1",
     "sharp": "0.34.4",
     "start-server-and-test": "2.1.2",
-    "storybook": "9.1.15",
+    "storybook": "10.0.4",
     "tailwindcss": "4.1.16",
     "ts-loader": "9.5.4",
     "typescript": "5.9.3",
