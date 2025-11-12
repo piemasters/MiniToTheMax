@@ -8,51 +8,49 @@ import { PostTag } from '../components/PostTag/PostTag';
 import { SimplePagination } from '../components/SimplePagination/SimplePagination';
 import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
 
-export const Post = ({
-  pageContext,
-  data,
-  children,
-}: {
-  pageContext: {
-    previous?: {
-      fields: { slug: string };
-      frontmatter: { title: string };
-    };
-    next?: {
-      fields: { slug: string };
-      frontmatter: { title: string };
-    };
-  };
-  data: {
-    post: {
-      frontmatter: {
-        title: string;
-        date: string;
-        tags: string[];
-        categories: string[];
-        featuredImage: {
-          publicURL: string;
-          childImageSharp: {
-            gatsbyImageData: IGatsbyImageData;
-          };
-        };
-        gallery?: Array<{
-          childImageSharp: IGatsbyImageData;
-        } | null>;
-      };
-      excerpt: string;
-      fields: {
-        slug: string;
-      };
-    };
-    site: {
-      siteMetadata: {
-        siteUrl: string;
-      };
-    };
-  };
-  children: React.ReactNode;
-}) => {
+// : {
+//   pageContext: {
+//     previous?: {
+//       fields: { slug: string };
+//       frontmatter: { title: string };
+//     };
+//     next?: {
+//       fields: { slug: string };
+//       frontmatter: { title: string };
+//     };
+//   };
+//   data: {
+//     post: {
+//       frontmatter: {
+//         title: string;
+//         date: string;
+//         tags: string[];
+//         categories: string[];
+//         featuredImage: {
+//           publicURL: string;
+//           childImageSharp: {
+//             gatsbyImageData: IGatsbyImageData;
+//           };
+//         };
+//         gallery?: Array<{
+//           childImageSharp: IGatsbyImageData;
+//         } | null>;
+//       };
+//       excerpt: string;
+//       fields: {
+//         slug: string;
+//       };
+//     };
+//     site: {
+//       siteMetadata: {
+//         siteUrl: string;
+//       };
+//     };
+//   };
+//   children: React.ReactNode;
+// }
+
+export const Post = ({ pageContext, data, children }) => {
   const pagination = {
     previous: pageContext.previous
       ? {
@@ -111,7 +109,7 @@ export const Post = ({
       {post.gallery.length > 0 && (
         <div>
           <h2>Gallery</h2>
-          <Gallery gallery={post.gallery as unknown as GatsbyGalleryImage[]} />
+          <Gallery gallery={post.gallery} />
         </div>
       )}
       <SimplePagination previous={pagination.previous} next={pagination.next} />
@@ -162,24 +160,24 @@ export const pageQuery = graphql`
   }
 `;
 
-type HeadProps = {
-  data: {
-    post?: {
-      frontmatter?: {
-        title?: string;
-        featuredImage?: {
-          publicURL?: string;
-        };
-      };
-      excerpt?: string;
-      fields?: {
-        slug?: string;
-      };
-    };
-  };
-};
+// type HeadProps = {
+//   data: {
+//     post?: {
+//       frontmatter?: {
+//         title?: string;
+//         featuredImage?: {
+//           publicURL?: string;
+//         };
+//       };
+//       excerpt?: string;
+//       fields?: {
+//         slug?: string;
+//       };
+//     };
+//   };
+// };
 
-export const Head = ({ data }: HeadProps) => (
+export const Head = ({ data }) => (
   <Seo
     title={data?.post?.frontmatter?.title}
     description={data?.post?.excerpt}

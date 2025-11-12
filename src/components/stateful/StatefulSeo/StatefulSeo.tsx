@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { Seo as PureSeo } from '../../Seo';
+import { Seo as PureSeo } from '../../Seo/Seo';
 
 export const StatefulSeo: FC<{
   title?: string;
