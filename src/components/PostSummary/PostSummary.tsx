@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
-import { CoverImage } from '../CoverImage';
-import { PageLink } from '../PageLink';
+import { CoverImage } from '../CoverImage/CoverImage';
+import { PageLink } from '../PageLink/PageLink';
 
 export const PostSummary: FC<{
   slug: string;

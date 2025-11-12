@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import kebabCase from 'lodash.kebabcase';
-import { PageLink } from '../PageLink';
+import { PageLink } from '../PageLink/PageLink';
 
 export const PostTag: FC<{
   name: string;

@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
-import { PageLink } from '../PageLink';
-import { CoverImage } from '../CoverImage';
+import { PageLink } from '../PageLink/PageLink';
+import { CoverImage } from '../CoverImage/CoverImage';
 import { removeCategoryName } from './removeCategoryName';
 
 /**

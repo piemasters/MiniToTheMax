@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { PageLink } from '../PageLink';
+import { PageLink } from '../PageLink/PageLink';
 
 export type NavLink = {
   name: string;
