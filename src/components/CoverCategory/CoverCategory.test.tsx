@@ -1,6 +1,4 @@
-import React from 'react';
 import { getByTestId, render } from '@testing-library/react';
-
 import { CoverCategory } from './CoverCategory';
 
 describe('CoverCategory', () => {

@@ -1,16 +1,18 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { graphql } from 'gatsby';
 import kebabCase from 'lodash.kebabcase';
-
 import Layout from '../layouts/layout';
-import { PageLink, StatefulSeo as Seo } from '../components';
-import type { Tag, Tags } from '../types';
+import { PageLink } from '../components/PageLink/PageLink';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
+import type { AllMdx, MdxGroupConnection } from '../types';
 
-export interface TagsPageProps {
-  data: Tags;
-}
+type Tag = MdxGroupConnection;
 
-export const TagsPage: FC<TagsPageProps> = ({ data }) => (
+export const TagsPage: FC<{
+  data: {
+    tags: AllMdx;
+  };
+}> = ({ data }) => (
   <Layout>
     <div>
       <h1>Tags</h1>

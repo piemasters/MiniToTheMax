@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-
 import { PageLink } from './PageLink';
 
 const meta: Meta<typeof PageLink> = {

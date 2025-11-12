@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-
 import { SimplePagination } from './SimplePagination';
 
 const meta: Meta<typeof SimplePagination> = {

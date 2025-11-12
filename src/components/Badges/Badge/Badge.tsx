@@ -1,19 +1,16 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
+import { badgeImages, BadgeNames } from '../Badges';
 
-import { BadgeNames } from '../../types';
-import { allBadges } from '../../data';
-
-export interface BadgeProps {
-  type: BadgeNames;
-}
 /**
  * The Badge component is a combination of an image and text used to represent a category of posts
  */
-export const Badge: FC<BadgeProps> = ({ type }) => {
+export const Badge: FC<{
+  type: BadgeNames;
+}> = ({ type }) => {
   return (
     <div className="flex flex-col justify-end w-36" data-testid="badge">
       <img
-        src={allBadges[type]}
+        src={badgeImages[type]}
         height="120px"
         width="120px"
         alt=""

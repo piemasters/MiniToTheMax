@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { CSSProperties, forwardRef, useEffect, useState } from 'react';
 import { imgResolution, useYoutubeThumbnail } from './useYoutubeThumbnail';
 
 export interface LiteYouTubeProps {
@@ -27,15 +27,15 @@ export interface LiteYouTubeProps {
   thumbnail?: string;
   rel?: string;
   containerElement?: keyof React.JSX.IntrinsicElements;
-  style?: React.CSSProperties;
+  style?: CSSProperties;
 }
 
 function LiteYouTubeEmbed(
   props: LiteYouTubeProps,
   ref: React.Ref<HTMLIFrameElement>
 ) {
-  const [preconnected, setPreconnected] = React.useState(false);
-  const [iframe, setIframe] = React.useState(props.alwaysLoadIframe || false);
+  const [preconnected, setPreconnected] = useState(false);
+  const [iframe, setIframe] = useState(props.alwaysLoadIframe || false);
   const videoId = encodeURIComponent(props.id);
   const videoPlaylistCoverId =
     typeof props.playlistCoverId === 'string'
@@ -117,7 +117,7 @@ function LiteYouTubeEmbed(
     setIframe(true);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (iframe) {
       onIframeAdded();
     }
@@ -179,6 +179,6 @@ function LiteYouTubeEmbed(
   );
 }
 
-export default React.forwardRef<HTMLIFrameElement, LiteYouTubeProps>(
+export default forwardRef<HTMLIFrameElement, LiteYouTubeProps>(
   LiteYouTubeEmbed
 );

@@ -1,12 +1,10 @@
-import React, { FC, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
+import { StatefulFooter } from '../components/stateful/StatefulFooter/StatefulFooter';
+import { StatefulHeader } from '../components/stateful/StatefulHeader/StatefulHeader';
 
-import { StatefulFooter, StatefulHeader } from '../components';
-
-export interface LayoutProps {
+export const Layout: FC<{
   children?: ReactNode;
-}
-
-export const Layout: FC<LayoutProps> = ({ children }) => {
+}> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <StatefulHeader />

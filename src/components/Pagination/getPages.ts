@@ -1,14 +1,12 @@
-interface getPagesProps {
-  currentPage: number;
-  numPages: number;
-  maxPages: number;
-}
-
 export const getPages = ({
   currentPage,
   numPages,
   maxPages,
-}: getPagesProps) => {
+}: {
+  currentPage: number;
+  numPages: number;
+  maxPages: number;
+}) => {
   let startPage: number;
   let endPage: number;
   if (numPages <= maxPages) {

@@ -1,46 +1,47 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+import { fn } from 'storybook/test';
 
-import { Accordion, AccordionItem } from './Accordion';
-import { BadgeNames } from '../../types';
+import { Accordion } from './Accordion';
 
-const meta: Meta<typeof Accordion> = {
+const meta = {
   component: Accordion,
+  subcomponents: { Item: Accordion.Item },
   argTypes: {
-    // type: {
-    //   name: 'type',
-    //   description: 'The badge type to display',
-    //   defaultValue: BadgeNames.showcase,
-    //   control: { type: 'radio' },
-    // },
+    value: { control: 'text' },
+    onChange: { action: 'changed' },
   },
-};
-
+} satisfies Meta<typeof Accordion>;
 export default meta;
-type Story = StoryObj<typeof Accordion>;
 
-export const Primary: Story = {
+type Story = StoryObj<typeof meta>;
+
+export const AccordionWrapper: Story = {
   render: () => {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen">
-        <Accordion className="max-w-lg">
-          <AccordionItem value="1" trigger="👋 Hello There">
+        <Accordion name="demo-1" className="max-w-lg w-full">
+          <Accordion.Item value="1" trigger="👋 Hello There">
             A demo Accordion item
-          </AccordionItem>
-          <AccordionItem value="2" trigger="🌟 It's Animated">
+          </Accordion.Item>
+          <Accordion.Item value="2" trigger="🌟 It's Animated">
             It transitions between the open and close states
-          </AccordionItem>
-          <AccordionItem value="3" trigger={<div>🧶It's customisable</div>}>
+          </Accordion.Item>
+          <Accordion.Item
+            value="3"
+            trigger={<div>🧶It&apos;s customisable</div>}
+          >
             It is entirely customizable. You can put any HTML element and style
             it however you want.
-          </AccordionItem>
-          <AccordionItem value="4" trigger={<div>🦕 React & Tailwind</div>}>
+          </Accordion.Item>
+          <Accordion.Item value="4" trigger={<div>🦕 React & Tailwind</div>}>
             Nothing but React and Tailwind CSS
-          </AccordionItem>
+          </Accordion.Item>
         </Accordion>
       </div>
     );
   },
-  //   args: {
-  //     type: BadgeNames.showcase,
-  //   },
+  args: {
+    value: '1',
+    onChange: fn(),
+  },
 };

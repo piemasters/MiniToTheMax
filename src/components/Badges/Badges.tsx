@@ -1,9 +1,28 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import kebabCase from 'lodash.kebabcase';
-
-import { Badge } from '../Badge';
+import tutorials from '../../../content/assets/images/tutorials-badge.webp';
+import showcase from '../../../content/assets/images/showcase-badge.webp';
+import battleReports from '../../../content/assets/images/battle-reports-badge.webp';
+import reviews from '../../../content/assets/images/reviews-badge.webp';
+import build from '../../../content/assets/images/build-badge.webp';
 import { PageLink } from '../PageLink';
-import { BadgeNames } from '../../types';
+import { Badge } from './Badge/Badge';
+
+export enum BadgeNames {
+  tutorials = 'tutorials',
+  showcase = 'showcase',
+  build = 'build',
+  battleReports = 'battleReports',
+  reviews = 'reviews',
+}
+
+export const badgeImages: { [key: string]: string } = {
+  [BadgeNames.showcase]: showcase,
+  [BadgeNames.tutorials]: tutorials,
+  [BadgeNames.reviews]: reviews,
+  [BadgeNames.battleReports]: battleReports,
+  [BadgeNames.build]: build,
+};
 
 /**
  * The Badges component is collection of badges with the most popular categories to display on the homepage.

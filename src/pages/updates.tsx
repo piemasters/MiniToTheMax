@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
-
+import { FC } from 'react';
 import Layout from '../layouts/layout';
-import { PageLink, StatefulSeo as Seo } from '../components';
+import { PageLink } from '../components/PageLink/PageLink';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
 
 export const UpdatesPage: FC = () => {
   return (

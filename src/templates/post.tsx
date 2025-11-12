@@ -1,17 +1,58 @@
-import React from 'react';
 import { graphql } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
-
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 import Layout from '../layouts/layout';
-import {
-  CoverImage,
-  PostTag,
-  SimplePagination,
-  StatefulSeo as Seo,
-  Gallery,
-} from '../components';
+import { CoverImage } from '../components/CoverImage/CoverImage';
+import { Gallery, GatsbyGalleryImage } from '../components/Gallery/Gallery';
+import { PostTag } from '../components/PostTag/PostTag';
+import { SimplePagination } from '../components/SimplePagination/SimplePagination';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
 
-export const Post = ({ pageContext, data, children }) => {
+export const Post = ({
+  pageContext,
+  data,
+  children,
+}: {
+  pageContext: {
+    previous?: {
+      fields: { slug: string };
+      frontmatter: { title: string };
+    };
+    next?: {
+      fields: { slug: string };
+      frontmatter: { title: string };
+    };
+  };
+  data: {
+    post: {
+      frontmatter: {
+        title: string;
+        date: string;
+        tags: string[];
+        categories: string[];
+        featuredImage: {
+          publicURL: string;
+          childImageSharp: {
+            gatsbyImageData: IGatsbyImageData;
+          };
+        };
+        gallery?: Array<{
+          childImageSharp: IGatsbyImageData;
+        } | null>;
+      };
+      excerpt: string;
+      fields: {
+        slug: string;
+      };
+    };
+    site: {
+      siteMetadata: {
+        siteUrl: string;
+      };
+    };
+  };
+  children: React.ReactNode;
+}) => {
   const pagination = {
     previous: pageContext.previous
       ? {
@@ -70,7 +111,7 @@ export const Post = ({ pageContext, data, children }) => {
       {post.gallery.length > 0 && (
         <div>
           <h2>Gallery</h2>
-          <Gallery gallery={post.gallery} />
+          <Gallery gallery={post.gallery as unknown as GatsbyGalleryImage[]} />
         </div>
       )}
       <SimplePagination previous={pagination.previous} next={pagination.next} />
@@ -121,7 +162,24 @@ export const pageQuery = graphql`
   }
 `;
 
-export const Head = ({ data }) => (
+type HeadProps = {
+  data: {
+    post?: {
+      frontmatter?: {
+        title?: string;
+        featuredImage?: {
+          publicURL?: string;
+        };
+      };
+      excerpt?: string;
+      fields?: {
+        slug?: string;
+      };
+    };
+  };
+};
+
+export const Head = ({ data }: HeadProps) => (
   <Seo
     title={data?.post?.frontmatter?.title}
     description={data?.post?.excerpt}

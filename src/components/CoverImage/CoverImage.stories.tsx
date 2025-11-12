@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-
 import { CoverImage } from './CoverImage';
 
 const meta: Meta<typeof CoverImage> = {

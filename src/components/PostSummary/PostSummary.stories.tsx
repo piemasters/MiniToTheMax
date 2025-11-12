@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-
 import { PostSummary } from './PostSummary';
 
 const meta: Meta<typeof PostSummary> = {

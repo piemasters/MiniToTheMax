@@ -1,21 +1,13 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
+import PageLink from '../PageLink/PageLink';
+import { getPages } from './getPages';
 
-import { PageLink } from '../PageLink';
-import { getPages } from '../../util/pagination';
-
-export interface PaginationProps {
+export const Pagination: FC<{
   numPages: number;
   currentPage: number;
   maxPages?: number;
   baseUrl: string;
-}
-
-export const Pagination: FC<PaginationProps> = ({
-  numPages,
-  currentPage,
-  maxPages = 8,
-  baseUrl,
-}) => {
+}> = ({ numPages, currentPage, maxPages = 8, baseUrl }) => {
   // Return an array of pages to repeat
   const pages = getPages({ numPages, maxPages, currentPage });
 
@@ -50,7 +42,7 @@ export const Pagination: FC<PaginationProps> = ({
             to={`${baseUrl}${page === 1 ? '' : page}`}
             type={'cover'}
             direction={page > currentPage ? 'left' : 'right'}
-            className={`p-2 rounded no-underline text-blue-500 hover:!bg-blue-500 hover:text-white ${page === currentPage ? '!bg-blue-500 text-white' : ''}`}
+            className={`p-2 rounded no-underline text-blue-500 hover:bg-blue-500! hover:text-white ${page === currentPage ? 'bg-blue-500! text-white' : ''}`}
           >
             {page}
           </PageLink>
