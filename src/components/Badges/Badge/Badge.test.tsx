@@ -1,7 +1,6 @@
 import { getByTestId, render } from '@testing-library/react';
-
+import { BadgeNames } from '../Badges';
 import { Badge } from './Badge';
-import { BadgeNames } from '../../types';
 
 describe('Badge', () => {
   test('renders correctly', () => {

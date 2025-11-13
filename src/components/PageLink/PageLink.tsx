@@ -1,19 +1,17 @@
-import React, { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import { Link } from 'gatsby-link';
 
 type AnimationTypes = 'paintDrip' | 'fade' | 'swipe' | 'cover';
 
-export interface PageLinkProps {
-  children: React.ReactNode;
+export const PageLink: FC<{
+  children: ReactNode;
   type?: AnimationTypes;
   to: string;
   linkActiveStyle?: string;
   direction?: string;
   disabled?: boolean;
   className?: string;
-}
-
-export const PageLink: FC<PageLinkProps> = ({
+}> = ({
   children,
   type,
   to,

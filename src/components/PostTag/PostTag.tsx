@@ -1,14 +1,11 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import kebabCase from 'lodash.kebabcase';
+import { PageLink } from '../PageLink/PageLink';
 
-import { PageLink } from '../PageLink';
-
-export interface PostTagProps {
+export const PostTag: FC<{
   name: string;
   type: string;
-}
-
-export const PostTag: FC<PostTagProps> = ({ name, type }) => {
+}> = ({ name, type }) => {
   return (
     <div data-testid="post-tag" className="inline-block">
       <div className="inline-block px-2 py-1 m-1 bg-gray-200 rounded-md cursor-pointer hover:bg-red-500 text-gray-800 hover:text-white! text-xs">

@@ -1,17 +1,11 @@
 import React, { FC } from 'react';
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 
-export interface CoverImageProps {
+export const CoverImage: FC<{
   image: IGatsbyImageData;
   title: string;
   tall?: boolean;
-}
-
-export const CoverImage: FC<CoverImageProps> = ({
-  image,
-  title,
-  tall = false,
-}) => {
+}> = ({ image, title, tall = false }) => {
   return (
     <div className="relative" data-testid="cover-image">
       <GatsbyImage alt={title} image={image} />

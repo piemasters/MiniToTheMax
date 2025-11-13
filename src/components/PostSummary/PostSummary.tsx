@@ -1,26 +1,17 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
-import { CoverImage } from '../CoverImage';
-import { PageLink } from '../PageLink';
+import { CoverImage } from '../CoverImage/CoverImage';
+import { PageLink } from '../PageLink/PageLink';
 
-export interface PostSummaryProps {
+export const PostSummary: FC<{
   slug: string;
   title: string;
   date: string;
   img?: IGatsbyImageData;
   excerpt: string;
   tall?: boolean;
-}
-
-export const PostSummary: FC<PostSummaryProps> = ({
-  slug,
-  title,
-  date,
-  img,
-  excerpt,
-  tall,
-}) => {
+}> = ({ slug, title, date, img, excerpt, tall }) => {
   return (
     <div
       className="my-4 duration-300 bg-gray-100 hover:bg-gray-200 hover:shadow-3xl"

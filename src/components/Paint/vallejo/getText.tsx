@@ -1,6 +1,4 @@
-import React from 'react';
-
-import { getColorByBgColor } from '../../../util/getColorByBgColor';
+import { getColorByBgColor } from '../util/getColorByBgColor';
 
 export const getText = ({
   category,

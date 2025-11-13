@@ -1,5 +1,4 @@
 import { render, getByTestId } from '@testing-library/react';
-
 import { Gallery } from './Gallery';
 import { mockGallery } from './mock';
 

@@ -1,16 +1,23 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import kebabCase from 'lodash.kebabcase';
 import { graphql } from 'gatsby';
-
 import Layout from '../layouts/layout';
-import { PageLink, StatefulSeo as Seo } from '../components';
-import type { Categories, Category } from '../types';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
+import { PageLink } from '../components/PageLink/PageLink';
+import type { AllMdx, MdxEdge, MdxNode, PageInfo } from '../types';
 
-export interface CategoriesPageProps {
-  data: Categories;
-}
+type Category = {
+  totalCount: number;
+  edges: [MdxEdge];
+  nodes: [MdxNode];
+  pageInfo: PageInfo;
+  field: string;
+  fieldValue: string;
+};
 
-export const CategoriesPage: FC<CategoriesPageProps> = ({ data }) => (
+export const CategoriesPage: FC<{
+  data: { categories: AllMdx };
+}> = ({ data }) => (
   <Layout>
     <div>
       <h1>Categories</h1>

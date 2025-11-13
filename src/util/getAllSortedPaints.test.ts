@@ -56,7 +56,6 @@ jest.mock('../data/paints', () => ({
 describe('getAllSortedPaints', () => {
   it('combines all paint arrays into a single sorted array', () => {
     const sortedPaints = getAllSortedPaints();
-    console.log(sortedPaints);
 
     expect(sortedPaints).toEqual([
       {

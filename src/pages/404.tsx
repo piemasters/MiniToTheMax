@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
-
+import { FC } from 'react';
 import { Layout } from '../layouts/layout';
-import { PageLink, StatefulSeo as Seo } from '../components';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
+import { PageLink } from '../components/PageLink/PageLink';
 
 const NotFound: FC = () => {
   return (

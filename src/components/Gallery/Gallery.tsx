@@ -1,21 +1,20 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import { Gallery as Photoswipe, Item } from 'react-photoswipe-gallery';
 
-export interface GatsbyGalleryImage {
+export type GatsbyGalleryImage = {
   full: IGatsbyImageData;
   thumb: IGatsbyImageData;
   title?: string;
   alt?: string;
-}
+};
 
-export interface GalleryProps {
-  gallery: GatsbyGalleryImage[];
-}
 /**
  * The Badge component is a combination of an image and text used to represent a category of posts
  */
-export const Gallery: FC<GalleryProps> = ({ gallery }) => {
+export const Gallery: FC<{
+  gallery: GatsbyGalleryImage[];
+}> = ({ gallery }) => {
   return (
     <div className="flex flex-wrap" data-testid="gallery">
       <Photoswipe options={{}}>

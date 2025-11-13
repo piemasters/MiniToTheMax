@@ -1,21 +1,15 @@
-import React, { FC } from 'react';
-
-import { PageLink } from '../PageLink';
+import { FC } from 'react';
+import { PageLink } from '../PageLink/PageLink';
 
 type SimplePaginationNode = {
   slug: string;
   title: string;
 };
 
-export interface SimplePaginationProps {
+export const SimplePagination: FC<{
   previous?: SimplePaginationNode;
   next?: SimplePaginationNode;
-}
-
-export const SimplePagination: FC<SimplePaginationProps> = ({
-  previous,
-  next,
-}) => {
+}> = ({ previous, next }) => {
   return (
     <div
       data-testid="simple-pagination"

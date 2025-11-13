@@ -5,176 +5,177 @@ exports[`Accordion renders correctly 1`] = `
   <ul
     class="m-0!"
     data-testid="accordion"
+    role="menu"
   >
     <li
       class="list-none! bg-white border-b"
       data-testid="accordion-item"
+      role="menuitem"
     >
-      <header
-        class="flex items-center justify-between p-4 font-medium cursor-pointer bg-neutral-100 hover:bg-neutral-200"
-        role="button"
-        tabindex="1"
-      >
-        <div
-          class="flex items-center justify-between p-4 font-medium"
-          data-testid="accordion-item-trigger"
-        >
-          👋 Hello There
-          <svg
-            class="size-4 transition-transform rotate-180"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m19.5 8.25-7.5 7.5-7.5-7.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
-      </header>
       <div
+        aria-controls="accordion-panel-test-1"
+        class="flex items-center justify-between p-8 font-medium cursor-pointer bg-neutral-100 hover:bg-neutral-200"
+        data-testid="accordion-item-header"
+        id="accordion-item-header-test-1"
+      >
+        Trigger 1
+        <svg
+          class="size-4 transition-transform rotate-180"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div
+        aria-hidden="false"
+        aria-labelledby="accordion-item-header-test-1"
         class="overflow-y-hidden transition-all open"
         data-testid="accordion-item-content"
+        id="accordion-panel-test-1"
         style="height: 0px;"
       >
         <div
           class="p-4"
         >
-          A demo Accordion item
+          Item 1 Content
         </div>
       </div>
     </li>
     <li
       class="list-none! bg-white border-b"
       data-testid="accordion-item"
+      role="menuitem"
     >
-      <header
-        class="flex items-center justify-between p-4 font-medium cursor-pointer bg-neutral-100 hover:bg-neutral-200"
-        role="button"
-        tabindex="2"
-      >
-        <div
-          class="flex items-center justify-between p-4 font-medium"
-          data-testid="accordion-item-trigger"
-        >
-          🌟 It's Animated
-          <svg
-            class="size-4 transition-transform "
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m19.5 8.25-7.5 7.5-7.5-7.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
-      </header>
       <div
+        aria-controls="accordion-panel-test-2"
+        class="flex items-center justify-between p-8 font-medium cursor-pointer bg-neutral-100 hover:bg-neutral-200"
+        data-testid="accordion-item-header"
+        id="accordion-item-header-test-2"
+      >
+        Trigger 2
+        <svg
+          class="size-4 transition-transform "
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div
+        aria-hidden="true"
+        aria-labelledby="accordion-item-header-test-2"
         class="overflow-y-hidden transition-all closed"
         data-testid="accordion-item-content"
+        id="accordion-panel-test-2"
         style="height: 0px;"
       >
         <div
           class="p-4"
         >
-          It transitions between the open and close states
+          Item 2 Content
         </div>
       </div>
     </li>
     <li
       class="list-none! bg-white border-b"
       data-testid="accordion-item"
+      role="menuitem"
     >
-      <header
-        class="flex items-center justify-between p-4 font-medium cursor-pointer bg-neutral-100 hover:bg-neutral-200"
-        role="button"
-        tabindex="3"
-      >
-        <div
-          class="flex items-center justify-between p-4 font-medium"
-          data-testid="accordion-item-trigger"
-        >
-          <div>
-            🧶It's customisable
-          </div>
-          <svg
-            class="size-4 transition-transform "
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m19.5 8.25-7.5 7.5-7.5-7.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
-      </header>
       <div
+        aria-controls="accordion-panel-test-3"
+        class="flex items-center justify-between p-8 font-medium cursor-pointer bg-neutral-100 hover:bg-neutral-200"
+        data-testid="accordion-item-header"
+        id="accordion-item-header-test-3"
+      >
+        <div>
+          Trigger 3
+        </div>
+        <svg
+          class="size-4 transition-transform "
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div
+        aria-hidden="true"
+        aria-labelledby="accordion-item-header-test-3"
         class="overflow-y-hidden transition-all closed"
         data-testid="accordion-item-content"
+        id="accordion-panel-test-3"
         style="height: 0px;"
       >
         <div
           class="p-4"
         >
-          It is entirely customizable. You can put any HTML element and style it however you want.
+          Item 3 Content
         </div>
       </div>
     </li>
     <li
       class="list-none! bg-white border-b"
       data-testid="accordion-item"
+      role="menuitem"
     >
-      <header
-        class="flex items-center justify-between p-4 font-medium cursor-pointer bg-neutral-100 hover:bg-neutral-200"
-        role="button"
-        tabindex="4"
-      >
-        <div
-          class="flex items-center justify-between p-4 font-medium"
-          data-testid="accordion-item-trigger"
-        >
-          <div>
-            🦕 React & Tailwind
-          </div>
-          <svg
-            class="size-4 transition-transform "
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m19.5 8.25-7.5 7.5-7.5-7.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
-      </header>
       <div
+        aria-controls="accordion-panel-test-4"
+        class="flex items-center justify-between p-8 font-medium cursor-pointer bg-neutral-100 hover:bg-neutral-200"
+        data-testid="accordion-item-header"
+        id="accordion-item-header-test-4"
+      >
+        <div>
+          Trigger 4
+        </div>
+        <svg
+          class="size-4 transition-transform "
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div
+        aria-hidden="true"
+        aria-labelledby="accordion-item-header-test-4"
         class="overflow-y-hidden transition-all closed"
         data-testid="accordion-item-content"
+        id="accordion-panel-test-4"
         style="height: 0px;"
       >
         <div
           class="p-4"
         >
-          Nothing but React and Tailwind CSS
+          Item 4 Content
         </div>
       </div>
     </li>

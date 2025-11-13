@@ -1,21 +1,26 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { graphql } from 'gatsby';
-
 import Layout from '../layouts/layout';
-import { PageLink, StatefulSeo as Seo } from '../components';
-import { MdxEdge, TagLink, Tags } from '../types';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
+import { PageLink } from '../components/PageLink/PageLink';
+import { AllMdx, MdxEdge } from '../types';
 
-export interface TagContext {
+type TagLink = {
+  slug: string;
+  title: string;
+};
+
+type TagContext = {
   tag: string;
   url: string;
-}
+};
 
-export interface TagTemplateProps {
+export const Tag: FC<{
   pageContext: TagContext;
-  data: Tags;
-}
-
-export const Tag: FC<TagTemplateProps> = ({ pageContext, data }) => {
+  data: {
+    tags: AllMdx;
+  };
+}> = ({ pageContext, data }) => {
   const tagHeader = `${data.tags.totalCount} post${
     data.tags.totalCount === 1 ? '' : 's'
   } tagged with "${pageContext.tag}"`;
@@ -70,7 +75,7 @@ export const pageQuery = graphql`
   }
 `;
 
-export const Head = ({ pageContext }) => (
+export const Head = ({ pageContext }: { pageContext: TagContext }) => (
   <Seo
     title={pageContext?.tag}
     pathname={pageContext?.url}

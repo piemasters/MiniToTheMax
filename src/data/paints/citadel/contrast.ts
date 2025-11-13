@@ -1,4 +1,4 @@
-import { PaintDetailsCitadel } from '../../../types';
+import { PaintDetailsCitadel } from '../types';
 
 export const contrastIyandenYellow: PaintDetailsCitadel = {
   name: 'Iyanden Yellow',
