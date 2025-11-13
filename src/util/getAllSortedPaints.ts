@@ -1,6 +1,4 @@
 import { PaintDetails } from '../types';
-import { textToId } from './textToId';
-import { sortPaints } from './sortPaints';
 import {
   airPaints,
   basePaints,
@@ -12,6 +10,8 @@ import {
   technicalPaints,
 } from '../data/paints/citadel';
 import { gameColorPaints } from '../data/paints';
+import { textToId } from './textToId';
+import { sortPaints } from './sortPaints';
 
 export const getAllSortedPaints = (): PaintDetails[] => {
   const allPaints: PaintDetails[] = [

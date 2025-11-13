@@ -1,5 +1,5 @@
-import { getPaint } from './getPaint';
 import { PaintDetails } from '../types';
+import { getPaint } from './getPaint';
 
 // Mock data for paints
 const mockPaints: PaintDetails[] = [
@@ -67,6 +67,7 @@ describe('getPaint Function', () => {
   });
 
   it('returns an error when no paint matches the category', () => {
+    // @ts-expect-error Testing invalid category
     const result = getPaint('Mephiston Red', 'Nonexistent Category');
     expect(result).toEqual({
       error: 'Incorrect Paint Category',

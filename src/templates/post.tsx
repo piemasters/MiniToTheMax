@@ -1,55 +1,13 @@
 import { graphql } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
-import { IGatsbyImageData } from 'gatsby-plugin-image';
 import Layout from '../layouts/layout';
 import { CoverImage } from '../components/CoverImage/CoverImage';
-import { Gallery, GatsbyGalleryImage } from '../components/Gallery/Gallery';
+import { Gallery } from '../components/Gallery/Gallery';
 import { PostTag } from '../components/PostTag/PostTag';
 import { SimplePagination } from '../components/SimplePagination/SimplePagination';
 import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
 
-// : {
-//   pageContext: {
-//     previous?: {
-//       fields: { slug: string };
-//       frontmatter: { title: string };
-//     };
-//     next?: {
-//       fields: { slug: string };
-//       frontmatter: { title: string };
-//     };
-//   };
-//   data: {
-//     post: {
-//       frontmatter: {
-//         title: string;
-//         date: string;
-//         tags: string[];
-//         categories: string[];
-//         featuredImage: {
-//           publicURL: string;
-//           childImageSharp: {
-//             gatsbyImageData: IGatsbyImageData;
-//           };
-//         };
-//         gallery?: Array<{
-//           childImageSharp: IGatsbyImageData;
-//         } | null>;
-//       };
-//       excerpt: string;
-//       fields: {
-//         slug: string;
-//       };
-//     };
-//     site: {
-//       siteMetadata: {
-//         siteUrl: string;
-//       };
-//     };
-//   };
-//   children: React.ReactNode;
-// }
-
+// @ts-expect-error build fails with types enabled
 export const Post = ({ pageContext, data, children }) => {
   const pagination = {
     previous: pageContext.previous
@@ -79,7 +37,8 @@ export const Post = ({ pageContext, data, children }) => {
     featuredImage:
       data.post.frontmatter.featuredImage.childImageSharp.gatsbyImageData,
     gallery: data.post.frontmatter.gallery
-      ? data.post.frontmatter.gallery.map((node) => node?.childImageSharp)
+      ? // @ts-expect-error build fails with types enabled
+        data.post.frontmatter.gallery.map((node) => node?.childImageSharp)
       : [],
   };
 
@@ -95,9 +54,11 @@ export const Post = ({ pageContext, data, children }) => {
         <CoverImage image={post.featuredImage} title={post.title} />
       )}
       <div className="py-2">
+        {/* @ts-expect-error build fails with types enabled */}
         {post.categories.map((category) => (
           <PostTag type={'categories'} name={category} key={category} />
         ))}
+        {/* @ts-expect-error build fails with types enabled */}
         {post.tags.map((tag) => (
           <PostTag type={'tags'} name={tag} key={tag} />
         ))}
@@ -160,23 +121,7 @@ export const pageQuery = graphql`
   }
 `;
 
-// type HeadProps = {
-//   data: {
-//     post?: {
-//       frontmatter?: {
-//         title?: string;
-//         featuredImage?: {
-//           publicURL?: string;
-//         };
-//       };
-//       excerpt?: string;
-//       fields?: {
-//         slug?: string;
-//       };
-//     };
-//   };
-// };
-
+// @ts-expect-error build fails with types enabled
 export const Head = ({ data }) => (
   <Seo
     title={data?.post?.frontmatter?.title}

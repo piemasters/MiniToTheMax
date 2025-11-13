@@ -1,4 +1,4 @@
-import { PaintDetailsVallejo } from '../../../types';
+import { PaintDetailsVallejo } from '../types';
 
 export const gameColorDeadWhite: PaintDetailsVallejo = {
   name: 'Dead White',

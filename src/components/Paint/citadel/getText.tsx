@@ -1,7 +1,5 @@
-import React from 'react';
-
-import type { CitadelPaintCategory, PaintGradient } from '../../../types';
-import { getColorByBgColor } from '../../../util/getColorByBgColor';
+import type { CitadelPaintCategory, PaintGradient } from '../types';
+import { getColorByBgColor } from '../util/getColorByBgColor';
 
 export const getText = ({
   category,

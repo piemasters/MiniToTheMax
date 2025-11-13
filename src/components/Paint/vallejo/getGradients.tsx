@@ -1,7 +1,6 @@
-import React, { ReactElement } from 'react';
-
-import { PaintGradient, VallejoPaintCategory } from '../../../types';
-import { textToId } from '../../../util/textToId';
+import { ReactElement } from 'react';
+import { PaintGradient, VallejoPaintCategory } from '../types';
+import { textToId } from '../util/textToId';
 
 export const getGradients = ({
   category,

@@ -1,8 +1,8 @@
-import { sortPaints } from './sortPaints';
-import { PaintDetails } from '../types';
 import { airMephistonRed } from '../data/paints/citadel/air';
 import { baseBugmansGlow, baseMephistonRed } from '../data/paints/citadel/base';
-import { gameColorBloodyRed } from '../data';
+import { gameColorBloodyRed } from '../data/paints/vallejo/game';
+import { PaintDetails } from '../types';
+import { sortPaints } from './sortPaints';
 
 describe('sortPaints', () => {
   it('sorts paints by company, category, and name in ascending order', () => {
