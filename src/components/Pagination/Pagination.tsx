@@ -13,15 +13,16 @@ export const Pagination: FC<{
 
   return (
     <ul
-      className="flex flex-wrap items-center justify-between p-0 my-8 list-none"
+      className="flex flex-wrap items-center justify-between p-0 my-8"
       data-testid="pagination"
     >
-      <li>
+      <li className="list-none!">
         <PageLink
           to={`${baseUrl}`}
           type={'cover'}
           direction={'right'}
           disabled={currentPage === 1}
+          className="p-2 rounded no-underline text-blue-500 hover:bg-blue-500! hover:text-white"
         >
           &lt;&lt;
         </PageLink>
@@ -37,12 +38,12 @@ export const Pagination: FC<{
         </PageLink>
       </li> */}
       {pages.map((page: number, index: number) => (
-        <li key={index}>
+        <li key={index} className="list-none!">
           <PageLink
             to={`${baseUrl}${page === 1 ? '' : page}`}
             type={'cover'}
             direction={page > currentPage ? 'left' : 'right'}
-            className={`p-2 rounded no-underline text-blue-500 hover:bg-blue-500! hover:text-white ${page === currentPage ? 'bg-blue-500! text-white' : ''}`}
+            className={`py-2 px-3 rounded no-underline text-blue-500 hover:bg-blue-500! hover:text-white ${page === currentPage ? 'bg-blue-500! text-white' : ''}`}
           >
             {page}
           </PageLink>
@@ -58,12 +59,13 @@ export const Pagination: FC<{
           &gt;
         </PageLink>
       </li> */}
-      <li>
+      <li className="list-none!">
         <PageLink
           to={`${baseUrl}${numPages}`}
           type={'cover'}
           direction={'right'}
           disabled={currentPage === numPages}
+          className="p-2 rounded no-underline text-blue-500 hover:bg-blue-500! hover:text-white"
         >
           &gt;&gt;
         </PageLink>

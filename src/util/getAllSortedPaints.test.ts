@@ -30,7 +30,7 @@ jest.mock('../data/paints/citadel', () => ({
   sprayPaints: [],
   technicalPaints: [],
 }));
-jest.mock('../data/paints', () => ({
+jest.mock('../data/paints/vallejo', () => ({
   gameColorPaints: [
     {
       name: 'Game Color Paint A',
@@ -51,6 +51,8 @@ jest.mock('../data/paints', () => ({
       type: ['core'],
     },
   ],
+  modelColorPaints: [],
+  xpressColorPaints: [],
 }));
 
 describe('getAllSortedPaints', () => {

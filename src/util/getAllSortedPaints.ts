@@ -9,7 +9,11 @@ import {
   sprayPaints,
   technicalPaints,
 } from '../data/paints/citadel';
-import { gameColorPaints } from '../data/paints';
+import {
+  gameColorPaints,
+  modelColorPaints,
+  xpressColorPaints,
+} from '../data/paints';
 import { textToId } from './textToId';
 import { sortPaints } from './sortPaints';
 
@@ -26,6 +30,8 @@ export const getAllSortedPaints = (): PaintDetails[] => {
     ...technicalPaints,
     // vallejo
     ...gameColorPaints,
+    ...modelColorPaints,
+    ...xpressColorPaints,
   ];
 
   // Remove duplicates using a Set

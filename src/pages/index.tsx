@@ -40,7 +40,10 @@ export const IndexPage: FC = () => {
     <Layout>
       <Badges />
       <h2>Latest Video</h2>
-      <Video videoId="bC3fV5e9N8Q" title="The Glimdwarrow Groundhogs Treeman" />
+      <Video
+        videoId="PZhRhISF8bA"
+        title="The Glimdwarrow Groundhogs Rodney Roachbait"
+      />
       <h2>Latest Post</h2>
 
       <PostSummary
