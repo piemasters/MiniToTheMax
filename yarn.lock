@@ -10562,15 +10562,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-storybook@npm:10.0.8":
-  version: 10.0.8
-  resolution: "eslint-plugin-storybook@npm:10.0.8"
+"eslint-plugin-storybook@npm:10.1.8":
+  version: 10.1.8
+  resolution: "eslint-plugin-storybook@npm:10.1.8"
   dependencies:
     "@typescript-eslint/utils": ^8.8.1
   peerDependencies:
     eslint: ">=8"
-    storybook: ^10.0.8
-  checksum: 1ffb5e75d38ba1ff41b977dccb08ae489fcb167eac3c39ccae96bddb65d0dffeb18ad1f396068f44865511343ed9f9b3d5a1970b468c3086804d4ac046cba2fb
+    storybook: ^10.1.8
+  checksum: e8528bdf52f560cb10f359aa5c98deda6ca6e69655ee7cfaf61ba5054dddfef8a46cc5e294d6d0098b2b3a7080458eaf34e89b33a294aabeca932e510008417f
   languageName: node
   linkType: hard
 
@@ -16822,7 +16822,7 @@ __metadata:
     eslint-plugin-jsx-a11y: 6.10.2
     eslint-plugin-prettier: 5.5.4
     eslint-plugin-react: 7.37.5
-    eslint-plugin-storybook: 10.0.8
+    eslint-plugin-storybook: 10.1.8
     eslint-webpack-plugin: 5.0.2
     fs-extra: 11.3.2
     gatsby: 5.15.0
@@ -21078,13 +21078,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: f54a7d1c11cda8c676e1e9aff5e723646905ed4579cca14b3ce12d2b12eac3e18f5dbe2549fe0b79697164858e18961145db4dd0660bbeb0fb4032af0aaf32b4
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.1.17":
-  version: 4.1.17
-  resolution: "tailwindcss@npm:4.1.17"
-  checksum: d3b66a81a46ede234018ed06f4c5390b42652ee29b880ac9858fa688ebbdfa0e66fcfdd6c98cc6ed08da3711b933898b660fc929160744447a34aefdd38e7708
   languageName: node
   linkType: hard
 
