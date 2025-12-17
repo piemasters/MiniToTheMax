@@ -9171,9 +9171,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:15.6.0":
-  version: 15.6.0
-  resolution: "cypress@npm:15.6.0"
+"cypress@npm:15.8.0":
+  version: 15.8.0
+  resolution: "cypress@npm:15.8.0"
   dependencies:
     "@cypress/request": ^3.0.9
     "@cypress/xvfb": ^1.2.4
@@ -9211,7 +9211,6 @@ __metadata:
     process: ^0.11.10
     proxy-from-env: 1.0.0
     request-progress: ^3.0.0
-    semver: ^7.7.1
     supports-color: ^8.1.1
     systeminformation: 5.27.7
     tmp: ~0.2.4
@@ -9220,7 +9219,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: 18345b12b95ba3cbcdc005863409155a8edf6eff57bd0e96cd14ac79a756d602d28a879ad758032f3c3325436fc71ebe5f900ae5698982b81fc0e3082770ee31
+  checksum: 44895444a94224b26dbe4a2bb641d5a503e3020a44256bbf73f59f91258be0cc87be20832f0011c10c765dbae850b9726abef04b2a3c806e8271435dc8c12e2d
   languageName: node
   linkType: hard
 
@@ -16809,7 +16808,7 @@ __metadata:
     babel-preset-gatsby: 3.15.0
     babel-preset-react-app: 10.1.0
     csstype: 3.1.3
-    cypress: 15.6.0
+    cypress: 15.8.0
     cypress-axe: 1.7.0
     disqus-react: 1.1.7
     dotenv: 17.2.3
@@ -19774,7 +19773,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.6.2, semver@npm:^7.7.1, semver@npm:^7.7.2, semver@npm:^7.7.3":
+"semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.6.2, semver@npm:^7.7.2, semver@npm:^7.7.3":
   version: 7.7.3
   resolution: "semver@npm:7.7.3"
   bin:
