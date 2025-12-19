@@ -11659,7 +11659,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:11.3.2, fs-extra@npm:^11.2.0":
+"fs-extra@npm:11.3.3":
+  version: 11.3.3
+  resolution: "fs-extra@npm:11.3.3"
+  dependencies:
+    graceful-fs: ^4.2.0
+    jsonfile: ^6.0.1
+    universalify: ^2.0.0
+  checksum: fb2acabbd1e04bcaca90eadfe98e6ffba1523b8009afbb9f4c0aae5efbca0bd0bf6c9a6831df5af5aaacb98d3e499898be848fb0c03d31ae7b9d1b053e81c151
+  languageName: node
+  linkType: hard
+
+"fs-extra@npm:^11.2.0":
   version: 11.3.2
   resolution: "fs-extra@npm:11.3.2"
   dependencies:
@@ -16824,7 +16835,7 @@ __metadata:
     eslint-plugin-react: 7.37.5
     eslint-plugin-storybook: 10.0.8
     eslint-webpack-plugin: 5.0.2
-    fs-extra: 11.3.2
+    fs-extra: 11.3.3
     gatsby: 5.15.0
     gatsby-plugin-catch-links: 5.15.0
     gatsby-plugin-eslint: 4.0.4

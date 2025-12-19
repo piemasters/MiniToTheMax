@@ -94,7 +94,7 @@
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-storybook": "10.0.8",
     "eslint-webpack-plugin": "5.0.2",
-    "fs-extra": "11.3.2",
+    "fs-extra": "11.3.3",
     "gatsby-plugin-eslint": "4.0.4",
     "gatsby-plugin-postcss": "6.15.0",
     "glob": "11.0.3",
