@@ -1025,7 +1025,7 @@ export const gameColorTinnyTin: PaintDetailsVallejo = {
 };
 
 export const gameColorWhiteInk: PaintDetailsVallejo = {
-  name: 'White',
+  name: 'White Ink',
   number: '72.082',
   category: 'Vallejo Game Color',
   type: ['ink'],
@@ -1037,7 +1037,7 @@ export const gameColorWhiteInk: PaintDetailsVallejo = {
 };
 
 export const gameColorSkinInk: PaintDetailsVallejo = {
-  name: 'Skin',
+  name: 'Skin Ink',
   category: 'Vallejo Game Color',
   number: '72.093',
   type: ['ink'],
@@ -1048,7 +1048,7 @@ export const gameColorSkinInk: PaintDetailsVallejo = {
 };
 
 export const gameColorYellowInk: PaintDetailsVallejo = {
-  name: 'Yellow',
+  name: 'Yellow Ink',
   category: 'Vallejo Game Color',
   number: '72.085',
   type: ['ink'],
@@ -1059,7 +1059,7 @@ export const gameColorYellowInk: PaintDetailsVallejo = {
 };
 
 export const gameColorRedInk: PaintDetailsVallejo = {
-  name: 'Red',
+  name: 'Red Ink',
   category: 'Vallejo Game Color',
   number: '72.086',
   type: ['ink'],
@@ -1070,7 +1070,7 @@ export const gameColorRedInk: PaintDetailsVallejo = {
 };
 
 export const gameColorMagentaInk: PaintDetailsVallejo = {
-  name: 'Magenta',
+  name: 'Magenta Ink',
   category: 'Vallejo Game Color',
   number: '72.083',
   type: ['ink'],
@@ -1081,7 +1081,7 @@ export const gameColorMagentaInk: PaintDetailsVallejo = {
 };
 
 export const gameColorVioletInk: PaintDetailsVallejo = {
-  name: 'Violet',
+  name: 'Violet Ink',
   category: 'Vallejo Game Color',
   number: '72.087',
   type: ['ink'],
@@ -1092,7 +1092,7 @@ export const gameColorVioletInk: PaintDetailsVallejo = {
 };
 
 export const gameColorBlueInk: PaintDetailsVallejo = {
-  name: 'Blue',
+  name: 'Blue Ink',
   category: 'Vallejo Game Color',
   number: '72.088',
   type: ['ink'],
@@ -1103,7 +1103,7 @@ export const gameColorBlueInk: PaintDetailsVallejo = {
 };
 
 export const gameColorDarkTurquoiseInk: PaintDetailsVallejo = {
-  name: 'Dark Turquoise',
+  name: 'Dark Turquoise Ink',
   category: 'Vallejo Game Color',
   number: '72.084',
   type: ['ink'],
@@ -1114,7 +1114,7 @@ export const gameColorDarkTurquoiseInk: PaintDetailsVallejo = {
 };
 
 export const gameColorGreenInk: PaintDetailsVallejo = {
-  name: 'Green',
+  name: 'Green Ink',
   category: 'Vallejo Game Color',
   number: '72.089',
   type: ['ink'],
@@ -1125,7 +1125,7 @@ export const gameColorGreenInk: PaintDetailsVallejo = {
 };
 
 export const gameColorBlackGreenInk: PaintDetailsVallejo = {
-  name: 'Black Green',
+  name: 'Black Green Ink',
   category: 'Vallejo Game Color',
   number: '72.090',
   type: ['ink'],
@@ -1136,7 +1136,7 @@ export const gameColorBlackGreenInk: PaintDetailsVallejo = {
 };
 
 export const gameColorSepiaInk: PaintDetailsVallejo = {
-  name: 'Sepia',
+  name: 'Sepia Ink',
   category: 'Vallejo Game Color',
   number: '72.091',
   type: ['ink'],
@@ -1147,7 +1147,7 @@ export const gameColorSepiaInk: PaintDetailsVallejo = {
 };
 
 export const gameColorBlackInk: PaintDetailsVallejo = {
-  name: 'Black',
+  name: 'Black Ink',
   category: 'Vallejo Game Color',
   number: '72.094',
   type: ['ink'],
