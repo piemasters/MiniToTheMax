@@ -49,7 +49,10 @@ export const bloodBowlGnomes = [
     name: 'Rodney Roachbait',
     link: '/showcase/board-games/blood-bowl/gnomes/rodney-roachbait',
   },
-  { name: 'Rowana Forestfoot' },
+  {
+    name: 'Rowana Forestfoot',
+    link: '/showcase/board-games/blood-bowl/gnomes/rowana-forestfoot',
+  },
   { name: 'Tokens' },
   {
     name: 'Treeman',
