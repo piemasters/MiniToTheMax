@@ -1,5 +1,3 @@
-import { link } from 'fs';
-
 export const bloodBowl = [
   { name: 'Biased Refs' },
   { name: 'Black Orcs' },
@@ -53,7 +51,10 @@ export const bloodBowlGnomes = [
     name: 'Rowana Forestfoot',
     link: '/showcase/board-games/blood-bowl/gnomes/rowana-forestfoot',
   },
-  { name: 'Tokens' },
+  {
+    name: 'Tokens',
+    link: '/showcase/board-games/blood-bowl/gnomes/tokens',
+  },
   {
     name: 'Treeman',
     link: '/showcase/board-games/blood-bowl/gnomes/treeman',

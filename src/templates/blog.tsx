@@ -82,7 +82,7 @@ export const Blog: FC<{
 export const postQuery = graphql`
   query blogPageQuery($skip: Int, $limit: Int) {
     posts: allMdx(
-      filter: { frontmatter: { published: { eq: true } } }
+      filter: { frontmatter: { published: { eq: false } } }
       sort: { frontmatter: { date: DESC } }
       limit: $limit
       skip: $skip
