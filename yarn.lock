@@ -5376,21 +5376,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:6.8.0":
-  version: 6.8.0
-  resolution: "@testing-library/jest-dom@npm:6.8.0"
-  dependencies:
-    "@adobe/css-tools": ^4.4.0
-    aria-query: ^5.0.0
-    css.escape: ^1.5.1
-    dom-accessibility-api: ^0.6.3
-    picocolors: ^1.1.1
-    redent: ^3.0.0
-  checksum: a3cfb162b6ec6e98277187d9488234ba3e3ee25f24a86facdae092dbe54a015c845bcb81daa6de7afadcac5a5fe25becd7c7e9b67bb01ee4ccf7d67ee907adc9
-  languageName: node
-  linkType: hard
-
-"@testing-library/jest-dom@npm:^6.6.3":
+"@testing-library/jest-dom@npm:6.9.1, @testing-library/jest-dom@npm:^6.6.3":
   version: 6.9.1
   resolution: "@testing-library/jest-dom@npm:6.9.1"
   dependencies:
@@ -9367,9 +9353,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:15.6.0":
-  version: 15.6.0
-  resolution: "cypress@npm:15.6.0"
+"cypress@npm:15.8.1":
+  version: 15.8.1
+  resolution: "cypress@npm:15.8.1"
   dependencies:
     "@cypress/request": ^3.0.9
     "@cypress/xvfb": ^1.2.4
@@ -9407,16 +9393,15 @@ __metadata:
     process: ^0.11.10
     proxy-from-env: 1.0.0
     request-progress: ^3.0.0
-    semver: ^7.7.1
     supports-color: ^8.1.1
-    systeminformation: 5.27.7
+    systeminformation: ^5.27.14
     tmp: ~0.2.4
     tree-kill: 1.2.2
     untildify: ^4.0.0
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: 18345b12b95ba3cbcdc005863409155a8edf6eff57bd0e96cd14ac79a756d602d28a879ad758032f3c3325436fc71ebe5f900ae5698982b81fc0e3082770ee31
+  checksum: e86503016fc5430c6ce9e2300782d62ad5f633ab7c3579a3ef19a989540c4098b28ac22504b74eae5951e582eb10826298faec58a90b77edb70589129fec3897
   languageName: node
   linkType: hard
 
@@ -17137,7 +17122,7 @@ __metadata:
     "@svgr/webpack": 8.1.0
     "@tailwindcss/postcss": 4.1.18
     "@testing-library/cypress": 10.1.0
-    "@testing-library/jest-dom": 6.8.0
+    "@testing-library/jest-dom": 6.9.1
     "@testing-library/react": 16.3.1
     "@types/jest": 30.0.0
     "@types/lodash": 4.17.21
@@ -17156,7 +17141,7 @@ __metadata:
     babel-preset-gatsby: 3.15.0
     babel-preset-react-app: 10.1.0
     csstype: 3.2.3
-    cypress: 15.6.0
+    cypress: 15.8.1
     cypress-axe: 1.7.0
     disqus-react: 1.1.7
     dotenv: 17.2.3
@@ -17198,7 +17183,7 @@ __metadata:
     lodash.kebabcase: 4.1.1
     photoswipe: 5.4.4
     postcss: 8.5.6
-    prettier: 3.6.2
+    prettier: 3.7.4
     react: 18.3.1
     react-docgen-typescript-loader: 3.7.2
     react-dom: 18.3.1
@@ -18809,12 +18794,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.6.2":
-  version: 3.6.2
-  resolution: "prettier@npm:3.6.2"
+"prettier@npm:3.7.4":
+  version: 3.7.4
+  resolution: "prettier@npm:3.7.4"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 0206f5f437892e8858f298af8850bf9d0ef1c22e21107a213ba56bfb9c2387a2020bfda244a20161d8e3dad40c6b04101609a55d370dece53d0a31893b64f861
+  checksum: 955e37e87b1151ca3b3282463f5295f4c415821884791df152ff66e6eb1c5257115153cccba61b13962546100dd00ae45670ff27077dcab04c977d84036eaf80
   languageName: node
   linkType: hard
 
@@ -20133,7 +20118,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.6.2, semver@npm:^7.7.1, semver@npm:^7.7.2, semver@npm:^7.7.3":
+"semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.6.2, semver@npm:^7.7.2, semver@npm:^7.7.3":
   version: 7.7.3
   resolution: "semver@npm:7.7.3"
   bin:
@@ -21418,12 +21403,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"systeminformation@npm:5.27.7":
-  version: 5.27.7
-  resolution: "systeminformation@npm:5.27.7"
+"systeminformation@npm:^5.27.14":
+  version: 5.28.3
+  resolution: "systeminformation@npm:5.28.3"
   bin:
     systeminformation: lib/cli.js
-  checksum: 3d800de2e4ac9ab2c1f3f0a29901756c3ca08ed25f541b75452b545e6eb2c8c8ef4a82f8fbf0fe25c4b0865ef9bc7f8efd7ded813acc9f22c287d4daf6141a49
+  checksum: 36dea1f077ac7848a42ab6430b94e66097f98eec8e5914d03b4294919eca1dafaacebf3f8ad7dd567550c340f5f4c02c9a7acb01eb8947fb81e08ec9269a7826
   conditions: (os=darwin | os=linux | os=win32 | os=freebsd | os=openbsd | os=netbsd | os=sunos | os=android)
   languageName: node
   linkType: hard
