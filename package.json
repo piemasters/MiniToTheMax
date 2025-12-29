@@ -43,7 +43,7 @@
     "gsap": "3.14.2",
     "lodash.kebabcase": "4.1.1",
     "photoswipe": "5.4.4",
-    "react": "18.3.1",
+    "react": "19.2.3",
     "react-dom": "18.3.1",
     "react-photoswipe-gallery": "4.0.0"
   },
@@ -68,7 +68,7 @@
     "@types/lodash.kebabcase": "4.1.9",
     "@types/node": "25.0.3",
     "@types/node-sass": "4.11.8",
-    "@types/react": "18.3.13",
+    "@types/react": "19.2.7",
     "@types/react-dom": "18.3.1",
     "@types/react-test-renderer": "19.1.0",
     "@typescript-eslint/eslint-plugin": "8.50.1",
