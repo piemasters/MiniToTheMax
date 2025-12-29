@@ -3614,12 +3614,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@joshwooding/vite-plugin-react-docgen-typescript@npm:0.6.1":
-  version: 0.6.1
-  resolution: "@joshwooding/vite-plugin-react-docgen-typescript@npm:0.6.1"
+"@joshwooding/vite-plugin-react-docgen-typescript@npm:^0.6.3":
+  version: 0.6.3
+  resolution: "@joshwooding/vite-plugin-react-docgen-typescript@npm:0.6.3"
   dependencies:
-    glob: ^10.0.0
-    magic-string: ^0.30.0
+    glob: ^11.1.0
     react-docgen-typescript: ^2.2.2
   peerDependencies:
     typescript: ">= 4.3.x"
@@ -3627,7 +3626,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 6c5e8f2f1246b4daad9be4e115340bc92b35775a301ad5adaa67549a11b0161629b23be261136a86a8504f1979353509d75938a6d90a1f7fa1bdac6d6754f8d0
+  checksum: 8a7eba83e34e08607e3efbc0f44d6de22121a97889ef2d5aa6d00a9c1c0394665224d50a0486aa49c3386e0674ffcfa0d41e42837f1dc0e3957d43d5781b8e86
   languageName: node
   linkType: hard
 
@@ -4901,16 +4900,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:10.0.8":
-  version: 10.0.8
-  resolution: "@storybook/builder-vite@npm:10.0.8"
+"@storybook/builder-vite@npm:10.1.10":
+  version: 10.1.10
+  resolution: "@storybook/builder-vite@npm:10.1.10"
   dependencies:
-    "@storybook/csf-plugin": 10.0.8
+    "@storybook/csf-plugin": 10.1.10
+    "@vitest/mocker": 3.2.4
     ts-dedent: ^2.0.0
   peerDependencies:
-    storybook: ^10.0.8
+    storybook: ^10.1.10
     vite: ^5.0.0 || ^6.0.0 || ^7.0.0
-  checksum: e6a0fd1a5d326d37aab775cacd3f418e69f032527613e830e7e65da071c94c71f1aab1909b89bb7f8e9f4a355c30a2419c56e178ce0e6b322aaf2d15c7e97a07
+  checksum: 6cedcc86eabe6b05266e1da1e7051845b957647b028d9f10bb5b9f42853ea15b76f9e1800b52e15d581479adcba219662efe47859bb4eb28ec539673375fd235
   languageName: node
   linkType: hard
 
@@ -4935,6 +4935,30 @@ __metadata:
     webpack:
       optional: true
   checksum: 339849e6de124792a97f80f1cd63089c45b8e7c73281e5d875b2c5c91bf41c5ccc1ac5113af2284d03b13b512c2b34e4f23f3eb5133ade377be1067a995238ae
+  languageName: node
+  linkType: hard
+
+"@storybook/csf-plugin@npm:10.1.10":
+  version: 10.1.10
+  resolution: "@storybook/csf-plugin@npm:10.1.10"
+  dependencies:
+    unplugin: ^2.3.5
+  peerDependencies:
+    esbuild: "*"
+    rollup: "*"
+    storybook: ^10.1.10
+    vite: "*"
+    webpack: "*"
+  peerDependenciesMeta:
+    esbuild:
+      optional: true
+    rollup:
+      optional: true
+    vite:
+      optional: true
+    webpack:
+      optional: true
+  checksum: 6c8208590a742d05227f94c1bf4b8eb144e34c787cc5671f2f6c44902b53a2d7d23f0a173cfc16e684c9dd73d44a07394b70ec030809d0baaa494a1926b1d13a
   languageName: node
   linkType: hard
 
@@ -4966,14 +4990,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react-vite@npm:10.0.8":
-  version: 10.0.8
-  resolution: "@storybook/react-vite@npm:10.0.8"
+"@storybook/react-dom-shim@npm:10.1.10":
+  version: 10.1.10
+  resolution: "@storybook/react-dom-shim@npm:10.1.10"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    storybook: ^10.1.10
+  checksum: 9773d765d8ecb82b87f476729cb74fe2c77f668cd6aa6b52b77817c89483128249ea06498143971360279846afeebb2c343b2796f356077db306cac5d0c22527
+  languageName: node
+  linkType: hard
+
+"@storybook/react-vite@npm:10.1.10":
+  version: 10.1.10
+  resolution: "@storybook/react-vite@npm:10.1.10"
   dependencies:
-    "@joshwooding/vite-plugin-react-docgen-typescript": 0.6.1
+    "@joshwooding/vite-plugin-react-docgen-typescript": ^0.6.3
     "@rollup/pluginutils": ^5.0.2
-    "@storybook/builder-vite": 10.0.8
-    "@storybook/react": 10.0.8
+    "@storybook/builder-vite": 10.1.10
+    "@storybook/react": 10.1.10
     empathic: ^2.0.0
     magic-string: ^0.30.0
     react-docgen: ^8.0.0
@@ -4982,27 +5017,28 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    storybook: ^10.0.8
+    storybook: ^10.1.10
     vite: ^5.0.0 || ^6.0.0 || ^7.0.0
-  checksum: ccb832584d967041436781008d77e35e4e506fa123e9eb38ae5d85171f7108cc310c9ccdaf23f8276c76db10a5952c889cc1b3287b6d0f764a67a03b135788c8
+  checksum: a23bff4bd4378a9d97690c8a64ebf535c9e6b17a89f2fbc016f8f0b3d6c53a9323708cfd42af36fbee59b38537e9b6f71a0b61c5fe527485d8568eb1849c3474
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:10.0.8":
-  version: 10.0.8
-  resolution: "@storybook/react@npm:10.0.8"
+"@storybook/react@npm:10.1.10":
+  version: 10.1.10
+  resolution: "@storybook/react@npm:10.1.10"
   dependencies:
     "@storybook/global": ^5.0.0
-    "@storybook/react-dom-shim": 10.0.8
+    "@storybook/react-dom-shim": 10.1.10
+    react-docgen: ^8.0.2
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    storybook: ^10.0.8
+    storybook: ^10.1.10
     typescript: ">= 4.9.x"
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: b826922f3f12a7c2f3fc9d33017d62aa168875726fa71425ac5930d342c03ff501bb05682a16491d05bad9a509c8b99b6eb3096a06670f3345521922cce6c42d
+  checksum: 23e46eb3d1c9d91f36b480d5e50446a95ecc36822419f71cf8d2a73c95956627b8ebb516c50bb4536f0b77a5b3e991da26803ea1272ca7075d0471c0b41728bd
   languageName: node
   linkType: hard
 
@@ -13033,7 +13069,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^10.0.0, glob@npm:^10.3.10, glob@npm:^10.4.2":
+"glob@npm:^10.3.10, glob@npm:^10.4.2":
   version: 10.4.5
   resolution: "glob@npm:10.4.5"
   dependencies:
@@ -13062,6 +13098,22 @@ __metadata:
   bin:
     glob: dist/esm/bin.mjs
   checksum: 65ddc1e3c969e87999880580048763cc8b5bdd375930dd43b8100a5ba481d2e2563e4553de42875790800c602522a98aa8d3ed1c5bd4d27621609e6471eb371d
+  languageName: node
+  linkType: hard
+
+"glob@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "glob@npm:11.1.0"
+  dependencies:
+    foreground-child: ^3.3.1
+    jackspeak: ^4.1.1
+    minimatch: ^10.1.1
+    minipass: ^7.1.2
+    package-json-from-dist: ^1.0.0
+    path-scurry: ^2.0.0
+  bin:
+    glob: dist/esm/bin.mjs
+  checksum: 1cfbdc743db77688727411f00233404eb9c67d7c89a4ff1f8b8e60031382d4f695ecf60f279d0d45e5ba2377610572d013a858a433b45a133cf20aba6e3206e0
   languageName: node
   linkType: hard
 
@@ -17168,7 +17220,7 @@ __metadata:
     "@storybook/addon-docs": 10.0.8
     "@storybook/addon-jest": 9.1.12
     "@storybook/addon-links": 10.0.7
-    "@storybook/react-vite": 10.0.8
+    "@storybook/react-vite": 10.1.10
     "@svgr/webpack": 8.1.0
     "@tailwindcss/postcss": 4.1.18
     "@testing-library/cypress": 10.1.0
@@ -19218,7 +19270,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-docgen@npm:^8.0.0":
+"react-docgen@npm:^8.0.0, react-docgen@npm:^8.0.2":
   version: 8.0.2
   resolution: "react-docgen@npm:8.0.2"
   dependencies:
