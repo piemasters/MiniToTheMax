@@ -1,15 +1,16 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
+import { PageLink } from '../PageLink/PageLink';
 
-import { PageLink } from '../PageLink';
-import type { NavLink } from '../../types';
+export type NavLink = {
+  name: string;
+  url: string;
+};
 
-export interface HeaderProps {
+export const Header: FC<{
   title: string;
   logo: string;
   pages: NavLink[];
-}
-
-export const Header: FC<HeaderProps> = ({ title, logo, pages }) => {
+}> = ({ title, logo, pages }) => {
   return (
     <nav className="p-2 mb-8 bg-gray-100 md:p-4" data-testid="nav-header">
       <div className="flex flex-col max-w-3xl mx-auto">

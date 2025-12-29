@@ -1,7 +1,6 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-
-import { Footer as PureFooter } from '../../Footer';
+import { Footer as PureFooter } from '../../Footer/Footer';
 
 export const StatefulFooter: FC = () => {
   const data = useStaticQuery(graphql`

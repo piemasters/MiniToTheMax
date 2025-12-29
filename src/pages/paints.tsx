@@ -1,13 +1,11 @@
-import React, { StrictMode, useMemo, useState } from 'react';
-
+import { ReactNode, StrictMode, useMemo, useState } from 'react';
 import Layout from '../layouts/layout';
-import { Paint, StatefulSeo as Seo } from '../components';
+import { Paint } from '../components/Paint/Paint';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
 
 import {
   PaintCompanies,
-  type AllPaintFilters,
   type PaintDetails,
-  type PaintFilters,
   type PaintGradient,
   type PaintType,
 } from '../types';
@@ -19,11 +17,15 @@ import {
   categoryFilters,
 } from '../util/paintFilters';
 import { getAllSortedPaints } from '../util/getAllSortedPaints';
-import { togglePaints } from '../util/togglePaints';
+import {
+  AllPaintFilters,
+  PaintFilters,
+  togglePaints,
+} from '../util/togglePaints';
 import { textToId } from '../util/textToId';
 import { clsx } from '../util/clsx';
 
-export const Paints = (): React.ReactNode => {
+export const Paints = (): ReactNode => {
   const allPaints = useMemo(() => getAllSortedPaints(), []);
   const [filteredPaints, setFilteredPaints] = useState([...allPaints]);
 
@@ -153,7 +155,7 @@ const FilterGroup = ({
         }
         aria-pressed={isCollapsed}
       >
-        <h3 className="!m-0">
+        <h3 className="m-0!">
           {type.replace(/\b\w/g, (l) => l.toUpperCase())}
         </h3>
         <div

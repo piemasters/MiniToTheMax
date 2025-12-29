@@ -1,5 +1,4 @@
 import { getByTestId, render } from '@testing-library/react';
-
 import { CoverImage } from './CoverImage';
 
 describe('CoverImage', () => {

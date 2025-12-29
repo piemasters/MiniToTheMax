@@ -1,21 +1,14 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import LiteYouTubeEmbed from './LiteYoutubeEmbbed';
 
-export interface VideoProps {
+export const Video: FC<{
   videoId: string;
   title: string;
   width?: number;
   height?: number;
   aspectHeight?: number;
   aspectWidth?: number;
-}
-
-export const Video: FC<VideoProps> = ({
-  videoId,
-  title,
-  aspectWidth = 16,
-  aspectHeight = 9,
-}) => {
+}> = ({ videoId, title, aspectWidth = 16, aspectHeight = 9 }) => {
   return (
     <div className="w-full max-w-3xl mb-4 hover:shadow-3xl" data-testid="video">
       <LiteYouTubeEmbed

@@ -1,10 +1,9 @@
 import { FC } from 'react';
 import { Facebook, Instagram, Youtube } from './Icons';
-export interface FooterProps {
-  author: string;
-}
 
-export const Footer: FC<FooterProps> = ({ author }) => {
+export const Footer: FC<{
+  author: string;
+}> = ({ author }) => {
   return (
     <footer data-testid="footer" className="py-8 mt-12 bg-gray-100">
       <div className="flex items-center justify-between max-w-3xl px-4 mx-auto text-xs no-underline md:text-sm">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Paint as BasePaint } from '../../src/components';
+import { Paint as BasePaint } from '../../src/components/Paint/Paint';
 import { getPaint } from '../../src/util/getPaint';
 import { PaintCategory } from '../../src/types';
 

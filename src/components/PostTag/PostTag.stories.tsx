@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-
 import { PostTag } from './PostTag';
 
 const meta: Meta<typeof PostTag> = {

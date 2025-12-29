@@ -3,9 +3,9 @@ import {
   PaintAvailabilities,
   PaintColors,
   PaintCompanies,
-  PaintFilters,
   PaintTypes,
 } from '../types';
+import { PaintFilters } from './togglePaints';
 
 // Build filters from types, with all values set to true by default
 

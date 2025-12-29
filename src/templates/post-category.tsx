@@ -1,9 +1,16 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { graphql } from 'gatsby';
-
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 import Layout from '../layouts/layout';
-import { CoverCategory, StatefulSeo as Seo } from '../components';
-import { Categories, MdxEdge, PostLink } from '../types';
+import { CoverCategory } from '../components/CoverCategory/CoverCategory';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
+import { AllMdx, MdxEdge } from '../types';
+
+type PostLink = {
+  slug: string;
+  title: string;
+  img: IGatsbyImageData;
+};
 
 export interface PostCategoryContext {
   type: string;
@@ -11,12 +18,12 @@ export interface PostCategoryContext {
   url: string;
 }
 
-export interface PostCategoryTemplateProps {
+const PostCategory: FC<{
   pageContext: PostCategoryContext;
-  data: Categories;
-}
-
-const PostCategory: FC<PostCategoryTemplateProps> = ({ pageContext, data }) => {
+  data: {
+    categories: AllMdx;
+  };
+}> = ({ pageContext, data }) => {
   const postCategories: PostLink[] = data.categories.edges.map(
     (edge: MdxEdge) => ({
       slug: edge.node.fields.slug,
@@ -77,7 +84,7 @@ export const pageQuery = graphql`
   }
 `;
 
-export const Head = ({ pageContext }) => (
+export const Head = ({ pageContext }: { pageContext: PostCategoryContext }) => (
   <Seo
     title={pageContext?.category}
     description={`${pageContext?.type} articles on the subject of ${pageContext?.category}`}

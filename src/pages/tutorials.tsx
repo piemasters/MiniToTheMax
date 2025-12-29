@@ -1,16 +1,21 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { graphql } from 'gatsby';
-import { getImage } from 'gatsby-plugin-image';
-
+import { getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import Layout from '../layouts/layout';
-import { CoverCategory, StatefulSeo as Seo } from '../components';
-import { Tutorials } from '../types';
+import { CoverCategory } from '../components/CoverCategory/CoverCategory';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
 
-export interface TutorialsPageProps {
+type Tutorials = {
+  fortyThousand: IGatsbyImageData;
+  bases: IGatsbyImageData;
+  general: IGatsbyImageData;
+  scenery: IGatsbyImageData;
+  tools: IGatsbyImageData;
+};
+
+export const TutorialsPage: FC<{
   data: Tutorials;
-}
-
-export const TutorialsPage: FC<TutorialsPageProps> = ({ data }) => {
+}> = ({ data }) => {
   const categories = [
     {
       title: '40k',

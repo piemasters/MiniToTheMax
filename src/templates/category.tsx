@@ -1,21 +1,26 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { graphql } from 'gatsby';
-
 import Layout from '../layouts/layout';
-import { PageLink, StatefulSeo as Seo } from '../components';
-import { Categories, MdxEdge, TagLink } from '../types';
+import { PageLink } from '../components/PageLink/PageLink';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
+import { AllMdx, MdxEdge } from '../types';
 
-export interface CategoryContext {
+type TagLink = {
+  slug: string;
+  title: string;
+};
+
+type CategoryContext = {
   category: string;
   url: string;
-}
+};
 
-export interface CategoryTemplateProps {
+export const Category: FC<{
   pageContext: CategoryContext;
-  data: Categories;
-}
-
-export const Category: FC<CategoryTemplateProps> = ({ pageContext, data }) => {
+  data: {
+    categories: AllMdx;
+  };
+}> = ({ pageContext, data }) => {
   const categoryHeader = `${data.categories.totalCount} post${
     data.categories.totalCount === 1 ? '' : 's'
   } tagged with "${pageContext.category}"`;
@@ -75,7 +80,7 @@ export const pageQuery = graphql`
   }
 `;
 
-export const Head = ({ pageContext }) => (
+export const Head = ({ pageContext }: { pageContext: CategoryContext }) => (
   <Seo
     title={pageContext?.category}
     pathname={pageContext?.url}

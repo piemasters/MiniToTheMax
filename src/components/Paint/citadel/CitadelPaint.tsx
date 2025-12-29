@@ -1,8 +1,6 @@
-import React, { FC } from 'react';
-
-import { textToId } from '../../../util/textToId';
-import type { PaintDetailsCitadel } from '../../../types';
-
+import { FC } from 'react';
+import { textToId } from '../util/textToId';
+import type { PaintDetailsCitadel } from '../types';
 import { getImage } from './getImage';
 import { getShape } from './getShape';
 import { getGradients } from './getGradients';

@@ -1,23 +1,14 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { Seo as PureSeo } from '../../Seo/Seo';
 
-import { Seo as PureSeo } from '../../Seo';
-
-export interface StatefulSeoProps {
+export const StatefulSeo: FC<{
   title?: string;
   description?: string;
   image?: string;
   article?: boolean;
   pathname?: string;
-}
-
-export const StatefulSeo: FC<StatefulSeoProps> = ({
-  title,
-  description,
-  image,
-  pathname,
-  article,
-}) => {
+}> = ({ title, description, image, pathname, article }) => {
   const data = useStaticQuery(graphql`
     query SEO {
       site {

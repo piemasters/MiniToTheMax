@@ -1,5 +1,3 @@
-import { link } from 'fs';
-
 export const bloodBowl = [
   { name: 'Biased Refs' },
   { name: 'Black Orcs' },
@@ -33,16 +31,34 @@ export const dungeonBowl = [
 ];
 
 export const bloodBowlGnomes = [
-  { name: 'Beastmaster' },
-  { name: 'Illusionist' },
+  {
+    name: 'Beastmaster',
+    link: '/showcase/board-games/blood-bowl/gnomes/beastmaster',
+  },
+  {
+    name: 'Illusionist',
+    link: '/showcase/board-games/blood-bowl/gnomes/illusionist',
+  },
   {
     name: 'Lineman',
     link: '/showcase/board-games/blood-bowl/gnomes/lineman',
   },
-  { name: 'Rodney Roachbait' },
-  { name: 'Rowana Forestfoot' },
-  { name: 'Tokens' },
-  { name: 'Treeman' },
+  {
+    name: 'Rodney Roachbait',
+    link: '/showcase/board-games/blood-bowl/gnomes/rodney-roachbait',
+  },
+  {
+    name: 'Rowana Forestfoot',
+    link: '/showcase/board-games/blood-bowl/gnomes/rowana-forestfoot',
+  },
+  {
+    name: 'Tokens',
+    link: '/showcase/board-games/blood-bowl/gnomes/tokens',
+  },
+  {
+    name: 'Treeman',
+    link: '/showcase/board-games/blood-bowl/gnomes/treeman',
+  },
   {
     name: 'Woodland Fox',
     link: '/showcase/board-games/blood-bowl/gnomes/woodland-fox',

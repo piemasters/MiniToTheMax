@@ -1,16 +1,19 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { graphql } from 'gatsby';
-import { getImage } from 'gatsby-plugin-image';
-
+import { getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import Layout from '../layouts/layout';
-import { CoverCategory, StatefulSeo as Seo } from '../components';
-import type { Reviews } from '../types';
+import { CoverCategory } from '../components/CoverCategory/CoverCategory';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
 
-export interface ReviewsPageProps {
+export type Reviews = {
+  boardGames: IGatsbyImageData;
+  books: IGatsbyImageData;
+  tools: IGatsbyImageData;
+};
+
+export const ReviewsPage: FC<{
   data: Reviews;
-}
-
-export const ReviewsPage: FC<ReviewsPageProps> = ({ data }) => {
+}> = ({ data }) => {
   const categories = [
     {
       title: 'Board Games',

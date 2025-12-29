@@ -1,13 +1,12 @@
-import React, { FC } from 'react';
-
+import { FC } from 'react';
+import VallejoPaint from './vallejo/VallejoPaint';
+import CitadelPaint from './citadel/CitadelPaint';
 import type {
   PaintDetails,
   CitadelPaintCategory,
   CitadelTechnicalPaintImages,
   VallejoPaintCategory,
-} from '../../types';
-import VallejoPaint from './vallejo/VallejoPaint';
-import CitadelPaint from './citadel/CitadelPaint';
+} from './types';
 
 export const Paint: FC<{ paint: PaintDetails }> = ({ paint }) => {
   if (paint.company === 'Vallejo') {

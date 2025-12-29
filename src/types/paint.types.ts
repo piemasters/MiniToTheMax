@@ -61,6 +61,7 @@ export const PaintTypes = [
   'dry',
   'fluorescent',
   'ink',
+  'intense',
   'metallic',
   'one-coat', // Citadel contrast, Vallejo xpress
   'spray',

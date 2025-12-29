@@ -1,6 +1,4 @@
-import React from 'react';
-
-import { getColorByBgColor } from '../../../util/getColorByBgColor';
+import { getColorByBgColor } from '../util/getColorByBgColor';
 
 export const getText = ({
   category,
@@ -11,15 +9,43 @@ export const getText = ({
 }) => {
   if (category === 'Vallejo Game Color') {
     return (
-      <g transform="translate(5 41)">
+      <g transform="translate(14 42)">
         <text
           x="0"
           y="15"
           fontFamily="sans-serif"
-          fontSize="9"
+          fontSize="12"
           fill={getColorByBgColor(hex)}
         >
-          GAME
+          G
+        </text>
+      </g>
+    );
+  } else if (category === 'Vallejo Model Color') {
+    return (
+      <g transform="translate(14 42)">
+        <text
+          x="0"
+          y="15"
+          fontFamily="sans-serif"
+          fontSize="12"
+          fill={getColorByBgColor(hex)}
+        >
+          M
+        </text>
+      </g>
+    );
+  } else if (category === 'Vallejo Xpress Color') {
+    return (
+      <g transform="translate(14 42)">
+        <text
+          x="0"
+          y="15"
+          fontFamily="sans-serif"
+          fontSize="12"
+          fill={getColorByBgColor(hex)}
+        >
+          X
         </text>
       </g>
     );

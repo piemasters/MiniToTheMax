@@ -1,8 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-
-import { Paint } from './Paint';
 import { gameColorPolishedGold } from '../../data/paints/vallejo/game';
 import { baseRetributorArmour } from '../../data/paints/citadel/base';
+import { Paint } from './Paint';
 
 const meta: Meta<typeof Paint> = {
   component: Paint,

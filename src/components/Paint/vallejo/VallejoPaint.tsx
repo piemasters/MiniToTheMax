@@ -1,8 +1,6 @@
-import React, { FC } from 'react';
-
-import { textToId } from '../../../util/textToId';
-import { PaintDetailsVallejo } from '../../../types';
-
+import { FC } from 'react';
+import { textToId } from '../util/textToId';
+import { PaintDetailsVallejo } from '../types';
 import { getShape } from './getShape';
 import { getGradients } from './getGradients';
 import { getText } from './getText';

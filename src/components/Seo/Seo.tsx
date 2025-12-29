@@ -1,20 +1,12 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 
-export interface SeoProps {
+export const Seo: FC<{
   title: string;
   description: string;
   image: string;
   article?: boolean;
   siteUrl: string;
-}
-
-export const Seo: FC<SeoProps> = ({
-  title,
-  description,
-  image,
-  article,
-  siteUrl,
-}) => {
+}> = ({ title, description, image, article, siteUrl }) => {
   return (
     <>
       {/* General tags */}

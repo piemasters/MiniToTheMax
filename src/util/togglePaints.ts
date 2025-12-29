@@ -1,6 +1,14 @@
-import { AllPaintFilters, PaintDetails } from '../types';
+import { PaintDetails } from '../types';
 import { getAllSortedPaints } from './getAllSortedPaints';
 import { sortPaints } from './sortPaints';
+
+export type PaintFilters = {
+  [key: string]: boolean;
+};
+
+export type AllPaintFilters = {
+  [key: string]: PaintFilters;
+};
 
 export const togglePaints = (filters: AllPaintFilters): PaintDetails[] => {
   // Create a map of inactive filters for each type

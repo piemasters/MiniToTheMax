@@ -1,16 +1,13 @@
-import React from 'react';
 import { graphql } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
-
 import Layout from '../layouts/layout';
-import {
-  CoverImage,
-  PostTag,
-  SimplePagination,
-  StatefulSeo as Seo,
-  Gallery,
-} from '../components';
+import { CoverImage } from '../components/CoverImage/CoverImage';
+import { Gallery } from '../components/Gallery/Gallery';
+import { PostTag } from '../components/PostTag/PostTag';
+import { SimplePagination } from '../components/SimplePagination/SimplePagination';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
 
+// @ts-expect-error build fails with types enabled
 export const Post = ({ pageContext, data, children }) => {
   const pagination = {
     previous: pageContext.previous
@@ -40,7 +37,8 @@ export const Post = ({ pageContext, data, children }) => {
     featuredImage:
       data.post.frontmatter.featuredImage.childImageSharp.gatsbyImageData,
     gallery: data.post.frontmatter.gallery
-      ? data.post.frontmatter.gallery.map((node) => node?.childImageSharp)
+      ? // @ts-expect-error build fails with types enabled
+        data.post.frontmatter.gallery.map((node) => node?.childImageSharp)
       : [],
   };
 
@@ -56,9 +54,11 @@ export const Post = ({ pageContext, data, children }) => {
         <CoverImage image={post.featuredImage} title={post.title} />
       )}
       <div className="py-2">
+        {/* @ts-expect-error build fails with types enabled */}
         {post.categories.map((category) => (
           <PostTag type={'categories'} name={category} key={category} />
         ))}
+        {/* @ts-expect-error build fails with types enabled */}
         {post.tags.map((tag) => (
           <PostTag type={'tags'} name={tag} key={tag} />
         ))}
@@ -121,6 +121,7 @@ export const pageQuery = graphql`
   }
 `;
 
+// @ts-expect-error build fails with types enabled
 export const Head = ({ data }) => (
   <Seo
     title={data?.post?.frontmatter?.title}

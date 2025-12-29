@@ -1,8 +1,6 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-
-import { Header as PureHeader } from '../../Header';
-import type { NavLink } from '../../../types';
+import { NavLink, Header as PureHeader } from '../../Header/Header';
 
 export const StatefulHeader: FC = () => {
   const data = useStaticQuery(graphql`

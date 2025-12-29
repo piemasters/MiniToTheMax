@@ -1,7 +1,5 @@
-import React from 'react';
-
-import type { CitadelPaintCategory } from '../../../types';
-import { textToId } from '../../../util/textToId';
+import { CitadelPaintCategory } from '../types';
+import { textToId } from '../util/textToId';
 
 export const getGloss = ({
   category,

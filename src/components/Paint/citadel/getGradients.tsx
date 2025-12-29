@@ -1,7 +1,6 @@
-import React, { ReactElement } from 'react';
-
-import { textToId } from '../../../util/textToId';
-import type { CitadelPaintCategory, PaintGradient } from '../../../types';
+import { ReactElement } from 'react';
+import { textToId } from '../util/textToId';
+import type { CitadelPaintCategory, PaintGradient } from '../types';
 
 export const getGradients = ({
   gradient,

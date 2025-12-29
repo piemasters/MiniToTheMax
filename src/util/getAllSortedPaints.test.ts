@@ -30,7 +30,7 @@ jest.mock('../data/paints/citadel', () => ({
   sprayPaints: [],
   technicalPaints: [],
 }));
-jest.mock('../data/paints', () => ({
+jest.mock('../data/paints/vallejo', () => ({
   gameColorPaints: [
     {
       name: 'Game Color Paint A',
@@ -51,12 +51,13 @@ jest.mock('../data/paints', () => ({
       type: ['core'],
     },
   ],
+  modelColorPaints: [],
+  xpressColorPaints: [],
 }));
 
 describe('getAllSortedPaints', () => {
   it('combines all paint arrays into a single sorted array', () => {
     const sortedPaints = getAllSortedPaints();
-    console.log(sortedPaints);
 
     expect(sortedPaints).toEqual([
       {

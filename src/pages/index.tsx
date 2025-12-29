@@ -1,9 +1,11 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-
 import Layout from '../layouts/layout';
-import { Badges, PostSummary, StatefulSeo as Seo, Video } from '../components';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
+import { Badges } from '../components/Badges/Badges';
+import { PostSummary } from '../components/PostSummary/PostSummary';
+import { Video } from '../components/Video/Video';
 
 export const IndexPage: FC = () => {
   const data = useStaticQuery(graphql`
@@ -38,7 +40,10 @@ export const IndexPage: FC = () => {
     <Layout>
       <Badges />
       <h2>Latest Video</h2>
-      <Video videoId="_OMLzEGEEbM" title="Jordan Sorcery Familiar Frenzy" />
+      <Video
+        videoId="lbaqDNBYEGI"
+        title="The Glimdwarrow Groundhogs Rowana Forestfoot"
+      />
       <h2>Latest Post</h2>
 
       <PostSummary

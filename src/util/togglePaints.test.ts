@@ -1,7 +1,5 @@
-import { togglePaints } from './togglePaints';
-import { PaintDetails, AllPaintFilters } from '../types';
-import { getAllSortedPaints } from './getAllSortedPaints';
-import { sortPaints } from './sortPaints';
+import { PaintDetails } from '../types';
+import { AllPaintFilters, togglePaints } from './togglePaints';
 
 // Mock data for paints
 const mockPaints: PaintDetails[] = [

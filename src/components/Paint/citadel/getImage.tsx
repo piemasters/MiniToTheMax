@@ -1,4 +1,4 @@
-import { CitadelTechnicalPaintImages } from '../../../types';
+import type { CitadelTechnicalPaintImages } from '../types';
 
 import AgrellanBadland from '../../../../content/assets/svg/paints/technicalAgrellanBadland.webp';
 import AgrellanEarth from '../../../../content/assets/svg/paints/technicalAgrellanEarth.webp';

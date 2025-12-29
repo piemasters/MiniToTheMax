@@ -1,23 +1,33 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { graphql } from 'gatsby';
-
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 import Layout from '../layouts/layout';
-import { Pagination, PostSummary, StatefulSeo as Seo } from '../components';
-import type { MdxEdge, Posts, PostSummary as PostSummaryType } from '../types';
+import { Pagination } from '../components/Pagination/Pagination';
+import { PostSummary } from '../components/PostSummary/PostSummary';
+import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
+import type { AllMdx, MdxEdge } from '../types';
 
-export interface PostContext {
+type PostContext = {
   limit: number;
   skip: number;
   numPostPages: number;
   currentPage: number;
-}
+};
 
-export interface BlogTemplateProps {
-  data: Posts;
+type PostSummaryType = {
+  slug: string;
+  title: string;
+  date: string;
+  img: IGatsbyImageData;
+  excerpt: string;
+};
+
+export const Blog: FC<{
+  data: {
+    posts: AllMdx;
+  };
   pageContext: PostContext;
-}
-
-export const Blog: FC<BlogTemplateProps> = ({ data, pageContext }) => {
+}> = ({ data, pageContext }) => {
   const page = {
     isFirst: pageContext.currentPage === 1,
     isLast: pageContext.currentPage === pageContext.numPostPages,
@@ -72,7 +82,7 @@ export const Blog: FC<BlogTemplateProps> = ({ data, pageContext }) => {
 export const postQuery = graphql`
   query blogPageQuery($skip: Int, $limit: Int) {
     posts: allMdx(
-      filter: { frontmatter: { published: { eq: true } } }
+      filter: { frontmatter: { published: { eq: false } } }
       sort: { frontmatter: { date: DESC } }
       limit: $limit
       skip: $skip
@@ -100,7 +110,7 @@ export const postQuery = graphql`
 
 export default Blog;
 
-export const Head = ({ pageContext }) => (
+export const Head = ({ pageContext }: { pageContext: PostContext }) => (
   <Seo
     title={'Blog'}
     description={'Blog Posts'}
