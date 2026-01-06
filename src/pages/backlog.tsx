@@ -279,6 +279,15 @@ export const BacklogPage: FC = () => {
         </Accordion.Item>
       </Accordion>
 
+      <h2>Moonstone</h2>
+      <hr />
+
+      <Accordion name="moonstone">
+        <Accordion.Item value={1} trigger="Moonstone">
+          {generateEntries(backlog.moonstone)}
+        </Accordion.Item>
+      </Accordion>
+
       <h2>Other</h2>
       <hr />
 
