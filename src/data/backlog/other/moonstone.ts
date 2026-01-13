@@ -5,6 +5,7 @@ export const moonstone = [
   },
   {
     name: 'Beaky Bobby',
+    link: '/showcase/moonstone/beaky-bobby/',
   },
   {
     name: 'Doug the Flatulent',
