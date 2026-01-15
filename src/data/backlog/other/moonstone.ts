@@ -9,6 +9,7 @@ export const moonstone = [
   },
   {
     name: 'Doug the Flatulent',
+    link: '/showcase/moonstone/doug-the-flatulent/',
   },
   {
     name: 'Dusk Till Dawn',
