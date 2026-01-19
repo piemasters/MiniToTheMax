@@ -1,5 +1,3 @@
-import { link } from 'node:fs';
-
 export const moonstone = [
   {
     name: 'Baron Von Fancyhat',
@@ -22,6 +20,7 @@ export const moonstone = [
   },
   {
     name: 'Flintlock',
+    link: '/showcase/moonstone/flintlock/',
   },
   {
     name: 'Friar Flavious',
