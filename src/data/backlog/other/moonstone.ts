@@ -24,6 +24,7 @@ export const moonstone = [
   },
   {
     name: 'Friar Flavious',
+    link: '/showcase/moonstone/friar-flavious/',
   },
   {
     name: 'Goblin Airship',
