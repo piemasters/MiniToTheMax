@@ -13092,9 +13092,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sitemap@npm:6.15.0":
-  version: 6.15.0
-  resolution: "gatsby-plugin-sitemap@npm:6.15.0"
+"gatsby-plugin-sitemap@npm:6.16.0":
+  version: 6.16.0
+  resolution: "gatsby-plugin-sitemap@npm:6.16.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     common-tags: ^1.8.2
@@ -13102,9 +13102,9 @@ __metadata:
     sitemap: ^7.1.1
   peerDependencies:
     gatsby: ^5.0.0-next
-    react: ^18.0.0 || ^0.0.0
-    react-dom: ^18.0.0 || ^0.0.0
-  checksum: b94fa5856679740f6f73f57915a22aa83c9703d8993821c3aae8052534df832ca7d69e959f583e87d1121cf37d2420209cd3789f76a9244e1ff283391f367ade
+    react: ^18.0.0 || ^19.0.0 || ^0.0.0
+    react-dom: ^18.0.0 || ^19.0.0 || ^0.0.0
+  checksum: 8c699d30c0b5399b036c9844d8ce83b343dbd54276a843b55f0899d268d0d27000595d38123a2aff9f95a3f5e1bda39c2c29a51fbed2c67432cf143c5197b554
   languageName: node
   linkType: hard
 
@@ -17858,7 +17858,7 @@ __metadata:
     gatsby-plugin-postcss: 6.15.0
     gatsby-plugin-robots-txt: 1.8.0
     gatsby-plugin-sharp: 5.15.0
-    gatsby-plugin-sitemap: 6.15.0
+    gatsby-plugin-sitemap: 6.16.0
     gatsby-plugin-svgr-svgo: 2.0.0
     gatsby-plugin-typescript: 5.15.0
     gatsby-remark-images: 7.16.0
