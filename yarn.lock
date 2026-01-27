@@ -5552,7 +5552,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/icons@npm:^2.0.0":
+"@storybook/icons@npm:^2.0.0, @storybook/icons@npm:^2.0.1":
   version: 2.0.1
   resolution: "@storybook/icons@npm:2.0.1"
   peerDependencies:
@@ -17828,7 +17828,7 @@ __metadata:
     react-test-renderer: 19.2.4
     sharp: 0.34.5
     start-server-and-test: 2.1.3
-    storybook: 10.1.11
+    storybook: 10.2.0
     tailwindcss: 4.1.18
     ts-loader: 9.5.4
     typescript: 5.9.3
@@ -20755,7 +20755,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.6.2, semver@npm:^7.7.2, semver@npm:^7.7.3":
+"semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0, semver@npm:^7.7.2, semver@npm:^7.7.3":
   version: 7.7.3
   resolution: "semver@npm:7.7.3"
   bin:
@@ -21480,12 +21480,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:10.1.11":
-  version: 10.1.11
-  resolution: "storybook@npm:10.1.11"
+"storybook@npm:10.2.0":
+  version: 10.2.0
+  resolution: "storybook@npm:10.2.0"
   dependencies:
     "@storybook/global": ^5.0.0
-    "@storybook/icons": ^2.0.0
+    "@storybook/icons": ^2.0.1
     "@testing-library/jest-dom": ^6.6.3
     "@testing-library/user-event": ^14.6.1
     "@vitest/expect": 3.2.4
@@ -21493,7 +21493,7 @@ __metadata:
     esbuild: ^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0 || ^0.27.0
     open: ^10.2.0
     recast: ^0.23.5
-    semver: ^7.6.2
+    semver: ^7.7.3
     use-sync-external-store: ^1.5.0
     ws: ^8.18.0
   peerDependencies:
@@ -21503,7 +21503,7 @@ __metadata:
       optional: true
   bin:
     storybook: ./dist/bin/dispatcher.js
-  checksum: e2793a919797829b7e8abff9c611a99273c58fe4bb6b6ec54685827c3860822d09d7889d15c71dd10fa68d900b301255970d74fc9a79c13adcdea931757aa9c3
+  checksum: 8ab640a3597acf62a015024ccb9e2e9dfeddc35c85c0d5522901aa91180686dcc1c85a8220b15a940cbcd9b7288bb67c02cc01ad5e118f0b7325138b90ce7695
   languageName: node
   linkType: hard
 
