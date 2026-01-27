@@ -12864,17 +12864,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-google-gtag@npm:5.15.0":
-  version: 5.15.0
-  resolution: "gatsby-plugin-google-gtag@npm:5.15.0"
+"gatsby-plugin-google-gtag@npm:5.16.0":
+  version: 5.16.0
+  resolution: "gatsby-plugin-google-gtag@npm:5.16.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     minimatch: ^3.1.2
   peerDependencies:
     gatsby: ^5.0.0-next
-    react: ^18.0.0 || ^0.0.0
-    react-dom: ^18.0.0 || ^0.0.0
-  checksum: 6ab3fc0e08da7ac723e714c867259b250c88307d58b05d2875f6da04111931f07c6115f143589880dbaef27a7b715ff7509d1f1a7cf18d06105613ea0615265d
+    react: ^18.0.0 || ^19.0.0 || ^0.0.0
+    react-dom: ^18.0.0 || ^19.0.0 || ^0.0.0
+  checksum: d7bf69cd4e10170a81826fa883088df73472438bef68ab5f0d0bf1aab0cc3156a7b01581c4e608d35937880228a30f2e2cecceee6c5cc2d499f01a94f1ef26dd
   languageName: node
   linkType: hard
 
@@ -17776,7 +17776,7 @@ __metadata:
     gatsby: 5.15.0
     gatsby-plugin-catch-links: 5.15.0
     gatsby-plugin-eslint: 4.0.4
-    gatsby-plugin-google-gtag: 5.15.0
+    gatsby-plugin-google-gtag: 5.16.0
     gatsby-plugin-image: 3.15.0
     gatsby-plugin-manifest: 5.15.0
     gatsby-plugin-mdx: 5.15.0
