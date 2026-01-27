@@ -41,8 +41,8 @@ export const IndexPage: FC = () => {
       <Badges />
       <h2>Latest Video</h2>
       <Video
-        videoId="lbaqDNBYEGI"
-        title="The Glimdwarrow Groundhogs Rowana Forestfoot"
+        videoId="BLtlo6CPbY8"
+        title="Moonstone Baron von Fancyhat, Eric the Squire, Flintlock & Friar Flavius"
       />
       <h2>Latest Post</h2>
 
