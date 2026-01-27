@@ -96,7 +96,7 @@
     "eslint-webpack-plugin": "5.0.2",
     "fs-extra": "11.3.3",
     "gatsby-plugin-eslint": "4.0.4",
-    "gatsby-plugin-postcss": "6.15.0",
+    "gatsby-plugin-postcss": "6.16.0",
     "glob": "13.0.0",
     "globals": "17.1.0",
     "identity-obj-proxy": "3.0.0",
