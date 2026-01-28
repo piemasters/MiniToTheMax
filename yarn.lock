@@ -8128,7 +8128,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:5.16.0":
+"babel-plugin-remove-graphql-queries@npm:5.16.0, babel-plugin-remove-graphql-queries@npm:^5.16.0":
   version: 5.16.0
   resolution: "babel-plugin-remove-graphql-queries@npm:5.16.0"
   dependencies:
@@ -8153,20 +8153,6 @@ __metadata:
     "@babel/core": ^7.0.0
     gatsby: ^5.0.0-next
   checksum: 33bddde146752eebe0352e24eab087383e52da70f6300684fe7f246c600b88f604e82783fd0d3303dc3c5748811e2be19d7b7361923b2f922bdd14d2b8d96250
-  languageName: node
-  linkType: hard
-
-"babel-plugin-remove-graphql-queries@npm:^5.16.0":
-  version: 5.16.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:5.16.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    "@babel/types": ^7.20.7
-    gatsby-core-utils: ^4.16.0
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^5.0.0-next
-  checksum: b3ef2b6ba3d9bc6a8e14246da94d027261764462d3bbe6304b89f5125c80776a3c6fd0e12ced2b3ca0fdd6eba3671212ab1e090b74bf886b758f83b5add85a1c
   languageName: node
   linkType: hard
 
@@ -13268,22 +13254,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:5.15.0":
-  version: 5.15.0
-  resolution: "gatsby-source-filesystem@npm:5.15.0"
+"gatsby-source-filesystem@npm:5.16.0":
+  version: 5.16.0
+  resolution: "gatsby-source-filesystem@npm:5.16.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     chokidar: ^3.6.0
     file-type: ^16.5.4
     fs-extra: ^11.2.0
-    gatsby-core-utils: ^4.15.0
+    gatsby-core-utils: ^4.16.0
     mime: ^3.0.0
     pretty-bytes: ^5.6.0
     valid-url: ^1.0.9
     xstate: ^4.38.0
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: 01276b343c5ef9a65488f45996559a1ef170022ffac605a0337c9bf73e942b8caa3f7e2cd293812fa35bb1bc0811269b85381ad59a048126f49fa2d00b887489
+  checksum: 2c868fa6095849d5d21075fe5ff54785ea6bbff74c6e48d140f8c29b612dd27405e1d6b4af27b8a5f3eaa0be7bea799032038fdf32de625c95c82a65d2909429
   languageName: node
   linkType: hard
 
@@ -17926,7 +17912,7 @@ __metadata:
     gatsby-plugin-svgr-svgo: 2.0.0
     gatsby-plugin-typescript: 5.15.0
     gatsby-remark-images: 7.16.0
-    gatsby-source-filesystem: 5.15.0
+    gatsby-source-filesystem: 5.16.0
     gatsby-transformer-sharp: 5.16.0
     glob: 13.0.0
     globals: 17.1.0
