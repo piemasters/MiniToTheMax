@@ -8128,7 +8128,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:5.16.0":
+"babel-plugin-remove-graphql-queries@npm:5.16.0, babel-plugin-remove-graphql-queries@npm:^5.16.0":
   version: 5.16.0
   resolution: "babel-plugin-remove-graphql-queries@npm:5.16.0"
   dependencies:
@@ -8153,20 +8153,6 @@ __metadata:
     "@babel/core": ^7.0.0
     gatsby: ^5.0.0-next
   checksum: 33bddde146752eebe0352e24eab087383e52da70f6300684fe7f246c600b88f604e82783fd0d3303dc3c5748811e2be19d7b7361923b2f922bdd14d2b8d96250
-  languageName: node
-  linkType: hard
-
-"babel-plugin-remove-graphql-queries@npm:^5.16.0":
-  version: 5.16.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:5.16.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    "@babel/types": ^7.20.7
-    gatsby-core-utils: ^4.16.0
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^5.0.0-next
-  checksum: b3ef2b6ba3d9bc6a8e14246da94d027261764462d3bbe6304b89f5125c80776a3c6fd0e12ced2b3ca0fdd6eba3671212ab1e090b74bf886b758f83b5add85a1c
   languageName: node
   linkType: hard
 
@@ -12893,15 +12879,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-catch-links@npm:5.15.0":
-  version: 5.15.0
-  resolution: "gatsby-plugin-catch-links@npm:5.15.0"
+"gatsby-plugin-catch-links@npm:5.16.0":
+  version: 5.16.0
+  resolution: "gatsby-plugin-catch-links@npm:5.16.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     escape-string-regexp: ^1.0.5
   peerDependencies:
     gatsby: ^5.0.0-next
-  checksum: f4369e5ac723401f65611cefbaadb79c041c9453c377c5a7698d40b5f4df5f55a8d35d101cc23a56e6f528e277326bcd75bc6ea5766e9895dba146a5f0721f9a
+  checksum: 164c590d6795de5ab63cd761eee09f10bdf88aa652f8c1cd505995991925440fa8f855f24158ae8282a73b11eab6e44a696607498127e2449584f8ccde7d3b00
   languageName: node
   linkType: hard
 
@@ -17912,7 +17898,7 @@ __metadata:
     eslint-webpack-plugin: 5.0.2
     fs-extra: 11.3.3
     gatsby: 5.16.0
-    gatsby-plugin-catch-links: 5.15.0
+    gatsby-plugin-catch-links: 5.16.0
     gatsby-plugin-eslint: 4.0.4
     gatsby-plugin-google-gtag: 5.16.0
     gatsby-plugin-image: 3.15.0
