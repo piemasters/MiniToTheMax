@@ -8128,7 +8128,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:5.16.0":
+"babel-plugin-remove-graphql-queries@npm:5.16.0, babel-plugin-remove-graphql-queries@npm:^5.16.0":
   version: 5.16.0
   resolution: "babel-plugin-remove-graphql-queries@npm:5.16.0"
   dependencies:
@@ -8153,20 +8153,6 @@ __metadata:
     "@babel/core": ^7.0.0
     gatsby: ^5.0.0-next
   checksum: 33bddde146752eebe0352e24eab087383e52da70f6300684fe7f246c600b88f604e82783fd0d3303dc3c5748811e2be19d7b7361923b2f922bdd14d2b8d96250
-  languageName: node
-  linkType: hard
-
-"babel-plugin-remove-graphql-queries@npm:^5.16.0":
-  version: 5.16.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:5.16.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    "@babel/types": ^7.20.7
-    gatsby-core-utils: ^4.16.0
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^5.0.0-next
-  checksum: b3ef2b6ba3d9bc6a8e14246da94d027261764462d3bbe6304b89f5125c80776a3c6fd0e12ced2b3ca0fdd6eba3671212ab1e090b74bf886b758f83b5add85a1c
   languageName: node
   linkType: hard
 
@@ -12932,22 +12918,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:3.15.0":
-  version: 3.15.0
-  resolution: "gatsby-plugin-image@npm:3.15.0"
+"gatsby-plugin-image@npm:3.16.0":
+  version: 3.16.0
+  resolution: "gatsby-plugin-image@npm:3.16.0"
   dependencies:
     "@babel/code-frame": ^7.18.6
     "@babel/parser": ^7.20.13
     "@babel/runtime": ^7.20.13
     "@babel/traverse": ^7.20.13
     babel-jsx-utils: ^1.1.0
-    babel-plugin-remove-graphql-queries: ^5.15.0
+    babel-plugin-remove-graphql-queries: ^5.16.0
     camelcase: ^6.3.0
     chokidar: ^3.6.0
     common-tags: ^1.8.2
     fs-extra: ^11.2.0
-    gatsby-core-utils: ^4.15.0
-    gatsby-plugin-utils: ^4.15.0
+    gatsby-core-utils: ^4.16.0
+    gatsby-plugin-utils: ^4.16.0
     objectFitPolyfill: ^2.3.5
     prop-types: ^15.8.1
   peerDependencies:
@@ -12955,14 +12941,14 @@ __metadata:
     gatsby: ^5.0.0-next
     gatsby-plugin-sharp: ^5.0.0-next
     gatsby-source-filesystem: ^5.0.0-next
-    react: ^18.0.0 || ^0.0.0
-    react-dom: ^18.0.0 || ^0.0.0
+    react: ^18.0.0 || ^19.0.0 || ^0.0.0
+    react-dom: ^18.0.0 || ^19.0.0 || ^0.0.0
   peerDependenciesMeta:
     gatsby-plugin-sharp:
       optional: true
     gatsby-source-filesystem:
       optional: true
-  checksum: b68e4b8f2ff0b45a9a2583658b2b129803ed08a6f91d1eeb019e5088487089a4a18223f17edbcd1eabda454b9e6c522ac96665febee09dd6fbb7082eaa2126c2
+  checksum: 0b1cefb3a1af7037fb38e6808eb67c63ebb20930c9dc2b93896bb2dcaa2616286fd71c5db942cffe00511ac858c920baea19d6565968e52aa0f73de23497b5e6
   languageName: node
   linkType: hard
 
@@ -13164,26 +13150,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-utils@npm:^4.15.0":
-  version: 4.15.0
-  resolution: "gatsby-plugin-utils@npm:4.15.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    fastq: ^1.16.0
-    fs-extra: ^11.2.0
-    gatsby-core-utils: ^4.15.0
-    gatsby-sharp: ^1.15.0
-    graphql-compose: ^9.0.10
-    import-from: ^4.0.0
-    joi: ^17.11.0
-    mime: ^3.0.0
-  peerDependencies:
-    gatsby: ^5.0.0-next
-    graphql: ^16.0.0
-  checksum: 0e9d98c0dd5139d57b79149b7dc39882625f1d9e030e96aa049d99ea74f7aab75b23cb637f1b7eff2f4e0da09a0d5c8fb47c9ed255f005fd6d821c10e1b90543
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-utils@npm:^4.16.0":
   version: 4.16.0
   resolution: "gatsby-plugin-utils@npm:4.16.0"
@@ -13247,15 +13213,6 @@ __metadata:
     react: ^18.0.0 || ^19.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^19.0.0 || ^0.0.0
   checksum: ca80e15c307d1e4caccc9aef1a0c5e9e280b152726a1b9968c2b53df7f77bd45d17289e9e280b6eb81edfba69024ee658638c93995fcd230121a7cb3fd061cfa
-  languageName: node
-  linkType: hard
-
-"gatsby-sharp@npm:^1.15.0":
-  version: 1.15.0
-  resolution: "gatsby-sharp@npm:1.15.0"
-  dependencies:
-    sharp: ^0.32.6
-  checksum: e091a5e70560bf4b21bd4dfcbf575e2b6ceaec5d27f142c8f31d6d52a81bed7092477330334083a658e72ee703b24325db52e17d2a49a1dad5980e38c1949fad
   languageName: node
   linkType: hard
 
@@ -17915,7 +17872,7 @@ __metadata:
     gatsby-plugin-catch-links: 5.15.0
     gatsby-plugin-eslint: 4.0.4
     gatsby-plugin-google-gtag: 5.16.0
-    gatsby-plugin-image: 3.15.0
+    gatsby-plugin-image: 3.16.0
     gatsby-plugin-manifest: 5.16.0
     gatsby-plugin-mdx: 5.16.0
     gatsby-plugin-offline: 6.16.0
