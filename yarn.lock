@@ -8074,20 +8074,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:^5.15.0":
-  version: 5.15.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:5.15.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    "@babel/types": ^7.20.7
-    gatsby-core-utils: ^4.15.0
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^5.0.0-next
-  checksum: 33bddde146752eebe0352e24eab087383e52da70f6300684fe7f246c600b88f604e82783fd0d3303dc3c5748811e2be19d7b7361923b2f922bdd14d2b8d96250
-  languageName: node
-  linkType: hard
-
 "babel-plugin-syntax-object-rest-spread@npm:^6.8.0":
   version: 6.13.0
   resolution: "babel-plugin-syntax-object-rest-spread@npm:6.13.0"
@@ -11413,15 +11399,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-storybook@npm:10.2.1":
-  version: 10.2.1
-  resolution: "eslint-plugin-storybook@npm:10.2.1"
+"eslint-plugin-storybook@npm:10.2.2":
+  version: 10.2.2
+  resolution: "eslint-plugin-storybook@npm:10.2.2"
   dependencies:
     "@typescript-eslint/utils": ^8.48.0
   peerDependencies:
     eslint: ">=8"
-    storybook: ^10.2.1
-  checksum: 97a134ace22f7a1ab00169d9530c6dcfc8d18f6aea6e8cae6c20efd12b7c500551d0ed143c662dd2221818f7b875d863c6c7ae1ea3a206e3ced36087076d3232
+    storybook: ^10.2.2
+  checksum: d4d019c991253a551e59ec45b88e0b01c11e323e48320938a137915440b71fa83e1c4e8b2510a65919aed7e3246f13f167d98b7517ce273b64b751d314455df1
   languageName: node
   linkType: hard
 
@@ -12690,30 +12676,6 @@ __metadata:
   bin:
     gatsby: cli.js
   checksum: 8cbd3fd5c5567199ebaf7d7c916b4c8ac0ca759ac2bb6838259fb11d4b31cfb69c41c6ed84179b89d404eb806f9a4873e494b3e024fdde3d913f0c63be1d1970
-  languageName: node
-  linkType: hard
-
-"gatsby-core-utils@npm:^4.15.0":
-  version: 4.15.0
-  resolution: "gatsby-core-utils@npm:4.15.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    ci-info: 2.0.0
-    configstore: ^5.0.1
-    fastq: ^1.15.0
-    file-type: ^16.5.4
-    fs-extra: ^11.2.0
-    got: ^11.8.6
-    hash-wasm: ^4.11.0
-    import-from: ^4.0.0
-    lmdb: 2.5.3
-    lock: ^1.1.0
-    node-object-hash: ^2.3.10
-    proper-lockfile: ^4.1.2
-    resolve-from: ^5.0.0
-    tmp: ^0.2.1
-    xdg-basedir: ^4.0.0
-  checksum: 6d7bd51f444a857f297baad43b6f3bf54e4f66bebfd0d108e28cdb0816f4ee9102fa04a74404bb5a18b4092d278df88d5705fef1d0622874d5b3c1d80333f811
   languageName: node
   linkType: hard
 
@@ -17780,7 +17742,7 @@ __metadata:
     eslint-plugin-jsx-a11y: 6.10.2
     eslint-plugin-prettier: 5.5.5
     eslint-plugin-react: 7.37.5
-    eslint-plugin-storybook: 10.2.1
+    eslint-plugin-storybook: 10.2.2
     eslint-webpack-plugin: 5.0.2
     fs-extra: 11.3.3
     gatsby: 5.16.0
