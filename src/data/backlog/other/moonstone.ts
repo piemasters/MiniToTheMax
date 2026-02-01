@@ -35,5 +35,6 @@ export const moonstone = [
   },
   {
     name: 'Vicious Syd',
+    link: '/showcase/moonstone/vicious-syd/',
   },
 ];

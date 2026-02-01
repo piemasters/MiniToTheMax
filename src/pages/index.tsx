@@ -41,8 +41,8 @@ export const IndexPage: FC = () => {
       <Badges />
       <h2>Latest Video</h2>
       <Video
-        videoId="BLtlo6CPbY8"
-        title="Moonstone Baron von Fancyhat, Eric the Squire, Flintlock & Friar Flavius"
+        videoId="tfsRyVlUbOU"
+        title="Moonstone Doug the Flatulent, Beaky Bobby, Vicious Syd and Grub"
       />
       <h2>Latest Post</h2>
 
