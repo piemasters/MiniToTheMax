@@ -5451,15 +5451,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:10.2.1":
-  version: 10.2.1
-  resolution: "@storybook/addon-a11y@npm:10.2.1"
+"@storybook/addon-a11y@npm:10.2.4":
+  version: 10.2.4
+  resolution: "@storybook/addon-a11y@npm:10.2.4"
   dependencies:
     "@storybook/global": ^5.0.0
     axe-core: ^4.2.0
   peerDependencies:
-    storybook: ^10.2.1
-  checksum: 0ae3789ae587dc3924a496089184963e38482c6160c854006c90bcc7057136510da04ffbd89d612b4c9b20f65fb60ad45dfabcfb5e29d64a5b5e9bb1651dfa02
+    storybook: ^10.2.4
+  checksum: 279af173d7cbcc44684c0e3ea968adf086494ebefa28d243cdc47bbedea8ffbd5bfeb0fd87a926f7420ba033f6f1f4114304de418f4f21018c0eaa036a4d572d
   languageName: node
   linkType: hard
 
@@ -8071,20 +8071,6 @@ __metadata:
     "@babel/core": ^7.0.0
     gatsby: ^5.0.0-next
   checksum: b3ef2b6ba3d9bc6a8e14246da94d027261764462d3bbe6304b89f5125c80776a3c6fd0e12ced2b3ca0fdd6eba3671212ab1e090b74bf886b758f83b5add85a1c
-  languageName: node
-  linkType: hard
-
-"babel-plugin-remove-graphql-queries@npm:^5.15.0":
-  version: 5.15.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:5.15.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    "@babel/types": ^7.20.7
-    gatsby-core-utils: ^4.15.0
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^5.0.0-next
-  checksum: 33bddde146752eebe0352e24eab087383e52da70f6300684fe7f246c600b88f604e82783fd0d3303dc3c5748811e2be19d7b7361923b2f922bdd14d2b8d96250
   languageName: node
   linkType: hard
 
@@ -12690,30 +12676,6 @@ __metadata:
   bin:
     gatsby: cli.js
   checksum: 8cbd3fd5c5567199ebaf7d7c916b4c8ac0ca759ac2bb6838259fb11d4b31cfb69c41c6ed84179b89d404eb806f9a4873e494b3e024fdde3d913f0c63be1d1970
-  languageName: node
-  linkType: hard
-
-"gatsby-core-utils@npm:^4.15.0":
-  version: 4.15.0
-  resolution: "gatsby-core-utils@npm:4.15.0"
-  dependencies:
-    "@babel/runtime": ^7.20.13
-    ci-info: 2.0.0
-    configstore: ^5.0.1
-    fastq: ^1.15.0
-    file-type: ^16.5.4
-    fs-extra: ^11.2.0
-    got: ^11.8.6
-    hash-wasm: ^4.11.0
-    import-from: ^4.0.0
-    lmdb: 2.5.3
-    lock: ^1.1.0
-    node-object-hash: ^2.3.10
-    proper-lockfile: ^4.1.2
-    resolve-from: ^5.0.0
-    tmp: ^0.2.1
-    xdg-basedir: ^4.0.0
-  checksum: 6d7bd51f444a857f297baad43b6f3bf54e4f66bebfd0d108e28cdb0816f4ee9102fa04a74404bb5a18b4092d278df88d5705fef1d0622874d5b3c1d80333f811
   languageName: node
   linkType: hard
 
@@ -17740,7 +17702,7 @@ __metadata:
     "@babel/preset-typescript": 7.28.5
     "@chromatic-com/storybook": 5.0.0
     "@mdx-js/react": 3.1.1
-    "@storybook/addon-a11y": 10.2.1
+    "@storybook/addon-a11y": 10.2.4
     "@storybook/addon-docs": 10.2.1
     "@storybook/addon-jest": 9.1.12
     "@storybook/addon-links": 10.2.1
