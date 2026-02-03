@@ -28,6 +28,7 @@ export const moonstone = [
   },
   {
     name: 'Goblin Airship',
+    link: '/showcase/moonstone/goblin-airship/',
   },
   {
     name: 'Grub',
