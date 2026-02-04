@@ -13,6 +13,10 @@ export const moonstone = [
   },
   {
     name: 'Dusk Till Dawn',
+    link: '/showcase/moonstone/dusk-till-dawn/',
+  },
+  {
+    name: 'Eric the Exalted',
   },
   {
     name: 'Eric the Squire',
@@ -34,6 +38,7 @@ export const moonstone = [
     name: 'Grub',
     link: '/showcase/moonstone/grub/',
   },
+  { name: 'Slim' },
   {
     name: 'Vicious Syd',
     link: '/showcase/moonstone/vicious-syd/',
