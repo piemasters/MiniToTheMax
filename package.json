@@ -57,7 +57,7 @@
     "@storybook/addon-docs": "10.2.1",
     "@storybook/addon-jest": "9.1.12",
     "@storybook/addon-links": "10.2.1",
-    "@storybook/react-vite": "10.2.1",
+    "@storybook/react-vite": "10.2.6",
     "@svgr/webpack": "8.1.0",
     "@tailwindcss/postcss": "4.1.18",
     "@testing-library/cypress": "10.1.0",
