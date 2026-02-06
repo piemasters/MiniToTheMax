@@ -82,7 +82,7 @@
     "csstype": "3.2.3",
     "cypress": "15.9.0",
     "cypress-axe": "1.7.0",
-    "dotenv": "17.2.3",
+    "dotenv": "17.2.4",
     "env-cmd": "11.0.0",
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
