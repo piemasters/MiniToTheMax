@@ -166,6 +166,15 @@ export const BacklogPage: FC = () => {
         </Accordion.Item>
       </Accordion>
 
+      <h2>Necromunda</h2>
+      <hr />
+
+      <Accordion name="necromunda">
+        <Accordion.Item value={1} trigger="Ozostium Aranthus">
+          {generateEntries(backlog.necromunda)}
+        </Accordion.Item>
+      </Accordion>
+
       <h2>HeroQuest</h2>
       <hr />
 
