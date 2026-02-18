@@ -13808,14 +13808,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:13.0.0":
-  version: 13.0.0
-  resolution: "glob@npm:13.0.0"
+"glob@npm:13.0.5, glob@npm:^13.0.1":
+  version: 13.0.5
+  resolution: "glob@npm:13.0.5"
   dependencies:
-    minimatch: ^10.1.1
+    minimatch: ^10.2.1
     minipass: ^7.1.2
     path-scurry: ^2.0.0
-  checksum: 963730222b0acc85a0d2616c08ba3a5d5b5f33fbf69182791967b8a02245db505577a6fc19836d5d58e1cbbfb414ad4f62f605a0372ab05cd9e6998efe944369
+  checksum: 9bb731eec1aeda05aac54798468771146ed9bc0ab8fe6114e94ebc74d458946b8c4ccd6eb673ac0b161deba9f2617eb12bca7648e974acbcd5a023bcab5e4565
   languageName: node
   linkType: hard
 
@@ -13848,17 +13848,6 @@ __metadata:
   bin:
     glob: dist/esm/bin.mjs
   checksum: 65ddc1e3c969e87999880580048763cc8b5bdd375930dd43b8100a5ba481d2e2563e4553de42875790800c602522a98aa8d3ed1c5bd4d27621609e6471eb371d
-  languageName: node
-  linkType: hard
-
-"glob@npm:^13.0.1":
-  version: 13.0.5
-  resolution: "glob@npm:13.0.5"
-  dependencies:
-    minimatch: ^10.2.1
-    minipass: ^7.1.2
-    path-scurry: ^2.0.0
-  checksum: 9bb731eec1aeda05aac54798468771146ed9bc0ab8fe6114e94ebc74d458946b8c4ccd6eb673ac0b161deba9f2617eb12bca7648e974acbcd5a023bcab5e4565
   languageName: node
   linkType: hard
 
@@ -18084,7 +18073,7 @@ __metadata:
     gatsby-remark-images: 7.16.0
     gatsby-source-filesystem: 5.16.0
     gatsby-transformer-sharp: 5.16.0
-    glob: 13.0.0
+    glob: 13.0.5
     globals: 17.3.0
     gsap: 3.14.2
     identity-obj-proxy: 3.0.0
