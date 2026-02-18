@@ -10088,9 +10088,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:15.9.0":
-  version: 15.9.0
-  resolution: "cypress@npm:15.9.0"
+"cypress@npm:15.10.0":
+  version: 15.10.0
+  resolution: "cypress@npm:15.10.0"
   dependencies:
     "@cypress/request": ^3.0.10
     "@cypress/xvfb": ^1.2.4
@@ -10120,7 +10120,7 @@ __metadata:
     hasha: 5.2.2
     is-installed-globally: ~0.4.0
     listr2: ^3.8.3
-    lodash: ^4.17.21
+    lodash: ^4.17.23
     log-symbols: ^4.0.0
     minimist: ^1.2.8
     ospath: ^1.2.2
@@ -10136,7 +10136,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: 8e9b135c16be87b8b1473faef235b755baf8668193919d6c2ad200e7f446c08777a5cbfd77dede6d769741f66f1118041a16ec69fa5fc9b2079b407c5b6b9af0
+  checksum: d8de73fccff8831f1712f8113746f4dbef1b471bdeb3c061b19ecaa3aea41337e970a75aef69018d8f265ea1504f6e8a6f710315ebddd8a417b24ccd9c21bd25
   languageName: node
   linkType: hard
 
@@ -16746,6 +16746,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash@npm:^4.17.23":
+  version: 4.17.23
+  resolution: "lodash@npm:4.17.23"
+  checksum: 7daad39758a72872e94651630fbb54ba76868f904211089721a64516ce865506a759d9ad3d8ff22a2a49a50a09db5d27c36f22762d21766e47e3ba918d6d7bab
+  languageName: node
+  linkType: hard
+
 "log-symbols@npm:^2.1.0":
   version: 2.2.0
   resolution: "log-symbols@npm:2.2.0"
@@ -17948,7 +17955,7 @@ __metadata:
     babel-preset-gatsby: 3.16.0
     babel-preset-react-app: 10.1.0
     csstype: 3.2.3
-    cypress: 15.9.0
+    cypress: 15.10.0
     cypress-axe: 1.7.0
     disqus-react: 1.1.7
     dotenv: 17.2.3
