@@ -11562,14 +11562,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-cypress@npm:6.0.0":
-  version: 6.0.0
-  resolution: "eslint-plugin-cypress@npm:6.0.0"
+"eslint-plugin-cypress@npm:6.1.0":
+  version: 6.1.0
+  resolution: "eslint-plugin-cypress@npm:6.1.0"
   dependencies:
     globals: ^17.3.0
   peerDependencies:
     eslint: ">=9"
-  checksum: 95feed561a29f3bb628423c68cfcb5e94b956f433c2597213fa6c0a830e0ed18eb13ba47704de24d1ec6f5af005c9c17743b77f88c1cc82e96558c79b5a49163
+  checksum: 97cde21c1a206bfbd955e4600170c0211564f87bb5cc74e7854f9ffebaba669e390313dcb52c2d426432865a4ccc1d68bd53de371040bdd3391e8b63c5fa77c7
   languageName: node
   linkType: hard
 
@@ -18097,7 +18097,7 @@ __metadata:
     eslint: 10.0.0
     eslint-config-prettier: 10.1.8
     eslint-loader: 4.0.2
-    eslint-plugin-cypress: 6.0.0
+    eslint-plugin-cypress: 6.1.0
     eslint-plugin-graphql: 4.0.0
     eslint-plugin-jsx-a11y: 6.10.2
     eslint-plugin-prettier: 5.5.5
@@ -22409,13 +22409,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: f54a7d1c11cda8c676e1e9aff5e723646905ed4579cca14b3ce12d2b12eac3e18f5dbe2549fe0b79697164858e18961145db4dd0660bbeb0fb4032af0aaf32b4
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.1.18":
-  version: 4.1.18
-  resolution: "tailwindcss@npm:4.1.18"
-  checksum: 6e1ccc22d444177773f28080fd6f9430f39be31a93708c6d698859431a677eb5c1a7993996a03d8fcbc4c68b7c3fcbf724e02be108a63b92cadd731ef27daf6f
   languageName: node
   linkType: hard
 
