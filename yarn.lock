@@ -5561,15 +5561,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:10.2.10":
-  version: 10.2.10
-  resolution: "@storybook/addon-a11y@npm:10.2.10"
+"@storybook/addon-a11y@npm:10.2.11":
+  version: 10.2.11
+  resolution: "@storybook/addon-a11y@npm:10.2.11"
   dependencies:
     "@storybook/global": ^5.0.0
     axe-core: ^4.2.0
   peerDependencies:
-    storybook: ^10.2.10
-  checksum: 61d8a08b958d6445ade1e315936497864db65b0a566980850b92a7ff3f344cc475e4ae136009d4f93ab03ecf16561c980da819127127ebcda56659cbae0ecee2
+    storybook: ^10.2.11
+  checksum: 9bba62a4dd2c17eb03ebd2996514e7a125f392473931b3014ffb8137d122040bc0bca6b7c9b867ec6ce662bcb711647b76006df9c351b7363fe4c2b5f8fc2a16
   languageName: node
   linkType: hard
 
@@ -18062,7 +18062,7 @@ __metadata:
     "@babel/preset-typescript": 7.28.5
     "@chromatic-com/storybook": 5.0.1
     "@mdx-js/react": 3.1.1
-    "@storybook/addon-a11y": 10.2.10
+    "@storybook/addon-a11y": 10.2.11
     "@storybook/addon-docs": 10.2.10
     "@storybook/addon-jest": 9.1.12
     "@storybook/addon-links": 10.2.10
@@ -22409,13 +22409,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: f54a7d1c11cda8c676e1e9aff5e723646905ed4579cca14b3ce12d2b12eac3e18f5dbe2549fe0b79697164858e18961145db4dd0660bbeb0fb4032af0aaf32b4
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.1.18":
-  version: 4.1.18
-  resolution: "tailwindcss@npm:4.1.18"
-  checksum: 6e1ccc22d444177773f28080fd6f9430f39be31a93708c6d698859431a677eb5c1a7993996a03d8fcbc4c68b7c3fcbf724e02be108a63b92cadd731ef27daf6f
   languageName: node
   linkType: hard
 
