@@ -13,6 +13,13 @@ export const squidmar = [
   },
 ];
 
+export const archonStudio = [
+  {
+    name: 'Archon Studio Gelatinous Cube',
+    link: '/showcase/archon-studio/gelatinous-cube/',
+  },
+];
+
 export const jordanSorcery = [
   {
     name: 'Familiar Frenzy',

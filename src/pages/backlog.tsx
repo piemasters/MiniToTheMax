@@ -304,7 +304,10 @@ export const BacklogPage: FC = () => {
         <Accordion.Item value={1} trigger="Squidmar Miniatures">
           {generateEntries(backlog.squidmar)}
         </Accordion.Item>
-        <Accordion.Item value={1} trigger="Jordan Sorcery Miniatures">
+        <Accordion.Item value={2} trigger="Archon Studio Miniatures">
+          {generateEntries(backlog.archonStudio)}
+        </Accordion.Item>
+        <Accordion.Item value={3} trigger="Jordan Sorcery Miniatures">
           {generateEntries(backlog.jordanSorcery)}
         </Accordion.Item>
       </Accordion>
