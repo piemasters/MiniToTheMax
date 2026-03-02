@@ -8085,7 +8085,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.13.2, axios@npm:^1.6.4":
+"axios@npm:^1.13.5, axios@npm:^1.6.4":
   version: 1.13.5
   resolution: "axios@npm:1.13.5"
   dependencies:
@@ -16108,9 +16108,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"joi@npm:^18.0.1":
-  version: 18.0.1
-  resolution: "joi@npm:18.0.1"
+"joi@npm:^18.0.2":
+  version: 18.0.2
+  resolution: "joi@npm:18.0.2"
   dependencies:
     "@hapi/address": ^5.1.1
     "@hapi/formula": ^3.0.2
@@ -16119,7 +16119,7 @@ __metadata:
     "@hapi/tlds": ^1.1.1
     "@hapi/topo": ^6.0.2
     "@standard-schema/spec": ^1.0.0
-  checksum: dbf511036b4ad89e962e51e2fb393ec20a863b023b5a4fe32d0c7a8c28456f4ad05ea4a3b30f8ea37560cb4444a0d3e20ede8ee170e2edf7841ac247d3faf91e
+  checksum: 39d9e3584505817d7c80ab11c0b6eccf353715d0e83c33f039caa5d917fa9ef700966b0b87dfebaaec8693f9850cb0745812afb620ba9633ba9e895ada3210f7
   languageName: node
   linkType: hard
 
@@ -18138,7 +18138,7 @@ __metadata:
     react-photoswipe-gallery: 4.0.0
     react-test-renderer: 19.2.4
     sharp: 0.34.5
-    start-server-and-test: 2.1.3
+    start-server-and-test: 2.1.5
     storybook: 10.2.10
     tailwindcss: 4.2.0
     ts-loader: 9.5.4
@@ -21776,9 +21776,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"start-server-and-test@npm:2.1.3":
-  version: 2.1.3
-  resolution: "start-server-and-test@npm:2.1.3"
+"start-server-and-test@npm:2.1.5":
+  version: 2.1.5
+  resolution: "start-server-and-test@npm:2.1.5"
   dependencies:
     arg: ^5.0.2
     bluebird: 3.7.2
@@ -21787,12 +21787,12 @@ __metadata:
     execa: 5.1.1
     lazy-ass: 1.6.0
     ps-tree: 1.2.0
-    wait-on: 9.0.3
+    wait-on: 9.0.4
   bin:
     server-test: src/bin/start.js
     start-server-and-test: src/bin/start.js
     start-test: src/bin/start.js
-  checksum: db0f92dfaf66f29c83b72697d0da9c9042f3f21620815add62a553a20b2889cfcb1c60cca58e59ac7d53ace280e1c9534064484c4ea506ff8e5b4f13c762671b
+  checksum: 9073714818993e562840cf42ffde20f1c0f1981c467b7aa392d140200db83fc78f1fb160a49260bf5831c09b6d14da26711fad62b471e2f5f4d65cf17d099f0d
   languageName: node
   linkType: hard
 
@@ -22409,13 +22409,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: f54a7d1c11cda8c676e1e9aff5e723646905ed4579cca14b3ce12d2b12eac3e18f5dbe2549fe0b79697164858e18961145db4dd0660bbeb0fb4032af0aaf32b4
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.1.18":
-  version: 4.1.18
-  resolution: "tailwindcss@npm:4.1.18"
-  checksum: 6e1ccc22d444177773f28080fd6f9430f39be31a93708c6d698859431a677eb5c1a7993996a03d8fcbc4c68b7c3fcbf724e02be108a63b92cadd731ef27daf6f
   languageName: node
   linkType: hard
 
@@ -23783,18 +23776,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wait-on@npm:9.0.3":
-  version: 9.0.3
-  resolution: "wait-on@npm:9.0.3"
+"wait-on@npm:9.0.4":
+  version: 9.0.4
+  resolution: "wait-on@npm:9.0.4"
   dependencies:
-    axios: ^1.13.2
-    joi: ^18.0.1
-    lodash: ^4.17.21
+    axios: ^1.13.5
+    joi: ^18.0.2
+    lodash: ^4.17.23
     minimist: ^1.2.8
     rxjs: ^7.8.2
   bin:
     wait-on: bin/wait-on
-  checksum: 088472eb3c997ef6607f7042f44103c391e49310db8fdc15edd16823bf0c11a93653d02a6125fb71f8be36065e8b02cb1a133e9cdc110cfa0862913bff094729
+  checksum: 990863e4531d938161f61107abef25886f18112810d80f9a79bd2d7e6d1355f7b987322f9b7ca444a00e2710bcfa478c759f39b74d9cc25c9075fe3601f52a71
   languageName: node
   linkType: hard
 
