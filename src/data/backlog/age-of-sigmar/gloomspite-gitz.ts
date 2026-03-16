@@ -90,6 +90,7 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Rockgut Troggoths',
+    link: '/showcase/gloomspite-gitz/rockgut-troggoths/',
   },
   {
     name: 'Rogue Idol',

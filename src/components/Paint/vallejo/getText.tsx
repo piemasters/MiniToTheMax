@@ -49,6 +49,20 @@ export const getText = ({
         </text>
       </g>
     );
+  } else if (category === 'Vallejo Liquid Metal') {
+    return (
+      <g transform="translate(14 42)">
+        <text
+          x="-4"
+          y="15"
+          fontFamily="sans-serif"
+          fontSize="12"
+          fill={getColorByBgColor(hex)}
+        >
+          LM
+        </text>
+      </g>
+    );
   } else {
     return null;
   }

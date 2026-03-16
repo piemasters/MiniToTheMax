@@ -11,6 +11,7 @@ import {
 } from '../data/paints/citadel';
 import {
   gameColorPaints,
+  liquidMetalPaints,
   modelColorPaints,
   xpressColorPaints,
 } from '../data/paints';
@@ -32,6 +33,7 @@ export const getAllSortedPaints = (): PaintDetails[] => {
     ...gameColorPaints,
     ...modelColorPaints,
     ...xpressColorPaints,
+    ...liquidMetalPaints,
   ];
 
   // Remove duplicates using a Set

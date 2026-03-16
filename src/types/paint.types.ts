@@ -22,6 +22,8 @@ export const VallejoPaintCategories = [
   'Vallejo Metal Color',
   'Vallejo Game Air',
   'Vallejo Xpress Color',
+  'Vallejo Mecha Color',
+  'Vallejo True Metallic Metal',
 ] as const;
 export type VallejoPaintCategory = (typeof VallejoPaintCategories)[number];
 
