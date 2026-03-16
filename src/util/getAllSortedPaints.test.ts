@@ -53,6 +53,7 @@ jest.mock('../data/paints/vallejo', () => ({
   ],
   modelColorPaints: [],
   xpressColorPaints: [],
+  liquidMetalPaints: [],
 }));
 
 describe('getAllSortedPaints', () => {
