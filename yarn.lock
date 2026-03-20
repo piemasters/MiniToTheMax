@@ -6129,7 +6129,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:6.9.1, @testing-library/jest-dom@npm:^6.6.3":
+"@testing-library/jest-dom@npm:6.9.1, @testing-library/jest-dom@npm:^6.9.1":
   version: 6.9.1
   resolution: "@testing-library/jest-dom@npm:6.9.1"
   dependencies:
@@ -18190,7 +18190,7 @@ __metadata:
     react-test-renderer: 19.2.4
     sharp: 0.34.5
     start-server-and-test: 2.1.5
-    storybook: 10.2.16
+    storybook: 10.3.1
     tailwindcss: 4.2.1
     ts-loader: 9.5.4
     typescript: 5.9.3
@@ -21884,13 +21884,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:10.2.16":
-  version: 10.2.16
-  resolution: "storybook@npm:10.2.16"
+"storybook@npm:10.3.1":
+  version: 10.3.1
+  resolution: "storybook@npm:10.3.1"
   dependencies:
     "@storybook/global": ^5.0.0
     "@storybook/icons": ^2.0.1
-    "@testing-library/jest-dom": ^6.6.3
+    "@testing-library/jest-dom": ^6.9.1
     "@testing-library/user-event": ^14.6.1
     "@vitest/expect": 3.2.4
     "@vitest/spy": 3.2.4
@@ -21907,7 +21907,7 @@ __metadata:
       optional: true
   bin:
     storybook: ./dist/bin/dispatcher.js
-  checksum: bb4069ff3c19a18f749514e6eebd14a593b5fb9c5cbb8f8faa32c831fb51d0f3b8ddc2562d29a2027e8aac0ad4c972ffac28ed89d4d47d8e4fe0ee5e5fae6fbd
+  checksum: 9838f709c16bbc78a05ca974f10e9047a1ea14c6454e5c8e2e4c059ead056cab02e01c8a819e8901d53d883716aca7a042a45cf028e8e617d389364fbaaefc05
   languageName: node
   linkType: hard
 
