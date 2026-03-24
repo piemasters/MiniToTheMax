@@ -5623,18 +5623,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:10.2.16":
-  version: 10.2.16
-  resolution: "@storybook/addon-links@npm:10.2.16"
+"@storybook/addon-links@npm:10.3.3":
+  version: 10.3.3
+  resolution: "@storybook/addon-links@npm:10.3.3"
   dependencies:
     "@storybook/global": ^5.0.0
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    storybook: ^10.2.16
+    storybook: ^10.3.3
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: be75de8ed36b3116101fa7600c71ec3afdc0737785d501b15439f56c06ef0211aeaada8c9307d50728d48501bbf2ba31a801e5cf7fc02e720e5c5c2e7d5eba2d
+  checksum: c52fed588ffd0b995796f8ada0bff5258d99c7e0e602a544b1369e53ebcc2422e5f69442afce81ad6772fcf853dccebd19ce1817b8aa31a6ede91afc11b4f1f9
   languageName: node
   linkType: hard
 
@@ -18116,7 +18116,7 @@ __metadata:
     "@storybook/addon-a11y": 10.2.16
     "@storybook/addon-docs": 10.2.16
     "@storybook/addon-jest": 9.1.12
-    "@storybook/addon-links": 10.2.16
+    "@storybook/addon-links": 10.3.3
     "@storybook/react-vite": 10.2.16
     "@svgr/webpack": 8.1.0
     "@tailwindcss/postcss": 4.2.1
