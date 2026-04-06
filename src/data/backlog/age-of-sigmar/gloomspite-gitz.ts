@@ -1,3 +1,5 @@
+import { link } from 'node:fs';
+
 export const gloomspiteGitz = [
   {
     name: 'Arachnarok Spider',
@@ -65,6 +67,7 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Loonsmasha Fanatics',
+    link: '/showcase/gloomspite-gitz/loonsmasha-fanatics/',
   },
   {
     name: 'Madcap Shaman',
