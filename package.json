@@ -111,7 +111,7 @@
     "storybook": "10.3.5",
     "tailwindcss": "4.2.1",
     "ts-loader": "9.5.4",
-    "typescript": "5.9.3",
+    "typescript": "6.0.2",
     "vite": "8.0.8"
   }
 }
