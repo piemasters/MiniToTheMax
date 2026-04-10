@@ -41,8 +41,8 @@ export const IndexPage: FC = () => {
       <Badges />
       <h2>Latest Video</h2>
       <Video
-        videoId="eiBmpb7GxZY"
-        title="Gloomspite Gitz Loonsmasha Fanatics"
+        videoId="PHc-r99nwbo"
+        title="Gloomspite Gitz Sporesplatta Fanatics"
       />
       <h2>Latest Post</h2>
 

@@ -109,6 +109,7 @@ export const gloomspiteGitz = [
   },
   {
     name: 'Sporesplatta Fanatics',
+    link: '/showcase/gloomspite-gitz/sporesplatta-fanatics/',
   },
   {
     name: 'Squigboss with Gnasha Squig',
