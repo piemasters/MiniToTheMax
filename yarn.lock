@@ -5935,7 +5935,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:6.9.1, @testing-library/jest-dom@npm:^6.6.3":
+"@testing-library/jest-dom@npm:6.9.1, @testing-library/jest-dom@npm:^6.9.1":
   version: 6.9.1
   resolution: "@testing-library/jest-dom@npm:6.9.1"
   dependencies:
@@ -7290,6 +7290,13 @@ __metadata:
     "@webassemblyjs/ast": 1.14.1
     "@xtuc/long": 4.2.2
   checksum: 517881a0554debe6945de719d100b2d8883a2d24ddf47552cdeda866341e2bb153cd824a864bc7e2a61190a4b66b18f9899907e0074e9e820d2912ac0789ea60
+  languageName: node
+  linkType: hard
+
+"@webcontainer/env@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@webcontainer/env@npm:1.1.1"
+  checksum: 6efb05b35b99034f022922dc2702ae2ed3e7a3a93795609bac7d488b45157c097f89b3758783d4fac224a8daecc7cc3fb79c945114883a1c89286c07965d09bf
   languageName: node
   linkType: hard
 
@@ -18106,7 +18113,7 @@ __metadata:
     react-test-renderer: 19.2.5
     sharp: 0.34.5
     start-server-and-test: 2.1.5
-    storybook: 10.2.16
+    storybook: 10.3.5
     tailwindcss: 4.2.1
     ts-loader: 9.5.4
     typescript: 5.9.3
@@ -21786,16 +21793,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:10.2.16":
-  version: 10.2.16
-  resolution: "storybook@npm:10.2.16"
+"storybook@npm:10.3.5":
+  version: 10.3.5
+  resolution: "storybook@npm:10.3.5"
   dependencies:
     "@storybook/global": ^5.0.0
     "@storybook/icons": ^2.0.1
-    "@testing-library/jest-dom": ^6.6.3
+    "@testing-library/jest-dom": ^6.9.1
     "@testing-library/user-event": ^14.6.1
     "@vitest/expect": 3.2.4
     "@vitest/spy": 3.2.4
+    "@webcontainer/env": ^1.1.1
     esbuild: ^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0 || ^0.27.0
     open: ^10.2.0
     recast: ^0.23.5
@@ -21809,7 +21817,7 @@ __metadata:
       optional: true
   bin:
     storybook: ./dist/bin/dispatcher.js
-  checksum: bb4069ff3c19a18f749514e6eebd14a593b5fb9c5cbb8f8faa32c831fb51d0f3b8ddc2562d29a2027e8aac0ad4c972ffac28ed89d4d47d8e4fe0ee5e5fae6fbd
+  checksum: c289ab88b16184c9882bdf688c04c3c0dea4474d8acd124d49836e563f0359ae80921705ff7baf694eddf9775d882871afc9e42b2893e1ba1481b32f874c3752
   languageName: node
   linkType: hard
 
