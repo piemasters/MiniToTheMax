@@ -8055,10 +8055,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axe-core@npm:4.11.1":
-  version: 4.11.1
-  resolution: "axe-core@npm:4.11.1"
-  checksum: 92b3c79af3695bcebac0e7f3f90f4bc11d2b39ccdc670937290e8dacbc943473713cc06b771dea0563c66d57d93d940ed89e082bfdecccf9dd70782d4bb243c0
+"axe-core@npm:4.11.2":
+  version: 4.11.2
+  resolution: "axe-core@npm:4.11.2"
+  checksum: 9d156e714990ace407814235d823eb996a6b419162cfa80e9d85ac79b42b4ca9aaa2adf29698618b389ec5e2bd967f57464aeb84928fa261122b46b49f7fb513
   languageName: node
   linkType: hard
 
@@ -18102,7 +18102,7 @@ __metadata:
     "@types/react-test-renderer": 19.1.0
     "@typescript-eslint/eslint-plugin": 8.56.1
     "@typescript-eslint/parser": 8.58.1
-    axe-core: 4.11.1
+    axe-core: 4.11.2
     babel-jest: 30.3.0
     babel-loader: 10.1.1
     babel-plugin-remove-graphql-queries: 5.16.0
@@ -22402,13 +22402,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: f54a7d1c11cda8c676e1e9aff5e723646905ed4579cca14b3ce12d2b12eac3e18f5dbe2549fe0b79697164858e18961145db4dd0660bbeb0fb4032af0aaf32b4
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.2.1":
-  version: 4.2.1
-  resolution: "tailwindcss@npm:4.2.1"
-  checksum: dc2a2dd6bc486932211d277a3fee64b98dd4bb846699e94dc9e69ac53656cb5a407eaf6eb27917ba5ec4a7418482380df48bbb72859505b2e121d30b60053df7
   languageName: node
   linkType: hard
 
