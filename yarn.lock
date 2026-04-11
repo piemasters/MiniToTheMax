@@ -18161,7 +18161,7 @@ __metadata:
     start-server-and-test: 3.0.2
     storybook: 10.3.5
     tailwindcss: 4.2.2
-    ts-loader: 9.5.4
+    ts-loader: 9.5.7
     typescript: 6.0.2
     vite: 8.0.8
   languageName: unknown
@@ -22782,9 +22782,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-loader@npm:9.5.4":
-  version: 9.5.4
-  resolution: "ts-loader@npm:9.5.4"
+"ts-loader@npm:9.5.7":
+  version: 9.5.7
+  resolution: "ts-loader@npm:9.5.7"
   dependencies:
     chalk: ^4.1.0
     enhanced-resolve: ^5.0.0
@@ -22794,7 +22794,7 @@ __metadata:
   peerDependencies:
     typescript: "*"
     webpack: ^5.0.0
-  checksum: ee8a6883d0f8c0db0ea254fe4e9247ab0f6747cbbbee987af80e69822b840bdc2b67cee267ed3a93af803aeed47790d64dbaf07c001322b9091671f51cbf12b2
+  checksum: 0083008a6efc5df1403c53f94793201405e5f7e7391b47ad0040b3cc134c4898a504f75ceed2bfd26bd4b1b3278277017bc9c2e41bbf9ad9e22cca2bad0ae2f1
   languageName: node
   linkType: hard
 
