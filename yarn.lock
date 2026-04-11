@@ -4174,6 +4174,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jest/transform@npm:30.3.0":
+  version: 30.3.0
+  resolution: "@jest/transform@npm:30.3.0"
+  dependencies:
+    "@babel/core": ^7.27.4
+    "@jest/types": 30.3.0
+    "@jridgewell/trace-mapping": ^0.3.25
+    babel-plugin-istanbul: ^7.0.1
+    chalk: ^4.1.2
+    convert-source-map: ^2.0.0
+    fast-json-stable-stringify: ^2.1.0
+    graceful-fs: ^4.2.11
+    jest-haste-map: 30.3.0
+    jest-regex-util: 30.0.1
+    jest-util: 30.3.0
+    pirates: ^4.0.7
+    slash: ^3.0.0
+    write-file-atomic: ^5.0.1
+  checksum: 0327d28d4ee3903ebd415e1974c9aae6c7e7a7d1770aa07c551d34666851283125f488ec1366fa8814402bdfbd83be9b45ad551839bb407c468fa6bdb44e7d0c
+  languageName: node
+  linkType: hard
+
 "@jest/types@npm:30.2.0":
   version: 30.2.0
   resolution: "@jest/types@npm:30.2.0"
@@ -8103,6 +8125,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-jest@npm:30.3.0":
+  version: 30.3.0
+  resolution: "babel-jest@npm:30.3.0"
+  dependencies:
+    "@jest/transform": 30.3.0
+    "@types/babel__core": ^7.20.5
+    babel-plugin-istanbul: ^7.0.1
+    babel-preset-jest: 30.3.0
+    chalk: ^4.1.2
+    graceful-fs: ^4.2.11
+    slash: ^3.0.0
+  peerDependencies:
+    "@babel/core": ^7.11.0 || ^8.0.0-0
+  checksum: edcee70837cc3c88e2992e6bbaaf7bba2c0d56b215cdca0a0cee214d8a47360fbcdc45117ac50cba6cb077465d045edc1285812e6df45caad9a4786a12696a1d
+  languageName: node
+  linkType: hard
+
 "babel-jsx-utils@npm:^1.1.0":
   version: 1.1.0
   resolution: "babel-jsx-utils@npm:1.1.0"
@@ -8178,6 +8217,15 @@ __metadata:
   dependencies:
     "@types/babel__core": ^7.20.5
   checksum: e562622fba85ff8c71899d9f6de35f2270e6ede0b649c519cc3872201fc041d3af4088239759ad9a2be8422b9a56792d7629570912dfda698d94e6bc81709820
+  languageName: node
+  linkType: hard
+
+"babel-plugin-jest-hoist@npm:30.3.0":
+  version: 30.3.0
+  resolution: "babel-plugin-jest-hoist@npm:30.3.0"
+  dependencies:
+    "@types/babel__core": ^7.20.5
+  checksum: 5d169656b7ef665a1d7669168ffe6f560aa190c98b2a13793a8d9c671cb107985bff2e93dc1af621d46fd81cae497f6476dc966a14a1f290318f2afdcaf88ddf
   languageName: node
   linkType: hard
 
@@ -8406,6 +8454,18 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.11.0 || ^8.0.0-beta.1
   checksum: f75e155a8cf63ea1c5ca942bf757b934427630a1eeafdf861e9117879b3367931fc521da3c41fd52f8d59d705d1093ffb46c9474b3fd4d765d194bea5659d7d9
+  languageName: node
+  linkType: hard
+
+"babel-preset-jest@npm:30.3.0":
+  version: 30.3.0
+  resolution: "babel-preset-jest@npm:30.3.0"
+  dependencies:
+    babel-plugin-jest-hoist: 30.3.0
+    babel-preset-current-node-syntax: ^1.2.0
+  peerDependencies:
+    "@babel/core": ^7.11.0 || ^8.0.0-beta.1
+  checksum: fd29c8ff5967c047006bde152cf5ac99ce2e1d573f6f044828cb4d06eab95b65549a38554ea97174bbe508006d2a7cb1370581d87aa73f6b3c2134f2d49aaf85
   languageName: node
   linkType: hard
 
@@ -15663,6 +15723,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jest-haste-map@npm:30.3.0":
+  version: 30.3.0
+  resolution: "jest-haste-map@npm:30.3.0"
+  dependencies:
+    "@jest/types": 30.3.0
+    "@types/node": "*"
+    anymatch: ^3.1.3
+    fb-watchman: ^2.0.2
+    fsevents: ^2.3.3
+    graceful-fs: ^4.2.11
+    jest-regex-util: 30.0.1
+    jest-util: 30.3.0
+    jest-worker: 30.3.0
+    picomatch: ^4.0.3
+    walker: ^1.0.8
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  checksum: bb547ef3ad970dad434c0b884465719a946820e2cabed3ade4dcd50c89445c19a57f0385bc0b366ecff3c263c7da0b4d60c9e92c6357822cb6e7414a73d64ac8
+  languageName: node
+  linkType: hard
+
 "jest-leak-detector@npm:30.2.0":
   version: 30.2.0
   resolution: "jest-leak-detector@npm:30.2.0"
@@ -15957,6 +16039,19 @@ __metadata:
     merge-stream: ^2.0.0
     supports-color: ^8.1.1
   checksum: c3d01041fcee8aa87186d18ae5fcd4c56bc82dff3bc39998b1af6c0d6c4792660f750e183f3b25e7fbfd24a48297835809d4516c5e10472d6b556277fb2206ef
+  languageName: node
+  linkType: hard
+
+"jest-worker@npm:30.3.0":
+  version: 30.3.0
+  resolution: "jest-worker@npm:30.3.0"
+  dependencies:
+    "@types/node": "*"
+    "@ungap/structured-clone": ^1.3.0
+    jest-util: 30.3.0
+    merge-stream: ^2.0.0
+    supports-color: ^8.1.1
+  checksum: 886803abcda389324aa824d1c0b800f7acd2eeb70b8ff364cecae22019dfd34157a99fe37e465b7a85bd28746591cee04ea85f2dc86002c44583dd8cf1250d20
   languageName: node
   linkType: hard
 
@@ -18148,7 +18243,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": 8.56.1
     "@typescript-eslint/parser": 8.58.1
     axe-core: 4.11.1
-    babel-jest: 30.2.0
+    babel-jest: 30.3.0
     babel-loader: 10.1.1
     babel-plugin-remove-graphql-queries: 5.16.0
     babel-preset-gatsby: 3.16.0
