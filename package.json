@@ -102,7 +102,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "30.3.0",
     "jest-environment-jsdom": "30.3.0",
-    "postcss": "8.5.8",
+    "postcss": "8.5.9",
     "prettier": "3.8.2",
     "react-docgen-typescript-loader": "3.7.2",
     "react-test-renderer": "19.2.5",
