@@ -10229,9 +10229,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:15.11.0":
-  version: 15.11.0
-  resolution: "cypress@npm:15.11.0"
+"cypress@npm:15.13.1":
+  version: 15.13.1
+  resolution: "cypress@npm:15.13.1"
   dependencies:
     "@cypress/request": ^3.0.10
     "@cypress/xvfb": ^1.2.4
@@ -10278,7 +10278,7 @@ __metadata:
     yauzl: ^2.10.0
   bin:
     cypress: bin/cypress
-  checksum: e2bd4d429579ffa58d3f23b46f9b57c3c7f23e200602988af489b7939ee26b2b46c2053a1a135b903c5bbdec9d2400b6ba900cf1ff1ee9f5295d1885141c8330
+  checksum: 4d925fbc00eff44dc0abef14c4cc9febe0341e77042b14b5265ada1af50cf68d1dd7ea4913ef80c8dc612b57d5d39e0dc4aa65d2ef9664854ad220f05f170608
   languageName: node
   linkType: hard
 
@@ -18109,7 +18109,7 @@ __metadata:
     babel-preset-gatsby: 3.16.0
     babel-preset-react-app: 10.1.0
     csstype: 3.2.3
-    cypress: 15.11.0
+    cypress: 15.13.1
     cypress-axe: 1.7.0
     disqus-react: 1.1.7
     dotenv: 17.4.1
@@ -22402,13 +22402,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: f54a7d1c11cda8c676e1e9aff5e723646905ed4579cca14b3ce12d2b12eac3e18f5dbe2549fe0b79697164858e18961145db4dd0660bbeb0fb4032af0aaf32b4
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.2.1":
-  version: 4.2.1
-  resolution: "tailwindcss@npm:4.2.1"
-  checksum: dc2a2dd6bc486932211d277a3fee64b98dd4bb846699e94dc9e69ac53656cb5a407eaf6eb27917ba5ec4a7418482380df48bbb72859505b2e121d30b60053df7
   languageName: node
   linkType: hard
 
