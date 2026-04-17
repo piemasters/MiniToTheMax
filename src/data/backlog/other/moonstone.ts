@@ -38,7 +38,10 @@ export const moonstone = [
     name: 'Grub',
     link: '/showcase/moonstone/grub/',
   },
-  { name: 'Slim' },
+  {
+    name: 'Slim',
+    link: '/showcase/moonstone/slim/',
+  },
   {
     name: 'Vicious Syd',
     link: '/showcase/moonstone/vicious-syd/',
