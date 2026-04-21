@@ -112,6 +112,6 @@
     "tailwindcss": "4.2.2",
     "ts-loader": "9.5.7",
     "typescript": "6.0.2",
-    "vite": "8.0.8"
+    "vite": "8.0.9"
   }
 }
