@@ -13985,10 +13985,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gsap@npm:3.14.2":
-  version: 3.14.2
-  resolution: "gsap@npm:3.14.2"
-  checksum: 8b86b27d74af53266d43310d7e6de57ef9da15b5133e7039c7292ad8c02943cd684df283952e671e566f80daf22e18706429a93142bd4d4c2673d375926d0990
+"gsap@npm:3.15.0":
+  version: 3.15.0
+  resolution: "gsap@npm:3.15.0"
+  checksum: 168f849ef6eee7e0a3f315490edbd3a9e1cd7add03a768bb65953452dc12e6edbe7b24c9a0572e5ea9c911b5294582ad878ac2e4247848678de81854c5c53a27
   languageName: node
   linkType: hard
 
@@ -18012,7 +18012,7 @@ __metadata:
     gatsby-transformer-sharp: 5.16.0
     glob: 13.0.6
     globals: 17.5.0
-    gsap: 3.14.2
+    gsap: 3.15.0
     identity-obj-proxy: 3.0.0
     jest: 30.3.0
     jest-environment-jsdom: 30.3.0
