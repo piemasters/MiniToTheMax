@@ -11384,14 +11384,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-cypress@npm:6.3.0":
-  version: 6.3.0
-  resolution: "eslint-plugin-cypress@npm:6.3.0"
+"eslint-plugin-cypress@npm:6.3.1":
+  version: 6.3.1
+  resolution: "eslint-plugin-cypress@npm:6.3.1"
   dependencies:
-    globals: ^17.4.0
+    globals: ^17.5.0
   peerDependencies:
     eslint: ">=9"
-  checksum: 057a7d31e5a142398cc0ec25a7b1dc742fa4c3cb03dcdd3c066752822d180480ba6f842481ca51332fd012afdb56e0fe949f06f0e608427d79c7f832bc670916
+  checksum: 81305c1bcf16be3f5c212c2138a6828e6944f5f03b9254b8777cc65f7db333724f1f17c46c5d64e4766c0b9cf4a7b1c9cfc4495c5a3e8c113e5805abc1b4d15d
   languageName: node
   linkType: hard
 
@@ -13769,7 +13769,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:17.5.0":
+"globals@npm:17.5.0, globals@npm:^17.5.0":
   version: 17.5.0
   resolution: "globals@npm:17.5.0"
   checksum: 934130da24e193cb7c6f3011f68818be869d30250b3ec2076dae712e0ce7e95c9d5c943a780e92fe99ecc86ed8be8b014e497354741782b78c21613c85e8a2bd
@@ -13782,13 +13782,6 @@ __metadata:
   dependencies:
     type-fest: ^0.20.2
   checksum: 56066ef058f6867c04ff203b8a44c15b038346a62efbc3060052a1016be9f56f4cf0b2cd45b74b22b81e521a889fc7786c73691b0549c2f3a6e825b3d394f43c
-  languageName: node
-  linkType: hard
-
-"globals@npm:^17.4.0":
-  version: 17.4.0
-  resolution: "globals@npm:17.4.0"
-  checksum: 456f0d844ef7d502c41ae7ae07e602491fb7ac5e8b37c7c2fcf1419974321e27a35b94249168a7e521fcf09105b32b8f85cedc63b6b90cc8a594d1c281c2f5cd
   languageName: node
   linkType: hard
 
@@ -17985,7 +17978,7 @@ __metadata:
     eslint: 10.2.0
     eslint-config-prettier: 10.1.8
     eslint-loader: 4.0.2
-    eslint-plugin-cypress: 6.3.0
+    eslint-plugin-cypress: 6.3.1
     eslint-plugin-graphql: 4.0.0
     eslint-plugin-jsx-a11y: 6.10.2
     eslint-plugin-prettier: 5.5.5
@@ -22263,13 +22256,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: f54a7d1c11cda8c676e1e9aff5e723646905ed4579cca14b3ce12d2b12eac3e18f5dbe2549fe0b79697164858e18961145db4dd0660bbeb0fb4032af0aaf32b4
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.2.2":
-  version: 4.2.2
-  resolution: "tailwindcss@npm:4.2.2"
-  checksum: 708b4f878b95f3bf44955bd1bcb047f7288775aeac90ac71898d89aeada351848d3efbb66c5eeb479c825bec03665a655f2cd1255c79622eba1f2925047971da
   languageName: node
   linkType: hard
 
