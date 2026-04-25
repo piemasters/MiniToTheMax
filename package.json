@@ -84,7 +84,7 @@
     "cypress-axe": "1.7.0",
     "dotenv": "17.4.2",
     "env-cmd": "11.0.0",
-    "eslint": "10.2.0",
+    "eslint": "10.2.1",
     "eslint-config-prettier": "10.1.8",
     "eslint-loader": "4.0.2",
     "eslint-plugin-cypress": "6.3.0",
