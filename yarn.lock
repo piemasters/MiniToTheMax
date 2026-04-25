@@ -2392,9 +2392,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chromatic-com/storybook@npm:5.1.1":
-  version: 5.1.1
-  resolution: "@chromatic-com/storybook@npm:5.1.1"
+"@chromatic-com/storybook@npm:5.1.2":
+  version: 5.1.2
+  resolution: "@chromatic-com/storybook@npm:5.1.2"
   dependencies:
     "@neoconfetti/react": ^1.0.0
     chromatic: ^13.3.4
@@ -2403,7 +2403,7 @@ __metadata:
     strip-ansi: ^7.1.0
   peerDependencies:
     storybook: ^0.0.0-0 || ^10.1.0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0
-  checksum: aa982c53ace551301f487bf242543bf68c2102402f2641a8e1769dbd3ea4feb9f8bd7fd2631188a07b41fb713645da02075420869a0bda9d3aa0231503a4559b
+  checksum: 3c008fa4495aeba04cd60d0694fa473e7fd566c8b8b24bd380ea5fcd3ffdda9933916106d6d5bf1c5ce829456981eb70e6a49823d5729ff7db3571b6c50304bf
   languageName: node
   linkType: hard
 
@@ -17948,7 +17948,7 @@ __metadata:
     "@babel/preset-env": 7.29.2
     "@babel/preset-react": 7.28.5
     "@babel/preset-typescript": 7.28.5
-    "@chromatic-com/storybook": 5.1.1
+    "@chromatic-com/storybook": 5.1.2
     "@mdx-js/react": 3.1.1
     "@storybook/addon-a11y": 10.3.5
     "@storybook/addon-docs": 10.3.5
