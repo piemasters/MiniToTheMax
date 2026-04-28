@@ -53,6 +53,7 @@
     "@babel/preset-react": "7.28.5",
     "@babel/preset-typescript": "7.28.5",
     "@chromatic-com/storybook": "5.1.2",
+    "@eslint/js": "^10.0.1",
     "@storybook/addon-a11y": "10.3.5",
     "@storybook/addon-docs": "10.3.5",
     "@storybook/addon-jest": "9.1.12",
@@ -71,8 +72,6 @@
     "@types/react": "18.3.13",
     "@types/react-dom": "18.3.1",
     "@types/react-test-renderer": "19.1.0",
-    "@typescript-eslint/eslint-plugin": "8.59.0",
-    "@typescript-eslint/parser": "8.59.0",
     "axe-core": "4.11.3",
     "babel-jest": "30.3.0",
     "babel-loader": "10.1.1",
@@ -86,11 +85,6 @@
     "env-cmd": "11.0.0",
     "eslint": "10.2.1",
     "eslint-config-prettier": "10.1.8",
-    "eslint-loader": "4.0.2",
-    "eslint-plugin-cypress": "6.3.1",
-    "eslint-plugin-graphql": "4.0.0",
-    "eslint-plugin-jsx-a11y": "6.10.2",
-    "eslint-plugin-prettier": "5.5.5",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-storybook": "10.3.5",
     "eslint-webpack-plugin": "6.0.0",
@@ -112,6 +106,7 @@
     "tailwindcss": "4.2.4",
     "ts-loader": "9.5.7",
     "typescript": "6.0.3",
+    "typescript-eslint": "^8.59.1",
     "vite": "8.0.10"
   }
 }

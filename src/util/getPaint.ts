@@ -13,7 +13,7 @@ const paintCategoryPriority = [
   ...VallejoPaintCategories,
 ] as const;
 
-type category = (typeof paintCategoryPriority)[number];
+// type category = (typeof paintCategoryPriority)[number];
 
 export const getPaint = (
   name: string,

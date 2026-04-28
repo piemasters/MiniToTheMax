@@ -70,9 +70,7 @@ function LiteYouTubeEmbed(
   let ytUrl = props.noCookie
     ? 'https://www.youtube-nocookie.com'
     : 'https://www.youtube.com';
-  ytUrl = props.cookie
-    ? 'https://www.youtube.com'
-    : 'https://www.youtube-nocookie.com';
+  ytUrl = props.cookie ? ytUrl : 'https://www.youtube-nocookie.com';
 
   const iframeSrc = !props.playlist
     ? `${ytUrl}/embed/${videoId}?${iframeParams.toString()}`

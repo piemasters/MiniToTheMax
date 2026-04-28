@@ -6,14 +6,14 @@ import { getGradients } from './getGradients';
 import { getText } from './getText';
 
 export const VallejoPaint: FC<PaintDetailsVallejo> = ({
-  availability,
+  // availability,
   category,
-  color,
+  // color,
   company,
-  gloss,
+  // gloss,
   gradient,
   hex,
-  img,
+  // img,
   name,
   number,
   stroke,

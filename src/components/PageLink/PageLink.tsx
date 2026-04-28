@@ -11,15 +11,7 @@ export const PageLink: FC<{
   direction?: string;
   disabled?: boolean;
   className?: string;
-}> = ({
-  children,
-  type,
-  to,
-  linkActiveStyle,
-  direction,
-  disabled,
-  className,
-}) => {
+}> = ({ children, to, linkActiveStyle, disabled, className }) => {
   const baseClasses =
     className ||
     'text-blue-500 visited:text-blue-500 hover:text-blue-700 no-underline';

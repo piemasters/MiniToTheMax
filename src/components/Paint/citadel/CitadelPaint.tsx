@@ -8,9 +8,9 @@ import { getGloss } from './getGloss';
 import { getText } from './getText';
 
 export const CitadelPaint: FC<PaintDetailsCitadel> = ({
-  availability,
+  // availability,
   category,
-  color,
+  // color,
   company,
   gloss,
   gradient,
@@ -18,7 +18,7 @@ export const CitadelPaint: FC<PaintDetailsCitadel> = ({
   img,
   name,
   stroke,
-  type,
+  // type,
 }) => {
   return (
     <div
