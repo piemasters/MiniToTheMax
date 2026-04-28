@@ -1560,6 +1560,7 @@ export const gameMossAndLichen: PaintDetailsVallejo = {
 export const gameColorPaints = [
   gameColorDeadWhite,
   gameColorOffWhite,
+  gameColorElficFlesh,
   gameColorBoneWhite,
   gameColorPaleFlesh,
   gameColorRosyFlesh,
