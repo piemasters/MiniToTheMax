@@ -1,3 +1,5 @@
+import { link } from 'node:fs';
+
 export const moonstone = [
   {
     name: 'Baron Von Fancyhat',
@@ -17,6 +19,7 @@ export const moonstone = [
   },
   {
     name: 'Eric the Exalted',
+    link: '/showcase/moonstone/eric-the-exalted/',
   },
   {
     name: 'Eric the Squire',

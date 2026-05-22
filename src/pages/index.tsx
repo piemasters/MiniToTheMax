@@ -40,7 +40,7 @@ export const IndexPage: FC = () => {
     <Layout>
       <Badges />
       <h2>Latest Video</h2>
-      <Video videoId="2Ax9WJZ29Pc" title="Moonstone: Slim" />
+      <Video videoId="XzMjK8FXYg0" title="Moonstone: Eric the Exalted" />
       <h2>Latest Post</h2>
 
       <PostSummary
