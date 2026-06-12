@@ -8318,7 +8318,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.15.0, axios@npm:^1.6.4":
+"axios@npm:^1.16.0, axios@npm:^1.6.4":
   version: 1.17.0
   resolution: "axios@npm:1.17.0"
   dependencies:
@@ -8918,7 +8918,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bluebird@npm:3.7.2, bluebird@npm:^3.7.2":
+"bluebird@npm:^3.7.2":
   version: 3.7.2
   resolution: "bluebird@npm:3.7.2"
   checksum: 869417503c722e7dc54ca46715f70e15f4d9c602a423a02c825570862d12935be59ed9c7ba34a9b31f186c017c23cac6b54e35446f8353059c101da73eac22ef
@@ -16065,9 +16065,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"joi@npm:^18.1.2":
-  version: 18.1.2
-  resolution: "joi@npm:18.1.2"
+"joi@npm:^18.2.1":
+  version: 18.2.1
+  resolution: "joi@npm:18.2.1"
   dependencies:
     "@hapi/address": ^5.1.1
     "@hapi/formula": ^3.0.2
@@ -16076,7 +16076,7 @@ __metadata:
     "@hapi/tlds": ^1.1.1
     "@hapi/topo": ^6.0.2
     "@standard-schema/spec": ^1.1.0
-  checksum: a6b807a146d0572e8be07ac1e76aafac0b506e674cffb3393fc3ce56b0c7d6ea35902ad0d06d8f3b5b7fb2711f8ba06a17fddb46b993ccb3d1ab979679966dac
+  checksum: 4b4e28bf80438b6d3ab96484817e590f2ed1d589b511796d10c9dc8fc2bf02ff6cf833514e4a7436ba9cae9f49b65f9c871ab48647975f36bf02ea0ee2a51b7a
   languageName: node
   linkType: hard
 
@@ -16346,10 +16346,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lazy-ass@npm:1.6.0":
-  version: 1.6.0
-  resolution: "lazy-ass@npm:1.6.0"
-  checksum: 5a3ebb17915b03452320804466345382a6c25ac782ec4874fecdb2385793896cd459be2f187dc7def8899180c32ee0ab9a1aa7fe52193ac3ff3fe29bb0591729
+"lazy-ass@npm:2.0.3":
+  version: 2.0.3
+  resolution: "lazy-ass@npm:2.0.3"
+  checksum: 482cfbf5206d18a07c725c96f0434733efbee58a4eff097f101a44ea03291aea87ebfeb8da0c4e9269d66f5455a44d3664cec3944e1c8c40e3ec5c938886ad1f
   languageName: node
   linkType: hard
 
@@ -18043,7 +18043,7 @@ __metadata:
     react-photoswipe-gallery: 4.0.0
     react-test-renderer: 19.2.7
     sharp: 0.35.1
-    start-server-and-test: 3.0.2
+    start-server-and-test: 3.0.11
     storybook: 10.4.4
     tailwindcss: 4.2.4
     ts-loader: 9.6.0
@@ -21807,23 +21807,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"start-server-and-test@npm:3.0.2":
-  version: 3.0.2
-  resolution: "start-server-and-test@npm:3.0.2"
+"start-server-and-test@npm:3.0.11":
+  version: 3.0.11
+  resolution: "start-server-and-test@npm:3.0.11"
   dependencies:
     arg: 5.0.2
-    bluebird: 3.7.2
     check-more-types: 2.24.0
     debug: 4.4.3
     execa: 5.1.1
-    lazy-ass: 1.6.0
+    lazy-ass: 2.0.3
     tree-kill: 1.2.2
-    wait-on: 9.0.5
+    wait-on: 9.0.10
   bin:
     server-test: src/bin/start.js
     start-server-and-test: src/bin/start.js
     start-test: src/bin/start.js
-  checksum: 984d9b22871ab2b4b4aed0a1128d0889c589650a574871d7e2cf8567fbd6dcf960f37c7f1ef8efc120911d6b4ba11724181ed8092bd2ee4bb72e303c29f01be9
+  checksum: a3815d303eed27fec9d4e2f378d8f65f101c4bda8cb3e6fea7f951d5b007c54055319f57a7e38e8d813e79f84a7ed126acd3f76b4a21acd8b0d1a78977ff393d
   languageName: node
   linkType: hard
 
@@ -23766,18 +23765,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wait-on@npm:9.0.5":
-  version: 9.0.5
-  resolution: "wait-on@npm:9.0.5"
+"wait-on@npm:9.0.10":
+  version: 9.0.10
+  resolution: "wait-on@npm:9.0.10"
   dependencies:
-    axios: ^1.15.0
-    joi: ^18.1.2
+    axios: ^1.16.0
+    joi: ^18.2.1
     lodash: ^4.18.1
     minimist: ^1.2.8
     rxjs: ^7.8.2
   bin:
     wait-on: bin/wait-on
-  checksum: d77aa8938162aa748fc9f964670229037f276f129dd83d345070f2cd35594568e37d6525e22ae2abdead86dcff2c7948246c74d17a65d49ef64a798ecc868f2f
+  checksum: 9c8fed28f8027d6495e0226c34248551f694741880a2be99cc95382364e221337c6c757642028de4e4c1226e5564ba612b9d2148ab2074aaaa8da10a93940cb3
   languageName: node
   linkType: hard
 
