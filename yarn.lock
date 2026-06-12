@@ -17910,7 +17910,6 @@ __metadata:
     jest-environment-jsdom: 30.3.0
     lodash.kebabcase: 4.1.1
     photoswipe: 5.4.4
-    postcss: 8.5.15
     prettier: 3.8.3
     react: 18.3.1
     react-docgen-typescript-loader: 3.7.2
@@ -18038,15 +18037,6 @@ __metadata:
   version: 0.0.8
   resolution: "mute-stream@npm:0.0.8"
   checksum: ff48d251fc3f827e5b1206cda0ffdaec885e56057ee86a3155e1951bc940fd5f33531774b1cc8414d7668c10a8907f863f6561875ee6e8768931a62121a531a1
-  languageName: node
-  linkType: hard
-
-"nanoid@npm:^3.3.11":
-  version: 3.3.11
-  resolution: "nanoid@npm:3.3.11"
-  bin:
-    nanoid: bin/nanoid.cjs
-  checksum: 3be20d8866a57a6b6d218e82549711c8352ed969f9ab3c45379da28f405363ad4c9aeb0b39e9abc101a529ca65a72ff9502b00bf74a912c4b64a9d62dfd26c29
   languageName: node
   linkType: hard
 
@@ -19592,7 +19582,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.5.15":
+"postcss@npm:^8.2.15, postcss@npm:^8.2.9, postcss@npm:^8.4.24, postcss@npm:^8.5.10, postcss@npm:^8.5.6":
   version: 8.5.15
   resolution: "postcss@npm:8.5.15"
   dependencies:
@@ -19600,28 +19590,6 @@ __metadata:
     picocolors: ^1.1.1
     source-map-js: ^1.2.1
   checksum: 82e046d5bd0c537e7bcae1b97ec366968cac4ebdbd38773b69a2a4ad437f26641643a48f120317dd167199ac718ff8a0ab7dd102258430e4c919daaef0e57904
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.2.15, postcss@npm:^8.2.9, postcss@npm:^8.4.24, postcss@npm:^8.5.6":
-  version: 8.5.6
-  resolution: "postcss@npm:8.5.6"
-  dependencies:
-    nanoid: ^3.3.11
-    picocolors: ^1.1.1
-    source-map-js: ^1.2.1
-  checksum: 20f3b5d673ffeec2b28d65436756d31ee33f65b0a8bedb3d32f556fbd5973be38c3a7fb5b959a5236c60a5db7b91b0a6b14ffaac0d717dce1b903b964ee1c1bb
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.5.10":
-  version: 8.5.10
-  resolution: "postcss@npm:8.5.10"
-  dependencies:
-    nanoid: ^3.3.11
-    picocolors: ^1.1.1
-    source-map-js: ^1.2.1
-  checksum: 9af9cd7f2f0d4b8456f6710e48d586328433509b695911fda942c24ac4db4e62c6fed8c6c6d8c8258326285f669494c2c36a4ff84aa160f0586eb545e5258bf5
   languageName: node
   linkType: hard
 
