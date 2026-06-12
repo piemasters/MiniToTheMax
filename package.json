@@ -97,7 +97,7 @@
     "jest": "30.3.0",
     "jest-environment-jsdom": "30.3.0",
     "postcss": "8.5.15",
-    "prettier": "3.8.3",
+    "prettier": "3.8.4",
     "react-docgen-typescript-loader": "3.7.2",
     "react-test-renderer": "19.2.7",
     "sharp": "0.35.1",
