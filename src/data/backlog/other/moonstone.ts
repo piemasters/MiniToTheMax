@@ -1,5 +1,3 @@
-import { link } from 'node:fs';
-
 export const moonstone = [
   {
     name: 'Baron Von Fancyhat',
