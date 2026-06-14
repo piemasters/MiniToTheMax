@@ -18567,7 +18567,7 @@ __metadata:
     react: 18.3.1
     react-docgen-typescript-loader: 3.7.2
     react-dom: 18.3.1
-    react-photoswipe-gallery: 4.0.0
+    react-photoswipe-gallery: 4.1.1
     react-test-renderer: 19.2.7
     sharp: 0.35.1
     start-server-and-test: 3.0.11
@@ -20790,14 +20790,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-photoswipe-gallery@npm:4.0.0":
-  version: 4.0.0
-  resolution: "react-photoswipe-gallery@npm:4.0.0"
+"react-photoswipe-gallery@npm:4.1.1":
+  version: 4.1.1
+  resolution: "react-photoswipe-gallery@npm:4.1.1"
   peerDependencies:
     photoswipe: ">= 5.2.2"
-    prop-types: ">= 15.7.0"
     react: ">= 16.8.0"
-  checksum: 2310099c254baa5b497e28acaded2f8d7f74f19eb9603585c06ac8c465b76f2012051254fc1bb102425562e338570ff279e2f03f569f83a5683b4d8e14327b92
+  checksum: 821443ccb88b9f46577b12c3b84dcc1a722b7692868b3a74bfb3412e011351c11748645a7bbc617b1445972d4d822b311927635dbb59d502096dc59b3f0b06ed
   languageName: node
   linkType: hard
 
@@ -22960,13 +22959,6 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: f54a7d1c11cda8c676e1e9aff5e723646905ed4579cca14b3ce12d2b12eac3e18f5dbe2549fe0b79697164858e18961145db4dd0660bbeb0fb4032af0aaf32b4
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:4.2.4":
-  version: 4.2.4
-  resolution: "tailwindcss@npm:4.2.4"
-  checksum: d31b729b68db772d9992b25f57d5fefe5c65acad73872fa65259edd0e6e2462bbbd62dc2ac265974b8b02093f4bc6342b87c4f81b7c6ba4d34ebb1359b979fd9
   languageName: node
   linkType: hard
 
