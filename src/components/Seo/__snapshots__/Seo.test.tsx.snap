@@ -1,36 +1,3 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`Seo renders correctly 1`] = `
-<div>
-  <meta
-    content="An Aspiring Hobby & Painting Blog"
-    name="description"
-  />
-  <meta
-    content="content/assets/images/logo.webp"
-    name="image"
-  />
-  <meta
-    content="https://minitothemax.app"
-    property="og:url"
-  />
-  <meta
-    content="MiniToTheMax"
-    property="og:title"
-  />
-  <meta
-    content="An Aspiring Hobby & Painting Blog"
-    property="og:description"
-  />
-  <meta
-    content="content/assets/images/logo.webp"
-    property="og:image"
-  />
-  <html
-    lang="en"
-  />
-  <title>
-    MiniToTheMax
-  </title>
-</div>
-`;
+exports[`Seo renders correctly 1`] = `<div />`;

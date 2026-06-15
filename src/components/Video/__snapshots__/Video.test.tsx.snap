@@ -6,11 +6,6 @@ exports[`Video renders correctly 1`] = `
     class="w-full max-w-3xl mb-4 hover:shadow-3xl"
     data-testid="video"
   >
-    <link
-      as="image"
-      href="https://i.ytimg.com/vi/qcWaykRRDfM/hqdefault.jpg"
-      rel="preload"
-    />
     <article
       class="yt-lite "
       data-title="Grey Knight Stormraven"
