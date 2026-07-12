@@ -18397,7 +18397,7 @@ __metadata:
     sharp: 0.35.1
     start-server-and-test: 3.0.11
     storybook: 10.5.0
-    tailwindcss: 4.3.0
+    tailwindcss: 4.3.2
     ts-loader: 9.6.0
     typescript: 6.0.3
     typescript-eslint: ^8.61.0
@@ -22770,6 +22770,13 @@ __metadata:
   version: 4.3.0
   resolution: "tailwindcss@npm:4.3.0"
   checksum: 8233922ff1a54e4691d5c70d3f4cf176d60e05d9dc85b2e0f890843cd14a5571f084222ccf9084ad2e2f079a7d7f834073439eafdbdb1a6e7aa0c75a15bd2663
+  languageName: node
+  linkType: hard
+
+"tailwindcss@npm:4.3.2":
+  version: 4.3.2
+  resolution: "tailwindcss@npm:4.3.2"
+  checksum: 705bcf3952a6dbc472cd1d941eb311d84dff51b496f4efd9aff701745175b23fbe9cc4ac79d95a889783696944169bb9270d056a3c868efe0a4567bc93725d7e
   languageName: node
   linkType: hard
 
