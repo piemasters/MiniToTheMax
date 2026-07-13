@@ -35,7 +35,6 @@ module.exports = {
         },
       },
     },
-    'gatsby-plugin-eslint',
     'gatsby-plugin-typescript',
     'gatsby-plugin-postcss',
     'gatsby-plugin-catch-links',
