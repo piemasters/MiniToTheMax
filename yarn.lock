@@ -18613,7 +18613,7 @@ __metadata:
     react-docgen-typescript-loader: 3.7.2
     react-dom: 19.2.7
     react-photoswipe-gallery: 4.1.2
-    react-test-renderer: 19.2.7
+    react-test-renderer: 19.2.8
     sharp: 0.35.3
     start-server-and-test: 3.0.11
     storybook: 10.5.4
@@ -20816,7 +20816,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is-19@npm:react-is@^19.2.5, react-is@npm:^19.2.7":
+"react-is-19@npm:react-is@^19.2.5":
   version: 19.2.7
   resolution: "react-is@npm:19.2.7"
   checksum: 148ee03b481ace8370cb9b96de386598423ed44ad36090c45ce3f905aec496db6f2675da720bbe43f39d66c43c9a16757cb71e9e55217825707dae97f0cf200f
@@ -20834,6 +20834,13 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 9d6d111d8990dc98bc5402c1266a808b0459b5d54830bbea24c12d908b536df7883f268a7868cfaedde3dd9d4e0d574db456f84d2e6df9c4526f99bb4b5344d8
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^19.2.8":
+  version: 19.2.8
+  resolution: "react-is@npm:19.2.8"
+  checksum: ec955b3b167cbe041a1f474063d15aa0c5a4d67a75b95e3e4090e9b964986a1fcf66370f3aa4deb34342c898e5d95da37d725d089c40e537598e0c3cc8bba00e
   languageName: node
   linkType: hard
 
@@ -20868,15 +20875,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-test-renderer@npm:19.2.7":
-  version: 19.2.7
-  resolution: "react-test-renderer@npm:19.2.7"
+"react-test-renderer@npm:19.2.8":
+  version: 19.2.8
+  resolution: "react-test-renderer@npm:19.2.8"
   dependencies:
-    react-is: ^19.2.7
+    react-is: ^19.2.8
     scheduler: ^0.27.0
   peerDependencies:
-    react: ^19.2.7
-  checksum: 236f5ab00e8720f2613be85e887be7c7d251196326992a6c1900dbe5176d1c950840d8a88295302c21124de9c9481470711e464c8cebbbd610f495d5f644532c
+    react: ^19.2.8
+  checksum: cbefe99a70a311aa01b389e0ee2409fbc23b440ba596a1eca7952c64a84d53f83a5db9c1f90c1d918fa8abb6ac9660aa7db9244e672b4494b689d795d447df82
   languageName: node
   linkType: hard
 
