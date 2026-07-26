@@ -2,7 +2,28 @@ module.exports = {
   roots: ['src'],
   testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.[jt]sx?$': '<rootDir>/jest-preprocess.js',
+    '^.+\\.[jt]sx?$': [
+      '@swc/jest',
+      {
+        sourceMaps: 'inline',
+        module: {
+          type: 'commonjs',
+        },
+        jsc: {
+          target: 'es2022',
+          parser: {
+            syntax: 'typescript',
+            tsx: true,
+            dynamicImport: true,
+          },
+          transform: {
+            react: {
+              runtime: 'automatic',
+            },
+          },
+        },
+      },
+    ],
   },
   testRegex: '(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
