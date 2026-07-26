@@ -18695,7 +18695,7 @@ __metadata:
     ts-loader: 9.6.2
     typescript: 7.0.2
     typescript-eslint: ^8.63.0
-    vite: 8.1.4
+    vite: 8.1.5
   languageName: unknown
   linkType: soft
 
@@ -18827,6 +18827,15 @@ __metadata:
   bin:
     nanoid: bin/nanoid.cjs
   checksum: 38699257447dc59e21e73e0510d0dfb16b7a610d9ca80633d5c3a68f9b4298c990513d30404ca8f163c2d03225ee01695ff8898bea6179183f38f0477b7635ac
+  languageName: node
+  linkType: hard
+
+"nanoid@npm:^3.3.16":
+  version: 3.3.16
+  resolution: "nanoid@npm:3.3.16"
+  bin:
+    nanoid: bin/nanoid.cjs
+  checksum: 2489d8f87f02178a15b901d7d06e490838383a2acdf01ec2b4e4343c02325ab648965a539eba8bdb821560a33e4c34be506b9e1c7c1bb5cb750e894f500fce92
   languageName: node
   linkType: hard
 
@@ -20399,7 +20408,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.5.15, postcss@npm:^8.5.16":
+"postcss@npm:^8.5.15":
   version: 8.5.17
   resolution: "postcss@npm:8.5.17"
   dependencies:
@@ -20407,6 +20416,17 @@ __metadata:
     picocolors: ^1.1.1
     source-map-js: ^1.2.1
   checksum: 5dfa52963e1044eb6c622efa047bf7b48aee0a6cce5d6c34788024ee7dd1540dc50a84dc1a56f968cebb84f3c8213d9f2582ce1deafc10c7342f3a538cf9d7b1
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.5.17":
+  version: 8.5.23
+  resolution: "postcss@npm:8.5.23"
+  dependencies:
+    nanoid: ^3.3.16
+    picocolors: ^1.1.1
+    source-map-js: ^1.2.1
+  checksum: 02fe0aac9de34914104566b3fe3a29903dc7bae4a3fffffdca1331dc51e14aa62c48e8373fc4d107ef99f8f5cae98199d9a89fbcbf43371693b22a397ff5cc34
   languageName: node
   linkType: hard
 
@@ -21500,7 +21520,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rolldown@npm:~1.1.4":
+"rolldown@npm:~1.1.5":
   version: 1.1.5
   resolution: "rolldown@npm:1.1.5"
   dependencies:
@@ -24490,15 +24510,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:8.1.4":
-  version: 8.1.4
-  resolution: "vite@npm:8.1.4"
+"vite@npm:8.1.5":
+  version: 8.1.5
+  resolution: "vite@npm:8.1.5"
   dependencies:
     fsevents: ~2.3.3
     lightningcss: ^1.32.0
     picomatch: ^4.0.5
-    postcss: ^8.5.16
-    rolldown: ~1.1.4
+    postcss: ^8.5.17
+    rolldown: ~1.1.5
     tinyglobby: ^0.2.17
   peerDependencies:
     "@types/node": ^20.19.0 || >=22.12.0
@@ -24543,7 +24563,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 99221296fe13c441f8edfcaede149b712e160731852bb9281a32c25e6a696a1fd4c8b065973ef520c18f4b8625172057bdcb417e458714bf6409f352be711e64
+  checksum: a3e4abac5faf60774cccf85cbc9d7b113bc8ada051e7296adb3f49c3653106339b4501fa053aa455c2640041677eef4e5151bf36e26cf6b0a826781eb38b3909
   languageName: node
   linkType: hard
 
