@@ -18690,7 +18690,7 @@ __metadata:
     react-test-renderer: 19.2.7
     sharp: 0.35.3
     start-server-and-test: 3.0.11
-    storybook: 10.5.0
+    storybook: 10.5.4
     tailwindcss: 4.3.3
     ts-loader: 9.6.2
     typescript: 7.0.2
@@ -20386,7 +20386,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.5.23":
+"postcss@npm:8.5.23, postcss@npm:^8.5.17":
   version: 8.5.23
   resolution: "postcss@npm:8.5.23"
   dependencies:
@@ -20416,17 +20416,6 @@ __metadata:
     picocolors: ^1.1.1
     source-map-js: ^1.2.1
   checksum: 5dfa52963e1044eb6c622efa047bf7b48aee0a6cce5d6c34788024ee7dd1540dc50a84dc1a56f968cebb84f3c8213d9f2582ce1deafc10c7342f3a538cf9d7b1
-  languageName: node
-  linkType: hard
-
-"postcss@npm:^8.5.17":
-  version: 8.5.23
-  resolution: "postcss@npm:8.5.23"
-  dependencies:
-    nanoid: ^3.3.16
-    picocolors: ^1.1.1
-    source-map-js: ^1.2.1
-  checksum: 02fe0aac9de34914104566b3fe3a29903dc7bae4a3fffffdca1331dc51e14aa62c48e8373fc4d107ef99f8f5cae98199d9a89fbcbf43371693b22a397ff5cc34
   languageName: node
   linkType: hard
 
@@ -22532,9 +22521,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:10.5.0":
-  version: 10.5.0
-  resolution: "storybook@npm:10.5.0"
+"storybook@npm:10.5.4":
+  version: 10.5.4
+  resolution: "storybook@npm:10.5.4"
   dependencies:
     "@storybook/global": ^5.0.0
     "@storybook/icons": ^2.0.2
@@ -22566,7 +22555,7 @@ __metadata:
       optional: true
   bin:
     storybook: ./dist/bin/dispatcher.js
-  checksum: 2c45faaafcbe5a422b1f50c9c28a3c4ec1b987d075f2147517ccadd00b6d0dfa65d9aa7c3cc3c551f250e2d8c37e6e8e2c337ede2bd5fdf32f24311a2d98f969
+  checksum: 08cf26c19eb009c663f7b3c46ae74f790513cd71e094a0cc8d28c796d33d402a4bb2bdd727679cd3ccf8d0eb5d784af33b1e49f3e77ed15341af2a0459fc7b72
   languageName: node
   linkType: hard
 
