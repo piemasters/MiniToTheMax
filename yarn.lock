@@ -18626,7 +18626,7 @@ __metadata:
     react-test-renderer: 19.2.8
     sharp: 0.35.3
     start-server-and-test: 3.0.11
-    storybook: 10.5.4
+    storybook: 10.5.5
     tailwindcss: 4.3.3
     ts-loader: 9.6.2
     typescript: 7.0.2
@@ -22444,9 +22444,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:10.5.4":
-  version: 10.5.4
-  resolution: "storybook@npm:10.5.4"
+"storybook@npm:10.5.5":
+  version: 10.5.5
+  resolution: "storybook@npm:10.5.5"
   dependencies:
     "@storybook/global": ^5.0.0
     "@storybook/icons": ^2.0.2
@@ -22464,7 +22464,7 @@ __metadata:
     recast: ^0.23.5
     semver: ^7.7.3
     use-sync-external-store: ^1.5.0
-    ws: ^8.18.0
+    ws: ^8.21.1
   peerDependencies:
     "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     prettier: ^2 || ^3
@@ -22478,7 +22478,7 @@ __metadata:
       optional: true
   bin:
     storybook: ./dist/bin/dispatcher.js
-  checksum: 08cf26c19eb009c663f7b3c46ae74f790513cd71e094a0cc8d28c796d33d402a4bb2bdd727679cd3ccf8d0eb5d784af33b1e49f3e77ed15341af2a0459fc7b72
+  checksum: aed063739209b26417461052babbca67ea6dd69e70e2762bccd81cc336a2a617dbcf98900f275bb386ea996c903430ae211c097449cc361dd2eaf1a0e938f2d3
   languageName: node
   linkType: hard
 
@@ -25040,6 +25040,21 @@ __metadata:
     utf-8-validate:
       optional: true
   checksum: d64ef1631227bd0c5fe21b3eb3646c9c91229402fb963d12d87b49af0a1ef757277083af23a5f85742bae1e520feddfb434cb882ea59249b15673c16dc3f36e0
+  languageName: node
+  linkType: hard
+
+"ws@npm:^8.21.1":
+  version: 8.21.2
+  resolution: "ws@npm:8.21.2"
+  peerDependencies:
+    bufferutil: ^4.0.1
+    utf-8-validate: ">=5.0.2"
+  peerDependenciesMeta:
+    bufferutil:
+      optional: true
+    utf-8-validate:
+      optional: true
+  checksum: 1e1ae90a6ac2709b8f53272bb0024ba8ce75e68a90deca72cd60d7dc6ec3031258b1159d5abd276220f2c06e6d5b65e87dc0f470e44f13855c30d4831ca86060
   languageName: node
   linkType: hard
 
