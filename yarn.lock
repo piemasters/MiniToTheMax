@@ -7272,12 +7272,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:26.1.1":
-  version: 26.1.1
-  resolution: "@types/node@npm:26.1.1"
+"@types/node@npm:26.1.2":
+  version: 26.1.2
+  resolution: "@types/node@npm:26.1.2"
   dependencies:
     undici-types: ~8.3.0
-  checksum: c6727bd4761280b389a2706cc55cbb3511f37f3e2aa609dda65590e1aec5690ce3b14a865edd070c97c5ae4f566dbbae1a811c1b61f69efaee4226015205f304
+  checksum: c77629c1e656808481bc9853cf0065d53e31dd9630d8c85b922583ada4d05e57db51c0098fd6c9056e21c8a1709294ad30f65a350028181e95220eb4e76405c8
   languageName: node
   linkType: hard
 
@@ -18571,7 +18571,7 @@ __metadata:
     "@types/jest": 30.0.0
     "@types/lodash": 4.17.24
     "@types/lodash.kebabcase": 4.1.9
-    "@types/node": 26.1.1
+    "@types/node": 26.1.2
     "@types/node-sass": 4.11.8
     "@types/react": 19.2.17
     "@types/react-dom": 19.2.3
