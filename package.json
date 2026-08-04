@@ -60,7 +60,7 @@
     "@storybook/addon-links": "10.5.4",
     "@storybook/react-vite": "10.5.4",
     "@svgr/webpack": "8.1.0",
-    "@swc/core": "1.15.2",
+    "@swc/core": "1.15.47",
     "@swc/jest": "0.2.39",
     "@tailwindcss/postcss": "4.3.3",
     "@testing-library/cypress": "10.1.3",
