@@ -6107,15 +6107,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:10.5.4":
-  version: 10.5.4
-  resolution: "@storybook/addon-a11y@npm:10.5.4"
+"@storybook/addon-a11y@npm:10.5.5":
+  version: 10.5.5
+  resolution: "@storybook/addon-a11y@npm:10.5.5"
   dependencies:
     "@storybook/global": ^5.0.0
     axe-core: ^4.2.0
   peerDependencies:
-    storybook: ^10.5.4
-  checksum: 97e3c54f63a0c55b4deb74d1494d498f99e22bf7348f94e794c4406e3a8bf49f681d120488107f6d948d812eb963309159d30ae1ed42e91fdc5e1e7738a57477
+    storybook: ^10.5.5
+  checksum: fd219484ba8cfa9d25e44ec219deefaa0fa6a6e995885cf6deb607a598811ad8818c6c95b4f2552a5945df63debf64faf6e9dc17575221ddfd6a9d0d882e1614
   languageName: node
   linkType: hard
 
@@ -18556,7 +18556,7 @@ __metadata:
     "@chromatic-com/storybook": 5.2.1
     "@eslint/js": ^10.0.1
     "@mdx-js/react": 3.1.1
-    "@storybook/addon-a11y": 10.5.4
+    "@storybook/addon-a11y": 10.5.5
     "@storybook/addon-docs": 10.5.4
     "@storybook/addon-jest": 9.1.12
     "@storybook/addon-links": 10.5.4
