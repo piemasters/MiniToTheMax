@@ -58,7 +58,7 @@
     "@storybook/addon-docs": "10.5.4",
     "@storybook/addon-jest": "9.1.12",
     "@storybook/addon-links": "10.5.4",
-    "@storybook/react-vite": "10.5.4",
+    "@storybook/react-vite": "10.5.6",
     "@svgr/webpack": "8.1.0",
     "@swc/core": "1.15.2",
     "@swc/jest": "0.2.39",
