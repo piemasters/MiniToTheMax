@@ -6824,6 +6824,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@testing-library/jest-dom@npm:6.9.1":
+  version: 6.9.1
+  resolution: "@testing-library/jest-dom@npm:6.9.1"
+  dependencies:
+    "@adobe/css-tools": ^4.4.0
+    aria-query: ^5.0.0
+    css.escape: ^1.5.1
+    dom-accessibility-api: ^0.6.3
+    picocolors: ^1.1.1
+    redent: ^3.0.0
+  checksum: 5c77126a59a1c0df5935d29569652364c56e5026982f0357f0daaeb21b75fcd9a6aeff8365bdcba719687a4359b3f8bf74bba81ccbae7635cf18ad9789e1e323
+  languageName: node
+  linkType: hard
+
 "@testing-library/jest-dom@npm:7.0.0":
   version: 7.0.0
   resolution: "@testing-library/jest-dom@npm:7.0.0"
@@ -6837,20 +6851,6 @@ __metadata:
   peerDependencies:
     "@testing-library/dom": ">=10 <11"
   checksum: 744bbab55ce776bfbd07bac36ce9ed1a00e2445c76752fea7a179610f628ad052f341c0eb92a7cb6b59e4913796149b306b2316e55f3ec98ff9ee4aff9666e78
-  languageName: node
-  linkType: hard
-
-"@testing-library/jest-dom@npm:^6.9.1":
-  version: 6.9.1
-  resolution: "@testing-library/jest-dom@npm:6.9.1"
-  dependencies:
-    "@adobe/css-tools": ^4.4.0
-    aria-query: ^5.0.0
-    css.escape: ^1.5.1
-    dom-accessibility-api: ^0.6.3
-    picocolors: ^1.1.1
-    redent: ^3.0.0
-  checksum: 5c77126a59a1c0df5935d29569652364c56e5026982f0357f0daaeb21b75fcd9a6aeff8365bdcba719687a4359b3f8bf74bba81ccbae7635cf18ad9789e1e323
   languageName: node
   linkType: hard
 
@@ -18626,7 +18626,7 @@ __metadata:
     react-test-renderer: 19.2.8
     sharp: 0.35.3
     start-server-and-test: 3.0.11
-    storybook: 10.5.4
+    storybook: 10.5.7
     tailwindcss: 4.3.3
     ts-loader: 9.6.2
     typescript: 7.0.2
@@ -22444,14 +22444,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:10.5.4":
-  version: 10.5.4
-  resolution: "storybook@npm:10.5.4"
+"storybook@npm:10.5.7":
+  version: 10.5.7
+  resolution: "storybook@npm:10.5.7"
   dependencies:
     "@storybook/global": ^5.0.0
     "@storybook/icons": ^2.0.2
     "@testing-library/dom": ^10.4.1
-    "@testing-library/jest-dom": ^6.9.1
+    "@testing-library/jest-dom": 6.9.1
     "@testing-library/user-event": ^14.6.1
     "@vitest/expect": 3.2.4
     "@vitest/spy": 3.2.4
@@ -22464,7 +22464,7 @@ __metadata:
     recast: ^0.23.5
     semver: ^7.7.3
     use-sync-external-store: ^1.5.0
-    ws: ^8.18.0
+    ws: ^8.21.1
   peerDependencies:
     "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     prettier: ^2 || ^3
@@ -22478,7 +22478,7 @@ __metadata:
       optional: true
   bin:
     storybook: ./dist/bin/dispatcher.js
-  checksum: 08cf26c19eb009c663f7b3c46ae74f790513cd71e094a0cc8d28c796d33d402a4bb2bdd727679cd3ccf8d0eb5d784af33b1e49f3e77ed15341af2a0459fc7b72
+  checksum: 1c427f3a99544ebf059c10ada5b1fef3c107e65b387b54f888ffeea3512b7233dccc421f54e180212331d56f89be5b8eb15e84f637532d67e4b742a691bb25a7
   languageName: node
   linkType: hard
 
@@ -25040,6 +25040,21 @@ __metadata:
     utf-8-validate:
       optional: true
   checksum: d64ef1631227bd0c5fe21b3eb3646c9c91229402fb963d12d87b49af0a1ef757277083af23a5f85742bae1e520feddfb434cb882ea59249b15673c16dc3f36e0
+  languageName: node
+  linkType: hard
+
+"ws@npm:^8.21.1":
+  version: 8.21.3
+  resolution: "ws@npm:8.21.3"
+  peerDependencies:
+    bufferutil: ^4.0.1
+    utf-8-validate: ">=5.0.2"
+  peerDependenciesMeta:
+    bufferutil:
+      optional: true
+    utf-8-validate:
+      optional: true
+  checksum: 8a28a457a997e0d63b5bc4d35344c342c68038c207013196468c35a80f7220397665739026217e836abc40ea7432483de3fee47a64abdedb4e3d0e3f332dc37b
   languageName: node
   linkType: hard
 
