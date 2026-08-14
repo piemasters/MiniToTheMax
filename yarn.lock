@@ -14578,10 +14578,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:17.7.0":
-  version: 17.7.0
-  resolution: "globals@npm:17.7.0"
-  checksum: cdedb484e093bf34e819d571de7ae659fa85fa5fc0d51b99f6b23397cf6511982658d4b9bdc90e967acd7ca9704e12d5c8c117c281db757fec90e2ad83117347
+"globals@npm:17.9.0":
+  version: 17.9.0
+  resolution: "globals@npm:17.9.0"
+  checksum: 16657a4355cff42b2315177a9dfe9d2c2f8885045269143a4219afeeae780ff0300b24d56ca0bf0506ebb9735bbe901681d9d86ef9d2813c25ee3f2c7ad851c6
   languageName: node
   linkType: hard
 
@@ -18724,7 +18724,7 @@ __metadata:
     gatsby-source-filesystem: 5.16.0
     gatsby-transformer-sharp: 5.16.0
     glob: 13.0.6
-    globals: 17.7.0
+    globals: 17.9.0
     gsap: 3.15.0
     identity-obj-proxy: 3.0.0
     jest: 30.4.2
