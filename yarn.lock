@@ -8633,10 +8633,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"arch@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "arch@npm:2.2.0"
-  checksum: e21b7635029fe8e9cdd5a026f9a6c659103e63fff423834323cdf836a1bb240a72d0c39ca8c470f84643385cf581bd8eda2cad8bf493e27e54bd9783abe9101f
+"arch@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "arch@npm:3.0.0"
+  checksum: f2916e8436d428661e3c0f15682ac96431c22d32c41f9075942b3865e3f985f96354477c0ee6a33c724230e4391a669dbea494d3e11875161cab742751c218b0
   languageName: node
   linkType: hard
 
@@ -11016,16 +11016,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:15.19.0":
-  version: 15.19.0
-  resolution: "cypress@npm:15.19.0"
+"cypress@npm:15.20.1":
+  version: 15.20.1
+  resolution: "cypress@npm:15.20.1"
   dependencies:
     "@cypress/request": ^4.0.0
     "@cypress/xvfb": ^1.2.4
     "@types/sinonjs__fake-timers": 8.1.1
     "@types/sizzle": ^2.3.2
     "@types/tmp": ^0.2.3
-    arch: ^2.2.0
+    arch: ^3.0.0
     blob-util: ^2.0.2
     bluebird: ^3.7.2
     buffer: ^5.7.1
@@ -11056,12 +11056,11 @@ __metadata:
     systeminformation: ^5.31.1
     tmp: ~0.2.4
     tree-kill: 1.2.2
-    tslib: 1.14.1
     untildify: ^4.0.0
     yauzl: ^3.3.1
   bin:
     cypress: bin/cypress
-  checksum: 007186234c0be9c244d0b6a8d8037b539d443052712d574390e4f32da832b57bd572e60832553bb84b2e4be68f9b63a0e088e6dfe1a95b8d1b934ada2fbded69
+  checksum: 8083977b3d85c20667dbdab44c9a8ddc7d3d1a4e3290776c7db550bb64241b2aa33f02a196deb1035156912aa16f64da9b775975bfd52f8ffdfd73a60a825764
   languageName: node
   linkType: hard
 
@@ -18664,7 +18663,7 @@ __metadata:
     babel-plugin-remove-graphql-queries: 5.16.0
     babel-preset-react-app: 10.1.0
     csstype: 3.2.3
-    cypress: 15.19.0
+    cypress: 15.20.1
     cypress-axe: 1.7.0
     disqus-react: 1.1.7
     dotenv: 17.4.2
@@ -23529,7 +23528,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:1.14.1, tslib@npm:^1.8.1, tslib@npm:^1.9.0":
+"tslib@npm:^1.8.1, tslib@npm:^1.9.0":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd

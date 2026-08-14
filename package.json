@@ -79,7 +79,7 @@
     "babel-plugin-remove-graphql-queries": "5.16.0",
     "babel-preset-react-app": "10.1.0",
     "csstype": "3.2.3",
-    "cypress": "15.19.0",
+    "cypress": "15.20.1",
     "cypress-axe": "1.7.0",
     "dotenv": "17.4.2",
     "env-cmd": "11.0.0",
