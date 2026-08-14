@@ -8980,7 +8980,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.16.0, axios@npm:^1.6.4":
+"axios@npm:^1.18.1":
+  version: 1.19.0
+  resolution: "axios@npm:1.19.0"
+  dependencies:
+    follow-redirects: ^1.16.0
+    form-data: ^4.0.6
+    https-proxy-agent: ^5.0.1
+    proxy-from-env: ^2.1.0
+  checksum: 37ef6b3049548a384dff61ef4705011458b51bcd9fd2492b844c3a5f9210cc584c7fa855aaa86a807c4c02f0df17828eba209f461aded8748539e4d87c2fa080
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.6.4":
   version: 1.18.1
   resolution: "axios@npm:1.18.1"
   dependencies:
@@ -13386,7 +13398,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"form-data@npm:^4.0.5, form-data@npm:~4.0.4":
+"form-data@npm:^4.0.5, form-data@npm:^4.0.6, form-data@npm:~4.0.4":
   version: 4.0.6
   resolution: "form-data@npm:4.0.6"
   dependencies:
@@ -16715,9 +16727,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"joi@npm:^18.2.1":
-  version: 18.2.1
-  resolution: "joi@npm:18.2.1"
+"joi@npm:^18.2.3":
+  version: 18.2.3
+  resolution: "joi@npm:18.2.3"
   dependencies:
     "@hapi/address": ^5.1.1
     "@hapi/formula": ^3.0.2
@@ -16726,7 +16738,7 @@ __metadata:
     "@hapi/tlds": ^1.1.1
     "@hapi/topo": ^6.0.2
     "@standard-schema/spec": ^1.1.0
-  checksum: 4b4e28bf80438b6d3ab96484817e590f2ed1d589b511796d10c9dc8fc2bf02ff6cf833514e4a7436ba9cae9f49b65f9c871ab48647975f36bf02ea0ee2a51b7a
+  checksum: d4469730d5d25a35ac0340cf0dd14cea2c4abb25adbccf985266ef4638da1a3ac555af8714d27b1145635e08d81a184cf1ec0168fbd4e8d02ae29b54e8fc5463
   languageName: node
   linkType: hard
 
@@ -18707,7 +18719,7 @@ __metadata:
     react-photoswipe-gallery: 4.1.2
     react-test-renderer: 19.2.8
     sharp: 0.35.3
-    start-server-and-test: 3.0.11
+    start-server-and-test: 3.0.12
     storybook: 10.5.4
     tailwindcss: 4.3.3
     ts-loader: 9.6.2
@@ -22503,9 +22515,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"start-server-and-test@npm:3.0.11":
-  version: 3.0.11
-  resolution: "start-server-and-test@npm:3.0.11"
+"start-server-and-test@npm:3.0.12":
+  version: 3.0.12
+  resolution: "start-server-and-test@npm:3.0.12"
   dependencies:
     arg: 5.0.2
     check-more-types: 2.24.0
@@ -22513,12 +22525,12 @@ __metadata:
     execa: 5.1.1
     lazy-ass: 2.0.3
     tree-kill: 1.2.2
-    wait-on: 9.0.10
+    wait-on: 9.1.0
   bin:
     server-test: src/bin/start.js
     start-server-and-test: src/bin/start.js
     start-test: src/bin/start.js
-  checksum: a3815d303eed27fec9d4e2f378d8f65f101c4bda8cb3e6fea7f951d5b007c54055319f57a7e38e8d813e79f84a7ed126acd3f76b4a21acd8b0d1a78977ff393d
+  checksum: c42b6137cd426792f4860b9e8addad90fa3d2f2dbc641bb68cfe49f633e9d15d30fadb62a518432ed05d8347c32ee4bba285717c402ad09c63f2fef82d545c88
   languageName: node
   linkType: hard
 
@@ -24581,18 +24593,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wait-on@npm:9.0.10":
-  version: 9.0.10
-  resolution: "wait-on@npm:9.0.10"
+"wait-on@npm:9.1.0":
+  version: 9.1.0
+  resolution: "wait-on@npm:9.1.0"
   dependencies:
-    axios: ^1.16.0
-    joi: ^18.2.1
+    axios: ^1.18.1
+    joi: ^18.2.3
     lodash: ^4.18.1
     minimist: ^1.2.8
     rxjs: ^7.8.2
   bin:
     wait-on: bin/wait-on
-  checksum: 9c8fed28f8027d6495e0226c34248551f694741880a2be99cc95382364e221337c6c757642028de4e4c1226e5564ba612b9d2148ab2074aaaa8da10a93940cb3
+  checksum: b23565714ce39c09730929c5c6417ea0f187fda77d001dc1b452b7359c8e5e7cfbd548db648883beba3533ae2a56680f3bf1ba983b053e4833b5da3608b34915
   languageName: node
   linkType: hard
 
