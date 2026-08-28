@@ -10204,6 +10204,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chrome-remote-interface@npm:0.33.3":
+  version: 0.33.3
+  resolution: "chrome-remote-interface@npm:0.33.3"
+  dependencies:
+    commander: 2.11.x
+    ws: ^7.2.0
+  bin:
+    chrome-remote-interface: bin/client.js
+  checksum: bdd8620af5ca672b8215c0309bc9b87941521e2d379f834bfb7e53de3e52007d3dfc70b664f67eff4b81461a4e57946bdbaffeaa72348cfda208a8446fbfd0ea
+  languageName: node
+  linkType: hard
+
 "chrome-trace-event@npm:^1.0.2":
   version: 1.0.4
   resolution: "chrome-trace-event@npm:1.0.4"
@@ -10447,6 +10459,13 @@ __metadata:
   version: 2.0.3
   resolution: "comma-separated-tokens@npm:2.0.3"
   checksum: e3bf9e0332a5c45f49b90e79bcdb4a7a85f28d6a6f0876a94f1bb9b2bfbdbbb9292aac50e1e742d8c0db1e62a0229a106f57917e2d067fca951d81737651700d
+  languageName: node
+  linkType: hard
+
+"commander@npm:2.11.x":
+  version: 2.11.0
+  resolution: "commander@npm:2.11.0"
+  checksum: 0d0c622d129a801699b9bbf6fa518108c7e221e51ae12457119aec52f1142ab759b6cd3348ee253604e934639e200c8f0e1cf8342a2ba4b28b3565a7322ead14
   languageName: node
   linkType: hard
 
@@ -11031,9 +11050,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:15.20.1":
-  version: 15.20.1
-  resolution: "cypress@npm:15.20.1"
+"cypress@npm:15.21.0":
+  version: 15.21.0
+  resolution: "cypress@npm:15.21.0"
   dependencies:
     "@cypress/request": ^4.0.0
     "@cypress/xvfb": ^1.2.4
@@ -11046,6 +11065,7 @@ __metadata:
     buffer: ^5.7.1
     cachedir: ^2.4.0
     chalk: ^4.1.0
+    chrome-remote-interface: 0.33.3
     ci-info: ^4.1.0
     cli-table3: 0.6.1
     commander: ^6.2.1
@@ -11075,7 +11095,7 @@ __metadata:
     yauzl: ^3.3.1
   bin:
     cypress: bin/cypress
-  checksum: 8083977b3d85c20667dbdab44c9a8ddc7d3d1a4e3290776c7db550bb64241b2aa33f02a196deb1035156912aa16f64da9b775975bfd52f8ffdfd73a60a825764
+  checksum: 5430b6183d43fc5149671593a9bf85e1dcb736a16bb40027977d73c66c4aaa3717f0fa2d38d7d3b2399d6ef5d0087eb4fbdb1ef1d3a6be337a27f057b3f3a306
   languageName: node
   linkType: hard
 
@@ -18807,7 +18827,7 @@ __metadata:
     babel-plugin-remove-graphql-queries: 5.16.0
     babel-preset-react-app: 10.1.0
     csstype: 3.2.3
-    cypress: 15.20.1
+    cypress: 15.21.0
     cypress-axe: 1.7.0
     disqus-react: 1.1.7
     dotenv: 17.4.2
@@ -25253,6 +25273,21 @@ __metadata:
     imurmurhash: ^0.1.4
     signal-exit: ^4.0.1
   checksum: 8dbb0e2512c2f72ccc20ccedab9986c7d02d04039ed6e8780c987dc4940b793339c50172a1008eed7747001bfacc0ca47562668a069a7506c46c77d7ba3926a9
+  languageName: node
+  linkType: hard
+
+"ws@npm:^7.2.0":
+  version: 7.5.13
+  resolution: "ws@npm:7.5.13"
+  peerDependencies:
+    bufferutil: ^4.0.1
+    utf-8-validate: ^5.0.2
+  peerDependenciesMeta:
+    bufferutil:
+      optional: true
+    utf-8-validate:
+      optional: true
+  checksum: 2c3e3526d99fcc9792992d5e62b152583869b5f0e9d62f5cf12b8cda36bf0b66b33feabf320c16e22d901415f8770138635129cec56afc3d4212f791f7f630a2
   languageName: node
   linkType: hard
 
