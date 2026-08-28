@@ -12425,16 +12425,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-storybook@npm:10.5.8":
-  version: 10.5.8
-  resolution: "eslint-plugin-storybook@npm:10.5.8"
+"eslint-plugin-storybook@npm:10.5.10":
+  version: 10.5.10
+  resolution: "eslint-plugin-storybook@npm:10.5.10"
   dependencies:
     "@typescript-eslint/types": ^8.60.0
     "@typescript-eslint/utils": ^8.60.0
   peerDependencies:
     eslint: ">=8"
-    storybook: ^10.5.8
-  checksum: e4793dfd73e5ba5710d8c72ed2154a17a4f160c85b32a564bcfc291c972d9c790ca060769497243b41ea22a8063a81959b9b341ed805fb9c5cc9421318b0ea36
+  checksum: c99faf33f4764a66e8360c5c68bf3cc49de45b5a32160a14250c23270b132e3237bda582ccda21a1226e55d581598315a90cd1bebac05d430bb77ba24c37d48c
   languageName: node
   linkType: hard
 
@@ -18835,7 +18834,7 @@ __metadata:
     eslint: 10.9.0
     eslint-config-prettier: 10.1.8
     eslint-plugin-react: 7.37.5
-    eslint-plugin-storybook: 10.5.8
+    eslint-plugin-storybook: 10.5.10
     eslint-webpack-plugin: 6.0.0
     fs-extra: 11.4.0
     gatsby: 5.16.1
