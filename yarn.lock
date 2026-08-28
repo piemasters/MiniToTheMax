@@ -3102,13 +3102,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emnapi/core@npm:1.10.0":
-  version: 1.10.0
-  resolution: "@emnapi/core@npm:1.10.0"
+"@emnapi/core@npm:1.11.0":
+  version: 1.11.0
+  resolution: "@emnapi/core@npm:1.11.0"
   dependencies:
-    "@emnapi/wasi-threads": 1.2.1
+    "@emnapi/wasi-threads": 1.2.2
     tslib: ^2.4.0
-  checksum: d8cf0d6e0668db456190dda05bffb299395e58e814bacfbe78e6306aea9df8c48c0c276ad9ca787d5bbd4272e765fcc879e8156c0fc40398d5f43658819b7314
+  checksum: e00f9c2c79c7844ecc647458013c27080646bd7a554687b212ae590c49d26d4f5efbaca24b5772550e06115551eafa4ff202644511a30ae9514812f35e924605
   languageName: node
   linkType: hard
 
@@ -3142,12 +3142,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emnapi/runtime@npm:1.10.0":
-  version: 1.10.0
-  resolution: "@emnapi/runtime@npm:1.10.0"
+"@emnapi/runtime@npm:1.11.0":
+  version: 1.11.0
+  resolution: "@emnapi/runtime@npm:1.11.0"
   dependencies:
     tslib: ^2.4.0
-  checksum: cc403db36a6875495f4f4a776eea8379c028d83d7d37a018b50079db226e7484f269a0447fc1e49235216d4fb2378bf2c61fa7f047d9f9c50e21698ce9b6e531
+  checksum: 83e296a6f795201b4ea7a41e773b626b6c32198180a375a5ec85a4b9835879814961f22b48c81736042407f41f4196c5fdadf3cec446c19fdf66a41e2577f82e
   languageName: node
   linkType: hard
 
@@ -4885,6 +4885,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@napi-rs/wasm-runtime@npm:^1.1.5":
+  version: 1.2.3
+  resolution: "@napi-rs/wasm-runtime@npm:1.2.3"
+  dependencies:
+    "@tybys/wasm-util": ^0.10.3
+  peerDependencies:
+    "@emnapi/core": ^1.7.1 || ^2.0.0-alpha.4
+    "@emnapi/runtime": ^1.7.1 || ^2.0.0-alpha.4
+  checksum: db23cc9870780fa61399613503ea093b51c66e3164075fd473caefd73112d25096f147715861f5dc70ba268424a65593d7992e263fa69df9b53b4934144f93b8
+  languageName: node
+  linkType: hard
+
 "@neoconfetti/react@npm:^1.0.0":
   version: 1.0.0
   resolution: "@neoconfetti/react@npm:1.0.0"
@@ -5108,139 +5120,139 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-android-arm-eabi@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-android-arm-eabi@npm:11.20.0"
+"@oxc-resolver/binding-android-arm-eabi@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-android-arm-eabi@npm:11.21.2"
   conditions: os=android & cpu=arm
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-android-arm64@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-android-arm64@npm:11.20.0"
+"@oxc-resolver/binding-android-arm64@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-android-arm64@npm:11.21.2"
   conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-darwin-arm64@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-darwin-arm64@npm:11.20.0"
+"@oxc-resolver/binding-darwin-arm64@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-darwin-arm64@npm:11.21.2"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-darwin-x64@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-darwin-x64@npm:11.20.0"
+"@oxc-resolver/binding-darwin-x64@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-darwin-x64@npm:11.21.2"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-freebsd-x64@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-freebsd-x64@npm:11.20.0"
+"@oxc-resolver/binding-freebsd-x64@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-freebsd-x64@npm:11.21.2"
   conditions: os=freebsd & cpu=x64
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-linux-arm-gnueabihf@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-linux-arm-gnueabihf@npm:11.20.0"
+"@oxc-resolver/binding-linux-arm-gnueabihf@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-linux-arm-gnueabihf@npm:11.21.2"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-linux-arm-musleabihf@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-linux-arm-musleabihf@npm:11.20.0"
+"@oxc-resolver/binding-linux-arm-musleabihf@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-linux-arm-musleabihf@npm:11.21.2"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-linux-arm64-gnu@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-linux-arm64-gnu@npm:11.20.0"
+"@oxc-resolver/binding-linux-arm64-gnu@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-linux-arm64-gnu@npm:11.21.2"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-linux-arm64-musl@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-linux-arm64-musl@npm:11.20.0"
+"@oxc-resolver/binding-linux-arm64-musl@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-linux-arm64-musl@npm:11.21.2"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-linux-ppc64-gnu@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-linux-ppc64-gnu@npm:11.20.0"
+"@oxc-resolver/binding-linux-ppc64-gnu@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-linux-ppc64-gnu@npm:11.21.2"
   conditions: os=linux & cpu=ppc64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-linux-riscv64-gnu@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-linux-riscv64-gnu@npm:11.20.0"
+"@oxc-resolver/binding-linux-riscv64-gnu@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-linux-riscv64-gnu@npm:11.21.2"
   conditions: os=linux & cpu=riscv64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-linux-riscv64-musl@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-linux-riscv64-musl@npm:11.20.0"
+"@oxc-resolver/binding-linux-riscv64-musl@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-linux-riscv64-musl@npm:11.21.2"
   conditions: os=linux & cpu=riscv64 & libc=musl
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-linux-s390x-gnu@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-linux-s390x-gnu@npm:11.20.0"
+"@oxc-resolver/binding-linux-s390x-gnu@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-linux-s390x-gnu@npm:11.21.2"
   conditions: os=linux & cpu=s390x & libc=glibc
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-linux-x64-gnu@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-linux-x64-gnu@npm:11.20.0"
+"@oxc-resolver/binding-linux-x64-gnu@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-linux-x64-gnu@npm:11.21.2"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-linux-x64-musl@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-linux-x64-musl@npm:11.20.0"
+"@oxc-resolver/binding-linux-x64-musl@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-linux-x64-musl@npm:11.21.2"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-openharmony-arm64@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-openharmony-arm64@npm:11.20.0"
+"@oxc-resolver/binding-openharmony-arm64@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-openharmony-arm64@npm:11.21.2"
   conditions: os=openharmony & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-wasm32-wasi@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-wasm32-wasi@npm:11.20.0"
+"@oxc-resolver/binding-wasm32-wasi@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-wasm32-wasi@npm:11.21.2"
   dependencies:
-    "@emnapi/core": 1.10.0
-    "@emnapi/runtime": 1.10.0
-    "@napi-rs/wasm-runtime": ^1.1.4
+    "@emnapi/core": 1.11.0
+    "@emnapi/runtime": 1.11.0
+    "@napi-rs/wasm-runtime": ^1.1.5
   conditions: cpu=wasm32
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-win32-arm64-msvc@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-win32-arm64-msvc@npm:11.20.0"
+"@oxc-resolver/binding-win32-arm64-msvc@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-win32-arm64-msvc@npm:11.21.2"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxc-resolver/binding-win32-x64-msvc@npm:11.20.0":
-  version: 11.20.0
-  resolution: "@oxc-resolver/binding-win32-x64-msvc@npm:11.20.0"
+"@oxc-resolver/binding-win32-x64-msvc@npm:11.21.2":
+  version: 11.21.2
+  resolution: "@oxc-resolver/binding-win32-x64-msvc@npm:11.21.2"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -6072,36 +6084,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:10.5.8":
-  version: 10.5.8
-  resolution: "@storybook/addon-a11y@npm:10.5.8"
+"@storybook/addon-a11y@npm:10.5.10":
+  version: 10.5.10
+  resolution: "@storybook/addon-a11y@npm:10.5.10"
   dependencies:
     "@storybook/global": ^5.0.0
     axe-core: ^4.2.0
   peerDependencies:
-    storybook: ^10.5.8
-  checksum: c28a7bd004d9e24c965ed5b6249e046cd9e5e089242aead8b40a7950cabb6c0059cae77e859d8acbf98dff5c917237bb7f9e616b792f5cb27cad2dcb0eb62b50
+    storybook: ^10.5.10
+  checksum: d917d53959e23fe5a3c74984cd57e953ffdecea11581ecbc3876cf18dcac1bf27728cb38947e09915344158149a5c14fd577ddebbdf75c1bdae90c3051759e81
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:10.5.8":
-  version: 10.5.8
-  resolution: "@storybook/addon-docs@npm:10.5.8"
+"@storybook/addon-docs@npm:10.5.10":
+  version: 10.5.10
+  resolution: "@storybook/addon-docs@npm:10.5.10"
   dependencies:
     "@mdx-js/react": ^3.0.0
-    "@storybook/csf-plugin": 10.5.8
+    "@storybook/csf-plugin": 10.5.10
     "@storybook/icons": ^2.0.2
-    "@storybook/react-dom-shim": 10.5.8
+    "@storybook/react-dom-shim": 10.5.10
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     ts-dedent: ^2.0.0
   peerDependencies:
     "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    storybook: ^10.5.8
+    storybook: ^10.5.10
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: c5116876654fe6c22a7a4e0007bf6a2085ac437e548d710d9c3282d66829fb58d48fd45cd397b66e29f5b625d66fe5932dfcbc01a124f1a87f78c6325b1e38c2
+  checksum: 56d2d0223976158f65c5c3754270a2a409308a1ac46edcd9eeec3ad8dc825fc50362f9975761d61aaa05d3815b88cbd00b82d45315a01f7ff3bf074a7afa694e
   languageName: node
   linkType: hard
 
@@ -6117,46 +6129,46 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:10.5.8":
-  version: 10.5.8
-  resolution: "@storybook/addon-links@npm:10.5.8"
+"@storybook/addon-links@npm:10.5.10":
+  version: 10.5.10
+  resolution: "@storybook/addon-links@npm:10.5.10"
   dependencies:
     "@storybook/global": ^5.0.0
   peerDependencies:
     "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    storybook: ^10.5.8
+    storybook: ^10.5.10
   peerDependenciesMeta:
     "@types/react":
       optional: true
     react:
       optional: true
-  checksum: adb6f937ba33108ff1eef3aa4ab81cf98ed851d59a1e3d8e1175d75941247cfa257f7864e26d60361fbf0871f32dc7ddbc52a367a804f21615e95106a77c8209
+  checksum: 62769ae3078bf4b9ff7c3e250daf16ce836efef19845c1e2a6777232d02cb78ce8eacffb1d13a9fc2f709fe94075d47e3cb6441967783b544543e4ce1048ab27
   languageName: node
   linkType: hard
 
-"@storybook/builder-vite@npm:10.5.8":
-  version: 10.5.8
-  resolution: "@storybook/builder-vite@npm:10.5.8"
+"@storybook/builder-vite@npm:10.5.10":
+  version: 10.5.10
+  resolution: "@storybook/builder-vite@npm:10.5.10"
   dependencies:
-    "@storybook/csf-plugin": 10.5.8
+    "@storybook/csf-plugin": 10.5.10
     ts-dedent: ^2.0.0
   peerDependencies:
-    storybook: ^10.5.8
+    storybook: ^10.5.10
     vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
-  checksum: 6ede43556a45a18510562d31676cc9c44b367c95aff06c2f6bf2644d9fe51035756f137a8252832222013d980bce5a3cdc1588475957469cf2b35467d5c1395d
+  checksum: 71c74856d2824a2d04ced214afd219105cff60dc653a4b437d8243d792c9753b7716fdd8e0cb66a10f705f41404ba1510da27b2b5a454c23ad6b18cb929e8fa4
   languageName: node
   linkType: hard
 
-"@storybook/csf-plugin@npm:10.5.8":
-  version: 10.5.8
-  resolution: "@storybook/csf-plugin@npm:10.5.8"
+"@storybook/csf-plugin@npm:10.5.10":
+  version: 10.5.10
+  resolution: "@storybook/csf-plugin@npm:10.5.10"
   dependencies:
     unplugin: ^2.3.5
   peerDependencies:
     esbuild: "*"
     rollup: "*"
-    storybook: ^10.5.8
+    storybook: ^10.5.10
     vite: "*"
     webpack: "*"
   peerDependenciesMeta:
@@ -6168,7 +6180,7 @@ __metadata:
       optional: true
     webpack:
       optional: true
-  checksum: 5fb64fe7380604040bb97c50f35ce1df267ffd8bab538c98191cbaccd1496613ebd02ea9bca21dcfeb251a77ccb310c12e3d64279eb25b876c039e9f4b57ebcd
+  checksum: b69bb38a0be33efa091cbfc3bfa9bcf6024fc273ce6ec66e7c86428761d4943404ab1ae8889d461f4dd8b508f2f11e013b1ae553bc42451a3759a530e9bf8e5d
   languageName: node
   linkType: hard
 
@@ -6189,32 +6201,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react-dom-shim@npm:10.5.8":
-  version: 10.5.8
-  resolution: "@storybook/react-dom-shim@npm:10.5.8"
+"@storybook/react-dom-shim@npm:10.5.10":
+  version: 10.5.10
+  resolution: "@storybook/react-dom-shim@npm:10.5.10"
   peerDependencies:
     "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     "@types/react-dom": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    storybook: ^10.5.8
+    storybook: ^10.5.10
   peerDependenciesMeta:
     "@types/react":
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 294044f51a35a7511f3febdbb716cebec8b0c799ddc35a17ca9f21c99d135bdd36b9e3341a414ff8b14a256309cc0cea96f5b42844a626dbed68b0323e466130
+  checksum: efc25d2ef04ae1fc0099e273f0dde244e9de3d13e4258f5e932cd1d597a7bea4cef8edb95e8ae4dc0b8e693fead59168033dfb5dae627bb509f1199ef86b4c4a
   languageName: node
   linkType: hard
 
-"@storybook/react-vite@npm:10.5.8":
-  version: 10.5.8
-  resolution: "@storybook/react-vite@npm:10.5.8"
+"@storybook/react-vite@npm:10.5.10":
+  version: 10.5.10
+  resolution: "@storybook/react-vite@npm:10.5.10"
   dependencies:
     "@joshwooding/vite-plugin-react-docgen-typescript": ^0.7.0
     "@rollup/pluginutils": ^5.0.2
-    "@storybook/builder-vite": 10.5.8
-    "@storybook/react": 10.5.8
+    "@storybook/builder-vite": 10.5.10
+    "@storybook/react": 10.5.10
     empathic: ^2.0.0
     magic-string: ^0.30.0
     react-docgen: ^8.0.2
@@ -6223,22 +6235,22 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    storybook: ^10.5.8
+    storybook: ^10.5.10
     typescript: ">= 4.9.x"
     vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 4f76ed63f068597783b1d5e8dfdc039f1f4d98f98ea13b4095269fd76f644c7f34bb6c84a1a9d41c0b56e6481a0837c8f84aa1c66ce37d824ea29f120915114c
+  checksum: f12775f7df2c6e748c0648ba2b48b5c5f92472420ac0f5c50b71572e5d1a13832216a0efcdbed76a8458759d4410d456a4434de3d254926e665c2f4478bae20c
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:10.5.8":
-  version: 10.5.8
-  resolution: "@storybook/react@npm:10.5.8"
+"@storybook/react@npm:10.5.10":
+  version: 10.5.10
+  resolution: "@storybook/react@npm:10.5.10"
   dependencies:
     "@storybook/global": ^5.0.0
-    "@storybook/react-dom-shim": 10.5.8
+    "@storybook/react-dom-shim": 10.5.10
     react-docgen: ^8.0.2
     react-docgen-typescript: ^2.2.2
   peerDependencies:
@@ -6246,7 +6258,7 @@ __metadata:
     "@types/react-dom": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    storybook: ^10.5.8
+    storybook: ^10.5.10
     typescript: ">= 4.9.x"
   peerDependenciesMeta:
     "@types/react":
@@ -6255,7 +6267,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: ab7619c28f8a75f22467b039fdf17ac6aa5ea69d45e19f05a6b4c126eab79a89203e5afeed2bee7342b39d2220e51b2d58ee7e338c679acc64dad8f24489c90d
+  checksum: c0c555c78928ac1bfa4a7203d92c0f0685ff7f7aa8056f361ea6b7ec8b8e2bcf6a75b57d41de3d3dcad72ee4d6f7dc5c292b9f45e5232bc09bb8b67bb663c5ef
   languageName: node
   linkType: hard
 
@@ -6895,7 +6907,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tybys/wasm-util@npm:^0.10.2":
+"@tybys/wasm-util@npm:^0.10.2, @tybys/wasm-util@npm:^0.10.3":
   version: 0.10.3
   resolution: "@tybys/wasm-util@npm:0.10.3"
   dependencies:
@@ -12425,16 +12437,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-storybook@npm:10.5.8":
-  version: 10.5.8
-  resolution: "eslint-plugin-storybook@npm:10.5.8"
+"eslint-plugin-storybook@npm:10.5.10":
+  version: 10.5.10
+  resolution: "eslint-plugin-storybook@npm:10.5.10"
   dependencies:
     "@typescript-eslint/types": ^8.60.0
     "@typescript-eslint/utils": ^8.60.0
   peerDependencies:
     eslint: ">=8"
-    storybook: ^10.5.8
-  checksum: e4793dfd73e5ba5710d8c72ed2154a17a4f160c85b32a564bcfc291c972d9c790ca060769497243b41ea22a8063a81959b9b341ed805fb9c5cc9421318b0ea36
+  checksum: c99faf33f4764a66e8360c5c68bf3cc49de45b5a32160a14250c23270b132e3237bda582ccda21a1226e55d581598315a90cd1bebac05d430bb77ba24c37d48c
   languageName: node
   linkType: hard
 
@@ -18802,11 +18813,11 @@ __metadata:
     "@chromatic-com/storybook": 5.3.0
     "@eslint/js": ^10.0.1
     "@mdx-js/react": 3.1.1
-    "@storybook/addon-a11y": 10.5.8
-    "@storybook/addon-docs": 10.5.8
+    "@storybook/addon-a11y": 10.5.10
+    "@storybook/addon-docs": 10.5.10
     "@storybook/addon-jest": 9.1.12
-    "@storybook/addon-links": 10.5.8
-    "@storybook/react-vite": 10.5.8
+    "@storybook/addon-links": 10.5.10
+    "@storybook/react-vite": 10.5.10
     "@svgr/webpack": 8.1.0
     "@swc/core": 1.16.1
     "@swc/jest": 0.2.39
@@ -18835,7 +18846,7 @@ __metadata:
     eslint: 10.9.0
     eslint-config-prettier: 10.1.8
     eslint-plugin-react: 7.37.5
-    eslint-plugin-storybook: 10.5.8
+    eslint-plugin-storybook: 10.5.10
     eslint-webpack-plugin: 6.0.0
     fs-extra: 11.4.0
     gatsby: 5.16.1
@@ -18872,7 +18883,7 @@ __metadata:
     react-test-renderer: 19.2.8
     sharp: 0.35.3
     start-server-and-test: 3.0.12
-    storybook: 10.5.8
+    storybook: 10.5.10
     tailwindcss: 4.3.3
     ts-loader: 9.6.2
     typescript: 7.0.2
@@ -19640,29 +19651,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"oxc-resolver@npm:^11.19.1":
-  version: 11.20.0
-  resolution: "oxc-resolver@npm:11.20.0"
+"oxc-resolver@npm:11.21.2":
+  version: 11.21.2
+  resolution: "oxc-resolver@npm:11.21.2"
   dependencies:
-    "@oxc-resolver/binding-android-arm-eabi": 11.20.0
-    "@oxc-resolver/binding-android-arm64": 11.20.0
-    "@oxc-resolver/binding-darwin-arm64": 11.20.0
-    "@oxc-resolver/binding-darwin-x64": 11.20.0
-    "@oxc-resolver/binding-freebsd-x64": 11.20.0
-    "@oxc-resolver/binding-linux-arm-gnueabihf": 11.20.0
-    "@oxc-resolver/binding-linux-arm-musleabihf": 11.20.0
-    "@oxc-resolver/binding-linux-arm64-gnu": 11.20.0
-    "@oxc-resolver/binding-linux-arm64-musl": 11.20.0
-    "@oxc-resolver/binding-linux-ppc64-gnu": 11.20.0
-    "@oxc-resolver/binding-linux-riscv64-gnu": 11.20.0
-    "@oxc-resolver/binding-linux-riscv64-musl": 11.20.0
-    "@oxc-resolver/binding-linux-s390x-gnu": 11.20.0
-    "@oxc-resolver/binding-linux-x64-gnu": 11.20.0
-    "@oxc-resolver/binding-linux-x64-musl": 11.20.0
-    "@oxc-resolver/binding-openharmony-arm64": 11.20.0
-    "@oxc-resolver/binding-wasm32-wasi": 11.20.0
-    "@oxc-resolver/binding-win32-arm64-msvc": 11.20.0
-    "@oxc-resolver/binding-win32-x64-msvc": 11.20.0
+    "@oxc-resolver/binding-android-arm-eabi": 11.21.2
+    "@oxc-resolver/binding-android-arm64": 11.21.2
+    "@oxc-resolver/binding-darwin-arm64": 11.21.2
+    "@oxc-resolver/binding-darwin-x64": 11.21.2
+    "@oxc-resolver/binding-freebsd-x64": 11.21.2
+    "@oxc-resolver/binding-linux-arm-gnueabihf": 11.21.2
+    "@oxc-resolver/binding-linux-arm-musleabihf": 11.21.2
+    "@oxc-resolver/binding-linux-arm64-gnu": 11.21.2
+    "@oxc-resolver/binding-linux-arm64-musl": 11.21.2
+    "@oxc-resolver/binding-linux-ppc64-gnu": 11.21.2
+    "@oxc-resolver/binding-linux-riscv64-gnu": 11.21.2
+    "@oxc-resolver/binding-linux-riscv64-musl": 11.21.2
+    "@oxc-resolver/binding-linux-s390x-gnu": 11.21.2
+    "@oxc-resolver/binding-linux-x64-gnu": 11.21.2
+    "@oxc-resolver/binding-linux-x64-musl": 11.21.2
+    "@oxc-resolver/binding-openharmony-arm64": 11.21.2
+    "@oxc-resolver/binding-wasm32-wasi": 11.21.2
+    "@oxc-resolver/binding-win32-arm64-msvc": 11.21.2
+    "@oxc-resolver/binding-win32-x64-msvc": 11.21.2
   dependenciesMeta:
     "@oxc-resolver/binding-android-arm-eabi":
       optional: true
@@ -19702,7 +19713,7 @@ __metadata:
       optional: true
     "@oxc-resolver/binding-win32-x64-msvc":
       optional: true
-  checksum: 0f10e83c50df964ed113b4c56779a28c9ff177353e06f9cb162ebabf5ec7af74d176d75e8e1edeffceacbde23f214c21ad159c9c66064c323befccfb172693cd
+  checksum: f4579adefe2616b35956bf7f8fa27577bd079c332da70466dfde2aa1596d86395a763eb779e4ab9a75918b6c41a34651cb31b345fc6170970aa8d5ce73878868
   languageName: node
   linkType: hard
 
@@ -22692,9 +22703,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:10.5.8":
-  version: 10.5.8
-  resolution: "storybook@npm:10.5.8"
+"storybook@npm:10.5.10":
+  version: 10.5.10
+  resolution: "storybook@npm:10.5.10"
   dependencies:
     "@storybook/global": ^5.0.0
     "@storybook/icons": ^2.0.2
@@ -22708,7 +22719,7 @@ __metadata:
     jsonc-parser: ^3.3.1
     open: ^10.2.0
     oxc-parser: ^0.127.0
-    oxc-resolver: ^11.19.1
+    oxc-resolver: 11.21.2
     recast: ^0.23.5
     semver: ^7.7.3
     use-sync-external-store: ^1.5.0
@@ -22726,7 +22737,7 @@ __metadata:
       optional: true
   bin:
     storybook: ./dist/bin/dispatcher.js
-  checksum: b7c57d41243273a43b0cbfb8b63c645a1277b1189c4939143321f0a68d163fc30c6e85f6bf2de1bf567cc19e903a874bebda64ee82d3903c5f9217b0d2de5b2b
+  checksum: 50624710a44dde01f9cb1738bde8f60886e35746c64ae3d406c59035ea604a75ba902b9c74aa725e914585f41cb82676682fa43412a782932571899469cd135d
   languageName: node
   linkType: hard
 
