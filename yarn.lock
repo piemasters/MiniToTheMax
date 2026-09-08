@@ -11062,9 +11062,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:15.21.0":
-  version: 15.21.0
-  resolution: "cypress@npm:15.21.0"
+"cypress@npm:16.0.0":
+  version: 16.0.0
+  resolution: "cypress@npm:16.0.0"
   dependencies:
     "@cypress/request": ^4.0.0
     "@cypress/xvfb": ^1.2.4
@@ -11082,7 +11082,7 @@ __metadata:
     cli-table3: 0.6.1
     commander: ^6.2.1
     common-tags: ^1.8.0
-    dayjs: ^1.10.4
+    dayjs: ^1.11.23
     debug: ^4.3.4
     eventemitter2: 6.4.7
     execa: 4.1.0
@@ -11107,7 +11107,7 @@ __metadata:
     yauzl: ^3.3.1
   bin:
     cypress: bin/cypress
-  checksum: 5430b6183d43fc5149671593a9bf85e1dcb736a16bb40027977d73c66c4aaa3717f0fa2d38d7d3b2399d6ef5d0087eb4fbdb1ef1d3a6be337a27f057b3f3a306
+  checksum: 68c2abd7e7f5a4cd8e60ac5309da2e7adc76df0f952be75d1f5870078cac82c03926561dc9e7fcb9e8510d61ceb1a79da089bdf5ae41880b46da0c9d6ec2a2e9
   languageName: node
   linkType: hard
 
@@ -11189,10 +11189,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.10.4":
-  version: 1.11.19
-  resolution: "dayjs@npm:1.11.19"
-  checksum: dfafcca2c67cc6e542fd880d77f1d91667efd323edc28f0487b470b184a11cc97696163ed5be1142ea2a031045b27a0d0555e72f60a63275e0e0401ac24bea5d
+"dayjs@npm:^1.11.23":
+  version: 1.11.23
+  resolution: "dayjs@npm:1.11.23"
+  checksum: 2149ddb54548066e892a35099c7d90cba3eb467fe717b5df16f04ff4225e64bd653e14e7b420dd02bcf10566c1879508705798ca604f91c2424cc10de9135e84
   languageName: node
   linkType: hard
 
@@ -18838,7 +18838,7 @@ __metadata:
     babel-plugin-remove-graphql-queries: 5.16.0
     babel-preset-react-app: 10.1.0
     csstype: 3.2.3
-    cypress: 15.21.0
+    cypress: 16.0.0
     cypress-axe: 1.7.0
     disqus-react: 1.1.7
     dotenv: 17.4.2
