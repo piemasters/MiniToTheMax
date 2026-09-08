@@ -7312,12 +7312,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:19.2.5":
-  version: 19.2.5
-  resolution: "@types/react-dom@npm:19.2.5"
+"@types/react-dom@npm:19.2.7":
+  version: 19.2.7
+  resolution: "@types/react-dom@npm:19.2.7"
   peerDependencies:
     "@types/react": ^19.2.0
-  checksum: edb1a1c002b205f726932d485b55f56964b0b918986b71bad5c2a2018663152bcffcd33b59b447a3d22d668b3cb570de0189c48ee16ff0386d4bf324a3ba3d04
+  checksum: 3968ecdb510ca1892b14453f72dd045f6bc06d454dd60c79078fc3f0b43560b630d92c130ca94274f379c757de8f0b938720f614a9d58eeee785f912f05aa515
   languageName: node
   linkType: hard
 
@@ -18831,7 +18831,7 @@ __metadata:
     "@types/node": 26.3.0
     "@types/node-sass": 4.11.8
     "@types/react": 19.2.18
-    "@types/react-dom": 19.2.5
+    "@types/react-dom": 19.2.7
     "@types/react-test-renderer": 19.1.0
     axe-core: 4.13.0
     babel-loader: 10.1.1
