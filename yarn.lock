@@ -2998,17 +2998,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chromatic-com/storybook@npm:5.3.0":
-  version: 5.3.0
-  resolution: "@chromatic-com/storybook@npm:5.3.0"
+"@chromatic-com/storybook@npm:5.3.1":
+  version: 5.3.1
+  resolution: "@chromatic-com/storybook@npm:5.3.1"
   dependencies:
     "@neoconfetti/react": ^1.0.0
     chromatic: ^18.0.1
     jsonfile: ^6.1.0
     strip-ansi: ^7.1.0
   peerDependencies:
-    storybook: ^0.0.0-0 || ^10.1.0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0 || ^10.5.0-0 || ^10.6.0-0
-  checksum: b9e46eea94478fc3bc1fcf55aa78861d5f662c73d2f7583927429091fead5b5dfe201d20deb3c02cfbcca943393ceab6f8d0803a0b5dfc89eaf7942423438db9
+    storybook: ^0.0.0-0 || ^10.1.0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0 || ^10.5.0-0 || ^10.6.0-0 || ^11.0.0-0
+  checksum: abf3eb330c19899759717638ae46c8332f4bd254e58327e839b297f6a505781d6952cf43f60cd8e424fbb342217c12e45f551ea936ee13b82576fe36e28b2fe3
   languageName: node
   linkType: hard
 
@@ -18810,7 +18810,7 @@ __metadata:
     "@babel/preset-env": 8.0.2
     "@babel/preset-react": 8.0.1
     "@babel/preset-typescript": 8.0.1
-    "@chromatic-com/storybook": 5.3.0
+    "@chromatic-com/storybook": 5.3.1
     "@eslint/js": ^10.0.1
     "@mdx-js/react": 3.1.1
     "@storybook/addon-a11y": 10.5.10
