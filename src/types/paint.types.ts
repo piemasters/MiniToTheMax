@@ -11,6 +11,7 @@ export const CitadelPaintCategories = [
   'Citadel Shade',
   'Citadel Spray',
   'Citadel Technical',
+  'Citadel Tone Pro',
 ] as const;
 export type CitadelPaintCategory = (typeof CitadelPaintCategories)[number];
 

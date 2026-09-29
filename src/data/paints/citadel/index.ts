@@ -6,3 +6,4 @@ export { layerPaints } from './layer';
 export { shadePaints } from './shade';
 export { sprayPaints } from './spray';
 export { technicalPaints } from './technical';
+export { toneProPaints } from './tone-pro';

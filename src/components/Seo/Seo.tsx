@@ -19,7 +19,7 @@ export const Seo: FC<{
       {title && <meta property="og:title" content={title} />}
       {description && <meta property="og:description" content={description} />}
       {image && <meta property="og:image" content={image} />}
-      <html lang="en" />
+
       <title>{title || 'A miniature painting hobby blog'}</title>
     </>
   );

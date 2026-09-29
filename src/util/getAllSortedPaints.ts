@@ -8,6 +8,7 @@ import {
   shadePaints,
   sprayPaints,
   technicalPaints,
+  toneProPaints,
 } from '../data/paints/citadel';
 import {
   gameColorPaints,
@@ -29,6 +30,7 @@ export const getAllSortedPaints = (): PaintDetails[] => {
     ...shadePaints,
     ...sprayPaints,
     ...technicalPaints,
+    ...toneProPaints,
     // vallejo
     ...gameColorPaints,
     ...modelColorPaints,
