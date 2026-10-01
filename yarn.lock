@@ -7696,12 +7696,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:19.2.5":
-  version: 19.2.5
-  resolution: "@types/react-dom@npm:19.2.5"
+"@types/react-dom@npm:19.3.0":
+  version: 19.3.0
+  resolution: "@types/react-dom@npm:19.3.0"
   peerDependencies:
-    "@types/react": ^19.2.0
-  checksum: edb1a1c002b205f726932d485b55f56964b0b918986b71bad5c2a2018663152bcffcd33b59b447a3d22d668b3cb570de0189c48ee16ff0386d4bf324a3ba3d04
+    "@types/react": ^19.3.0
+  checksum: 9e043873433f897f3287582e43c424c93c3ac44d975007b2d2d4ef9985b4d269461abfb1502646882e724fc0725635741e1097888ceccff571bf6815841763fc
   languageName: node
   linkType: hard
 
@@ -19237,7 +19237,7 @@ __metadata:
     "@types/node": 26.6.3
     "@types/node-sass": 4.11.8
     "@types/react": 19.3.0
-    "@types/react-dom": 19.2.5
+    "@types/react-dom": 19.3.0
     "@types/react-test-renderer": 19.3.0
     axe-core: 4.13.0
     babel-loader: 10.1.1
@@ -19284,7 +19284,7 @@ __metadata:
     prettier: 3.9.9
     react: 19.3.0
     react-docgen-typescript-loader: 3.7.2
-    react-dom: 19.2.8
+    react-dom: 19.3.0
     react-photoswipe-gallery: 4.1.2
     react-test-renderer: 19.3.0
     sharp: 0.35.5
@@ -21479,14 +21479,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:19.2.8":
-  version: 19.2.8
-  resolution: "react-dom@npm:19.2.8"
+"react-dom@npm:19.3.0":
+  version: 19.3.0
+  resolution: "react-dom@npm:19.3.0"
   dependencies:
-    scheduler: ^0.27.0
+    scheduler: ^0.28.0
   peerDependencies:
-    react: ^19.2.8
-  checksum: cef5d9493f911f20da5648bbd44a27e7e2e96868be4ed0a6a650499b19d74156d35e8c2eee9c075a2cbce59ef3da483cb55113f2941c1bc17fd005ffa92d7084
+    react: ^19.3.0
+  checksum: 0545bc771be35bd6bf060e30151df21da5863db9f8f16c63a7cd466fb914c86f4ae050d4724f2a878805bb10ea30d79d02eb6501446fe5b33b32c1e95f6edd23
   languageName: node
   linkType: hard
 
