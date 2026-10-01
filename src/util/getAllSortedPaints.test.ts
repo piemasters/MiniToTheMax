@@ -29,6 +29,7 @@ jest.mock('../data/paints/citadel', () => ({
   shadePaints: [],
   sprayPaints: [],
   technicalPaints: [],
+  toneProPaints: [],
 }));
 jest.mock('../data/paints/vallejo', () => ({
   gameColorPaints: [
