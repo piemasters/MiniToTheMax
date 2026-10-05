@@ -19294,7 +19294,7 @@ __metadata:
     ts-loader: 9.6.2
     typescript: 7.0.2
     typescript-eslint: ^8.71.0
-    vite: 8.3.1
+    vite: 8.3.2
   languageName: unknown
   linkType: soft
 
@@ -22100,7 +22100,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rolldown@npm:~1.2.9":
+"rolldown@npm:~1.2.11":
   version: 1.2.12
   resolution: "rolldown@npm:1.2.12"
   dependencies:
@@ -25066,15 +25066,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:8.3.1":
-  version: 8.3.1
-  resolution: "vite@npm:8.3.1"
+"vite@npm:8.3.2":
+  version: 8.3.2
+  resolution: "vite@npm:8.3.2"
   dependencies:
     fsevents: ~2.3.3
     lightningcss: ^1.33.0
     picomatch: ^4.0.7
     postcss: ^8.5.28
-    rolldown: ~1.2.9
+    rolldown: ~1.2.11
     tinyglobby: ^0.2.17
   peerDependencies:
     "@types/node": ^20.19.0 || >=22.12.0
@@ -25119,7 +25119,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 320091c7cb7b204d924c8fa2e0570c3a183ed12115aa9f20433c4fbdd0b2a7c2306948bd4fd64f111809551f14c0c661f0d91bec73f2467b103fb15acfe0ca80
+  checksum: bbfff9862b9cb2f151a7b93366d47d645c03fdaf58039b7dc98aed2073579d6de7086a8f59b4384bef3002d2797e150272f1b7da35880a5874cf25ed8cfa63fa
   languageName: node
   linkType: hard
 
