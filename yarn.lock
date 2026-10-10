@@ -9374,10 +9374,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axe-core@npm:4.13.0":
-  version: 4.13.0
-  resolution: "axe-core@npm:4.13.0"
-  checksum: 7788457bf83dfe91feebfb9229705e56fee2e188df95a67b936afd4c6da7aba5be049c50f87ee789a034983c7c5d922bcbd270a8c341afbd3ddb3823935c1659
+"axe-core@npm:4.14.0":
+  version: 4.14.0
+  resolution: "axe-core@npm:4.14.0"
+  checksum: dd169d7970c4d97aa64fa8618afef278d30a6d4dbd33d50790e36ffbf1b1d2f7b3eb0f9704871da3807c438786a260d1b98367204d746c4b92c3232c3a561ef9
   languageName: node
   linkType: hard
 
@@ -19239,7 +19239,7 @@ __metadata:
     "@types/react": 19.2.18
     "@types/react-dom": 19.2.5
     "@types/react-test-renderer": 19.3.0
-    axe-core: 4.13.0
+    axe-core: 4.14.0
     babel-loader: 10.1.1
     babel-plugin-remove-graphql-queries: 5.16.0
     babel-preset-react-app: 10.1.0
