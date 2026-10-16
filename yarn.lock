@@ -19290,7 +19290,7 @@ __metadata:
     react-test-renderer: 19.3.0
     sharp: 0.35.5
     start-server-and-test: 3.0.12
-    storybook: 10.6.1
+    storybook: 10.6.2
     tailwindcss: 4.3.3
     ts-loader: 9.6.2
     typescript: 7.0.2
@@ -22932,14 +22932,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-js@npm:^1.0.1, source-map-js@npm:^1.2.1":
-  version: 1.2.2
-  resolution: "source-map-js@npm:1.2.2"
-  checksum: d4f3adc1921e145fe84574b5852d7f5bf11e93d6c008a250ffe66a3e698331f066008cc3ba63e720dde07fe74871f1610d2e74532d33b27126e82e57c00df3bf
-  languageName: node
-  linkType: hard
-
-"source-map-js@npm:^1.2.2":
+"source-map-js@npm:^1.0.1, source-map-js@npm:^1.2.1, source-map-js@npm:^1.2.2":
   version: 1.2.2
   resolution: "source-map-js@npm:1.2.2"
   checksum: d4f3adc1921e145fe84574b5852d7f5bf11e93d6c008a250ffe66a3e698331f066008cc3ba63e720dde07fe74871f1610d2e74532d33b27126e82e57c00df3bf
@@ -23137,9 +23130,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:10.6.1":
-  version: 10.6.1
-  resolution: "storybook@npm:10.6.1"
+"storybook@npm:10.6.2":
+  version: 10.6.2
+  resolution: "storybook@npm:10.6.2"
   dependencies:
     "@storybook/global": ^5.0.0
     "@storybook/icons": ^2.0.2
@@ -23171,7 +23164,7 @@ __metadata:
       optional: true
   bin:
     storybook: ./dist/bin/dispatcher.js
-  checksum: dbda19b36bc8256584a34fb0b6ff530e62e0277b8dd7051c4a5204dd4885ee0f12ecca2e677d2fc51e47ed5c2c4afabd37dd8c1b64ba5c3958c79b47d5c8f66d
+  checksum: 18b5ebc3b9177fd85257aeef51ce88f7fef1241860f73da67c719330a8ebfe3ff38c568ea8ccbb81b0fd681771beb54141af723cabdd24089523bbe899d4be98
   languageName: node
   linkType: hard
 
