@@ -9,7 +9,10 @@ export const assassinsCreedBrotherhood = [
   { name: 'Claudio' },
   { name: 'Courtesans' },
   { name: 'Crossbowmen' },
-  { name: "Crow's Nest" },
+  {
+    name: "Crow's Nest",
+    link: '/showcase/assassins-creed/brotherhood-of-venice/crows-nest',
+  },
   { name: 'Daria' },
   { name: 'Dottori' },
   { name: 'Ezio Auditore' },

@@ -26,3 +26,15 @@ export const jordanSorcery = [
     link: '/showcase/other/familiar-frenzy/',
   },
 ];
+
+export const theCatsOfMontStMichel = [
+  {
+    name: 'Complete  Set',
+  },
+  {
+    name: 'Heroes',
+  },
+  {
+    name: 'Vermin',
+  },
+];

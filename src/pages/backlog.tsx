@@ -310,6 +310,9 @@ export const BacklogPage: FC = () => {
         <Accordion.Item value={3} trigger="Jordan Sorcery Miniatures">
           {generateEntries(backlog.jordanSorcery)}
         </Accordion.Item>
+        <Accordion.Item value={4} trigger="The Cats of Mont St. Michel">
+          {generateEntries(backlog.theCatsOfMontStMichel)}
+        </Accordion.Item>
       </Accordion>
     </Layout>
   );
