@@ -329,6 +329,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-compilation-targets@npm:^8.0.7":
+  version: 8.0.7
+  resolution: "@babel/helper-compilation-targets@npm:8.0.7"
+  dependencies:
+    "@babel/compat-data": ^8.0.5
+    "@babel/helper-validator-option": ^8.0.0
+    browserslist: ^4.24.0
+    flru: 1.0.2
+    verkit: ^0.5.0
+  checksum: 7624e48e925e900d0c4b55e6ea1e081dace6750f06089d646c5942c9c1d84109cd5ec77c7c031724e870947e09b0397ad47936608b52048ac478c8bd3fed8b78
+  languageName: node
+  linkType: hard
+
 "@babel/helper-create-class-features-plugin@npm:^7.18.6, @babel/helper-create-class-features-plugin@npm:^7.21.0, @babel/helper-create-class-features-plugin@npm:^7.27.1, @babel/helper-create-class-features-plugin@npm:^7.28.3, @babel/helper-create-class-features-plugin@npm:^7.28.5":
   version: 7.28.5
   resolution: "@babel/helper-create-class-features-plugin@npm:7.28.5"
@@ -1444,14 +1457,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-block-scoping@npm:^8.0.5":
-  version: 8.0.5
-  resolution: "@babel/plugin-transform-block-scoping@npm:8.0.5"
+"@babel/plugin-transform-block-scoping@npm:^8.0.7":
+  version: 8.0.7
+  resolution: "@babel/plugin-transform-block-scoping@npm:8.0.7"
   dependencies:
     "@babel/helper-plugin-utils": ^8.0.1
   peerDependencies:
     "@babel/core": ^8.0.0
-  checksum: ad6b546a961b917b4f4ed6e696deb66accfeea61bff8f38752d03e285bf8b7c2bbc85f5095b412cb8b2ce25d52e0e894b101298b8371f3fd4139221b8c322d1e
+  checksum: 4e422d406c439fed20787d43217340abb6375ade1316fb55fc5ee263280884bb7087b30c71ebd3f700d7ff9ed0d28d475bebe1fc36e0ff34d7b9b70085d9fd2c
   languageName: node
   linkType: hard
 
@@ -1776,15 +1789,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-for-of@npm:^8.0.1":
-  version: 8.0.1
-  resolution: "@babel/plugin-transform-for-of@npm:8.0.1"
+"@babel/plugin-transform-for-of@npm:^8.0.7":
+  version: 8.0.7
+  resolution: "@babel/plugin-transform-for-of@npm:8.0.7"
   dependencies:
     "@babel/helper-plugin-utils": ^8.0.1
     "@babel/helper-skip-transparent-expression-wrappers": ^8.0.0
   peerDependencies:
     "@babel/core": ^8.0.0
-  checksum: 6768813f6be536bb58d9da6f35c61f2e5a5ef7e7904eace263e110832d0d164cc44315b2c378ef070954a4970722b5e739cc86e758c5b585875eeeeaca665028
+  checksum: 8322233481efb65c7223e89b4d4e4600ee18319d8d26a854112756279c3049fe088c3df4669b86fccbb0ba4201a5648d9fdcc232405b80752ab7125d3e797a68
   languageName: node
   linkType: hard
 
@@ -2735,12 +2748,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:8.0.6":
-  version: 8.0.6
-  resolution: "@babel/preset-env@npm:8.0.6"
+"@babel/preset-env@npm:8.0.7":
+  version: 8.0.7
+  resolution: "@babel/preset-env@npm:8.0.7"
   dependencies:
     "@babel/compat-data": ^8.0.5
-    "@babel/helper-compilation-targets": ^8.0.6
+    "@babel/helper-compilation-targets": ^8.0.7
     "@babel/helper-plugin-utils": ^8.0.1
     "@babel/helper-validator-option": ^8.0.0
     "@babel/plugin-bugfix-firefox-class-in-computed-class-key": ^8.0.1
@@ -2753,7 +2766,7 @@ __metadata:
     "@babel/plugin-transform-async-generator-functions": ^8.0.6
     "@babel/plugin-transform-async-to-generator": ^8.0.1
     "@babel/plugin-transform-block-scoped-functions": ^8.0.1
-    "@babel/plugin-transform-block-scoping": ^8.0.5
+    "@babel/plugin-transform-block-scoping": ^8.0.7
     "@babel/plugin-transform-class-properties": ^8.0.1
     "@babel/plugin-transform-class-static-block": ^8.0.5
     "@babel/plugin-transform-classes": ^8.0.5
@@ -2766,7 +2779,7 @@ __metadata:
     "@babel/plugin-transform-explicit-resource-management": ^8.0.5
     "@babel/plugin-transform-exponentiation-operator": ^8.0.1
     "@babel/plugin-transform-export-namespace-from": ^8.0.1
-    "@babel/plugin-transform-for-of": ^8.0.1
+    "@babel/plugin-transform-for-of": ^8.0.7
     "@babel/plugin-transform-function-name": ^8.0.1
     "@babel/plugin-transform-json-strings": ^8.0.1
     "@babel/plugin-transform-literals": ^8.0.1
@@ -2803,10 +2816,10 @@ __metadata:
     "@babel/preset-modules": ^0.2.0
     babel-plugin-polyfill-corejs3: ^1.0.0
     core-js-compat: ^3.48.0
-    verkit: ^0.3.2
+    verkit: ^0.5.0
   peerDependencies:
     "@babel/core": ^8.0.0
-  checksum: b4d8233e699135abbb17e8307a9643f205f1b8c12a925c026c687438740df2437f15f76038271143ae776eefc9fda96bbc724901a720e7e17b1cef3848dd5720
+  checksum: f78aa4ad0463f92a17f79bc323d96abd10a52549d7ca83f151fb01f6b3be59a6117601562cd0a0b836e661caa587e178f378a2fca14ba971f91c47931a5474ee
   languageName: node
   linkType: hard
 
@@ -19214,7 +19227,7 @@ __metadata:
   resolution: "minitothemax@workspace:."
   dependencies:
     "@babel/core": 8.0.6
-    "@babel/preset-env": 8.0.6
+    "@babel/preset-env": 8.0.7
     "@babel/preset-react": 8.0.1
     "@babel/preset-typescript": 8.0.1
     "@chromatic-com/storybook": 5.4.0
@@ -22932,14 +22945,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-js@npm:^1.0.1, source-map-js@npm:^1.2.1":
-  version: 1.2.2
-  resolution: "source-map-js@npm:1.2.2"
-  checksum: d4f3adc1921e145fe84574b5852d7f5bf11e93d6c008a250ffe66a3e698331f066008cc3ba63e720dde07fe74871f1610d2e74532d33b27126e82e57c00df3bf
-  languageName: node
-  linkType: hard
-
-"source-map-js@npm:^1.2.2":
+"source-map-js@npm:^1.0.1, source-map-js@npm:^1.2.1, source-map-js@npm:^1.2.2":
   version: 1.2.2
   resolution: "source-map-js@npm:1.2.2"
   checksum: d4f3adc1921e145fe84574b5852d7f5bf11e93d6c008a250ffe66a3e698331f066008cc3ba63e720dde07fe74871f1610d2e74532d33b27126e82e57c00df3bf
@@ -25058,6 +25064,13 @@ __metadata:
   version: 0.3.2
   resolution: "verkit@npm:0.3.2"
   checksum: e2364db764e4b27bfa65480d926c36c441eb9086af452006a5444b508c1a4f57e877488c15b0b7f747fa9a6671ffce174f271022d6cc8f4060a40c96aab4a6a8
+  languageName: node
+  linkType: hard
+
+"verkit@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "verkit@npm:0.5.0"
+  checksum: 021a9b99f650c530740f375eb842b0cbc707a500746c939a2f53a41eb3f0a63d17c5310743004183c657821b89d9a4d060491ce39ed7c775549f52da95025422
   languageName: node
   linkType: hard
 
