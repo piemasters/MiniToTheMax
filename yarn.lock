@@ -3182,17 +3182,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chromatic-com/storybook@npm:5.4.0":
-  version: 5.4.0
-  resolution: "@chromatic-com/storybook@npm:5.4.0"
+"@chromatic-com/storybook@npm:5.6.0":
+  version: 5.6.0
+  resolution: "@chromatic-com/storybook@npm:5.6.0"
   dependencies:
     "@neoconfetti/react": ^1.0.0
-    chromatic: ^18.0.1
+    chromatic: ^18.12.1
     jsonfile: ^6.1.0
     strip-ansi: ^7.1.0
   peerDependencies:
     storybook: ^0.0.0-0 || ^10.1.0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0 || ^10.5.0-0 || ^10.6.0-0 || ^11.0.0-0
-  checksum: 115f636ca8bf1c15c83df3002f90a87a5b3fbea39f58da291088e91a9d025eb2ca13e39ae38339b61f8fdb7e09fc905d6cf03c3af8a587567143d1f38dbc1cca
+  checksum: 5129f755d4c54a666f942abafc8d28f48fc3efd30712fe46df8d40ca59e065f223970309760b88663f03c2b25472b55a1f1da6e65060f9a99868e97633d64361
   languageName: node
   linkType: hard
 
@@ -10562,9 +10562,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:^18.0.1":
-  version: 18.2.0
-  resolution: "chromatic@npm:18.2.0"
+"chromatic@npm:^18.12.1":
+  version: 18.13.3
+  resolution: "chromatic@npm:18.13.3"
   dependencies:
     semver: ^7.3.5
   peerDependencies:
@@ -10587,7 +10587,7 @@ __metadata:
     chroma: dist/bin.cjs
     chromatic: dist/bin.cjs
     chromatic-cli: dist/bin.cjs
-  checksum: 2f2e7b08d8a92f47091d800bd85b7f6d45361f349b04f5e538b4cdacae143712cafe4bb09becc700d0d56ae259c58cb9a255da58dab357280aeae2c45076816d
+  checksum: 09bc16fcdab48f1b496e3de7df2fa989e56c33f619137bb5ba33383c7aa0dcf263d261f65856337c2a3fdb473d851588497c7df0e58cf1d9a16603075f5f5158
   languageName: node
   linkType: hard
 
@@ -19217,7 +19217,7 @@ __metadata:
     "@babel/preset-env": 8.0.6
     "@babel/preset-react": 8.0.1
     "@babel/preset-typescript": 8.0.1
-    "@chromatic-com/storybook": 5.4.0
+    "@chromatic-com/storybook": 5.6.0
     "@eslint/js": ^10.0.1
     "@mdx-js/react": 3.1.1
     "@storybook/addon-a11y": 10.6.1
@@ -22932,14 +22932,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-js@npm:^1.0.1, source-map-js@npm:^1.2.1":
-  version: 1.2.2
-  resolution: "source-map-js@npm:1.2.2"
-  checksum: d4f3adc1921e145fe84574b5852d7f5bf11e93d6c008a250ffe66a3e698331f066008cc3ba63e720dde07fe74871f1610d2e74532d33b27126e82e57c00df3bf
-  languageName: node
-  linkType: hard
-
-"source-map-js@npm:^1.2.2":
+"source-map-js@npm:^1.0.1, source-map-js@npm:^1.2.1, source-map-js@npm:^1.2.2":
   version: 1.2.2
   resolution: "source-map-js@npm:1.2.2"
   checksum: d4f3adc1921e145fe84574b5852d7f5bf11e93d6c008a250ffe66a3e698331f066008cc3ba63e720dde07fe74871f1610d2e74532d33b27126e82e57c00df3bf
