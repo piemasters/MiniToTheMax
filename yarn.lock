@@ -12802,15 +12802,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-storybook@npm:10.6.1":
-  version: 10.6.1
-  resolution: "eslint-plugin-storybook@npm:10.6.1"
+"eslint-plugin-storybook@npm:10.6.4":
+  version: 10.6.4
+  resolution: "eslint-plugin-storybook@npm:10.6.4"
   dependencies:
     "@typescript-eslint/types": ^8.60.0
     "@typescript-eslint/utils": ^8.60.0
   peerDependencies:
     eslint: ">=8"
-  checksum: ee62730521015243305a6bd7958220277ac560077d8d47a6704144889917b11643e2ef7bb47e84ebbc3e51659b3051e455353c43baf3f3130643081d98b24c9c
+  checksum: 47a89847bfcc17dc4cc8f5f7f5cf430d989524d86e275afa3056b5b63d7a7efa93ee67cd68d27687119cbccaa0b6ddbcc5f4998ee4c709b6727d75257c2012d8
   languageName: node
   linkType: hard
 
@@ -19253,7 +19253,7 @@ __metadata:
     eslint: 10.12.0
     eslint-config-prettier: 10.1.8
     eslint-plugin-react: 7.37.5
-    eslint-plugin-storybook: 10.6.1
+    eslint-plugin-storybook: 10.6.4
     eslint-webpack-plugin: 6.0.0
     fs-extra: 11.4.1
     gatsby: 5.16.1
@@ -22932,14 +22932,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-js@npm:^1.0.1, source-map-js@npm:^1.2.1":
-  version: 1.2.2
-  resolution: "source-map-js@npm:1.2.2"
-  checksum: d4f3adc1921e145fe84574b5852d7f5bf11e93d6c008a250ffe66a3e698331f066008cc3ba63e720dde07fe74871f1610d2e74532d33b27126e82e57c00df3bf
-  languageName: node
-  linkType: hard
-
-"source-map-js@npm:^1.2.2":
+"source-map-js@npm:^1.0.1, source-map-js@npm:^1.2.1, source-map-js@npm:^1.2.2":
   version: 1.2.2
   resolution: "source-map-js@npm:1.2.2"
   checksum: d4f3adc1921e145fe84574b5852d7f5bf11e93d6c008a250ffe66a3e698331f066008cc3ba63e720dde07fe74871f1610d2e74532d33b27126e82e57c00df3bf
