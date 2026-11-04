@@ -11496,9 +11496,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress@npm:16.1.1":
-  version: 16.1.1
-  resolution: "cypress@npm:16.1.1"
+"cypress@npm:16.2.1":
+  version: 16.2.1
+  resolution: "cypress@npm:16.2.1"
   dependencies:
     "@cypress/request": ^4.0.0
     "@cypress/xvfb": ^1.2.4
@@ -11541,7 +11541,7 @@ __metadata:
     yauzl: ^3.3.1
   bin:
     cypress: bin/cypress
-  checksum: efceef9f958102fabead3977e53e933754f5ab4021ec9cc68156a76bf6335e61aa80bf071a12fffcce5e8cc641e3026232970088146f1e53e08e85fe978f7d6e
+  checksum: f9c3d5f5115b597ef5a9245b00806db9c6d4d2a30d1c2ba4e5f777480eb53d93fba3313f435f237d9cade6f7fef0154719d4a439a9d6d6af98892f224ab334d0
   languageName: node
   linkType: hard
 
@@ -19315,7 +19315,7 @@ __metadata:
     babel-plugin-remove-graphql-queries: 5.16.0
     babel-preset-react-app: 10.1.0
     csstype: 3.2.3
-    cypress: 16.1.1
+    cypress: 16.2.1
     cypress-axe: 1.7.0
     disqus-react: 1.1.7
     dotenv: 18.0.5
