@@ -12076,12 +12076,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:18.0.5":
-  version: 18.0.5
-  resolution: "dotenv@npm:18.0.5"
+"dotenv@npm:18.0.9":
+  version: 18.0.9
+  resolution: "dotenv@npm:18.0.9"
   bin:
     dotenv: dist/index.cjs
-  checksum: 96edde25eb7d28e54cfa1f78041be7d20122a8bf94c6bcc407ae34e3c6534b761a4091a6d180f290b59a5b2de1f0f4ad8ffaf4892b6b8400f5d9cf83ffb59849
+  checksum: ae1e65d057f2dd322ff7ecd2349d45b064269fb327bcb0a8c227e5638c5b04ae999a8f4a3942cb4707eec394e9116d2de89649a9bd2d8178cd7fb6bcab47c7ae
   languageName: node
   linkType: hard
 
@@ -19318,7 +19318,7 @@ __metadata:
     cypress: 16.2.1
     cypress-axe: 1.7.0
     disqus-react: 1.1.7
-    dotenv: 18.0.5
+    dotenv: 18.0.9
     env-cmd: 11.0.0
     eslint: 10.14.0
     eslint-config-prettier: 10.1.8
