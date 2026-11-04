@@ -191,7 +191,7 @@ export const technicalStirlandBattlemire: PaintDetailsCitadel = {
     { offset: 0, color: 'rgb(112, 73, 13)' },
     { offset: 100, color: 'rgb(72, 43, 0)' },
   ],
-  availability: 'available',
+  availability: 'discontinued',
   company: 'Citadel',
 };
 
