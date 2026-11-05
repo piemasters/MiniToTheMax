@@ -330,7 +330,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-compilation-targets@npm:^8.0.5, @babel/helper-compilation-targets@npm:^8.0.6":
+"@babel/helper-compilation-targets@npm:^8.0.5":
   version: 8.0.6
   resolution: "@babel/helper-compilation-targets@npm:8.0.6"
   dependencies:
@@ -1506,14 +1506,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-block-scoping@npm:^8.0.5":
-  version: 8.0.5
-  resolution: "@babel/plugin-transform-block-scoping@npm:8.0.5"
+"@babel/plugin-transform-block-scoping@npm:^8.0.7":
+  version: 8.0.10
+  resolution: "@babel/plugin-transform-block-scoping@npm:8.0.10"
   dependencies:
     "@babel/helper-plugin-utils": ^8.0.1
   peerDependencies:
     "@babel/core": ^8.0.0
-  checksum: ad6b546a961b917b4f4ed6e696deb66accfeea61bff8f38752d03e285bf8b7c2bbc85f5095b412cb8b2ce25d52e0e894b101298b8371f3fd4139221b8c322d1e
+  checksum: 95307ab4512e201b57459f1266f42c5c53376263c0aaba0389191ddbea1f1de777fe662be26a391d2e7630e8582312d892acaae0df617640cfde2ab23ae2bc56
   languageName: node
   linkType: hard
 
@@ -1838,15 +1838,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-for-of@npm:^8.0.1":
-  version: 8.0.1
-  resolution: "@babel/plugin-transform-for-of@npm:8.0.1"
+"@babel/plugin-transform-for-of@npm:^8.0.7":
+  version: 8.0.7
+  resolution: "@babel/plugin-transform-for-of@npm:8.0.7"
   dependencies:
     "@babel/helper-plugin-utils": ^8.0.1
     "@babel/helper-skip-transparent-expression-wrappers": ^8.0.0
   peerDependencies:
     "@babel/core": ^8.0.0
-  checksum: 6768813f6be536bb58d9da6f35c61f2e5a5ef7e7904eace263e110832d0d164cc44315b2c378ef070954a4970722b5e739cc86e758c5b585875eeeeaca665028
+  checksum: 8322233481efb65c7223e89b4d4e4600ee18319d8d26a854112756279c3049fe088c3df4669b86fccbb0ba4201a5648d9fdcc232405b80752ab7125d3e797a68
   languageName: node
   linkType: hard
 
@@ -2797,12 +2797,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:8.0.6":
-  version: 8.0.6
-  resolution: "@babel/preset-env@npm:8.0.6"
+"@babel/preset-env@npm:8.0.7":
+  version: 8.0.7
+  resolution: "@babel/preset-env@npm:8.0.7"
   dependencies:
     "@babel/compat-data": ^8.0.5
-    "@babel/helper-compilation-targets": ^8.0.6
+    "@babel/helper-compilation-targets": ^8.0.7
     "@babel/helper-plugin-utils": ^8.0.1
     "@babel/helper-validator-option": ^8.0.0
     "@babel/plugin-bugfix-firefox-class-in-computed-class-key": ^8.0.1
@@ -2815,7 +2815,7 @@ __metadata:
     "@babel/plugin-transform-async-generator-functions": ^8.0.6
     "@babel/plugin-transform-async-to-generator": ^8.0.1
     "@babel/plugin-transform-block-scoped-functions": ^8.0.1
-    "@babel/plugin-transform-block-scoping": ^8.0.5
+    "@babel/plugin-transform-block-scoping": ^8.0.7
     "@babel/plugin-transform-class-properties": ^8.0.1
     "@babel/plugin-transform-class-static-block": ^8.0.5
     "@babel/plugin-transform-classes": ^8.0.5
@@ -2828,7 +2828,7 @@ __metadata:
     "@babel/plugin-transform-explicit-resource-management": ^8.0.5
     "@babel/plugin-transform-exponentiation-operator": ^8.0.1
     "@babel/plugin-transform-export-namespace-from": ^8.0.1
-    "@babel/plugin-transform-for-of": ^8.0.1
+    "@babel/plugin-transform-for-of": ^8.0.7
     "@babel/plugin-transform-function-name": ^8.0.1
     "@babel/plugin-transform-json-strings": ^8.0.1
     "@babel/plugin-transform-literals": ^8.0.1
@@ -2865,10 +2865,10 @@ __metadata:
     "@babel/preset-modules": ^0.2.0
     babel-plugin-polyfill-corejs3: ^1.0.0
     core-js-compat: ^3.48.0
-    verkit: ^0.3.2
+    verkit: ^0.5.0
   peerDependencies:
     "@babel/core": ^8.0.0
-  checksum: b4d8233e699135abbb17e8307a9643f205f1b8c12a925c026c687438740df2437f15f76038271143ae776eefc9fda96bbc724901a720e7e17b1cef3848dd5720
+  checksum: f78aa4ad0463f92a17f79bc323d96abd10a52549d7ca83f151fb01f6b3be59a6117601562cd0a0b836e661caa587e178f378a2fca14ba971f91c47931a5474ee
   languageName: node
   linkType: hard
 
@@ -19338,7 +19338,7 @@ __metadata:
   resolution: "minitothemax@workspace:."
   dependencies:
     "@babel/core": 8.0.10
-    "@babel/preset-env": 8.0.6
+    "@babel/preset-env": 8.0.7
     "@babel/preset-react": 8.0.1
     "@babel/preset-typescript": 8.0.7
     "@chromatic-com/storybook": 5.6.0
