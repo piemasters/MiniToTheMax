@@ -4518,10 +4518,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@isaacs/nonrecursive-glob-match@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "@isaacs/nonrecursive-glob-match@npm:1.0.3"
-  checksum: 99491d5f383d273d67899112533235eb82a1bc2662901d107cca6fec98161dfbc8cc781ab3632f8e9023821892a9a4bcc4d5a38c06e26d201c764e6f5c0d7656
+"@isaacs/nonrecursive-glob-match@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@isaacs/nonrecursive-glob-match@npm:1.1.0"
+  checksum: 6985982c2d84de5af54369b77f973a1829e5e2313749b4438445f5b23bd054d2e84763a32eccc41fd71a1b28327d489df9f5c49d0a35cce853494913d993ae18
   languageName: node
   linkType: hard
 
@@ -14962,14 +14962,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:14.0.3":
-  version: 14.0.3
-  resolution: "glob@npm:14.0.3"
+"glob@npm:14.0.4":
+  version: 14.0.4
+  resolution: "glob@npm:14.0.4"
   dependencies:
-    minimatch: ^11.0.2
+    minimatch: ^11.0.5
     minipass: ^7.1.3
     path-scurry: ^3.0.0
-  checksum: 66a87bf03564aee48425982a45b66caaa582f2e1dc95e38cb17416c24b6f5e1026cbd427524d726409218ea986512f5352353b7ca59d8abda325eb6fbf978040
+  checksum: 6dc022fbcf7c14829a76e4137315c8c944ad2dbf185aabc1dfec7664ee4a975edbc22855bee07fb75d034ff463e0c13caf7cc057da36c73d31aaff45a6db58f6
   languageName: node
   linkType: hard
 
@@ -19213,13 +19213,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^11.0.2":
-  version: 11.0.4
-  resolution: "minimatch@npm:11.0.4"
+"minimatch@npm:^11.0.5":
+  version: 11.0.5
+  resolution: "minimatch@npm:11.0.5"
   dependencies:
-    "@isaacs/nonrecursive-glob-match": ^1.0.3
+    "@isaacs/nonrecursive-glob-match": ^1.1.0
     brace-expansion: ^5.0.12
-  checksum: 7660b2b9624653901cf9486ebb07f18531d6b6ce7726818ef803dc493d040789c38d1acecb583aba5faf08ba0037c271bcf379c7c33695f61b4f5d65a00aabca
+  checksum: 47370b5e193710f9b95d4c7fdbd5ed878213725df9eb2dec134d3b9f238b26c370057a14167f25c58127ef43fba2fe2df7567c47a57fc62bdd16f1aaeaeda9cf
   languageName: node
   linkType: hard
 
@@ -19397,7 +19397,7 @@ __metadata:
     gatsby-remark-images: 7.16.0
     gatsby-source-filesystem: 5.16.0
     gatsby-transformer-sharp: 5.16.0
-    glob: 14.0.3
+    glob: 14.0.4
     globals: 17.14.0
     gsap: 3.15.0
     identity-obj-proxy: 3.0.0
