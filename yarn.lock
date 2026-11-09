@@ -7799,12 +7799,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-test-renderer@npm:19.3.0":
-  version: 19.3.0
-  resolution: "@types/react-test-renderer@npm:19.3.0"
+"@types/react-test-renderer@npm:19.3.1":
+  version: 19.3.1
+  resolution: "@types/react-test-renderer@npm:19.3.1"
   dependencies:
     "@types/react": "*"
-  checksum: fbc49458dbb661d7565d60c07bca5284bac15bf88fc7fef9bb5ff0f58c4dbe87faf430443bac94b9a7a3dd2fa1e520435fe4d245928545756220b0fb76e0b080
+  checksum: dc289568d6eaada651778135b8e1cff55e586c7efc581d48635067fdabae86e59ec6ffdc6908abc679645a6e490c8dfdb7f8ec2d691c0350684d6ab90db3f0bf
   languageName: node
   linkType: hard
 
@@ -19363,7 +19363,7 @@ __metadata:
     "@types/node-sass": 4.11.8
     "@types/react": 19.3.0
     "@types/react-dom": 19.3.0
-    "@types/react-test-renderer": 19.3.0
+    "@types/react-test-renderer": 19.3.1
     axe-core: 4.14.0
     babel-loader: 10.1.1
     babel-plugin-remove-graphql-queries: 5.16.0
