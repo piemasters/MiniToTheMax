@@ -6599,24 +6599,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:10.6.5":
-  version: 10.6.5
-  resolution: "@storybook/addon-docs@npm:10.6.5"
+"@storybook/addon-docs@npm:10.6.6":
+  version: 10.6.6
+  resolution: "@storybook/addon-docs@npm:10.6.6"
   dependencies:
     "@mdx-js/react": ^3.0.0
     "@storybook/icons": ^2.0.2
-    "@storybook/react-dom-shim": 10.6.5
+    "@storybook/react-dom-shim": 10.6.6
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     ts-dedent: ^2.0.0
     unplugin: ^2.3.5
   peerDependencies:
     "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    storybook: ^10.6.5
+    storybook: ^10.6.6
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: df57a2bfcde3ebee9ebfd2a6e6ec9f10c653610a9a048dbef558ff63b0004570ba7dbfcbb3608c93a499379859549d0f8c04cec7a45c58f14ae60f07fc236ac3
+  checksum: 44d823f12bb7ec075842fd2a1ee7de4ee33868f940e294dc39c77a7adb3023dec5c705e6f915ac85d2aa0221f2ffaf9245d1e33fb6953667a894b97093a5a1f1
   languageName: node
   linkType: hard
 
@@ -6694,6 +6694,24 @@ __metadata:
     "@types/react-dom":
       optional: true
   checksum: e8502f0f590d1282287a7266ac209f3833425f6b03c7bd7332d66b755cbe3f3e0280057da26e8a3d70e024421beccb97b1262a6b9333a1d1b9f32f4a27673c5b
+  languageName: node
+  linkType: hard
+
+"@storybook/react-dom-shim@npm:10.6.6":
+  version: 10.6.6
+  resolution: "@storybook/react-dom-shim@npm:10.6.6"
+  peerDependencies:
+    "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    "@types/react-dom": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    storybook: ^10.6.6
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-dom":
+      optional: true
+  checksum: 97283d6792c5eab8b44cb930e0c9eb144d3fdc479aa7f0dffc6a1394de4aff0a36a6faf6945cb29bb29444a90bd1a904f2edf288f6cec35332f574040119b01d
   languageName: node
   linkType: hard
 
@@ -19345,7 +19363,7 @@ __metadata:
     "@eslint/js": ^10.0.1
     "@mdx-js/react": 3.1.1
     "@storybook/addon-a11y": 10.6.5
-    "@storybook/addon-docs": 10.6.5
+    "@storybook/addon-docs": 10.6.6
     "@storybook/addon-jest": 9.1.12
     "@storybook/addon-links": 10.6.5
     "@storybook/react-vite": 10.6.5
