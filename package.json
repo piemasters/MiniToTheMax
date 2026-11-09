@@ -91,7 +91,7 @@
     "fs-extra": "11.4.1",
     "gatsby-plugin-eslint": "4.0.4",
     "gatsby-plugin-postcss": "6.16.0",
-    "glob": "14.0.3",
+    "glob": "14.0.4",
     "globals": "17.14.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "30.5.2",
