@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [process.env.GA_TRACKING_ID],
+        trackingIds: [process.env.GA_TRACKING_ID].filter(Boolean),
         gtagConfig: {
           optimize_id: process.env.OPT_CONTAINER_ID,
           anonymize_ip: true,
