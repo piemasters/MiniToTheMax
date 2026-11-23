@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { CitadelPaint } from './CitadelPaint';
+import { Paint } from '../Paint';
 import { PaintDetailsCitadel, PaintType } from '../../../types';
 
 const meta: Meta<PaintDetailsCitadel> = {
-  component: CitadelPaint,
+  render: (args) => <Paint paint={args} />,
   argTypes: {
     name: {
       description: 'The name of the paint color',

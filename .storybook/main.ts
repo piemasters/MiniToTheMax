@@ -11,14 +11,13 @@ const config: StorybookConfig = {
 
   addons: [
     '@storybook/addon-a11y',
-    '@storybook/addon-jest',
     '@storybook/addon-links',
     '@chromatic-com/storybook',
     '@storybook/addon-docs',
   ],
 
   typescript: {
-    reactDocgen: 'react-docgen-typescript',
+    reactDocgen: 'react-docgen',
   },
 
   docs: {},

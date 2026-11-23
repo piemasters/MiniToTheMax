@@ -1,7 +1,8 @@
 import type { CitadelPaintCategory, PaintGradient } from '../types';
 import { getColorByBgColor } from '../util/getColorByBgColor';
 
-export const getText = ({
+/** The "DRY" / "AIR" lettering on Citadel pots. */
+export const CitadelText = ({
   category,
   hex,
   gradient,

@@ -57,6 +57,10 @@ jest.mock('../data/paints/vallejo', () => ({
   liquidMetalPaints: [],
 }));
 
+jest.mock('../data/paints/ionic', () => ({
+  smartColorPaints: [],
+}));
+
 describe('getAllSortedPaints', () => {
   it('combines all paint arrays into a single sorted array', () => {
     const sortedPaints = getAllSortedPaints();

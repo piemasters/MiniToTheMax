@@ -1,31 +1,42 @@
 import { PaintDetailsIonic } from '../types';
 
 export const smartColorBrass: PaintDetailsIonic = {
-  name: 'Dead White',
-  number: '72.001',
-  category: 'IONIC Smart Colors',
-  type: ['core'],
-  color: 'white',
-  hex: '#FFFFFF',
-  availability: 'available',
-  company: 'Ionic',
-  stroke: '#6b6b6b',
-};
-
-export const smartColorBlack: PaintDetailsIonic = {
-  name: 'Aluminium',
-  number: '77.701',
+  name: 'Brass',
   category: 'IONIC Smart Colors',
   type: ['metallic'],
-  color: 'silver',
-  hex: '#C8C7CC',
+  color: 'brass',
+  hex: '#BC8E13',
   gradient: [
-    { offset: 0, color: 'rgb(224, 224, 226)' },
-    { offset: 50, color: 'rgb(201, 200, 205)' },
-    { offset: 100, color: 'rgb(161, 160, 166)' },
+    { offset: 0, color: 'rgb(254, 245, 179)' },
+    { offset: 50, color: 'rgb(188, 149, 42)' },
+    { offset: 100, color: 'rgb(100, 73, 21)' },
   ],
   availability: 'available',
   company: 'Ionic',
 };
 
-export const smartColorPaints = [smartColorBrass, smartColorBlack];
+export const smartColorBlack: PaintDetailsIonic = {
+  name: 'Black',
+  category: 'IONIC Smart Colors',
+  type: ['core'],
+  color: 'black',
+  hex: '#000000',
+  availability: 'available',
+  company: 'Ionic',
+};
+
+export const smartColorSuperheroRed: PaintDetailsIonic = {
+  name: 'Superhero Red',
+  category: 'IONIC Smart Colors',
+  type: ['core'],
+  color: 'red',
+  hex: '#E6002E',
+  availability: 'available',
+  company: 'Ionic',
+};
+
+export const smartColorPaints = [
+  smartColorBrass,
+  smartColorBlack,
+  smartColorSuperheroRed,
+];

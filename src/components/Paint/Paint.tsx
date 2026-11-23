@@ -1,64 +1,52 @@
 import { FC } from 'react';
-import VallejoPaint from './vallejo/VallejoPaint';
-import CitadelPaint from './citadel/CitadelPaint';
-import IonicPaint from './ionic/IonicPaint';
-import type {
-  PaintDetails,
-  CitadelPaintCategory,
-  CitadelTechnicalPaintImages,
-  VallejoPaintCategory,
-  IonicPaintCategory,
-} from './types';
+import { textToId } from './util/textToId';
+import type { PaintCompany, PaintDetails } from './types';
+import { brands } from './brands';
+import { gradientId } from './shared/gradientId';
+import { PaintGradient } from './shared/PaintGradient';
+import { PaintShape } from './shared/PaintShape';
+import { potViewBox, SWATCH_HEIGHT, SWATCH_WIDTH } from './shared/potViewBox';
 
 export const Paint: FC<{ paint: PaintDetails }> = ({ paint }) => {
-  if (paint.company === 'Vallejo') {
-    return (
-      <VallejoPaint
-        name={paint.name}
-        type={paint.type}
-        color={paint.color}
-        hex={paint.hex}
-        gradient={paint.gradient}
-        availability={paint.availability}
-        company={paint.company}
-        category={paint.category as VallejoPaintCategory}
-        stroke={paint.stroke}
-        gloss={paint.gloss}
-        img={paint.img}
-        number={paint.number || ''}
-      />
-    );
-  } else if (paint.company === 'Ionic') {
-    return (
-      <IonicPaint
-        name={paint.name}
-        type={paint.type}
-        color={paint.color}
-        hex={paint.hex}
-        gradient={paint.gradient}
-        availability={paint.availability}
-        company={paint.company}
-        category={paint.category as IonicPaintCategory}
-        stroke={paint.stroke}
-        gloss={paint.gloss}
-        img={paint.img}
-      />
-    );
-  }
+  const brand = brands[paint.company as PaintCompany];
+  if (!brand) return null;
+
+  const { category, company, gradient, hex, name } = paint;
+
   return (
-    <CitadelPaint
-      name={paint.name}
-      type={paint.type}
-      color={paint.color}
-      hex={paint.hex}
-      gradient={paint.gradient}
-      availability={paint.availability}
-      company={paint.company as 'Citadel'}
-      category={paint.category as CitadelPaintCategory}
-      stroke={paint.stroke}
-      gloss={paint.gloss}
-      img={paint.img as CitadelTechnicalPaintImages | undefined}
-    />
+    <div
+      data-testid={`paint_${textToId(company)}_${textToId(name)}_${textToId(category)}`}
+      className="inline-block m-1 w-15"
+    >
+      <div className="flex flex-col justify-center">
+        <div className="mb-2">
+          {brand.image?.(paint) || (
+            <svg
+              viewBox={potViewBox(brand.bounds(paint))}
+              xmlns="http://www.w3.org/2000/svg"
+              height={SWATCH_HEIGHT}
+              width={SWATCH_WIDTH}
+            >
+              <PaintShape d={brand.shapePath(paint)} paint={paint} />
+              {gradient && (
+                <defs>
+                  <PaintGradient
+                    id={gradientId(category, hex)}
+                    spec={brand.gradient(paint)}
+                    stops={gradient}
+                  />
+                  {brand.defs?.(paint)}
+                </defs>
+              )}
+              {brand.overlay?.(paint)}
+            </svg>
+          )}
+        </div>
+        <div className="flex-1 text-[0.6rem] leading-4 text-center max-w-full">
+          {brand.label?.(paint) ?? name}
+        </div>
+      </div>
+    </div>
   );
 };
 
