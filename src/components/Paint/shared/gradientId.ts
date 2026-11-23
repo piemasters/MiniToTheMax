@@ -1,4 +1,4 @@
-import { textToId } from '../util/textToId';
+import { textToId } from '../../../util/textToId';
 
 /**
  * The single source of truth for gradient ids, so the shape's `fill` and the

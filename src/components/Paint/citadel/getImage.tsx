@@ -1,4 +1,5 @@
-import type { CitadelTechnicalPaintImages } from '../types';
+import type { CitadelTechnicalPaintImages } from '../../../types';
+import { SWATCH_HEIGHT, SWATCH_WIDTH } from '../shared/potViewBox';
 
 import AgrellanBadland from '../../../../content/assets/svg/paints/technicalAgrellanBadland.webp';
 import AgrellanEarth from '../../../../content/assets/svg/paints/technicalAgrellanEarth.webp';
@@ -13,21 +14,28 @@ import StirlandBattlemire from '../../../../content/assets/svg/paints/technicalS
 import StirlandMud from '../../../../content/assets/svg/paints/technicalStirlandMud.webp';
 import ValhallanBlizzard from '../../../../content/assets/svg/paints/technicalValhallanBlizzard.webp';
 
-const paintImages = {
-  AgrellanBadland: AgrellanBadland,
-  AgrellanEarth: AgrellanEarth,
-  ArmageddonDunes: ArmageddonDunes,
-  ArmageddonDust: ArmageddonDust,
-  Astrogranite: Astrogranite,
-  AstrograniteDebris: AstrograniteDebris,
-  MartianIroncrust: MartianIroncrust,
-  MartianIronearth: MartianIronearth,
-  MordantEarth: MordantEarth,
-  StirlandBattlemire: StirlandBattlemire,
-  StirlandMud: StirlandMud,
-  ValhallanBlizzard: ValhallanBlizzard,
+const paintImages: Record<CitadelTechnicalPaintImages, string> = {
+  AgrellanBadland,
+  AgrellanEarth,
+  ArmageddonDunes,
+  ArmageddonDust,
+  Astrogranite,
+  AstrograniteDebris,
+  MartianIroncrust,
+  MartianIronearth,
+  MordantEarth,
+  StirlandBattlemire,
+  StirlandMud,
+  ValhallanBlizzard,
 };
 
 export const getImage = (name: CitadelTechnicalPaintImages) => {
-  return <img src={paintImages[name]} alt={name} height="71px" width="57px" />;
+  return (
+    <img
+      src={paintImages[name]}
+      alt=""
+      height={SWATCH_HEIGHT}
+      width={SWATCH_WIDTH}
+    />
+  );
 };

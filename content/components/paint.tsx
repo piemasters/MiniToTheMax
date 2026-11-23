@@ -11,19 +11,19 @@ const Paint = ({
   name: string;
   category?: PaintCategory;
 }): React.ReactNode => {
-  const { paint, type, error } = getPaint(name, category);
-
-  if (error) {
-    console.error(error, type);
-    return <div className="inline-block mb-3" />;
-  }
+  const { paint, error, type } = getPaint(name, category);
 
   if (!paint) {
-    console.error('No match found');
-    return <div className="inline-block mb-3" />;
+    const message = `<Paint>: ${error} "${type}"`;
+    if (process.env.NODE_ENV === 'development') throw new Error(message);
+    console.error(message);
   }
 
-  return <div className="inline-block mb-3">{<BasePaint paint={paint} />}</div>;
+  return (
+    <div className="inline-block mb-3">
+      {paint && <BasePaint paint={paint} />}
+    </div>
+  );
 };
 
 export default Paint;

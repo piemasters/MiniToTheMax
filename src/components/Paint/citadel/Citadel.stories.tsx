@@ -1,7 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Paint } from '../Paint';
-import { PaintDetailsCitadel, PaintType } from '../../../types';
+import {
+  CitadelPaintCategories,
+  CitadelTechnicalPaintImageNames,
+  PaintAvailabilities,
+  PaintColors,
+  PaintDetailsCitadel,
+  PaintTypes,
+} from '../../../types';
 
 const meta: Meta<PaintDetailsCitadel> = {
   render: (args) => <Paint paint={args} />,
@@ -12,43 +19,12 @@ const meta: Meta<PaintDetailsCitadel> = {
     type: {
       description: 'The type of the paint',
       control: 'check',
-      options: [
-        'air',
-        'core',
-        'dry',
-        'fluorescent',
-        'ink',
-        'metallic',
-        'one-coat',
-        'spray',
-        'technical',
-      ] as PaintType[],
+      options: [...PaintTypes],
     },
     color: {
       description: 'The color of the paint',
       control: 'radio',
-      options: [
-        'black',
-        'blue',
-        'bone',
-        'brass',
-        'bronze',
-        'brown',
-        'clear',
-        'copper',
-        'flesh',
-        'gold',
-        'green',
-        'grey',
-        'orange',
-        'pink',
-        'purple',
-        'red',
-        'silver',
-        'turquoise',
-        'white',
-        'yellow',
-      ],
+      options: [...PaintColors],
     },
     hex: {
       description: 'The hex code of the paint color',
@@ -61,7 +37,7 @@ const meta: Meta<PaintDetailsCitadel> = {
     availability: {
       description: 'The availability status of the paint',
       control: 'radio',
-      options: ['available', 'discontinued'],
+      options: [...PaintAvailabilities],
     },
     company: {
       description: 'The company that produces the paint',
@@ -71,19 +47,10 @@ const meta: Meta<PaintDetailsCitadel> = {
     category: {
       description: 'The category of the paint',
       control: 'radio',
-      options: [
-        'Citadel Air',
-        'Citadel Base',
-        'Citadel Contrast',
-        'Citadel Dry',
-        'Citadel Layer',
-        'Citadel Shade',
-        'Citadel Spray',
-        'Citadel Technical',
-      ],
+      options: [...CitadelPaintCategories],
     },
     stroke: {
-      description: 'The hex code of the paint color',
+      description: 'Outline colour, for paints that would vanish on white',
       control: 'color',
     },
     gloss: {
@@ -93,21 +60,7 @@ const meta: Meta<PaintDetailsCitadel> = {
     img: {
       description: 'The image name of the paint',
       control: 'radio',
-      options: [
-        undefined,
-        'AgrellanBadland',
-        'AgrellanEarth',
-        'ArmageddonDunes',
-        'ArmageddonDust',
-        'Astrogranite',
-        'AstrograniteDebris',
-        'MartianIroncrust',
-        'MartianIronearth',
-        'MordantEarth',
-        'StirlandBattlemire',
-        'StirlandMud',
-        'ValhallanBlizzard',
-      ],
+      options: [undefined, ...CitadelTechnicalPaintImageNames],
     },
   },
 };

@@ -13,6 +13,7 @@ exports[`Paint renders Citadel correctly 1`] = `
         class="mb-2"
       >
         <svg
+          aria-hidden="true"
           height="71"
           viewBox="-1.1 0.42 52.2 61.77"
           width="60"
@@ -73,6 +74,7 @@ exports[`Paint renders Ionic correctly 1`] = `
         class="mb-2"
       >
         <svg
+          aria-hidden="true"
           height="71"
           viewBox="-4.78 -0.5 31.27 37"
           width="60"
@@ -143,6 +145,7 @@ exports[`Paint renders Vallejo correctly 1`] = `
         class="mb-2"
       >
         <svg
+          aria-hidden="true"
           height="71"
           viewBox="-9.49 -0.5 55.99 66.25"
           width="60"
@@ -213,6 +216,7 @@ exports[`Paint renders Vallejo wash correctly 1`] = `
         class="mb-2"
       >
         <svg
+          aria-hidden="true"
           height="71"
           viewBox="-9.49 -0.5 55.99 66.25"
           width="60"

@@ -1,6 +1,3 @@
-export const PaintCompanies = ['Citadel', 'Vallejo', 'Ionic'] as const;
-export type PaintCompany = (typeof PaintCompanies)[number];
-
 // Categories defined in priority order so the correct paint is rendered for duplicate names
 export const CitadelPaintCategories = [
   'Citadel Base',
@@ -31,12 +28,31 @@ export type VallejoPaintCategory = (typeof VallejoPaintCategories)[number];
 export const IonicPaintCategories = ['IONIC Smart Colors'] as const;
 export type IonicPaintCategory = (typeof IonicPaintCategories)[number];
 
-export const AllPaintCategories = [
-  ...CitadelPaintCategories,
-  ...VallejoPaintCategories,
-  ...IonicPaintCategories,
-];
-export type PaintCategory = (typeof AllPaintCategories)[number];
+// Adding a brand: add its categories above and one entry here.
+export const PaintCategoriesByCompany = {
+  Citadel: CitadelPaintCategories,
+  Vallejo: VallejoPaintCategories,
+  Ionic: IonicPaintCategories,
+} as const;
+
+export type PaintCompany = keyof typeof PaintCategoriesByCompany;
+export const PaintCompanies = Object.keys(
+  PaintCategoriesByCompany
+) as PaintCompany[];
+
+export type PaintCategory =
+  (typeof PaintCategoriesByCompany)[PaintCompany][number];
+// In priority order: earlier categories win when paint names clash
+export const AllPaintCategories: PaintCategory[] = Object.values(
+  PaintCategoriesByCompany
+).flat();
+
+export const getCategoryCompany = (
+  category: string
+): PaintCompany | undefined =>
+  PaintCompanies.find((company) =>
+    (PaintCategoriesByCompany[company] as readonly string[]).includes(category)
+  );
 
 export const PaintColors = [
   'black',
@@ -93,7 +109,7 @@ export interface PaintDetails {
   hex: string;
   gradient?: PaintGradient[];
   availability: PaintAvailability;
-  company: string;
+  company: PaintCompany;
   category: PaintCategory;
   stroke?: string;
   gloss?: boolean;
@@ -101,19 +117,22 @@ export interface PaintDetails {
   number?: string;
 }
 
+export const CitadelTechnicalPaintImageNames = [
+  'AgrellanBadland',
+  'AgrellanEarth',
+  'ArmageddonDunes',
+  'ArmageddonDust',
+  'Astrogranite',
+  'AstrograniteDebris',
+  'MartianIroncrust',
+  'MartianIronearth',
+  'MordantEarth',
+  'StirlandBattlemire',
+  'StirlandMud',
+  'ValhallanBlizzard',
+] as const;
 export type CitadelTechnicalPaintImages =
-  | 'AgrellanBadland'
-  | 'AgrellanEarth'
-  | 'ArmageddonDunes'
-  | 'ArmageddonDust'
-  | 'Astrogranite'
-  | 'AstrograniteDebris'
-  | 'MartianIroncrust'
-  | 'MartianIronearth'
-  | 'MordantEarth'
-  | 'StirlandBattlemire'
-  | 'StirlandMud'
-  | 'ValhallanBlizzard';
+  (typeof CitadelTechnicalPaintImageNames)[number];
 
 export interface PaintDetailsCitadel extends PaintDetails {
   img?: CitadelTechnicalPaintImages;

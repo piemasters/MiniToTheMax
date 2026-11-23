@@ -47,3 +47,9 @@ export const metalColorDarkAluminium: PaintDetailsVallejo = {
   availability: 'available',
   company: 'Vallejo',
 };
+
+export const metalPaints = [
+  metalColorAluminium,
+  metalColorDuraluminium,
+  metalColorDarkAluminium,
+];

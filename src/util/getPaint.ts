@@ -1,24 +1,21 @@
-import {
-  CitadelPaintCategories,
-  IonicPaintCategories,
-  PaintCategory,
-  PaintDetails,
-  VallejoPaintCategories,
-} from '../types';
+import { AllPaintCategories, PaintCategory, PaintDetails } from '../types';
 import { getAllSortedPaints } from './getAllSortedPaints';
 
 const allPaints = getAllSortedPaints();
 
-const paintCategoryPriority = [
-  ...CitadelPaintCategories,
-  ...VallejoPaintCategories,
-  ...IonicPaintCategories,
-] as const;
+export type GetPaintResult =
+  | { paint: PaintDetails; error?: never; type?: never }
+  | { paint?: never; error: string; type: string };
+
+const getCategoryPriority = (category: PaintCategory) => {
+  const index = AllPaintCategories.indexOf(category);
+  return index === -1 ? Infinity : index;
+};
 
 export const getPaint = (
   name: string,
   category?: PaintCategory
-): { paint?: PaintDetails; error?: string; type?: string } => {
+): GetPaintResult => {
   const paintMatches = allPaints.filter((paint) => paint.name === name);
 
   if (paintMatches.length === 0) {
@@ -30,19 +27,14 @@ export const getPaint = (
   }
 
   if (category) {
-    const categoryMatches = paintMatches.filter(
+    const categoryMatch = paintMatches.find(
       (paint) => paint.category === category
     );
-    if (categoryMatches.length === 0) {
-      return { error: 'Incorrect Paint Category', type: category };
-    }
-    return { paint: categoryMatches[0] };
+    return categoryMatch
+      ? { paint: categoryMatch }
+      : { error: 'Incorrect Paint Category', type: category };
   }
 
-  const getCategoryPriority = (category: PaintCategory) => {
-    const index = paintCategoryPriority.indexOf(category);
-    return index === -1 ? Infinity : index;
-  };
   paintMatches.sort(
     (a, b) => getCategoryPriority(a.category) - getCategoryPriority(b.category)
   );

@@ -5,7 +5,7 @@ export const smartColorBrass: PaintDetailsIonic = {
   category: 'IONIC Smart Colors',
   type: ['metallic'],
   color: 'brass',
-  hex: '#BC8E13',
+  hex: '#D9B73B',
   gradient: [
     { offset: 0, color: 'rgb(254, 245, 179)' },
     { offset: 50, color: 'rgb(188, 149, 42)' },

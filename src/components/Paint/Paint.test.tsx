@@ -5,7 +5,7 @@ import {
   gameColorSepiaWash,
 } from '../../data/paints/vallejo/game';
 import { smartColorBrass } from '../../data/paints/ionic/smart-colors';
-import type { PaintDetails } from './types';
+import type { PaintDetails } from '../../types';
 import { Paint } from './Paint';
 
 describe('Paint', () => {

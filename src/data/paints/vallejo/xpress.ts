@@ -46,7 +46,7 @@ export const xpressColorImperialYellow: PaintDetailsVallejo = {
 };
 
 export const xpressColorNuclearYellow: PaintDetailsVallejo = {
-  name: 'Imperial Yellow',
+  name: 'Nuclear Yellow',
   number: '72.404',
   category: 'Vallejo Xpress Color',
   type: ['one-coat'],

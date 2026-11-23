@@ -6,11 +6,12 @@ import { Paint } from './Paint';
 
 const meta: Meta<typeof Paint> = {
   component: Paint,
+  args: {
+    paint: gameColorPolishedGold,
+  },
   argTypes: {
     paint: {
-      paint: 'paint',
       description: 'The paint color and other properties',
-      defaultValue: gameColorPolishedGold,
       control: { type: 'object' },
     },
   },

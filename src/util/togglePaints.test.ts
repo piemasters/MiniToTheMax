@@ -37,10 +37,6 @@ jest.mock('./getAllSortedPaints', () => ({
   getAllSortedPaints: jest.fn(() => mockPaints),
 }));
 
-jest.mock('./sortPaints', () => ({
-  sortPaints: jest.fn((paints) => paints), // Return paints as-is for simplicity
-}));
-
 describe('togglePaints', () => {
   it('returns all paints when no filters are inactive', () => {
     const filters: AllPaintFilters = {

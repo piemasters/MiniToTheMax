@@ -1,4 +1,4 @@
-import type { CitadelPaintCategory, PaintGradient } from '../types';
+import type { CitadelPaintCategory, PaintGradient } from '../../../types';
 import { getColorByBgColor } from '../util/getColorByBgColor';
 
 /** The "DRY" / "AIR" lettering on Citadel pots. */

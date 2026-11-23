@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import type { PaintDetails } from '../types';
+import type { PaintDetails } from '../../../types';
 import type { GradientSpec } from './PaintGradient';
 
 /**

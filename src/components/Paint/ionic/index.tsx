@@ -1,4 +1,4 @@
-import type { IonicPaintCategory, PaintDetailsIonic } from '../types';
+import type { IonicPaintCategory, PaintDetailsIonic } from '../../../types';
 import type { BrandRenderer } from '../shared/BrandRenderer';
 import { LetterBadge } from '../shared/LetterBadge';
 import { radialGradient } from '../shared/PaintGradient';

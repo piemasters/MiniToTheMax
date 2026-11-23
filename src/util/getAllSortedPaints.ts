@@ -1,62 +1,10 @@
-import { PaintDetails } from '../types';
-import {
-  airPaints,
-  basePaints,
-  contrastPaints,
-  dryPaints,
-  layerPaints,
-  shadePaints,
-  sprayPaints,
-  technicalPaints,
-  toneProPaints,
-} from '../data/paints/citadel';
-import {
-  gameColorPaints,
-  liquidMetalPaints,
-  modelColorPaints,
-  xpressColorPaints,
-} from '../data/paints/vallejo';
-import { smartColorPaints } from '../data/paints/ionic';
-import { textToId } from './textToId';
+import type { PaintDetails } from '../types';
+import { allPaints } from '../data/paints';
 import { sortPaints } from './sortPaints';
 
+let cached: PaintDetails[] | undefined;
+
 export const getAllSortedPaints = (): PaintDetails[] => {
-  const allPaints: PaintDetails[] = [
-    // citadel
-    ...airPaints,
-    ...basePaints,
-    ...contrastPaints,
-    ...dryPaints,
-    ...layerPaints,
-    ...shadePaints,
-    ...sprayPaints,
-    ...technicalPaints,
-    ...toneProPaints,
-    // vallejo
-    ...gameColorPaints,
-    ...modelColorPaints,
-    ...xpressColorPaints,
-    ...liquidMetalPaints,
-    // ionic
-    ...smartColorPaints,
-  ];
-
-  // Remove duplicates using a Set
-  const uniquePaints = Array.from(
-    new Set(
-      allPaints.map(
-        (paint) =>
-          `${textToId(paint.company)}_${textToId(paint.name)}_${textToId(paint.category)}`
-      )
-    )
-  ).map((uniqueKey) =>
-    allPaints.find(
-      (paint) =>
-        `${textToId(paint.company)}_${textToId(paint.name)}_${textToId(paint.category)}` ===
-        uniqueKey
-    )
-  ) as PaintDetails[];
-
-  // Sort the paints using the sortPaints function
-  return uniquePaints.sort(sortPaints);
+  cached ??= [...allPaints].sort(sortPaints);
+  return [...cached];
 };

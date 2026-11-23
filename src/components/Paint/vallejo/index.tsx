@@ -1,4 +1,4 @@
-import type { PaintDetailsVallejo, VallejoPaintCategory } from '../types';
+import type { PaintDetailsVallejo, VallejoPaintCategory } from '../../../types';
 import type { BrandRenderer } from '../shared/BrandRenderer';
 import { LetterBadge } from '../shared/LetterBadge';
 import { radialGradient, verticalGradient } from '../shared/PaintGradient';

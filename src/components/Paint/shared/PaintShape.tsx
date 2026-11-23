@@ -1,4 +1,4 @@
-import type { PaintDetails } from '../types';
+import type { PaintDetails } from '../../../types';
 import { gradientId } from './gradientId';
 
 export const PaintShape = ({

@@ -3,95 +3,61 @@ import Layout from '../layouts/layout';
 import { Paint } from '../components/Paint/Paint';
 import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
 
+import { getCategoryCompany, type PaintDetails } from '../types';
+import { initialFilters } from '../util/paintFilters';
 import {
-  PaintCompanies,
-  type PaintDetails,
-  type PaintGradient,
-  type PaintType,
-} from '../types';
-import {
-  availabilityFilters,
-  companyFilters,
-  colorFilters,
-  typeFilters,
-  categoryFilters,
-} from '../util/paintFilters';
-import { getAllSortedPaints } from '../util/getAllSortedPaints';
-import {
-  AllPaintFilters,
-  PaintFilters,
+  FilterFields,
+  type AllPaintFilters,
+  type FilterField,
+  type PaintFilters,
   togglePaints,
 } from '../util/togglePaints';
 import { textToId } from '../util/textToId';
+import { paintId } from '../util/paintId';
 import { clsx } from '../util/clsx';
 
 export const Paints = (): ReactNode => {
-  const allPaints = useMemo(() => getAllSortedPaints(), []);
-  const [filteredPaints, setFilteredPaints] = useState([...allPaints]);
+  const [allFilters, setAllFilters] = useState<AllPaintFilters>(initialFilters);
+  const filteredPaints = useMemo(() => togglePaints(allFilters), [allFilters]);
 
-  const [allFilters, setAllFilters] = useState<AllPaintFilters>(
-    useMemo(
-      () => ({
-        company: { ...companyFilters },
-        category: { ...categoryFilters },
-        color: { ...colorFilters },
-        type: { ...typeFilters },
-        availability: { ...availabilityFilters },
-      }),
-      []
-    )
-  );
+  const updateFilter = (type: FilterField, field: string) =>
+    setAllFilters((prev) => ({
+      ...prev,
+      [type]: { ...prev[type], [field]: !prev[type][field] },
+    }));
 
-  const updateFilter = (type: string, field: string) => {
-    const updatedFilters = {
-      ...allFilters,
-      [type]: {
-        ...allFilters[type],
-        [field]: !allFilters[type][field],
-      },
-    };
-    setAllFilters(updatedFilters);
-    setFilteredPaints(togglePaints(updatedFilters));
-  };
-
-  const toggleAll = (filters: PaintFilters, type: string) => {
-    const allFiltersTrue = Object.keys(filters).every((k) => !filters[k]);
-    const updatedFilters = {
-      ...allFilters,
-      [type]: Object.fromEntries(
-        Object.keys(filters).map((key) => [key, allFiltersTrue])
-      ),
-    };
-    setAllFilters(updatedFilters);
-    setFilteredPaints(togglePaints(updatedFilters));
-  };
+  // If anything in the group is enabled, disable everything; otherwise enable all
+  const toggleAll = (type: FilterField) =>
+    setAllFilters((prev) => {
+      const enable = Object.values(prev[type]).every((value) => !value);
+      return {
+        ...prev,
+        [type]: Object.fromEntries(
+          Object.keys(prev[type]).map((key) => [key, enable])
+        ),
+      };
+    });
 
   return (
     <StrictMode>
       <Layout>
         <h1>Paints ({filteredPaints.length})</h1>
         <hr />
-        {Object.entries(allFilters).map(([key, value]) => (
+        {FilterFields.map((field) => (
           <FilterGroup
-            key={key}
-            filters={value}
+            key={field}
+            filters={allFilters[field]}
             filteredPaints={filteredPaints}
-            type={key as keyof PaintDetails}
-            checked={
-              !Object.keys(allFilters[key]).every((k) => !allFilters[key][k])
-            }
+            type={field}
+            checked={Object.values(allFilters[field]).some(Boolean)}
             updateFilter={updateFilter}
-            toggleAll={() => toggleAll(allFilters[key], key)}
+            toggleAll={() => toggleAll(field)}
           />
         ))}
         <br />
         <div className="grid justify-center w-full grid-cols-6 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12">
-          {filteredPaints.map((paint: PaintDetails) => (
-            <Paint
-              paint={paint}
-              key={`${textToId(paint.company)}_${textToId(paint.name)}_${textToId(paint.category)}`}
-              data-testid={`${textToId(paint.company)}_${textToId(paint.name)}_${textToId(paint.category)}`}
-            />
+          {filteredPaints.map((paint) => (
+            <Paint paint={paint} key={paintId(paint)} />
           ))}
         </div>
       </Layout>
@@ -100,6 +66,24 @@ export const Paints = (): ReactNode => {
 };
 
 export default Paints;
+
+const capitalise = (text: string) =>
+  text.replace(/\b\w/g, (l) => l.toUpperCase());
+
+const countMatching = (
+  paints: PaintDetails[],
+  type: FilterField,
+  key: string
+) =>
+  paints.filter((paint) => {
+    const value = paint[type];
+    return Array.isArray(value)
+      ? (value as readonly unknown[]).includes(key)
+      : value === key;
+  }).length;
+
+// [key, display name, checked]
+type FilterSection = { heading?: string; filters: [string, string, boolean][] };
 
 const FilterGroup = ({
   filters,
@@ -111,37 +95,40 @@ const FilterGroup = ({
 }: {
   filters: PaintFilters;
   filteredPaints: PaintDetails[];
-  type: keyof PaintDetails;
+  type: FilterField;
   checked?: boolean;
-  updateFilter: (type: string, field: string) => void;
+  updateFilter: (type: FilterField, field: string) => void;
   toggleAll: () => void;
 }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const title = capitalise(type);
 
-  const groupedCategories = useMemo(() => {
-    if (type === 'category') {
-      return Object.entries(filters).reduce(
-        (groups, [key, value]) => {
-          const companyName = PaintCompanies.find((company) =>
-            key.startsWith(company)
-          );
-          if (companyName) {
-            if (!groups[companyName]) {
-              groups[companyName] = {};
-            }
-            groups[companyName][key] = value;
-          }
-          return groups;
-        },
-        {} as Record<string, Record<string, boolean>>
-      );
+  // Categories are split up by company, with the company prefix dropped
+  // from the display name. Everything else is a single unheaded section.
+  const sections = useMemo((): FilterSection[] => {
+    const entries = Object.entries(filters);
+    if (type !== 'category') {
+      return [{ filters: entries.map(([key, value]) => [key, key, value]) }];
     }
-    return null;
+
+    const byCompany = new Map<string, FilterSection>();
+    for (const [key, value] of entries) {
+      const company = getCategoryCompany(key);
+      if (!company) continue;
+      let section = byCompany.get(company);
+      if (!section) {
+        section = { heading: company, filters: [] };
+        byCompany.set(company, section);
+      }
+      const name = key.replace(new RegExp(`^${company}\\s*`, 'i'), '');
+      section.filters.push([key, name, value]);
+    }
+    return [...byCompany.values()];
   }, [filters, type]);
 
   return (
     <div
-      data-testid={`filter-group-${textToId(type.replace(/\b\w/g, (l) => l.toUpperCase()))}`}
+      data-testid={`filter-group-${textToId(title)}`}
       className="py-2 border-b"
     >
       <div
@@ -155,9 +142,7 @@ const FilterGroup = ({
         }
         aria-pressed={isCollapsed}
       >
-        <h3 className="m-0!">
-          {type.replace(/\b\w/g, (l) => l.toUpperCase())}
-        </h3>
+        <h3 className="m-0!">{title}</h3>
         <div
           className={clsx(
             isCollapsed ? 'border-b-2 border-r-2' : 'border-t-2 border-l-2',
@@ -172,68 +157,24 @@ const FilterGroup = ({
             Toggle All
           </label>
           <div className="w-full">
-            {groupedCategories ? (
-              Object.entries(groupedCategories).map(
-                ([company, filterGroup]) => (
-                  <div key={`filter_group_${textToId(company)}`}>
-                    {company && (
-                      <div className="w-full py-1 text-sm font-bold">
-                        {company}
-                      </div>
-                    )}
-                    <div className="grid w-full grid-cols-2 mb-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
-                      {Object.entries(filterGroup).map(([key, value]) => {
-                        return (
-                          <Filter
-                            key={`filter_${textToId(key)}`}
-                            name={
-                              company
-                                ? key.replace(company, '').trimStart()
-                                : key
-                            }
-                            value={value}
-                            toggle={() => updateFilter(type, key)}
-                            count={
-                              filteredPaints.filter((paint) => {
-                                const paintValue = paint[type];
-                                return Array.isArray(paintValue)
-                                  ? paintValue.includes(
-                                      key as PaintType & PaintGradient
-                                    )
-                                  : paintValue === key;
-                              }).length
-                            }
-                          />
-                        );
-                      })}
-                    </div>
-                  </div>
-                )
-              )
-            ) : (
-              <div className="grid w-full grid-cols-2 mb-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
-                {Object.entries(filters).map(([key, value]) => {
-                  return (
+            {sections.map(({ heading, filters: sectionFilters }) => (
+              <div key={`filter_group_${textToId(heading ?? type)}`}>
+                {heading && (
+                  <div className="w-full py-1 text-sm font-bold">{heading}</div>
+                )}
+                <div className="grid w-full grid-cols-2 mb-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
+                  {sectionFilters.map(([key, name, value]) => (
                     <Filter
                       key={`filter_${textToId(key)}`}
-                      name={key}
+                      name={name}
                       value={value}
                       toggle={() => updateFilter(type, key)}
-                      count={
-                        filteredPaints.filter((paint) => {
-                          const paintValue = paint[type];
-                          return Array.isArray(paintValue)
-                            ? paintValue.includes(
-                                key as PaintType & PaintGradient
-                              )
-                            : paintValue === key;
-                        }).length
-                      }
+                      count={countMatching(filteredPaints, type, key)}
                     />
-                  );
-                })}
+                  ))}
+                </div>
               </div>
-            )}
+            ))}
           </div>
         </div>
       )}
@@ -259,7 +200,7 @@ const Filter = ({
     >
       <label className="flex items-center gap-2">
         <input name={name} checked={value} type="checkbox" onChange={toggle} />
-        {name.replace(/\b\w/g, (l) => l.toUpperCase())}
+        {capitalise(name)}
       </label>
       <span className="text-xs text-gray-400">({count})</span>
     </div>

@@ -277,8 +277,8 @@ export const modelColorDeepYellow: PaintDetailsVallejo = {
 };
 
 export const modelColorFlatYellow: PaintDetailsVallejo = {
-  name: 'Deep Yellow',
-  number: '70.915',
+  name: 'Flat Yellow',
+  number: '70.953',
   category: 'Vallejo Model Color',
   type: ['core'],
   color: 'yellow',
@@ -695,7 +695,7 @@ export const modelColorSkyBlue: PaintDetailsVallejo = {
 };
 
 export const modelColorDeepSkyBlue: PaintDetailsVallejo = {
-  name: 'Sky Blue',
+  name: 'Deep Sky Blue',
   number: '70.844',
   category: 'Vallejo Model Color',
   type: ['core'],
@@ -816,7 +816,7 @@ export const modelColorEmerald: PaintDetailsVallejo = {
 };
 
 export const modelColorGreenSky: PaintDetailsVallejo = {
-  name: 'Emerald',
+  name: 'Green Sky',
   number: '70.974',
   category: 'Vallejo Model Color',
   type: ['core'],
@@ -1146,7 +1146,7 @@ export const modelColorUSDarkGreen: PaintDetailsVallejo = {
 };
 
 export const modelColorRefractiveGreen: PaintDetailsVallejo = {
-  name: 'US Dark Green',
+  name: 'Refractive Green',
   number: '70.890',
   category: 'Vallejo Model Color',
   type: ['core'],
@@ -1850,7 +1850,7 @@ export const modelColorPaleBlue: PaintDetailsVallejo = {
 };
 
 export const modelColorLightGreenBlue: PaintDetailsVallejo = {
-  name: 'Pale Blue',
+  name: 'Light Green Blue',
   number: '70.972',
   category: 'Vallejo Model Color',
   type: ['core'],

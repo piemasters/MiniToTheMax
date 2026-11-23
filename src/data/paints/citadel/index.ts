@@ -1,9 +1,33 @@
-export { airPaints } from './air';
-export { basePaints } from './base';
-export { contrastPaints } from './contrast';
-export { dryPaints } from './dry';
-export { layerPaints } from './layer';
-export { shadePaints } from './shade';
-export { sprayPaints } from './spray';
-export { technicalPaints } from './technical';
-export { toneProPaints } from './tone-pro';
+import { airPaints } from './air';
+import { basePaints } from './base';
+import { contrastPaints } from './contrast';
+import { dryPaints } from './dry';
+import { layerPaints } from './layer';
+import { shadePaints } from './shade';
+import { sprayPaints } from './spray';
+import { technicalPaints } from './technical';
+import { toneProPaints } from './tone-pro';
+
+export {
+  airPaints,
+  basePaints,
+  contrastPaints,
+  dryPaints,
+  layerPaints,
+  shadePaints,
+  sprayPaints,
+  technicalPaints,
+  toneProPaints,
+};
+
+export const citadelPaints = [
+  ...airPaints,
+  ...basePaints,
+  ...contrastPaints,
+  ...dryPaints,
+  ...layerPaints,
+  ...shadePaints,
+  ...sprayPaints,
+  ...technicalPaints,
+  ...toneProPaints,
+];

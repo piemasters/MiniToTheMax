@@ -1,21 +1,19 @@
-import { FC } from 'react';
-import { textToId } from './util/textToId';
-import type { PaintCompany, PaintDetails } from './types';
+import { memo } from 'react';
+import { paintId } from '../../util/paintId';
+import type { PaintDetails } from '../../types';
 import { brands } from './brands';
 import { gradientId } from './shared/gradientId';
 import { PaintGradient } from './shared/PaintGradient';
 import { PaintShape } from './shared/PaintShape';
 import { potViewBox, SWATCH_HEIGHT, SWATCH_WIDTH } from './shared/potViewBox';
 
-export const Paint: FC<{ paint: PaintDetails }> = ({ paint }) => {
-  const brand = brands[paint.company as PaintCompany];
-  if (!brand) return null;
-
-  const { category, company, gradient, hex, name } = paint;
+export const Paint = memo(function Paint({ paint }: { paint: PaintDetails }) {
+  const brand = brands[paint.company];
+  const { category, gradient, hex, name } = paint;
 
   return (
     <div
-      data-testid={`paint_${textToId(company)}_${textToId(name)}_${textToId(category)}`}
+      data-testid={`paint_${paintId(paint)}`}
       className="inline-block m-1 w-15"
     >
       <div className="flex flex-col justify-center">
@@ -24,6 +22,7 @@ export const Paint: FC<{ paint: PaintDetails }> = ({ paint }) => {
             <svg
               viewBox={potViewBox(brand.bounds(paint))}
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
               height={SWATCH_HEIGHT}
               width={SWATCH_WIDTH}
             >
@@ -48,6 +47,6 @@ export const Paint: FC<{ paint: PaintDetails }> = ({ paint }) => {
       </div>
     </div>
   );
-};
+});
 
 export default Paint;

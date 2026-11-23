@@ -1,4 +1,4 @@
-import type { PaintDetailsCitadel } from '../types';
+import type { PaintDetailsCitadel } from '../../../types';
 import type { BrandRenderer } from '../shared/BrandRenderer';
 import { gradientId } from '../shared/gradientId';
 import { radialGradient, verticalGradient } from '../shared/PaintGradient';

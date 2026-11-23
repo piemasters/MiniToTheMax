@@ -1,4 +1,4 @@
-import type { PaintCompany } from './types';
+import type { PaintCompany } from '../../types';
 import type { BrandRenderer } from './shared/BrandRenderer';
 import { citadel } from './citadel';
 import { vallejo } from './vallejo';

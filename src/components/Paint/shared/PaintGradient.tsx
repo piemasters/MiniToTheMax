@@ -1,4 +1,4 @@
-import type { PaintGradient as PaintGradientStop } from '../types';
+import type { PaintGradient as PaintGradientStop } from '../../../types';
 
 export type GradientSpec =
   | { kind: 'linear'; x1: string; y1: string; x2: string; y2: string }
