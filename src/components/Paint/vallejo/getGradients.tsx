@@ -16,7 +16,7 @@ export const getGradients = ({
   name: string;
 }) => {
   if (gradient) {
-    const gradients: JSX.Element[] = [];
+    const gradients: ReactElement[] = [];
     if (type.includes('shade')) {
       gradients.push(
         <linearGradient

@@ -15,7 +15,8 @@ import {
   liquidMetalPaints,
   modelColorPaints,
   xpressColorPaints,
-} from '../data/paints';
+} from '../data/paints/vallejo';
+import { smartColorPaints } from '../data/paints/ionic';
 import { textToId } from './textToId';
 import { sortPaints } from './sortPaints';
 
@@ -36,6 +37,8 @@ export const getAllSortedPaints = (): PaintDetails[] => {
     ...modelColorPaints,
     ...xpressColorPaints,
     ...liquidMetalPaints,
+    // ionic
+    ...smartColorPaints,
   ];
 
   // Remove duplicates using a Set

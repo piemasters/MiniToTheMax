@@ -1,5 +1,6 @@
 import {
   CitadelPaintCategories,
+  IonicPaintCategories,
   PaintCategory,
   PaintDetails,
   VallejoPaintCategories,
@@ -11,9 +12,8 @@ const allPaints = getAllSortedPaints();
 const paintCategoryPriority = [
   ...CitadelPaintCategories,
   ...VallejoPaintCategories,
+  ...IonicPaintCategories,
 ] as const;
-
-// type category = (typeof paintCategoryPriority)[number];
 
 export const getPaint = (
   name: string,

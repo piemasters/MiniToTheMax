@@ -17,7 +17,7 @@ export const getGradients = ({
 }) => {
   if (!gradient) return null;
 
-  const gradients: JSX.Element[] = [];
+  const gradients: ReactElement[] = [];
 
   if (category === 'Citadel Contrast') {
     gradients.push(

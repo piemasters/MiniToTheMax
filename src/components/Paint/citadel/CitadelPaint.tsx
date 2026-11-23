@@ -23,7 +23,7 @@ export const CitadelPaint: FC<PaintDetailsCitadel> = ({
   return (
     <div
       data-testid={`paint_${textToId(company)}_${textToId(name)}_${textToId(category)}`}
-      className="inline-block m-1 w-[60px]"
+      className="inline-block m-1 w-15"
     >
       <div className="flex flex-col justify-center">
         <div className="mb-2">

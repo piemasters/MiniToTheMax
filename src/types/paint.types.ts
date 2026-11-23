@@ -1,4 +1,4 @@
-export const PaintCompanies = ['Citadel', 'Vallejo'] as const;
+export const PaintCompanies = ['Citadel', 'Vallejo', 'Ionic'] as const;
 export type PaintCompany = (typeof PaintCompanies)[number];
 
 // Categories defined in priority order so the correct paint is rendered for duplicate names
@@ -28,9 +28,13 @@ export const VallejoPaintCategories = [
 ] as const;
 export type VallejoPaintCategory = (typeof VallejoPaintCategories)[number];
 
+export const IonicPaintCategories = ['IONIC Smart Colors'] as const;
+export type IonicPaintCategory = (typeof IonicPaintCategories)[number];
+
 export const AllPaintCategories = [
   ...CitadelPaintCategories,
   ...VallejoPaintCategories,
+  ...IonicPaintCategories,
 ];
 export type PaintCategory = (typeof AllPaintCategories)[number];
 
@@ -60,7 +64,7 @@ export type PaintColor = (typeof PaintColors)[number];
 
 export const PaintTypes = [
   'air',
-  'core', // Citadel base/layer, Vallejo default
+  'core', // Citadel base/layer, Vallejo default, Ionic smart colors
   'dry',
   'fluorescent',
   'ink',
@@ -121,4 +125,9 @@ export interface PaintDetailsVallejo extends PaintDetails {
   company: 'Vallejo';
   number: string;
   category: VallejoPaintCategory;
+}
+
+export interface PaintDetailsIonic extends PaintDetails {
+  company: 'Ionic';
+  category: IonicPaintCategory;
 }
