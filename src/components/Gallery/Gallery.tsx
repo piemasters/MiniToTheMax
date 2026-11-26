@@ -1,40 +1,45 @@
 import { FC } from 'react';
-import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import { Gallery as Photoswipe, Item } from 'react-photoswipe-gallery';
 
-export type GatsbyGalleryImage = {
-  full: IGatsbyImageData;
-  thumb: IGatsbyImageData;
-  title?: string;
-  alt?: string;
+export type GalleryImage = {
+  /** The square shown on the page. */
+  thumb: string;
+  /** The image opened from it, with its size. */
+  full: string;
+  width: number;
+  height: number;
 };
 
-/**
- * The Badge component is a combination of an image and text used to represent a category of posts
- */
+/** Thumbnails which open a full screen, swipeable view of each image. */
 export const Gallery: FC<{
-  gallery: GatsbyGalleryImage[];
+  gallery: GalleryImage[];
 }> = ({ gallery }) => {
   return (
     <div className="flex flex-wrap" data-testid="gallery">
-      <Photoswipe options={{}}>
-        {gallery.map((photo: GatsbyGalleryImage) => (
-          <Item
-            original={photo.full.images.fallback?.src}
-            thumbnail={photo.thumb.images.fallback?.src}
-            key={photo.thumb.images.fallback?.src}
-            height={photo.full.height}
-            width={photo.full.width}
+      <Photoswipe>
+        {gallery.map((image, index) => (
+          <Item<HTMLImageElement>
+            original={image.full}
+            thumbnail={image.thumb}
+            width={image.width}
+            height={image.height}
+            key={image.full}
           >
             {({ ref, open }) => (
-              <div ref={ref} onClick={open} aria-hidden="true">
-                <GatsbyImage
-                  onClick={open}
-                  image={photo.thumb}
-                  alt="Gallery Image"
-                  className="m-1 cursor-pointer"
+              <button
+                type="button"
+                onClick={open}
+                className="p-0 m-1 border-0 cursor-pointer"
+              >
+                <img
+                  ref={ref}
+                  src={image.thumb}
+                  alt={`Gallery image ${index + 1}`}
+                  width={169}
+                  height={169}
+                  loading="lazy"
                 />
-              </div>
+              </button>
             )}
           </Item>
         ))}

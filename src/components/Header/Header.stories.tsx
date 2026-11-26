@@ -22,6 +22,11 @@ const meta: Meta<typeof Header> = {
       defaultValue: [],
       control: { type: 'object' },
     },
+    currentPath: {
+      name: 'currentPath',
+      description: 'The address of the page being shown',
+      control: { type: 'text' },
+    },
   },
 };
 
@@ -32,12 +37,13 @@ export const Primary: Story = {
   args: {
     title: 'MiniToTheMax',
     logo: '/images/logo.webp',
+    currentPath: '/blog',
     pages: [
       { name: 'Home', url: '/' },
       { name: 'Blog', url: '/blog' },
       { name: 'Showcase', url: '/showcase' },
       { name: 'Backlog', url: '/backlog' },
-      { name: 'Paints', url: '/plaints' },
+      { name: 'Paints', url: '/paints' },
     ],
   },
 };

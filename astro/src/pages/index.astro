@@ -1,11 +1,13 @@
 ---
+import { Badges } from '../../../src/components/Badges/Badges';
+import { PostSummary } from '../../../src/components/PostSummary/PostSummary';
 import { Video } from '../../../src/components/Video/Video';
-import Badges from '../components/Badges.astro';
-import PostSummary from '../components/PostSummary.astro';
 import Layout from '../layouts/Layout.astro';
 import { getPublishedPosts } from '../lib/posts';
+import { summaryOf } from '../lib/summary';
 
 const [latest] = await getPublishedPosts();
+const summary = latest && (await summaryOf(latest));
 ---
 
 <Layout>
@@ -17,5 +19,5 @@ const [latest] = await getPublishedPosts();
     client:visible
   />
   <h2>Latest Post</h2>
-  {latest && <PostSummary post={latest} />}
+  {summary && <PostSummary {...summary} />}
 </Layout>

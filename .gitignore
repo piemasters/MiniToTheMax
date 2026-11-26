@@ -57,9 +57,9 @@ typings/
 .env.development
 .env.production
 
-# gatsby files
+# Output left by earlier Gatsby builds
 .cache/
-public
+/public
 
 # Mac files
 .DS_Store
@@ -77,6 +77,9 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Storybook build
+storybook-static/
 
 # Local Netlify folder
 .netlify

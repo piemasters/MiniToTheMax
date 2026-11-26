@@ -11,8 +11,8 @@ export const Badge: FC<{
     <div className="flex flex-col justify-end w-36" data-testid="badge">
       <img
         src={badgeImages[type]}
-        height="120px"
-        width="120px"
+        height={120}
+        width={120}
         alt=""
         className="mx-auto mb-2 opacity-90 hover:opacity-100"
         fetchPriority="high"

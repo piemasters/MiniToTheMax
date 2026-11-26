@@ -56,7 +56,7 @@ export const getGroupPages = async (field: 'tags' | 'categories') => {
   }));
 };
 
-/** The same slug Gatsby used. Disqus comments are keyed on it. */
+/** A post's address. Disqus comments are keyed on it, so it must not change. */
 export const slugOf = (post: Post) => `/${post.id}/`;
 
 /** Plain text from the start of a post, for summaries and meta descriptions. */

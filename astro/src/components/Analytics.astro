@@ -1,7 +1,7 @@
 ---
 /**
- * Google Analytics, set up as gatsby-plugin-google-gtag did: production builds
- * with a GA_TRACKING_ID only, respecting Do Not Track.
+ * Google Analytics: in production builds with a GA_TRACKING_ID only, and
+ * respecting Do Not Track.
  */
 const trackingId = import.meta.env.PROD && import.meta.env.GA_TRACKING_ID;
 const origin = 'https://www.googletagmanager.com';

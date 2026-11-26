@@ -1,9 +1,10 @@
 ---
 import type { GetStaticPathsOptions, Page } from 'astro';
-import Pagination from '../../components/Pagination.astro';
-import PostSummary from '../../components/PostSummary.astro';
+import { Pagination } from '../../../../src/components/Pagination/Pagination';
+import { PostSummary } from '../../../../src/components/PostSummary/PostSummary';
 import Layout from '../../layouts/Layout.astro';
 import { getPublishedPosts, type Post } from '../../lib/posts';
+import { summaryOf } from '../../lib/summary';
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   return paginate(await getPublishedPosts(), { pageSize: 10 });
@@ -14,15 +15,16 @@ interface Props {
 }
 
 const { page } = Astro.props;
+const summaries = await Promise.all(page.data.map(summaryOf));
 ---
 
 <Layout title="Blog" description="Blog Posts">
   <h1>Blog</h1>
   <ol class="m-0! list-none">
     {
-      page.data.map((post) => (
+      summaries.map((summary) => (
         <li>
-          <PostSummary post={post} tall />
+          <PostSummary {...summary} tall />
         </li>
       ))
     }
@@ -30,6 +32,7 @@ const { page } = Astro.props;
   <Pagination
     numPages={page.lastPage}
     currentPage={page.currentPage}
+    maxPages={8}
     baseUrl="/blog/"
   />
 </Layout>

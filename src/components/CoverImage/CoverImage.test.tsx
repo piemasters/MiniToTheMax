@@ -6,15 +6,9 @@ describe('CoverImage', () => {
     const { container } = render(
       <CoverImage
         image={{
-          layout: 'constrained',
+          src: 'cover.jpeg',
           width: 1800,
           height: 900,
-          backgroundColor: '#282828',
-          images: {
-            fallback: {
-              src: 'cover.jpeg',
-            },
-          },
         }}
         title={'Demo Post Title'}
       />

@@ -3,7 +3,6 @@
 exports[`PageLink renders correctly 1`] = `
 <div>
   <a
-    aria-current="page"
     class="text-blue-500 visited:text-blue-500 hover:text-blue-700 no-underline"
     data-testid="page-link"
     href="/"

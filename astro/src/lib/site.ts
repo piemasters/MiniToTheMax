@@ -1,4 +1,4 @@
-/** Mirrors siteMetadata in the Gatsby config. */
+/** Details used across the site. */
 export const site = {
   title: 'MiniToTheMax',
   author: 'MiniToTheMax',

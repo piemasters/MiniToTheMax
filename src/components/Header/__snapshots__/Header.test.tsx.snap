@@ -10,16 +10,15 @@ exports[`Header renders correctly 1`] = `
       class="flex flex-col max-w-3xl mx-auto"
     >
       <a
-        aria-current="page"
         class="flex items-center py-2 mb-2 text-gray-900 no-underline"
         data-testid="page-link"
         href="/"
       >
         <img
           alt="Logo"
-          height="60px"
+          height="60"
           src="/static/logo-37f736b45fa7360612c71ff66ce83af8.png"
-          width="60px"
+          width="60"
         />
         <h1
           class="mb-0! pl-4! text-2xl! md:text-3xl! lg:text-4xl! "
@@ -41,21 +40,21 @@ exports[`Header renders correctly 1`] = `
         <a
           class="p-1 text-sm font-bold text-gray-600 no-underline md:p-2 lg:p-2 md:text-md hover:text-red-700"
           data-testid="page-link"
-          href="/blog"
+          href="/blog/"
         >
           Blog
         </a>
         <a
           class="p-1 text-sm font-bold text-gray-600 no-underline md:p-2 lg:p-2 md:text-md hover:text-red-700"
           data-testid="page-link"
-          href="/showcase"
+          href="/showcase/"
         >
           Showcase
         </a>
         <a
           class="p-1 text-sm font-bold text-gray-600 no-underline md:p-2 lg:p-2 md:text-md hover:text-red-700"
           data-testid="page-link"
-          href="/backlog"
+          href="/backlog/"
         >
           Backlog
         </a>

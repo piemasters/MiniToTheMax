@@ -44,11 +44,9 @@ export const Badges: FC = () => {
       {badges.map((badge: BadgeNames) => {
         return (
           <PageLink
-            to={kebabCase(badge)}
+            to={`/${kebabCase(badge)}`}
             key={badge}
             className="flex flex-col no-underline opacity-90 hover:opacity-100"
-            type={'cover'}
-            direction={'up'}
           >
             <Badge type={badge} />
           </PageLink>

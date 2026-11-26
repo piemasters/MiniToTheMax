@@ -1,4 +1,4 @@
-const { extractPaintReferences } = require('./extractPaintReferences');
+import { extractPaintReferences } from './extractPaintReferences';
 
 describe('extractPaintReferences', () => {
   it('reads every quoting style, with and without a category', () => {

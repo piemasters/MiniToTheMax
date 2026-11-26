@@ -1,10 +1,10 @@
 ---
 import { Footer } from '../../../src/components/Footer/Footer';
+import { Header } from '../../../src/components/Header/Header';
 import logo from '../../../content/assets/images/logo.webp';
 import Analytics from '../components/Analytics.astro';
-import Header from '../components/Header.astro';
 import { faviconUrl, iconSizes, iconUrl } from '../lib/icons';
-import { site } from '../lib/site';
+import { navLinks, site } from '../lib/site';
 import '../styles/site.css';
 
 interface Props {
@@ -62,7 +62,12 @@ const imageUrl = new URL(image, Astro.site);
   </head>
   <body>
     <div class="flex flex-col min-h-screen">
-      <Header />
+      <Header
+        title={site.title}
+        logo={logo.src}
+        pages={navLinks}
+        currentPath={Astro.url.pathname}
+      />
       <main
         class:list={['w-full px-4 mx-auto grow', wide ? 'max-w-7xl' : 'max-w-3xl']}
       >

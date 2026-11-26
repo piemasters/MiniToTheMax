@@ -1,7 +1,8 @@
 ---
 import { readdirSync } from 'node:fs';
-import CoverCategory from '../../components/CoverCategory.astro';
+import { CoverCategory } from '../../../../src/components/CoverCategory/CoverCategory';
 import Layout from '../../layouts/Layout.astro';
+import { coverImage } from '../../lib/images';
 import { getPublishedPosts, slugOf, type Post } from '../../lib/posts';
 
 export async function getStaticPaths() {
@@ -11,7 +12,7 @@ export async function getStaticPaths() {
       .filter((entry) => entry.isDirectory())
       .map((entry) => entry.name);
 
-  // Only the first hyphen is replaced, as in gatsby-node.js
+  // Only the first hyphen is replaced, which the existing addresses rely on
   const titleCase = (folder: string) =>
     folder
       .replace(/-/, ' ')
@@ -48,19 +49,18 @@ interface Props {
 }
 
 const { type, name, posts } = Astro.props;
+const covers = await Promise.all(
+  posts.map(async (post) => ({
+    slug: slugOf(post),
+    title: post.data.title,
+    img: await coverImage(post.data.featuredImage),
+  }))
+);
 ---
 
 <Layout title={name} description={`${type} articles on the subject of ${name}`}>
   <h1>{name}</h1>
   <ul>
-    {
-      posts.map((post) => (
-        <CoverCategory
-          slug={slugOf(post)}
-          title={post.data.title}
-          image={post.data.featuredImage}
-        />
-      ))
-    }
+    {covers.map((cover) => <CoverCategory {...cover} />)}
   </ul>
 </Layout>

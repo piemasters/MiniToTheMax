@@ -1,5 +1,5 @@
 import { act, fireEvent, render, screen, within } from '@testing-library/react';
-import Paints from '../../pages/paints';
+import { PaintsExplorer } from './PaintsExplorer';
 
 // Drawing ~900 real SVG swatches per render makes these tests crawl, so use a
 // light stand-in that honours the same contract: the test id, and a button
@@ -54,15 +54,6 @@ jest.mock('../../data/paints', () => {
     ),
   };
 });
-
-// The page chrome pulls in Gatsby queries that aren't relevant here
-jest.mock('../../layouts/layout', () => ({
-  __esModule: true,
-  default: ({ children }: { children: React.ReactNode }) => <>{children}</>,
-}));
-jest.mock('../stateful/StatefulSeo/StatefulSeo', () => ({
-  StatefulSeo: () => null,
-}));
 
 const setViewport = (desktop: boolean) => {
   window.matchMedia = jest.fn().mockImplementation(() => ({
@@ -129,14 +120,14 @@ const paintName = (swatch: HTMLElement) => {
 describe('paints page', () => {
   describe('on a large screen', () => {
     it('has a page heading', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       expect(
         screen.getByRole('heading', { level: 1, name: 'Paints' })
       ).toBeInTheDocument();
     });
 
     it('shows the filters in a sidebar, with no drawer', () => {
-      const { container } = render(<Paints />);
+      const { container } = render(<PaintsExplorer />);
       expect(
         within(sidebar()).getByTestId('filter-group-company')
       ).toBeInTheDocument();
@@ -144,7 +135,7 @@ describe('paints page', () => {
     });
 
     it('starts the longest groups collapsed', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       expect(
         within(sidebar()).getByRole('button', { name: /^Category/ })
       ).toHaveAttribute('aria-expanded', 'false');
@@ -154,7 +145,7 @@ describe('paints page', () => {
     });
 
     it('marks a narrowed group, and summarises it while collapsed', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       const header = () =>
         within(sidebar()).getByRole('button', { name: /^Company/ });
       expect(header()).not.toHaveTextContent('(filtered)');
@@ -173,20 +164,20 @@ describe('paints page', () => {
       within(group('company')).getByLabelText('Select all') as HTMLInputElement;
 
     it('is ticked when everything is on', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       expect(selectAll().checked).toBe(true);
       expect(selectAll().indeterminate).toBe(false);
     });
 
     it('shows a dash when only some are on', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       hideVallejo();
       expect(selectAll().checked).toBe(false);
       expect(selectAll().indeterminate).toBe(true);
     });
 
     it('turns everything on from the partial state', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       hideVallejo();
       fireEvent.click(selectAll());
       expect(selectAll().checked).toBe(true);
@@ -195,7 +186,7 @@ describe('paints page', () => {
     });
 
     it('turns everything off from the full state, and everything back on', () => {
-      const { container } = render(<Paints />);
+      const { container } = render(<PaintsExplorer />);
       const all = swatches(container).length;
       fireEvent.click(selectAll());
       expect(selectAll().checked).toBe(false);
@@ -214,7 +205,7 @@ describe('paints page', () => {
       within(screen.getByTestId(testId)).getByText(/^\(\d+\)$/).textContent;
 
     it('still count an option that is unticked, instead of showing 0', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       const before = count('filter_vallejo');
       expect(before).not.toBe('(0)');
 
@@ -223,7 +214,7 @@ describe('paints page', () => {
     });
 
     it('react to the other filters', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       expect(count('filter_game_color')).not.toBe('(0)');
       const citadelBase = count('filter_base');
 
@@ -237,7 +228,7 @@ describe('paints page', () => {
 
   describe('search', () => {
     it('narrows the paints to those matching every word', () => {
-      const { container } = render(<Paints />);
+      const { container } = render(<PaintsExplorer />);
       const all = swatches(container).length;
 
       typeSearch('mephiston red');
@@ -250,7 +241,7 @@ describe('paints page', () => {
     });
 
     it('adds a chip, which clears the search when removed', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       typeSearch('mephiston');
       fireEvent.click(
         chips().getByRole('button', { name: 'Remove Search: “mephiston”' })
@@ -260,7 +251,7 @@ describe('paints page', () => {
     });
 
     it('announces the new count', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       const status = screen.getByText(/paints? match(es)?$/);
       const before = status.textContent;
       typeSearch('mephiston');
@@ -270,7 +261,7 @@ describe('paints page', () => {
 
   describe('when nothing matches', () => {
     it('says so, and clears everything from the message', () => {
-      const { container } = render(<Paints />);
+      const { container } = render(<PaintsExplorer />);
       const all = swatches(container).length;
       typeSearch('zzzzqqqq');
       hideVallejo();
@@ -290,7 +281,7 @@ describe('paints page', () => {
 
   describe('sort', () => {
     it('starts on the default order, with "closest" unavailable', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       expect(sort().value).toBe('default');
       expect(
         within(sort()).getByRole('option', { name: /closest/i })
@@ -298,7 +289,7 @@ describe('paints page', () => {
     });
 
     it('can order the paints by name', () => {
-      const { container } = render(<Paints />);
+      const { container } = render(<PaintsExplorer />);
       fireEvent.change(sort(), { target: { value: 'name' } });
 
       const names = swatches(container).slice(0, 60).map(paintName);
@@ -307,7 +298,7 @@ describe('paints page', () => {
     });
 
     it('switches to "closest" when a color is matched, and back when not', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       fireEvent.click(screen.getByLabelText('Match a color'));
       expect(sort().value).toBe('closest');
       expect(
@@ -319,7 +310,7 @@ describe('paints page', () => {
     });
 
     it('keeps a sort the visitor chose when a color is matched', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       fireEvent.change(sort(), { target: { value: 'hue' } });
       fireEvent.click(screen.getByLabelText('Match a color'));
       expect(sort().value).toBe('hue');
@@ -329,7 +320,7 @@ describe('paints page', () => {
   describe('URL', () => {
     it('restores filters, search and sort from the address', () => {
       setUrl('?x-company=Vallejo&q=gold&sort=name');
-      render(<Paints />);
+      render(<PaintsExplorer />);
 
       expect(search().value).toBe('gold');
       expect(sort().value).toBe('name');
@@ -342,7 +333,7 @@ describe('paints page', () => {
 
     it('restores a color match, with its closeness', () => {
       setUrl('?hex=336699&delta=22');
-      render(<Paints />);
+      render(<PaintsExplorer />);
       expect(
         chips().getByRole('button', {
           name: 'Remove color match #336699 ±22',
@@ -352,7 +343,7 @@ describe('paints page', () => {
     });
 
     it('writes changes back, and removes them when cleared', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       hideVallejo();
       expect(window.location.search).toContain('x-company=Vallejo');
 
@@ -366,7 +357,7 @@ describe('paints page', () => {
 
     it('leaves unrelated params in place', () => {
       setUrl('?utm_source=newsletter');
-      render(<Paints />);
+      render(<PaintsExplorer />);
       hideVallejo();
       expect(window.location.search).toContain('utm_source=newsletter');
       expect(window.location.search).toContain('x-company=Vallejo');
@@ -374,14 +365,14 @@ describe('paints page', () => {
 
     it('does not wipe the address before applying it', () => {
       setUrl('?q=gold');
-      render(<Paints />);
+      render(<PaintsExplorer />);
       expect(window.location.search).toBe('?q=gold');
     });
   });
 
   describe('active filter chips', () => {
     it('appear when a filter narrows the results, and remove it again', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       expect(activeFilters()).toBeNull();
 
       hideVallejo();
@@ -395,7 +386,7 @@ describe('paints page', () => {
     });
 
     it('clear everything at once, leaving the picked color alone', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       hideVallejo();
       fireEvent.click(screen.getByLabelText('Match a color'));
       expect(
@@ -415,7 +406,7 @@ describe('paints page', () => {
       fireEvent.change(hexField(), { target: { value } });
 
     it('shows the current color, and follows the picker', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       expect(hexField().value).toBe('#B22222');
 
       fireEvent.change(screen.getByLabelText('Color'), {
@@ -425,7 +416,7 @@ describe('paints page', () => {
     });
 
     it('applies a full hex as soon as it is typed', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       type('#00ff00');
       expect(
         chips().getByRole('button', { name: 'Remove color match #00FF00 ±15' })
@@ -433,7 +424,7 @@ describe('paints page', () => {
     });
 
     it('does not expand shorthand until typing is done', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       type('#0f0');
       expect(activeFilters()).toBeNull();
       expect(hexField().value).toBe('#0f0');
@@ -446,7 +437,7 @@ describe('paints page', () => {
     });
 
     it('also applies on Enter', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       type('abc');
       fireEvent.keyDown(hexField(), { key: 'Enter' });
       expect(
@@ -455,7 +446,7 @@ describe('paints page', () => {
     });
 
     it('flags an invalid value once leaving the field, and clears it on typing', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       type('nope');
       expect(hexField()).not.toHaveAttribute('aria-invalid');
 
@@ -472,7 +463,7 @@ describe('paints page', () => {
     });
 
     it('goes back to the current color when left empty', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       type('');
       fireEvent.blur(hexField());
       expect(hexField().value).toBe('#B22222');
@@ -480,7 +471,7 @@ describe('paints page', () => {
     });
 
     it('offers the eyedropper only where the browser has one', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       expect(screen.queryByText('Pick from screen')).toBeNull();
     });
 
@@ -488,7 +479,7 @@ describe('paints page', () => {
       (window as unknown as { EyeDropper: unknown }).EyeDropper = class {
         open = jest.fn().mockResolvedValue({ sRGBHex: '#112233' });
       };
-      render(<Paints />);
+      render(<PaintsExplorer />);
       fireEvent.click(screen.getByText('Pick from screen'));
 
       // The eyedropper answers asynchronously
@@ -508,7 +499,7 @@ describe('paints page', () => {
       (window as unknown as { EyeDropper: unknown }).EyeDropper = class {
         open = jest.fn().mockRejectedValue(new DOMException('', 'AbortError'));
       };
-      render(<Paints />);
+      render(<PaintsExplorer />);
       fireEvent.click(screen.getByText('Pick from screen'));
       await Promise.resolve();
       expect(activeFilters()).toBeNull();
@@ -520,7 +511,7 @@ describe('paints page', () => {
       container.querySelector<HTMLElement>('[data-testid^="paint_"] button')!;
 
     it('opens from a swatch, naming the paint', () => {
-      const { container } = render(<Paints />);
+      const { container } = render(<PaintsExplorer />);
       const swatch = firstSwatch(container);
       const name = paintName(swatch.closest<HTMLElement>('[data-testid]')!);
 
@@ -530,7 +521,7 @@ describe('paints page', () => {
     });
 
     it('offers to close, and to find similar paints', () => {
-      const { container } = render(<Paints />);
+      const { container } = render(<PaintsExplorer />);
       fireEvent.click(firstSwatch(container));
       const dialog = screen.getByRole('dialog');
       expect(
@@ -541,7 +532,7 @@ describe('paints page', () => {
     });
 
     it('finds similar paints from its hex', () => {
-      const { container } = render(<Paints />);
+      const { container } = render(<PaintsExplorer />);
       const swatch = firstSwatch(container);
       const hex = swatch.getAttribute('aria-label')!.split(', ').pop()!;
       fireEvent.click(swatch);
@@ -566,7 +557,7 @@ describe('paints page', () => {
     const bar = () => within(screen.getByTestId('mobile-filter-bar'));
 
     it('puts the filters in a drawer instead of the sidebar', () => {
-      const { container } = render(<Paints />);
+      const { container } = render(<PaintsExplorer />);
       expect(
         within(sidebar()).queryByTestId('filter-group-company')
       ).toBeNull();
@@ -574,7 +565,7 @@ describe('paints page', () => {
     });
 
     it('opens the drawer from the Filters button', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       expect(screen.queryByRole('dialog')).toBeNull();
 
       fireEvent.click(bar().getByRole('button', { name: 'Filters' }));
@@ -585,7 +576,7 @@ describe('paints page', () => {
     });
 
     it('counts active filters on the Filters button', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       fireEvent.click(bar().getByRole('button', { name: 'Filters' }));
       hideVallejo();
       expect(
@@ -594,7 +585,7 @@ describe('paints page', () => {
     });
 
     it('closes the drawer with the results button', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       fireEvent.click(bar().getByRole('button', { name: 'Filters' }));
       fireEvent.click(
         within(screen.getByRole('dialog')).getByRole('button', {
@@ -605,7 +596,7 @@ describe('paints page', () => {
     });
 
     it('still shows search and sort above the paints', () => {
-      render(<Paints />);
+      render(<PaintsExplorer />);
       expect(search()).toBeInTheDocument();
       expect(sort()).toBeInTheDocument();
     });
@@ -625,7 +616,7 @@ describe('editing my paints', () => {
     swatches(container)[0].querySelector('button') as HTMLButtonElement;
 
   it('turns the swatches into owned toggles, and back', () => {
-    const { container } = render(<Paints />);
+    const { container } = render(<PaintsExplorer />);
     typeSearch('mephiston');
     expect(firstSwatch(container)).not.toHaveAttribute('aria-pressed');
 
@@ -644,7 +635,7 @@ describe('editing my paints', () => {
   });
 
   it('marks everything shown, and only that, with an undo', () => {
-    const { container } = render(<Paints />);
+    const { container } = render(<PaintsExplorer />);
     typeSearch('mephiston');
     const shown = swatches(container).length;
     startEditing();
@@ -666,7 +657,7 @@ describe('editing my paints', () => {
   });
 
   it('unmarks what is shown but keeps the wishlist, and undo restores it', () => {
-    const { container } = render(<Paints />);
+    const { container } = render(<PaintsExplorer />);
     typeSearch('mephiston');
     startEditing();
     fireEvent.click(editor().getByRole('button', { name: /^Mark/ }));
@@ -687,7 +678,7 @@ describe('editing my paints', () => {
   });
 
   it('keeps focus in the grid when marking a paint filters it out', () => {
-    const { container } = render(<Paints />);
+    const { container } = render(<PaintsExplorer />);
     typeSearch('gold');
     fireEvent.click(within(group('my_paints')).getByLabelText('Not owned'));
     startEditing();

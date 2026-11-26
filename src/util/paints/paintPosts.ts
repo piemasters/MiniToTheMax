@@ -1,8 +1,7 @@
 import type { PaintCategory } from '../../types';
+import { SEPARATOR } from './extractPaintReferences';
 import { getPaint } from './getPaint';
 import { paintId } from './paintId';
-
-const SEPARATOR = '::';
 
 export interface PostLink {
   title: string;

@@ -12,8 +12,6 @@ export const PostTag: FC<{
         <PageLink
           key={name}
           to={`/${type}/${kebabCase(name)}/`}
-          type={'cover'}
-          direction={'up'}
           className="no-underline"
         >
           {name}

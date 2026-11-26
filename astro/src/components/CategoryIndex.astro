@@ -1,6 +1,7 @@
 ---
+import { CoverCategory } from '../../../src/components/CoverCategory/CoverCategory';
 import Layout from '../layouts/Layout.astro';
-import CoverCategory from './CoverCategory.astro';
+import { coverImage } from '../lib/images';
 
 /** A section's front page: a banner for each of its categories. */
 interface Props {
@@ -10,9 +11,15 @@ interface Props {
 }
 
 const { title, description, categories } = Astro.props;
+const covers = await Promise.all(
+  categories.map(async ({ image, ...category }) => ({
+    ...category,
+    img: await coverImage(image),
+  }))
+);
 ---
 
 <Layout title={title} description={description}>
   <h1>{title}</h1>
-  {categories.map((category) => <CoverCategory {...category} />)}
+  {covers.map((cover) => <CoverCategory {...cover} />)}
 </Layout>

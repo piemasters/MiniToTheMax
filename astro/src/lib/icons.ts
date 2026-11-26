@@ -6,7 +6,7 @@ import sharp from 'sharp';
 // Relative to the astro folder, where the commands are run
 const source = readFileSync(resolve('../content/assets/images/icon.png'));
 
-/** The sizes offered to devices, as gatsby-plugin-manifest made them. */
+/** The sizes offered to devices. */
 export const iconSizes = [48, 72, 96, 144, 192, 256, 384, 512];
 
 /** Changes with the source image, so browsers fetch a new icon. */

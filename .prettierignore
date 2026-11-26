@@ -2,3 +2,6 @@
 package.json
 package-lock.json
 public
+astro/dist
+astro/.astro
+storybook-static

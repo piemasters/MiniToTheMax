@@ -2,9 +2,6 @@
 @import 'photoswipe/dist/photoswipe.css';
 
 @source "../components";
-@source "../layouts";
-@source "../pages";
-@source "../templates";
 
 @theme {
   --shadow-3xl: 6px 6px 60px 5px rgba(0, 0, 0, 0.7);
@@ -26,10 +23,6 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
-}
-
-.gatsby-resp-image-wrapper {
-  width: 100%;
 }
 
 .post-body a:-webkit-any-link {

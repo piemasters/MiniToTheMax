@@ -6,21 +6,21 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'astro/config';
 
-// The Gatsby project this is migrating from; its content/ and src/ are reused.
+// The site's content/ and shared src/ sit above this folder.
 const repoRoot = fileURLToPath(new URL('..', import.meta.url));
 const sharedSrc = fileURLToPath(new URL('../src/', import.meta.url)).replaceAll(
   '\\',
   '/'
 );
 
-// Settings come from the environment (as in CI) or the Gatsby project's files
+// Settings come from the environment (as in CI) or the files in the root
 const mode = process.argv.includes('dev') ? 'development' : 'production';
 const envFile = `${repoRoot}.env.${mode}`;
 if (existsSync(envFile)) process.loadEnvFile(envFile);
 
 /**
- * The shared components expect an imported image to be its URL, as in Gatsby,
- * where Astro would give an object describing it.
+ * The shared components use an imported image as its URL, as Jest and Storybook
+ * give it, where Astro would give an object describing it.
  */
 const sharedImagesAsUrls = {
   name: 'shared-images-as-urls',
@@ -50,21 +50,17 @@ export default defineConfig({
       ),
     },
     plugins: [sharedImagesAsUrls, tailwindcss()],
-    // Tailwind runs as a Vite plugin, so ignore the Gatsby postcss.config.js
+    // Tailwind runs as a Vite plugin here; postcss.config.js is for Storybook
     css: { postcss: {} },
     // Shared components live outside this folder and would otherwise pick up
-    // the second copy of React in the root node_modules
+    // the second copy of React in the root node_modules, directly or through a
+    // package which uses it. Those named here must also be in package.json.
     resolve: {
-      dedupe: ['react', 'react-dom'],
-      alias: [
-        {
-          find: /^gatsby$/,
-          replacement: fileURLToPath(
-            new URL('./src/shims/gatsby.tsx', import.meta.url)
-          ),
-        },
-      ],
+      dedupe: ['react', 'react-dom', 'react-photoswipe-gallery', 'photoswipe'],
     },
+    // Prepared when the development server starts. Found any later, it reloads
+    // them mid-visit and the page ends up with two copies of React
+    optimizeDeps: { include: ['react-photoswipe-gallery', 'disqus-react'] },
     server: { fs: { allow: [repoRoot] } },
   },
 });

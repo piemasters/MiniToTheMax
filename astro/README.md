@@ -1,6 +1,6 @@
-# Astro migration trial
+# The Astro site
 
-Builds the posts with Astro, reusing `../content` and `../src`. The Gatsby site is unaffected.
+Builds the site from `../content` and the shared components in `../src`.
 
 Needs Node 22 or later, and the root dependencies installed too (`yarn` in the repo root).
 
@@ -15,7 +15,7 @@ Settings come from the environment, or from the root `.env.development` (`yarn d
 
 | Setting | Used for |
 |---|---|
-| `GATSBY_DISQUS_NAME` | Comments. The name is unchanged so that existing setups keep working |
+| `GATSBY_DISQUS_NAME` | Comments (Disqus) |
 | `GA_TRACKING_ID` | Analytics, in production builds only |
 
 ## Preview deployment
@@ -24,7 +24,7 @@ Pushing the `astro` branch runs [astro-preview.yaml](../.github/workflows/astro-
 
 Preview builds leave analytics out. To include it, set the GitHub repository variable `PREVIEW_ANALYTICS` to `true`.
 
-## Not ported yet
+## Still to do
 
+- Production deployment: `deploy.yaml` still publishes the old Gatsby output folder
 - Blurred image placeholders
-- Tests, Storybook and the production deployment
