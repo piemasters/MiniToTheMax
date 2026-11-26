@@ -19398,7 +19398,7 @@ __metadata:
     react-test-renderer: 19.3.1
     sharp: 0.35.5
     start-server-and-test: 3.0.13
-    storybook: 10.6.5
+    storybook: 10.6.8
     tailwindcss: 4.3.5
     ts-loader: 9.6.2
     typescript: 7.0.2
@@ -23234,9 +23234,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:10.6.5":
-  version: 10.6.5
-  resolution: "storybook@npm:10.6.5"
+"storybook@npm:10.6.8":
+  version: 10.6.8
+  resolution: "storybook@npm:10.6.8"
   dependencies:
     "@storybook/global": ^5.0.0
     "@storybook/icons": ^2.0.2
@@ -23268,7 +23268,7 @@ __metadata:
       optional: true
   bin:
     storybook: ./dist/bin/dispatcher.js
-  checksum: eef040dec8e07ba5682ff46ed1ed3dd3e3ee50717f9646a81088e35a53714d570cb3c70c56facc6ab4c859e6728f469d2f566b71e1acfb7df76c8729fe8423cc
+  checksum: 9f77cdbc1ab4d41784e8ff2788f29a29ed742917c5082ebc67af0a65cd086f91eb3fedad77fcc4068b57e6bcef30bfc75650128b8e0e5d6155e2747827215deb
   languageName: node
   linkType: hard
 
