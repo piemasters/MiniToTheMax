@@ -1,9 +1,9 @@
 import { readdirSync, readFileSync } from 'fs';
 import { join, relative } from 'path';
-import type { PaintCategory } from '../types';
+import type { PaintCategory } from '../../types';
 import { getPaint } from './getPaint';
 
-const contentDir = join(__dirname, '../../content');
+const contentDir = join(__dirname, '../../../content');
 const allowedProps = new Set(['name', 'category']);
 
 // Matches name='x', name="x", name={'x'} and name={"x"}

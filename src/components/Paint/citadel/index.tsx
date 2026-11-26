@@ -1,6 +1,5 @@
 import type { PaintDetailsCitadel } from '../../../types';
 import type { BrandRenderer } from '../shared/BrandRenderer';
-import { gradientId } from '../shared/gradientId';
 import { radialGradient, verticalGradient } from '../shared/PaintGradient';
 import { CitadelText } from './CitadelText';
 import { getImage } from './getImage';
@@ -32,10 +31,10 @@ export const citadel: BrandRenderer<PaintDetailsCitadel> = {
     return radialGradient('translate(25 32) scale(39)');
   },
 
-  defs: ({ category, hex, gloss }) =>
+  defs: ({ gloss }, ids) =>
     gloss && (
       <radialGradient
-        id={gradientId(category, hex, 'gloss_gradient')}
+        id={ids.gloss}
         cx="0"
         cy="0"
         r="1"
@@ -47,17 +46,22 @@ export const citadel: BrandRenderer<PaintDetailsCitadel> = {
       </radialGradient>
     ),
 
-  overlay: ({ category, hex, gloss, gradient }) => (
+  overlay: ({ category, hex, gloss, gradient }, ids) => (
     <>
       {gloss && (
         <path
           strokeWidth="0"
           transform="translate(3 -12), rotate(8), scale(.9 1)"
           d={glossPath}
-          fill={`url(#${gradientId(category, hex, 'gloss_gradient')})`}
+          fill={`url(#${ids.gloss})`}
         />
       )}
-      <CitadelText category={category} hex={hex} gradient={gradient} />
+      <CitadelText
+        category={category}
+        hex={hex}
+        gradient={gradient}
+        clipId={ids.clip}
+      />
     </>
   ),
 

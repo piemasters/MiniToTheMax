@@ -1,4 +1,4 @@
-import { PaintDetails } from '../types';
+import { PaintDetails } from '../../types';
 
 export const sortPaints = (a: PaintDetails, b: PaintDetails): number => {
   // Compare company names

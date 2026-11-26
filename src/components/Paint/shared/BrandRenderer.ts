@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import type { PaintDetails } from '../../../types';
+import type { PaintIds } from './paintIds';
 import type { GradientSpec } from './PaintGradient';
 
 /**
@@ -28,9 +29,9 @@ export interface BrandRenderer<P extends PaintDetails = PaintDetails> {
   /** Only used when the paint has a `gradient`. */
   gradient(paint: P): GradientSpec;
   /** Extra `<defs>` children, rendered alongside the main gradient. */
-  defs?(paint: P): ReactNode;
+  defs?(paint: P, ids: PaintIds): ReactNode;
   /** Drawn on top of the shape: badges, gloss highlights, etc. */
-  overlay?(paint: P): ReactNode;
+  overlay?(paint: P, ids: PaintIds): ReactNode;
   /** Replaces the whole SVG when it returns something, e.g. a photo. */
   image?(paint: P): ReactNode;
   /** Text under the swatch. Defaults to the paint name. */

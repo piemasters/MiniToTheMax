@@ -1,5 +1,5 @@
-import type { PaintDetails } from '../types';
-import { textToId } from './textToId';
+import type { PaintDetails } from '../../types';
+import { textToId } from '../textToId';
 
 /** Unique key for a paint, e.g. `citadel_mephiston_red_citadel_base`. */
 export const paintId = ({

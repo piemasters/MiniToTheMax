@@ -1,4 +1,4 @@
-import type { PaintDetails } from '../types';
+import type { PaintDetails } from '../../types';
 import { getAllSortedPaints } from './getAllSortedPaints';
 
 const vallejoB: PaintDetails = {
@@ -47,7 +47,7 @@ const citadelAir: PaintDetails = {
   type: ['air'],
 };
 
-jest.mock('../data/paints', () => ({
+jest.mock('../../data/paints', () => ({
   // Deliberately unsorted
   get allPaints() {
     return [vallejoB, ionicA, vallejoA, citadelBase, citadelAir];

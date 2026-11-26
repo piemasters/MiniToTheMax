@@ -4,7 +4,7 @@ import {
   PaintColors,
   PaintCompanies,
   PaintTypes,
-} from '../types';
+} from '../../types';
 import type { AllPaintFilters, PaintFilters } from './togglePaints';
 
 const toFilters = (values: readonly string[]): PaintFilters =>

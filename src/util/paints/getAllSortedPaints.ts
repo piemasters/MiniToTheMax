@@ -1,5 +1,5 @@
-import type { PaintDetails } from '../types';
-import { allPaints } from '../data/paints';
+import type { PaintDetails } from '../../types';
+import { allPaints } from '../../data/paints';
 import { sortPaints } from './sortPaints';
 
 let cached: PaintDetails[] | undefined;

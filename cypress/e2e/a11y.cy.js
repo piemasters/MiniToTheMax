@@ -19,3 +19,18 @@ describe('Accessibility checks', () => {
       .should('not.have.css', 'outline-width', '1px');
   });
 });
+
+// axe walks ~1,100 inline SVGs, which takes longer than the default 4s
+describe('Paints page accessibility', { defaultCommandTimeout: 60000 }, () => {
+  beforeEach(() => {
+    cy.visit('/paints');
+    cy.injectAxe();
+  });
+  it('Has no detectable a11y violations on load', () => {
+    cy.checkA11y();
+  });
+  it('Has no detectable a11y violations with a search and filters applied', () => {
+    cy.findByLabelText('Search').type('red');
+    cy.checkA11y();
+  });
+});

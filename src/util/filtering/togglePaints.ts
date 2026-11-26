@@ -1,5 +1,5 @@
-import { PaintDetails } from '../types';
-import { getAllSortedPaints } from './getAllSortedPaints';
+import { PaintDetails } from '../../types';
+import { getAllSortedPaints } from '../paints/getAllSortedPaints';
 
 export const FilterFields = [
   'company',
@@ -13,9 +13,16 @@ export type FilterField = (typeof FilterFields)[number];
 export type PaintFilters = Record<string, boolean>;
 export type AllPaintFilters = Record<FilterField, PaintFilters>;
 
-export const togglePaints = (filters: AllPaintFilters): PaintDetails[] => {
+/**
+ * Paints allowed by the filters. Pass `except` to ignore one group, which is how
+ * an option's count answers "how many would I get if I ticked this?".
+ */
+export const togglePaints = (
+  filters: AllPaintFilters,
+  except?: FilterField
+): PaintDetails[] => {
   // Create a map of inactive filters for each type
-  const activeFilters = FilterFields.map(
+  const activeFilters = FilterFields.filter((field) => field !== except).map(
     (field) =>
       [
         field,

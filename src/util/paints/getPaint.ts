@@ -1,4 +1,4 @@
-import { AllPaintCategories, PaintCategory, PaintDetails } from '../types';
+import { AllPaintCategories, PaintCategory, PaintDetails } from '../../types';
 import { getAllSortedPaints } from './getAllSortedPaints';
 
 const allPaints = getAllSortedPaints();

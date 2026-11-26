@@ -1,65 +1,298 @@
-import { ReactNode, StrictMode, useMemo, useState } from 'react';
+import { graphql, type PageProps } from 'gatsby';
+import {
+  type ReactNode,
+  StrictMode,
+  useCallback,
+  useEffect,
+  useId,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import Layout from '../layouts/layout';
 import { Paint } from '../components/Paint/Paint';
+import { ActiveFilters } from '../components/PaintFilters/ActiveFilters';
+import { EditPaintsButton } from '../components/PaintFilters/EditPaintsButton';
+import { FilterDrawer } from '../components/PaintFilters/FilterDrawer';
+import { FilterPanel } from '../components/PaintFilters/FilterPanel';
+import { MyPaintsEditor } from '../components/PaintFilters/MyPaintsEditor';
+import { PaintDetailsDialog } from '../components/PaintFilters/PaintDetailsDialog';
+import { ResultsToolbar } from '../components/PaintFilters/ResultsToolbar';
+import { usePaintQuery } from '../components/PaintFilters/usePaintQuery';
 import { StatefulSeo as Seo } from '../components/stateful/StatefulSeo/StatefulSeo';
+import type { PaintDetails } from '../types';
+import { getStatus } from '../util/paints/collection';
+import { paintId } from '../util/paints/paintId';
+import { buildPaintPosts, type PaintPostNode } from '../util/paints/paintPosts';
+import { useCollectionEdits } from '../util/paints/useCollectionEdits';
+import { useFitViewportHeight } from '../util/hooks/useFitViewportHeight';
+import { useMediaQuery } from '../util/hooks/useMediaQuery';
 
-import { getCategoryCompany, type PaintDetails } from '../types';
-import { initialFilters } from '../util/paintFilters';
-import {
-  FilterFields,
-  type AllPaintFilters,
-  type FilterField,
-  type PaintFilters,
-  togglePaints,
-} from '../util/togglePaints';
-import { textToId } from '../util/textToId';
-import { paintId } from '../util/paintId';
-import { clsx } from '../util/clsx';
+const plural = (count: number) => (count === 1 ? 'paint' : 'paints');
 
-export const Paints = (): ReactNode => {
-  const [allFilters, setAllFilters] = useState<AllPaintFilters>(initialFilters);
-  const filteredPaints = useMemo(() => togglePaints(allFilters), [allFilters]);
+interface PaintsPageData {
+  posts: { nodes: PaintPostNode[] };
+}
 
-  const updateFilter = (type: FilterField, field: string) =>
-    setAllFilters((prev) => ({
-      ...prev,
-      [type]: { ...prev[type], [field]: !prev[type][field] },
-    }));
+export const Paints = ({
+  data,
+}: Partial<PageProps<PaintsPageData>>): ReactNode => {
+  const {
+    query,
+    collection,
+    setStatus,
+    updateCollection,
+    setCollectionFilter,
+    results,
+    counts,
+    activeFilters,
+    updateFilter,
+    toggleAll,
+    setColor,
+    setSearch,
+    setSort,
+    removeActiveFilter,
+    clearAll,
+    findSimilar,
+  } = usePaintQuery();
 
-  // If anything in the group is enabled, disable everything; otherwise enable all
-  const toggleAll = (type: FilterField) =>
-    setAllFilters((prev) => {
-      const enable = Object.values(prev[type]).every((value) => !value);
-      return {
-        ...prev,
-        [type]: Object.fromEntries(
-          Object.keys(prev[type]).map((key) => [key, enable])
-        ),
-      };
-    });
+  // Filters sit in a sidebar from `lg` up and in a slide-in drawer below it.
+  // Server rendering assumes the sidebar; CSS hides it on small screens
+  // until the client has worked out which one applies.
+  const isDesktop = useMediaQuery('(min-width: 64rem)', true);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  // The sidebar scrolls on its own, sized to the window so it never needs the
+  // page to be scrolled to reach the bottom of the filters
+  const sidebarRef = useRef<HTMLElement>(null);
+  const searchRef = useRef<HTMLInputElement>(null);
+  const focusSearch = useCallback(() => searchRef.current?.focus(), []);
+  useFitViewportHeight(sidebarRef, isDesktop);
+  useEffect(() => {
+    if (isDesktop) setDrawerOpen(false);
+  }, [isDesktop]);
+
+  // The paint whose details are showing. It is kept after closing so its content
+  // doesn't vanish while the dialog animates out.
+  const [selected, setSelected] = useState<PaintDetails | null>(null);
+  const [detailsOpen, setDetailsOpen] = useState(false);
+  // Live posts only, as on the site itself; drafts are visible while developing
+  const paintPosts = useMemo(
+    () =>
+      buildPaintPosts(
+        data?.posts.nodes ?? [],
+        process.env.NODE_ENV === 'production'
+      ),
+    [data]
+  );
+  const collectionCounts = useMemo(() => {
+    const statuses = Object.values(collection);
+    return {
+      owned: statuses.filter((status) => status === 'owned').length,
+      wishlist: statuses.filter((status) => status === 'wishlist').length,
+    };
+  }, [collection]);
+  const selectPaint = useCallback((paint: PaintDetails) => {
+    setSelected(paint);
+    setDetailsOpen(true);
+  }, []);
+
+  // While editing, tapping a swatch toggles "owned" instead of opening details
+  const [editing, setEditing] = useState(false);
+  const edits = useCollectionEdits(updateCollection);
+  const { apply, reset } = edits;
+  const changeEditing = useCallback(
+    (next: boolean) => {
+      setEditing(next);
+      if (!next) reset();
+    },
+    [reset]
+  );
+  const editorId = useId();
+  const gridRef = useRef<HTMLDivElement>(null);
+  const editToggleRef = useRef<HTMLButtonElement>(null);
+  // Where the tapped swatch was, in case the filters now leave it out
+  const tapped = useRef<number | null>(null);
+  const toggleOwned = useCallback(
+    (paint: PaintDetails) => {
+      const index = [
+        ...(gridRef.current?.querySelectorAll('button') ?? []),
+      ].indexOf(document.activeElement as HTMLButtonElement);
+      tapped.current = index < 0 ? null : index;
+      const id = paintId(paint);
+      apply((current) => {
+        const owned = current[id] === 'owned';
+        return {
+          changes: { [id]: owned ? null : 'owned' },
+          message: owned
+            ? `Unmarked ${paint.name}.`
+            : `Marked ${paint.name} as owned.`,
+        };
+      });
+    },
+    [apply]
+  );
+  // If that swatch has gone, move focus to the one now in its place
+  useEffect(() => {
+    const index = tapped.current;
+    if (index === null) return;
+    tapped.current = null;
+    if (document.activeElement !== document.body) return;
+    const buttons = gridRef.current?.querySelectorAll('button');
+    const next = buttons?.[Math.min(index, buttons.length - 1)];
+    (next ?? editToggleRef.current)?.focus();
+  }, [results]);
+
+  const panel = (headingLevel: 2 | 3) => (
+    <FilterPanel
+      filters={query.filters}
+      colorFilter={query.color}
+      counts={counts}
+      headingLevel={headingLevel}
+      onToggle={updateFilter}
+      onToggleAll={toggleAll}
+      onColorChange={setColor}
+      collectionFilter={query.collection}
+      collectionCounts={collectionCounts}
+      onCollectionChange={setCollectionFilter}
+    />
+  );
 
   return (
     <StrictMode>
-      <Layout>
-        <h1>Paints ({filteredPaints.length})</h1>
-        <hr />
-        {FilterFields.map((field) => (
-          <FilterGroup
-            key={field}
-            filters={allFilters[field]}
-            filteredPaints={filteredPaints}
-            type={field}
-            checked={Object.values(allFilters[field]).some(Boolean)}
-            updateFilter={updateFilter}
-            toggleAll={() => toggleAll(field)}
-          />
-        ))}
-        <br />
-        <div className="grid justify-center w-full grid-cols-6 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12">
-          {filteredPaints.map((paint) => (
-            <Paint paint={paint} key={paintId(paint)} />
-          ))}
+      <Layout wide>
+        <h1 className="sr-only">Paints</h1>
+        <div className="mt-4 lg:grid lg:grid-cols-[18rem_minmax(0,1fr)] lg:items-start lg:gap-6">
+          <aside
+            ref={sidebarRef}
+            aria-label="Paint filters"
+            className="hidden! lg:block! sticky top-4 max-h-[calc(100dvh-2rem)] overflow-y-auto border rounded"
+          >
+            {isDesktop && (
+              <>
+                <div className="flex items-center justify-between px-2 py-3 border-b">
+                  <h2 className="m-0! text-base!">Filters</h2>
+                  <span className="text-sm text-gray-600">
+                    {results.length} {plural(results.length)}
+                  </span>
+                </div>
+                {panel(3)}
+              </>
+            )}
+          </aside>
+
+          <div>
+            {/* Small screens: always-reachable button that opens the drawer */}
+            <div
+              data-testid="mobile-filter-bar"
+              className="sticky top-0 z-10 flex items-center justify-between gap-3 py-2 mb-2 bg-white border-b lg:hidden"
+            >
+              <button
+                type="button"
+                onClick={() => setDrawerOpen(true)}
+                aria-haspopup="dialog"
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm! font-bold! bg-white border border-gray-400 rounded cursor-pointer hover:bg-gray-50"
+              >
+                Filters
+                {activeFilters.length > 0 && (
+                  <span className="px-2 text-xs text-white bg-gray-800 rounded-full">
+                    {activeFilters.length}
+                  </span>
+                )}
+              </button>
+              <span className="text-sm text-gray-600">
+                {results.length} {plural(results.length)}
+              </span>
+            </div>
+
+            <ResultsToolbar
+              search={query.search}
+              onSearchChange={setSearch}
+              sort={query.sort}
+              onSortChange={setSort}
+              colorEnabled={query.color.enabled}
+              searchRef={searchRef}
+              action={
+                <EditPaintsButton
+                  ref={editToggleRef}
+                  editing={editing}
+                  onEditingChange={changeEditing}
+                  panelId={editorId}
+                />
+              }
+            />
+            <ActiveFilters
+              filters={activeFilters}
+              onRemove={removeActiveFilter}
+              onClearAll={clearAll}
+              focusWhenEmpty={focusSearch}
+            />
+            <MyPaintsEditor
+              id={editorId}
+              editing={editing}
+              results={results}
+              collection={collection}
+              edits={edits}
+            />
+            <p role="status" className="sr-only">
+              {results.length}{' '}
+              {results.length === 1 ? 'paint matches' : 'paints match'}
+            </p>
+
+            {results.length === 0 ? (
+              <div className="flex flex-col items-center gap-2 px-4 py-12 text-center">
+                <p className="m-0! text-lg font-bold">No paints match</p>
+                <p className="m-0! text-sm text-gray-600">
+                  Try removing a filter, or widening the color match.
+                </p>
+                <button
+                  type="button"
+                  onClick={clearAll}
+                  className="px-4 py-2 mt-2 text-sm! font-bold! text-white bg-gray-800 rounded cursor-pointer hover:bg-gray-700"
+                >
+                  Clear all filters
+                </button>
+              </div>
+            ) : (
+              <div
+                ref={gridRef}
+                className="paint-grid grid justify-center justify-items-center w-full grid-cols-6 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-8 xl:grid-cols-12"
+              >
+                {results.map((paint) => (
+                  <Paint
+                    paint={paint}
+                    key={paintId(paint)}
+                    status={getStatus(collection, paint)}
+                    onSelect={editing ? toggleOwned : selectPaint}
+                    selectOwned={editing}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
         </div>
+
+        {!isDesktop && (
+          <FilterDrawer
+            open={drawerOpen}
+            onOpenChange={setDrawerOpen}
+            resultCount={results.length}
+          >
+            {panel(2)}
+          </FilterDrawer>
+        )}
+
+        {selected && (
+          <PaintDetailsDialog
+            paint={selected}
+            open={detailsOpen}
+            onOpenChange={setDetailsOpen}
+            onFindSimilar={findSimilar}
+            onSelectPaint={selectPaint}
+            status={getStatus(collection, selected)}
+            onStatusChange={(status) => setStatus(paintId(selected), status)}
+            posts={paintPosts[paintId(selected)]}
+          />
+        )}
       </Layout>
     </StrictMode>
   );
@@ -67,144 +300,22 @@ export const Paints = (): ReactNode => {
 
 export default Paints;
 
-const capitalise = (text: string) =>
-  text.replace(/\b\w/g, (l) => l.toUpperCase());
-
-const countMatching = (
-  paints: PaintDetails[],
-  type: FilterField,
-  key: string
-) =>
-  paints.filter((paint) => {
-    const value = paint[type];
-    return Array.isArray(value)
-      ? (value as readonly unknown[]).includes(key)
-      : value === key;
-  }).length;
-
-// [key, display name, checked]
-type FilterSection = { heading?: string; filters: [string, string, boolean][] };
-
-const FilterGroup = ({
-  filters,
-  filteredPaints,
-  type,
-  checked,
-  updateFilter,
-  toggleAll,
-}: {
-  filters: PaintFilters;
-  filteredPaints: PaintDetails[];
-  type: FilterField;
-  checked?: boolean;
-  updateFilter: (type: FilterField, field: string) => void;
-  toggleAll: () => void;
-}) => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
-  const title = capitalise(type);
-
-  // Categories are split up by company, with the company prefix dropped
-  // from the display name. Everything else is a single unheaded section.
-  const sections = useMemo((): FilterSection[] => {
-    const entries = Object.entries(filters);
-    if (type !== 'category') {
-      return [{ filters: entries.map(([key, value]) => [key, key, value]) }];
-    }
-
-    const byCompany = new Map<string, FilterSection>();
-    for (const [key, value] of entries) {
-      const company = getCategoryCompany(key);
-      if (!company) continue;
-      let section = byCompany.get(company);
-      if (!section) {
-        section = { heading: company, filters: [] };
-        byCompany.set(company, section);
-      }
-      const name = key.replace(new RegExp(`^${company}\\s*`, 'i'), '');
-      section.filters.push([key, name, value]);
-    }
-    return [...byCompany.values()];
-  }, [filters, type]);
-
-  return (
-    <div
-      data-testid={`filter-group-${textToId(title)}`}
-      className="py-2 border-b"
-    >
-      <div
-        className="flex items-center content-center justify-between px-2 py-3 cursor-pointer hover:bg-gray-50"
-        role="button"
-        tabIndex={0}
-        onClick={() => setIsCollapsed(!isCollapsed)}
-        onKeyDown={(e) =>
-          (e.key === 'Enter' || e.key === ' ') &&
-          setIsCollapsed((prev) => !prev)
+// Which posts show which paints, for each paint's details
+export const query = graphql`
+  query PaintsPage {
+    posts: allMdx(sort: { frontmatter: { date: DESC } }, limit: 2000) {
+      nodes {
+        fields {
+          slug
         }
-        aria-pressed={isCollapsed}
-      >
-        <h3 className="m-0!">{title}</h3>
-        <div
-          className={clsx(
-            isCollapsed ? 'border-b-2 border-r-2' : 'border-t-2 border-l-2',
-            'w-2 h-2 transform rotate-45 border-gray-600'
-          )}
-        />
-      </div>
-      {!isCollapsed && (
-        <div className="p-2">
-          <label className="flex items-center gap-2 mb-2 text-xs font-bold">
-            <input checked={checked} type="checkbox" onChange={toggleAll} />
-            Toggle All
-          </label>
-          <div className="w-full">
-            {sections.map(({ heading, filters: sectionFilters }) => (
-              <div key={`filter_group_${textToId(heading ?? type)}`}>
-                {heading && (
-                  <div className="w-full py-1 text-sm font-bold">{heading}</div>
-                )}
-                <div className="grid w-full grid-cols-2 mb-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4">
-                  {sectionFilters.map(([key, name, value]) => (
-                    <Filter
-                      key={`filter_${textToId(key)}`}
-                      name={name}
-                      value={value}
-                      toggle={() => updateFilter(type, key)}
-                      count={countMatching(filteredPaints, type, key)}
-                    />
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-    </div>
-  );
-};
-
-const Filter = ({
-  name,
-  value,
-  toggle,
-  count,
-}: {
-  name: string;
-  value: boolean;
-  toggle: () => void;
-  count: number;
-}) => {
-  return (
-    <div
-      data-testid={`filter_${textToId(name)}`}
-      className="flex items-center justify-between w-full px-2 text-sm border-r"
-    >
-      <label className="flex items-center gap-2">
-        <input name={name} checked={value} type="checkbox" onChange={toggle} />
-        {capitalise(name)}
-      </label>
-      <span className="text-xs text-gray-400">({count})</span>
-    </div>
-  );
-};
+        paintReferences
+        frontmatter {
+          title
+          published
+        }
+      }
+    }
+  }
+`;
 
 export const Head = () => <Seo title={'Paints'} pathname={'/paints'} />;

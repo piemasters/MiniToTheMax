@@ -1,4 +1,4 @@
-import { PaintDetails } from '../types';
+import { PaintDetails } from '../../types';
 import { getPaint } from './getPaint';
 
 // Mock data for paints

@@ -1,5 +1,5 @@
 import { getCategoryCompany } from '../../types';
-import { paintId } from '../../util/paintId';
+import { paintId } from '../../util/paints/paintId';
 import { allPaints } from '.';
 
 describe('paint data', () => {

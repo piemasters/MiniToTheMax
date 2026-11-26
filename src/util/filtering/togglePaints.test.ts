@@ -1,4 +1,4 @@
-import { PaintDetails } from '../types';
+import { PaintDetails } from '../../types';
 import { AllPaintFilters, togglePaints } from './togglePaints';
 
 // Mock data for paints
@@ -33,7 +33,7 @@ const mockPaints: PaintDetails[] = [
 ];
 
 // Mock getAllSortedPaints function
-jest.mock('./getAllSortedPaints', () => ({
+jest.mock('../paints/getAllSortedPaints', () => ({
   getAllSortedPaints: jest.fn(() => mockPaints),
 }));
 

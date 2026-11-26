@@ -1,7 +1,25 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 const kebabCase = require('lodash.kebabcase');
-const { readdirSync } = require('fs');
+const { readdirSync, readFileSync } = require('fs');
+const {
+  extractPaintReferences,
+} = require('./src/gatsby/extractPaintReferences');
+
+// The paints a post shows, read from its source when queried.
+module.exports.createResolvers = ({ createResolvers }) => {
+  createResolvers({
+    Mdx: {
+      paintReferences: {
+        type: '[String!]!',
+        resolve: (node) =>
+          extractPaintReferences(
+            readFileSync(node.internal.contentFilePath, 'utf8')
+          ),
+      },
+    },
+  });
+};
 
 module.exports.onCreateNode = ({ node, getNode, actions }) => {
   /**
