@@ -4,6 +4,9 @@
   "description": "Website for MiniToTheMax",
   "version": "1.0.1",
   "license": "MIT",
+  "engines": {
+    "node": ">=24.11.0 <26"
+  },
   "scripts": {
     "build": "yarn preoptimize&& gatsby build",
     "build-dev": "NODE_OPTIONS=--max-old-space-size=16384 GATSBY_CPU_COUNT=2 gatsby build",
