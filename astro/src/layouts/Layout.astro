@@ -1,6 +1,7 @@
 ---
 import { Footer } from '../../../src/components/Footer/Footer';
 import logo from '../../../content/assets/images/logo.webp';
+import Analytics from '../components/Analytics.astro';
 import Header from '../components/Header.astro';
 import { site } from '../lib/site';
 import '../styles/site.css';
@@ -34,11 +35,13 @@ const imageUrl = new URL(image, Astro.site);
     <meta name="description" content={description} />
     <meta name="image" content={imageUrl} />
     <link rel="canonical" href={url} />
+    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
     {article && <meta property="og:type" content="article" />}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={url} />
     <meta property="og:image" content={imageUrl} />
+    <Analytics />
   </head>
   <body>
     <div class="flex flex-col min-h-screen">

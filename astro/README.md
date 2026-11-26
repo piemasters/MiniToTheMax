@@ -13,8 +13,10 @@ Needs Node 22 or later, and the root dependencies installed too (`yarn` in the r
 
 Set `PUBLIC_DISQUS_NAME` in `astro/.env` to load comments.
 
+Analytics is added to production builds when `GA_TRACKING_ID` is set, either in the environment or in the root `.env.production`.
+
 ## Not ported yet
 
-- Sitemap, robots.txt, web manifest, favicons, analytics
+- robots.txt, web manifest, favicons
 - Blurred image placeholders
 - Tests, Storybook, CI and deployment

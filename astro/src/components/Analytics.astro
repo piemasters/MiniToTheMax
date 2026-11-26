@@ -1,0 +1,42 @@
+---
+/**
+ * Google Analytics, set up as gatsby-plugin-google-gtag did: production builds
+ * with a GA_TRACKING_ID only, respecting Do Not Track.
+ */
+const trackingId = import.meta.env.PROD && import.meta.env.GA_TRACKING_ID;
+const origin = 'https://www.googletagmanager.com';
+---
+
+{
+  trackingId && (
+    <>
+      <link rel="preconnect" href={origin} />
+      <link rel="dns-prefetch" href={origin} />
+      <script is:inline async src={`${origin}/gtag/js?id=${trackingId}`} />
+      <script is:inline define:vars={{ trackingId }}>
+        // Visitors who have opted out keep a cookie saying so
+        const disableStr = `ga-disable-${trackingId}`;
+        window.gaOptout = () => {
+          document.cookie = `${disableStr}=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/`;
+          window[disableStr] = true;
+        };
+        if (document.cookie.includes(`${disableStr}=true`)) {
+          window[disableStr] = true;
+        }
+
+        if (!(navigator.doNotTrack == '1' || window.doNotTrack == '1')) {
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function () {
+            window.dataLayer.push(arguments);
+          };
+          window.gtag('js', new Date());
+          // Each page is a full load, so this also records the page view
+          window.gtag('config', trackingId, {
+            anonymize_ip: true,
+            cookie_expires: 0,
+          });
+        }
+      </script>
+    </>
+  )
+}
