@@ -10,6 +10,7 @@ const badges: Partial<Record<VallejoPaintCategory, string>> = {
   'Vallejo Game Color': 'G',
   'Vallejo Model Color': 'M',
   'Vallejo Xpress Color': 'X',
+  'Vallejo Squidmar Color': 'S',
   'Vallejo Liquid Metal': 'LM',
 };
 
