@@ -1,0 +1,14 @@
+/** Mirrors siteMetadata in the Gatsby config. */
+export const site = {
+  title: 'MiniToTheMax',
+  author: 'MiniToTheMax',
+  description: 'An Aspiring Hobby & Painting Blog',
+};
+
+export const navLinks = [
+  { name: 'Home', url: '/' },
+  { name: 'Blog', url: '/blog' },
+  { name: 'Showcase', url: '/showcase' },
+  { name: 'Backlog', url: '/backlog' },
+  { name: 'Paints', url: '/paints' },
+];

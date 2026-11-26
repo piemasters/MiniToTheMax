@@ -1,0 +1,21 @@
+---
+import { Video } from '../../../src/components/Video/Video';
+import Badges from '../components/Badges.astro';
+import PostSummary from '../components/PostSummary.astro';
+import Layout from '../layouts/Layout.astro';
+import { getPublishedPosts } from '../lib/posts';
+
+const [latest] = await getPublishedPosts();
+---
+
+<Layout>
+  <Badges />
+  <h2>Latest Video</h2>
+  <Video
+    videoId="XzMjK8FXYg0"
+    title="Moonstone: Eric the Exalted"
+    client:visible
+  />
+  <h2>Latest Post</h2>
+  {latest && <PostSummary post={latest} />}
+</Layout>

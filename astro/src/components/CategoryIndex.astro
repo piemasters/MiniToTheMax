@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CoverCategory from './CoverCategory.astro';
+
+/** A section's front page: a banner for each of its categories. */
+interface Props {
+  title: string;
+  description: string;
+  categories: { title: string; slug: string; image: ImageMetadata }[];
+}
+
+const { title, description, categories } = Astro.props;
+---
+
+<Layout title={title} description={description}>
+  <h1>{title}</h1>
+  {categories.map((category) => <CoverCategory {...category} />)}
+</Layout>

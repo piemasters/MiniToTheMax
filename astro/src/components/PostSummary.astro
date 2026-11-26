@@ -1,0 +1,28 @@
+---
+import { excerptOf, slugOf, type Post } from '../lib/posts';
+import CoverImage from './CoverImage.astro';
+
+interface Props {
+  post: Post;
+  tall?: boolean;
+}
+
+const { post, tall } = Astro.props;
+const { title, date, featuredImage } = post.data;
+---
+
+<div
+  class="my-4 duration-300 bg-gray-100 hover:bg-gray-200 hover:shadow-3xl"
+  data-testid="post-summary"
+>
+  <a class="block no-underline" href={slugOf(post)}>
+    <CoverImage image={featuredImage} title={title} tall={tall} />
+    <div class="p-4 text-gray-600">
+      <p class="mb-2! text-xs font-bold">{date}</p>
+      <hr />
+      <p class="m-0 italic text-gray-600 text-xs/loose">
+        {excerptOf(post, 300)}
+      </p>
+    </div>
+  </a>
+</div>

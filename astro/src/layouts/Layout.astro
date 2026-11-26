@@ -1,0 +1,49 @@
+---
+import { Footer } from '../../../src/components/Footer/Footer';
+import logo from '../../../content/assets/images/logo.webp';
+import Header from '../components/Header.astro';
+import { site } from '../lib/site';
+import '../styles/site.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  article?: boolean;
+}
+
+const {
+  title = site.title,
+  description = site.description,
+  image = logo.src,
+  article = false,
+} = Astro.props;
+const url = new URL(Astro.url.pathname, Astro.site);
+const imageUrl = new URL(image, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="image" content={imageUrl} />
+    <link rel="canonical" href={url} />
+    {article && <meta property="og:type" content="article" />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={imageUrl} />
+  </head>
+  <body>
+    <div class="flex flex-col min-h-screen">
+      <Header />
+      <main class="w-full max-w-3xl px-4 mx-auto grow">
+        <slot />
+      </main>
+      <Footer author={site.author} />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+---
+import { readdirSync } from 'node:fs';
+import CoverCategory from '../../components/CoverCategory.astro';
+import Layout from '../../layouts/Layout.astro';
+import { getPublishedPosts, slugOf, type Post } from '../../lib/posts';
+
+export async function getStaticPaths() {
+  // Relative to the astro folder, where the commands are run
+  const directories = (path: string) =>
+    readdirSync(path, { withFileTypes: true })
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => entry.name);
+
+  // Only the first hyphen is replaced, as in gatsby-node.js
+  const titleCase = (folder: string) =>
+    folder
+      .replace(/-/, ' ')
+      .toLowerCase()
+      .split(' ')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+
+  const posts = await getPublishedPosts();
+
+  return directories('../content/blog').flatMap((root) =>
+    directories(`../content/blog/${root}`).map((category) => {
+      const type = titleCase(root);
+      const name = titleCase(category);
+      return {
+        params: { root, category },
+        props: {
+          type,
+          name,
+          posts: posts.filter(
+            ({ data }) =>
+              data.categories.includes(type) && data.categories.includes(name)
+          ),
+        },
+      };
+    })
+  );
+}
+
+interface Props {
+  type: string;
+  name: string;
+  posts: Post[];
+}
+
+const { type, name, posts } = Astro.props;
+---
+
+<Layout title={name} description={`${type} articles on the subject of ${name}`}>
+  <h1>{name}</h1>
+  <ul>
+    {
+      posts.map((post) => (
+        <CoverCategory
+          slug={slugOf(post)}
+          title={post.data.title}
+          image={post.data.featuredImage}
+        />
+      ))
+    }
+  </ul>
+</Layout>

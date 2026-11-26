@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Updates"
+  description="Quick updates on what I'm currently working on"
+>
+  <h1>Updates</h1>
+  <ul>
+    {
+      ['2013', '2014', '2015'].map((year) => (
+        <li>
+          <a href={`/updates/${year}`}>{year}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>

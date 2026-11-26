@@ -1,0 +1,18 @@
+---
+import { removeCategoryName } from '../../../src/components/CoverCategory/removeCategoryName';
+import CoverImage from './CoverImage.astro';
+
+interface Props {
+  slug: string;
+  title: string;
+  image: ImageMetadata;
+}
+
+const { slug, title, image } = Astro.props;
+---
+
+<div class="my-4 duration-300 hover:shadow-3xl" data-testid="cover-category">
+  <a href={slug} class="no-underline">
+    <CoverImage image={image} title={removeCategoryName(title)} />
+  </a>
+</div>

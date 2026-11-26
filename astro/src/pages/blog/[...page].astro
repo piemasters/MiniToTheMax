@@ -1,0 +1,35 @@
+---
+import type { GetStaticPathsOptions, Page } from 'astro';
+import Pagination from '../../components/Pagination.astro';
+import PostSummary from '../../components/PostSummary.astro';
+import Layout from '../../layouts/Layout.astro';
+import { getPublishedPosts, type Post } from '../../lib/posts';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  return paginate(await getPublishedPosts(), { pageSize: 10 });
+}
+
+interface Props {
+  page: Page<Post>;
+}
+
+const { page } = Astro.props;
+---
+
+<Layout title="Blog" description="Blog Posts">
+  <h1>Blog</h1>
+  <ol class="m-0! list-none">
+    {
+      page.data.map((post) => (
+        <li>
+          <PostSummary post={post} tall />
+        </li>
+      ))
+    }
+  </ol>
+  <Pagination
+    numPages={page.lastPage}
+    currentPage={page.currentPage}
+    baseUrl="/blog/"
+  />
+</Layout>
