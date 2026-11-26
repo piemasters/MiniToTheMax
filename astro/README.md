@@ -15,7 +15,6 @@ Set `PUBLIC_DISQUS_NAME` in `astro/.env` to load comments.
 
 ## Not ported yet
 
-- Paints page (the header link to it leads nowhere)
 - Sitemap, robots.txt, web manifest, favicons, analytics
 - Blurred image placeholders
 - Tests, Storybook, CI and deployment

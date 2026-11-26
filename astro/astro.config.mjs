@@ -35,7 +35,17 @@ export default defineConfig({
     css: { postcss: {} },
     // Shared components live outside this folder and would otherwise pick up
     // the second copy of React in the root node_modules
-    resolve: { dedupe: ['react', 'react-dom'] },
+    resolve: {
+      dedupe: ['react', 'react-dom'],
+      alias: [
+        {
+          find: /^gatsby$/,
+          replacement: fileURLToPath(
+            new URL('./src/shims/gatsby.tsx', import.meta.url)
+          ),
+        },
+      ],
+    },
     server: { fs: { allow: [repoRoot] } },
   },
 });
