@@ -13,8 +13,9 @@ const sharedSrc = fileURLToPath(new URL('../src/', import.meta.url)).replaceAll(
   '/'
 );
 
-// Settings come from the environment (as in CI) or the Gatsby project's file
-const envFile = `${repoRoot}.env.production`;
+// Settings come from the environment (as in CI) or the Gatsby project's files
+const mode = process.argv.includes('dev') ? 'development' : 'production';
+const envFile = `${repoRoot}.env.${mode}`;
 if (existsSync(envFile)) process.loadEnvFile(envFile);
 
 /**
@@ -43,6 +44,9 @@ export default defineConfig({
     define: {
       'import.meta.env.GA_TRACKING_ID': JSON.stringify(
         process.env.GA_TRACKING_ID ?? ''
+      ),
+      'import.meta.env.GATSBY_DISQUS_NAME': JSON.stringify(
+        process.env.GATSBY_DISQUS_NAME ?? ''
       ),
     },
     plugins: [sharedImagesAsUrls, tailwindcss()],

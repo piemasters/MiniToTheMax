@@ -3,6 +3,7 @@ export const site = {
   title: 'MiniToTheMax',
   author: 'MiniToTheMax',
   description: 'An Aspiring Hobby & Painting Blog',
+  themeColor: '#eb1c22',
 };
 
 export const navLinks = [

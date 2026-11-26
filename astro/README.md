@@ -11,12 +11,14 @@ Needs Node 22 or later, and the root dependencies installed too (`yarn` in the r
 | `yarn build:all` | Production build of every published post |
 | `yarn preview` | Serves the last build |
 
-Set `PUBLIC_DISQUS_NAME` in `astro/.env` to load comments.
+Settings come from the environment, or from the root `.env.development` (`yarn dev`) and `.env.production` (builds):
 
-Analytics is added to production builds when `GA_TRACKING_ID` is set, either in the environment or in the root `.env.production`.
+| Setting | Used for |
+|---|---|
+| `GATSBY_DISQUS_NAME` | Comments. The name is unchanged so that existing setups keep working |
+| `GA_TRACKING_ID` | Analytics, in production builds only |
 
 ## Not ported yet
 
-- robots.txt, web manifest, favicons
 - Blurred image placeholders
 - Tests, Storybook, CI and deployment

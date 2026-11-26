@@ -44,7 +44,7 @@ const images = await Promise.all(
   })
 );
 
-const disqus = import.meta.env.PUBLIC_DISQUS_NAME || 'disqusShortname';
+const disqus = import.meta.env.GATSBY_DISQUS_NAME || 'disqusShortname';
 ---
 
 <Layout

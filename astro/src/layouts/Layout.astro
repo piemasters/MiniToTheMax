@@ -3,6 +3,7 @@ import { Footer } from '../../../src/components/Footer/Footer';
 import logo from '../../../content/assets/images/logo.webp';
 import Analytics from '../components/Analytics.astro';
 import Header from '../components/Header.astro';
+import { faviconUrl, iconSizes, iconUrl } from '../lib/icons';
 import { site } from '../lib/site';
 import '../styles/site.css';
 
@@ -41,6 +42,22 @@ const imageUrl = new URL(image, Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:url" content={url} />
     <meta property="og:image" content={imageUrl} />
+    <meta name="theme-color" content={site.themeColor} />
+    <link rel="icon" href={faviconUrl} type="image/png" />
+    <link
+      rel="manifest"
+      href="/manifest.webmanifest"
+      crossorigin="anonymous"
+    />
+    {
+      iconSizes.map((size) => (
+        <link
+          rel="apple-touch-icon"
+          sizes={`${size}x${size}`}
+          href={iconUrl(size)}
+        />
+      ))
+    }
     <Analytics />
   </head>
   <body>
