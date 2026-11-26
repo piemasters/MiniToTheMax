@@ -6671,21 +6671,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-links@npm:10.6.5":
-  version: 10.6.5
-  resolution: "@storybook/addon-links@npm:10.6.5"
+"@storybook/addon-links@npm:10.6.8":
+  version: 10.6.8
+  resolution: "@storybook/addon-links@npm:10.6.8"
   dependencies:
     "@storybook/global": ^5.0.0
   peerDependencies:
     "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-    storybook: ^10.6.5
+    storybook: ^10.6.8
   peerDependenciesMeta:
     "@types/react":
       optional: true
     react:
       optional: true
-  checksum: 5bff5c1968bd7f4f691fcfc42ad3a3d86e3333c43451e298268d5abc2b49e1d3f40d0bf14e9de7433328df926fb94bf26dacdec12f3441eccca5b799a4f204fb
+  checksum: 84608896f480555b98afff5b03697f3e8d25c6695011380373697147f8b9736bb915308f74899b94d222542c05c76ad27fddb9619f491586cf7b804a187c923b
   languageName: node
   linkType: hard
 
@@ -19332,7 +19332,7 @@ __metadata:
     "@mdx-js/react": 3.1.1
     "@storybook/addon-a11y": 10.6.5
     "@storybook/addon-docs": 10.6.5
-    "@storybook/addon-links": 10.6.5
+    "@storybook/addon-links": 10.6.8
     "@storybook/react-vite": 10.6.5
     "@svgr/webpack": 8.1.0
     "@swc/core": 1.16.22
