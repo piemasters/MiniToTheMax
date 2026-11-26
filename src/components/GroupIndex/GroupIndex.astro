@@ -1,0 +1,29 @@
+---
+import kebabCase from 'lodash.kebabcase';
+import Layout from '../../layouts/Layout.astro';
+import { groupBy } from '../../lib/posts';
+
+/** Every tag, or every category, with its number of posts. */
+interface Props {
+  title: string;
+  field: 'tags' | 'categories';
+}
+
+const { title, field } = Astro.props;
+const groups = (await groupBy(field)).filter(({ count }) => count > 0);
+---
+
+<Layout title={title} description={`All blog ${field}`}>
+  <h1>{title}</h1>
+  <ul>
+    {
+      groups.map(({ value, count }) => (
+        <li>
+          <a href={`/${field}/${kebabCase(value)}/`}>
+            {value} ({count})
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>

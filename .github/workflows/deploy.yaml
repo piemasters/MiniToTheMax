@@ -6,6 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master' && github.actor != 'dependabot[bot]'
     steps:
+      # public/ now holds only static files, so publishing it would empty the
+      # live site. Remove this step when switching the deployment to Astro.
+      - name: Stop until deployment is switched to Astro
+        run: |
+          echo "::error::Production deployment has not been switched to Astro yet"
+          exit 1
+
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:

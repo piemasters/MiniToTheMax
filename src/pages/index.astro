@@ -1,0 +1,23 @@
+---
+import { Badges } from '../components/Badges/Badges';
+import { PostSummary } from '../components/PostSummary/PostSummary';
+import { Video } from '../components/Video/Video';
+import Layout from '../layouts/Layout.astro';
+import { getPublishedPosts } from '../lib/posts';
+import { summaryOf } from '../lib/summary';
+
+const [latest] = await getPublishedPosts();
+const summary = latest && (await summaryOf(latest));
+---
+
+<Layout>
+  <Badges />
+  <h2>Latest Video</h2>
+  <Video
+    videoId="XzMjK8FXYg0"
+    title="Moonstone: Eric the Exalted"
+    client:visible
+  />
+  <h2>Latest Post</h2>
+  {summary && <PostSummary {...summary} />}
+</Layout>

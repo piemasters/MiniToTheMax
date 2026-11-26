@@ -1,7 +1,6 @@
 .cache
 package.json
 package-lock.json
-public
-astro/dist
-astro/.astro
+dist
+.astro
 storybook-static

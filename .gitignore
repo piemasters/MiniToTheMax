@@ -57,9 +57,12 @@ typings/
 .env.development
 .env.production
 
-# Output left by earlier Gatsby builds
+# Astro
+dist/
+.astro/
+
+# Left by earlier Gatsby builds
 .cache/
-/public
 
 # Mac files
 .DS_Store

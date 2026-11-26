@@ -1,10 +1,10 @@
 import { FC } from 'react';
 import kebabCase from 'lodash.kebabcase';
-import tutorials from '../../../content/assets/images/tutorials-badge.webp';
-import showcase from '../../../content/assets/images/showcase-badge.webp';
-import battleReports from '../../../content/assets/images/battle-reports-badge.webp';
-import reviews from '../../../content/assets/images/reviews-badge.webp';
-import build from '../../../content/assets/images/build-badge.webp';
+import tutorials from '../../../content/assets/images/tutorials-badge.webp?url';
+import showcase from '../../../content/assets/images/showcase-badge.webp?url';
+import battleReports from '../../../content/assets/images/battle-reports-badge.webp?url';
+import reviews from '../../../content/assets/images/reviews-badge.webp?url';
+import build from '../../../content/assets/images/build-badge.webp?url';
 import { PageLink } from '../PageLink/PageLink';
 import { Badge } from './Badge/Badge';
 

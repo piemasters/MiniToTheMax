@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "target": "esnext",
     "jsx": "react-jsx",
-    "lib": ["dom", "esnext"],
+    "jsxImportSource": "react",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "strict": true,
     "noEmit": true,
     "skipLibCheck": true,
@@ -12,9 +14,8 @@
     "noUnusedLocals": false,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["jest", "@testing-library/jest-dom"]
+    "types": ["jest", "node", "@testing-library/jest-dom"]
   },
-  "include": ["src"],
-  "exclude": ["node_modules"],
-  "types": ["@testing-library/jest-dom"]
+  "include": [".astro/types.d.ts", "src"],
+  "exclude": ["node_modules", "dist"]
 }
