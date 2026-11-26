@@ -1,0 +1,65 @@
+# Builds the Astro site and publishes it to a Netlify preview address.
+# The live site is untouched: that is deploy.yaml, which builds Gatsby.
+name: 'Astro Preview'
+
+on:
+  push:
+    branches: [astro]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Only the newest push needs a preview
+concurrency:
+  group: astro-preview
+  cancel-in-progress: true
+
+jobs:
+  netlify-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      # The shared components in src/ find their packages here
+      - name: Install shared dependencies
+        run: yarn
+
+      - name: Install Astro dependencies
+        run: yarn install
+        working-directory: astro
+
+      # Only the processed images: Astro's other cached data can go stale
+      - name: Cache processed images
+        uses: actions/cache@v4
+        with:
+          path: astro/node_modules/.astro/assets
+          key: astro-images-${{ hashFiles('astro/yarn.lock', 'content/**/*.jpg', 'content/**/*.jpeg', 'content/**/*.png', 'content/**/*.webp') }}
+          restore-keys: astro-images-
+
+      - name: Build every post
+        run: yarn build:all
+        working-directory: astro
+        env:
+          NODE_OPTIONS: --max-old-space-size=6144
+          GATSBY_DISQUS_NAME: ${{ secrets.GATSBY_DISQUS_NAME }}
+          # Preview visits stay out of analytics unless the repository
+          # variable PREVIEW_ANALYTICS is set to true
+          GA_TRACKING_ID: ${{ vars.PREVIEW_ANALYTICS == 'true' && secrets.GA_TRACKING_ID || '' }}
+
+      # Without --prod this is a draft deploy, with a fixed alias
+      - name: Deploy preview to Netlify
+        run: >
+          npx --yes netlify-cli@27 deploy
+          --no-build
+          --dir=astro/dist
+          --alias=astro-preview
+          --message="Astro preview of ${GITHUB_SHA::8}"
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

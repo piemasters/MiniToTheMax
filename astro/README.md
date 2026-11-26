@@ -18,7 +18,13 @@ Settings come from the environment, or from the root `.env.development` (`yarn d
 | `GATSBY_DISQUS_NAME` | Comments. The name is unchanged so that existing setups keep working |
 | `GA_TRACKING_ID` | Analytics, in production builds only |
 
+## Preview deployment
+
+Pushing the `astro` branch runs [astro-preview.yaml](../.github/workflows/astro-preview.yaml), which builds every post and publishes a Netlify draft deploy under the alias `astro-preview`. The address is printed at the end of the run. The live site is not touched.
+
+Preview builds leave analytics out. To include it, set the GitHub repository variable `PREVIEW_ANALYTICS` to `true`.
+
 ## Not ported yet
 
 - Blurred image placeholders
-- Tests, Storybook, CI and deployment
+- Tests, Storybook and the production deployment
