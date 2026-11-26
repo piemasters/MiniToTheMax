@@ -7352,9 +7352,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:7.0.1":
-  version: 7.0.1
-  resolution: "@testing-library/jest-dom@npm:7.0.1"
+"@testing-library/jest-dom@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@testing-library/jest-dom@npm:8.0.0"
   dependencies:
     "@adobe/css-tools": ^4.4.0
     aria-query: ^5.0.0
@@ -7364,11 +7364,11 @@ __metadata:
     redent: ^3.0.0
   peerDependencies:
     "@testing-library/dom": ">=10 <11"
-    vitest: ">= 0.32"
+    vitest: ">=5 <6"
   peerDependenciesMeta:
     vitest:
       optional: true
-  checksum: 5f8616723f4fbd72483474f3e927a6361ee1565382185b4c5e6290c546e6b06a2714b04179b789fb85e62d4f7baf7d7c50ff217f79e60afa427d9a08b089662d
+  checksum: 14adb8a16a37b3ed2638c99c9951340f1175fd0d388cf62107c36c575684b3b9aa7cbb9c3f0c43ded6ba5a0ec6bb7b8dbd95a8acbdc531b4187ca8e628289aaa
   languageName: node
   linkType: hard
 
@@ -19339,7 +19339,7 @@ __metadata:
     "@swc/jest": 0.2.39
     "@tailwindcss/postcss": 4.3.3
     "@testing-library/cypress": 10.1.3
-    "@testing-library/jest-dom": 7.0.1
+    "@testing-library/jest-dom": 8.0.0
     "@testing-library/react": 16.3.3
     "@types/jest": 30.0.0
     "@types/lodash": 4.17.27
