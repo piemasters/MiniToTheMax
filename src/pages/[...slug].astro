@@ -3,6 +3,7 @@ import { getImage } from 'astro:assets';
 import { render } from 'astro:content';
 import { CoverImage } from '../components/CoverImage/CoverImage';
 import { Gallery } from '../components/Gallery/Gallery';
+import PostPaint from '../components/PostPaint/PostPaint';
 import { PostTag } from '../components/PostTag/PostTag';
 import { SimplePagination } from '../components/SimplePagination/SimplePagination';
 import { Comments } from '../components/Comments/Comments';
@@ -66,7 +67,7 @@ const disqus = import.meta.env.DISQUS_NAME || 'disqusShortname';
     <strong>Published</strong>{' '}
     {date}
   </div>
-  <div class="post-body"><Content /></div>
+  <div class="post-body"><Content components={{ Paint: PostPaint }} /></div>
   {
     images.length > 0 && (
       <div>

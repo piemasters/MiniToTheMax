@@ -4,7 +4,7 @@ import { resolve } from 'node:path';
 import sharp from 'sharp';
 
 // Relative to the project root, where the commands are run
-const source = readFileSync(resolve('content/assets/images/icon.png'));
+const source = readFileSync(resolve('src/assets/images/icon.png'));
 
 /** The sizes offered to devices. */
 export const iconSizes = [48, 72, 96, 144, 192, 256, 384, 512];

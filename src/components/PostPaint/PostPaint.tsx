@@ -1,10 +1,14 @@
 import React from 'react';
 
-import { Paint as BasePaint } from '../../src/components/Paint/Paint';
-import { getPaint } from '../../src/util/paints/getPaint';
-import { PaintCategory } from '../../src/types';
+import { Paint as BasePaint } from '../Paint/Paint';
+import { getPaint } from '../../util/paints/getPaint';
+import { PaintCategory } from '../../types';
 
-const Paint = ({
+/**
+ * `<Paint name="..." />` as written in posts, which don't need to import it:
+ * the post page supplies it.
+ */
+const PostPaint = ({
   name,
   category,
 }: {
@@ -26,4 +30,4 @@ const Paint = ({
   );
 };
 
-export default Paint;
+export default PostPaint;

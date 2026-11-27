@@ -5,6 +5,7 @@ A miniature painting hobby blog, built with [Astro](https://astro.build) and Rea
 | Folder | Holds |
 |---|---|
 | `content/` | Posts and images |
+| `src/assets/` | Images used by the site itself |
 | `src/pages/`, `src/layouts/` | The site's pages |
 | `src/components/` | Components, with their tests and stories |
 | `src/data/`, `src/util/` | Paint and backlog data, and utilities |
@@ -35,6 +36,10 @@ yarn dev
 | `yarn optimize` | Shrinks oversized images in `content/` |
 
 The sample is listed in `src/content.config.ts`. Set `ALL_POSTS=1` to develop with every post.
+
+## Writing posts
+
+Posts live in `content/blog/`, one folder each. Show a paint with `<Paint name="Abaddon Black" />`, adding `category="..."` where brands share a name. No import is needed.
 
 ## Settings
 

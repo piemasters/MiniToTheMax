@@ -34,7 +34,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: node_modules/.astro/assets
-          key: astro-images-${{ hashFiles('yarn.lock', 'content/**/*.jpg', 'content/**/*.jpeg', 'content/**/*.png', 'content/**/*.webp') }}
+          key: astro-images-${{ hashFiles('yarn.lock', 'content/**/*.jpg', 'content/**/*.jpeg', 'content/**/*.png', 'content/**/*.webp', 'src/assets/**') }}
           restore-keys: astro-images-
 
       - name: Build every post
