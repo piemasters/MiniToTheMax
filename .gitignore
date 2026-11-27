@@ -61,9 +61,6 @@ typings/
 dist/
 .astro/
 
-# Left by earlier Gatsby builds
-.cache/
-
 # Mac files
 .DS_Store
 .idea
