@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { slugOf, type Post } from '../../lib/posts';
+
+/** The posts with one tag, or in one category. */
+interface Props {
+  field: 'tags' | 'categories';
+  name: string;
+  posts: Post[];
+}
+
+const { field, name, posts } = Astro.props;
+const count = `${posts.length} post${posts.length === 1 ? '' : 's'}`;
+---
+
+<Layout title={name} description={name}>
+  <h1>{count} tagged with "{name}"</h1>
+  <ul>
+    {
+      posts.map((post) => (
+        <li>
+          <a href={slugOf(post)}>{post.data.title}</a>
+        </li>
+      ))
+    }
+  </ul>
+  <a href={`/${field}/`}>All {field}</a>
+</Layout>

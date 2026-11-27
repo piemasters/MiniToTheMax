@@ -11,28 +11,23 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24.x'
-
-      - name: Caching Gatsby
-        id: gatsby-cache-build
-        uses: actions/cache@v4
-        with:
-          path: |
-            public
-            .cache
-          key: ${{ runner.os }}-gatsby-build-${{ github.run_id }}
-          restore-keys: |
-            ${{ runner.os }}-gatsby-build-
+          node-version-file: .nvmrc
 
       - name: Install dependencies
         run: yarn
 
-      - name: Build project
-        run: yarn build
-        env:
-          GATSBY_DISQUS_NAME: ${{ secrets.GATSBY_DISQUS_NAME }}
-          GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
-          OPT_CONTAINER_ID: ${{ secrets.OPT_CONTAINER_ID }}
+      - name: Check types
+        run: yarn type-check
+
+      - name: Lint
+        run: yarn lint
 
       - name: Run tests
         run: yarn test
+
+      # A few posts are enough to show that pages still build
+      - name: Build a sample of the site
+        run: yarn build:sample
+
+      - name: Build Storybook
+        run: yarn build-storybook

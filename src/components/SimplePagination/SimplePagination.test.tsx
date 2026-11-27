@@ -4,12 +4,12 @@ import { SimplePagination } from './SimplePagination';
 describe('SimplePagination', () => {
   test('renders correctly', () => {
     const previous = {
-      slug: 'previous',
+      slug: '/previous/',
       title: 'The Previous Page',
     };
 
     const next = {
-      slug: 'next',
+      slug: '/next/',
       title: 'The Next Page',
     };
 

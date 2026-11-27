@@ -1,5 +1,5 @@
 import { create } from 'storybook/theming/create';
-import logo from '../content/assets/images/icon.png';
+import logo from '../src/assets/images/icon.png';
 
 export const theme = create({
   base: 'light',

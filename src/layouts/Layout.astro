@@ -1,0 +1,79 @@
+---
+import { Footer } from '../components/Footer/Footer';
+import { Header } from '../components/Header/Header';
+import logo from '../assets/images/logo.webp';
+import Analytics from '../components/Analytics/Analytics.astro';
+import { faviconUrl, iconSizes, iconUrl } from '../lib/icons';
+import { navLinks, site } from '../lib/site';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  article?: boolean;
+  /** Use the full page width instead of the narrow reading column. */
+  wide?: boolean;
+}
+
+const {
+  title = site.title,
+  description = site.description,
+  image = logo.src,
+  article = false,
+  wide = false,
+} = Astro.props;
+const url = new URL(Astro.url.pathname, Astro.site);
+const imageUrl = new URL(image, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="image" content={imageUrl} />
+    <link rel="canonical" href={url} />
+    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+    {article && <meta property="og:type" content="article" />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={imageUrl} />
+    <meta name="theme-color" content={site.themeColor} />
+    <link rel="icon" href={faviconUrl} type="image/png" />
+    <link
+      rel="manifest"
+      href="/manifest.webmanifest"
+      crossorigin="anonymous"
+    />
+    {
+      iconSizes.map((size) => (
+        <link
+          rel="apple-touch-icon"
+          sizes={`${size}x${size}`}
+          href={iconUrl(size)}
+        />
+      ))
+    }
+    <Analytics />
+  </head>
+  <body>
+    <div class="flex flex-col min-h-screen">
+      <Header
+        title={site.title}
+        logo={logo.src}
+        pages={navLinks}
+        currentPath={Astro.url.pathname}
+      />
+      <main
+        class:list={['w-full px-4 mx-auto grow', wide ? 'max-w-7xl' : 'max-w-3xl']}
+      >
+        <slot />
+      </main>
+      <Footer author={site.author} />
+    </div>
+  </body>
+</html>

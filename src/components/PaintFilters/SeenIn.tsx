@@ -1,7 +1,6 @@
-import { Link } from 'gatsby';
 import { useId, useState } from 'react';
 import type { PostLink } from '../../util/paints/paintPosts';
-import { clsx } from '../util';
+import { clsx } from '../../util/clsx';
 
 const COLLAPSED_POSTS = 4;
 
@@ -35,12 +34,12 @@ export const SeenIn = ({
       >
         {shown.map((post) => (
           <li key={post.slug} className="m-0! list-none!">
-            <Link
-              to={post.slug}
+            <a
+              href={post.slug}
               className="block px-3 py-2 no-underline! hover:bg-gray-50 hover:underline!"
             >
               {post.title}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>

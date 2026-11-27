@@ -1,0 +1,43 @@
+---
+import { Image } from 'astro:assets';
+import type { HTMLAttributes } from 'astro/types';
+import { placeholderOf } from '../../lib/placeholder';
+import { placeholderStyle } from '../../util/placeholderStyle';
+
+/**
+ * An image written in a post's text: `![description](file.jpg)`. The post page
+ * supplies this in place of a plain image.
+ */
+type Props = Omit<HTMLAttributes<'img'>, 'src'> & {
+  /** Images beside the post are processed; addresses are used as they are. */
+  src: ImageMetadata | string;
+};
+
+const { src, alt = '', ...props } = Astro.props;
+const style =
+  typeof src === 'string'
+    ? undefined
+    : placeholderStyle(await placeholderOf(src));
+const css =
+  style &&
+  `background-image:${style.backgroundImage};background-size:cover;background-position:center`;
+
+/** About the width of the reading column, which images never exceed. */
+const COLUMN_WIDTH = 750;
+---
+
+{
+  typeof src === 'string' ? (
+    <img {...props} src={src} alt={alt} />
+  ) : (
+    // Offers smaller sizes for narrow screens and larger for dense ones
+    <Image
+      {...(props as object)}
+      src={src}
+      alt={alt}
+      layout="constrained"
+      width={Math.min(src.width, COLUMN_WIDTH)}
+      style={css}
+    />
+  )
+}

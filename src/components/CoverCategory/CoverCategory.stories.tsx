@@ -30,26 +30,12 @@ type Story = StoryObj<typeof CoverCategory>;
 export const Primary: Story = {
   args: {
     img: {
-      layout: 'constrained', // "fullWidth" | "fixed";
-      backgroundColor: '#585858',
-      width: 1800,
-      height: 900,
-      images: {
-        fallback: {
-          src: '/images/example-cover.jpg',
-          srcSet:
-            '/images/example-cover.jpg 450w,\n/images/example-cover.jpg 900w,\n/images/example-cover.jpg 1800w',
-          sizes: '(min-width: 1800px) 1800px, 100vw',
-        },
-        sources: [
-          {
-            srcSet:
-              '/images/example-cover.jpg 450w,\n/images/example-cover.jpg 900w,\n/images/example-cover.jpg 1800w',
-            type: 'image/jpg',
-            sizes: '(min-width: 1800px) 1800px, 100vw',
-          },
-        ],
-      },
+      src: '/images/example-cover.jpg',
+      srcSet:
+        '/images/example-cover.jpg 450w, /images/example-cover.jpg 900w, /images/example-cover.jpg 1800w',
+      sizes: '(min-width: 750px) 750px, 100vw',
+      width: 750,
+      height: 375,
     },
     slug: `/showcase/board-games`,
     title: `Board Games`,

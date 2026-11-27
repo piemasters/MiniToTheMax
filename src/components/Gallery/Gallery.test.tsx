@@ -13,7 +13,8 @@ describe('Gallery', () => {
     const { container, getAllByRole } = render(
       <Gallery gallery={mockGallery} />
     );
-    expect(getAllByRole('img', { hidden: true })).toHaveLength(5);
+    expect(getAllByRole('img')).toHaveLength(5);
+    expect(getAllByRole('button')).toHaveLength(5);
     expect(container).toMatchSnapshot();
   });
 });

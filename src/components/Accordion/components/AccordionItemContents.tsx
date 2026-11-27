@@ -1,5 +1,5 @@
 import { HTMLProps, useContext, useRef } from 'react';
-import { clsx } from '../../util';
+import { clsx } from '../../../util/clsx';
 import { AccordionContext, AccordionSelectedType } from '../Accordion';
 
 export const AccordionItemContents = ({

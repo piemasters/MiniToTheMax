@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import PageLink from '../PageLink/PageLink';
+import { PageLink } from '../PageLink/PageLink';
 import { getPages } from './getPages';
 
 export const Pagination: FC<{
@@ -19,51 +19,28 @@ export const Pagination: FC<{
       <li className="list-none!">
         <PageLink
           to={`${baseUrl}`}
-          type={'cover'}
-          direction={'right'}
+          aria-label="First page"
           disabled={currentPage === 1}
           className="p-2 rounded no-underline text-blue-500 hover:bg-blue-500! hover:text-white"
         >
           &lt;&lt;
         </PageLink>
       </li>
-      {/* <li>
-        <PageLink
-          to={`${baseUrl}${currentPage - 1 === 1 ? '' : currentPage - 1}`}
-          type={'cover'}
-          direction={'right'}
-          disabled={currentPage === 1}
-        >
-          &lt;
-        </PageLink>
-      </li> */}
-      {pages.map((page: number, index: number) => (
-        <li key={index} className="list-none!">
+      {pages.map((page: number) => (
+        <li key={page} className="list-none!">
           <PageLink
             to={`${baseUrl}${page === 1 ? '' : page}`}
-            type={'cover'}
-            direction={page > currentPage ? 'left' : 'right'}
+            aria-current={page === currentPage ? 'page' : undefined}
             className={`py-2 px-3 rounded no-underline text-blue-500 hover:bg-blue-500! hover:text-white ${page === currentPage ? 'bg-blue-500! text-white' : ''}`}
           >
             {page}
           </PageLink>
         </li>
       ))}
-      {/* <li>
-        <PageLink
-          to={`${baseUrl}${currentPage + 1}`}
-          type={'cover'}
-          direction={'right'}
-          disabled={currentPage === numPages}
-        >
-          &gt;
-        </PageLink>
-      </li> */}
       <li className="list-none!">
         <PageLink
           to={`${baseUrl}${numPages}`}
-          type={'cover'}
-          direction={'right'}
+          aria-label="Last page"
           disabled={currentPage === numPages}
           className="p-2 rounded no-underline text-blue-500 hover:bg-blue-500! hover:text-white"
         >

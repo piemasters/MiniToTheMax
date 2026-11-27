@@ -15,7 +15,7 @@ import {
   useSuggestionPaints,
 } from '../../util/paints/useSuggestionPaints';
 import { getColorByBgColor } from '../Paint/util/getColorByBgColor';
-import { clsx } from '../util';
+import { clsx } from '../../util/clsx';
 
 // Wheel geometry, in the SVG's own 200 x 200 units
 const CENTER = 100;

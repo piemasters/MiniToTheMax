@@ -7,17 +7,11 @@ describe('PostSummary', () => {
       <PostSummary
         date={'11/01/2019'}
         img={{
-          layout: 'constrained',
+          src: 'cover.jpeg',
           width: 1800,
           height: 900,
-          backgroundColor: '#282828',
-          images: {
-            fallback: {
-              src: 'cover.jpeg',
-            },
-          },
         }}
-        slug={'slug'}
+        slug={'/slug/'}
         title={'Demo Post Title'}
         excerpt={'A test sentence'}
       />

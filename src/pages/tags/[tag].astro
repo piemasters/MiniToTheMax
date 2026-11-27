@@ -1,0 +1,19 @@
+---
+import GroupPage from '../../components/GroupPage/GroupPage.astro';
+import { getGroupPages, type Post } from '../../lib/posts';
+
+export async function getStaticPaths() {
+  const pages = await getGroupPages('tags');
+  return pages.map(({ slug, name, posts }) => ({
+    params: { tag: slug },
+    props: { name, posts },
+  }));
+}
+
+interface Props {
+  name: string;
+  posts: Post[];
+}
+---
+
+<GroupPage field="tags" {...Astro.props} />

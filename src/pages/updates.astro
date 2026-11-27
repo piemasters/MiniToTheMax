@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getListedPosts } from '../lib/posts';
+
+// Updates are filed by year, as in updates/2024/post-name
+const years = [
+  ...new Set(
+    (await getListedPosts())
+      .map(({ id }) => id.split('/'))
+      .filter(([section]) => section === 'updates')
+      .map(([, year]) => year)
+  ),
+].sort();
+---
+
+<Layout
+  title="Updates"
+  description="Quick updates on what I'm currently working on"
+>
+  <h1>Updates</h1>
+  <ul>
+    {
+      years.map((year) => (
+        <li>
+          <a href={`/updates/${year}/`}>{year}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>

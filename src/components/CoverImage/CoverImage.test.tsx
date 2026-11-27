@@ -6,15 +6,9 @@ describe('CoverImage', () => {
     const { container } = render(
       <CoverImage
         image={{
-          layout: 'constrained',
+          src: 'cover.jpeg',
           width: 1800,
           height: 900,
-          backgroundColor: '#282828',
-          images: {
-            fallback: {
-              src: 'cover.jpeg',
-            },
-          },
         }}
         title={'Demo Post Title'}
       />
@@ -24,5 +18,23 @@ describe('CoverImage', () => {
       'Demo Post Title'
     );
     expect(container).toMatchSnapshot();
+  });
+
+  test('shows a placeholder behind the image until it loads', () => {
+    const { getByRole } = render(
+      <CoverImage
+        image={{
+          src: 'cover.jpeg',
+          width: 1800,
+          height: 900,
+          placeholder: 'data:image/webp;base64,tiny',
+        }}
+        title={'Demo Post Title'}
+      />
+    );
+
+    const image = getByRole('img');
+    expect(image.style.backgroundImage).toContain('base64,tiny');
+    expect(image).not.toHaveAttribute('placeholder');
   });
 });

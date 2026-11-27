@@ -18,8 +18,6 @@ export const SimplePagination: FC<{
       {next && (
         <PageLink
           to={next.slug}
-          type={'cover'}
-          direction={'left'}
           className="h-full text-blue-500 visited:text-blue-500 hover:text-blue-700"
         >
           <div className="flex items-center justify-start h-full max-w-full px-4 py-8 bg-neutral-50 hover:bg-neutral-100">
@@ -31,8 +29,6 @@ export const SimplePagination: FC<{
       {previous && (
         <PageLink
           to={previous.slug}
-          type={'cover'}
-          direction={'right'}
           className="h-full text-blue-500 visited:text-blue-500 hover:text-blue-700"
         >
           <div className="flex items-center justify-end h-full max-w-full px-4 py-8 bg-neutral-50 hover:bg-neutral-100">

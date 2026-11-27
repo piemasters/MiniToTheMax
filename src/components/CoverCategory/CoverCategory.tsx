@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import type { IGatsbyImageData } from 'gatsby-plugin-image';
+import type { ResponsiveImage } from '../../types';
 import { PageLink } from '../PageLink/PageLink';
 import { CoverImage } from '../CoverImage/CoverImage';
 import { removeCategoryName } from './removeCategoryName';
@@ -10,14 +10,14 @@ import { removeCategoryName } from './removeCategoryName';
 export const CoverCategory: FC<{
   slug: string;
   title: string;
-  img?: IGatsbyImageData;
+  img?: ResponsiveImage;
 }> = ({ slug, title, img }) => {
   return (
     <div
       className="my-4 duration-300 hover:shadow-3xl"
       data-testid="cover-category"
     >
-      <PageLink to={slug} type={'cover'} direction={'up'}>
+      <PageLink to={slug}>
         {img && <CoverImage image={img} title={removeCategoryName(title)} />}
       </PageLink>
     </div>

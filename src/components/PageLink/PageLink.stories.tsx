@@ -4,27 +4,11 @@ import { PageLink } from './PageLink';
 const meta: Meta<typeof PageLink> = {
   component: PageLink,
   argTypes: {
-    type: {
-      name: 'type',
-      description: 'The animation type',
-      defaultValue: 'paintDrip',
-      options: ['paintDrip', 'fade', 'swipe', 'cover'],
-      control: {
-        type: 'select',
-      },
-    },
     to: {
       name: 'to',
       description: 'The internal link address',
       defaultValue: '/',
       control: { type: 'text' },
-    },
-    direction: {
-      name: 'direction',
-      description: 'Directional of transitions',
-      defaultValue: 'up',
-      options: ['left', 'right', 'up', 'down'],
-      control: { type: 'select' },
     },
     children: {
       name: 'children',
@@ -32,14 +16,15 @@ const meta: Meta<typeof PageLink> = {
       defaultValue: 'Test',
       control: { type: 'text' },
     },
+    currentPath: {
+      name: 'currentPath',
+      description: 'The address of the page being shown',
+      control: { type: 'text' },
+    },
     linkActiveStyle: {
       name: 'linkActiveStyle',
-      description:
-        'The styling to apply to the link and its contents when active',
-      // defaultValue: css`
-      //   color: #000000;
-      // `,
-      control: { type: 'object' },
+      description: 'Classes added when the link leads to the current page',
+      control: { type: 'text' },
     },
   },
 };
@@ -49,10 +34,9 @@ type Story = StoryObj<typeof PageLink>;
 
 export const Primary: Story = {
   args: {
-    type: 'paintDrip',
     to: '/',
-    direction: 'up',
     children: 'Test',
+    currentPath: '/',
     linkActiveStyle: 'text-red-500!',
   },
 };

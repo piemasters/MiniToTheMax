@@ -14,7 +14,7 @@ import {
 } from '../../util/paints/collectionBackup';
 import { paintId } from '../../util/paints/paintId';
 import type { useCollectionEdits } from '../../util/paints/useCollectionEdits';
-import { clsx } from '../util';
+import { clsx } from '../../util/clsx';
 
 const plural = (count: number) => (count === 1 ? 'paint' : 'paints');
 

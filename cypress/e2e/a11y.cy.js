@@ -8,7 +8,10 @@ describe('Accessibility checks', () => {
     cy.checkA11y();
   });
   it('Navigates to Blog and checks for accessibility violations', () => {
-    cy.findByText(/Blog/i).click();
+    cy.findByText('Blog').click();
+    cy.location('pathname').should('eq', '/blog/');
+    // A new page, so axe has to be added again
+    cy.injectAxe();
     cy.checkA11y();
   });
   it('Checks if Showcase link is focusable and has the correct attributes', () => {
@@ -16,7 +19,8 @@ describe('Accessibility checks', () => {
     cy.focused()
       .should('have.text', 'Showcase')
       .should('have.attr', 'href', '/showcase/')
-      .should('not.have.css', 'outline-width', '1px');
+      // Keyboard users need to see where they are
+      .and('not.have.css', 'outline-style', 'none');
   });
 });
 

@@ -1,0 +1,11 @@
+---
+import { PaintsExplorer } from '../components/PaintFilters/PaintsExplorer';
+import Layout from '../layouts/Layout.astro';
+import { getPaintPostNodes } from '../lib/paintPostNodes';
+
+const posts = await getPaintPostNodes();
+---
+
+<Layout title="Paints" wide>
+  <PaintsExplorer posts={posts} client:load />
+</Layout>

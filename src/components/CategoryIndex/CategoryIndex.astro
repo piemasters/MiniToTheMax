@@ -1,0 +1,25 @@
+---
+import { CoverCategory } from '../CoverCategory/CoverCategory';
+import Layout from '../../layouts/Layout.astro';
+import { coverImage } from '../../lib/images';
+
+/** A section's front page: a banner for each of its categories. */
+interface Props {
+  title: string;
+  description: string;
+  categories: { title: string; slug: string; image: ImageMetadata }[];
+}
+
+const { title, description, categories } = Astro.props;
+const covers = await Promise.all(
+  categories.map(async ({ image, ...category }) => ({
+    ...category,
+    img: await coverImage(image),
+  }))
+);
+---
+
+<Layout title={title} description={description}>
+  <h1>{title}</h1>
+  {covers.map((cover) => <CoverCategory {...cover} />)}
+</Layout>

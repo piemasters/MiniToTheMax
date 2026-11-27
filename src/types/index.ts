@@ -1,2 +1,2 @@
-export * from './base.types';
+export * from './image.types';
 export * from './paint.types';

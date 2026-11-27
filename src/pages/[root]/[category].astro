@@ -1,0 +1,56 @@
+---
+import { readdirSync } from 'node:fs';
+import { CoverCategory } from '../../components/CoverCategory/CoverCategory';
+import Layout from '../../layouts/Layout.astro';
+import { coverImage } from '../../lib/images';
+import { getListedPosts, slugOf, type Post } from '../../lib/posts';
+import { categoryTitle, postsInCategory } from '../../util/categoryPosts';
+
+export async function getStaticPaths() {
+  // Relative to the project root, where the commands are run
+  const directories = (path: string) =>
+    readdirSync(path, { withFileTypes: true })
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => entry.name);
+
+  const posts = await getListedPosts();
+
+  // A folder holding only drafts gets its page when one is published
+  return directories('content/blog').flatMap((root) =>
+    directories(`content/blog/${root}`).flatMap((category) => {
+      const listed = postsInCategory(posts, root, category);
+      if (listed.length === 0) return [];
+      return {
+        params: { root, category },
+        props: {
+          type: categoryTitle(root),
+          name: categoryTitle(category),
+          posts: listed,
+        },
+      };
+    })
+  );
+}
+
+interface Props {
+  type: string;
+  name: string;
+  posts: Post[];
+}
+
+const { type, name, posts } = Astro.props;
+const covers = await Promise.all(
+  posts.map(async (post) => ({
+    slug: slugOf(post),
+    title: post.data.title,
+    img: await coverImage(post.data.featuredImage),
+  }))
+);
+---
+
+<Layout title={name} description={`${type} articles on the subject of ${name}`}>
+  <h1>{name}</h1>
+  <ul>
+    {covers.map((cover) => <CoverCategory {...cover} />)}
+  </ul>
+</Layout>
