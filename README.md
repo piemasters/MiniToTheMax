@@ -26,6 +26,7 @@ yarn dev
 |---|---|
 | `yarn dev` | Development server with every post |
 | `yarn dev-lite` | Quicker development server with a sample of posts |
+| `yarn dev-unpublished` | Development server with only the unpublished posts |
 | `yarn build` | Production build of every published post |
 | `yarn build:sample` | Quicker build of the sample posts |
 | `yarn preview` | Serves the last build |
@@ -57,6 +58,8 @@ Pushing the `astro` branch runs [astro-preview.yaml](.github/workflows/astro-pre
 
 Preview builds leave analytics out. To include it, set the GitHub repository variable `PREVIEW_ANALYTICS` to `true`.
 
-## Still to do
+## Deployment
 
-- Production deployment: `deploy.yaml` is stopped until it publishes the Astro build
+Pushing to `master` runs [deploy.yaml](.github/workflows/deploy.yaml), which tests the project, builds every post and publishes it to Netlify. The first build processes every image and takes several minutes longer than later ones. To undo a release, republish an earlier deploy from the Netlify dashboard.
+
+Dependabot's patch and minor updates merge, and so deploy, once the `test` check passes.

@@ -1,5 +1,5 @@
 # Builds the Astro site and publishes it to a Netlify preview address.
-# The live site is untouched: that is deploy.yaml, which runs on master.
+# The live site is untouched: deploy.yaml publishes that, from master.
 name: 'Astro Preview'
 
 on:
