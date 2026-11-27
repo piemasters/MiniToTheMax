@@ -1,4 +1,33 @@
-MIT License
+MiniToTheMax
+
+This repository holds two kinds of work under different terms:
+
+  1. The content of the blog: all rights reserved.
+  2. The code which builds it: the MIT License.
+
+
+1. Content - All Rights Reserved
+
+Copyright (c) 2013-2026 David Norton. All rights reserved.
+
+This covers:
+
+  * everything in the content/ directory, including posts, photographs and
+    other images;
+  * the images in src/assets/, including the logo and badges;
+  * the MiniToTheMax name and logo.
+
+You may read and link to this content. You may not copy, republish, adapt,
+sell or otherwise reuse it, in whole or in part, without written permission,
+including as training data for machine learning, except where the law allows
+it or where GitHub's Terms of Service give users of GitHub the right to view
+and fork a public repository.
+
+
+2. Code - MIT License
+
+Everything in this repository which section 1 does not cover is licensed as
+follows.
 
 Copyright (c) 2019-2026 David Norton
 
@@ -19,3 +48,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+Other people's work
+
+Third-party software included here, such as Yarn in .yarn/, remains under its
+own license. Product, game and paint names, and any trademarks or artwork
+belonging to others, remain the property of their owners. Nothing here grants
+rights to them.
