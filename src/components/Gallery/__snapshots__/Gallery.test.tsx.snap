@@ -16,7 +16,7 @@ exports[`Gallery renders the correct number of images 1`] = `
     data-testid="gallery"
   >
     <button
-      class="p-0 m-1 border-0 cursor-pointer"
+      class="p-0 m-1! border-0 cursor-pointer"
       type="button"
     >
       <img
@@ -28,7 +28,7 @@ exports[`Gallery renders the correct number of images 1`] = `
       />
     </button>
     <button
-      class="p-0 m-1 border-0 cursor-pointer"
+      class="p-0 m-1! border-0 cursor-pointer"
       type="button"
     >
       <img
@@ -40,7 +40,7 @@ exports[`Gallery renders the correct number of images 1`] = `
       />
     </button>
     <button
-      class="p-0 m-1 border-0 cursor-pointer"
+      class="p-0 m-1! border-0 cursor-pointer"
       type="button"
     >
       <img
@@ -52,7 +52,7 @@ exports[`Gallery renders the correct number of images 1`] = `
       />
     </button>
     <button
-      class="p-0 m-1 border-0 cursor-pointer"
+      class="p-0 m-1! border-0 cursor-pointer"
       type="button"
     >
       <img
@@ -64,7 +64,7 @@ exports[`Gallery renders the correct number of images 1`] = `
       />
     </button>
     <button
-      class="p-0 m-1 border-0 cursor-pointer"
+      class="p-0 m-1! border-0 cursor-pointer"
       type="button"
     >
       <img
