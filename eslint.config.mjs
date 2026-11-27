@@ -51,7 +51,7 @@ export default defineConfig([
       '__mocks__/**/*.js',
       'jest.config.js',
       'postcss.config.js',
-      'src/scripts/**/*.js',
+      'scripts/**/*.js',
     ],
     languageOptions: { sourceType: 'commonjs', globals: globals.node },
     rules: { '@typescript-eslint/no-require-imports': 'off' },

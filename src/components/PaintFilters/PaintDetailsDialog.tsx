@@ -10,7 +10,7 @@ import { Paint } from '../Paint/Paint';
 import { ColorSchemesSection } from './ColorSchemesSection';
 import { SeenIn } from './SeenIn';
 import { ShadeHighlightSection } from './ShadeHighlightSection';
-import { clsx } from '../util';
+import { clsx } from '../../util/clsx';
 
 const FEEDBACK_MS = 2000;
 

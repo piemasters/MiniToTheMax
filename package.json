@@ -13,7 +13,7 @@
     "build": "ALL_POSTS=1 astro build",
     "build:sample": "astro build",
     "preview": "astro preview",
-    "optimize": "node ./src/scripts/optimize.js",
+    "optimize": "node ./scripts/optimize.js",
     "format": "prettier --write \"**/*.{js,jsx,tsx,json,md}\"",
     "test": "jest",
     "cy:open": "cypress open",

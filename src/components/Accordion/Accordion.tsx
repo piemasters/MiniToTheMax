@@ -6,7 +6,7 @@ import {
   Dispatch,
   SetStateAction,
 } from 'react';
-import { clsx } from '../util';
+import { clsx } from '../../util/clsx';
 import { AccordionItemHeader } from './components/AccordionHeader';
 import { AccordionItemContents } from './components/AccordionItemContents';
 import { AccordionItemWrapper } from './components/AccordionItemWrapper';

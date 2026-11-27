@@ -1,5 +1,5 @@
 import { HTMLProps, useContext } from 'react';
-import { clsx } from '../../util';
+import { clsx } from '../../../util/clsx';
 import { AccordionContext } from '../Accordion';
 
 export const AccordionItemWrapper = ({

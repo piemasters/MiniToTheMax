@@ -7,7 +7,7 @@ import { PaintGradient } from './shared/PaintGradient';
 import { PaintShape } from './shared/PaintShape';
 import { usePaintIds } from './shared/paintIds';
 import { potViewBox, SWATCH_HEIGHT, SWATCH_WIDTH } from './shared/potViewBox';
-import { clsx } from '../util';
+import { clsx } from '../../util/clsx';
 
 export const Paint = memo(function Paint({
   paint,

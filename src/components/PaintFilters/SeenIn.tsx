@@ -1,6 +1,6 @@
 import { useId, useState } from 'react';
 import type { PostLink } from '../../util/paints/paintPosts';
-import { clsx } from '../util';
+import { clsx } from '../../util/clsx';
 
 const COLLAPSED_POSTS = 4;
 

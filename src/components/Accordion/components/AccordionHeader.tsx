@@ -1,6 +1,6 @@
 import { HTMLProps, useContext } from 'react';
 import { ChevronDown } from './ChevronDown';
-import { clsx } from '../../util';
+import { clsx } from '../../../util/clsx';
 import { AccordionContext, AccordionSelectedType } from '../Accordion';
 
 export const AccordionItemHeader = ({

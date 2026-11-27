@@ -12,7 +12,7 @@ import {
   useSuggestionPaints,
 } from '../../util/paints/useSuggestionPaints';
 import { Paint } from '../Paint/Paint';
-import { clsx } from '../util';
+import { clsx } from '../../util/clsx';
 
 /** Paints to shade and highlight a paint with, picked from its own color family. */
 export const ShadeHighlightSection = ({

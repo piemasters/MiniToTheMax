@@ -10,6 +10,7 @@ A miniature painting hobby blog, built with [Astro](https://astro.build) and Rea
 | `src/data/`, `src/util/` | Paint and backlog data, and utilities |
 | `src/lib/` | Helpers used while building pages |
 | `public/` | Files served as they are |
+| `scripts/` | Maintenance tools |
 
 ## Getting started
 

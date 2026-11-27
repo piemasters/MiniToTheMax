@@ -1,5 +1,5 @@
 import type { Ref } from 'react';
-import { clsx } from '../util';
+import { clsx } from '../../util/clsx';
 
 /** Opens and closes the tools for recording which paints you own. */
 export const EditPaintsButton = ({
