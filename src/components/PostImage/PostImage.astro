@@ -21,12 +21,23 @@ const style =
 const css =
   style &&
   `background-image:${style.backgroundImage};background-size:cover;background-position:center`;
+
+/** About the width of the reading column, which images never exceed. */
+const COLUMN_WIDTH = 750;
 ---
 
 {
   typeof src === 'string' ? (
     <img {...props} src={src} alt={alt} />
   ) : (
-    <Image {...(props as object)} src={src} alt={alt} style={css} />
+    // Offers smaller sizes for narrow screens and larger for dense ones
+    <Image
+      {...(props as object)}
+      src={src}
+      alt={alt}
+      layout="constrained"
+      width={Math.min(src.width, COLUMN_WIDTH)}
+      style={css}
+    />
   )
 }
