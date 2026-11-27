@@ -48,7 +48,7 @@ const images = await Promise.all(
 const cover = await coverImage(featuredImage);
 const link = (other?: Post) =>
   other && { slug: slugOf(other), title: other.data.title };
-const disqus = import.meta.env.GATSBY_DISQUS_NAME || 'disqusShortname';
+const disqus = import.meta.env.DISQUS_NAME || 'disqusShortname';
 ---
 
 <Layout

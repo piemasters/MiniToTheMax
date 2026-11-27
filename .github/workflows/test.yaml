@@ -22,5 +22,9 @@ jobs:
       - name: Run tests
         run: yarn test
 
+      # A few posts are enough to show that pages still build
+      - name: Build a sample of the site
+        run: yarn build:sample
+
       - name: Build Storybook
         run: yarn build-storybook

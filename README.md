@@ -28,6 +28,7 @@ yarn dev
 | `yarn preview` | Serves the last build |
 | `yarn test` | Unit tests |
 | `yarn type-check` | Type check |
+| `yarn lint` | Lint |
 | `yarn storybook` | Component explorer |
 | `yarn test:e2e` | Accessibility tests in Cypress |
 | `yarn optimize` | Shrinks oversized images in `content/` |
@@ -40,7 +41,7 @@ Settings come from the environment, or from `.env.development` (`yarn dev`) and 
 
 | Setting | Used for |
 |---|---|
-| `GATSBY_DISQUS_NAME` | Comments (Disqus) |
+| `DISQUS_NAME` | Comments (Disqus) |
 | `GA_TRACKING_ID` | Analytics, in production builds only |
 
 ## Preview deployment

@@ -41,7 +41,7 @@ jobs:
         run: yarn build
         env:
           NODE_OPTIONS: --max-old-space-size=6144
-          GATSBY_DISQUS_NAME: ${{ secrets.GATSBY_DISQUS_NAME }}
+          DISQUS_NAME: ${{ secrets.DISQUS_NAME }}
           # Preview visits stay out of analytics unless the repository
           # variable PREVIEW_ANALYTICS is set to true
           GA_TRACKING_ID: ${{ vars.PREVIEW_ANALYTICS == 'true' && secrets.GA_TRACKING_ID || '' }}

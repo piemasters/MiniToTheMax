@@ -16,6 +16,8 @@ const canTransitionDisplay = () => {
   probe.style.cssText =
     'transition: display 1s allow-discrete !important; display: block;';
   document.body.appendChild(probe);
+  // Reading a style makes the browser apply the one above before it changes
+  // eslint-disable-next-line @typescript-eslint/no-unused-expressions
   getComputedStyle(probe).display;
   probe.style.display = 'none';
   supportsDisplayTransition = getComputedStyle(probe).display === 'block';

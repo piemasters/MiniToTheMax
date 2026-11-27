@@ -23,8 +23,8 @@ export default defineConfig({
       'import.meta.env.GA_TRACKING_ID': JSON.stringify(
         process.env.GA_TRACKING_ID ?? ''
       ),
-      'import.meta.env.GATSBY_DISQUS_NAME': JSON.stringify(
-        process.env.GATSBY_DISQUS_NAME ?? ''
+      'import.meta.env.DISQUS_NAME': JSON.stringify(
+        process.env.DISQUS_NAME ?? ''
       ),
     },
     plugins: [tailwindcss()],

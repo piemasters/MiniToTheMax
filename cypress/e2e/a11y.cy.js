@@ -19,7 +19,8 @@ describe('Accessibility checks', () => {
     cy.focused()
       .should('have.text', 'Showcase')
       .should('have.attr', 'href', '/showcase/')
-      .should('not.have.css', 'outline-width', '1px');
+      // Keyboard users need to see where they are
+      .and('not.have.css', 'outline-style', 'none');
   });
 });
 
