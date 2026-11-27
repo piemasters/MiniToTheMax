@@ -32,7 +32,7 @@ export const Gallery: FC<{
               <button
                 type="button"
                 onClick={open}
-                className="p-0 m-1 border-0 cursor-pointer"
+                className="p-0 m-1! border-0 cursor-pointer"
               >
                 <img
                   ref={ref}
