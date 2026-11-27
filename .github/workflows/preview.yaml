@@ -1,0 +1,69 @@
+# Builds a pull request into master and publishes it to its own Netlify preview
+# address. The live site is untouched: deploy.yaml publishes that, from master.
+name: 'Preview'
+
+on:
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+# Only the newest push to each pull request needs a preview
+concurrency:
+  group: preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  netlify-preview:
+    runs-on: ubuntu-latest
+    # Forks and Dependabot aren't given the secrets which deploying needs
+    if: >-
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      github.event.pull_request.user.login != 'dependabot[bot]'
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+
+      - name: Install dependencies
+        run: yarn
+
+      # Only the processed images: Astro's other cached data can go stale
+      - name: Cache processed images
+        uses: actions/cache@v6
+        with:
+          path: node_modules/.astro/assets
+          key: astro-images-${{ hashFiles('yarn.lock', 'content/**/*.jpg', 'content/**/*.jpeg', 'content/**/*.png', 'content/**/*.webp', 'src/assets/**') }}
+          restore-keys: astro-images-
+
+      - name: Build every post
+        run: yarn build
+        env:
+          NODE_OPTIONS: --max-old-space-size=6144
+          DISQUS_NAME: ${{ secrets.DISQUS_NAME }}
+          # Preview visits stay out of analytics unless the repository
+          # variable PREVIEW_ANALYTICS is set to true
+          GA_TRACKING_ID: ${{ vars.PREVIEW_ANALYTICS == 'true' && secrets.GA_TRACKING_ID || '' }}
+
+      # Without --prod this is a draft deploy, with an address which stays the
+      # same for the pull request. The address is added to the run's summary.
+      - name: Deploy preview to Netlify
+        shell: bash
+        run: |
+          npx --yes netlify-cli@27 deploy \
+            --no-build \
+            --dir=dist \
+            --alias="pr-$PR_NUMBER" \
+            --message="Preview of pull request $PR_NUMBER at ${HEAD_SHA::8}" |
+            tee deploy.log
+          url=$(grep -oE "https://pr-$PR_NUMBER--[a-z0-9-]+\.netlify\.app" deploy.log | head -n 1)
+          echo "Preview: ${url:-see the deploy step for the address}" >> "$GITHUB_STEP_SUMMARY"
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

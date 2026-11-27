@@ -54,7 +54,7 @@ Settings come from the environment, or from `.env.development` (development serv
 
 ## Preview deployment
 
-Pushing the `astro` branch runs [astro-preview.yaml](.github/workflows/astro-preview.yaml), which builds every post and publishes a Netlify draft deploy under the alias `astro-preview`. The address is printed at the end of the run. The live site is not touched.
+Opening or updating a pull request into `master` runs [preview.yaml](.github/workflows/preview.yaml), which builds every post and publishes a Netlify draft deploy under the alias `pr-<number>`. The address is shown in the summary of the run. The live site is not touched. Dependabot's pull requests and those from forks get no preview.
 
 Preview builds leave analytics out. To include it, set the GitHub repository variable `PREVIEW_ANALYTICS` to `true`.
 
