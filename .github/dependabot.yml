@@ -7,3 +7,13 @@ updates:
       time: "10:00"
       timezone: Europe/London
     open-pull-requests-limit: 100
+
+  # The actions the workflows use. These are named by major version, so an
+  # update is a major one and is left to be merged by hand.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "10:00"
+      timezone: Europe/London
