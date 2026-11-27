@@ -24,7 +24,8 @@ yarn dev
 
 | Command | Result |
 |---|---|
-| `yarn dev` | Development server with a sample of posts |
+| `yarn dev` | Development server with every post |
+| `yarn dev-lite` | Quicker development server with a sample of posts |
 | `yarn build` | Production build of every published post |
 | `yarn build:sample` | Quicker build of the sample posts |
 | `yarn preview` | Serves the last build |
@@ -35,7 +36,7 @@ yarn dev
 | `yarn test:e2e` | Accessibility tests in Cypress |
 | `yarn optimize` | Shrinks oversized images in `content/` |
 
-The sample is listed in `src/content.config.ts`. Set `ALL_POSTS=1` to develop with every post.
+The sample is listed in `src/content.config.ts`.
 
 ## Writing posts
 
@@ -43,7 +44,7 @@ Posts live in `content/blog/`, one folder each, filed as `section/category/post-
 
 ## Settings
 
-Settings come from the environment, or from `.env.development` (`yarn dev`) and `.env.production` (builds):
+Settings come from the environment, or from `.env.development` (development servers) and `.env.production` (builds):
 
 | Setting | Used for |
 |---|---|

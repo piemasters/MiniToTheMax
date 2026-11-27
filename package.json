@@ -8,7 +8,8 @@
     "node": ">=24.11.0 <26"
   },
   "scripts": {
-    "dev": "astro dev",
+    "dev": "ALL_POSTS=1 astro dev",
+    "dev-lite": "ALL_POSTS= astro dev",
     "start": "yarn dev",
     "build": "ALL_POSTS=1 astro build",
     "build:sample": "astro build",
@@ -18,8 +19,8 @@
     "test": "jest",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "test:e2e": "start-server-and-test dev http://localhost:4321 cy:open",
-    "test:e2e:ci": "start-server-and-test dev http://localhost:4321 cy:run",
+    "test:e2e": "start-server-and-test dev-lite http://localhost:4321 cy:open",
+    "test:e2e:ci": "start-server-and-test dev-lite http://localhost:4321 cy:run",
     "type-check": "astro sync && tsc --noEmit",
     "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
