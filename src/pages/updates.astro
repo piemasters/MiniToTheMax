@@ -1,11 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getPublishedPosts } from '../lib/posts';
+import { getListedPosts } from '../lib/posts';
 
 // Updates are filed by year, as in updates/2024/post-name
 const years = [
   ...new Set(
-    (await getPublishedPosts())
+    (await getListedPosts())
       .map(({ id }) => id.split('/'))
       .filter(([section]) => section === 'updates')
       .map(([, year]) => year)

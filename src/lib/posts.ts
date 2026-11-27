@@ -8,24 +8,33 @@ const newestFirst = (posts: Post[]) =>
     (a, b) => b.data.date.localeCompare(a.data.date) || a.id.localeCompare(b.id)
   );
 
-/** Every post, drafts included. */
+/** `yarn dev-unpublished` shows the drafts and nothing else. */
+const draftsOnly =
+  !import.meta.env.PROD && Boolean(process.env.UNPUBLISHED_ONLY);
+
+/** Whether listing pages show a post: normally, once it is published. */
+const isListed = ({ data }: Post) => data.published !== draftsOnly;
+
+/** Every post, drafts included, unless only the drafts are wanted. */
 export const getAllPosts = async () =>
-  newestFirst(await getCollection('posts'));
+  newestFirst(
+    await getCollection('posts', (post) => !draftsOnly || isListed(post))
+  );
 
 /** What listing pages show. */
-export const getPublishedPosts = async () =>
-  (await getAllPosts()).filter(({ data }) => data.published);
+export const getListedPosts = async () =>
+  (await getAllPosts()).filter(isListed);
 
 /** The posts that get a page. Drafts have one only while developing. */
 export const getPosts = async () =>
-  import.meta.env.PROD ? getPublishedPosts() : getAllPosts();
+  import.meta.env.PROD ? getListedPosts() : getAllPosts();
 
-/** The values of a list field with how many published posts have each. */
+/** The values of a list field with how many listed posts have each. */
 export const groupBy = async (field: 'tags' | 'categories') => {
   const counts = new Map<string, number>();
-  for (const { data } of await getAllPosts()) {
-    for (const value of new Set(data[field])) {
-      counts.set(value, (counts.get(value) ?? 0) + (data.published ? 1 : 0));
+  for (const post of await getAllPosts()) {
+    for (const value of new Set(post.data[field])) {
+      counts.set(value, (counts.get(value) ?? 0) + (isListed(post) ? 1 : 0));
     }
   }
   return [...counts]
@@ -34,11 +43,11 @@ export const groupBy = async (field: 'tags' | 'categories') => {
 };
 
 /**
- * One page for each tag or category address with published posts. Spellings that share an address,
- * such as "Orks" and "orks", are listed together.
+ * One page for each tag or category address with posts to list. Spellings that
+ * share an address, such as "Orks" and "orks", are listed together.
  */
 export const getGroupPages = async (field: 'tags' | 'categories') => {
-  const published = await getPublishedPosts();
+  const listed = await getListedPosts();
   const names = new Map<string, string[]>();
   for (const { value } of await groupBy(field)) {
     const slug = kebabCase(value);
@@ -47,7 +56,7 @@ export const getGroupPages = async (field: 'tags' | 'categories') => {
   const pages = [...names].map(([slug, values]) => ({
     slug,
     name: values[0]!,
-    posts: published.filter(({ data }) =>
+    posts: listed.filter(({ data }) =>
       data[field].some((value) => values.includes(value))
     ),
   }));

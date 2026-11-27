@@ -10,6 +10,7 @@
   "scripts": {
     "dev": "ALL_POSTS=1 astro dev",
     "dev-lite": "ALL_POSTS= astro dev",
+    "dev-unpublished": "ALL_POSTS=1 UNPUBLISHED_ONLY=1 astro dev",
     "start": "yarn dev",
     "build": "ALL_POSTS=1 astro build",
     "build:sample": "astro build",

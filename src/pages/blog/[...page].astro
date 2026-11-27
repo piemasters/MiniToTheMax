@@ -3,11 +3,11 @@ import type { GetStaticPathsOptions, Page } from 'astro';
 import { Pagination } from '../../components/Pagination/Pagination';
 import { PostSummary } from '../../components/PostSummary/PostSummary';
 import Layout from '../../layouts/Layout.astro';
-import { getPublishedPosts, type Post } from '../../lib/posts';
+import { getListedPosts, type Post } from '../../lib/posts';
 import { summaryOf } from '../../lib/summary';
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-  return paginate(await getPublishedPosts(), { pageSize: 10 });
+  return paginate(await getListedPosts(), { pageSize: 10 });
 }
 
 interface Props {

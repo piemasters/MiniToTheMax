@@ -3,7 +3,7 @@ import { readdirSync } from 'node:fs';
 import { CoverCategory } from '../../components/CoverCategory/CoverCategory';
 import Layout from '../../layouts/Layout.astro';
 import { coverImage } from '../../lib/images';
-import { getPublishedPosts, slugOf, type Post } from '../../lib/posts';
+import { getListedPosts, slugOf, type Post } from '../../lib/posts';
 import { categoryTitle, postsInCategory } from '../../util/categoryPosts';
 
 export async function getStaticPaths() {
@@ -13,7 +13,7 @@ export async function getStaticPaths() {
       .filter((entry) => entry.isDirectory())
       .map((entry) => entry.name);
 
-  const posts = await getPublishedPosts();
+  const posts = await getListedPosts();
 
   // A folder holding only drafts gets its page when one is published
   return directories('content/blog').flatMap((root) =>
