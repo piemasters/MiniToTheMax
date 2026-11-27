@@ -15,7 +15,7 @@ A miniature painting hobby blog, built with [Astro](https://astro.build) and Rea
 
 ## Getting started
 
-Needs the Node version in `.nvmrc`.
+Needs the Node version in `.nvmrc`. Yarn doesn't come with Node, and a newly installed version needs `npm install -g yarn`.
 
 ```sh
 yarn
