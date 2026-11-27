@@ -34,7 +34,8 @@ yarn dev
 | `yarn type-check` | Type check |
 | `yarn lint` | Lint |
 | `yarn storybook` | Component explorer |
-| `yarn test:e2e` | Accessibility tests in Cypress |
+| `yarn test:e2e` | Opens Cypress, with a development server |
+| `yarn test:e2e:ci` | Runs the Cypress tests against the last build |
 | `yarn optimize` | Shrinks oversized images in `content/` |
 
 The sample is listed in `src/content.config.ts`.
@@ -63,3 +64,7 @@ Preview builds leave analytics out. To include it, set the GitHub repository var
 Pushing to `master` runs [deploy.yaml](.github/workflows/deploy.yaml), which tests the project, builds every post and publishes it to Netlify. The first build processes every image and takes several minutes longer than later ones. To undo a release, republish an earlier deploy from the Netlify dashboard.
 
 Dependabot's patch and minor updates merge, and so deploy, once the `test` check passes.
+
+## Licence
+
+The posts, photographs, images, name and logo are **all rights reserved**. The code is under the MIT License. [LICENSE](LICENSE) sets out which is which.

@@ -29,5 +29,18 @@ jobs:
       - name: Build a sample of the site
         run: yarn build:sample
 
+      # Serves that build and checks it in a real browser
+      - name: Run browser tests
+        run: yarn test:e2e:ci
+
+      - name: Keep screenshots of failed browser tests
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: Build Storybook
         run: yarn build-storybook

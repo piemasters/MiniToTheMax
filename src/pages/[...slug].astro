@@ -96,6 +96,6 @@ const disqus = import.meta.env.DISQUS_NAME || 'disqusShortname';
     shortname={disqus}
     identifier={slugOf(post)}
     title={title}
-    url={`${Astro.site?.origin}/${slugOf(post)}`}
+    url={`${Astro.site?.origin}${slugOf(post)}`}
   />
 </Layout>

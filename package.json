@@ -3,7 +3,7 @@
   "private": true,
   "description": "Website for MiniToTheMax",
   "version": "1.0.1",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "engines": {
     "node": ">=26.0.0 <27"
   },
@@ -21,7 +21,7 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "test:e2e": "start-server-and-test dev-lite http://localhost:4321 cy:open",
-    "test:e2e:ci": "start-server-and-test dev-lite http://localhost:4321 cy:run",
+    "test:e2e:ci": "start-server-and-test preview http://localhost:4321 cy:run",
     "type-check": "astro sync && tsc --noEmit",
     "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
