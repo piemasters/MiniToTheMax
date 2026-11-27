@@ -1,0 +1,4 @@
+# Read by Netlify. Every file here is named after its contents, so a browser
+# can keep it without ever asking again.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable

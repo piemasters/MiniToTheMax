@@ -8,4 +8,6 @@ export type ResponsiveImage = {
   sizes?: string;
   width: number;
   height: number;
+  /** Shown blurred until the image loads. */
+  placeholder?: string;
 };

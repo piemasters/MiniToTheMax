@@ -1,5 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getPublishedPosts } from '../lib/posts';
+
+// Updates are filed by year, as in updates/2024/post-name
+const years = [
+  ...new Set(
+    (await getPublishedPosts())
+      .map(({ id }) => id.split('/'))
+      .filter(([section]) => section === 'updates')
+      .map(([, year]) => year)
+  ),
+].sort();
 ---
 
 <Layout
@@ -9,7 +20,7 @@ import Layout from '../layouts/Layout.astro';
   <h1>Updates</h1>
   <ul>
     {
-      ['2013', '2014', '2015'].map((year) => (
+      years.map((year) => (
         <li>
           <a href={`/updates/${year}/`}>{year}</a>
         </li>

@@ -1,5 +1,6 @@
 import { getImage } from 'astro:assets';
 import type { ResponsiveImage } from '../types/image.types';
+import { placeholderOf } from './placeholder';
 
 /** A cover image in the sizes needed to fill the reading column. */
 export const coverImage = async (
@@ -16,5 +17,6 @@ export const coverImage = async (
     sizes: attributes.sizes,
     width: attributes.width,
     height: attributes.height,
+    placeholder: await placeholderOf(source),
   };
 };

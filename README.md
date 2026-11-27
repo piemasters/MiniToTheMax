@@ -39,7 +39,7 @@ The sample is listed in `src/content.config.ts`. Set `ALL_POSTS=1` to develop wi
 
 ## Writing posts
 
-Posts live in `content/blog/`, one folder each. Show a paint with `<Paint name="Abaddon Black" />`, adding `category="..."` where brands share a name. No import is needed.
+Posts live in `content/blog/`, one folder each, filed as `section/category/post-name`. A category page lists the posts in its folder, and any others whose categories name both the section and the category. Show a paint with `<Paint name="Abaddon Black" />`, adding `category="..."` where brands share a name. No import is needed.
 
 ## Settings
 
@@ -59,4 +59,3 @@ Preview builds leave analytics out. To include it, set the GitHub repository var
 ## Still to do
 
 - Production deployment: `deploy.yaml` is stopped until it publishes the Astro build
-- Blurred image placeholders

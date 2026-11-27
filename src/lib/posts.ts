@@ -20,10 +20,7 @@ export const getPublishedPosts = async () =>
 export const getPosts = async () =>
   import.meta.env.PROD ? getPublishedPosts() : getAllPosts();
 
-/**
- * The values of a list field with how many published posts have each. Values
- * that only drafts use are included, with a count of zero.
- */
+/** The values of a list field with how many published posts have each. */
 export const groupBy = async (field: 'tags' | 'categories') => {
   const counts = new Map<string, number>();
   for (const { data } of await getAllPosts()) {
@@ -37,7 +34,7 @@ export const groupBy = async (field: 'tags' | 'categories') => {
 };
 
 /**
- * One page for each tag or category address. Spellings that share an address,
+ * One page for each tag or category address with published posts. Spellings that share an address,
  * such as "Orks" and "orks", are listed together.
  */
 export const getGroupPages = async (field: 'tags' | 'categories') => {
@@ -47,13 +44,14 @@ export const getGroupPages = async (field: 'tags' | 'categories') => {
     const slug = kebabCase(value);
     names.set(slug, [...(names.get(slug) ?? []), value]);
   }
-  return [...names].map(([slug, values]) => ({
+  const pages = [...names].map(([slug, values]) => ({
     slug,
     name: values[0]!,
     posts: published.filter(({ data }) =>
       data[field].some((value) => values.includes(value))
     ),
   }));
+  return pages.filter((page) => page.posts.length > 0);
 };
 
 /** A post's address. Disqus comments are keyed on it, so it must not change. */

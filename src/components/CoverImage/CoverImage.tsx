@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import type { ResponsiveImage } from '../../types';
+import { placeholderStyle } from '../../util/placeholderStyle';
 
 export const CoverImage: FC<{
   image: ResponsiveImage;
@@ -8,10 +9,12 @@ export const CoverImage: FC<{
   /** Loads straight away: for the image at the top of a page. */
   priority?: boolean;
 }> = ({ image, title, tall = false, priority = false }) => {
+  const { placeholder, ...attributes } = image;
   return (
     <div className="relative" data-testid="cover-image">
       <img
-        {...image}
+        {...attributes}
+        style={placeholderStyle(placeholder)}
         alt={title}
         loading={priority ? 'eager' : 'lazy'}
         decoding={priority ? 'sync' : 'async'}

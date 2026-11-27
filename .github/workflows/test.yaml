@@ -19,6 +19,9 @@ jobs:
       - name: Check types
         run: yarn type-check
 
+      - name: Lint
+        run: yarn lint
+
       - name: Run tests
         run: yarn test
 

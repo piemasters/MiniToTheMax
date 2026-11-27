@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Gallery as Photoswipe, Item } from 'react-photoswipe-gallery';
+import { placeholderStyle } from '../../util/placeholderStyle';
 
 export type GalleryImage = {
   /** The square shown on the page. */
@@ -8,6 +9,8 @@ export type GalleryImage = {
   full: string;
   width: number;
   height: number;
+  /** Shown blurred until the thumbnail loads. */
+  placeholder?: string;
 };
 
 /** Thumbnails which open a full screen, swipeable view of each image. */
@@ -37,6 +40,7 @@ export const Gallery: FC<{
                   alt={`Gallery image ${index + 1}`}
                   width={169}
                   height={169}
+                  style={placeholderStyle(image.placeholder)}
                   loading="lazy"
                 />
               </button>

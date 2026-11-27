@@ -19,4 +19,22 @@ describe('CoverImage', () => {
     );
     expect(container).toMatchSnapshot();
   });
+
+  test('shows a placeholder behind the image until it loads', () => {
+    const { getByRole } = render(
+      <CoverImage
+        image={{
+          src: 'cover.jpeg',
+          width: 1800,
+          height: 900,
+          placeholder: 'data:image/webp;base64,tiny',
+        }}
+        title={'Demo Post Title'}
+      />
+    );
+
+    const image = getByRole('img');
+    expect(image.style.backgroundImage).toContain('base64,tiny');
+    expect(image).not.toHaveAttribute('placeholder');
+  });
 });

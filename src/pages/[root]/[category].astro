@@ -4,6 +4,7 @@ import { CoverCategory } from '../../components/CoverCategory/CoverCategory';
 import Layout from '../../layouts/Layout.astro';
 import { coverImage } from '../../lib/images';
 import { getPublishedPosts, slugOf, type Post } from '../../lib/posts';
+import { categoryTitle, postsInCategory } from '../../util/categoryPosts';
 
 export async function getStaticPaths() {
   // Relative to the project root, where the commands are run
@@ -12,30 +13,19 @@ export async function getStaticPaths() {
       .filter((entry) => entry.isDirectory())
       .map((entry) => entry.name);
 
-  // Only the first hyphen is replaced, which the existing addresses rely on
-  const titleCase = (folder: string) =>
-    folder
-      .replace(/-/, ' ')
-      .toLowerCase()
-      .split(' ')
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
-
   const posts = await getPublishedPosts();
 
+  // A folder holding only drafts gets its page when one is published
   return directories('content/blog').flatMap((root) =>
-    directories(`content/blog/${root}`).map((category) => {
-      const type = titleCase(root);
-      const name = titleCase(category);
+    directories(`content/blog/${root}`).flatMap((category) => {
+      const listed = postsInCategory(posts, root, category);
+      if (listed.length === 0) return [];
       return {
         params: { root, category },
         props: {
-          type,
-          name,
-          posts: posts.filter(
-            ({ data }) =>
-              data.categories.includes(type) && data.categories.includes(name)
-          ),
+          type: categoryTitle(root),
+          name: categoryTitle(category),
+          posts: listed,
         },
       };
     })
